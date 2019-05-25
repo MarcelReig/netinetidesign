@@ -254,6 +254,8 @@ const clean_all = gulp.series(clean_jekyll, clean_assets);
 
 function build_localServer() {
   if (config.production) {
+    console.log("Hey girl you are in production mode!");
+  } else {
     console.log("BrowserSync setting up the server in port 4000");
     browserSync.init({
       port: 4000,
@@ -261,8 +263,6 @@ function build_localServer() {
         baseDir: "./_site/"
       }
     });
-  } else {
-    console.log("Hey girl you are in production mode!");
   }
 }
 
@@ -291,6 +291,10 @@ const build_all = gulp.series(
 
 function watchFiles() {
   if (config.production) {
+    console.log(
+      "Hey girl you are in production mode no needed to watch anything!"
+    );
+  } else {
     console.log("watching files for changes");
     gulp.watch("_assets/styles/**/*.scss", build_styles);
     gulp.watch("_assets/scripts/*.js", build_scripts);
@@ -301,10 +305,6 @@ function watchFiles() {
     gulp.watch(
       ["**/*.+(html|md|markdown|MD)", "!_site/**/*.*"],
       gulp.series(build_jekyll, browsersync_reload)
-    );
-  } else {
-    console.log(
-      "Hey girl you are in production mode no needed to watch anything!"
     );
   }
 }
