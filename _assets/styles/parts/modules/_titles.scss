@@ -1,0 +1,28 @@
+// Titulares
+.title-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.title-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  max-width: 30%;
+  text-align: center;
+}
+
+.title-wrapper-expanded {
+  display: flex;
+  justify-content: center;
+}
+.title-block-expanded {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  max-width: 80%;
+  text-align: center;
+}

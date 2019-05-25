@@ -1,0 +1,48 @@
+.tools {
+  margin: 0 auto;
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+.box {
+  padding: 10px;
+  text-align: center;
+  p {
+    color: $gray-700;
+    margin: 10px auto;
+  }
+  svg {
+    max-width: 90px;
+  }
+}
+.devicons {
+  font-size: 5em;
+  color: $brand-color;
+  margin: 0 auto;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .tools {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .tools {
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .tools {
+    width: 70%;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

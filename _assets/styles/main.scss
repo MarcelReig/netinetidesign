@@ -1,0 +1,65 @@
+// $Bootstrap
+@import "vendor/bootstrap/core";
+// $Parts
+@import "parts/index";
+
+// Landing styles
+.img-circle {
+  background-image: url("../images/perfil.jpg");
+  background-color: lighten($color: $brand-color, $amount: 25%);
+  background-size: cover;
+  background-position-x: center;
+  background-blend-mode: multiply;
+  transition: background-color 0.5s;
+  &:hover {
+    background-color: white;
+    transition: background-color 0.25s;
+  }
+
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+hr.small {
+  width: 200px;
+  border-top: 1px solid $transparent-white;
+}
+
+// Components
+.btn-js {
+  color: #ffe484;
+  border-color: #ffe484;
+  background-color: transparent;
+  background-image: none;
+  &:hover {
+    background-color: #ffe484;
+    color: #212529;
+  }
+}
+
+// Circulo go back button
+
+.wrap-circle {
+  position: relative;
+}
+.circle {
+  .fa-angle-left {
+    margin-top: 7px;
+  }
+  position: absolute;
+  left: -20%;
+  top: 0;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  background: #956ee5;
+  color: #fff;
+  font-size: 0.875rem;
+  border-bottom: 0;
+  &:hover {
+    color: #fff;
+  }
+}
