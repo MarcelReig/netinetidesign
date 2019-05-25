@@ -115,7 +115,6 @@ function build_scripts(done) {
           "node_modules/jquery-validation/dist/jquery.validate.js",
           "node_modules/popper.js/dist/umd/popper.min.js",
           "node_modules/bootstrap/dist/js/bootstrap.min.js",
-          "webservices.js",
           "main.js"
         ],
         {
@@ -142,7 +141,6 @@ function build_scripts(done) {
           "node_modules/jquery-validation/dist/jquery.validate.js",
           "node_modules/popper.js/dist/umd/popper.js",
           "node_modules/bootstrap/dist/js/bootstrap.js",
-          "webservices.js",
           "main.js"
         ],
         {
@@ -248,23 +246,24 @@ function clean_assets() {
   return del(["./assets"]);
 }
 
-const clean_all = gulp.series(
-  clean_jekyll,
-  clean_assets
-)
+const clean_all = gulp.series(clean_jekyll, clean_assets);
 
 // -----------------------------------------------------------------------------
 //   6: Localhost Server for development
 // -----------------------------------------------------------------------------
 
 function build_localServer() {
-  console.log("BrowserSync setting up the server in port 4000");
-  browserSync.init({
-    port: 4000,
-    server: {
-      baseDir: "./_site/"
-    }
-  });
+  if (config.production) {
+    console.log("BrowserSync setting up the server in port 4000");
+    browserSync.init({
+      port: 4000,
+      server: {
+        baseDir: "./_site/"
+      }
+    });
+  } else {
+    console.log("Hey girl you are in production mode!");
+  }
 }
 
 // reloading browsers
@@ -291,17 +290,23 @@ const build_all = gulp.series(
 // -----------------------------------------------------------------------------
 
 function watchFiles() {
-  console.log("watching files for changes");
-  gulp.watch("_assets/styles/**/*.scss", build_styles);
-  gulp.watch("_assets/scripts/*.js", build_scripts);
-  gulp.watch(
-    "_assets/images/**/*.+(jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG)",
-    gulp.series(sync_images, browsersync_reload)
-  );
-  gulp.watch(
-    ["**/*.+(html|md|markdown|MD)", "!_site/**/*.*"],
-    gulp.series(build_jekyll, browsersync_reload)
-  );
+  if (config.production) {
+    console.log("watching files for changes");
+    gulp.watch("_assets/styles/**/*.scss", build_styles);
+    gulp.watch("_assets/scripts/*.js", build_scripts);
+    gulp.watch(
+      "_assets/images/**/*.+(jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG)",
+      gulp.series(sync_images, browsersync_reload)
+    );
+    gulp.watch(
+      ["**/*.+(html|md|markdown|MD)", "!_site/**/*.*"],
+      gulp.series(build_jekyll, browsersync_reload)
+    );
+  } else {
+    console.log(
+      "Hey girl you are in production mode no needed to watch anything!"
+    );
+  }
 }
 
 // -----------------------------------------------------------------------------
