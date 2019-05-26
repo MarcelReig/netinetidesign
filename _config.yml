@@ -19,8 +19,6 @@ description: > # this means to ignore newlines until "baseurl:"
   This is a boilerplate for Jekyll and Bootstrap 4.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: johndoe
-github_username: johndoe
 
 # Social
 codepen_path: https://codepen.io/MarcelReig
@@ -82,4 +80,5 @@ exclude:
   - package.json
   - node_modules
   - README.md
+  - readme.md
   - CHANGELOG.md
