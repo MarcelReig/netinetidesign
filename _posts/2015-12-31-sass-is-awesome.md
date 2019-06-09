@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  "Sass, CSS con superpoderes"
+title: Sass, CSS con superpoderes
+meta:
+  description: Sass, CSS con superpoderes
 comments: true
 tags: css sass
 category: programacion
 image: sass.png
 ---
-
 
 Sass cubre los huecos de CSS añadiendole todo lo que le falta, haciendolo un lenguaje más inteligente, escalable y reutilizable.
 
@@ -52,17 +53,17 @@ Que nos ofrece Compass?
 
 ## Lo que necesitas antes de empezar:
 
-+ Sass está hecho en Ruby, por lo que necesitarás tenerlo instalado en tu máquina.
-+ En Windows puedes utilizar: [rubyinstaller](http://rubyinstaller.org/).
-+ En Linux puedes utilizar el sistema de gestión de paquetes apt o puede que esto te resulte útil: [rails ready](https://github.com/joshfng/railsready)
-+ En OS X estás de suerte, Ruby ya viene por defecto!
+- Sass está hecho en Ruby, por lo que necesitarás tenerlo instalado en tu máquina.
+- En Windows puedes utilizar: [rubyinstaller](http://rubyinstaller.org/).
+- En Linux puedes utilizar el sistema de gestión de paquetes apt o puede que esto te resulte útil: [rails ready](https://github.com/joshfng/railsready)
+- En OS X estás de suerte, Ruby ya viene por defecto!
 
 ## Instalación de Sass y Compass
 
 ## Terminal Lovers
 
 Sass y Compass se instalan como gemas de Ruby. <br />
-Puedes instalar solo Sass de este modo: 
+Puedes instalar solo Sass de este modo:
 
 ```
 $ gem install sass
@@ -94,56 +95,59 @@ Instalar Sass y Compass abre la terminal en Linux / OS X o Command Prompt en Win
 ```
 $ gem install compass
 ```
+
 Comprobar que se ha instalado correctamente:
 
 ```
-$ compass version 
+$ compass version
 ```
+
 Crear un proyecto con Compass:
 
 ```
-$ compass create nombre-del-proyecto 
+$ compass create nombre-del-proyecto
 ```
+
 Compilar Sass y decirle a Compass que vijile si hay cambios (ejecutar desde el directorio raiz de tu proyecto)
 
 ```
-$ compass watch 
+$ compass watch
 ```
 
 ## Aplicaciones GUI (graphical user interface):
 
 ### Gratuítas:
 
-+ [scout-app](http://mhs.github.io/scout-app/) Win & OSX
-+ [Koala-app](http://koala-app.com/#download) Win, OSX, Linux & Ubuntu
+- [scout-app](http://mhs.github.io/scout-app/) Win & OSX
+- [Koala-app](http://koala-app.com/#download) Win, OSX, Linux & Ubuntu
 
 ### De pago:
 
-+ [Codekit](http://incident57.com/codekit/) OSX $29
-+ [Hamer](http://hammerformac.com/) OSX $23.99
-+ [LiveReload](http://livereload.com/) OSX $9.99
-+ [compass.app](http://compass.kkbox.com/) Win, OSX & Linux $10
+- [Codekit](http://incident57.com/codekit/) OSX \$29
+- [Hamer](http://hammerformac.com/) OSX \$23.99
+- [LiveReload](http://livereload.com/) OSX \$9.99
+- [compass.app](http://compass.kkbox.com/) Win, OSX & Linux \$10
 
 ## Mi consejo?
 
 ### Utiliza la terminal!
+
 Aplicaciones como Mixture o Codekit pueden resultarte útiles, pero si lo único que quieres es compilar Sass, no me parece necesario. <br />
-Todo lo que tienes que hacer es Abrir la terminal, navegar hasta tu proyecto y escribir ```compass watch``` para que Compass compile tus archivos scss en css. <br />
+Todo lo que tienes que hacer es Abrir la terminal, navegar hasta tu proyecto y escribir `compass watch` para que Compass compile tus archivos scss en css. <br />
 Además en el desarrollo web moderno la terminal es una herramienta que se utiliza constantemente por lo que aprender su funcionamiento básico te resultará útil.
 
 ### Si tu editor no colorea el codigo .scss por defecto, puedes probar con uno de estos pluguins:
 
-+ [Atom, Sublime Text, TextMate](https://github.com/P233/Syntax-highlighting-for-Sass)
-+ [Atom](https://atom.io/packages/Atom-Syntax-highlighting-for-Sass)
-+ [Sublimetext2](https://github.com/n00ge/sublime-text-haml-sass)
-+ [Coda](https://github.com/secca/Coda-Sass-Plug-in)
-+ [Notepad ++](https://github.com/marvinlabs/notepad-plus-plus-scss-syntax-highlighting/)
+- [Atom, Sublime Text, TextMate](https://github.com/P233/Syntax-highlighting-for-Sass)
+- [Atom](https://atom.io/packages/Atom-Syntax-highlighting-for-Sass)
+- [Sublimetext2](https://github.com/n00ge/sublime-text-haml-sass)
+- [Coda](https://github.com/secca/Coda-Sass-Plug-in)
+- [Notepad ++](https://github.com/marvinlabs/notepad-plus-plus-scss-syntax-highlighting/)
 
-___Enlaces útiles:___
+**_Enlaces útiles:_**
 
-+ [Sass-lang](http://sass-lang.com/) _Sitio oficial de Sass_
-+ [Compass](http://compass-style.org/) _Sitio oficial de Compass_
-+ [The Sass Way](http://thesassway.com/) _Sitio web sobre Sass y Compass que no te puedes perder_
-+ [Sass meister](http://sassmeister.com/gist/11032479) _Herramienta online para testear Sass_
-+ [Wiseheart Design](http://wiseheartdesign.com/articles/2010/11/12/the-designers-guide-to-the-osx-command-prompt/) _Guía de la terminal para diseñadores_
-
+- [Sass-lang](http://sass-lang.com/) _Sitio oficial de Sass_
+- [Compass](http://compass-style.org/) _Sitio oficial de Compass_
+- [The Sass Way](http://thesassway.com/) _Sitio web sobre Sass y Compass que no te puedes perder_
+- [Sass meister](http://sassmeister.com/gist/11032479) _Herramienta online para testear Sass_
+- [Wiseheart Design](http://wiseheartdesign.com/articles/2010/11/12/the-designers-guide-to-the-osx-command-prompt/) _Guía de la terminal para diseñadores_

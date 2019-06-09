@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  "Visual Studio Code Tricks"
+title: Visual Studio Code Tricks
+meta:
+  description: Visual Studio Code Tricks
 comments: true
 category: programacion
 tags: vscode
@@ -31,7 +33,7 @@ Primero tienes que añadir esto al path:
 
 Abre la paleta de comandos de VS Code (⇧⌘P) y escribe ‘shell command’ para que te aparezca la opción Install ‘code’ command in PATH , seleccionala.
 
-A partir de ahora puedes abrir VS Code desde cualquier ubicación con la terminal solo escribiendo: `code` 
+A partir de ahora puedes abrir VS Code desde cualquier ubicación con la terminal solo escribiendo: `code`
 
 Para abrir el archivo o carpeta desde tu ubicación en la terminal añade un espacio y un punto detrás: `code .`
 

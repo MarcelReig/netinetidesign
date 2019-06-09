@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  "Git Tricks"
+title: Git Tricks
+meta:
+  description: Git Tricks
 comments: true
 category: programacion
 tags: git
@@ -77,8 +79,6 @@ Eliminar el origin actual y añadir uno nuevo:
 `$ git remote add origin https://Netinetidesign@bitbucket.org/Netinetidesign/mybooking-theme-nautic.git`
 
 `$ git push -u origin master`
-
-
 
 Para eliminar Git de un proyecto, desde la carpeta del proyecto:
 

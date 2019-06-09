@@ -1,6 +1,8 @@
 ---
 layout: post
-title: "Jekyll workflow con Gulp"
+title: Jekyll workflow con Gulp
+meta:
+  description: Jekyll workflow con Gulp
 comments: true
 category: programacion
 tags: jekyll

@@ -1,6 +1,8 @@
 ---
 layout: post
-title: "Regreso a las páginas web estáticas"
+title: Regreso a las páginas web estáticas
+meta:
+  description: Regreso a las páginas web estáticas
 comments: true
 category: programacion
 tags: jekyll

@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  "Ámbito y clausuras en JavaScript"
+title: "Ámbito y clausuras en JavaScript"
+meta:
+  description:
 comments: true
 category: programacion
 tags: javascript
@@ -22,7 +24,7 @@ JavaScript no soporta ámbito de bloque por lo que crear una variable dentro de 
 Ejemplo de variable global:
 
 ```js
-var varGlobal = 'Soy una variable global';
+var varGlobal = "Soy una variable global";
 console.log(varGlobal); // Soy una variable global
 ```
 
@@ -49,6 +51,6 @@ number(); // 2
 
 Enlaces útiles
 
-+ [mdn JavaScript Closures](https://developer.mozilla.org/es/docs/Web/JavaScript/Closures)
+- [mdn JavaScript Closures](https://developer.mozilla.org/es/docs/Web/JavaScript/Closures)
 
-+ [mdn JavaScript Funciones](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Funciones)
+- [mdn JavaScript Funciones](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Funciones)

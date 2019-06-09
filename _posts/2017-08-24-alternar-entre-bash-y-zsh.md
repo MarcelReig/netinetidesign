@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  "Alternar entre Bash y zsh"
+title: Alternar entre Bash y zsh
+meta:
+  description: Alternar entre Bash y zsh
 comments: true
 tags: mac
 category: programacion

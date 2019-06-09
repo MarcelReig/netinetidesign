@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  "Apuntes de Node"
+title: Apuntes de Node
+meta:
+  description: Apuntes de Node
 category: programacion
 tags: npm node
 image: packages.jpg
@@ -56,7 +58,6 @@ Eliminar node_modules de tu proyecto y volver a instalar las dependencias de nue
 
 `$ npm install`
 
-
 ## Node version manager
 
 [nvm](https://github.com/creationix/nvm) nos permite tener múltiples versiones de node en nuestro sistema y trabajar con una versión específica de node en un proyecto.
@@ -64,7 +65,6 @@ Eliminar node_modules de tu proyecto y volver a instalar las dependencias de nue
 Instalar nvm:
 
 `$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash`
-
 
 Descargar e instalar la última versión de node:
 
@@ -89,5 +89,3 @@ Utilizar una versión específica:
 Desinstalar una versión:
 
 `$ nvm uninstall <version>`
-
-

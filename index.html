@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Jekyll Bootstrap Boilerplate
+title: Netinetidesign
 meta:
-description: Cool Jekyll Bootrstrap Boilerplate
+  description: Front-end developer Menorca, Jekyll, Gulp, JavaScript, Vue, Diseño
 ---
 
 <!-- ======================================================== -->
@@ -27,49 +27,86 @@ description: Cool Jekyll Bootrstrap Boilerplate
         </h1>
         <hr class="small" />
         <p class="color-white lead">Diseñador y Desarrollador Frontend</p>
-        <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
+        <ul
+          class="social-icons icon-circle icon-rotate list-unstyled list-inline"
+        >
           <li>
-            <a href="{{ site.codepen_path }}" target="blank"><i class="fab fa-codepen"></i></a>
+            <a href="{{ site.codepen_path }}" target="blank"
+              ><i class="fab fa-codepen"></i
+            ></a>
           </li>
           <li>
-            <a href="{{ site.github_path }}" target="blank"><i class="fab fa-github"></i></a>
+            <a href="{{ site.github_path }}" target="blank"
+              ><i class="fab fa-github"></i
+            ></a>
           </li>
           <li>
-            <a href="{{ site.twitter_path }}" target="blank"><i class="fab fa-twitter"></i></a>
+            <a href="{{ site.twitter_path }}" target="blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
           </li>
           <li>
-            <a href="{{ site.behance_path }}" target="blank"><i class="fab fa-behance"></i></a>
+            <a href="{{ site.behance_path }}" target="blank"
+              ><i class="fab fa-behance"></i
+            ></a>
           </li>
           <li>
-            <a href="{{ site.spotify_path }}" target="blank"><i class="fab fa-spotify"></i></a>
+            <a href="{{ site.spotify_path }}" target="blank"
+              ><i class="fab fa-spotify"></i
+            ></a>
           </li>
         </ul>
       </div>
     </div>
   </div>
 </div>
-<div class="container">
-  <div class="row">
-    <div class="col-md">
-      <!-- ======================================================== -->
-      <!-- ============ PORFOLIO ================================== -->
-      <!-- ======================================================== -->
-      <section id="portfolio">
-        <div class="title-wrapper">
-          <div class="title-block p50">
-            <h1>Portfolio</h1>
-            <p class="lead color-gray-400">
-              Últimos trabajos
-            </p>
-          </div>
-        </div>
-    </div>
-  </div>
-</div>
+
+<!-- ======================================================== -->
+<!-- ============ PORFOLIO ================================== -->
+<!-- ======================================================== -->
 
 <div class="container">
   <div class="row">
     <div class="col-md">
+      <div class="title-wrapper">
+        <div class="title-block p50">
+          <h1>Portfolio</h1>
+          <p class="lead color-gray-400">
+            Últimos trabajos
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <!-- Themoviedb-search -->
+      <div class="block-right-text">
+        <div class="aligner-item">
+          <h3>The movie db search</h3>
+          <ul>
+            <li>jQuery</li>
+            <li>Ajax</li>
+            <li>Bootstrap 4</li>
+            <li>Themovie-db API</li>
+          </ul>
+          <a
+            href="https://marcelreig.github.io/moviedb-search/"
+            class="btn btn-outline-dark"
+            target="blank"
+            >Ver proyecto</a
+          >
+        </div>
+      </div>
+      <div class="block-right-img">
+        <img
+          src="{{ site.baseurl }}/assets/images/portfolio/themoviedb-search.png"
+        />
+      </div>
+      <!-- Mybooking -->
       <div class="block-left-text">
         <div class="aligner-item">
           <h3>Mybooking</h3>
@@ -79,29 +116,46 @@ description: Cool Jekyll Bootrstrap Boilerplate
             <li>Bootstrap 4</li>
             <li>Jekyll</li>
           </ul>
-          <a href="https://mybooking.es" class="btn btn-outline-dark" target="blank">Ver proyecto</a>
+          <a
+            href="https://mybooking.es"
+            class="btn btn-outline-dark"
+            target="blank"
+            >Ver proyecto</a
+          >
         </div>
       </div>
       <div class="block-right-img">
-        <img src="{{ site.baseurl }}/assets/images/portfolio/mybooking-web.png" />
+        <img
+          src="{{ site.baseurl }}/assets/images/portfolio/mybooking-web.png"
+        />
       </div>
+      <!-- mybooking-kit -->
       <div class="block-right-text">
         <div class="aligner-item">
           <h3>mybooking kit</h3>
           <ul>
+            <li>mybooking API</li>
+            <li>Require JS</li>
             <li>Generador de tareas Gulp</li>
             <li>Compilación y prefijado CSS con Sass</li>
             <li>Sistema de plantillas con Panini</li>
             <li>Agrupación de modulos JavaScript con webpack</li>
             <li>Servidor local con BrowserSync</li>
           </ul>
-          <a href="https://github.com/mybooking-es/mybooking-kit-html" class="btn btn-outline-dark"
-            target="blank">Ver proyecto</a>
+          <a
+            href="https://github.com/mybooking-es/mybooking-kit-html"
+            class="btn btn-outline-dark"
+            target="blank"
+            >Ver proyecto</a
+          >
         </div>
       </div>
       <div class="block-left-img">
-        <img src="{{ site.baseurl }}/assets/images/portfolio/mybooking-kit.png" />
+        <img
+          src="{{ site.baseurl }}/assets/images/portfolio/mybooking-kit.png"
+        />
       </div>
+      <!-- bootstrap-starter -->
       <div class="block-left-text">
         <div class="aligner-item">
           <h3>Bootstrap Starter</h3>
@@ -113,13 +167,20 @@ description: Cool Jekyll Bootrstrap Boilerplate
             <li>Agrupación de modulos JavaScript con webpack</li>
             <li>Servidor local con BrowserSync</li>
           </ul>
-          <a href="https://yuraksisa.github.io/bootstrap-starter/" class="btn btn-outline-dark" target="blank">Ver
-            proyecto</a>
+          <a
+            href="https://yuraksisa.github.io/bootstrap-starter/"
+            class="btn btn-outline-dark"
+            target="blank"
+            >Ver proyecto</a
+          >
         </div>
       </div>
       <div class="block-right-img">
-        <img src="{{ site.baseurl }}/assets/images/portfolio/bootstrap-starter.png" />
+        <img
+          src="{{ site.baseurl }}/assets/images/portfolio/bootstrap-starter.png"
+        />
       </div>
+      <!-- jekyll-starter -->
       <div class="block-right-text">
         <div class="aligner-item">
           <h3>Jekyll Starter</h3>
@@ -132,12 +193,20 @@ description: Cool Jekyll Bootrstrap Boilerplate
             <li>Ready for Google Analytics</li>
             <li>Disqus comments</li>
           </ul>
-          <a href="https://github.com/MarcelReig/jekyll-bootstrap-boilerplate" class="btn btn-outline-dark" target="blank">Ver proyecto</a>
+          <a
+            href="https://github.com/MarcelReig/jekyll-bootstrap-boilerplate"
+            class="btn btn-outline-dark"
+            target="blank"
+            >Ver proyecto</a
+          >
         </div>
       </div>
       <div class="block-left-img">
-        <img src="{{ site.baseurl }}/assets/images/portfolio/jekyll-starter.png" />
+        <img
+          src="{{ site.baseurl }}/assets/images/portfolio/jekyll-starter.png"
+        />
       </div>
+      <!-- barcelona se mueve -->
       <div class="block-left-text">
         <div class="aligner-item">
           <h3>Barcelona se mueve</h3>
@@ -147,13 +216,22 @@ description: Cool Jekyll Bootrstrap Boilerplate
             <li>Servidor local con BrowserSync</li>
             <li>ZURB Template</li>
           </ul>
-          <a href="https://www.elperiodico.com/es/epbrands/ajuntament-barcelona/barcelona-mueve/"
-            class="btn btn-outline-dark" target="blank">Ver proyecto</a>
+          <a
+            href="https://www.elperiodico.com/es/epbrands/ajuntament-barcelona/barcelona-mueve/"
+            class="btn btn-outline-dark"
+            target="blank"
+            >Ver proyecto</a
+          >
         </div>
       </div>
       <div class="block-right-img">
-        <img src="{{ site.baseurl }}/assets/images/portfolio/barcelona-se-mueve.png" />
+        <img
+          src="{{
+            site.baseurl
+          }}/assets/images/portfolio/barcelona-se-mueve.png"
+        />
       </div>
+      <!-- portfolio item -->
       <div class="block-right-text">
         <div class="aligner-item">
           <h3>Barcelona con B de Barrio</h3>
@@ -164,13 +242,20 @@ description: Cool Jekyll Bootrstrap Boilerplate
             <li>VisSense.js</li>
             <li>ZURB Template</li>
           </ul>
-          <a href="https://www.elperiodico.com/es/epbrands/ajuntament-barcelona/barrio-barcelona/"
-            class="btn btn-outline-dark" target="blank">Ver proyecto</a>
+          <a
+            href="https://www.elperiodico.com/es/epbrands/ajuntament-barcelona/barrio-barcelona/"
+            class="btn btn-outline-dark"
+            target="blank"
+            >Ver proyecto</a
+          >
         </div>
       </div>
       <div class="block-left-img">
-        <img src="{{ site.baseurl }}/assets/images/portfolio/barrio-a-barrio.png" />
+        <img
+          src="{{ site.baseurl }}/assets/images/portfolio/barrio-a-barrio.png"
+        />
       </div>
+      <!-- portfolio item -->
       <div class="block-left-text">
         <div class="aligner-item">
           <h3>Metrópolis</h3>
@@ -181,13 +266,18 @@ description: Cool Jekyll Bootrstrap Boilerplate
             <li>Slick Carousell</li>
             <li>ZURB Template</li>
           </ul>
-          <a href="https://www.elperiodico.com/es/epbrands/metropolis-barcelona/pdu-repensar-ciudad-metropolitana/"
-            class="btn btn-outline-dark" target="blank">Ver proyecto</a>
+          <a
+            href="https://www.elperiodico.com/es/epbrands/metropolis-barcelona/pdu-repensar-ciudad-metropolitana/"
+            class="btn btn-outline-dark"
+            target="blank"
+            >Ver proyecto</a
+          >
         </div>
       </div>
       <div class="block-right-img">
         <img src="{{ site.baseurl }}/assets/images/portfolio/metropolis.png" />
       </div>
+      <!-- portfolio item -->
       <div class="block-right-text">
         <div class="aligner-item">
           <h3>La urgencia climàtica</h3>
@@ -198,13 +288,22 @@ description: Cool Jekyll Bootrstrap Boilerplate
             <li>Slick Carousell</li>
             <li>ZURB Template</li>
           </ul>
-          <a href="https://www.elperiodico.com/es/epbrands/ajuntament-barcelona/urgencia-climatica-barcelona/"
-            class="btn btn-outline-dark" target="blank">Ver proyecto</a>
+          <a
+            href="https://www.elperiodico.com/es/epbrands/ajuntament-barcelona/urgencia-climatica-barcelona/"
+            class="btn btn-outline-dark"
+            target="blank"
+            >Ver proyecto</a
+          >
         </div>
       </div>
       <div class="block-left-img">
-        <img src="{{ site.baseurl }}/assets/images/portfolio/urgencia-climatica.png" />
+        <img
+          src="{{
+            site.baseurl
+          }}/assets/images/portfolio/urgencia-climatica.png"
+        />
       </div>
+      <!-- portfolio item -->
       <div class="block-left-text">
         <div class="aligner-item">
           <h3>Menos residuos, más vida</h3>
@@ -214,13 +313,20 @@ description: Cool Jekyll Bootrstrap Boilerplate
             <li>VisSense.js</li>
             <li>ZURB Template</li>
           </ul>
-          <a href="http://especiales.elperiodico.com/brands/menos-residuos-mas-vida-barcelona.html"
-            class="btn btn-outline-dark" target="blank">Ver proyecto</a>
+          <a
+            href="http://especiales.elperiodico.com/brands/menos-residuos-mas-vida-barcelona.html"
+            class="btn btn-outline-dark"
+            target="blank"
+            >Ver proyecto</a
+          >
         </div>
       </div>
       <div class="block-right-img">
-        <img src="{{ site.baseurl }}/assets/images/portfolio/webdoc-residuos.png" />
+        <img
+          src="{{ site.baseurl }}/assets/images/portfolio/webdoc-residuos.png"
+        />
       </div>
+      <!-- portfolio item -->
       <div class="block-right-text">
         <div class="aligner-item">
           <h3>La vida en decibelios</h3>
@@ -229,15 +335,20 @@ description: Cool Jekyll Bootrstrap Boilerplate
             <li>Diseño responsive</li>
             <li>ZURB Template</li>
           </ul>
-          <a href="http://especiales.elperiodico.com/brands/vida-decibelios-contaminacion-acustica-barcelona.html"
-            class="btn btn-outline-dark" target="blank">Ver proyecto</a>
+          <a
+            href="http://especiales.elperiodico.com/brands/vida-decibelios-contaminacion-acustica-barcelona.html"
+            class="btn btn-outline-dark"
+            target="blank"
+            >Ver proyecto</a
+          >
         </div>
       </div>
-
-
       <div class="block-left-img">
-        <img src="{{ site.baseurl }}/assets/images/portfolio/webdoc-ruido.png" />
+        <img
+          src="{{ site.baseurl }}/assets/images/portfolio/webdoc-ruido.png"
+        />
       </div>
+      <!-- portfolio item -->
       <div class="block-left-text">
         <div class="aligner-item">
           <h3>¿En qué ciudad quieres vivir?</h3>
@@ -249,13 +360,18 @@ description: Cool Jekyll Bootrstrap Boilerplate
             <li>Slides.js</li>
             <li>Panini from ZURB</li>
           </ul>
-          <a href="http://especiales.elperiodico.com/brands/en-que-ciudad-quieres-vivir-barcelona-urbanismo.html"
-            class="btn btn-outline-dark" target="blank">Ver proyecto</a>
+          <a
+            href="http://especiales.elperiodico.com/brands/en-que-ciudad-quieres-vivir-barcelona-urbanismo.html"
+            class="btn btn-outline-dark"
+            target="blank"
+            >Ver proyecto</a
+          >
         </div>
       </div>
       <div class="block-right-img">
         <img src="{{ site.baseurl }}/assets/images/portfolio/bcn.png" />
       </div>
+      <!-- portfolio item -->
       <div class="block-right-text">
         <div class="aligner-item">
           <h3>Cuidemos la mente</h3>
@@ -266,13 +382,18 @@ description: Cool Jekyll Bootrstrap Boilerplate
             <li>fullPage.js</li>
             <li>Panini from ZURB</li>
           </ul>
-          <a href="http://especiales.elperiodico.com/brands/cuidem-ment-salut-mental-barcelona.html"
-            class="btn btn-outline-dark" target="blank">Ver proyecto</a>
+          <a
+            href="http://especiales.elperiodico.com/brands/cuidem-ment-salut-mental-barcelona.html"
+            class="btn btn-outline-dark"
+            target="blank"
+            >Ver proyecto</a
+          >
         </div>
       </div>
       <div class="block-left-img">
         <img src="{{ site.baseurl }}/assets/images/portfolio/webdoc.png" />
       </div>
+      <!-- portfolio item -->
       <div class="block-left-text">
         <div class="aligner-item">
           <h3>Marina Ilustración</h3>
@@ -284,12 +405,18 @@ description: Cool Jekyll Bootrstrap Boilerplate
             <li>Formulario de contacto</li>
             <li>ZURB Template</li>
           </ul>
-          <a href="http://marinailustracion.com/" class="btn btn-outline-dark" target="blank">Ver proyecto</a>
+          <a
+            href="http://marinailustracion.com/"
+            class="btn btn-outline-dark"
+            target="blank"
+            >Ver proyecto</a
+          >
         </div>
       </div>
       <div class="block-right-img">
         <img src="{{ site.baseurl }}/assets/images/portfolio/marina.png" />
       </div>
+      <!-- portfolio item -->
       <div class="block-right-text">
         <div class="aligner-item">
           <h3>Calaventura</h3>
@@ -303,99 +430,129 @@ description: Cool Jekyll Bootrstrap Boilerplate
             <li>Wordpress</li>
             <li>Foundation 5</li>
           </ul>
-          <a href="http://calaventura.com/" class="btn btn-outline-dark" target="blank">Ver proyecto</a>
+          <a
+            href="http://calaventura.com/"
+            class="btn btn-outline-dark"
+            target="blank"
+            >Ver proyecto</a
+          >
         </div>
       </div>
       <div class="block-left-img">
         <img src="{{ site.baseurl }}/assets/images/portfolio/calaventura.png" />
       </div>
+      <!-- portfolio item -->
       <div class="block-left-text">
         <div class="aligner-item">
-            <h3>Clínica dental dra. Piñol</h3>
-            <ul>
-              <li>Clníca Dental</li>
-              <li>Diseño responsive</li>
-              <li>Galería de imágenes</li>
-              <li>Google maps</li>
-              <li>Foundation 5</li>
-            </ul>
-          <a href="http://www.xn--clinicadentaldoctorapiol-mlc.com/" class="btn btn-outline-dark" target="blank">Ver proyecto</a>
+          <h3>Clínica dental dra. Piñol</h3>
+          <ul>
+            <li>Clníca Dental</li>
+            <li>Diseño responsive</li>
+            <li>Galería de imágenes</li>
+            <li>Google maps</li>
+            <li>Foundation 5</li>
+          </ul>
+          <a
+            href="http://www.xn--clinicadentaldoctorapiol-mlc.com/"
+            class="btn btn-outline-dark"
+            target="blank"
+            >Ver proyecto</a
+          >
         </div>
       </div>
       <div class="block-right-img">
         <img src="{{ site.baseurl }}/assets/images/portfolio/clinica.png"" />
       </div>
+      <!-- portfolio item -->
       <div class="block-right-text">
         <div class="aligner-item">
-            <h3>Nebot Lucas</h3>
-        <ul>
-          <li>Empresa Cítricos</li>
-          <li>Diseño responsive</li>
-          <li>Video pantalla completa</li>
-          <li>Galería de imágenes</li>
-          <li>Google maps</li>
-          <li>Formulario de contacto</li>
-        </ul>
-          <a href="http://www.nebotlucas.com/" class="btn btn-outline-dark" target="blank">Ver proyecto</a>
+          <h3>Nebot Lucas</h3>
+          <ul>
+            <li>Empresa Cítricos</li>
+            <li>Diseño responsive</li>
+            <li>Video pantalla completa</li>
+            <li>Galería de imágenes</li>
+            <li>Google maps</li>
+            <li>Formulario de contacto</li>
+          </ul>
+          <a
+            href="http://www.nebotlucas.com/"
+            class="btn btn-outline-dark"
+            target="blank"
+            >Ver proyecto</a
+          >
         </div>
       </div>
       <div class="block-left-img">
         <img src="{{ site.baseurl }}/assets/images/portfolio/nebot-lucas.png" />
       </div>
+      <!-- portfolio item -->
       <div class="block-left-text">
         <div class="aligner-item">
-            <h3>Doral Auto</h3>
-        <ul>
-          <li>Alquiler de coches</li>
-          <li>Diseño responsive</li>
-          <li>Panel reseñas de Google</li>
-          <li>Google maps</li>
-          <li>Bootstrap</li>
-        </ul>
-          <a href="https://alquilercocheenmenorca.com/" class="btn btn-outline-dark" target="blank">Ver proyecto</a>
+          <h3>Doral Auto</h3>
+          <ul>
+            <li>Alquiler de coches</li>
+            <li>Diseño responsive</li>
+            <li>Panel reseñas de Google</li>
+            <li>Google maps</li>
+            <li>Bootstrap</li>
+          </ul>
+          <a
+            href="https://alquilercocheenmenorca.com/"
+            class="btn btn-outline-dark"
+            target="blank"
+            >Ver proyecto</a
+          >
         </div>
       </div>
       <div class="block-right-img">
         <img src="{{ site.baseurl }}/assets/images/portfolio/doralauto.png" />
       </div>
-
+      <!-- portfolio item -->
       <div class="block-right-text">
         <div class="aligner-item">
-        <h3>Tòful Cafe</h3>
-        <ul>
-          <li>Ideal para Bar Restaurante</li>
-          <li>Diseño responsive</li>
-          <li>Galería de imágenes</li>
-          <li>Google maps</li>
-        </ul>
-          <a href="https://marcelreig.github.io/toful-cafe/" class="btn btn-outline-dark" target="blank">Ver proyecto</a>
+          <h3>Tòful Cafe</h3>
+          <ul>
+            <li>Ideal para Bar Restaurante</li>
+            <li>Diseño responsive</li>
+            <li>Galería de imágenes</li>
+            <li>Google maps</li>
+          </ul>
+          <a
+            href="https://marcelreig.github.io/toful-cafe/"
+            class="btn btn-outline-dark"
+            target="blank"
+            >Ver proyecto</a
+          >
         </div>
       </div>
       <div class="block-left-img">
         <img src="{{ site.baseurl }}/assets/images/portfolio/bar-toful.png" />
       </div>
+      <!-- portfolio item -->
       <div class="block-left-text">
         <div class="aligner-item">
-            <h3>Dj Oldie</h3>
-            <ul>
-              <li>Ideal para Músico / Dj</li>
-              <li>Diseño responsive</li>
-              <li>Video de You Tube</li>
-              <li>Reproductor audio SoundCloud</li>
-              <li>Galería de imágenes</li>
-              <li>Formulario de contacto</li>
-            </ul>
-          <a href="https://marcelreig.github.io/dj-oldie/" class="btn btn-outline-dark" target="blank">Ver proyecto</a>
+          <h3>Dj Oldie</h3>
+          <ul>
+            <li>Ideal para Músico / Dj</li>
+            <li>Diseño responsive</li>
+            <li>Video de You Tube</li>
+            <li>Reproductor audio SoundCloud</li>
+            <li>Galería de imágenes</li>
+            <li>Formulario de contacto</li>
+          </ul>
+          <a
+            href="https://marcelreig.github.io/dj-oldie/"
+            class="btn btn-outline-dark"
+            target="blank"
+            >Ver proyecto</a
+          >
         </div>
       </div>
       <div class="block-right-img">
         <img src="{{ site.baseurl }}/assets/images/portfolio/dj-oldie.png" />
       </div>
-   
-      
-
-
-      </section>
+      <!-- /portfolio -->
     </div>
   </div>
 </div>
