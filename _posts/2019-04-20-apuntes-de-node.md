@@ -89,3 +89,13 @@ Utilizar una versión específica:
 Desinstalar una versión:
 
 `$ nvm uninstall <version>`
+
+Establecer version de node por defecto con nvm
+
+Instalar la versión que quieres:
+
+`$ nvm install 6.1.0`
+
+Establecer 6.1.0 (u otra versión) por defecto:
+
+`$ nvm alias default 6.1.0`
