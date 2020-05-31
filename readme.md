@@ -1,4 +1,6 @@
-# Jekyll Bootstrap starter theme
+# Marcel Reig Jekyll site
+
+Based on my own Jekyll Bootstrap starter theme
 
 Step 1: Clone repository from GitHub
 
@@ -31,17 +33,17 @@ Step 4: Generate production-ready files
 $ gulp --environment production
 ```
 
-This is my environment on macOS Mojave 10.14.4
+This is my environment on macOS Catalina 10.15.2
 
 ```shell
 $ node -v
-v11.2.0
+v12.17.0
 $ ruby -v
-ruby 2.6.2p47 (2019-03-13 revision 67232) [x86_64-darwin18]
+ruby 2.7.1p83 (2020-03-31 revision a0c7c23c9c) [x86_64-darwin19]
 bundler -v
-Bundler version 1.17.2
+Bundler version 2.1.4
 $ npm -v
-6.9.0
+6.14.5
 $ gulp -v
 [20:19:33] CLI version 2.0.1
 [20:19:33] Local version 4.0.0

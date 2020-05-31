@@ -10,7 +10,7 @@
   "author": "Marcel Reig <marcelreig@gmail.com> (http://netinetidesign.com)",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "4.3.1",
+    "bootstrap": "^4.5.0",
     "cowsay": "^1.4.0",
     "jquery": "^3.4.0",
     "jquery-validation": "^1.19.0",
@@ -20,7 +20,7 @@
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "del": "^4.1.0",
-    "gulp": "^4.0.0",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-cache": "^1.1.1",
     "gulp-concat": "^2.6.1",
