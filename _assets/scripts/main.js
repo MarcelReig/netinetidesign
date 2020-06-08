@@ -81,11 +81,3 @@ jQuery(document).ready(function ($) {
   });
 });
 
-// Code Badges
-$(function () {
-  codeBadges("marcelreig")
-    .freecodecamp("marcelreig")
-    .github("MarcelReig")
-    .codecademy("Netinetidesign")
-    .treehouse("marcelreig");
-});

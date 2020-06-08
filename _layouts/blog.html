@@ -11,20 +11,16 @@ layout: default
       <ul class="post-list">
         {% for post in paginator.posts %}
         <li>
-          <a class="post-link" href="{{ post.url }}">
-            <h2>
-              {{ post.title }}
-            </h2>
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-          </a>
           <!-- Featured image -->
-          <div class="post-image-wrapper mb30">
+          <div class="post-image-wrapper">
             <img src="{{ site.baseurl }}/assets/images/blog/{{ post.image }}" />
           </div>
-          {{ post.excerpt }}
-          <a href="{{ site.baseurl }}{{ post.url }}"
-            >Leer más <i class="fas fa-long-arrow-alt-right"></i
-          ></a>
+          <a class="post-link" href="{{ post.url }}">
+            <h4>
+              {{ post.title }}
+            </h4>
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          </a>
         </li>
         {% endfor %}
       </ul>

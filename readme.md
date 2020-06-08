@@ -1,6 +1,6 @@
 # Marcel Reig Jekyll site
 
-Based on my own Jekyll Bootstrap starter theme
+Based Jekyll Bootstrap starter theme
 
 Step 1: Clone repository from GitHub
 

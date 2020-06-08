@@ -33,5 +33,11 @@
     "gulp-util": "^3.0.8",
     "node-sass": "^4.13.1",
     "pump": "^3.0.0"
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "not IE_Mob 11",
+    "maintained node versions"
+  ]
 }
