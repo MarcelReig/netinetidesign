@@ -6,7 +6,7 @@ meta:
 comments: true
 category: programacion
 tags: vscode
-image: vscode.jpg
+image: vs-code.png
 ---
 
 ### Ajuste automático de línea en VSCode

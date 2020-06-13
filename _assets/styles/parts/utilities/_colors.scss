@@ -88,13 +88,6 @@ $bg-color: #faf6f5;
   color: $bg-color;
 }
 
-.bg-gradient {
-  background-image: linear-gradient(
-    to right bottom,
-    $brand-color,
-    darken($color: $bg-color, $amount: 20%)
-  );
-}
 
 .bg-gray-50 {
   background-color: $gray-50;

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Git Tricks
+title: Git comandos básicos
 meta:
-  description: Git Tricks
+  description: Git comandos básicos
 comments: true
 category: programacion
 tags: git

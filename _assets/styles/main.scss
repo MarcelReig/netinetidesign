@@ -3,7 +3,57 @@
 // $Parts
 @import "parts/index";
 
+// Social
+
+.social-icons {
+  padding-left: 0;
+  list-style: none;
+  li {
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  .fab {
+    color: $gray-700;
+    font-size: 1.8em;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+    &:hover {
+      color: $gray-500;
+      transform: scale(1.1);
+      transform: scale(1.1) rotate(360deg);
+    }
+  }
+}
+.landing-text {
+  text-align: center;
+}
 // Landing styles
+.landing-wrapper {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .social-icons li:first-child {
+    padding-left: 0;
+  }
+  .landing-wrapper {
+    height: 700px;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .landing-text {
+    text-align: left;
+  }
+}
+
 .img-circle {
   background-image: url("../images/perfil.jpg");
   background-color: lighten($color: $brand-color, $amount: 25%);
@@ -15,7 +65,6 @@
     background-color: white;
     transition: background-color 0.25s;
   }
-
   border-radius: 50%;
   width: 200px;
   height: 200px;
@@ -23,18 +72,6 @@
 hr.small {
   width: 200px;
   border-top: 1px solid $transparent-white;
-}
-
-// Components
-.btn-js {
-  color: #ffe484;
-  border-color: #ffe484;
-  background-color: transparent;
-  background-image: none;
-  &:hover {
-    background-color: #ffe484;
-    color: #212529;
-  }
 }
 
 // Circulo go back button

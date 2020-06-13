@@ -225,7 +225,7 @@ function build_jekyll() {
       })
       .pipe(
         shell([
-          'bundle exec jekyll build --drafts  --config "_config.yml,_config_localhost.yml"',
+          'bundle exec jekyll build  --config "_config.yml,_config_localhost.yml"',
         ])
       )
       .on("error", gutil.log);

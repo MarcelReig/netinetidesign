@@ -19583,7 +19583,7 @@ $(window).bind("load", function () {
   var height = $(window).height();
   height = height - pos.top;
   height = height - footer.height();
-  height -= 100; // padding footer (40 40) + copyright (56)
+  height -= 32; // paddings footer 
   if (height > 0) {
     footer.css({
       "margin-top": height + "px",
@@ -19656,4 +19656,3 @@ jQuery(document).ready(function ($) {
     );
   });
 });
-

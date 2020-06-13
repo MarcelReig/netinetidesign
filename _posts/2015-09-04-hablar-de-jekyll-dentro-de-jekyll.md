@@ -15,8 +15,9 @@ Como hablar de {{ site.double-lcb }} site.variables {{ site.double-rcb }} dentro
 
 La solución más rápida que he encontrado es crear unas variables en config.yml para poder escribir dobles llaves y llaves simples sin que jekyll interprete su contenido como variables.
 
-```yml
+```md
 # Para hablar de Jekyll dentro de Jekyll
+
 lcb: "{{ site.lcb }}"
 rcb: "{{ site.rcb }}"
 double-lcb: "{{ site.double-lcb }}"

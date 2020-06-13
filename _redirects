@@ -1,0 +1,4 @@
+# redirects
+post/Instalación-Octopress   /blog/
+post/apuntes-de-node         /post/npm-comandos-basicos
+post/Git-tricks              /post/git-comandos-basicos 
