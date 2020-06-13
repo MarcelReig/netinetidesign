@@ -18,7 +18,7 @@ email: marcelreig@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Desarrollador front-end Menorca
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "netinetidesign.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Social
 codepen_path: https://codepen.io/MarcelReig
