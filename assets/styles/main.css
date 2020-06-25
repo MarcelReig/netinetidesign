@@ -11071,7 +11071,7 @@ ul.social-links,
 }
 
 .block-left-img img {
-  width: 80%;
+  max-height: 200px;
   margin: auto;
 }
 
@@ -11125,11 +11125,11 @@ ul.social-links,
 }
 
 .block-right-img img {
-  width: 80%;
+  max-height: 200px;
   margin: auto;
 }
 
-@media screen and (min-width: 64em) {
+@media (min-width: 992px) {
   .block-left-text,
   .block-right-img,
   .block-left-img,
@@ -11144,6 +11144,10 @@ ul.social-links,
   .block-right-img,
   .block-right-text {
     float: right;
+  }
+  .block-left-img img,
+  .block-right-img img {
+    max-height: 400px;
   }
 }
 

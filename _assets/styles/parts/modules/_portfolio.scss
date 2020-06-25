@@ -9,7 +9,7 @@
   float: left;
   overflow: hidden;
   img {
-    width: 80%;
+    max-height: 200px;
     margin: auto;
   }
 }
@@ -56,13 +56,13 @@
   width: 100%;
   float: left;
   img {
-    width: 80%;
+    max-height: 200px;
     margin: auto;
   }
 }
 
-// Large and up
-@media screen and (min-width: 64em) {
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
   .block-left-text,
   .block-right-img,
   .block-left-img,
@@ -77,5 +77,9 @@
   .block-right-img,
   .block-right-text {
     float: right;
+  }
+  .block-left-img img,
+  .block-right-img img {
+    max-height: 400px;
   }
 }
