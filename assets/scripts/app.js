@@ -19575,20 +19575,34 @@ return Popper;
 //# sourceMappingURL=bootstrap.js.map
 
 //scripts
-/* Sticky footer */
 
-$(window).bind("load", function () {
-  var footer = $("footer");
-  var pos = footer.position();
-  var height = $(window).height();
-  height = height - pos.top;
-  height = height - footer.height();
-  height -= 32; // paddings footer 
-  if (height > 0) {
-    footer.css({
-      "margin-top": height + "px",
-    });
+/* Sticky footer 
+  Requirement: The footer must not have margin
+*/
+$(document).ready(function () {
+  function stickyFooter() {
+    var $footer = $(".l-footer");
+    var footerTop = $footer.position().top; // Footer top position
+    var footerHeight = $footer.outerHeight(false); //Footer FULL Height including paddings (false not to apply margin because we calculate it)
+    var windowHeight = $(window).height();
+
+    var marginTop = windowHeight - footerTop - footerHeight;
+
+    if (marginTop > 0) {
+      $footer.css({
+        "margin-top": marginTop + "px",
+      });
+    }
   }
+  stickyFooter();
+
+  $(window).bind("scroll", function (event) {
+    stickyFooter();
+  });
+
+  $(window).bind("resize", function (event) {
+    stickyFooter();
+  });
 });
 
 // Disable dropdown on small screens

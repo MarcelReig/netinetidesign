@@ -11397,7 +11397,7 @@ ul.social-links,
 }
 
 .landing-wrapper {
-  height: 500px;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11408,7 +11408,6 @@ ul.social-links,
     padding-left: 0;
   }
   .landing-wrapper {
-    height: 700px;
     flex-direction: row-reverse;
     align-items: center;
   }

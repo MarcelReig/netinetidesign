@@ -162,7 +162,7 @@ function build_images() {
   // Construccion JEKYLL
   return (
     gulp
-      .src("./_assets/images/**/*.+(jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG)")
+      .src("./_assets/images/**/*.+(jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG|ico)")
       // Caching images that ran through imagemin
       .pipe(
         cache(
@@ -195,7 +195,7 @@ function build_images() {
 // WATCH : Actualizacion
 function sync_images() {
   return gulp
-    .src("./_assets/images/**/*.+(jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG)")
+    .src("./_assets/images/**/*.+(jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG|ico)")
     .pipe(newer("./assets/images"))
     .pipe(gulp.dest("./assets/images"))
     .pipe(gulp.dest("./_site/assets/images"))
@@ -286,7 +286,7 @@ function watchFiles() {
   gulp.watch("_assets/styles/**/*.scss", build_styles);
   gulp.watch("_assets/scripts/*.js", build_scripts);
   gulp.watch(
-    "_assets/images/**/*.+(jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG)",
+    "_assets/images/**/*.+(ico|jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG)",
     gulp.series(sync_images, browsersync_reload)
   );
   gulp.watch(
