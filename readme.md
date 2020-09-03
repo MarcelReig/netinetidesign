@@ -1,6 +1,6 @@
 # Marcel Reig Jekyll site
 
-Based Jekyll Bootstrap starter theme
+Based on my own Jekyll Bootstrap starter theme
 
 Step 1: Clone repository from GitHub
 
@@ -17,19 +17,19 @@ $ bundle install
 
 Step 3: Install Node dependencies
 
-```
+```shell
 $ npm install
 ```
 
 Step 3: Run the development server
 
-```
+```shell
 $ gulp
 ```
 
 Step 4: Generate production-ready files
 
-```
+```shell
 $ gulp --environment production
 ```
 
@@ -47,4 +47,10 @@ $ npm -v
 $ gulp -v
 [20:19:33] CLI version 2.0.1
 [20:19:33] Local version 4.0.0
+```
+
+Recuerda utilizar tu gemset
+
+```shell
+rvm use 2.7.0@netinetidesign
 ```

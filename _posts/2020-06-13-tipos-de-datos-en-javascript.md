@@ -188,19 +188,10 @@ var b = new String("tarta de plátano"); // objeto
 
 <div class="spacer-mini"></div>
 
-<div class="callout warning">
-<p><i class="fa fa-exclamation" aria-hidden="true"></i> Advertencia:</p>
-<p>No soy un experto en JavaScript, solo trato de aprender el lenguaje y esto son mis apuntes, por lo que puede que haya algún error en este post.</p>
-</div>
-
 <hr>
 
 Referencias:
 
-[Understanding Data Types in JavaScript](https://www.digitalocean.com/community/tutorials/understanding-data-types-in-javascript)
+[Understanding Data Types in JavaScript](https://www.digitalocean.com/community/tutorials/understanding-data-types-in-javascript){:target="_blank"}
 
-[What data types are supported in Javascript?](http://lucybain.com/blog/2015/js-data-types/)
-
-[Detailed overview of well-known symbols](https://rainsoft.io/detailed-overview-of-well-known-symbols/)
-
-[The Secret Life of JavaScript Primitives](https://javascriptweblog.wordpress.com/2010/09/27/the-secret-life-of-javascript-primitives/)
+[The Secret Life of JavaScript Primitives](https://javascriptweblog.wordpress.com/2010/09/27/the-secret-life-of-javascript-primitives/){:target="_blank"}

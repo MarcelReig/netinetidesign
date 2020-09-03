@@ -7,10 +7,10 @@ $(document).ready(function () {
   function stickyFooter() {
     var $footer = $(".l-footer");
     var footerTop = $footer.position().top; // Footer top position
-    var footerHeight = $footer.outerHeight(false); //Footer FULL Height including paddings (false not to apply margin because we calculate it)
+    var footerHeight = $footer.outerHeight(true); //Footer FULL Height including paddings
     var windowHeight = $(window).height();
 
-    var marginTop = windowHeight - footerTop - footerHeight;
+    var marginTop = windowHeight - footerTop - footerHeight - 1; // I don't know why we need - 1px
 
     if (marginTop > 0) {
       $footer.css({
