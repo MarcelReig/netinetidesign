@@ -232,7 +232,6 @@ console.log(hiphopBand);
 
 ```sh
 Output
-
 [[object Object] {
   genre: "Hip Hop",
   name: "Wu Tang"
