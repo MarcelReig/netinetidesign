@@ -59,6 +59,9 @@ layout: default
           <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
       </article>
+      {% if site.disqus.shortname %}
+      {% include disqus_comments.html %}
+      {% endif %}
     </div>
   </div>
 </div>
