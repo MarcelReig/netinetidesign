@@ -11,19 +11,23 @@ image: vs-code.png
 
 ### Ajuste automático de línea en VSCode
 
-Tienes 2 opciones:
+Si no quieres que el código se extienda horizontalmente fuera del espacio disponible y te aparezca el scroll horizontal.
 
-- Atajo de teclado alt + z
+Tienes varias opciones:
 
-- Desde el menú superior ver Alternar ajuste automático de línea
+- Atajo de teclado `alt` + `z`
+
+- Desde el menú superior ver > Alternar ajuste automático de línea o View > Toggle  word wrap si lo tienes en inglés.
+
+- Configurar desde settings Editor: Word Wrap
 
 <!-- more -->
 
 ### Abrir terminal integrado en VSCode
 
-Tienes 3 opcciones:
+Tienes 3 opciones:
 
-- El atajo de teclado: ctrl + ^` (acento grave)
+- El atajo de teclado: `ctrl` + ``` ` ``` (acento grave)
 - Menú superior Ver Terminal integrado
 - Desde la paleta de comandos (shift cmd P) Ver: Alternar terminal integrado
 
@@ -31,7 +35,7 @@ Tienes 3 opcciones:
 
 Primero tienes que añadir esto al path:
 
-Abre la paleta de comandos de VS Code (⇧⌘P) y escribe ‘shell command’ para que te aparezca la opción Install ‘code’ command in PATH , seleccionala.
+Abre la paleta de comandos de VS Code (`⇧⌘P`) y escribe `shell command` para que te aparezca la opción Install 'code' command in PATH , seleccionala.
 
 A partir de ahora puedes abrir VS Code desde cualquier ubicación con la terminal solo escribiendo: `code`
 
@@ -39,7 +43,7 @@ Para abrir el archivo o carpeta desde tu ubicación en la terminal añade un esp
 
 ### Edición multilínea en VSCode
 
-Para seleccionar coincidencias, seleccionas con el cursor y despues utilizas: alt+cmd + teclas de dirección para seleccionar las coincidencias que quieras. esc para volver a un solo cursor.
+Para seleccionar coincidencias, seleccionas con el cursor y después utilizas: `alt` + `cmd` + teclas de dirección para seleccionar las coincidencias que quieras. `esc` para volver a un solo cursor.
 
 ### Vista previa de Marckdown
 

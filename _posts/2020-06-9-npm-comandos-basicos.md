@@ -9,8 +9,6 @@ category: programacion
 image: npm.png
 ---
 
-<div class="mb-5"></div>
-
 Ver la versión actual de node:
 
 `$ node -v`

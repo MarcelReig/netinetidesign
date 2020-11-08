@@ -85,9 +85,9 @@ Si ya tienes [Ruby](https://www.ruby-lang.org/en/downloads/) y [RubyGems](https:
 
 Si al ejecutar `bundle exec jekyll serve` te da un error con la fecha del post de bienvenida, tienes que abrir el archivo de configuración \_config.yml y excluir vendor.
 
-<div class="callout primary">
+<div class="alert alert-info" role="alert">
   <p><i class="fa fa-sticky-note-o" aria-hidden="true"></i> Nota:</p>
-  <p>Oficilamente Jekyll no tiene soporte para Windows, pero puede instalarse en Windows, con un poco de trabajo extra.</p>
+  <p>Oficialmente Jekyll no tiene soporte para Windows, pero puede instalarse en Windows, con un poco de trabajo extra.</p>
   Instrucciones para instalar <a href="https://jekyllrb.com/docs/windows/#installation">Jekyll en Windows.</a>
 </div>
 
@@ -95,11 +95,11 @@ Si al ejecutar `bundle exec jekyll serve` te da un error con la fecha del post d
 
 Los Temas en Jekyll también son gemas de Ruby, puede que esto no sea raro en el mundo de Ruby pero si para los neófitos como yo.
 
-Que significa esto?
+Qué significa esto?
 
 Cuando creas un nuevo sitio en Jekyll con `jekyll new new-shiny-site`, Jekyll instala un sitio con el tema [Minima](https://github.com/jekyll/minima), con el sistema de gemas.
 
-Con este sistema algunos de los directorios como `assets`,`_layouts`,`_includes` y `_sass` se quedan ocultos en las gemas del tema, aunque sean leidos y procesados por Jekyll, no los vas a ver en tu directorio principal y por lo tanto, no vas a poder trabajar con ellos.
+Con este sistema algunos de los directorios como `assets`,`_layouts`,`_includes` y `_sass` se quedan ocultos en las gemas del tema, aunque sean leídos y procesados por Jekyll, no los vas a ver en tu directorio principal y por lo tanto, no vas a poder trabajar con ellos.
 
 ### Convertir un tema basado en gemas en un tema normal
 
@@ -114,20 +114,17 @@ Eliminar referencias al gem theme:
 
 Si has llegado hasta aquí, felicidades, ahora tienes un tema totalmente independiente!
 
-<div class="callout warning">
+<div class="alert alert-warning" role="alert">
 <p><i class="fa fa-exclamation" aria-hidden="true"></i> Advertencia:</p>
   <p>Hemos eliminado todas las referencias al tema inicial por lo que ahora tu Jekyll va a dar errores.</p>
-  <p>Te dará el error de que no encuentra los svg de los iconos sociales en el footer, abreló y elimina esa parte y cualquier otra que te de errores, ahora el tema es tuyo! No tengas miedo de cargarte todo lo que no te haga falta de minima theme.</p>
+  <p>Te dará el error de que no encuentra los svg de los iconos sociales en el footer, elimina esa parte y cualquier otra que te de errores, ahora el tema es tuyo! No tengas miedo de cargarte todo lo que no te haga falta de minima theme.</p>
   <p>Las clases, puedes eliminarlas o reusarlas si te gusta como están nombradas, pero ya no hacen referencia a ningún css, tendrás que crear tus propios estilos para darle forma de nuevo al tema. Tranquilo, minima es un tema muy simple y no hay mucho que eliminar realmente.</p>
 </div>
-
-<div class="spacer"></div>
 
 Hemos instalado Jekyll y preparado los archivos para nuestro tema, nos hemos cargado las referencias al theme original y nos hemos quedado con un churro de website, enhorabuena!!
 
 Edita un poco los estilos para que la cosa quede presentable y pasamos a la siguiente tarea, añadir Gulp y Browsersync.
 
-<div class="spacer"></div>
 ### [Gulp](https://gulpjs.com/)
 
 Gulp es un automatizador de tareas hecho en Node.js.
@@ -153,17 +150,6 @@ Después tienes que instalarlo en tu proyecto:
 ```html
 npm install --save-dev gulp
 ```
-
-<div class="callout primary">
-<p><i class="fa fa-sticky-note-o" aria-hidden="true"></i> Nota:</p>
-<p>En este post no voy a explicar el funcionamiento básico de Gulp. Si quieres aprender Gulp puedes empezar por aquí:</p>
-<p>Si te gustan los videos te recomiendo la serie en español:
- <a href="https://www.youtube.com/watch?v=gsxSoPjz0XY&list=PLM-Y_YQmMEqBscmoT5y_W91oUnr_D4ulf">Crea tu workflow front-end con Gulp.js</a> de Juan Andrés Nuñez.</p>
-<p>Si prefieres leer prueba con este artículo: <a href="https://www.smashingmagazine.com/2014/06/building-with-gulp/">Gulp – How To Build And Develop Websites</a></p>
-
-</div>
-
-<div class="spacer"></div>
 
 ### [Browsersync](https://browsersync.io/)
 
@@ -210,7 +196,7 @@ Tienes mucha libertad para hacer esto, yo para empezar a funcionar sin complicar
 - Procesar Markdown, gestionar los archivos del Blog y montar los layouts con Liquid y YAML.
 - Copiar los assets de la raiz a \_site.
 
-Jekyll por defecto copia todos los archivos y carpetas que encuentra en la raiz con algunas excepciones:
+Jekyll por defecto copia todos los archivos y carpetas que encuentra en la raíz con algunas excepciones:
 
 - Carpetas nombradas con un guión bajo al principio.
 - Archivos con un punto al principio.
@@ -244,10 +230,11 @@ Para que te hagas una idea, estos son los archivos que estoy copiando e ignorand
 - node_modules
 - scss
 
-<div class="callout primary">
+<div class="alert alert-info" role="alert">
 <p><i class="fa fa-sticky-note-o" aria-hidden="true"></i> Nota:</p>
-<p>Algunos desarrolladores prefieren procesar los assets con Gulp y copiarlos directamente en _dist en vez de copiarlos a la raiz y dejar que Jekyll los copie después a _dist como estoy haciendo yo.</p>
+<p>Algunos desarrolladores prefieren procesar los assets con Gulp y copiarlos directamente en _dist en vez de copiarlos a la raíz y dejar que Jekyll los copie después a _dist como estoy haciendo yo.</p>
 </div>
+
 ### Tareas para Gulp
 
 - Procesar los estilos
@@ -279,12 +266,12 @@ Para ejecutar Jekyll desde Gulp utilizo el plugin [Gulp-shell](https://www.npmjs
 
 ```js
 // Build Jekyll
-gulp.task("build:jekyll", function() {
+gulp.task("build:jekyll", function () {
   return gulp
     .src("index.html", { read: false })
     .pipe(
       shell([
-        "bundle exec jekyll build --drafts --config _config.yml,_config.dev.yml"
+        "bundle exec jekyll build --drafts --config _config.yml,_config.dev.yml",
       ])
     )
     .on("error", gutil.log);
@@ -295,12 +282,12 @@ Y así es como estoy lanzando Browsersync desde Gulp:
 
 ```js
 // Serve
-gulp.task("serve", ["sass", "build:jekyll"], function() {
+gulp.task("serve", ["sass", "build:jekyll"], function () {
   browserSync.init({
     port: 4000,
     server: {
-      baseDir: "./_site"
-    }
+      baseDir: "./_site",
+    },
   });
 });
 ```
@@ -313,7 +300,7 @@ Para esto tenemos que crear una tarea watch en Gulp:
 
 ```js
 // Watch
-gulp.task("watch", function() {
+gulp.task("watch", function () {
   gulp.watch(["scss/*.scss"], ["build:styles"]);
   gulp.watch(["js/*js"], ["build:jekyll"]);
   gulp.watch(
@@ -323,10 +310,9 @@ gulp.task("watch", function() {
 });
 ```
 
-<div class="callout warning">
+<div class="alert alert-info" role="alert">
   <p><i class="fa fa-sticky-note-o" aria-hidden="true"></i> Nota:</p>
   <p>Es importante excluir la carpeta _site de la tarea watch, para que browsersync no entre en un loop de recargar el navegador.</p>
-
 </div>
 
 Crear un archivo de configuración distinto para desarrollo no es obligatorio pero puede ser útil.
@@ -334,7 +320,7 @@ Crear un archivo de configuración distinto para desarrollo no es obligatorio pe
 En mi caso he creado un archivo \_config.dev.yml en el que he cambiado la url del proyecto para desarrollo.
 
 ```yml
-url: http://netinetidesign.com // url en produccción
+url: http://netinetidesign.com // url en producción
 url: http://localhost:4000     // url en desarrollo
 ```
 
@@ -342,9 +328,10 @@ Para sobreescribir tu config.yml con config.dev.yml cuando ejecutes jekyll en de
 
 ```js
 "bundle exec jekyll build --config _config.yml,_config.dev.yml";
+
 ```
 
 <div class="callout">
-  <p>Este es <a href="https://github.com/MarcelReig/foundation-6-jekyll/blob/master/gulpfile.js">my gulpfile</a> terminado por si lo necesitas.</p>
+  <p>Este es <a href="https://github.com/MarcelReig/jekyll-bootstrap-boilerplate/blob/master/gulpfile.js">my gulpfile</a> terminado por si lo necesitas.</p>
 </div>
 <div class="spacer"></div>

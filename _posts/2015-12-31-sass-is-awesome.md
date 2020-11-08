@@ -9,11 +9,11 @@ category: programacion
 image: sass.png
 ---
 
-Sass cubre los huecos de CSS añadiendole todo lo que le falta, haciendolo un lenguaje más inteligente, escalable y reutilizable.
+Sass cubre los huecos de CSS añadiéndole todo lo que le falta, haciéndolo un lenguaje más inteligente, escalable y reutilizable.
 
 - Variables
 - Anidamiento
-- Herencía entre selectoress
+- Herencia entre selectores
 - Funciones y estructuras de control
 - Operaciones lógicas
 - Mixins

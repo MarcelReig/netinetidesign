@@ -64,6 +64,7 @@ A cada carácter de una cadena se le asigna una posición, empezando por el prim
 
 ```js
 "tarta de plátano vegana con masa casera";
+
 ```
 
 ### Number
@@ -117,7 +118,7 @@ Symbol es un tipo de datos cuyos valores son <strong>únicos</strong> e <strong>
 
 Un Objeto es un valor en memoria al que podemos acceder por un identificador.
 
-En JavaScript los objetos pueden ser vistos como una collección de propiedades.
+En JavaScript los objetos pueden ser vistos como una colección de propiedades.
 
 Un Objeto en notación literal tiene este aspecto:
 
@@ -131,13 +132,13 @@ Podemos escribirlo en multiples líneas para más claridad
 var persona = {
   nombre: "Marcel",
   edad: "38",
-  ciudad: "Alaior"
+  ciudad: "Alaior",
 };
 ```
 
 ### Determinar tipos utilizando el operador typeof
 
-El operador typeof devuelve una cadena indicando el el tipo de valor de una variable.
+El operador typeof devuelve una cadena indicando el tipo de valor de una variable.
 
 Definamos unas variables:
 
@@ -174,7 +175,7 @@ Digamos que Javascript convierte los tipos primitivos en objetos entre bastidore
 
 Excepto para null y undefined, todos los valores primitivos tienen lo que se conoce como primitive wrapper object, lo que crea la versión en Objeto de su equivalente primitivo.
 
-Podemos crear objetos wrapper esplícitamente utilizando sus constructores definidos:
+Podemos crear objetos wrapper explícitamente utilizando sus constructores definidos:
 
 - String para el primitivo string.
 - Number para el primitivo number.
@@ -192,6 +193,6 @@ var b = new String("tarta de plátano"); // objeto
 
 Referencias:
 
-[Understanding Data Types in JavaScript](https://www.digitalocean.com/community/tutorials/understanding-data-types-in-javascript){:target="_blank"}
+[Understanding Data Types in JavaScript](https://www.digitalocean.com/community/tutorials/understanding-data-types-in-javascript){:target="\_blank"}
 
-[The Secret Life of JavaScript Primitives](https://javascriptweblog.wordpress.com/2010/09/27/the-secret-life-of-javascript-primitives/){:target="_blank"}
+[The Secret Life of JavaScript Primitives](https://javascriptweblog.wordpress.com/2010/09/27/the-secret-life-of-javascript-primitives/){:target="\_blank"}

@@ -11,7 +11,7 @@ image: front-end.jpg
 
 El desarrollador Front-end se encuentra en un punto medio entre los diseñadores y los programadores.
 
-El desarrollador Front-end se encarga de la maquetación en **HTML5**, **CSS** y **JavaScrip**t del diseño entregado por el equipo de UI/UX.
+El desarrollador Front-end es quien se encarga de la maquetación en **HTML5**, **CSS** y **JavaScript** del diseño entregado por el equipo de UI/UX.
 
 **Tecnologías con las que trabaja cada día un desarrollador Front-end:**
 
@@ -22,7 +22,7 @@ El desarrollador Front-end se encarga de la maquetación en **HTML5**, **CSS** y
 * Frameworks CSS como Bootstrap o Zurb Foundation.
 * Sistema de control de versiones (Git).
 * Librerías Javascript (jQuery, Vue, React).
-* Preprocesadores de CSS: Sass, Less, Stylus, Post CSS.after
+* Preprocesadores de CSS: Sass, Less, Stylus, Post CSS.
 * Sistemas de plantillas: Handlebars, Pug, Panini, Nunjucks, Haml.
 * Preprocesadores de JavaScript: LiveScript, TypeScript, CoffeScript.
 
@@ -42,14 +42,14 @@ El desarrollador Front-end se encarga de la maquetación en **HTML5**, **CSS** y
 - Vue
 - Angular
 - Node
-- Graph QL
 
 **Manejo de programas de diseño:**
 
 - Sketch
+- Figma
 - Adobe XD
-- Illustrator
 - Photoshop
+- Illustrator
 
 **Cursos para aprender practicando online:**
 
@@ -110,9 +110,9 @@ Escribir **front-end** en el buscador de estas webs:
 
 Seguir a reclutadores de IT en Twitter y Linkedin
 
-Si te motiva aprender a programar, tarde o temprano dependiendo de tu background y capacidades llegará el día en el que estarás preparado para acceder a ofertas de trabajo del sector.
+Si te motiva aprender a programar, y le dedicas tiempo cada día, tarde o temprano dependiendo de tu background y capacidades llegará el día en el que estarás preparado para acceder a ofertas de trabajo del sector.
 
-Pero si solo te sientes atraído por la idea de tener un trabajo cool y bien remunerado el camino se te puede hacer largo.
+Si solo te sientes atraído por la idea de tener un trabajo cool y bien remunerado el camino se te puede hacer largo.
 
 Si cuando estás inmerso en el código, leyendo documentación y haciendo pruebas te pasan las horas sin darte cuenta y te sientes bien con eso, es una buena señal.
 

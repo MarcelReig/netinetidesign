@@ -11,7 +11,7 @@ image: nvm.jpg
 
 # [nvm](https://github.com/creationix/nvm)
 
-nvm nos permite tener múltiples versiones de node en nuestro sistema y trabajar con diferentes versiones en cada proyecto.
+**nvm** nos permite tener múltiples versiones de node en nuestro sistema y trabajar con diferentes versiones en cada proyecto.
 
 Instalar nvm:
 

@@ -17,7 +17,7 @@ La variables que se crean dentro de una función son variables locales y solamen
 
 <!-- more -->
 
-Las variables que se crean fuera de cualquier funcion se convierten en variables globales y son accesibles desde cualquier punto del programa.
+Las variables que se crean fuera de cualquier función se convierten en variables globales y son accesibles desde cualquier punto del programa.
 
 JavaScript no soporta ámbito de bloque por lo que crear una variable dentro de una estructura de bloque como un bucle for no restringe la variable a este bucle.
 

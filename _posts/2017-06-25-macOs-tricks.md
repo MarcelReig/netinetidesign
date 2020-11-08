@@ -21,4 +21,4 @@ No se mostrará hasta que no ejecutes:
 
 `$ killall Dock`
 
-Para quitar los espacios simplemente arrastralos fuera del Dock.
+Para quitar los espacios simplemente los arrastramos fuera del Dock.

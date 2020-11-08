@@ -159,7 +159,7 @@ function build_scripts(done) {
 // -----------------------------------------------------------------------------
 
 function build_images() {
-  // Construccion JEKYLL
+  // Construcción JEKYLL
   return (
     gulp
       .src("./_assets/images/**/*.+(jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG|ico)")
@@ -192,7 +192,7 @@ function build_images() {
       .pipe(gulp.dest("./assets/images"))
   );
 }
-// WATCH : Actualizacion
+// WATCH : Actualización
 function sync_images() {
   return gulp
     .src("./_assets/images/**/*.+(jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG|ico)")

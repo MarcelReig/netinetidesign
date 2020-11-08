@@ -15,9 +15,13 @@ Iniciar un repositorio local desde un projecto existente:
 
 `$ git init`
 
-Añadir los archivos:
+Añadir todos los archivos:
 
 `$ git add —all`
+
+Lo que es lo mismo que:
+
+`$ git add .`
 
 Subir los archivos a un repositorio remoto:
 
@@ -92,3 +96,10 @@ Primero añade node_modules a .gitignore, después ejecuta lo siguiente:
 `$ git commit -m 'Remove the now ignored directory node_modules'`
 
 `$ git push origin master`
+
+Bajar todas las nuevas ramas del repositorio remoto:
+
+`$ git clone url-repo`
+
+El comando git branch, nos lista las ramas locales.
+si le pasamos el parámetro --all (o -a), nos mostrará las locales y las remotas.

@@ -11,11 +11,9 @@ image: static.jpg
 
 Hace unos 10 años cuando descubrí Wordpress, fue una revolución, de repente podía crear un Blog con la famosa instalación de 5 minutos sin apenas conocimientos de PHP, con un panel de administración amigable para los clientes, un directorio de plugins en continuo crecimiento y unos requisitos de servidor bastante básicos, en este escenario hacer páginas web estáticas estaba bien pero no era lo último, por así decirlo.
 
-<!-- more -->
+Sabemos que la herramienta no es lo importante si no como la usas, dependiendo de tu habilidad como desarrollador, WP puede ser la mejor opción para tu proyecto, pero hoy en día tenemos otras opciones con sus ventajas e inconvenientes que vale la pena analizar.
 
-Sabemos que la herramienta no es lo importante si no como la usas, dependiendo de tu habilidad como desarrollador, WP puede ser la mejor opción para tu proyecto, pero tenemos otras opciones con sus ventajas e inconvenientes que vale la pena analizar.
-
-Ahora podemos aprovechar plataformas de terceros para incluir servicios en cualquier sitio web, sin necesidad de utilizar lenguages de servidor.
+Ahora podemos aprovechar plataformas de terceros para incluir servicios en cualquier sitio web, sin necesidad de utilizar lenguajes de servidor.
 
 - Comentarios: [Disqus](https://disqus.com/), [Facebook comments](https://developers.facebook.com/docs/plugins/comments/).
 - Formularios: [Formspree](https://www.formspree.io/), [Simple Form](https://www.formspree.io/), [Formingo](https://www.formingo.co/)...
@@ -50,7 +48,7 @@ Otros generadores que me parecen interesantes son [Hugo](https://gohugo.io/) y [
 
 Hay generadores de sitios web estáticos de todos los sabores, puedes encontrarlos escritos en .Net, Ruby, Phyton, PHP, Go o JavaScript. Pero finalmente con todos obtienes archivos en los lenguajes que conoce el navegador que son HTML, CSS y JavaScript.
 
-Los generadores de sitios estáticos funcionan vía línea de comandos, soportan uno o más sistemas de plantillas, te montan un servidor local para testear y un sitio web estático final para producción.
+Los generadores de sitios estáticos funcionan vía línea de comandos, soportan uno o más sistemas de plantillas, te montan un servidor local para testar y un sitio web estático final para producción.
 
 En [StaticGen](https://www.staticgen.com/) puedes elegir el que más te guste.
 
