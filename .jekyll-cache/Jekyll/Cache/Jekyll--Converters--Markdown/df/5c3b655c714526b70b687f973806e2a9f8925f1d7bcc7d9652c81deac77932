@@ -1,6 +1,4 @@
-I"@L<p><a href="https://jekyllrb.com/">Jekyll</a> es un generador de sitios web estáticos preparado para blogging creado en Ruby por <a href="https://www.wikiwand.com/en/Tom_Preston-Werner">Tom Preston</a>, el cofundador de Github.</p>
-
-<!-- more -->
+I"ZL<p><a href="https://jekyllrb.com/">Jekyll</a> es un generador de sitios web estáticos preparado para blogging creado en Ruby por <a href="https://www.wikiwand.com/en/Tom_Preston-Werner">Tom Preston</a>, el cofundador de Github.</p>
 
 <p>Jekyll es el motor detrás de <a href="https://pages.github.com/">GitHub Pages</a> por lo que puedes alojar tu sitio web en GitHub de forma gratuita.</p>
 
@@ -46,7 +44,7 @@ title: I have no idea what i'm doing
 # también puede ser 'index.md' con YAML Frontmatter
 </code></pre></div></div>
 
-<p><strong>_config.yml</strong> es el archivo de configuración de Jekyll donde podemos declarar las variables que queramos. Para aceder a las variables declaradas en _config.yml desde nuestras plantillas utilizaremeos la sintaxis {{ site.mivariable }}.</p>
+<p><strong>_config.yml</strong> es el archivo de configuración de Jekyll donde podemos declarar las variables que queramos. Para aceder a las variables declaradas en _config.yml desde nuestras plantillas utilizaremeos la sintaxis {{ site.mi_variable }}.</p>
 
 <p><strong>_drafts</strong> es la carpeta donde guardamos los posts en los que estamos trabajando, pero que todavía no hemos terminado.</p>
 
@@ -54,25 +52,22 @@ title: I have no idea what i'm doing
 
 <p>Si ya tienes <a href="https://www.ruby-lang.org/en/downloads/">Ruby</a> y <a href="https://rubygems.org/pages/download">RubyGems</a> instalados en tu máquina, puedes crear un nuevo sitio en Jekyll de este modo:</p>
 
-<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Instalar las gemas Jekyll y Bundler a traves de RubyGems</span>
-<span class="s">~ $ gem install jekyll bundler</span>
+<p>Instalar las gemas Jekyll y Bundler a traves de RubyGems
+<code class="language-plaintext highlighter-rouge">$ gem install jekyll bundler</code></p>
 
-<span class="c1"># Crear un nuevo sito Jekyll en ./myblog</span>
-<span class="s">~ $ jekyll new myblog</span>
+<p>Crear un nuevo sito Jekyll en ./myblog
+<code class="language-plaintext highlighter-rouge">$ jekyll new myblog</code></p>
 
-<span class="c1"># Cambiar a tu nuevo directorio</span>
-<span class="s">~ $ cd myblog</span>
+<p>Cambiar a tu nuevo directorio
+<code class="language-plaintext highlighter-rouge">$ cd myblog</code></p>
 
-<span class="c1"># Montar el sitio en el servidor local</span>
-<span class="s">~/myblog $ bundle exec jekyll serve</span>
+<p>Montar el sitio en el servidor local
+<code class="language-plaintext highlighter-rouge">$ bundle exec jekyll serve</code></p>
 
-<span class="c1"># Ahora puedes ver tu sitio en http://localhost:4000</span>
-</code></pre></div></div>
-
-<p>Si al ejecutar <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code> te da un error con la fecha del post de bienvenida, tienes que abrir el archivo de configuración _config.yml y excluir vendor.</p>
+<p>Ahora puedes ver tu sitio en <code class="language-plaintext highlighter-rouge">http://localhost:4000</code></p>
 
 <div class="alert alert-info" role="alert">
-  <p><i class="fa fa-sticky-note-o" aria-hidden="true"></i> Nota:</p>
+  <p><i class="fas fa-sticky-note"></i> Nota:</p>
   <p>Oficialmente Jekyll no tiene soporte para Windows, pero puede instalarse en Windows, con un poco de trabajo extra.</p>
   Instrucciones para instalar <a href="https://jekyllrb.com/docs/windows/#installation">Jekyll en Windows.</a>
 </div>
@@ -87,20 +82,20 @@ title: I have no idea what i'm doing
 
 <p>Con este sistema algunos de los directorios como <code class="language-plaintext highlighter-rouge">assets</code>,<code class="language-plaintext highlighter-rouge">_layouts</code>,<code class="language-plaintext highlighter-rouge">_includes</code> y <code class="language-plaintext highlighter-rouge">_sass</code> se quedan ocultos en las gemas del tema, aunque sean leídos y procesados por Jekyll, no los vas a ver en tu directorio principal y por lo tanto, no vas a poder trabajar con ellos.</p>
 
-<h3 id="convertir-un-tema-basado-en-gemas-en-un-tema-normal">Convertir un tema basado en gemas en un tema normal</h3>
+<h3 id="convertir-un-tema-basado-en-gemas-en-un-tema-en-el-que-podemos-trabajar">Convertir un tema basado en gemas en un tema en el que podemos trabajar</h3>
 
 <p>Para poder crear nuestros temas queremos que todos los archivos estén a mano en el directorio principal de Jekyll, no en el mundo mágico de las gemas.</p>
 
-<p>Puedes descargar <a href="https://github.com/jekyll/minima">minima</a> para copiar los archivos del theme en el directorio principal y eliminar las referencias al tema original basado en gemas, en este caso minima.</p>
+<p>Puedes descargar <a href="https://github.com/jekyll/minima" target="_blank">minima</a> para copiar los archivos del theme en el directorio principal y eliminar las referencias al tema original basado en gemas, en este caso minima.</p>
 
 <p>Eliminar referencias al gem theme:</p>
 
-<ul>
-  <li>Abre <code class="language-plaintext highlighter-rouge">Gemfile</code> y elimina <code class="language-plaintext highlighter-rouge">gem "minima", "~&gt; 2.0"</code>.</li>
-  <li>Abre <code class="language-plaintext highlighter-rouge">_config.yml</code>y elimina <code class="language-plaintext highlighter-rouge">theme: minima</code>.</li>
-</ul>
+<ol>
+  <li>Abre el archivo <code class="language-plaintext highlighter-rouge">Gemfile</code> y elimina o comenta la línea donde hace referencia al theme <code class="language-plaintext highlighter-rouge">gem "minima", "~&gt; 2.0"</code>.</li>
+  <li>Abre el archivo de configuración de Jekyll <code class="language-plaintext highlighter-rouge">_config.yml</code> y elimina <code class="language-plaintext highlighter-rouge">theme: minima</code>.</li>
+</ol>
 
-<p>Si has llegado hasta aquí, felicidades, ahora tienes un tema totalmente independiente!</p>
+<p>Si has llegado hasta aquí, felicidades! Ahora tienes un tema totalmente independiente (e inservible).</p>
 
 <div class="alert alert-warning" role="alert">
 <p><i class="fa fa-exclamation" aria-hidden="true"></i> Advertencia:</p>
@@ -112,7 +107,6 @@ title: I have no idea what i'm doing
 <p>Hemos instalado Jekyll y preparado los archivos para nuestro tema, nos hemos cargado las referencias al theme original y nos hemos quedado con un churro de website, enhorabuena!!</p>
 
 <p>Edita un poco los estilos para que la cosa quede presentable y pasamos a la siguiente tarea, añadir Gulp y Browsersync.</p>
-
 <h3 id="gulp"><a href="https://gulpjs.com/">Gulp</a></h3>
 
 <p>Gulp es un automatizador de tareas hecho en Node.js.</p>
@@ -137,7 +131,7 @@ title: I have no idea what i'm doing
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install --save-dev gulp
 </code></pre></div></div>
 
-<h3 id="browsersync"><a href="https://browsersync.io/">Browsersync</a></h3>
+<h3 id="browsersync"><a href="https://browsersync.io/" target="_blank">Browsersync</a></h3>
 
 <p>Browsersync es un servidor local muy útil para desarrollo.</p>
 
@@ -166,87 +160,84 @@ title: I have no idea what i'm doing
 
 <p>Browsersync te facilita cuatro URL:</p>
 
-<p><img src="/assets/images/blog/browsersync-url.png" alt="Browsersync UI" class="img-fluid" /></p>
-
-<ul>
+<ol>
   <li><strong>Local</strong>: donde puedes ver tu proyecto.</li>
   <li><strong>Externa</strong>: la dirección donde cualquier usuario en tu red local (Lan o Wifi) puede ver el proyecto.</li>
   <li><strong>UI</strong>: Browserync UI te muestra todas las opciones de Browsersync.</li>
   <li><strong>UI Externa</strong>: La UI para cualquier usuario de tu red.</li>
-</ul>
+</ol>
+
+<p><img src="/assets/images/blog/browsersync-url.png" alt="Browsersync UI" class="img-fluid" /></p>
 
 <p>Este es el aspecto de la UI de Browsersync, que en mi caso está en el puerto 3001.</p>
 
 <p><img src="/assets/images/blog/browsersync-ui.png" alt="Browsersync UI" class="img-fluid" /></p>
-
-<div class="spacer"></div>
-
 <h3 id="determinar-que-tareas-quieres-que-haga-jekyll-y-que-tareas-quieres-que-haga-gulp">Determinar que tareas quieres que haga Jekyll y que tareas quieres que haga Gulp</h3>
 
 <p>Tanto Jekyll como Gulp pueden procesar Sass, copiar assets a _dist y lanzar un server local, por lo que tendrás que elegir que tareas quieres que haga cada uno.</p>
 
-<p>Tienes mucha libertad para hacer esto, yo para empezar a funcionar sin complicarme mucho estoy haciendolo así:</p>
-
+<p>Tienes mucha libertad para hacer esto, esta es mi elección personal:</p>
 <h3 id="tareas-para-jekyll">Tareas para Jekyll</h3>
 
-<ul>
+<ol>
   <li>Limpiar el contenido de _site cada vez que se ejecuta jekyll build.</li>
   <li>Procesar Markdown, gestionar los archivos del Blog y montar los layouts con Liquid y YAML.</li>
   <li>Copiar los assets de la raiz a _site.</li>
-</ul>
+</ol>
 
 <p>Jekyll por defecto copia todos los archivos y carpetas que encuentra en la raíz con algunas excepciones:</p>
 
-<ul>
+<ol>
   <li>Carpetas nombradas con un guión bajo al principio.</li>
   <li>Archivos con un punto al principio.</li>
   <li>Archivos que especifiques ignorar en tu _config.yml.</li>
-</ul>
+</ol>
 
 <p>Para que te hagas una idea, estos son los archivos que estoy copiando e ignorando:</p>
 
-<p><strong>Estoy copiando:</strong></p>
+<p><strong>Estoy copiando las páginas que tiene mi proyecto más los assets que contienen todo e código css y JavaScript ya procesado por Gulp:</strong></p>
 
 <ul>
+  <li>about</li>
+  <li>assets</li>
   <li>blog</li>
-  <li>bower_components</li>
-  <li>css</li>
-  <li>images</li>
-  <li>js</li>
+  <li>contact</li>
+  <li>open-source</li>
   <li>post</li>
-  <li>CNAME</li>
   <li>index.html</li>
 </ul>
 
 <p><strong>Estoy excluyendo:</strong></p>
 
 <ul>
-  <li>vendor/bundle</li>
   <li>Gemfile</li>
   <li>Gemfile.lock</li>
-  <li>bower.json</li>
+  <li>vendor</li>
   <li>gulpfile.js</li>
-  <li>package.json</li>
   <li>package-lock.json</li>
-  <li>CHANGELOG.md</li>
-  <li>README.md</li>
-  <li>feed.xml</li>
+  <li>package.json</li>
   <li>node_modules</li>
-  <li>scss</li>
+  <li>README.md</li>
+  <li>readme.md</li>
+  <li>CHANGELOG.md</li>
 </ul>
 
 <div class="alert alert-info" role="alert">
-<p><i class="fa fa-sticky-note-o" aria-hidden="true"></i> Nota:</p>
+<p><i class="fas fa-sticky-note"></i> Nota:</p>
 <p>Algunos desarrolladores prefieren procesar los assets con Gulp y copiarlos directamente en _dist en vez de copiarlos a la raíz y dejar que Jekyll los copie después a _dist como estoy haciendo yo.</p>
 </div>
 
 <h3 id="tareas-para-gulp">Tareas para Gulp</h3>
 
-<ul>
+<ol>
+  <li>Copiar las fuentes de _assets a assets</li>
   <li>Procesar los estilos</li>
-  <li>Ejecutar Jekyll y lanzar Browsersync</li>
-  <li>Vigilar los cambios y refrescar el navegador</li>
-</ul>
+  <li>Procesar los Scripts</li>
+  <li>Minificar las imágenes</li>
+  <li>Ejecutar Jekyll</li>
+  <li>Lanzar el servidor local Browsersync</li>
+  <li>Vigilar cambios y refrescar el navegador</li>
+</ol>
 
 <p><strong>Procesar estilos</strong></p>
 
@@ -317,7 +308,7 @@ title: I have no idea what i'm doing
 </code></pre></div></div>
 
 <div class="alert alert-info" role="alert">
-  <p><i class="fa fa-sticky-note-o" aria-hidden="true"></i> Nota:</p>
+  <p><i class="fas fa-sticky-note"></i> Nota:</p>
   <p>Es importante excluir la carpeta _site de la tarea watch, para que browsersync no entre en un loop de recargar el navegador.</p>
 </div>
 
@@ -332,11 +323,11 @@ title: I have no idea what i'm doing
 <p>Para sobreescribir tu config.yml con config.dev.yml cuando ejecutes jekyll en desarrollo, hazlo de este modo:</p>
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="dl">"</span><span class="s2">bundle exec jekyll build --config _config.yml,_config.dev.yml</span><span class="dl">"</span><span class="p">;</span>
-
 </code></pre></div></div>
 
-<div class="callout">
-  <p>Este es <a href="https://github.com/MarcelReig/jekyll-bootstrap-boilerplate/blob/master/gulpfile.js">my gulpfile</a> terminado por si lo necesitas.</p>
+<div class="alert alert-info" role="alert">
+  <p><i class="fab fa-github"></i> Nota:</p>
+  <p>Este es <a href="https://github.com/MarcelReig/netinetidesign/blob/master/gulpfile.js">my gulpfile</a> terminado por si lo necesitas.</p>
 </div>
 <div class="spacer"></div>
 :ET

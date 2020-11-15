@@ -8,11 +8,13 @@
 .social-icons {
   padding-left: 0;
   list-style: none;
+
   li {
     display: inline-block;
     padding: 5px;
     margin-bottom: 10px;
   }
+
   .fab {
     color: $gray-700;
     font-size: 1.8em;
@@ -22,6 +24,7 @@
     text-align: center;
     transition: all 0.3s ease-in-out;
     border-radius: 50%;
+
     &:hover {
       color: $gray-500;
       transform: scale(1.1);
@@ -29,9 +32,11 @@
     }
   }
 }
+
 .landing-text {
   text-align: center;
 }
+
 // Landing styles
 .landing-wrapper {
   height: 70vh;
@@ -39,15 +44,18 @@
   flex-direction: column;
   justify-content: center;
 }
+
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .social-icons li:first-child {
     padding-left: 0;
   }
+
   .landing-wrapper {
     flex-direction: row-reverse;
     align-items: center;
   }
+
   .landing-text {
     text-align: right;
   }
@@ -60,14 +68,17 @@
   background-position-x: center;
   background-blend-mode: multiply;
   transition: background-color 0.5s;
+
   &:hover {
     background-color: white;
     transition: background-color 0.25s;
   }
+
   border-radius: 50%;
   width: 200px;
   height: 200px;
 }
+
 hr.small {
   width: 200px;
   border-top: 1px solid $transparent-white;
@@ -78,10 +89,12 @@ hr.small {
 .wrap-circle {
   position: relative;
 }
+
 .circle {
   .fa-angle-left {
     margin-top: 7px;
   }
+
   position: absolute;
   left: -20%;
   top: 0;
@@ -95,6 +108,7 @@ hr.small {
   color: #fff;
   font-size: 0.875rem;
   border-bottom: 0;
+
   &:hover {
     color: #fff;
   }

@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "es" }}">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
-    {% include nav.html %}
+<body>
+  {% include nav.html %}
 
-    <main aria-label="Content">
-        {{ content }}
-    </main>
+  <main aria-label="Content">
+    {{ content }}
+  </main>
 
-    {% include footer.html %}
+  {% include footer.html %}
 
-    <!-- main scripts -->
-    <script src="{{'/assets/scripts/app.js' | prepend: site.baseurl}}"></script>
-    
-    <a href="#0" class="cd-top">Top</a>
-  </body>
+  <!-- main scripts -->
+  <script src="{{'/assets/scripts/app.js' | prepend: site.baseurl}}"></script>
+
+  <a href="#0" class="cd-top">Top</a>
+</body>
 
 </html>
