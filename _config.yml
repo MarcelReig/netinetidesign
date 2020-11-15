@@ -19,6 +19,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Desarrollador front-end Menorca
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://www.netinetidesign.com/
+name: netinetidesign
 
 # Social
 codepen_path: https://codepen.io/MarcelReig
@@ -27,6 +28,10 @@ twitter_path: https://twitter.com/netinetidesign
 behance_path: https://www.behance.net/netinetidesign
 spotify_path: https://play.spotify.com/user/netineti
 freecodecamp_path: https://www.freecodecamp.org/marcelreig
+
+twitter_username: netinetidesign
+
+social_img: social_img.jpg
 
 # Build settings
 markdown: kramdown
