@@ -1,0 +1,179 @@
+I"3<p>JavaScript es un lenguaje de tipado débil o dinámico. Esto significa que no es necesario declarar el tipo de variable antes de usarla.</p>
+
+<!-- more -->
+
+<p>En los lenguajes de tipado dinámico como JavaScript o Phyton la comprobación de los tipos se realiza durante la ejecución del programa en vez de durante la compilación.</p>
+
+<p>En los lenguajes de tipado estático o fuertemente tipados como C#, Go, Java o C++ la comprobación de los tipos se realiza durante la compilación, y no durante la ejecución.</p>
+
+<h3 id="declaración-de-variables-en-js">Declaración de variables en JS</h3>
+
+<p>En los lenguajes con tipos dinámicos no especificamos el tipo de valor al declarar las variables y podemos utilizar el mismo nombre de variable para contener distintos tipos de datos:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="mi">42</span><span class="p">;</span> <span class="c1">// foo es ahora un Number</span>
+<span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">bar</span><span class="dl">"</span><span class="p">;</span> <span class="c1">// foo es ahora un String</span>
+<span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span> <span class="c1">// foo es ahora un Boolean</span>
+</code></pre></div></div>
+
+<p>En cambio en los lenguajes fuertemente tipados como en <code class="language-plaintext highlighter-rouge">C#</code>, especificamos el tipo de valor al declarar cada variable:</p>
+
+<div class="language-c# highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">edad</span> <span class="p">=</span> <span class="m">38</span><span class="p">;</span>
+<span class="kt">string</span> <span class="n">nombre</span> <span class="p">=</span> <span class="s">"Marcel"</span><span class="p">;</span>
+<span class="kt">bool</span> <span class="n">b</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="en-javascript-existen-7-tipos-de-datos">En Javascript existen 7 tipos de datos</h3>
+
+<ul>
+  <li>String <small class="color-gray">Cadenas de texto.</small></li>
+  <li>Number <small class="color-gray">Valores numéricos.</small></li>
+  <li>Boolean <small class="color-gray">Representa una entidad lógica y puede tener dos valores: true y false.</small></li>
+  <li>null <small class="color-gray">Es un valor asignado tiene el valor de “no valor”.</small></li>
+  <li>undefined <small class="color-gray">Una variable a la que no se le ha asignado ningún valor tiene el valor undefined.</small></li>
+  <li>Symbol <small class="color-gray">Nuevo en ECMAScript 2015.</small></li>
+  <li>Object <small class="color-gray">Un valor en memoria al que podemos acceder por un identificador.</small></li>
+</ul>
+
+<p>Estos tipos se dividen en dos grupos, <strong>Primitivos</strong> y <strong>de Objeto</strong>.</p>
+
+<h3 id="tipos-primitivos">Tipos Primitivos</h3>
+
+<p>Los valores primitivos son inmutables, no pueden ser cambiados.</p>
+
+<p>String, Number, Boolean, null, undefined y Symbol son tipos primitivos.</p>
+
+<p>Los tipos primitivos no tienen métodos ni propiedades, aunque en los string, numbers y booleans podemos acceder a ellas grácias a los wrappers objects que veremos enseguida.</p>
+
+<p>Veámos los tipos primitivos uno por uno:</p>
+
+<h3 id="string">String</h3>
+
+<p>Un string es una cadena de caracteres.
+A cada carácter de una cadena se le asigna una posición, empezando por el primer carácter en la posición 0, el segundo en la posición 1 y así sucesivamente.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="dl">"</span><span class="s2">tarta de plátano vegana con masa casera</span><span class="dl">"</span><span class="p">;</span>
+
+</code></pre></div></div>
+
+<h3 id="number">Number</h3>
+
+<p>JavaScript solo tiene un tipo de datos numérico. No hay un tipo específico para los números enteros y de coma flotante.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">peso</span> <span class="o">=</span> <span class="mi">54</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">pesoExacto</span> <span class="o">=</span> <span class="mf">54.3</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Declaración de variables numéricas en <code class="language-plaintext highlighter-rouge">C#</code>, lenguaje con diferentes tipos para para diferentes tipos de números:</p>
+
+<div class="language-c# highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">peso</span> <span class="p">=</span> <span class="m">54</span><span class="p">;</span>
+<span class="kt">float</span> <span class="n">pesoExacto</span> <span class="p">=</span> <span class="m">54.30f</span>
+</code></pre></div></div>
+
+<h3 id="boolean">Boolean</h3>
+
+<p>Boolean representa una entidad lógica y puede tener dos valores: true, y false.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// este código no se ejecuta</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="null">null</h3>
+
+<p>El tipo Null tiene el valor: null.</p>
+
+<h3 id="undefined">undefined</h3>
+
+<p>Una variable a la cual no se le haya asignado valor tiene el valor undefined.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">saludo</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">saludo</span><span class="p">);</span> <span class="c1">// "undefined"</span>
+</code></pre></div></div>
+
+<h3 id="symbol">Symbol</h3>
+
+<blockquote>
+Symbol es un tipo de datos cuyos valores son <strong>únicos</strong> e <strong>inmutables</strong>. Dichos valores pueden ser utilizados como identificadores (claves) de las propiedades de los objetos.  Cada valor del tipo Symbol tiene asociado un valor del tipo String o Undefined que sirve únicamente como descripción del símbolo.
+  <cite>mdn</cite>
+</blockquote>
+
+<h3 id="tipos-de-objeto">Tipos de Objeto</h3>
+
+<p>Un Objeto es un valor en memoria al que podemos acceder por un identificador.</p>
+
+<p>En JavaScript los objetos pueden ser vistos como una colección de propiedades.</p>
+
+<p>Un Objeto en notación literal tiene este aspecto:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">persona</span> <span class="o">=</span> <span class="p">{</span> <span class="na">nombre</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Marcel</span><span class="dl">"</span><span class="p">,</span> <span class="na">edad</span><span class="p">:</span> <span class="dl">"</span><span class="s2">38</span><span class="dl">"</span><span class="p">,</span> <span class="na">ciudad</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Alaior</span><span class="dl">"</span> <span class="p">};</span>
+</code></pre></div></div>
+
+<p>Podemos escribirlo en multiples líneas para más claridad</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">persona</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">nombre</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Marcel</span><span class="dl">"</span><span class="p">,</span>
+  <span class="na">edad</span><span class="p">:</span> <span class="dl">"</span><span class="s2">38</span><span class="dl">"</span><span class="p">,</span>
+  <span class="na">ciudad</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Alaior</span><span class="dl">"</span><span class="p">,</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<h3 id="determinar-tipos-utilizando-el-operador-typeof">Determinar tipos utilizando el operador typeof</h3>
+
+<p>El operador typeof devuelve una cadena indicando el tipo de valor de una variable.</p>
+
+<p>Definamos unas variables:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">mascota</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Gato</span><span class="dl">"</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">hermanas</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">tv</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Veamos el operador typeof en acción:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">mascota</span><span class="p">);</span> <span class="c1">// "string"</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">hermanas</span><span class="p">);</span> <span class="c1">// "number"</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">tv</span><span class="p">);</span> <span class="c1">// "boolean"</span>
+</code></pre></div></div>
+
+<h3 id="primitive-wrapper-objects-en-javascript">Primitive wrapper objects en JavaScript</h3>
+
+<p>Los números, las cadenas y los valores Booleanos son primitivos, se supone que no tienen métodos ni propiedades.</p>
+
+<p>Por qué podemos hacer esto?</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">nombre</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Marcel</span><span class="dl">"</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">nombre</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span> <span class="c1">// devuelve 6</span>
+</code></pre></div></div>
+
+<p>La variable nombre es un string primitivo, pero se comporta como si fuera un objeto, que esta pasando aquí?</p>
+
+<p>Cuando se invoca un método o propiedad en un dato primitivo, javascript crea una instancia de su versión en objeto o “wrapper object” por un corto periodo para poder devolver su valor y después la destruye.</p>
+
+<p>Digamos que Javascript convierte los tipos primitivos en objetos entre bastidores sin que te des cuenta.</p>
+
+<p>Excepto para null y undefined, todos los valores primitivos tienen lo que se conoce como primitive wrapper object, lo que crea la versión en Objeto de su equivalente primitivo.</p>
+
+<p>Podemos crear objetos wrapper explícitamente utilizando sus constructores definidos:</p>
+
+<ul>
+  <li>String para el primitivo string.</li>
+  <li>Number para el primitivo number.</li>
+  <li>Boolean para el primitivo Boolean.</li>
+  <li>Symbol para el primitivo Symbol.</li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">tarta de plátano</span><span class="dl">"</span><span class="p">;</span> <span class="c1">// primitivo</span>
+<span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">String</span><span class="p">(</span><span class="dl">"</span><span class="s2">tarta de plátano</span><span class="dl">"</span><span class="p">);</span> <span class="c1">// objeto</span>
+</code></pre></div></div>
+
+<div class="spacer-mini"></div>
+
+<hr />
+
+<p>Referencias:</p>
+
+<p><a href="https://www.digitalocean.com/community/tutorials/understanding-data-types-in-javascript" target="\_blank">Understanding Data Types in JavaScript</a></p>
+
+<p><a href="https://javascriptweblog.wordpress.com/2010/09/27/the-secret-life-of-javascript-primitives/" target="\_blank">The Secret Life of JavaScript Primitives</a></p>
+:ET

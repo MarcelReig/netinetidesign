@@ -17,11 +17,15 @@ listar versiones de ruby disponibles para instalar:
 
 `$ rvm list known`
 
-Instalar una versión de ruby:
+Instalar la última versión: 
+
+`rvm install ruby@latest`
+
+Instalar cualquier versión de ruby:
 
 `$ rvm install <version>`
 
-Utilizar una versión de ruby:
+Utilizar una versión de ruby que tengas instalada:
 
 `$ rvm use <version>`
 

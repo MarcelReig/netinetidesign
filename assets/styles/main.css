@@ -22,6 +22,7 @@
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 2;
   padding: 0.75rem 1.25rem;
   color: inherit;
 }
@@ -460,7 +461,6 @@ a.badge-dark:focus, a.badge-dark.focus {
   vertical-align: middle;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
@@ -1135,6 +1135,11 @@ input[type="button"].btn-block {
   border-bottom-left-radius: calc(0.25rem - 1px);
 }
 
+.card > .card-header + .list-group,
+.card > .list-group + .card-footer {
+  border-top: 0;
+}
+
 .card-body {
   flex: 1 1 auto;
   min-height: 1px;
@@ -1173,10 +1178,6 @@ input[type="button"].btn-block {
   border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
 }
 
-.card-header + .list-group .list-group-item:first-child {
-  border-top: 0;
-}
-
 .card-footer {
   padding: 0.75rem 1.25rem;
   background-color: rgba(0, 0, 0, 0.03);
@@ -1206,6 +1207,7 @@ input[type="button"].btn-block {
   bottom: 0;
   left: 0;
   padding: 1.25rem;
+  border-radius: calc(0.25rem - 1px);
 }
 
 .card-img,
@@ -1306,6 +1308,10 @@ input[type="button"].btn-block {
     display: inline-block;
     width: 100%;
   }
+}
+
+.accordion {
+  overflow-anchor: none;
 }
 
 .accordion > .card {
@@ -1589,9 +1595,12 @@ pre code {
 
 .custom-control {
   position: relative;
+  z-index: 1;
   display: block;
   min-height: 1.5rem;
   padding-left: 1.5rem;
+  -webkit-print-color-adjust: exact;
+          color-adjust: exact;
 }
 
 .custom-control-inline {
@@ -2342,11 +2351,6 @@ pre code {
   opacity: 1;
 }
 
-.form-control::-ms-input-placeholder {
-  color: #6c757d;
-  opacity: 1;
-}
-
 .form-control::placeholder {
   color: #6c757d;
   opacity: 1;
@@ -2509,6 +2513,7 @@ textarea.form-control {
 .valid-tooltip {
   position: absolute;
   top: 100%;
+  left: 0;
   z-index: 5;
   display: none;
   max-width: 100%;
@@ -2609,6 +2614,7 @@ textarea.form-control {
 .invalid-tooltip {
   position: absolute;
   top: 100%;
+  left: 0;
   z-index: 5;
   display: none;
   max-width: 100%;
@@ -2757,39 +2763,12 @@ textarea.form-control {
   }
 }
 
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-
-.container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -2854,7 +2833,6 @@ textarea.form-control {
 .col {
   flex-basis: 0;
   flex-grow: 1;
-  min-width: 0;
   max-width: 100%;
 }
 
@@ -3062,7 +3040,6 @@ textarea.form-control {
   .col-sm {
     flex-basis: 0;
     flex-grow: 1;
-    min-width: 0;
     max-width: 100%;
   }
   .row-cols-sm-1 > * {
@@ -3229,7 +3206,6 @@ textarea.form-control {
   .col-md {
     flex-basis: 0;
     flex-grow: 1;
-    min-width: 0;
     max-width: 100%;
   }
   .row-cols-md-1 > * {
@@ -3396,7 +3372,6 @@ textarea.form-control {
   .col-lg {
     flex-basis: 0;
     flex-grow: 1;
-    min-width: 0;
     max-width: 100%;
   }
   .row-cols-lg-1 > * {
@@ -3563,7 +3538,6 @@ textarea.form-control {
   .col-xl {
     flex-basis: 0;
     flex-grow: 1;
-    min-width: 0;
     max-width: 100%;
   }
   .row-cols-xl-1 > * {
@@ -4586,11 +4560,13 @@ textarea.form-control {
   background-color: #007bff;
 }
 
+.nav-fill > .nav-link,
 .nav-fill .nav-item {
   flex: 1 1 auto;
   text-align: center;
 }
 
+.nav-justified > .nav-link,
 .nav-justified .nav-item {
   flex-basis: 0;
   flex-grow: 1;
@@ -5488,12 +5464,12 @@ a:hover {
   text-decoration: underline;
 }
 
-a:not([href]) {
+a:not([href]):not([class]) {
   color: inherit;
   text-decoration: none;
 }
 
-a:not([href]):hover {
+a:not([href]):not([class]):hover {
   color: inherit;
   text-decoration: none;
 }
@@ -5541,6 +5517,7 @@ caption {
 
 th {
   text-align: inherit;
+  text-align: -webkit-match-parent;
 }
 
 label {
@@ -7413,21 +7390,18 @@ button.bg-dark:focus {
 .user-select-all {
   -webkit-user-select: all !important;
      -moz-user-select: all !important;
-      -ms-user-select: all !important;
           user-select: all !important;
 }
 
 .user-select-auto {
   -webkit-user-select: auto !important;
      -moz-user-select: auto !important;
-      -ms-user-select: auto !important;
           user-select: auto !important;
 }
 
 .user-select-none {
   -webkit-user-select: none !important;
      -moz-user-select: none !important;
-      -ms-user-select: none !important;
           user-select: none !important;
 }
 
@@ -9625,6 +9599,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .text-break {
+  word-break: break-word !important;
   word-wrap: break-word !important;
 }
 

@@ -1,6 +1,8 @@
 # Marcel Reig Jekyll site
 
-Based on my own Jekyll Bootstrap starter theme
+This site is created with my own Jekyll + Bootstrap starter theme.
+
+The starter theme is open source if you want to use it follow the next instructions:
 
 Step 1: Clone repository from GitHub
 
@@ -33,24 +35,18 @@ Step 4: Generate production-ready files
 $ gulp --environment production
 ```
 
-This is my environment on macOS Catalina 10.15.2
+This is my environment on macOS Catalina 10.15.7
 
 ```shell
 $ node -v
 v12.17.0
 $ ruby -v
-ruby 2.7.1p83 (2020-03-31 revision a0c7c23c9c) [x86_64-darwin19]
-bundler -v
+ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-darwin19]
+bundle -v
 Bundler version 2.1.4
 $ npm -v
-6.14.5
+6.14.7
 $ gulp -v
-[20:19:33] CLI version 2.0.1
-[20:19:33] Local version 4.0.0
-```
-
-Recuerda utilizar tu gemset
-
-```shell
-rvm use 2.7.0@netinetidesign
+CLI version: 2.2.1
+Local version: 4.0.2
 ```
