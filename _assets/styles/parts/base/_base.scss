@@ -1,20 +1,33 @@
 // Base styles
 html {
-    box-sizing: border-box;
-  }
-  body {
-    background-color: $bg-color;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+}
+body {
+  background-color: $bg-color;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Inter var", sans-serif;
+  font-size: 16px;
+}
 
-  // links
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter var", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+// links
 a {
   color: $brand-color;
   &:hover {

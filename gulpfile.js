@@ -46,6 +46,14 @@ function build_fonts() {
     .src("./_assets/fonts/*.{woff,woff2,eot,svg,ttf}")
     .pipe(gulp.dest("./assets/fonts"));
 }
+// Copy Fontawesome fonts into dist folder
+function fontawesome() {
+  return gulp
+    .src(
+      "./node_modules/@fortawesome/fontawesome-free/webfonts/*.{woff,woff2,eot,svg,ttf}"
+    )
+    .pipe(gulp.dest("./assets/fonts"));
+}
 
 // -----------------------------------------------------------------------------
 //  2: Styles
@@ -271,6 +279,7 @@ function browsersync_reload(done) {
 const build_all = gulp.series(
   build_images,
   build_fonts,
+  fontawesome,
   build_scripts,
   build_styles,
   build_jekyll,
