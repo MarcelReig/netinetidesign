@@ -168,7 +168,7 @@ let scifiMovies = [
     year: 1982,
   },
   {
-    name: "Bade Runner 2049",
+    name: "Blade Runner 2049",
     director: "Denis Villeneuve",
     year: 2017,
   },
