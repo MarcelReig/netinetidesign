@@ -28369,11 +28369,13 @@ h1, h2, h3, h4, h5, h6 {
   box-sizing: inherit;
 }
 
-a {
+a,
+.btn-link {
   color: #774cfd;
 }
 
-a:hover {
+a:hover,
+.btn-link:hover {
   color: #9d7efe;
   text-decoration: none;
 }
