@@ -35,7 +35,7 @@ Step 4: Generate production-ready files
 $ gulp --environment production
 ```
 
-This is my environment on macOS Catalina 10.15.7
+This is my environment on macOS Big Sur 11.2.1
 
 ```shell
 $ node -v
