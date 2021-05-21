@@ -1,7 +1,0 @@
-I"�<p>El Call Stack, es una estructura dinámica de datos <a href="https://es.wikipedia.org/wiki/Last_in,_first_out" target="_blank"> LIFO</a>, del inglés Last In, First Out, "último en entrar, primero en salir".</p>
-<p>Si amontonas platos en una pila y vas a coger un plato de la pila cogerás el que está encima, el último añadido.</p>
-
-<p>JavaScript se comporta como si de una pila de platos se tratase, cuando vas a coger un plato de la fila coges el  la última función que añades es la primera que se ejecuta.</p>
-
-<p>El Stack nos muestra el orden de ejecución de nuestro programa lo que es muy útil a la hora de resolver errores.</p>
-:ET

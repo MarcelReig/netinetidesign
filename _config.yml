@@ -97,6 +97,9 @@ rcb: "}"
 double-lcb: "{{"
 double-rcb: "}}"
 
+# Google services
+google_analytics: 120243860
+
 # Disqus Comments
 disqus:
     shortname: netinetidesign
