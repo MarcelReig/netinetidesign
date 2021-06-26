@@ -1,0 +1,37 @@
+I"�<h1 id="nvm"><a href="https://github.com/creationix/nvm">nvm</a></h1>
+
+<p><strong>nvm</strong> nos permite tener múltiples versiones de node en nuestro sistema y trabajar con diferentes versiones en cada proyecto.</p>
+
+<p>Instalar nvm:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>curl <span class="nt">-o-</span> https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+</code></pre></div></div>
+
+<p>Listar todas las versiones de node instaladas:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ nvm ls</code></p>
+
+<p>Instalar la última versión de node:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ nvm install node</code></p>
+
+<p>Ver todas las versiones de node disponibles para instalar:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ nvm ls-remote</code></p>
+
+<p>Instalar una versión específica:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ nvm install [version]</code></p>
+
+<p>Utilizar una versión específica:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ nvm use &lt;version&gt;</code></p>
+
+<p>Desinstalar una versión específica:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ nvm uninstall [version]</code></p>
+
+<p>Establecer una versión de node por defecto</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ nvm alias default [version]</code></p>
+:ET

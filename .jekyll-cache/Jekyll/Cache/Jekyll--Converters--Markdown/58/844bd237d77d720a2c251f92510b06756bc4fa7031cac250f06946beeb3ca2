@@ -1,0 +1,14 @@
+I"‹<p>Abre la terminal y mete esto:</p>
+
+<!-- more -->
+
+<p><code class="language-plaintext highlighter-rouge">$ defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'</code></p>
+
+<p>Repite esto para crear todos los espacios que quieras.</p>
+
+<p>No se mostrar√° hasta que no ejecutes:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ killall Dock</code></p>
+
+<p>Para quitar los espacios simplemente los arrastramos fuera del Dock.</p>
+:ET

@@ -1,0 +1,32 @@
+I"�<p><strong>Modo normal</strong></p>
+
+<p>Permite al usuario navegar por el documento e introducir comandos.
+Para entrar en modo comando pulsa la tecla <code class="language-plaintext highlighter-rouge">esc</code>.</p>
+
+<p>Para mover el cursor por el archivo utiliza las teclas <code class="language-plaintext highlighter-rouge">hjkl</code> (izquierda, abajo, arriba y derecha respectivamente).</p>
+
+<p><strong>Modo inserción</strong></p>
+
+<p>En este modo escribiremos texto en el fichero.
+Para entrar en modo insercción pulsamos la tecla <code class="language-plaintext highlighter-rouge">i</code>.</p>
+
+<p>Para salir del modo insercción y volver al modo normal pulsa <code class="language-plaintext highlighter-rouge">esc</code>.</p>
+
+<p><strong>Modo comando</strong></p>
+
+<p>Para entrar a este modo escribe <code class="language-plaintext highlighter-rouge">:</code> seguido del comando que quieras utilizar.</p>
+
+<p><code class="language-plaintext highlighter-rouge">:q</code> sale del archivo, si no tenemos cambios sin guardar sale sin más.</p>
+
+<p><code class="language-plaintext highlighter-rouge">:q!</code> =&gt; sale del archivo descartando los cambios no guardados.</p>
+
+<p><code class="language-plaintext highlighter-rouge">:w</code> guarda los cambios del archivo, pero no sale de Vim para seguir editando el archivo.</p>
+
+<p><code class="language-plaintext highlighter-rouge">:wq</code> guarda los cambios y sale de Vim.</p>
+
+<p><strong>Modo visual</strong></p>
+
+<p>Se utiliza para hacer selecciones de texto.
+Para entrar en modo visual pulsa <code class="language-plaintext highlighter-rouge">v</code>.
+Para salir del modo visual pulsa <code class="language-plaintext highlighter-rouge">esc</code>.</p>
+:ET

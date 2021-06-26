@@ -1,0 +1,151 @@
+// $Bootstrap
+@import "vendor-styles/bootstrap/core";
+// $Fontawesome
+@import "vendor-styles/font-awesome/main";
+// $magnific-popup
+@import "vendor-styles/magnific-popup/popup";
+// $Parts
+@import "parts/index";
+
+// Social
+
+.social-icons {
+  padding-left: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  .fab {
+    color: $gray-700;
+    font-size: 1.8em;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+
+    &:hover {
+      color: $gray-500;
+      transform: scale(1.1);
+      transform: scale(1.1) rotate(360deg);
+    }
+  }
+}
+
+.landing-text {
+  text-align: center;
+}
+
+// Landing styles
+.landing-wrapper {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .social-icons li:first-child {
+    padding-left: 0;
+  }
+
+  .landing-wrapper {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .landing-text {
+    text-align: right;
+  }
+}
+
+.img-circle {
+  background-image: url("../images/perfil.jpg");
+  background-color: lighten($color: $brand-color, $amount: 25%);
+  background-size: cover;
+  background-position-x: center;
+  background-blend-mode: multiply;
+  transition: background-color 0.5s;
+
+  &:hover {
+    background-color: white;
+    transition: background-color 0.25s;
+  }
+
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+hr.small {
+  width: 200px;
+  border-top: 1px solid $transparent-white;
+}
+
+// Circulo go back button
+
+.wrap-circle {
+  position: relative;
+}
+
+.circle {
+  .fa-angle-left {
+    margin-top: 7px;
+  }
+
+  position: absolute;
+  left: -20%;
+  top: 0;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  background: #956ee5;
+  color: #fff;
+  font-size: 0.875rem;
+  border-bottom: 0;
+
+  &:hover {
+    color: #fff;
+  }
+}
+a.netineti-card {
+  text-align: center;
+  height: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  p {
+    color: #424242;
+  }
+}
+.netineti-card img {
+  filter: grayscale(100%);
+  transition: 0.3s ease-in-out;
+}
+.netineti-card:hover img {
+  filter: grayscale(0.5);
+}
+// Gallery
+.grid {
+  margin: 0 auto;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+/* 2 columns */
+
+.grid-item--width2 {
+  width: 400px;
+}

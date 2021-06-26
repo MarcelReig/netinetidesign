@@ -1,0 +1,44 @@
+I"�<p>Listar versiones de ruby instaladas:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ rvm list</code></p>
+
+<p>listar versiones de ruby disponibles para instalar:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ rvm list known</code></p>
+
+<p>Instalar la última versión:</p>
+
+<p><code class="language-plaintext highlighter-rouge">rvm install ruby@latest</code></p>
+
+<p>Instalar cualquier versión de ruby:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ rvm install &lt;version&gt;</code></p>
+
+<p>Utilizar una versión de ruby que tengas instalada:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ rvm use &lt;version&gt;</code></p>
+
+<p>Eliminar una versión de ruby:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ rvm remove &lt;version&gt;</code></p>
+
+<p>Actualizar rvm a la versión estable:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ rvm get stable</code></p>
+
+<h3 id="manejo-de-gemas-con-los-gemsets">Manejo de gemas con los gemsets</h3>
+
+<p>Listar los gemsets disponibles:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ rvm gemset list</code></p>
+
+<p>Crear un nuevo gemset:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ rvm use &lt;ruby version&gt;@&lt;gemset name&gt; --create</code></p>
+
+<p>Utilizar un gemset:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ rvm use &lt;ruby version&gt;@&lt;gemset name&gt;</code></p>
+
+<p><a href="https://rvm.io/">rvm</a> sitio oficial.</p>
+:ET

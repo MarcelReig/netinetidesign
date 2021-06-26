@@ -1,0 +1,101 @@
+<head>
+  <meta charset="utf-8" />
+  <title>{% if page.title %}{{page.title}} - {{site.title}}{% else %}{{site.title}}{% endif %}</title>
+  <meta content="{{ site.name }}" property="og:site_name">
+  {% if page.title %}
+  <meta content="{{ page.title }}" property="og:title">
+  {% else %}
+  <meta content="{{ site.title }}" property="og:title">
+  {% endif %}
+  {% if page.title %}
+  <meta content="article" property="og:type">
+  {% else %}
+  <meta content="website" property="og:type">
+  {% endif %}
+  {% if page.description %}
+  <meta content="{{ page.description }}" property="og:description">
+  {% else %}
+  <meta content="{{ site.description }}" property="og:description">
+  {% endif %}
+  {% if page.url %}
+  <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+  {% endif %}
+  {% if page.date %}
+  <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+  <meta content="{{ site.url }}/about/" property="article:author">
+  {% endif %}
+  {% if page.image %}
+  <meta content="{{ site.url }}{{ site.baseurl }}/assets/images/blog/{{ page.image }}" property="og:image">
+  {% else %}
+  <meta content="{{ site.url }}{{ site.baseurl }}/assets/images/{{ site.social_img }}" property="og:image">
+  {% endif %}
+  {% if page.category %}
+  <meta content="{{ category }}" property="article:section">
+  {% endif %}
+  {% if page.tag %}
+  <meta content="{{ tag }}" property="article:tag">
+  {% endif %}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@{{ site.twitter_username }}">
+  <meta name="twitter:creator" content="@{{ site.twitter_username }}">
+  {% if page.title %}
+  <meta name="twitter:title" content="{{ page.title }}">
+  {% else %}
+  <meta name="twitter:title" content="{{ site.title }}">
+  {% endif %}
+  {% if page.url %}
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+  {% endif %}
+  {% if page.description %}
+  <meta name="twitter:description" content="{{ page.description }}">
+  {% else %}
+  <meta name="twitter:description" content="{{ site.description }}">
+  {% endif %}
+  {% if page.image %}
+  <meta name="twitter:image:src" content="{{ site.url }}{{ site.baseurl }}/assets/images/blog/{{ page.image }}">
+  {% else %}
+  <meta name="twitter:image:src" content="{{ site.url }}{{ site.baseurl }}/assets/img/{{ site.social_img }}">
+  {% endif %}
+  {% if page.meta.description %}
+  <meta name="description" content="{{ page.meta.description }}">
+  {% else %}
+  <meta name="description" content="{{ site.description }}">
+  {% endif %}
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/touch-icons/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="{{
+      site.baseurl
+    }}/assets/images/touch-icons/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="{{
+      site.baseurl
+    }}/assets/images/touch-icons/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="{{
+      site.baseurl
+    }}/assets/images/touch-icons/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="{{
+      site.baseurl
+    }}/assets/images/touch-icons/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="{{
+      site.baseurl
+    }}/assets/images/touch-icons/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="{{
+      site.baseurl
+    }}/assets/images/touch-icons/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="{{
+      site.baseurl
+    }}/assets/images/touch-icons/apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="{{
+      site.baseurl
+    }}/assets/images/touch-icons/apple-touch-icon-180x180.png" />
+  {% if page.devicons_css %}
+  {% for stylesheet in page.devicons_css %}
+  <link href="//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css" rel="stylesheet" />
+  {% endfor %}
+  {% endif %}
+  <link rel="stylesheet" href="{{"/assets/styles/main.css" | relative_url}}">
+  {%- feed_meta -%}
+  {%- if jekyll.environment == 'production' and
+  site.google_analytics -%} {%- include google-analytics.html -%} {%- endif -%}
+</head>
