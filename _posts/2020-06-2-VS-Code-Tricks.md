@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Visual Studio Code Tricks
-meta:
-  description: Visual Studio Code Tricks
+description: Visual Studio Code Tricks
 comments: true
 category: programacion
 tags: vscode

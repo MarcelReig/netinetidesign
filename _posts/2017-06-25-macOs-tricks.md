@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Añadir espacios al dock de Mac OS X
-meta:
-  description: Añadir espacios al dock de Mac OS X
+description: Añadir espacios al dock de Mac OS X
 comments: true
 category: programacion
 tags: mac

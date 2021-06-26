@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Esperar a que el Dom este listo con vanilla JavaScript y con jQuery
-meta:
-  description: Esperar a que el Dom este listo con vanilla JavaScript y con jQuery
+description: Esperar a que el Dom este listo con vanilla JavaScript y con jQuery
 comments: true
 category: programacion
 tags: javascript

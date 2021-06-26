@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Hablar de Jekyll dentro de Jekyll
-meta:
-  description: Hablar de Jekyll dentro de Jekyll
+description: Hablar de Jekyll dentro de Jekyll
 comments: true
 tags: jekyll
 category: programacion

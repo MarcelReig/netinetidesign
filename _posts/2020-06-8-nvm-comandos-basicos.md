@@ -1,8 +1,7 @@
 ---
 layout: post
 title: nvm comandos básicos
-meta:
-  description: nvm comandos básicos
+description: nvm comandos básicos
 comments: true
 tags: node
 category: programacion

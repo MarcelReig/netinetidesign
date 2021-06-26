@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Git comandos básicos
-meta:
-  description: Git comandos básicos
+description: Git comandos básicos
 comments: true
 category: programacion
 tags: git

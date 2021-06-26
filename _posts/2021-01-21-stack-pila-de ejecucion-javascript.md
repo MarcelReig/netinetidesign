@@ -1,8 +1,7 @@
 ---
 layout: post
 title: La pila de ejecución en JavaScript (Call Stack)
-meta:
-  description: La pila de ejecución en JavaScript (Call Stack)
+description: La pila de ejecución en JavaScript (Call Stack)
 comments: true
 tags: javascript
 category: programacion

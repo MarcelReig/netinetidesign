@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Plan de ruta desarollador front-end
-meta:
-  description: Plan de ruta desarollador front-end
+description: Plan de ruta desarollador front-end
 comments: true
 tags: javascript
 category: programacion

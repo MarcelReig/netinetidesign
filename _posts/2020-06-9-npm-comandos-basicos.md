@@ -1,8 +1,7 @@
 ---
 layout: post
 title: npm comandos básicos
-meta:
-  description: npm comandos básicos
+description: npm comandos básicos
 comments: true
 tags: npm
 category: programacion

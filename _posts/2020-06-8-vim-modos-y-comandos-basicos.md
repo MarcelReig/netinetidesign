@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Vim modos y comandos básicos
-meta:
-  description: Vim modos y comandos básicos
+description: Vim modos y comandos básicos
 comments: true
 tags: vim
 category: programacion

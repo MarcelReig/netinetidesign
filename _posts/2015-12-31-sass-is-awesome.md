@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Sass, CSS con superpoderes
-meta:
-  description: Sass, CSS con superpoderes
+description: Sass, CSS con superpoderes
 comments: true
 tags: css sass
 category: programacion

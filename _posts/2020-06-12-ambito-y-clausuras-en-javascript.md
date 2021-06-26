@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Ámbito y clausuras en JavaScript"
-meta:
-  description:
+description:
 comments: true
 category: programacion
 tags: javascript

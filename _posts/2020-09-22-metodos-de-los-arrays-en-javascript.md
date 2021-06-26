@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Arrays en JavaScript
-meta:
-  description: Arrays en JavaScript
+description: Arrays en JavaScript
 comments: true
 tags: javascript
 category: programacion

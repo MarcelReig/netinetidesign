@@ -1,8 +1,7 @@
 ---
 layout: post
 title: rvm comandos básicos
-meta:
-  description: rvm comandos básicos
+description: rvm comandos básicos
 comments: true
 tags: node
 category: programacion

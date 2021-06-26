@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Tipos de datos en javascript
-meta:
-  description: Tipos de datos en javascript
+description: Tipos de datos en javascript
 comments: true
 category: programacion
 tags: javascript
