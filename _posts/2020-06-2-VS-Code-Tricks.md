@@ -38,15 +38,21 @@ A partir de ahora puedes abrir VS Code desde cualquier ubicación con la termina
 
 Para abrir el archivo o carpeta desde tu ubicación en la terminal añade un espacio y un punto detrás: <kbd>code .</kbd>
 
-### Edición multilínea en VSCode
+### Edición multilínea vertical en VSCode
 
-Para seleccionar coincidencias, seleccionas con el cursor y después utilizas:<br> <kbd>alt + cmd + teclas de dirección</kbd> para seleccionar las coincidencias que quieras. <kbd>esc</kbd> para volver a un solo cursor.
+Te situas con el cursor donde quieres empezar la selección y después utilizas:<br> <kbd>⌥ alt + ⌘ command + ⇅ teclas de dirección</kbd> para seleccionar las coincidencias que quieras. <kbd>esc</kbd> para volver a un solo cursor.
+
+### Seleccionar coincidencias
+Selecionas con el cursor los carácteres sobre los que quieres buscar coincidencias y pulsas: <br><kbd>⌘ command + D</kbd> para cada coincidencia que quieras seleccionar.
 
 ### Vista previa de Marckdown
 
-Para mostrar una vista previa del archivo md que estás editando pulsa: <br> <kbd>Shift + command + V</kbd>.
+Para mostrar una vista previa del archivo md que estás editando pulsa: <br> <kbd>Shift + ⌘ + V</kbd>.
 
 ### Abrir directorio de archivos actual
+Este atajo es demasiado útil, te evita tener que utilizar el Finder para navegar hasta la carpeta de tu proyecto.<br>
+<kbd>⌘ + o</kbd>
 
-<kbd>command + o</kbd>
-
+### Navegador de archivos
+Para encontrar facilmente archivos dentro del directorio de trabajo pulsa: <br>
+<kbd>⌘ + p</kbd>
