@@ -1,0 +1,48 @@
+I"	<h3 id="ajuste-automático-de-línea-en-vscode">Ajuste automático de línea en VSCode</h3>
+
+<p>Si no quieres que el código se extienda horizontalmente fuera del espacio disponible y te aparezca el scroll horizontal.</p>
+
+<p>Tienes varias opciones:</p>
+
+<ul>
+  <li>
+    <p>Atajo de teclado <code class="language-plaintext highlighter-rouge">alt</code> + <code class="language-plaintext highlighter-rouge">z</code></p>
+  </li>
+  <li>
+    <p>Desde el menú superior ver &gt; Alternar ajuste automático de línea o View &gt; Toggle  word wrap si lo tienes en inglés.</p>
+  </li>
+  <li>
+    <p>Configurar desde settings Editor: Word Wrap</p>
+  </li>
+</ul>
+
+<!-- more -->
+
+<h3 id="abrir-terminal-integrado-en-vscode">Abrir terminal integrado en VSCode</h3>
+
+<p>Tienes 3 opciones:</p>
+
+<ul>
+  <li>El atajo de teclado: <code class="language-plaintext highlighter-rouge">ctrl</code> + <code class="language-plaintext highlighter-rouge">`</code> (acento grave)</li>
+  <li>Menú superior Ver Terminal integrado</li>
+  <li>Desde la paleta de comandos (shift cmd P) Ver: Alternar terminal integrado</li>
+</ul>
+
+<h3 id="abrir-visual-studio-code-desde-la-terminal">Abrir Visual Studio Code desde la terminal</h3>
+
+<p>Primero tienes que añadir esto al path:</p>
+
+<p>Abre la paleta de comandos de VS Code (<code class="language-plaintext highlighter-rouge">⇧⌘P</code>) y escribe <code class="language-plaintext highlighter-rouge">shell command</code> para que te aparezca la opción Install ‘code’ command in PATH , seleccionala.</p>
+
+<p>A partir de ahora puedes abrir VS Code desde cualquier ubicación con la terminal solo escribiendo: <code class="language-plaintext highlighter-rouge">code</code></p>
+
+<p>Para abrir el archivo o carpeta desde tu ubicación en la terminal añade un espacio y un punto detrás: <code class="language-plaintext highlighter-rouge">code .</code></p>
+
+<h3 id="edición-multilínea-en-vscode">Edición multilínea en VSCode</h3>
+
+<p>Para seleccionar coincidencias, seleccionas con el cursor y después utilizas: <kbd>alt + cmd&lt;/&gt; + teclas de dirección para seleccionar las coincidencias que quieras. `esc` para volver a un solo cursor.</kbd></p>
+
+<h3 id="vista-previa-de-marckdown">Vista previa de Marckdown</h3>
+
+<p><code class="language-plaintext highlighter-rouge">⇧⌘V</code></p>
+:ET
