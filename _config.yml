@@ -21,6 +21,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: https://www.netinetidesign.com
 name: netinetidesign
 
+# Multilanguage
+lang: en
+
 # Social
 linkedin_path: https://www.linkedin.com/in/marcel-reig-44920b37
 twitter_path: https://twitter.com/netinetidesign
@@ -35,9 +38,6 @@ social_img: social_img.jpg
 
 # Build settings
 markdown: kramdown
-
-# Plugins
-plugins: [jekyll-paginate]
 
 # Outputting
 permalink: /post/:title/

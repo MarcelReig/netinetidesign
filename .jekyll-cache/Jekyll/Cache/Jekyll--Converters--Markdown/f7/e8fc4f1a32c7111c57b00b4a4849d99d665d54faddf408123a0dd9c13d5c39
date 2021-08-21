@@ -1,0 +1,38 @@
+I"_<div class="message-box" id="no-translation-msg">
+    Sorry, this page is not available in this language.
+</div>
+
+<p>Sass cubre los huecos de CSS añadiéndole todo lo que le falta, haciéndolo un lenguaje más inteligente, escalable y reutilizable.</p>
+
+<ul>
+  <li>Variables</li>
+  <li>Anidamiento</li>
+  <li>Herencia entre selectores</li>
+  <li>Funciones y estructuras de control</li>
+  <li>Operaciones lógicas</li>
+  <li>Mixins</li>
+</ul>
+
+<p>Instalar sass con npm:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install -g sass
+</code></pre></div></div>
+
+<p>Para comprobar que se ha instalado correctamente escribe:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sass -v
+</code></pre></div></div>
+
+<p>Para decirle a Sass que “vigile” si hay cambios y compile nuestros archivos .scss en nuestro archivo .css escribimos:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sass --watch tu_carpeta_sass:tu_carpeta_css
+</code></pre></div></div>
+
+<p><strong><em>Enlaces útiles:</em></strong></p>
+
+<ul>
+  <li><a href="http://sass-lang.com/">Sass-lang</a></li>
+  <li><a href="http://thesassway.com/">The Sass Way</a></li>
+  <li><a href="http://sassmeister.com">Sass meister</a></li>
+</ul>
+:ET
