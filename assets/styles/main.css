@@ -29540,41 +29540,12 @@ a.netineti-card p {
   margin-bottom: 10px;
 }
 
+.grid-sizer img,
+.grid-item img {
+  max-width: 200px;
+}
+
 /* 2 columns */
 .grid-item--width2 {
   width: 400px;
-}
-
-.lang-switcher {
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.lang-switcher a {
-  background-color: #424242;
-  border: 1px solid #424242;
-  color: #ffffff;
-  padding: 0.5rem;
-  margin: 0 0.5rem;
-  transition: 0.2s ease-in-out;
-}
-
-.lang-switcher a:hover {
-  color: #774cfd;
-  background-color: transparent;
-  border: 1px solid #774cfd;
-}
-
-.lang-switcher p {
-  color: #424242;
-  display: contents;
-}
-
-@media (max-width: 991.98px) {
-  .lang-switcher {
-    margin: 0.5rem 0;
-  }
-  .lang-switcher a {
-    margin: 0;
-  }
 }
