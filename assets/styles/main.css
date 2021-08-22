@@ -29479,55 +29479,46 @@ ul.social-links,
   transition: background-color 0.25s;
 }
 
-hr.small {
-  width: 200px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+.portfolio-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 1fr;
 }
 
-.wrap-circle {
-  position: relative;
-}
-
-.circle {
-  position: absolute;
-  left: -20%;
-  top: 0;
-  text-align: center;
-  width: 60px;
-  height: 60px;
-  border-radius: 50px;
-  background: #956ee5;
-  color: #fff;
-  font-size: 0.875rem;
-  border-bottom: 0;
-}
-
-.circle .fa-angle-left {
-  margin-top: 7px;
-}
-
-.circle:hover {
-  color: #fff;
-}
-
-a.netineti-card {
-  text-align: center;
-  height: 100%;
+.n-card {
+  background-color: #ffffff;
+  border: 1px solid #774cfd;
+  border-radius: 4px;
   cursor: pointer;
-  overflow: hidden;
+  transition: all 0.2s linear;
 }
 
-a.netineti-card p {
-  color: #424242;
+.n-card:hover {
+  box-shadow: 2px 2px 0 #774cfd;
 }
 
-.netineti-card img {
+.n-card img {
   filter: grayscale(100%);
-  transition: 0.3s ease-in-out;
+  transition: all 0.2s linear;
 }
 
-.netineti-card:hover img {
-  filter: grayscale(0.5);
+.n-card:hover img {
+  filter: grayscale(50%);
+}
+
+.n-card-body {
+  border-top: 5px solid #774cfd;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.n-card-body .n-card-title {
+  color: #774cfd;
+}
+
+.n-card-body .n-card-text {
+  color: #424242;
 }
 
 .grid {
