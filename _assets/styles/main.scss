@@ -135,3 +135,24 @@
 .grid-item--width2 {
   width: 400px;
 }
+
+.arrow-square {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  background-color: $brand-color;
+  margin-right: 12px;
+  padding: 10px;
+  border-radius: 4px;
+  i {
+    color: $white;
+    font-size: 0.9rem;
+  }
+  transition: all 0.2s linear;
+  &:hover {
+    background-color: lighten($brand-color, 10%);
+  }
+}

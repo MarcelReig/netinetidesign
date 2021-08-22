@@ -29540,3 +29540,26 @@ ul.social-links,
 .grid-item--width2 {
   width: 400px;
 }
+
+.arrow-square {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  background-color: #774cfd;
+  margin-right: 12px;
+  padding: 10px;
+  border-radius: 4px;
+  transition: all 0.2s linear;
+}
+
+.arrow-square i {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.arrow-square:hover {
+  background-color: #9d7efe;
+}
