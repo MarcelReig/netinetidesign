@@ -17,11 +17,10 @@
   flex-direction: column;
   margin: 50px auto;
   width: calc(100% -30px);
-  color: $white;
   hr {
     width: 50px;
     margin: auto 0 30px 0;
-    border-top: 1px dashed $transparent-white;
+    border-top: 1px dashed $gray-500;
   }
 }
 
@@ -33,12 +32,12 @@
 
 .contact-left-info {
   width: 100%;
-  background-color: #2a1d39;
+  background-color: $bg-color;
   padding: 20px 10% 20px 20px;
 }
 
 .contact-left-map {
-  background-color: $white;
+  background-color: $bg-color;
   width: 100%;
 }
 
@@ -48,16 +47,15 @@
 
 .contact-form {
   padding: 20px;
-  background-color: $brand-color;
+  background-color: $bg-color;
 }
 
 .contact-form input,
 .contact-form form textarea {
   width: 100%;
   border-radius: 4px;
-  border: none;
+  border: 1px solid $gray-500;
   margin-bottom: 2em;
-  color: #acb7ee;
 }
 
 ul.social-links,
@@ -78,10 +76,10 @@ ul.social-links,
 }
 
 .social-links a {
-  color: $transparent-white;
+  color: $brand-color;
   transition: ease-in-out 0.5ms;
   &:hover {
-    color: #acb7ee;
+    color: lighten($brand-color, 30%);
   }
 }
 // Medium devices (tablets, 768px and up)

@@ -14,18 +14,26 @@
     margin: 10px 0;
     padding: 12px 0;
   }
-
   .post-link {
     display: block;
     border-bottom: none;
     overflow: hidden;
     padding: 1em 0.5em;
     text-decoration: none;
+    h4 {
+      color: $color-black;
+      transition: all 0.2s ease-in-out;
+    }
+    &:hover {
+      h4 {
+        color: $brand-color;
+      }
+    }
   }
+}
 
-  .post-meta {
-    color: $gray-400;
-  }
+.post-meta {
+  color: $gray-400;
 }
 
 .post-content {
@@ -41,6 +49,7 @@
 .blog-image-wrapper {
   overflow: hidden;
   float: left;
+  margin-right: 20px;
   img {
     display: block;
     width: 90px;

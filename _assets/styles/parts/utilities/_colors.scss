@@ -1,37 +1,28 @@
-// Color Palette
-// Based on the official Sass styleguide
-// ===================================================================
-// Descriptive colors
-// ===================================================================
-$white: #ffffff !default;
-$transparent-white: rgba(255, 255, 255, 0.2);
-$black: #000000 !default;
-
-
-.color-white {
-  color: $white;
-}
-
-.color-black {
-  color: $black;
-}
-
 // ===================================================================
 // Theme colors
 // ===================================================================
-$brand-color: #774cfd;
-
+$color-white: #fafafa;
+$color-black: #1d1d1d;
+$transparent-white: rgba(255, 255, 255, 0.2);
+$bg-color: $color-white;
+$header-color: $color-black;
+.color-white {
+  color: $color-white;
+}
+.color-black {
+  color: $color-black;
+}
+$brand-color: #295fff;
 .brand-color {
   color: $brand-color;
 }
-
 .bg-brand-color {
   background-color: $brand-color;
 }
+.bg-color {
+  color: $bg-color;
+}
 
-// ===================================================================
-// Main elements colors
-// ===================================================================
 // ========================================================
 //  Gray Material Colors
 // ========================================================
@@ -49,78 +40,56 @@ $gray-900: #212121;
 .color-gray-50 {
   color: $gray-50;
 }
-
 .color-gray-100 {
   color: $gray-100;
 }
-
 .color-gray-200 {
   color: $gray-200;
 }
-
 .color-gray-300 {
   color: $gray-300;
 }
-
 .color-gray-400 {
   color: $gray-400;
 }
-
 .color-gray-500 {
   color: $gray-500;
 }
-
 .color-gray-600 {
   color: $gray-600;
 }
-
 .color-gray-700 {
   color: $gray-700;
 }
-
 .color-gray-800 {
   color: $gray-800;
 }
-
 .color-gray-900 {
   color: $gray-900;
 }
-
-// background colors
-$bg-color: #faf6f5;
-
-.bg-color {
-  color: $bg-color;
-}
+// background gray colors
 
 .bg-gray-50 {
   background-color: $gray-50;
 }
-
 .bg-gray-100 {
   background-color: $gray-100;
 }
-
 .bg-gray-200 {
   background-color: $gray-200;
 }
-
 .bg-gray-300 {
   background-color: $gray-300;
 }
-
 .bg-gray-400 {
   background-color: $gray-400;
 }
-
 .bg-gray-500 {
   background-color: $gray-500;
 }
-
 .bg-gray-800 {
   background-color: $gray-800;
 }
-
 .bg-gray-900 {
   background-color: $gray-900;
 }
