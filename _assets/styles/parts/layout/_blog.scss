@@ -6,17 +6,16 @@
   list-style-type: none;
   margin: 0 0 2em;
   padding: 0;
-  li:first-child {
-    border-top: 1px solid $gray-300;
-  }
   li {
     border-bottom: 1px solid $gray-300;
     margin: 10px 0;
     padding: 12px 0;
   }
+  li:first-child {
+    border-top: 1px solid $gray-300;
+  }
   .post-link {
     display: block;
-    border-bottom: none;
     overflow: hidden;
     padding: 1em 0.5em;
     text-decoration: none;
@@ -47,9 +46,10 @@
 }
 
 .blog-image-wrapper {
+  display: none;
   overflow: hidden;
   float: left;
-  margin-right: 20px;
+  margin-right: 12px;
   img {
     display: block;
     width: 90px;
@@ -76,5 +76,11 @@
       background-color: #f1f1f1;
       color: #333;
     }
+  }
+}
+
+@media (min-width: 576px) {
+  .blog-image-wrapper {
+    display: block;
   }
 }

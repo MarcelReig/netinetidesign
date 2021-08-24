@@ -28846,19 +28846,18 @@ a:hover,
   padding: 0;
 }
 
-.post-list li:first-child {
-  border-top: 1px solid #e0e0e0;
-}
-
 .post-list li {
   border-bottom: 1px solid #e0e0e0;
   margin: 10px 0;
   padding: 12px 0;
 }
 
+.post-list li:first-child {
+  border-top: 1px solid #e0e0e0;
+}
+
 .post-list .post-link {
   display: block;
-  border-bottom: none;
   overflow: hidden;
   padding: 1em 0.5em;
   text-decoration: none;
@@ -28886,9 +28885,10 @@ a:hover,
 }
 
 .blog-image-wrapper {
+  display: none;
   overflow: hidden;
   float: left;
-  margin-right: 20px;
+  margin-right: 12px;
 }
 
 .blog-image-wrapper img {
@@ -28916,6 +28916,12 @@ a:hover,
 .pagination a:hover {
   background-color: #f1f1f1;
   color: #333;
+}
+
+@media (min-width: 576px) {
+  .blog-image-wrapper {
+    display: block;
+  }
 }
 
 .post-image-wrapper {
@@ -29227,28 +29233,11 @@ ul.social-links,
 }
 
 .title-block {
+  padding: 3rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-content: center;
-  max-width: 30%;
-  text-align: center;
-}
-
-.title-wrapper-expanded {
-  display: flex;
-  justify-content: center;
-}
-
-.title-block-expanded {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  max-width: 80%;
-  text-align: center;
 }
 
 .timeline-container {
@@ -29349,17 +29338,25 @@ ul.social-links,
 }
 
 /* ========= Sobre mi ===================== */
-.left-50 {
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #eeeeee;
+}
+
+.about-left {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 600px;
-  padding: 0 30px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 30px;
 }
 
-.right-50 {
+.about-right {
   background-image: url(../images/perfil-actor-small.jpg);
   background-size: cover;
   width: 100%;
@@ -29367,17 +29364,17 @@ ul.social-links,
   overflow: hidden;
 }
 
-@media screen and (min-width: 64em) {
-  .left-50 {
-    width: 50%;
+@media (min-width: 768px) {
+  .about-wrapper {
+    flex-direction: row;
+  }
+  .about-left {
     height: 500px;
     padding: 0 50px;
   }
-  .right-50 {
+  .about-right {
     background-image: url(../images/perfil-actor.jpg);
-    width: 50%;
     height: 500px;
-    overflow: hidden;
   }
 }
 
@@ -29456,6 +29453,7 @@ ul.social-links,
 
 .landing-text {
   text-align: center;
+  padding: 0 12px;
 }
 
 .landing-wrapper {
@@ -29475,6 +29473,7 @@ ul.social-links,
   }
   .landing-text {
     text-align: right;
+    padding: 0;
   }
 }
 
