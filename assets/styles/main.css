@@ -29192,7 +29192,7 @@ ul.social-links,
 }
 
 .block-img img {
-  max-height: 300px;
+  max-width: 100%;
 }
 
 .block-text {
