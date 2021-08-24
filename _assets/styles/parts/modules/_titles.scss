@@ -10,3 +10,22 @@
   justify-content: center;
   align-items: center;
 }
+
+.squares-title {
+  background-color: $color-black;
+  padding: 30px;
+  margin: 5rem 12px;
+  box-shadow: -10px 10px $brand-color;
+  > * {
+    color: #ffffff;
+  }
+}
+
+.gradient-bg-title {
+  background: radial-gradient(
+    circle farthest-corner at 200px 0,
+    $gray-200,
+    $gray-400
+  );
+  background-position: top left;
+}
