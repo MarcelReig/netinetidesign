@@ -22,7 +22,7 @@ Sass cubre los huecos de CSS añadiéndole todo lo que le falta, haciéndolo un 
 Instalar sass con npm:
 
 ```
-npm install -g sass
+$ npm install -g sass
 ```
 
 Para comprobar que se ha instalado correctamente escribe:
