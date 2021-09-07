@@ -1,0 +1,22 @@
+I"�<p>Python es un lenguaje de propósito general con una sintaxis limpia lo que lo hace una buena elección para aprender a programar.a1</p>
+
+<h3 id="indentación">Indentación</h3>
+
+<p>Python utiliza la indentación para indicar el inicio y fín de un bloque de código.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">saludar</span><span class="p">(</span><span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">):</span>
+    <span class="k">return</span><span class="p">(</span><span class="s">"Hi "</span> <span class="o">+</span> <span class="n">first_name</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">last_name</span> <span class="o">+</span> <span class="s">"!"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">saludar</span><span class="p">(</span><span class="s">"Ana"</span><span class="p">,</span> <span class="s">"Toledo"</span><span class="p">))</span>
+</code></pre></div></div>
+
+<h3 id="comentarios">Comentarios</h3>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Comentario de una línea
+</span></code></pre></div></div>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">"""
+Comentario
+de varias
+líneas
+"""</span>
+</code></pre></div></div>
+:ET

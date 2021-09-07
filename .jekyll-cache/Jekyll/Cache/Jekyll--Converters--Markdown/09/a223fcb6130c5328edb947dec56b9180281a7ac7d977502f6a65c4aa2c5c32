@@ -1,0 +1,265 @@
+I"�J<h3 class="lead" id="python-es-un-lenguaje-de-propósito-general-con-una-sintaxis-limpia-y-sencilla-por-lo-que-es-una-buena-elección-para-aprender-a-programar">Python es un lenguaje de propósito general con una sintaxis limpia y sencilla, por lo que es una buena elección para aprender a programar.</h3>
+
+<h3 class="lead" id="python-fue-creado-en-los-90-por-guido-van-rossum-su-nombre-viene-de-los-humoristas-britanicos-monty-python">Python fue creado en los 90 por <a href="https://twitter.com/gvanrossum?s=20" target="\_blank">Guido van Rossum</a>, su nombre viene de los humoristas britanicos Monty Python.</h3>
+
+<h3 class="lead mb-5" id="si-quieres-cear-aplicaciones-web-en-python-puedes-utilizar-algunso-de-sus-frameworks-django-o-flask">Si quieres cear aplicaciones web en Python puedes utilizar algunso de sus frameworks <a href="https://www.djangoproject.com/" target="\_blank">django</a> o <a href="https://flask.palletsprojects.com/en/2.0.x/" target="\_blank">Flask</a>.</h3>
+
+<h2 id="características-principales-del-lenguaje">Características principales del lenguaje</h2>
+
+<ul>
+  <li>Es un <strong>lenguaje interpretado</strong>, no compilado.</li>
+  <li>Usa <strong>tipado dinámico</strong>, una variable puede tomar valores de distinto tipo.</li>
+  <li>Es <strong>fuertemente tipado</strong>, el tipo no cambia de manera repentina. Para que se produzca un cambio de tipo se tiene que hacer una conversión explícita.</li>
+  <li>Es <strong>multiplataforma</strong>, el mismo código funciona en macOS, Windows y Linux.</li>
+</ul>
+
+<h2 id="empezar-a-programar-en-python">Empezar a programar en Python</h2>
+
+<p>Si quieres empezar a hacer pruebas rápidamente sin instalar Python en tu computadora puedes hacerlo en <a href="https://replit.com/" target="\_blank">replit</a> o <a href="https://www.anyfiddle.com/">anyfidle</a>, son herrramientas tipo codepen o jsbin pero en las que puedes programar en Python.</p>
+
+<p>Para instalar Python ves a <a href="https://www.python.org/" target="\_blank">python.org</a> y descarga la versión de Python para tu sistema operativo.</p>
+
+<p>Para instalar Python en Mac te recomiendo seguir el <a href="https://www.freecodecamp.org/news/python-version-on-mac-update/" target="\_blank">tutorial de Quincy Larson</a> en freeCodeCamp.</p>
+
+<p>Una vez instalado Python en tu computadora abre la terminal y escribe <code class="language-plaintext highlighter-rouge">python3</code>, esto te abrirá un interprete de Phyton en el que ya puedes ejecutar funciones de Python.</p>
+
+<p><img src="/assets/images/blog/python-term.png" width="800" class="img-fluid text-center m-xl-auto" alt="python" /></p>
+
+<h2 id="descargar-un-entorno-de-programación">Descargar un entorno de programación</h2>
+
+<p>Descarga <a href="https://www.jetbrains.com/es-es/pycharm/download/" target="\_blank">pycharm</a> la versión <strong>Community</strong> que es gratis.</p>
+
+<p>También puedes desarrollar en Python con <a href="https://code.visualstudio.com/" target="\_blank">Visual Studio Code</a> y la <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python" target="\_blank">extensión de Python</a> de Microsoft.</p>
+
+<h2 id="indentación">Indentación</h2>
+
+<p>Python utiliza la indentación para indicar el inicio y fín de un bloque de código.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">saludar</span><span class="p">(</span><span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">):</span>
+    <span class="k">return</span><span class="p">(</span><span class="s">"Hi "</span> <span class="o">+</span> <span class="n">first_name</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">last_name</span> <span class="o">+</span> <span class="s">"!"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">saludar</span><span class="p">(</span><span class="s">"Ana"</span><span class="p">,</span> <span class="s">"Toledo"</span><span class="p">))</span>
+</code></pre></div></div>
+
+<h2 id="comentarios">Comentarios</h2>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Comentario de una línea
+</span></code></pre></div></div>
+
+<p>Los comentarios de varias líneas se hacen con 3 comillas dobles o simples al inicio y al final del comentario.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">'''
+Comentario
+de varias
+líneas
+'''</span>
+</code></pre></div></div>
+
+<h2 id="variables">Variables</h2>
+
+<p>Las variables nos permiten guardar valores que más tarde podemos utilizar en nuestro código.
+Las variables pueden guardar cualquier tipo de dato, enteros, flotantes, booleanos y cadenas o Strings, también podemos guardar listas y tuplas.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mascota</span> <span class="o">=</span> <span class="s">"Perro"</span> <span class="c1"># string
+</span><span class="n">raza_peligrosa</span> <span class="o">=</span> <span class="bp">True</span> <span class="c1"># booleano
+</span><span class="n">edad</span> <span class="o">=</span> <span class="mi">2</span> <span class="c1"># entero
+</span></code></pre></div></div>
+
+<h2 id="tipos-de-datos">Tipos de datos</h2>
+
+<ul>
+  <li>Booleanos</li>
+  <li>Números</li>
+  <li>Cadenas</li>
+  <li>Listas</li>
+  <li>Tuplas</li>
+  <li>Diccionarios</li>
+  <li>set</li>
+  <li>Mutables e Inmutables</li>
+</ul>
+
+<h2 id="trabajando-con-cadenas-en-python">Trabajando con cadenas en Python</h2>
+
+<h2 id="trabajando-con-listas-en-python">Trabajando con listas en Python</h2>
+
+<p>Una lista es una secuencia ordenada de elementos, las listas no son inmutables, podemos añadir, eliminar, mover y cambiar items de lista a nuestro antojo.
+Las listas se crean añadiendo valores entre <code class="language-plaintext highlighter-rouge">[ ]</code> corchetes.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">helados</span> <span class="o">=</span> <span class="p">[</span><span class="s">'chocolate'</span><span class="p">,</span> <span class="s">'limón'</span><span class="p">,</span> <span class="s">'mango'</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="n">helados</span><span class="p">)</span>
+<span class="c1"># ['chocolate', 'limón', 'mango']
+</span>
+<span class="n">helados</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s">'vainilla'</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">helados</span><span class="p">)</span>
+<span class="c1"># ['chocolate', 'vainilla', 'limón', 'mango']
+</span>
+<span class="n">helados</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">'pistacho'</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">helados</span><span class="p">)</span>
+<span class="c1"># ['chocolate', 'vainilla', 'limón', 'mango', 'pistacho']
+</span>
+</code></pre></div></div>
+
+<p>Podemos acceder a los valores de lista por su índice igual que en las cadenas.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">helados</span> <span class="o">=</span> <span class="p">[</span><span class="s">'chocolate'</span><span class="p">,</span> <span class="s">'limón'</span><span class="p">,</span> <span class="s">'mango'</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="n">helados</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="c1"># mango
+</span></code></pre></div></div>
+
+<p>Si no te gusta el mango siempre puedes cambiarlo por fresas silvestres.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">helados</span> <span class="o">=</span> <span class="p">[</span><span class="s">'chocolate'</span><span class="p">,</span> <span class="s">'limón'</span><span class="p">,</span> <span class="s">'mango'</span><span class="p">]</span>
+<span class="n">helados</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="s">'fresas silvestres'</span>
+<span class="k">print</span><span class="p">(</span><span class="n">helados</span><span class="p">)</span>
+<span class="c1"># ['chocolate', 'limón', 'fresas silvestres']
+</span></code></pre></div></div>
+
+<p>También puedes utilizar <code class="language-plaintext highlighter-rouge">.remove</code> para eliminarlo de la lista.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">helados</span> <span class="o">=</span> <span class="p">[</span><span class="s">'chocolate'</span><span class="p">,</span> <span class="s">'limón'</span><span class="p">,</span> <span class="s">'mango'</span><span class="p">]</span>
+<span class="n">helados</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="s">'mango'</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">helados</span><span class="p">)</span> <span class="c1"># ['chocolate', 'limón']
+</span></code></pre></div></div>
+
+<p>Otro método que tenemos disponible para manipular elementos de lista en Python es <code class="language-plaintext highlighter-rouge">.pop</code>.
+Este método también lo encontrarás en otros lenguajes como JavaScript.
+<code class="language-plaintext highlighter-rouge">.pop</code> lo que hace es eliminar el último elemento de la lista pero no solo eso, tambien lo retorna por lo que podemos guardarlo en una variable.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">helados</span> <span class="o">=</span> <span class="p">[</span><span class="s">'chocolate'</span><span class="p">,</span> <span class="s">'limón'</span><span class="p">,</span> <span class="s">'mango'</span><span class="p">]</span>
+<span class="n">ultimo_helado</span> <span class="o">=</span> <span class="n">helados</span><span class="p">.</span><span class="n">pop</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">ultimo_helado</span><span class="p">)</span> <span class="c1"># mango
+</span><span class="k">print</span><span class="p">(</span><span class="n">helados</span><span class="p">)</span> <span class="c1"># ['chocolate', 'limón']
+</span></code></pre></div></div>
+
+<h2 id="trabajando-con-tuples-en-python">Trabajando con tuples en Python</h2>
+
+<h2 id="trabajando-con-números-en-python">Trabajando con números en Python</h2>
+
+<p>Operadores aritméticos en Python</p>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Operador </th>
+      <th scope="col">Descripción </th>
+      <th scope="col">Uso </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">+</th>
+      <td>Suma</td>
+      <td>5 + 5 = 10 </td>
+    </tr>
+    <tr>
+      <th scope="row">-</th>
+      <td>Resta</td>
+      <td>4 - 3 = 1</td>
+    </tr>
+    <tr>
+      <th scope="row">*</th>
+      <td>Multiplicación</td>
+      <td>8 * 2 = 16</td>
+    </tr>
+        <tr>
+      <th scope="row">/</th>
+      <td>División</td>
+      <td>16 / 2 = 8</td>
+    </tr>
+    <tr>
+      <th scope="row">%</th>
+      <td>Módulo</td>
+      <td>16 % 3 = 1</td>
+    </tr>
+    <tr>
+      <th scope="row">**</th>
+      <td>Exponente</td>
+      <td>12 ** 3 = 1728</td>
+    </tr>
+      <tr>
+      <th scope="row">//</th>
+      <td>División entera</td>
+      <td>18 // 5 = 3</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="función-print">Función print()</h2>
+
+<h2 id="condicionales">Condicionales</h2>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">es_barato</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">es_bueno</span> <span class="o">=</span> <span class="bp">True</span>
+
+<span class="k">if</span> <span class="n">es_barato</span> <span class="ow">and</span> <span class="n">es_bueno</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Toma mo dinero!"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">es_barato</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">es_bueno</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Eres barato pero no eres bueno"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="ow">not</span> <span class="n">es_barato</span> <span class="ow">and</span> <span class="n">es_bueno</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Eres bueno pero no eres barato"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Eres una estafa"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Con los condicionales en Python puedes construir cosas tan geniales como una pequeña calculadora.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">num1</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Introduce un número: "</span><span class="p">))</span>
+<span class="n">op</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Introduce un operador: "</span><span class="p">)</span>
+<span class="n">num2</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Introduce el segundo número: "</span><span class="p">))</span>
+
+<span class="k">if</span> <span class="n">op</span> <span class="o">==</span> <span class="s">'+'</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">op</span> <span class="o">==</span> <span class="s">'-'</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">num1</span> <span class="o">-</span> <span class="n">num2</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">op</span> <span class="o">==</span> <span class="s">'/'</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">num1</span> <span class="o">/</span> <span class="n">num2</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">op</span> <span class="o">==</span> <span class="s">'*'</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">num1</span> <span class="o">*</span> <span class="n">num2</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'Introduce un operador válido'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="iteraciones-en-python">Iteraciones en Python</h2>
+
+<ul>
+  <li>While</li>
+  <li>For</li>
+</ul>
+
+<h2 id="funciones-en-python">Funciones en Python</h2>
+
+<p>Las funciones en Python se crean mediante la instrucción <code class="language-plaintext highlighter-rouge">def</code>más el nombre de la función.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">my_function</span><span class="p">(</span><span class="n">param1</span><span class="p">,</span> <span class="n">param2</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">param1</span> <span class="o">+</span> <span class="n">param2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Para invocar la función escribimos el nombre de la función más paréntesis y los parámetros de la función si los tiene.
+No todas las funciones tienen que tener parámetros.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_function</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span> <span class="c1"># 10
+</span></code></pre></div></div>
+<h2 id="funciones-lambda">Funciones lambda</h2>
+
+<p>Las funciones normales en Python se definen con <code class="language-plaintext highlighter-rouge">def</code>.
+Las funciones anonimas en Python se definen con <code class="language-plaintext highlighter-rouge">lambda</code>.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Función normal
+</span><span class="k">def</span> <span class="nf">myfunc</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">+</span> <span class="n">z</span>
+    <span class="k">return</span> <span class="n">result</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">myfunc</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span> <span class="c1"># 9
+</span></code></pre></div></div>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#Función lambda
+</span><span class="n">result2</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">+</span> <span class="n">z</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">result2</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span> <span class="c1"># 9
+</span></code></pre></div></div>
+
+<h2 id="diccionarios">Diccionarios</h2>
+
+<h2 id="clases-y-objetos">Clases y objetos</h2>
+:ET

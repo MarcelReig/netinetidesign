@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Funciones en JavaScript
-meta:
-  description: Funciones en JavaScript
+description: Funciones en JavaScript
 comments: true
 tags: javascript
 category: programacion

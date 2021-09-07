@@ -1,0 +1,10 @@
+I"�<p>Python es un lenguaje de propósito general con una sintaxis limpia lo que lo hace una buena elección para aprender a programar.a1</p>
+
+<p>Python utiliza la indentación para indicar el inicio y fín de un bloque de código.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">ej_funcion</span><span class="p">():</span>
+    <span class="n">first</span> <span class="o">=</span> <span class="s">"Manuel"</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="mi">16</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Hola"</span> <span class="o">+</span> <span class="n">name</span> <span class="s">"tienes"</span> <span class="o">+</span> <span class="n">age</span> <span class="o">+</span> <span class="s">"años"</span><span class="p">)</span>
+</code></pre></div></div>
+:ET

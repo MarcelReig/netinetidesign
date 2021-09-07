@@ -1,0 +1,15 @@
+I"É<p>Entendiendo el concepto programaci√≥n funcional.</p>
+
+<pre><code class="language-javasc">function apply(num, f) {
+  return f(num);
+}
+
+function double(num) {
+  return 2 * num;
+}
+</code></pre>
+
+<p>console.log(apply(5, double));
+<a href="https://jsbin.com/weyokir/edit?js,console" target="\_blank"><small><i class="fas fa-external-link-alt"></i> Play with it in JS Bin!</small></a></p>
+
+:ET
