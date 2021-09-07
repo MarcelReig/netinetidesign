@@ -72,17 +72,11 @@ helados = ['chocolate', 'limón', 'mango']
 print(helados[-1])  # Output: mango
 ```
 
-Para saber cuantos elementos tiene una lista utilizamos la función predefinida de Python `len`.
+Para saber cuantos elementos tiene una lista utilizamos la función predefinida `len`.
 
 ```py
 helados = ['chocolate', 'limón', 'mango']
 print(len(helados))  # Output: 3
-```
-
-Para saber en que índice se encuentra un elemento en una lista utilizamos el método `.index()`.
-```py
-helados = ['chocolate', 'limón', 'mango']
-print(helados.index('limón'))  # Output: 1
 ```
 
 __Métodos de las listas__
@@ -95,7 +89,11 @@ __Métodos de las listas__
 
 `count()`
 
-`index()`
+`index()` Utilizamos este método para saber en que índice se encuentra un elemento en una lista.
+```py
+helados = ['chocolate', 'limón', 'mango']
+print(helados.index('limón'))  # Output: 1
+```
 
 `insert()`
 
