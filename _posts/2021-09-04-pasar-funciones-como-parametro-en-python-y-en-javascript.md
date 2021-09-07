@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Función como parámetro en Python y JavaScript
-description: Función como parámetro en Python y JavaScript
+title: Pasar funciones como parámetro
+description: Pasar funciones como parámetro en Python y en JavaScript
 comments: true
 tags: python javascript
 category: programacion
