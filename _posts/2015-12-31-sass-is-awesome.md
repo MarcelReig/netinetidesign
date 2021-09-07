@@ -8,11 +8,9 @@ category: programacion
 image: sass.png
 ---
 
-<div class="message-box" id="no-translation-msg">
-    Sorry, this page is not available in this language.
-</div>
-
+<h2 class="lead">
 Sass cubre los huecos de CSS añadiéndole todo lo que le falta, haciéndolo un lenguaje más inteligente, escalable y reutilizable.
+</h2>
 
 - Variables
 - Anidamiento
