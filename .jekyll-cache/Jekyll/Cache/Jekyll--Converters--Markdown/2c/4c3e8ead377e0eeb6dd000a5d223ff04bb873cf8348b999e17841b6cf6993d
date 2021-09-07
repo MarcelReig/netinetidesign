@@ -1,13 +1,4 @@
----
-layout: post
-title: Cadenas en Python
-description: Cadenas en Python
-comments: true
-tags: python
-category: programacion
-image: strings-python.jpg
----
-
+I"�<h2 clas="">
 Las cadenas (`string`) se crean escribiendo una una secuencia de carácteres, letras, números o símbolos entre comillas simples `''` o dobles `""`.
 
 Puedes guardar un `string` en una variable del siguiente modo:
@@ -249,3 +240,5 @@ print(et_says.lower())
 `join()`
 
 `strip()`
+</h2>
+:ET

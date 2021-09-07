@@ -9,13 +9,13 @@ image: python.png
 ---
 
 {:.lead}
-### Python es un lenguaje de propósito general con una sintaxis limpia y sencilla, por lo que es una buena elección para aprender a programar.
+## Python es un lenguaje de propósito general con una sintaxis limpia y sencilla, por lo que es una buena elección para aprender a programar.
 
 {:.lead}
-### Python fue creado en los 90 por [Guido van Rossum](https://twitter.com/gvanrossum?s=20){:target="\_blank"}, su nombre viene de los humoristas britanicos Monty Python.
+## Python fue creado en los 90 por [Guido van Rossum](https://twitter.com/gvanrossum?s=20){:target="\_blank"}, su nombre viene de los humoristas britanicos Monty Python.
 
 {:.lead.mb-5}
-### Si quieres cear aplicaciones web en Python puedes utilizar algunso de sus frameworks [django](https://www.djangoproject.com/){:target="\_blank"} o [Flask](https://flask.palletsprojects.com/en/2.0.x/){:target="\_blank"}.
+## Si quieres cear aplicaciones web en Python puedes utilizar algunso de sus frameworks [django](https://www.djangoproject.com/){:target="\_blank"} o [Flask](https://flask.palletsprojects.com/en/2.0.x/){:target="\_blank"}.
 
 ## Empezar a programar en Python
 
@@ -114,24 +114,21 @@ edad = 2
 - Diccionarios _(Dict)_
 - set _(set)_
 
-
 <div class="alert alert-info" role="alert">
  <p><i class="fas fa-sticky-note"></i> Nota:</p>
 <p>En Python existen dos tipos de datos los que se pueden modificar tras su creación <b>Mutables</b> y los que no, <b>Inmutables</b>.</p>
 </div>
 
-
-__Mutables__ no se pueden modificar tras su creación.
+__Mutables__ Se pueden modificar tras su creación.
 - Listas
 - Dicionarios
 - Sets
 
-__Inmutables__ se pueden modificar tras su creación.
+__Inmutables__ No se pueden modificar tras su creación.
 - Booleanos
 - Números
 - Cadenas
 - Tuplas
-
 
 ## Números
 
