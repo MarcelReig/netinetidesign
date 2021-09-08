@@ -10,24 +10,14 @@ image: listas-tuplas-python.jpg
 
 ## Listas
 
-Una lista es una secuencia ordenada de elementos, las listas no son inmutables, podemos añadir, eliminar, mover y cambiar items de lista a nuestro antojo.
+Las listas son una secuencia ordenada de elementos, a diferencia de la tuplas las listas no son inmutables, podemos añadir, eliminar, mover y cambiar items de lista a nuestro antojo.
+
 Las listas se crean añadiendo valores separados por comas entre `[ ]` corchetes.
 
 ```py
 helados = ['chocolate', 'limón', 'mango']
 print(helados)
 # Output: ['chocolate', 'limón', 'mango']
-
-helados.insert(1, 'vainilla')
-
-print(helados)
-# Output: ['chocolate', 'vainilla', 'limón', 'mango']
-
-helados.append('pistacho')
-
-print(helados)
-# Output:
-# ['chocolate', 'vainilla', 'limón', 'mango', 'pistacho']
 ```
 
 Podemos acceder a los valores de lista por su índice igual que en las cadenas.
@@ -55,7 +45,7 @@ del helados[2]
 print(helados) # Output: ['chocolate', 'limón']
 ```
 
-Python nos permite crear listas de listas o listas anidadas.
+Python nos permite crear listas anidadas.
 
 ```py
 nested_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
@@ -65,7 +55,7 @@ print(nested_list[0][1])  # Output: 2
 print(nested_list[1][-1])  # Output: 6
 ```
 
-Para acceder al último elemento de la lista utilizamos el indice negativo  `[-1]`.
+Para acceder al último elemento de una lista utilizamos el indice negativo  `[-1]`.
 
 ```py
 helados = ['chocolate', 'limón', 'mango']
@@ -81,7 +71,19 @@ print(len(helados))  # Output: 3
 
 __Métodos de las listas__
 
-`append()`
+`append()` Añade un elemento al final de la lista.
+
+```py
+helados = ['chocolate', 'limón', 'mango']
+print(helados)
+# Output: ['chocolate', 'limón', 'mango']
+
+helados.append('pistacho')
+
+print(helados)
+# Output:
+# ['chocolate', 'limón', 'mango', 'pistacho']
+```
 
 `clear()`
 
@@ -90,12 +92,24 @@ __Métodos de las listas__
 `count()`
 
 `index()` Utilizamos este método para saber en que índice se encuentra un elemento en una lista.
+
 ```py
 helados = ['chocolate', 'limón', 'mango']
 print(helados.index('limón'))  # Output: 1
 ```
 
-`insert()`
+`insert()` Inserta un elemento de lista en el índice especificado.
+
+```py
+helados = ['chocolate', 'limón', 'mango']
+print(helados)
+# Output: ['chocolate', 'limón', 'mango']
+
+helados.insert(1, 'vainilla')
+
+print(helados)
+# Output: ['chocolate', 'vainilla', 'limón', 'mango']
+```
 
 `pop()` Elimina el último elemento de la lista, pero no se limita a eso, también lo retorna por lo que podemos guardarlo en una variable.
 
