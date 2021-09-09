@@ -1,0 +1,201 @@
+I"*&<h2 id="listas">Listas</h2>
+
+<p>Las listas son una secuencia ordenada de elementos, a diferencia de la tuplas las listas no son inmutables, podemos añadir, eliminar, mover y cambiar items de lista a nuestro antojo.</p>
+
+<p>Las listas se crean añadiendo valores separados por comas entre <code class="language-plaintext highlighter-rouge">[ ]</code> corchetes.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">helados</span> <span class="o">=</span> <span class="p">[</span><span class="s">'chocolate'</span><span class="p">,</span> <span class="s">'limón'</span><span class="p">,</span> <span class="s">'mango'</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="n">helados</span><span class="p">)</span>
+<span class="c1"># Output: ['chocolate', 'limón', 'mango']
+</span></code></pre></div></div>
+
+<p>Podemos acceder a los valores de lista por su índice igual que en las cadenas.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">helados</span> <span class="o">=</span> <span class="p">[</span><span class="s">'chocolate'</span><span class="p">,</span> <span class="s">'limón'</span><span class="p">,</span> <span class="s">'mango'</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="n">helados</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="c1"># Output: mango
+</span></code></pre></div></div>
+
+<p>Si no te gusta el mango siempre puedes cambiarlo por fresas silvestres asignándole otro valor a través de su índice.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">helados</span> <span class="o">=</span> <span class="p">[</span><span class="s">'chocolate'</span><span class="p">,</span> <span class="s">'limón'</span><span class="p">,</span> <span class="s">'mango'</span><span class="p">]</span>
+<span class="n">helados</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="s">'fresas silvestres'</span>
+<span class="k">print</span><span class="p">(</span><span class="n">helados</span><span class="p">)</span>
+<span class="c1"># Output: ['chocolate', 'limón', 'fresas silvestres']
+</span></code></pre></div></div>
+
+<p>También puedes utilizar la palabra clave <code class="language-plaintext highlighter-rouge">del</code> para eliminar elementos de lista.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">helados</span> <span class="o">=</span> <span class="p">[</span><span class="s">'chocolate'</span><span class="p">,</span> <span class="s">'limón'</span><span class="p">,</span> <span class="s">'mango'</span><span class="p">]</span>
+<span class="k">del</span> <span class="n">helados</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="n">helados</span><span class="p">)</span> <span class="c1"># Output: ['chocolate', 'limón']
+</span></code></pre></div></div>
+
+<p>Python nos permite crear listas anidadas.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">nested_list</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]]</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">nested_list</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># Output: 2
+</span>
+<span class="k">print</span><span class="p">(</span><span class="n">nested_list</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># Output: 6
+</span></code></pre></div></div>
+
+<p>Para acceder al último elemento de una lista utilizamos el indice negativo  <code class="language-plaintext highlighter-rouge">[-1]</code>.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">helados</span> <span class="o">=</span> <span class="p">[</span><span class="s">'chocolate'</span><span class="p">,</span> <span class="s">'limón'</span><span class="p">,</span> <span class="s">'mango'</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="n">helados</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># Output: mango
+</span></code></pre></div></div>
+
+<p>Para saber cuantos elementos tiene una lista utilizamos la función predefinida <code class="language-plaintext highlighter-rouge">len</code>.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">helados</span> <span class="o">=</span> <span class="p">[</span><span class="s">'chocolate'</span><span class="p">,</span> <span class="s">'limón'</span><span class="p">,</span> <span class="s">'mango'</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">helados</span><span class="p">))</span>  <span class="c1"># Output: 3
+</span></code></pre></div></div>
+
+<p><strong>Slice</strong></p>
+
+<p>La clase slice nos permite obtener un rango de items de una lista, el rango se especifica entre corchetes y dos puntos entre el primer y el segundo valor <code class="language-plaintext highlighter-rouge">[2:4]</code> donde el primer valor indica el inicio y el segundo el fín.</p>
+
+<p>El primer valor es (inclusivo) el segundo es (exclusivo), <code class="language-plaintext highlighter-rouge">[1:3]</code> retorna el segundo y el tercer elemento de una lista.</p>
+
+<div class="alert alert-info" role="alert">
+<p><i class="fas fa-sticky-note"></i> Nota:</p>
+ <p>Recuerda que las listas igual que las cadenas van en índice <code>0`.&lt;/p&gt;
+&lt;/div&gt;
+
+```py
+chocolates = [
+    'chocolate belga',
+    'chocolate blanco',
+    'chocolate &amp; chili',
+    'selva negra']
+
+print(chocolates[1:3])
+
+# Output: ['chocolate blanco', 'chocolate &amp; chili']
+```
+
+Si el rango que quieres obtener empieza desde el principio de la lista, no es necesario que especifíques el primer valor `[:2]`.
+
+```py
+chocolates = [
+    'chocolate belga',
+    'chocolate blanco',
+    'chocolate &amp; chili',
+    'selva negra']
+
+print(chocolates[:2])
+# Output: ['chocolate belga', 'chocolate blanco']
+```
+
+Del mismo modo si el rango que quieres obtener llega hasta el final de la lista no es necesario que especifíques el segundo valor `[2:]`.
+
+```py
+chocolates = [
+    'chocolate belga',
+    'chocolate blanco',
+    'chocolate &amp; chili',
+    'selva negra']
+
+print(chocolates[2:])
+# Output: ['chocolate &amp; chili', 'selva negra']
+```
+
+__Métodos de las listas__
+
+`append()` Añade un elemento al final de la lista.
+
+```py
+helados = ['chocolate', 'limón', 'mango']
+print(helados)
+# Output: ['chocolate', 'limón', 'mango']
+
+helados.append('pistacho')
+
+print(helados)
+# Output:
+# ['chocolate', 'limón', 'mango', 'pistacho']
+```
+
+`clear()`
+
+`extend()`
+
+`count()`
+
+`index()` Utilizamos este método para saber en que índice se encuentra un elemento en una lista.
+
+```py
+helados = ['chocolate', 'limón', 'mango']
+print(helados.index('limón'))  # Output: 1
+```
+
+`insert()` Inserta un elemento de lista en el índice especificado.
+
+```py
+helados = ['chocolate', 'limón', 'mango']
+print(helados)
+# Output: ['chocolate', 'limón', 'mango']
+
+helados.insert(1, 'vainilla')
+
+print(helados)
+# Output: ['chocolate', 'vainilla', 'limón', 'mango']
+```
+
+`pop()` Elimina el último elemento de la lista, pero no se limita a eso, también lo retorna por lo que podemos guardarlo en una variable.
+
+```py
+helados = ['chocolate', 'limón', 'mango']
+ultimo_helado = helados.pop()
+print(ultimo_helado) # Output: mango
+print(helados) # Output: ['chocolate', 'limón']
+```
+
+`remove()` Si no te gusta el mango puedes utilizar este método para eliminarlo de la lista.
+
+```py
+helados = ['chocolate', 'limón', 'mango']
+helados.remove('mango')
+print(helados) # Output: ['chocolate', 'limón']
+```
+
+`sort()` Ordena los ítems de lista alfabéticamente.
+
+```py
+helados = ['café', 'straciatella', 'avellana']
+helados.sort()
+print(helados)
+# Output:  ['avellana', 'café', 'straciatella']
+```
+
+`reverse()` Invierte los elementos de la lista original.
+
+Combinando los métodos `sort()` y `reverse()` podemos ordenar una lista de Z a A.
+
+```py
+helados = ['café', 'straciatella', 'avellana']
+
+helados.sort(reverse=True)
+
+print(helados)
+# Output:  ['straciatella', 'café', 'avellana']
+```
+
+## Tuplas
+
+Las tuplas son una secuencia de items ordenada, igual que las listas, la diferencia es que las tuplas son inmutables.
+
+Las tuplas una vez creadas no se pueden modificar.
+
+Las tuplas se definen con parentesis `()` mientras que las listas se definen con corchetes `[]`. 
+
+```py
+inmutable_list = (36, 'bizcocho', 4+7)
+
+print(inmutable_list)
+
+# Output: (36, 'bizcocho', 11)
+```
+</code></p></div>
+:ET

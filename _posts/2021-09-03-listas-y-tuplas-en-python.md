@@ -69,6 +69,55 @@ helados = ['chocolate', 'limón', 'mango']
 print(len(helados))  # Output: 3
 ```
 
+__Slice__
+
+Nos permite obtener un rango de elementos de una lista. Los valores del rango se especifican entre corchetes, separados por dos puntos. `[2:4]` El primer valor indica el inicio del rango y el segundo el fín.
+
+<div class="alert alert-info" role="alert">
+<p><i class="fas fa-sticky-note"></i> Nota:</p>
+ <p>Recuerda que las listas igual que las cadenas van en índice <code>0</code>.</p>
+</div>
+
+El primer valor es (inclusivo) el segundo es (exclusivo), `[1:3]` retorna el segundo y el tercer elemento de una lista.
+
+```py
+chocolates = [
+    'chocolate belga',
+    'chocolate blanco',
+    'chocolate & chili',
+    'selva negra']
+
+print(chocolates[1:3])
+
+# Output: ['chocolate blanco', 'chocolate & chili']
+```
+
+Si el rango que quieres obtener empieza desde el principio de la lista, no es necesario que especifíques el primer valor `[:2]`.
+
+```py
+chocolates = [
+    'chocolate belga',
+    'chocolate blanco',
+    'chocolate & chili',
+    'selva negra']
+
+print(chocolates[:2])
+# Output: ['chocolate belga', 'chocolate blanco']
+```
+
+Del mismo modo, si el rango que quieres obtener llega hasta el final de la lista no es necesario que especifíques el segundo valor `[2:]`.
+
+```py
+chocolates = [
+    'chocolate belga',
+    'chocolate blanco',
+    'chocolate & chili',
+    'selva negra']
+
+print(chocolates[2:])
+# Output: ['chocolate & chili', 'selva negra']
+```
+
 __Métodos de las listas__
 
 `append()` Añade un elemento al final de la lista.
