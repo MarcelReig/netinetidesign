@@ -12,7 +12,7 @@ image: listas-tuplas-python.jpg
 
 Las listas son una secuencia ordenada de elementos, a diferencia de la tuplas las listas no son inmutables, podemos añadir, eliminar, mover y cambiar items de lista a nuestro antojo.
 
-Las listas se crean añadiendo valores separados por comas entre `[ ]` corchetes.
+Las listas se crean añadiendo elementos separados por comas entre `[ ]` corchetes.
 
 ```py
 helados = ['chocolate', 'limón', 'mango']
@@ -20,7 +20,7 @@ print(helados)
 # Output: ['chocolate', 'limón', 'mango']
 ```
 
-Podemos acceder a los valores de lista por su índice igual que en las cadenas.
+Podemos acceder a los elementos de lista por su índice igual que en las cadenas.
 
 ```py
 helados = ['chocolate', 'limón', 'mango']
@@ -55,7 +55,7 @@ print(nested_list[0][1])  # Output: 2
 print(nested_list[1][-1])  # Output: 6
 ```
 
-Para acceder al último elemento de una lista utilizamos el indice negativo  `[-1]`.
+Para acceder al último elemento de una lista utilizamos el índice negativo  `[-1]`.
 
 ```py
 helados = ['chocolate', 'limón', 'mango']
@@ -71,7 +71,7 @@ print(len(helados))  # Output: 3
 
 __Slice__
 
-Nos permite obtener un rango de elementos de una lista. Los valores del rango se especifican entre corchetes, separados por dos puntos. `[2:4]` El primer valor indica el inicio del rango y el segundo el fín.
+Nos permite obtener un rango de elementos de una lista. Los valores del rango se especifican entre corchetes, separados por dos puntos. `[inicio:fin]` El primer valor indica el inicio del rango y el segundo el fín.
 
 <div class="alert alert-info" role="alert">
 <p><i class="fas fa-sticky-note"></i> Nota:</p>
@@ -116,6 +116,60 @@ chocolates = [
 
 print(chocolates[2:])
 # Output: ['chocolate & chili', 'selva negra']
+```
+
+También puedes utilizar índices negativos. Con `[-3:]` obtienes los últimos 3 elementos de la lista.
+
+```py
+chocolates = [
+    'chocolate belga',
+    'chocolate blanco',
+    'chocolate & chili',
+    'selva negra']
+
+print(chocolates[-3:])
+# Output:
+"""
+['chocolate blanco',
+'chocolate & chili',
+'selva negra']
+"""
+```
+
+__Slice__ acepta un tercer parámetro `[star:stop:step]`.
+Si se omite el valor por defecto de step es 1.
+
+```py
+chocolates = [
+    'chocolate',
+    'tiramisú',
+    'pistacho',
+    'vainilla']
+
+print(chocolates[0:4:2])
+
+# Output: ['chocolate', 'pistacho']
+```
+
+__Iiterar una lista con for in__
+
+```py
+chocolates = [
+    'chocolate belga',
+    'chocolate blanco',
+    'chocolate & chili',
+    'selva negra']
+
+for chocolate in chocolates:
+    print(chocolate)
+
+# Output:
+"""
+chocolate belga
+chocolate blanco
+chocolate & chili
+selva negra
+"""
 ```
 
 __Métodos de las listas__
