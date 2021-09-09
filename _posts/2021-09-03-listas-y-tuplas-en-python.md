@@ -137,7 +137,7 @@ print(chocolates[-3:])
 ```
 
 __Slice__ acepta un tercer parámetro `[star:stop:step]`.
-Si se omite el valor por defecto de step es 1.
+Si se omite, el valor por defecto de `step` es 1.
 
 ```py
 chocolates = [
