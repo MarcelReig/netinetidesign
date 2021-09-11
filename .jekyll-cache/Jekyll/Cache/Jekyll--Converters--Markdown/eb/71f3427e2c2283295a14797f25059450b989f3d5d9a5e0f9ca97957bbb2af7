@@ -1,0 +1,18 @@
+I"�<p>Los diccionarios se pueden crear con paréntesis {} separando con una coma cada par key: value
+Lss diccionarios en Python son una estructura de datos que permite almacenar valores</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">quotes</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">"Terminator"</span><span class="p">:</span> <span class="s">"Volveré"</span><span class="p">,</span>
+    <span class="s">"Golum"</span><span class="p">:</span> <span class="s">"Mi tesoro"</span><span class="p">,</span>
+    <span class="s">"Dave"</span><span class="p">:</span> <span class="s">"Abre las puertas, HAL."</span>
+<span class="p">}</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">quotes</span><span class="p">)</span>
+
+<span class="c1"># Output:
+</span><span class="s">'''{'Terminator': 'Volveré',
+  'Golum': 'Mi tesoro',
+  'Dave': 'Abre las puertas, HAL.'}
+'''</span>
+</code></pre></div></div>
+:ET

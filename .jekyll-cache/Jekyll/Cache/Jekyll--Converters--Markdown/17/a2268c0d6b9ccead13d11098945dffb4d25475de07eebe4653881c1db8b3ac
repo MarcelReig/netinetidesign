@@ -1,0 +1,10 @@
+I"�<p>```
+quotes = {
+    “Han Solo”: “Que la Fuerza te acompañe.”,
+    “Terminator”: “Volveré”,
+    “Golum”: “Mi tesoro”,
+    “Dave Bowman”: “Abre las puertas, HAL.”
+}</p>
+
+<p>print(quotes)</p>
+:ET

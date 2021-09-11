@@ -151,7 +151,7 @@ print(chocolates[0:4:2])
 # Output: ['chocolate', 'pistacho']
 ```
 
-__Iiterar una lista con for in__
+Iiterar una lista con for in
 
 ```py
 chocolates = [
@@ -172,6 +172,18 @@ selva negra
 """
 ```
 
+Añadir un nuevo elemento a una lista y guardar la nueva lista en una variable.
+
+```py
+helados = ['chocolate', 'limón', 'mango']
+
+# New List
+new_helados = helados + (['nata'])
+print(new_helados)
+
+#  Output: ['chocolate', 'limón', 'mango', 'nata']
+```
+
 __Métodos de las listas__
 
 `append()` Añade un elemento al final de la lista.
@@ -190,7 +202,17 @@ print(helados)
 
 `clear()`
 
-`extend()`
+`extend()` Para añadir un nuevo elemento a la lista.
+
+```py
+helados = ['chocolate', 'limón', 'mango']
+
+helados.extend(['nata'])
+print(helados)
+
+# Output:
+# ['chocolate', 'limón', 'mango', 'nata']
+```
 
 `count()`
 
