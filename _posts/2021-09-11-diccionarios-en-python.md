@@ -49,3 +49,45 @@ print(languages)
 
 # Output: ['Python', 'Ruby']
 ```
+
+Accceder a elementos de lista dentro de un diccionario:
+
+```py
+hacker = {
+    "Name": "Elliot Alderson",
+    "Age": 28,
+    "programming languages": ["Python", "Ruby"],
+    "Tabs or Spaces": "Tabs"
+}
+
+print(hacker['programming languages'][0])
+
+# Output: Python
+```
+
+Para añadir añadir un nuevos pares de `key:value` a un diccionario basta con asignarles un valor:
+
+```py
+hacker = {
+    "Name": "Elliot Alderson",
+    "Age": 28,
+    "programming languages": ["Python", "Ruby"],
+    "Tabs or Spaces": "Tabs"
+}
+
+hacker['Pets'] = ["Fish", "Dog"]
+
+hacker['Pets names'] = ["Querty", "Flipper"]
+
+print(hacker)
+
+# Output: 
+'''{'Name': 'Elliot Alderson',
+'Age': 28,
+'programming languages': ['Python', 'Ruby'],
+'Tabs or Spaces': 'Tabs',
+'Pets': ['Fish', 'Dog'],
+'Pets names': ['Querty', 'Flipper']}
+'''
+
+```
