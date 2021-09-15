@@ -89,5 +89,61 @@ print(hacker)
 'Pets': ['Fish', 'Dog'],
 'Pets names': ['Querty', 'Flipper']}
 '''
-
 ```
+
+### Métodos de los Diccionarios
+
+`get()` Recibe una clave como parámetro y devuelve su valor. Si no lo encuentra, devuelve un objeto none.
+Permite especificar un valor por defecto, que devolverá en caso de no encontrar la clave.
+
+```py
+hacker = {
+    "Name": "Elliot Alderson",
+    "Age": 28,
+    "programming languages": ["Python", "Ruby"],
+    "Tabs or Spaces": "Tabs"
+}
+ 
+hacker_name = hacker.get("Name")
+
+print(hacker_name)
+
+# Output: Elliot Alderson
+
+print(hacker_name)
+hacker_name = hacker.get("Car")
+
+# Output: None
+
+print(hacker_name)
+hacker_name = hacker.get("Car", "Not a valid Key")
+
+# Output: Not a valid Key
+```
+
+`dict()`
+
+`zip()`
+
+`items()`
+
+`keys()`
+
+`values()`
+
+`clear()`
+
+`copy()`
+
+`fromkeys()`
+
+`pop()`
+
+`setdefault()`
+
+`update()`
+
+
+
+
+
