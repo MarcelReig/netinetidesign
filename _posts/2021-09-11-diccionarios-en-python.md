@@ -10,11 +10,19 @@ image: manatee.jpeg
 
 Los diccionarios en Python son una estructura de datos que permite almacenar contenido en forma `key:value` clave:valor.
 
-La lista de pares `key:value` se crea entre paréntesis `{}` y cada par de  `key:value` se separa con una coma.
+A diferencia de las listas, tuplas y strings que son indexados por su índice los diccionarios son indexados por claves.
 
-Los diccionarios son mutables, su contenido se puede modificar.
+La lista de pares `key:value` se crea entre llaves `{}` y cada par de  clave:valor se separa con comas.
+
+Los diccionarios __son mutables__, su contenido se puede modificar.
 
 Los diccionarios permiten guardar distintos tipos de datos: Strings, enteros, flotantes, booleanos, tuplas, listas y otros diccionarios.
+
+Asignando el valor `{}` a una variable creas un diccionario vacio.
+
+Los diccionarios también se pueden crear con el constructor `dict()`, introduciendo los pares `key:value` entre paréntesis.
+
+Veamos un ejemplo envolviendo los pares clave:valor entre llaves `{}`: 
 
 ```py
 hacker = {
@@ -28,9 +36,9 @@ print(hacker)
 
 # Output:
 '''{'Name': 'Elliot Alderson',
- 'Age': 28,
-  'programming languages': ['Python', 'Ruby'],
-  'Tabs or Spaces': 'Tabs'}
+'Age': 28,
+'programming languages': ['Python', 'Ruby'],
+'Tabs or Spaces': 'Tabs'}
 '''
 ```
 Acceder a un valor por su clave:
@@ -103,45 +111,63 @@ hacker = {
     "programming languages": ["Python", "Ruby"],
     "Tabs or Spaces": "Tabs"
 }
- 
+
 hacker_name = hacker.get("Name")
 
 print(hacker_name)
 
 # Output: Elliot Alderson
 
-print(hacker_name)
-hacker_name = hacker.get("Car")
+hacker_pets = hacker.get("Pets")
+
+print(hacker_pets)
 
 # Output: None
 
-print(hacker_name)
-hacker_name = hacker.get("Car", "Not a valid Key")
+hacker_pets = hacker.get("Pets", "Not a valid Key")
+
+print(hacker_pets)
 
 # Output: Not a valid Key
 ```
 
-`dict()`
+`dict()` Método constructor de diccionarios. Veamos un ejemplo: 
 
-`zip()`
+```py
+hacker = dict([
+    ("Name", "Elliot Alderson"),
+    ("Age", 28),
+    ("programming languages", ["Python", "Ruby"]),
+    ("Tabs or Spaces", "Tabs")
+])
+print(hacker)
 
-`items()`
+# Output:
+'''
+{'Name': 'Elliot Alderson',
+'Age': 28,
+'programming languages': ['Python', 'Ruby'],
+'Tabs or Spaces': 'Tabs'}
+'''
+```
 
-`keys()`
+`items()` Retorna una vista de los pares `key:value` clave:valor de un diccionario.
 
-`values()`
+`keys()` Retorna una vista de las claves de un diccionario.
 
-`clear()`
+`values()` Retorna una vista de los valores de un diccionario.
 
-`copy()`
+`clear()` Elimina todos los ítems de un diccionario.
 
-`fromkeys()`
+`copy()` Retorna una copia del diccionario.
 
-`pop()`
+`pop()` Método para eliminar ítems de diccionario (también retorna valores).
 
-`setdefault()`
+`setdefault()` Método que retorna el valor de la clave si esta existe, si no, inserta la clave con su valor en el diccionario. setdefault() acepta dos parámetros: 
+- la clave 
+- el valor (opcional)
 
-`update()`
+`update()` Actualiza el diccionario con los elementos de otro diccionario o desde un iterable de pares clave:valor.
 
 ### Eliminar ítems de un diccionario
 
@@ -166,8 +192,8 @@ print(hacker)
 # Output: 
 '''
 {'Age': 28,
- 'programming languages': ['Python', 'Ruby'],
- 'Tabs or Spaces': 'Tabs'}
+'programming languages': ['Python', 'Ruby'],
+'Tabs or Spaces': 'Tabs'}
 '''
 ```
 
@@ -197,10 +223,14 @@ print(hacker)
 # Output: 
 '''
 {'Age': 28,
- 'programming languages': ['Python',
-  'Ruby'], 'Tabs or Spaces': 'Tabs'}
+'programming languages': ['Python',
+'Ruby'], 'Tabs or Spaces': 'Tabs'}
 '''
 ```
+
+Eliminar ítems con __clear()__
+
+`clear()` Elimina todos los pares `key:value` de un diccionario.
 
 ### Diccionarios anidados
 
@@ -258,13 +288,13 @@ print(hackers)
 [{'hacker_one':
 {'Name': 'Elliot Alderson', 
 'Age': 28,
- 'programming languages': ['Python', 'Ruby'], 
- 'Tabs or Spaces': 'Tabs'}},
+'programming languages': ['Python', 'Ruby'], 
+'Tabs or Spaces': 'Tabs'}},
 {'hacker_two': 
 {'Name': 'Richard Hendricks', 
 'Age': 33,
- 'programming languages': ['C', 'Ruby', 'Java'],
-  'Tabs or Spaces': 'Tabs'}}]
+'programming languages': ['C', 'Ruby', 'Java'],
+'Tabs or Spaces': 'Tabs'}}]
 '''
 ```
 

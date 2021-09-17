@@ -1,0 +1,295 @@
+I"�O<p>Los diccionarios en Python son una estructura de datos que permite almacenar contenido en forma <code class="language-plaintext highlighter-rouge">key:value</code> clave:valor.</p>
+
+<p>A diferencia de las listas</p>
+
+<p>La lista de pares <code class="language-plaintext highlighter-rouge">key:value</code> se crea entre paréntesis <code class="language-plaintext highlighter-rouge">{}</code> y cada par de  <code class="language-plaintext highlighter-rouge">key:value</code> se separa con una coma.</p>
+
+<p>Los diccionarios son mutables, su contenido se puede modificar.</p>
+
+<p>Los diccionarios permiten guardar distintos tipos de datos: Strings, enteros, flotantes, booleanos, tuplas, listas y otros diccionarios.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">hacker</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">"Name"</span><span class="p">:</span> <span class="s">"Elliot Alderson"</span><span class="p">,</span>
+    <span class="s">"Age"</span><span class="p">:</span> <span class="mi">28</span><span class="p">,</span>
+    <span class="s">"programming languages"</span><span class="p">:</span> <span class="p">[</span><span class="s">"Python"</span><span class="p">,</span> <span class="s">"Ruby"</span><span class="p">],</span>
+    <span class="s">"Tabs or Spaces"</span><span class="p">:</span> <span class="s">"Tabs"</span>
+<span class="p">}</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">hacker</span><span class="p">)</span>
+
+<span class="c1"># Output:
+</span><span class="s">'''{'Name': 'Elliot Alderson',
+'Age': 28,
+'programming languages': ['Python', 'Ruby'],
+'Tabs or Spaces': 'Tabs'}
+'''</span>
+</code></pre></div></div>
+<p>Acceder a un valor por su clave:</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">hacker</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">"Name"</span><span class="p">:</span> <span class="s">"Elliot Alderson"</span><span class="p">,</span>
+    <span class="s">"Age"</span><span class="p">:</span> <span class="mi">28</span><span class="p">,</span>
+    <span class="s">"programming languages"</span><span class="p">:</span> <span class="p">[</span><span class="s">"Python"</span><span class="p">,</span> <span class="s">"Ruby"</span><span class="p">],</span>
+    <span class="s">"Tabs or Spaces"</span><span class="p">:</span> <span class="s">"Tabs"</span>
+<span class="p">}</span>
+
+<span class="n">languages</span> <span class="o">=</span> <span class="n">hacker</span><span class="p">[</span><span class="s">"programming languages"</span><span class="p">]</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">languages</span><span class="p">)</span>
+
+<span class="c1"># Output: ['Python', 'Ruby']
+</span></code></pre></div></div>
+
+<p>Accceder a elementos de lista dentro de un diccionario:</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">hacker</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">"Name"</span><span class="p">:</span> <span class="s">"Elliot Alderson"</span><span class="p">,</span>
+    <span class="s">"Age"</span><span class="p">:</span> <span class="mi">28</span><span class="p">,</span>
+    <span class="s">"programming languages"</span><span class="p">:</span> <span class="p">[</span><span class="s">"Python"</span><span class="p">,</span> <span class="s">"Ruby"</span><span class="p">],</span>
+    <span class="s">"Tabs or Spaces"</span><span class="p">:</span> <span class="s">"Tabs"</span>
+<span class="p">}</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">hacker</span><span class="p">[</span><span class="s">'programming languages'</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="c1"># Output: Python
+</span></code></pre></div></div>
+
+<p>Para añadir añadir un nuevos pares de <code class="language-plaintext highlighter-rouge">key:value</code> a un diccionario basta con asignarles un valor:</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">hacker</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">"Name"</span><span class="p">:</span> <span class="s">"Elliot Alderson"</span><span class="p">,</span>
+    <span class="s">"Age"</span><span class="p">:</span> <span class="mi">28</span><span class="p">,</span>
+    <span class="s">"programming languages"</span><span class="p">:</span> <span class="p">[</span><span class="s">"Python"</span><span class="p">,</span> <span class="s">"Ruby"</span><span class="p">],</span>
+    <span class="s">"Tabs or Spaces"</span><span class="p">:</span> <span class="s">"Tabs"</span>
+<span class="p">}</span>
+
+<span class="n">hacker</span><span class="p">[</span><span class="s">'Pets'</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s">"Fish"</span><span class="p">,</span> <span class="s">"Dog"</span><span class="p">]</span>
+
+<span class="n">hacker</span><span class="p">[</span><span class="s">'Pets names'</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s">"Querty"</span><span class="p">,</span> <span class="s">"Flipper"</span><span class="p">]</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">hacker</span><span class="p">)</span>
+
+<span class="c1"># Output: 
+</span><span class="s">'''{'Name': 'Elliot Alderson',
+'Age': 28,
+'programming languages': ['Python', 'Ruby'],
+'Tabs or Spaces': 'Tabs',
+'Pets': ['Fish', 'Dog'],
+'Pets names': ['Querty', 'Flipper']}
+'''</span>
+</code></pre></div></div>
+
+<h3 id="métodos-de-los-diccionarios">Métodos de los Diccionarios</h3>
+
+<p><code class="language-plaintext highlighter-rouge">get()</code> Recibe una clave como parámetro y devuelve su valor. Si no lo encuentra, devuelve un objeto none.
+Permite especificar un valor por defecto, que devolverá en caso de no encontrar la clave.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">hacker</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">"Name"</span><span class="p">:</span> <span class="s">"Elliot Alderson"</span><span class="p">,</span>
+    <span class="s">"Age"</span><span class="p">:</span> <span class="mi">28</span><span class="p">,</span>
+    <span class="s">"programming languages"</span><span class="p">:</span> <span class="p">[</span><span class="s">"Python"</span><span class="p">,</span> <span class="s">"Ruby"</span><span class="p">],</span>
+    <span class="s">"Tabs or Spaces"</span><span class="p">:</span> <span class="s">"Tabs"</span>
+<span class="p">}</span>
+
+<span class="n">hacker_name</span> <span class="o">=</span> <span class="n">hacker</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">"Name"</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">hacker_name</span><span class="p">)</span>
+
+<span class="c1"># Output: Elliot Alderson
+</span>
+<span class="n">hacker_pets</span> <span class="o">=</span> <span class="n">hacker</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">"Pets"</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">hacker_pets</span><span class="p">)</span>
+
+<span class="c1"># Output: None
+</span>
+<span class="n">hacker_pets</span> <span class="o">=</span> <span class="n">hacker</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">"Pets"</span><span class="p">,</span> <span class="s">"Not a valid Key"</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">hacker_pets</span><span class="p">)</span>
+
+<span class="c1"># Output: Not a valid Key
+</span></code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">dict()</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">zip()</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">items()</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">keys()</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">values()</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">clear()</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">copy()</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">fromkeys()</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">pop()</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">setdefault()</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">update()</code></p>
+
+<h3 id="eliminar-ítems-de-un-diccionario">Eliminar ítems de un diccionario</h3>
+
+<p>Para eliminar ítems de un diccionario podemos utilizar la palabra clave <code class="language-plaintext highlighter-rouge">del</code> o el método <code class="language-plaintext highlighter-rouge">pop()</code>.</p>
+
+<p>Eliminar ítems con <strong>del</strong>:</p>
+
+<p>La palabra clave del elimina un objeto. Como los pares <code class="language-plaintext highlighter-rouge">key:value</code> de los diccionarios son objetos podemos utilizar <code class="language-plaintext highlighter-rouge">del</code> para eliminarlos.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">hacker</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">"Name"</span><span class="p">:</span> <span class="s">"Elliot Alderson"</span><span class="p">,</span>
+    <span class="s">"Age"</span><span class="p">:</span> <span class="mi">28</span><span class="p">,</span>
+    <span class="s">"programming languages"</span><span class="p">:</span> <span class="p">[</span><span class="s">"Python"</span><span class="p">,</span> <span class="s">"Ruby"</span><span class="p">],</span>
+    <span class="s">"Tabs or Spaces"</span><span class="p">:</span> <span class="s">"Tabs"</span>
+<span class="p">}</span>
+
+<span class="k">del</span> <span class="n">hacker</span><span class="p">[</span><span class="s">"Name"</span><span class="p">]</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">hacker</span><span class="p">)</span>
+
+<span class="c1"># Output: 
+</span><span class="s">'''
+{'Age': 28,
+'programming languages': ['Python', 'Ruby'],
+'Tabs or Spaces': 'Tabs'}
+'''</span>
+</code></pre></div></div>
+
+<p>Eliminar ítems con <strong>pop()</strong>:</p>
+
+<p>El método <code class="language-plaintext highlighter-rouge">pop()</code> se puede utilizar para eliminar una clave y su valor asociado.
+Un par <code class="language-plaintext highlighter-rouge">key:value</code> de un diccionario.</p>
+
+<p>El método pop() acepta uno o dos parámetros:</p>
+
+<ul>
+  <li>El nombre de la clave que quieres eliminar (obligatorio).</li>
+  <li>El valor que debe retornar si no encuentra la clave (opcional).</li>
+</ul>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">hacker</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">"Name"</span><span class="p">:</span> <span class="s">"Elliot Alderson"</span><span class="p">,</span>
+    <span class="s">"Age"</span><span class="p">:</span> <span class="mi">28</span><span class="p">,</span>
+    <span class="s">"programming languages"</span><span class="p">:</span> <span class="p">[</span><span class="s">"Python"</span><span class="p">,</span> <span class="s">"Ruby"</span><span class="p">],</span>
+    <span class="s">"Tabs or Spaces"</span><span class="p">:</span> <span class="s">"Tabs"</span>
+<span class="p">}</span>
+<span class="n">removed_item</span> <span class="o">=</span> <span class="n">hacker</span><span class="p">.</span><span class="n">pop</span><span class="p">(</span><span class="s">"Name"</span><span class="p">,</span> <span class="s">"Item not found"</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">removed_item</span><span class="p">)</span> <span class="c1"># Output: Elliot Alderson
+</span>
+<span class="k">print</span><span class="p">(</span><span class="n">hacker</span><span class="p">)</span>
+
+<span class="c1"># Output: 
+</span><span class="s">'''
+{'Age': 28,
+'programming languages': ['Python',
+'Ruby'], 'Tabs or Spaces': 'Tabs'}
+'''</span>
+</code></pre></div></div>
+
+<h3 id="diccionarios-anidados">Diccionarios anidados</h3>
+
+<p>Un diccionario anidado es un diccionario dentro de otro.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">hackers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="mi">1</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s">"Name"</span><span class="p">:</span> <span class="s">"Elliot Alderson"</span><span class="p">,</span>
+        <span class="s">"Age"</span><span class="p">:</span> <span class="mi">28</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="mi">2</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s">"Name"</span><span class="p">:</span> <span class="s">"Richard Hendricks"</span><span class="p">,</span>
+        <span class="s">"Age"</span><span class="p">:</span> <span class="mi">33</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">print</span><span class="p">(</span><span class="n">hackers</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s">"Name"</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">hackers</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s">"Age"</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">hackers</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="s">"Name"</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">hackers</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="s">"Age"</span><span class="p">]</span>
+<span class="c1"># Output:
+</span><span class="s">'''
+Elliot Alderson
+28
+Richard Hendricks
+33
+'''</span>
+</code></pre></div></div>
+<h3 id="trabajando-con-una-lista-de-diccionarios-anidados">Trabajando con una lista de diccionarios anidados</h3>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">hackers</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s">'hacker_one'</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s">"Name"</span><span class="p">:</span> <span class="s">"Elliot Alderson"</span><span class="p">,</span>
+            <span class="s">"Age"</span><span class="p">:</span> <span class="mi">28</span><span class="p">,</span>
+            <span class="s">"programming languages"</span><span class="p">:</span> <span class="p">[</span><span class="s">"Python"</span><span class="p">,</span> <span class="s">"Ruby"</span><span class="p">],</span>
+            <span class="s">"Tabs or Spaces"</span><span class="p">:</span> <span class="s">"Tabs"</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s">'hacker_two'</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s">"Name"</span><span class="p">:</span> <span class="s">"Richard Hendricks"</span><span class="p">,</span>
+            <span class="s">"Age"</span><span class="p">:</span> <span class="mi">33</span><span class="p">,</span>
+            <span class="s">"programming languages"</span><span class="p">:</span> <span class="p">[</span><span class="s">"C"</span><span class="p">,</span> <span class="s">"Ruby"</span><span class="p">,</span> <span class="s">"Java"</span><span class="p">],</span>
+            <span class="s">"Tabs or Spaces"</span><span class="p">:</span> <span class="s">"Tabs"</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">hackers</span><span class="p">)</span>
+
+<span class="c1"># Output: 
+</span><span class="s">'''
+[{'hacker_one':
+{'Name': 'Elliot Alderson', 
+'Age': 28,
+'programming languages': ['Python', 'Ruby'], 
+'Tabs or Spaces': 'Tabs'}},
+{'hacker_two': 
+{'Name': 'Richard Hendricks', 
+'Age': 33,
+'programming languages': ['C', 'Ruby', 'Java'],
+'Tabs or Spaces': 'Tabs'}}]
+'''</span>
+</code></pre></div></div>
+
+<h3 id="acceder-a-elementos-en-la-lista-de-diccionarios-anidados">Acceder a elementos en la lista de diccionarios anidados</h3>
+
+<p>Para acceder a elementos en la lista de diccionarios anidados utilizamos el índice <code class="language-plaintext highlighter-rouge">[]</code> en Python.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">hackers</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s">'hacker_one'</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s">"Name"</span><span class="p">:</span> <span class="s">"Elliot Alderson"</span><span class="p">,</span>
+            <span class="s">"Age"</span><span class="p">:</span> <span class="mi">28</span><span class="p">,</span>
+            <span class="s">"programming languages"</span><span class="p">:</span> <span class="p">[</span><span class="s">"Python"</span><span class="p">,</span> <span class="s">"Ruby"</span><span class="p">],</span>
+            <span class="s">"Tabs or Spaces"</span><span class="p">:</span> <span class="s">"Tabs"</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s">'hacker_two'</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s">"Name"</span><span class="p">:</span> <span class="s">"Richard Hendricks"</span><span class="p">,</span>
+            <span class="s">"Age"</span><span class="p">:</span> <span class="mi">33</span><span class="p">,</span>
+            <span class="s">"programming languages"</span><span class="p">:</span> <span class="p">[</span><span class="s">"C"</span><span class="p">,</span> <span class="s">"Ruby"</span><span class="p">,</span> <span class="s">"Java"</span><span class="p">],</span>
+            <span class="s">"Tabs or Spaces"</span><span class="p">:</span> <span class="s">"Tabs"</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+
+<span class="n">hacker_two</span> <span class="o">=</span> <span class="n">hackers</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="n">get</span><span class="p">(</span><span class="s">"hacker_two"</span><span class="p">,</span> <span class="s">"Hacker not found"</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">hacker_two</span><span class="p">.</span><span class="n">values</span><span class="p">())[</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">hacker_two</span><span class="p">.</span><span class="n">values</span><span class="p">())[</span><span class="mi">1</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">hacker_two</span><span class="p">.</span><span class="n">values</span><span class="p">())[</span><span class="mi">2</span><span class="p">])</span>
+
+<span class="c1"># Output: 
+</span><span class="s">'''
+Richard Hendricks
+33
+['C', 'Ruby', 'Java']
+'''</span>
+</code></pre></div></div>
+
+:ET
