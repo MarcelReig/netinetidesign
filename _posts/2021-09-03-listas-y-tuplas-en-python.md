@@ -200,7 +200,7 @@ print(helados)
 # ['chocolate', 'limón', 'mango', 'pistacho']
 ```
 
-`clear()`
+`clear()` Elimina todos los elementos de la lista. El método clear() no retorna ningún valor, solo una lista vacía.
 
 `extend()` Para añadir un nuevo elemento a la lista.
 
@@ -214,7 +214,22 @@ print(helados)
 # ['chocolate', 'limón', 'mango', 'nata']
 ```
 
-`count()`
+`count()` Cuenta el número de veces que aparece un ítem en una lista.
+
+```py
+ice_cream_stock = [
+    "Vainilla",
+    "Chocolate",
+    "Vainilla",
+    "Limón"
+]
+
+flavour_counter = ice_cream_stock.count("Vainilla")
+
+print(f'Quedan {flavour_counter} helados de Vinilla!')
+
+#  Output: Quedan 2 helados de Vinilla!
+```
 
 `index()` Utilizamos este método para saber en que índice se encuentra un elemento en una lista.
 

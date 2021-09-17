@@ -18,9 +18,7 @@ Los diccionarios __son mutables__, su contenido se puede modificar.
 
 Los diccionarios permiten guardar distintos tipos de datos: Strings, enteros, flotantes, booleanos, tuplas, listas y otros diccionarios.
 
-Asignando el valor `{}` a una variable creas un diccionario vacio.
-
-Los diccionarios también se pueden crear con el constructor `dict()`, introduciendo los pares `key:value` entre paréntesis.
+Asignando el valor `{}` a una variable se crea un diccionario vacio.
 
 Veamos un ejemplo envolviendo los pares clave:valor entre llaves `{}`: 
 
@@ -131,7 +129,9 @@ print(hacker_pets)
 # Output: Not a valid Key
 ```
 
-`dict()` Método constructor de diccionarios. Veamos un ejemplo: 
+`dict()` Método constructor de diccionarios. Hemos visto como se crea un diccionario envolviendo los pares clave:valor entre llaves `{}`, pero los diccionarios también se pueden crear con el constructor `dict()`, introduciendo los pares `key:value` entre paréntesis `()`.
+
+ Veamos un ejemplo: 
 
 ```py
 hacker = dict([
@@ -316,9 +316,9 @@ print(hackers)
 '''
 ```
 
-### Acceder a elementos en la lista de diccionarios anidados
+### Acceder a elementos en una lista de diccionarios anidados
 
-Para acceder a elementos en la lista de diccionarios anidados utilizamos el índice `[]` en Python.
+Para acceder a los elementos en una lista de diccionarios anidados utilizamos el índice `[]` en Python.
 
 ```py
 hackers = [
