@@ -238,28 +238,46 @@ Un diccionario anidado es un diccionario dentro de otro.
 
 ```py
 hackers = {
-    1: {
+    "hacker_one": {
         "Name": "Elliot Alderson",
         "Age": 28,
     },
-    2: {
+    "hacker_two": {
         "Name": "Richard Hendricks",
         "Age": 33,
     }
 }
-print(hackers[1]["Name"])
-print(hackers[1]["Age"])
-print(hackers[2]["Name"])
-print(hackers[2]["Age"]
+
+hacker_one_name = hackers["hacker_one"]["Name"]
+hacker_two_name = hackers["hacker_two"]["Name"]
+print(hacker_one_name)  # Output: Elliot Alderson
+print(hacker_two_name)  # Output: Richard Hendricks
+```
+
+Recorrer un diccionario anidado con un iterable __`for`__: 
+
+```py
+hackers = {
+    "hacker_one": {
+        "Name": "Elliot Alderson",
+        "Age": 28,
+    },
+    "hacker_two": {
+        "Name": "Richard Hendricks",
+        "Age": 33,
+    }
+}
+
+for hacker, data in hackers.items():
+    print("{}: {}".format(hacker, data["Name"]))
+
 # Output:
 '''
-Elliot Alderson
-28
-Richard Hendricks
-33
+hacker_one: Elliot Alderson
+hacker_two: Richard Hendricks
 '''
 ```
-### Trabajando con una lista de diccionarios anidados
+### Lista de diccionarios anidados
 
 ```py
 hackers = [
