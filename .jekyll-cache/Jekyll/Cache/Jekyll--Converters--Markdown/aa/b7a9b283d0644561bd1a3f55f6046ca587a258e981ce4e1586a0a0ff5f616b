@@ -1,0 +1,234 @@
+I"�4<h3 class="lead" id="las-cadenas-string-se-crean-escribiendo-una-una-secuencia-de-carácteres-letras-números-o-símbolos-entre-comillas-simples--o-dobles-">Las cadenas (<code class="language-plaintext highlighter-rouge">string</code>) se crean escribiendo una una secuencia de carácteres, letras, números o símbolos entre comillas simples <code class="language-plaintext highlighter-rouge">''</code> o dobles <code class="language-plaintext highlighter-rouge">""</code>.</h3>
+
+<h3 class="lead" id="muchos-de-los-conceptos-y-métodos-que-aprendas-con-las-cadenas-también-te-serán-útilies-en-las-listas">Muchos de los conceptos y métodos que aprendas con las cadenas también te serán útilies en las listas.</h3>
+
+<p>Puedes guardar un <code class="language-plaintext highlighter-rouge">string</code> en una variable del siguiente modo:</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_str</span> <span class="o">=</span> <span class="s">'Fixie pug hoodie'</span>
+<span class="k">print</span><span class="p">(</span><span class="n">my_str</span><span class="p">)</span> <span class="c1"># Output: Fixie pug hoodie
+</span></code></pre></div></div>
+
+<p>Puedes concatenar variables que contienen cadenas utilizando el operador <code class="language-plaintext highlighter-rouge">+</code> de suma:</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_str1</span> <span class="o">=</span> <span class="s">'Roof'</span>
+<span class="n">my_str2</span> <span class="o">=</span> <span class="s">'party'</span>
+<span class="n">my_str3</span> <span class="o">=</span> <span class="s">'wolf'</span>
+<span class="n">my_str4</span> <span class="o">=</span> <span class="s">'iPhone'</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">my_str1</span> <span class="o">+</span> <span class="n">my_str2</span> <span class="o">+</span> <span class="n">my_str3</span> <span class="o">+</span> <span class="n">my_str4</span><span class="p">)</span>
+
+<span class="c1"># Output: RoofpartywolfiPhone
+</span></code></pre></div></div>
+
+<p>Si quieres espacios en blanco entre las cadenas tienes que añadirlos <code class="language-plaintext highlighter-rouge">" "</code>:</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_str1</span> <span class="o">=</span> <span class="s">'Roof'</span>
+<span class="n">my_str2</span> <span class="o">=</span> <span class="s">'party'</span>
+<span class="n">my_str3</span> <span class="o">=</span> <span class="s">'wolf'</span>
+<span class="n">my_str4</span> <span class="o">=</span> <span class="s">'iPhone'</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">my_str1</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">my_str2</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">my_str3</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">my_str4</span><span class="p">)</span>
+
+<span class="c1"># Output: Roof party wolf iPhone
+</span></code></pre></div></div>
+
+<h2 id="string-interpolation-en-python-f-strings">String interpolation en Python (f-strings)</h2>
+
+<p>Por suerte Python 3 cuenta con el método <strong>string interpolation</strong> que facilita mucho el formateo de strings.</p>
+
+<p>Escribir una cadena precedida de la letra <code class="language-plaintext highlighter-rouge">f</code> te permite añadir variables dentro de la cadena.</p>
+
+<p>Las variables dentro de una <strong>f-string</strong> se escriben entre llaves <code class="language-plaintext highlighter-rouge">{}</code>.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_str1</span> <span class="o">=</span> <span class="s">'Roof'</span>
+<span class="n">my_str2</span> <span class="o">=</span> <span class="s">'party'</span>
+<span class="n">my_str3</span> <span class="o">=</span> <span class="s">'wolf'</span>
+<span class="n">my_str4</span> <span class="o">=</span> <span class="s">'iPhone'</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">f'</span><span class="si">{</span><span class="n">my_str1</span><span class="si">}</span><span class="s"> </span><span class="si">{</span><span class="n">my_str2</span><span class="si">}</span><span class="s"> </span><span class="si">{</span><span class="n">my_str3</span><span class="si">}</span><span class="s"> </span><span class="si">{</span><span class="n">my_str4</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+
+<span class="c1"># Output: Roof party wolf iPhone
+</span></code></pre></div></div>
+
+<div class="alert alert-info" role="alert">
+<p><i class="fas fa-sticky-note"></i> Nota:</p>
+ <p>Si como yo, estás aprendiendo Python pero ya sabes algo de JavaScript, las <code>f-string</code> vendrían a ser a algo así como los template literals en ES6.</p>
+</div>
+
+<p><strong>Ejemplo de template literal en ES6</strong></p>
+
+<p>En JavaScript en vez de preceder la cadena con la letra <code>f</code> utilizamos acentos graves <code>``</code> en lugar de comillas simples <code>''</code> para envolver la cadena. También se requiere del simbolo dolar <code>$</code> delante de las llaves, por lo demás es bastante similar.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">my_str1</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">Roof</span><span class="dl">'</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">my_str2</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">party</span><span class="dl">'</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">my_str3</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">wolf</span><span class="dl">'</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">my_str4</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">iPhone</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`</span><span class="p">${</span><span class="nx">my_str1</span><span class="p">}</span><span class="s2"> </span><span class="p">${</span><span class="nx">my_str2</span><span class="p">}</span><span class="s2"> </span><span class="p">${</span><span class="nx">my_str3</span><span class="p">}</span><span class="s2"> </span><span class="p">${</span><span class="nx">my_str4</span><span class="p">}</span><span class="s2">`</span><span class="p">)</span>
+
+<span class="c1">// "Roof party wolf iPhone"</span>
+</code></pre></div></div>
+
+<h2 id="cadenas-multilínea-en-python">Cadenas multilínea en Python</h2>
+
+<p>Secrean escribiendo tres comillas `simples o dobles de inicio y de fín:</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">multiline_str</span> <span class="o">=</span> <span class="s">'''Los strings multilínea
+son igual que
+los comentarios multilínea...'''</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">multiline_str</span><span class="p">)</span>
+
+<span class="s">'''
+Los strings multilínea
+son igual que
+los comentarios multilínea...
+'''</span>
+</code></pre></div></div>
+
+<p>También podemos utilizar el carácter de escape <code class="language-plaintext highlighter-rouge">\n</code> para crear saltos de línea.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">multiline_str</span> <span class="o">=</span> <span class="s">"Los strings multilínea</span><span class="se">\n</span><span class="s">son igual que</span><span class="se">\n</span><span class="s">los comentarios multilínea..."</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">multiline_str</span><span class="p">)</span>
+
+<span class="s">'''
+Los strings multilínea
+son igual que
+los comentarios multilínea...
+'''</span>
+</code></pre></div></div>
+
+<p><strong>Indexar strings en Python</strong></p>
+
+<p>Del mismo modo que los ítems de lista los carácteres de un string son indexables en un índice que empiza en 0.</p>
+
+<table class="table table-bordered table-responsive-sm table-responsive-md">
+  <tbody>
+    <tr>
+      <td>E</td>
+      <td>T</td>
+      <td> </td>
+      <td>m</td>
+      <td>i</td>
+      <td> </td>
+      <td>c</td>
+      <td>a</td>
+      <td>s</td>
+      <td>a</td>
+      <td> </td>
+      <td>T</td>
+      <td>e</td>
+      <td>l</td>
+      <td>é</td>
+      <td>f</td>
+      <td>o</td>
+      <td>n</td>
+      <td>o</td>
+    </tr>
+      <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td>10</td>
+      <td>11</td>
+      <td>12</td>
+      <td>13</td>
+      <td>14</td>
+      <td>15</td>
+      <td>16</td>
+      <td>17</td>
+      <td>18</td>
+    </tr>
+
+  </tbody>
+</table>
+
+<p>Podemos acceder a un carácter escribiendo su índice entre corchetes <code class="language-plaintext highlighter-rouge">[]</code>.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">et_says</span> <span class="o">=</span> <span class="s">"ET mi casa teléfono"</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">et_says</span><span class="p">[</span><span class="mi">6</span><span class="p">])</span>
+
+<span class="c1"># Output: c
+</span></code></pre></div></div>
+
+<p>Podemos acceder al último carácter de la cadena con <code class="language-plaintext highlighter-rouge">[-1]</code>.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">et_says</span> <span class="o">=</span> <span class="s">"ET mi casa teléfono"</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">et_says</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+
+<span class="c1"># Output: o
+</span></code></pre></div></div>
+
+<p><strong>Funciones de las cadenas</strong></p>
+
+<p>Para saber la longitud de una cadena utilizamos la función <code class="language-plaintext highlighter-rouge">len</code>.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">et_says</span> <span class="o">=</span> <span class="s">"ET mi casa teléfono"</span>
+
+<span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">et_says</span><span class="p">))</span>
+
+<span class="c1"># Output: 19
+</span></code></pre></div></div>
+
+<p><strong>Métodos de las cadenas</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">upper()</code> convierte el texto en mayúsculas.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">et_says</span> <span class="o">=</span> <span class="s">"ET mi casa teléfono"</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">et_says</span><span class="p">.</span><span class="n">upper</span><span class="p">())</span>
+
+<span class="c1"># Output: Output: ET MI CASA TELÉFONO
+</span></code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">lower()</code> convierte el texto en minúsculas.</p>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">et_says</span> <span class="o">=</span> <span class="s">"ET mi casa teléfono"</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">et_says</span><span class="p">.</span><span class="n">lower</span><span class="p">())</span>
+
+<span class="c1"># Output: et mi casa teléfono
+</span></code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">capitalize()</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">title()</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">count()</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">find()</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">rfind()</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">isdigit()</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">isalnum()</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">isalpha()</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">islower()</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">isupper()</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">istitle()</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">isspace()</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">startswith()</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">endswith()</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">split()</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">join()</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">strip()</code></p>
+:ET

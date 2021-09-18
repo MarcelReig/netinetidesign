@@ -29641,3 +29641,11 @@ ul.social-links,
 .arrow-square:hover {
   background-color: #5c85ff;
 }
+
+.browser {
+  box-shadow: 0px 10px 15px 0px #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  border-top: 10px solid #424242;
+  margin-bottom: 30px;
+}

@@ -8,7 +8,11 @@ category: programacion
 image: strings-python.jpg
 ---
 
-Las cadenas (`string`) se crean escribiendo una una secuencia de carácteres, letras, números o símbolos entre comillas simples `''` o dobles `""`.
+{:.lead.mt-5}
+### Las cadenas (`string`) se crean escribiendo una una secuencia de carácteres, letras, números o símbolos entre comillas simples `''` o dobles `""`.
+
+{:.lead.mb-5}
+### Muchos de los conceptos y métodos que aprendas con las cadenas también te serán útilies en las listas.
 
 Puedes guardar un `string` en una variable del siguiente modo:
 
@@ -43,13 +47,13 @@ print(my_str1 + " " + my_str2 + " " + my_str3 + " " + my_str4)
 # Output: Roof party wolf iPhone
 ```
 
-__f-strings__
+## String interpolation en Python (f-strings)
 
-Por suerte Python 3 cuenta con el método string interpolation que facilita mucho el formateo de strings. 
+Por suerte Python 3 cuenta con el método __string interpolation__ que facilita mucho el formateo de strings. 
 
-Escribe una cadena precedida de la letra `f` te permite añadir variables dentro de una cadena.
+Escribir una cadena precedida de la letra `f` te permite añadir variables dentro de la cadena.
 
-Las variables se escriben entre llaves `{}`.
+Las variables dentro de una __f-string__ se escriben entre llaves `{}`.
 
 ```py
 my_str1 = 'Roof'
@@ -64,10 +68,10 @@ print(f'{my_str1} {my_str2} {my_str3} {my_str4}')
 
 <div class="alert alert-info" role="alert">
 <p><i class="fas fa-sticky-note"></i> Nota:</p>
- <p>Si como yo estás aprendiendo Python pero ya sabes algo de JavaScript, las <code>f-string</code> vendrían a ser a algo así como los template literals en ES6.</p>
+ <p>Si como yo, estás aprendiendo Python pero ya sabes algo de JavaScript, las <code>f-string</code> vendrían a ser a algo así como los template literals en ES6.</p>
 </div>
 
-__Ejemplo de template literal en ES6__
+## Template literal en ES6
 
 <p>En JavaScript en vez de preceder la cadena con la letra <code>f</code> utilizamos acentos graves <code>``</code> en lugar de comillas simples <code>''</code> para envolver la cadena. También se requiere del simbolo dolar <code>$</code> delante de las llaves, por lo demás es bastante similar.</p>
 
@@ -82,12 +86,15 @@ console.log(`${my_str1} ${my_str2} ${my_str3} ${my_str4}`)
 // "Roof party wolf iPhone"
 ```
 
-__strings multilínea__
+## Cadenas multilínea en Python
+
+Secrean escribiendo tres comillas `'''` simples o dobles de inicio y de fín:
 
 ```py
 multiline_str = '''Los strings multilínea
 son igual que
-los comentarios multilínea...'''
+los comentarios multilínea...
+'''
 
 print(multiline_str)
 
@@ -112,7 +119,7 @@ los comentarios multilínea...
 '''
 ```
 
-__Indexar strings en Python__
+## Indexar cadenas en Python
 
 Del mismo modo que los ítems de lista los carácteres de un string son indexables en un índice que empiza en 0.
 
@@ -164,7 +171,7 @@ Del mismo modo que los ítems de lista los carácteres de un string son indexabl
   </tbody>
 </table>
 
-Podemos acceder a un carácter escribiendo su índice entre corchetes `[]`.
+Para acceder a un carácter escribimos su índice entre corchetes `[]`.
 
 ```py
 et_says = "ET mi casa teléfono"
@@ -184,7 +191,7 @@ print(et_says[-1])
 # Output: o
 ```
 
-__Funciones de las cadenas__
+## Funciones de las cadenas en Python
 
 Para saber la longitud de una cadena utilizamos la función `len`.
 
@@ -196,7 +203,7 @@ print(len(et_says))
 # Output: 19
 ```
 
-__Métodos de las cadenas__
+## Métodos de las cadenas en Python
 
 `upper()` convierte el texto en mayúsculas.
 

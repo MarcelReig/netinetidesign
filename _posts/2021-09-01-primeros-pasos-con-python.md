@@ -9,23 +9,27 @@ image: python.png
 ---
 
 {:.lead}
-## Python es un lenguaje de propósito general con una sintaxis limpia y sencilla, por lo que es una buena elección para aprender a programar.
+### Python es un lenguaje de propósito general con una sintaxis limpia y sencilla, por lo que es una buena elección para aprender a programar.
 
 {:.lead}
-## Python fue creado en los 90 por [Guido van Rossum](https://twitter.com/gvanrossum?s=20){:target="\_blank"}, su nombre viene de los humoristas britanicos Monty Python.
+### Python fue creado en los 90 por [Guido van Rossum](https://twitter.com/gvanrossum?s=20){:target="\_blank"}, su nombre viene de los humoristas britanicos Monty Python.
 
-{:.lead.mb-5}
-## Si quieres cear aplicaciones web en Python puedes utilizar algunso de sus frameworks [django](https://www.djangoproject.com/){:target="\_blank"} o [Flask](https://flask.palletsprojects.com/en/2.0.x/){:target="\_blank"}.
+{:.lead.my-5}
+### Así como Rubi cuenta con los framaworks Rails y Sinatra, en Python tienes  [django](https://www.djangoproject.com/){:target="\_blank"} y [Flask](https://flask.palletsprojects.com/en/2.0.x/){:target="\_blank"} para crear aplicaciones web.
 
 ## Empezar a programar en Python
 
-__Sin instalación__
+### Sin instalación
 
 La manera más fácil de probar el lenguaje es utilizar [replit](https://replit.com/){:target="\_blank"} o [anyfidle](https://www.anyfiddle.com/), son herramientas tipo codepen pero que te permiten programar en Python.
 
-__Con instalación__
+<div class="browser my-5">
+<img src="{{ site.baseurl }}/assets/images/blog/replit.jpeg" width="800" class="img-fluid text-center m-xl-auto" alt="replit">
+</div>
 
-Las herraminetas mencionadas anteriormente están bién para probar el lenguaje, pero tarde o temprano tendrás que instalar Python en tu computadora.
+### Con instalación
+
+Las herraminetas mencionadas anteriormente están bién para probar el lenguaje, pero si quieres hacer algo serio, tarde o temprano tendrás que instalar Python en tu computadora.
 
 Para instalar Python ves a [python.org](https://www.python.org/){:target="\_blank"} y descarga la versión de Python para tu sistema operativo.
 
@@ -34,7 +38,7 @@ Para instalar Python ves a [python.org](https://www.python.org/){:target="\_blan
 <p>Para instalar Python en Mac te recomiendo seguir el <a href="https://www.freecodecamp.org/news/python-version-on-mac-update/" target="_blank">tutorial de Quincy Larson</a> en freeCodeCamp.</p>
 </div>
 
-Una vez instalado Python en tu computadora ya puedes abrir la terminal y escribir `python3`, esto te abrirá un interprete de Python en el que ya puedes ejecutar funciones de Python.
+Una vez instalado Python en tu computadora ya puedes abrir la terminal y escribir `python3`, esto te abrirá un interprete de Python en el que ya puedes empezar a ejecutar funciones de Python.
 
 <img src="{{ site.baseurl }}/assets/images/blog/python-term.png" width="800" class="img-fluid text-center m-xl-auto" alt="python">
 
@@ -43,11 +47,13 @@ Una vez instalado Python en tu computadora ya puedes abrir la terminal y escribi
 <p>Una vez instalado Python 3 ya puedes escribir comandos de Python detrás de los tres símbolos <code>>>></code><br>Si quieres código coloreado y que te avise de errores instala un editor de código.</p>
 </div>
 
-## Entorno de programación
+## Entorno de programación en Python
 
-No necesitas un IDE especializado para empezar a programar en Python, cualquier editor de código te irá bien.
+No necesitas un IDE especializado para empezar a programar en Python, cualquier editor de código actual te irá bien.
 
-Mi editor habitual es [Visual Studio Code](https://code.visualstudio.com/){:target="\_blank"} el cual tiene una [extensión para Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python){:target="\_blank"} pero de momento estoy utilizando [PyCharm](https://www.jetbrains.com/es-es/pycharm/download/){:target="\_blank"} la versión **Community** que es gratuita y para aprender el lenguaje es muy cómodo.
+En la fase en la que me encuentro, de aprender y experimentar con el lenguaje, [PyCharm](https://www.jetbrains.com/es-es/pycharm/download/){:target="\_blank"} me resulta muy cómodo, la versión **Community** es gratuita y para empezar es más que suficiente.
+
+En algún momento probaré la [extensión para Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python){:target="\_blank"} de  [Visual Studio Code](https://code.visualstudio.com/){:target="\_blank"} que es el editor que utilizo para escribir estas líneas.
 
 ## Características principales del lenguaje
 
@@ -88,7 +94,7 @@ líneas
 <p>En los siguientes ejemplos utilizaré <code># Comentarios de Python</code> para mostrar el resultado de la consola u otras aclaraciones.</p>
 </div>
 
-## Variables
+## Variables en Python
 
 Las variables nos permiten guardar valores que más tarde podemos utilizar en nuestro código.
 Las variables pueden guardar cualquier tipo de dato, enteros, flotantes, booleanos y cadenas o Strings, también podemos guardar listas y tuplas.
@@ -130,7 +136,7 @@ __Inmutables__ No se pueden modificar tras su creación.
 - Cadenas
 - Tuplas
 
-## Números
+## Números en Python
 
 **Enteros** (`int`) números sin decimales, por ejemplo `500` o `-350`.
 
@@ -228,12 +234,47 @@ else:
     print('Introduce un operador válido')
 ```
 
-## Iteraciones en Python
+## Iteraciones o loops en Python
 
-- While
-- For
+Se utilizan para automatizar tareas repetitivas.
 
-## Funciones en Python
+Bucle `while` que imprime una cuenta atrás por pantalla.
+
+```py
+n = 5
+while n > 0:
+    print(n)
+    n = n -1
+print('Lets go!')
+
+# Output: 
+'''
+5
+4
+3
+2
+1
+Lets go!
+'''
+```
+
+Bucle `for` que recorre una lista e imprime cada uno de sus ítems por pantalla: 
+
+```py
+plants = ['Poto', 'Cintas', 'Lirio', 'Ficus']
+
+for plant in plants:
+    print(plant)
+
+# Output: 
+'''
+Poto
+Cintas
+Lirio
+Ficus
+'''
+```
+### Funciones en Python
 
 Las funciones en Python se crean mediante la instrucción `def` más el nombre de la función.
 Para invocar la función escribimos el nombre de la función más paréntesis y los parámetros de la función si los tiene.
@@ -247,7 +288,7 @@ def myfunc(x, y, z):
 print(myfunc(2, 4, 3)) # Output: 9
 ```
 
-## Funciones lambda
+### Funciones lambda
 
 Las funciones anonimas en Python se definen con `lambda`.
 
@@ -256,3 +297,4 @@ result2 = lambda x, y, z: x + y + z
 
 print(result2(2, 4, 3)) # Output: 9
 ```
+

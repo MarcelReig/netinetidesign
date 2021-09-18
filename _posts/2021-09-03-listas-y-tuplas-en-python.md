@@ -8,11 +8,10 @@ category: programacion
 image: listas-tuplas-python.jpg
 ---
 
-## Listas
+{:.lead.my-5}
+### Las listas son una secuencia ordenada de elementos, a diferencia de la tuplas las listas son mutables, podemos añadir, eliminar, mover y cambiar items de lista a nuestro antojo.
 
-Las listas son una secuencia ordenada de elementos, a diferencia de la tuplas las listas no son inmutables, podemos añadir, eliminar, mover y cambiar items de lista a nuestro antojo.
-
-Las listas se crean añadiendo elementos separados por comas entre `[ ]` corchetes.
+Las listas se crean añadiendo elementos separados por comas entre `[ ]` corchetes:
 
 ```py
 helados = ['chocolate', 'limón', 'mango']
@@ -20,7 +19,7 @@ print(helados)
 # Output: ['chocolate', 'limón', 'mango']
 ```
 
-Podemos acceder a los elementos de lista por su índice igual que en las cadenas.
+A los elementos de una lista se accede por su índice, de igual modo que accedemos a los carácteres de una cadena:
 
 ```py
 helados = ['chocolate', 'limón', 'mango']
@@ -28,7 +27,7 @@ print(helados[2])
 # Output: mango
 ```
 
-Si no te gusta el mango siempre puedes cambiarlo por fresas silvestres asignándole otro valor a través de su índice.
+Si no te gusta el mango, siempre puedes cambiarlo por fresas silvestres, asignándole el nuevo valor a través de su índice: 
 
 ```py
 helados = ['chocolate', 'limón', 'mango']
@@ -37,7 +36,7 @@ print(helados)
 # Output: ['chocolate', 'limón', 'fresas silvestres']
 ```
 
-También puedes utilizar la palabra clave `del` para eliminar elementos de lista.
+Otra opción sería utilizar la palabra clave `del` para eliminar mango de la lista: 
 
 ```py
 helados = ['chocolate', 'limón', 'mango']
@@ -69,7 +68,7 @@ helados = ['chocolate', 'limón', 'mango']
 print(len(helados))  # Output: 3
 ```
 
-__Slice__
+## Slice en Python
 
 Nos permite obtener un rango de elementos de una lista. Los valores del rango se especifican entre corchetes, separados por dos puntos. `[inicio:fin]` El primer valor indica el inicio del rango y el segundo el fín.
 
@@ -151,7 +150,7 @@ print(chocolates[0:4:2])
 # Output: ['chocolate', 'pistacho']
 ```
 
-Iiterar una lista con for in
+## Iiterar una lista con for in en Python
 
 ```py
 chocolates = [
@@ -172,7 +171,9 @@ selva negra
 """
 ```
 
-Añadir un nuevo elemento a una lista y guardar la nueva lista en una variable.
+## Añadir un nuevo elemento a una lista en Python
+
+Añadir un nuevo elemento a una lista y guardar la lista en una variable sin modificar la lista original: 
 
 ```py
 helados = ['chocolate', 'limón', 'mango']
@@ -184,7 +185,7 @@ print(new_helados)
 #  Output: ['chocolate', 'limón', 'mango', 'nata']
 ```
 
-__Métodos de las listas__
+## Métodos de las listas en Python
 
 `append()` Añade un elemento al final de la lista.
 
