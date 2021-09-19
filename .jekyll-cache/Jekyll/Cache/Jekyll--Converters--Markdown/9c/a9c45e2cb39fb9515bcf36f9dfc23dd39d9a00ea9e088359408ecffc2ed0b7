@@ -1,0 +1,5 @@
+I"<h3 class="lead my-5">
+Los diccionarios en Python son una estructura de datos que permite almacenar contenido en forma `key:value` clave:valor. 
+### A diferencia de las listas, tuplas y strings que son indexados por su índice los diccionarios son indexados por claves.
+</h3>
+:ET

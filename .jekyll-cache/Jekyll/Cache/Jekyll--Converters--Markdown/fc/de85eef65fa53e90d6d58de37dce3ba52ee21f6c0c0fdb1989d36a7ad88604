@@ -1,15 +1,5 @@
----
-layout: post
-title: Diccionarios en Python
-description: Diccionarios en Python
-comments: true
-tags: python
-category: programacion
-image: manatee.jpeg
----
-
-<h3 class="lead my-5">
-Los diccionarios en Python son una estructura de datos que permite almacenar contenido en forma <code>clave:valor</code>.</h3>
+I"�<h3 class="lead my-5">
+Los diccionarios en Python son una estructura de datos que permite almacenar contenido en forma `key:value` clave:valor.
 
 A diferencia de las listas, tuplas y strings que son indexados por su índice los diccionarios son indexados por claves.
 
@@ -41,7 +31,7 @@ print(hacker)
 'Tabs or Spaces': 'Tabs'}
 '''
 ```
-### Acceder a un valor de un diccionario de Python por su clave
+Acceder a un valor por su clave:
 
 ```py
 hacker = {
@@ -58,7 +48,7 @@ print(languages)
 # Output: ['Python', 'Ruby']
 ```
 
-### Accceder a elementos de lista dentro de un diccionario de Python
+Accceder a elementos de lista dentro de un diccionario:
 
 ```py
 hacker = {
@@ -73,7 +63,7 @@ print(hacker['programming languages'][0])
 # Output: Python
 ```
 
-### Añadir nuevos pares `key:value` a un diccionario de Python
+Para añadir añadir un nuevos pares de `key:value` a un diccionario basta con asignarles un valor:
 
 ```py
 hacker = {
@@ -99,7 +89,7 @@ print(hacker)
 '''
 ```
 
-## Métodos de los Diccionarios de Python
+### Métodos de los Diccionarios
 
 `get()` Recibe una clave como parámetro y devuelve su valor. Si no lo encuentra, devuelve un objeto none.
 Permite especificar un valor por defecto, que devolverá en caso de no encontrar la clave.
@@ -171,7 +161,7 @@ print(hacker)
 
 `update()` Actualiza el diccionario con los elementos de otro diccionario o desde un iterable de pares clave:valor.
 
-## Eliminar ítems de un diccionario de Python
+### Eliminar ítems de un diccionario
 
 Para eliminar ítems de un diccionario podemos utilizar la palabra clave `del` o el método `pop()`.
 
@@ -199,7 +189,7 @@ print(hacker)
 '''
 ```
 
-### Eliminar ítems con pop()
+Eliminar ítems con __pop()__:
 
 El método `pop()` se puede utilizar para eliminar una clave y su valor asociado.
 Un par `key:value` de un diccionario.
@@ -230,11 +220,11 @@ print(hacker)
 '''
 ```
 
-### Eliminar ítems con clear()
+Eliminar ítems con __clear()__
 
 `clear()` Elimina todos los pares `key:value` de un diccionario.
 
-## Diccionarios anidados en python
+### Diccionarios anidados
 
 Un diccionario anidado es un diccionario dentro de otro.
 
@@ -256,7 +246,7 @@ print(hacker_one_name)  # Output: Elliot Alderson
 print(hacker_two_name)  # Output: Richard Hendricks
 ```
 
-### Recorrer un diccionario anidado con un iterable `for`: 
+Recorrer un diccionario anidado con un iterable __`for`__: 
 
 ```py
 hackers = {
@@ -279,7 +269,7 @@ hacker_one: Elliot Alderson
 hacker_two: Richard Hendricks
 '''
 ```
-## Lista de diccionarios anidados en Python
+### Lista de diccionarios anidados
 
 ```py
 hackers = [
@@ -360,3 +350,5 @@ Richard Hendricks
 
 
 
+</h3>
+:ET
