@@ -173,7 +173,87 @@ selva negra
 
 ## Añadir un nuevo elemento a una lista en Python
 
-Añadir un nuevo elemento a una lista y guardar la lista en una variable sin modificar la lista original: 
+El método `append()` añade un elemento al final de la lista.
+
+```py
+helados = ['chocolate', 'limón', 'mango']
+print(helados)
+# Output: ['chocolate', 'limón', 'mango']
+
+helados.append('pistacho')
+
+print(helados)
+# Output:
+# ['chocolate', 'limón', 'mango', 'pistacho']
+```
+
+El método `extend()` también sirve para añadir un nuevo elemento a la lista.
+Si añadimos una lista de un elemento como parámetro, vamos a obtener el mismo resultado que con append: 
+
+```py
+helados = ['chocolate', 'limón', 'mango']
+
+helados.extend(['nata'])
+print(helados)
+
+# Output:
+# ['chocolate', 'limón', 'mango', 'nata']
+```
+
+Si añadimos una cadena como parámetro, el resultado es muy diferente: 
+
+```py
+helados = ['chocolate', 'limón', 'mango']
+
+helados.extend('nata')
+print(helados)
+
+# Output: ['chocolate', 'limón', 'mango', 'n', 'a', 't', 'a']
+```
+
+<div class="alert alert-info" role="alert">
+<p><i class="fas fa-sticky-note"></i> Nota:</p>
+ <p>La diferencia entre <code>append()</code> y <code>extend()</code> es que append añade un objeto (número, cadena u otra lista) al final de la lista, mientras que extend extiende la lista añadiendo elementos a la lista.</p>
+</div>
+
+Veamos la diferencia en un ejemplo:
+
+Utilizando el método `append()`:
+```py
+helados = ['chocolate', 'limón', 'mango']
+
+helados.append(['vainilla', 'pistacho', 'melón'])
+
+print(helados)
+
+# Output: ['chocolate', 'limón', 'mango', ['vainilla', 'pistacho', 'melón']]
+```
+
+Utilizando el método `extend()`: 
+```py
+helados = ['chocolate', 'limón', 'mango']
+
+helados.extend(['vainilla', 'pistacho', 'melón'])
+
+print(helados)
+
+# Output: ['chocolate', 'limón', 'mango', 'vainilla', 'pistacho', 'melón']
+```
+
+El método `insert()` inserta un elemento de lista en el índice especificado.
+
+```py
+helados = ['chocolate', 'limón', 'mango']
+print(helados)
+# Output: ['chocolate', 'limón', 'mango']
+
+helados.insert(1, 'vainilla')
+
+print(helados)
+# Output: ['chocolate', 'vainilla', 'limón', 'mango']
+```
+
+Añadir un nuevo elemento a una lista y guardar la lista en una variable __sin modificar la lista original__: 
 
 ```py
 helados = ['chocolate', 'limón', 'mango']
@@ -189,31 +269,9 @@ print(new_helados)
 
 `append()` Añade un elemento al final de la lista.
 
-```py
-helados = ['chocolate', 'limón', 'mango']
-print(helados)
-# Output: ['chocolate', 'limón', 'mango']
-
-helados.append('pistacho')
-
-print(helados)
-# Output:
-# ['chocolate', 'limón', 'mango', 'pistacho']
-```
-
 `clear()` Elimina todos los elementos de la lista. El método clear() no retorna ningún valor, solo una lista vacía.
 
 `extend()` Para añadir un nuevo elemento a la lista.
-
-```py
-helados = ['chocolate', 'limón', 'mango']
-
-helados.extend(['nata'])
-print(helados)
-
-# Output:
-# ['chocolate', 'limón', 'mango', 'nata']
-```
 
 `count()` Cuenta el número de veces que aparece un ítem en una lista.
 
@@ -240,17 +298,6 @@ print(helados.index('limón'))  # Output: 1
 ```
 
 `insert()` Inserta un elemento de lista en el índice especificado.
-
-```py
-helados = ['chocolate', 'limón', 'mango']
-print(helados)
-# Output: ['chocolate', 'limón', 'mango']
-
-helados.insert(1, 'vainilla')
-
-print(helados)
-# Output: ['chocolate', 'vainilla', 'limón', 'mango']
-```
 
 `pop()` Elimina el último elemento de la lista, pero no se limita a eso, también lo retorna por lo que podemos guardarlo en una variable.
 
