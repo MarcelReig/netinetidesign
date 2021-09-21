@@ -1,0 +1,50 @@
+I"]<p>La función <code class="language-plaintext highlighter-rouge">zip()</code>toma como argumentos dos o más objetos iterables.
+El resultado de pasar dos listas a <code class="language-plaintext highlighter-rouge">zip()</code> será una tupla en la que cada uno de sus elementos contendrá los valores de la primera y segunda lista fusionados en el orden que ocupaban los objetos iterables originales (el primero con el primero, el segundo con el segundo…).</p>
+
+<div class="alert alert-info" role="alert">
+<p><i class="fas fa-sticky-note"></i> Nota:</p>
+ <p>Si los iteradores de entrada tienen diferente longitud, la función zip se para cuando termina el iterador más corto, el resto de elementos serán ignorados.</p>
+</div>
+
+<h3 id="utilizar-la-función-zip-para-fusionar-tres-listas-en-tres-tuplas-de-python">Utilizar la función <code class="language-plaintext highlighter-rouge">zip()</code> para fusionar tres listas en tres tuplas de Python</h3>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">animal</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Rana'</span><span class="p">,</span> <span class="s">'Mono'</span><span class="p">,</span> <span class="s">'Tortuga'</span><span class="p">]</span>
+
+<span class="n">longevidad</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">180</span><span class="p">]</span>
+
+<span class="n">genero</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Anfibio'</span><span class="p">,</span> <span class="s">'Primate'</span><span class="p">,</span> <span class="s">'Reptil'</span><span class="p">]</span>
+
+<span class="n">animales</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="n">animal</span><span class="p">,</span> <span class="n">longevidad</span><span class="p">,</span> <span class="n">genero</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">animales</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+<span class="c1"># Output: 
+</span><span class="s">'''
+('Rana', 3, 'Anfibio')
+('Mono', 25, 'Primate')
+('Tortuga', 180, 'Reptil')
+'''</span>
+</code></pre></div></div>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+<span class="c1">### Utilizar `dict()` con la función `zip()` para fusionar dos listas en un diccionario de Python
+</span>
+<span class="sb">``</span><span class="err">`</span><span class="n">py</span>
+<span class="n">series</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Westworld'</span><span class="p">,</span> <span class="s">'Humans'</span><span class="p">,</span> <span class="s">'Devs'</span><span class="p">]</span>
+<span class="n">directed_by</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Jonathan Nolan'</span><span class="p">,</span> <span class="s">'Sam Donovan'</span><span class="p">,</span> <span class="s">'Alex Garland'</span><span class="p">]</span>
+
+<span class="n">series_info</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">series</span><span class="p">,</span> <span class="n">directed_by</span><span class="p">))</span>
+
+<span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">series_info</span><span class="p">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">key</span> <span class="o">+</span> <span class="s">' : '</span> <span class="o">+</span> <span class="n">value</span><span class="p">)</span>
+
+<span class="c1"># Output:
+</span><span class="s">'''
+Westworld : Jonathan Nolan
+Humans : Sam Donovan
+Devs : Alex Garland
+'''</span>
+</code></pre></div></div>
+:ET

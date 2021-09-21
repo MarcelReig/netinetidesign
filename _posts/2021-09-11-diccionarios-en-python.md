@@ -19,10 +19,9 @@ Los diccionarios __son mutables__, su contenido se puede modificar.
 
 Los diccionarios permiten guardar distintos tipos de datos: Strings, enteros, flotantes, booleanos, tuplas, listas y otros diccionarios.
 
-Asignando el valor `{}` a una variable se crea un diccionario vacio.
+Asignando el valor `{}` a una variable se crea un diccionario vacio, por ejemplo `users = {}` crea el diccionario vacio *users*.
 
-
-Veamos un ejemplo envolviendo los pares clave:valor entre llaves `{}`: 
+Ejemplo de un dicccionario creado con llaves `{}` con varios pares de `key:value` ya creados: 
 
 ```py
 hacker = {
@@ -41,6 +40,29 @@ print(hacker)
 'Tabs or Spaces': 'Tabs'}
 '''
 ```
+
+También es posible crear un diccionario con el método constructor de diccionarios `dict()`, introduciendo los pares `key:value` entre paréntesis `()`.
+
+ Veamos un ejemplo del mismo diccionario anterior ahora creado con `dict()`: 
+
+```py
+hacker = dict([
+    ("Name", "Elliot Alderson"),
+    ("Age", 28),
+    ("programming languages", ["Python", "Ruby"]),
+    ("Tabs or Spaces", "Tabs")
+])
+print(hacker)
+
+# Output:
+'''
+{'Name': 'Elliot Alderson',
+'Age': 28,
+'programming languages': ['Python', 'Ruby'],
+'Tabs or Spaces': 'Tabs'}
+'''
+```
+
 ### Acceder a un valor de un diccionario de Python por su clave
 
 ```py
@@ -131,29 +153,40 @@ print(hacker_pets)
 # Output: Not a valid Key
 ```
 
-`dict()` Método constructor de diccionarios. Hemos visto como se crea un diccionario envolviendo los pares clave:valor entre llaves `{}`, pero los diccionarios también se pueden crear con el constructor `dict()`, introduciendo los pares `key:value` entre paréntesis `()`.
+`dict()` Método constructor de diccionarios. Aparte de las llaves `{}`, podemos crear diccionarios con el constructor `dict()`, introduciendo los pares `key:value` entre paréntesis `()`.
 
- Veamos un ejemplo: 
+`items()` Retorna una vista de los pares `key:value` clave:valor de un diccionario.
 
 ```py
-hacker = dict([
-    ("Name", "Elliot Alderson"),
-    ("Age", 28),
-    ("programming languages", ["Python", "Ruby"]),
-    ("Tabs or Spaces", "Tabs")
-])
-print(hacker)
+series = {'serie': 'Mr. Robot', 'director': 'Sam Esmail', 'año': 2015}
+
+x = series.items()
+
+print(x)
 
 # Output:
 '''
-{'Name': 'Elliot Alderson',
-'Age': 28,
-'programming languages': ['Python', 'Ruby'],
-'Tabs or Spaces': 'Tabs'}
+dict_items([('serie', 'Mr. Robot'),
+ ('director', 'Sam Esmail'),
+ ('año', 2015)])
 '''
 ```
 
-`items()` Retorna una vista de los pares `key:value` clave:valor de un diccionario.
+Puedes recorrer el diccionario utilizando `items()` con un iterable `for` para obtener un resultado más limpio: 
+
+```py
+series = {'serie': 'Mr. Robot', 'director': 'Sam Esmail', 'año': 2015}
+
+for clave, valor in series.items():
+    print(clave, valor)
+
+# Output:
+'''
+serie Mr. Robot
+director Sam Esmail
+año 2015
+''' 
+```
 
 `keys()` Retorna una vista de las claves de un diccionario.
 
@@ -356,7 +389,13 @@ Richard Hendricks
 '''
 ```
 
+## Utilizar tuplas como claves de un diccionario de Python
 
+
+<div class="alert alert-info" role="alert">
+<p><i class="fas fa-sticky-note"></i> Nota:</p>
+ <p>Solo se pueden utilizar elementos inmutables como claves de diccionario, por lo que solo las tuplas y no las listas se pueden utilizar como claves.</p>
+</div>
 
 
 
