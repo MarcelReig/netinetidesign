@@ -8,13 +8,15 @@ category: programacion
 image: python-loops.jpg
 ---
 
-{:.lead.mt-5}
-### En Python utilizan los iteradores constantemente, lo loops te permiten recorrer estructuras de datos sin saber lo largas que son.
+{:.lead.my-5}
+### En Python se utilizan los iteradores constantemente, los loops te permiten recorrer estructuras de datos sin saber lo largas que son.
 
 {:.lead.mb-5}
-### Para aprender a utilizar los loops primero neceitamos una lista de datos sobre la que iterar, la lista de tags que me aparece en Youtube servirá para el ejemplo.
+### Para aprender a utilizar los loops primero neceitamos una lista de datos sobre la que iterar. La lista de tags que me aparece en Youtube servirá para el primer ejemplo.
 
 ## For Loop
+
+
 
 Para recorrer una lista todo lo que necesitas es la palabra clave `for`, la palabra clave `in`, el nombre de una variable en este caso `tag` que tendrá el valor de cada uno de los ítems según se vaya ejecutando el loop y el nombre de la variable que hace referencia a la lista que queremos recorrer, en el ejemplo `tags`.
 
