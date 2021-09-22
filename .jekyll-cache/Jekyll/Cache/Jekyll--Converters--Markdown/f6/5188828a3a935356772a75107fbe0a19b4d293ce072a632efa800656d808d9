@@ -1,0 +1,21 @@
+I"�<h3 class="lead mt-5" id="en-python-utilizan-los-iteradores-constantemente-lo-loops-te-permiten-recorrer-estructuras-de-datos-sin-saber-lo-largas-que-son">En Python utilizan los iteradores constantemente, lo loops te permiten recorrer estructuras de datos sin saber lo largas que son.</h3>
+
+<h3 class="lead mb-5" id="para-aprender-a-utilizar-los-loops-primero-neceitamos-una-lista-de-datos-sobre-la-que-iterar-la-lista-de-tags-que-me-aparece-en-youtube-servirá-para-el-ejemplo">Para aprender a utilizar los loops primero neceitamos una lista de datos sobre la que iterar, la lista de tags que me aparece en Youtube servirá para el ejemplo.</h3>
+
+<h2 id="for-loop">For Loop</h2>
+
+<p>Para recorrer una lista todo lo que necesitas es la palabra clave <code class="language-plaintext highlighter-rouge">for</code>, la palabra clave <code class="language-plaintext highlighter-rouge">in</code> y el nombre de la variable que hace referencia a la lista, en siguiente ejemplo <code class="language-plaintext highlighter-rouge">tags</code>, la palabra <code class="language-plaintext highlighter-rouge">tag</code> que hay después del for pord</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">tags</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Live'</span><span class="p">,</span> <span class="s">'Japanese Music'</span><span class="p">,</span> <span class="s">'Lo-fi Music'</span><span class="p">,</span> <span class="s">'New to you'</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">tag</span> <span class="ow">in</span> <span class="n">tags</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+
+<span class="c1"># Output:
+</span><span class="s">'''
+Live
+Japanese Music
+Lo-fi Music
+New to you
+'''</span>
+</code></pre></div></div>
+:ET

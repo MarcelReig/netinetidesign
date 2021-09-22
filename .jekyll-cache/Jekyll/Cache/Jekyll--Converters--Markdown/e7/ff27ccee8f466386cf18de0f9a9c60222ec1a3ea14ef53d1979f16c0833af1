@@ -1,0 +1,5 @@
+I"¥<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">tags</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Live'</span><span class="p">,</span> <span class="s">'Japanese Music'</span><span class="p">,</span> <span class="s">'Lo-fi Music'</span><span class="p">,</span> <span class="s">'New to you'</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">tag</span> <span class="ow">in</span> <span class="n">tags</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+</code></pre></div></div>
+:ET

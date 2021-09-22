@@ -1,0 +1,5 @@
+I"|<p>```py
+tags = [‘Live’, ‘Japanese Music’, ‘Lo-fi Music’, ‘New to you’]
+for tag in tags:
+    print(tag)</p>
+:ET
