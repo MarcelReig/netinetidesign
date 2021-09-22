@@ -84,3 +84,83 @@ Profesor: Sarah Davidson
 Correo eléctronico: sarah.davidson@myschool.com
 '''
 ```
+
+## Loops con rango utilizando la función `range()` de Python
+
+Pintar por pantalla los números del 1 al 9 con la función `range()`, ten en cuenta que si quieres pintar hasta el 10 tienes que poner 11 como segundo parámetro pues el loop se para en llegar al último valor.
+
+```py
+for num in range(1, 10):
+    print(num)
+
+# Output: 
+'''
+1
+2
+3
+4
+5
+6
+7
+8
+9
+'''
+```
+
+## Operador lógico Continue en Loops de Python
+
+```py
+usernames = [
+    'Natasha Romanoff',
+    'Wanda Maximoff',
+    'Jessica Jones',
+    'Harley Quinn',
+    'Ororo Monroe',
+    'Yelena Belova'
+]
+
+for username in usernames:
+    if username == 'Harley Quinn':
+        print(f'Lo siento, {username}, no se le permite el acceso')
+        continue
+    else:
+        print(f'{username}, acceso permitido')
+
+# Output: 
+'''
+Natasha Romanoff, acceso permitido
+Wanda Maximoff, acceso permitido
+Jessica Jones, acceso permitido
+Lo siento, Harley Quinn, no se le permite el acceso
+Ororo Monroe, acceso permitido
+Yelena Belova, acceso permitido
+'''
+```
+
+## Operador lógico Break en Loops de Python
+
+
+```py
+usernames = [
+    'Natasha Romanoff',
+    'Wanda Maximoff',
+    'Jessica Jones',
+    'Harley Quinn',
+    'Ororo Monroe',
+    'Yelena Belova'
+]
+
+for username in usernames:
+    if username == 'Harley Quinn':
+        print(f'{username}, ha sido encontrada en el indice {usernames.index(username)}')
+        break
+    print(username)
+
+ # Output: 
+'''
+Natasha Romanoff
+Wanda Maximoff
+Jessica Jones
+Harley Quinn, ha sido encontrada en el indice 3
+'''
+```
