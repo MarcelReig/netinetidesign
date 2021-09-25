@@ -1,0 +1,240 @@
+I"�?<h3 class="lead my-5" id="en-python-se-utilizan-los-iteradores-constantemente-los-loops-te-permiten-recorrer-estructuras-de-datos-sin-saber-lo-largas-que-son">En Python se utilizan los iteradores constantemente, los loops te permiten recorrer estructuras de datos sin saber lo largas que son.</h3>
+
+<div class="alert alert-primary" role="alert">
+<p><i class="fas fa-sticky-note"></i> Nota:</p>
+ <p>Los loops también son llamados Iteradores o bucles.</p>
+</div>
+
+<h2 id="for-loop">For Loop</h2>
+
+<p>Para aprender a utilizar los loops primero neceitamos una lista de datos sobre la que iterar. La lista de tags que me aparece en Youtube servirá para el primer ejemplo.</p>
+
+<p>Para recorrer una lista todo lo que necesitas es la palabra clave <code class="language-plaintext highlighter-rouge">for</code>, la palabra clave <code class="language-plaintext highlighter-rouge">in</code>, el nombre de una variable en este caso <code class="language-plaintext highlighter-rouge">tag</code>, que tendrá el valor de cada uno de los ítems de la lista según se vaya ejecutando el loop, primero será <code class="language-plaintext highlighter-rouge">Live</code> después <code class="language-plaintext highlighter-rouge">Japanese Music</code> etc.. y por último necesitamos el nombre de la variable que hace referencia a la lista que queremos recorrer, en el ejemplo <code class="language-plaintext highlighter-rouge">tags</code>.</p>
+
+<p>El nombre de la variable <code class="language-plaintext highlighter-rouge">tag</code> podría ser cualquiera <code class="language-plaintext highlighter-rouge">x</code> o <code class="language-plaintext highlighter-rouge">tofu</code> funcionaría igual, pero es una convención nombrar esta variable en singular y el nombre de la lista en plural.</p>
+
+<p>El nombre de la segunda variable en el bucle <code class="language-plaintext highlighter-rouge">for</code> tiene que ser el mismo que el nombre de la lista o no funcionará, en este caso la lista es <code class="language-plaintext highlighter-rouge">tags</code>.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">tags</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Live'</span><span class="p">,</span> <span class="s">'Japanese Music'</span><span class="p">,</span> <span class="s">'Lo-fi Music'</span><span class="p">,</span> <span class="s">'New to you'</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">tag</span> <span class="ow">in</span> <span class="n">tags</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+
+<span class="c1"># Output:
+</span><span class="s">'''
+Live
+Japanese Music
+Lo-fi Music
+New to you
+'''</span>
+</code></pre></div></div>
+
+<h2 id="recorrer-una-cadena-con-un-for-loop">Recorrer una cadena con un for loop</h2>
+
+<p>Si ejecutas un for loop en una cadena obtendrás un carácter de la cadena por cada paso del loop.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="s">"Paraguay"</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="c1"># Output: 
+</span><span class="s">'''
+P
+a
+r
+a
+g
+u
+a
+y
+'''</span>
+</code></pre></div></div>
+
+<h2 id="recorrer-un-diccionario-con-un-for-loop">Recorrer un diccionario con un for loop</h2>
+
+<p>El método <code class="language-plaintext highlighter-rouge">items()</code> del diccionario regresa una tupla por cada par <code class="language-plaintext highlighter-rouge">key:value</code> de un diccionario. En el siguiente ejemplo la primera variable (<code class="language-plaintext highlighter-rouge">teacher</code>), corresponde a la clave, la segunda variable (<code class="language-plaintext highlighter-rouge">email</code>) corresponde al valor de las tuplas.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">teachers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">'Theresa Morrison'</span><span class="p">:</span> <span class="s">'theresa.morrison@myschool.com'</span><span class="p">,</span>
+    <span class="s">'Caroline Turner'</span><span class="p">:</span> <span class="s">'jhondoe@myschool.com'</span><span class="p">,</span>
+    <span class="s">'Ryan North'</span><span class="p">:</span> <span class="s">'ryan.north@myschool.com'</span><span class="p">,</span>
+    <span class="s">'Sarah Davidson'</span><span class="p">:</span> <span class="s">'sarah.davidson@myschool.com'</span>
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="n">teacher</span><span class="p">,</span> <span class="n">email</span> <span class="ow">in</span> <span class="n">teachers</span><span class="p">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'Profesor'</span><span class="p">,</span> <span class="n">teacher</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'Correo eléctronico'</span><span class="p">,</span> <span class="n">email</span><span class="p">)</span>
+
+<span class="c1"># Output: 
+</span><span class="s">'''
+Profesor: Theresa Morrison
+Correo eléctronico: theresa.morrison@myschool.com
+Profesor: Caroline Turner
+Correo eléctronico: jhondoe@myschool.com
+Profesor: Ryan North
+Correo eléctronico: ryan.north@myschool.com
+Profesor: Sarah Davidson
+Correo eléctronico: sarah.davidson@myschool.com
+'''</span>
+</code></pre></div></div>
+
+<h2 id="incrementar-por-una-cada-número-de-una-lista-e-imprimir-el-resultado">Incrementar por una cada número de una lista e imprimir el resultado</h2>
+
+<p>Vamos a utilizar un bucle for para incrementar po 1 a cada elemento en una serie de números, guardar el resultado en una nueva lista e imprimir la nueva lista por pantalla.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">loop_over_list</span><span class="p">():</span>
+    <span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="p">[</span><span class="n">number</span><span class="o">+</span><span class="mi">1</span> <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">]</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+
+
+<span class="n">loop_over_list</span><span class="p">()</span>
+
+<span class="c1">#Output: [2, 3, 4, 5, 6, 7]
+</span>
+</code></pre></div></div>
+<h2 id="loops-con-rango-utilizando-la-función-range-de-python">Loops con rango utilizando la función range() de Python</h2>
+
+<p>Pintar por pantalla los números del 1 al 9 con la función <code class="language-plaintext highlighter-rouge">range()</code>, ten en cuenta que si quieres pintar hasta el 10 tienes que poner 11 como segundo parámetro pues el loop se para en llegar al último valor.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+
+<span class="c1"># Output: 
+</span><span class="s">'''
+1
+2
+3
+4
+5
+6
+7
+8
+9
+'''</span>
+</code></pre></div></div>
+
+<h2 id="operador-lógico-continue-en-loops-de-python">Operador lógico Continue en Loops de Python</h2>
+
+<p>La sentencia <code class="language-plaintext highlighter-rouge">continue</code> se utiliza para continuar con el resto del bucle después de un if.</p>
+
+<p>Cuando el bucle se encuentra con Harley Quinn, le deniega el acceso y sigue con el resto de heroinas de la lista.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">usernames</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s">'Natasha Romanoff'</span><span class="p">,</span>
+    <span class="s">'Wanda Maximoff'</span><span class="p">,</span>
+    <span class="s">'Jessica Jones'</span><span class="p">,</span>
+    <span class="s">'Harley Quinn'</span><span class="p">,</span>
+    <span class="s">'Ororo Monroe'</span><span class="p">,</span>
+    <span class="s">'Yelena Belova'</span>
+<span class="p">]</span>
+
+<span class="k">for</span> <span class="n">username</span> <span class="ow">in</span> <span class="n">usernames</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">username</span> <span class="o">==</span> <span class="s">'Harley Quinn'</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">f'Lo siento, </span><span class="si">{</span><span class="n">username</span><span class="si">}</span><span class="s">, no se le permite el acceso'</span><span class="p">)</span>
+        <span class="k">continue</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">f'</span><span class="si">{</span><span class="n">username</span><span class="si">}</span><span class="s">, acceso permitido'</span><span class="p">)</span>
+
+<span class="c1"># Output: 
+</span><span class="s">'''
+Natasha Romanoff, acceso permitido
+Wanda Maximoff, acceso permitido
+Jessica Jones, acceso permitido
+Lo siento, Harley Quinn, no se le permite el acceso
+Ororo Monroe, acceso permitido
+Yelena Belova, acceso permitido
+'''</span>
+</code></pre></div></div>
+
+<h2 id="operador-lógico-break-en-loops-de-python">Operador lógico Break en Loops de Python</h2>
+
+<p>La sentencia <code class="language-plaintext highlighter-rouge">break</code> se utiliza para detener un bucle después de un if.</p>
+
+<p>En este caso, cuando el bucle encuentra a Harley Quinn, se detiene el bucle aunque haya más elementos por recorrer en la lista.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">usernames</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s">'Natasha Romanoff'</span><span class="p">,</span>
+    <span class="s">'Wanda Maximoff'</span><span class="p">,</span>
+    <span class="s">'Jessica Jones'</span><span class="p">,</span>
+    <span class="s">'Harley Quinn'</span><span class="p">,</span>
+    <span class="s">'Ororo Monroe'</span><span class="p">,</span>
+    <span class="s">'Yelena Belova'</span>
+<span class="p">]</span>
+
+<span class="k">for</span> <span class="n">username</span> <span class="ow">in</span> <span class="n">usernames</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">username</span> <span class="o">==</span> <span class="s">'Harley Quinn'</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">f'</span><span class="si">{</span><span class="n">username</span><span class="si">}</span><span class="s">, ha sido encontrada en el indice </span><span class="si">{</span><span class="n">usernames</span><span class="p">.</span><span class="n">index</span><span class="p">(</span><span class="n">username</span><span class="p">)</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+        <span class="k">break</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">username</span><span class="p">)</span>
+
+ <span class="c1"># Output: 
+</span><span class="s">'''
+Natasha Romanoff
+Wanda Maximoff
+Jessica Jones
+Harley Quinn, ha sido encontrada en el indice 3
+'''</span>
+</code></pre></div></div>
+
+<h2 id="while-loops-en-python">While Loops en Python</h2>
+
+<p>Cuenta atrás utilizando un while loop:</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">nums</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+
+<span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">nums</span><span class="p">.</span><span class="n">pop</span><span class="p">())</span>
+
+<span class="c1"># Output: 
+</span><span class="s">'''
+9
+8
+7
+6
+5
+4
+3
+2
+1
+'''</span>
+</code></pre></div></div>
+
+<p>En el siguiente ejemplo tenemos una función que hace una pregunta al usuario y mientras el usuario no acierte continuará ejecutandose.</p>
+
+<p>La función pregunta cuantos años tengo? Si el usuario responde 42 el Loop while se detiene, de lo contrario sigue ejecutandose.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">adivina_mi_edad</span><span class="p">():</span>
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">'Cantos años tengo?'</span><span class="p">)</span>
+        <span class="n">adivina</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">adivina</span> <span class="o">==</span> <span class="s">'42'</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">'Correcto adivinaste mi edad!'</span><span class="p">)</span>
+            <span class="k">return</span> <span class="bp">False</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">f'No, no tengo </span><span class="si">{</span><span class="n">adivina</span><span class="si">}</span><span class="s"> años, prueba otra vez</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
+
+
+<span class="n">adivina_mi_edad</span><span class="p">()</span>
+
+</code></pre></div></div>
+
+<p>While loop que recorre una lista y pinta cada elemento de la lista por pantalla:</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">while_loop</span><span class="p">():</span>
+    <span class="n">perritos</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Pocket'</span><span class="p">,</span> <span class="s">'Tengo'</span><span class="p">,</span> <span class="s">'Canela'</span><span class="p">,</span> <span class="s">'Tana'</span><span class="p">]</span>
+    <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">counter</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">perritos</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">perritos</span><span class="p">[</span><span class="n">counter</span><span class="p">])</span>
+        <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="n">while_loop</span><span class="p">()</span>
+
+<span class="c1">#Output: 
+</span><span class="s">'''
+Pocket
+Tengo
+Canela
+Tana
+'''</span>
+</code></pre></div></div>
+:ET

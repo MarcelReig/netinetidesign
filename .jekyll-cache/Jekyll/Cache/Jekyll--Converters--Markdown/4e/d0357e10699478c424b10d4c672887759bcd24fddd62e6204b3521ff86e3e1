@@ -1,26 +1,16 @@
----
-layout: post
-title: Python loops
-description: Python loops
-comments: true
-tags: python
-category: programacion
-image: python-loops.jpg
----
-
-{:.lead.my-5}
-### En Python se utilizan los iteradores constantemente, los loops te permiten recorrer estructuras de datos sin saber lo largas que son.
+I"�<h3 class="lead my-5" id="en-python-se-utilizan-los-iteradores-constantemente-los-loops-te-permiten-recorrer-estructuras-de-datos-sin-saber-lo-largas-que-son">En Python se utilizan los iteradores constantemente, los loops te permiten recorrer estructuras de datos sin saber lo largas que son.</h3>
 
 <div class="alert alert-primary" role="alert">
 <p><i class="fas fa-sticky-note"></i> Nota:</p>
- <p>Los loops también son llamados Iteradores o bucles.</p>
-</div>
+ <p>Los loops también son llamados Iteradores o bucles.
+&lt;/div&gt;
+
+{:.lead.mb-5}
+### Para aprender a utilizar los loops primero neceitamos una lista de datos sobre la que iterar. La lista de tags que me aparece en Youtube servirá para el primer ejemplo.
 
 ## For Loop
 
-Para aprender a utilizar los loops primero neceitamos una lista de datos sobre la que iterar. La lista de tags que me aparece en Youtube servirá para el primer ejemplo.
-
-Para recorrer una lista todo lo que necesitas es la palabra clave `for`, la palabra clave `in`, el nombre de una variable en este caso `tag`, que tendrá el valor de cada uno de los ítems de la lista según se vaya ejecutando el loop, primero será `Live` después `Japanese Music` etc.. y por último necesitamos el nombre de la variable que hace referencia a la lista que queremos recorrer, en el ejemplo `tags`.
+Para recorrer una lista todo lo que necesitas es la palabra clave `for`, la palabra clave `in`, el nombre de una variable en este caso `tag`, que tendrá el valor de cada uno de los ítems de la lista según se vaya ejecutando el loop primero será `Live` después `Japanese Music` etc.. y por último necesitamos el nombre de la variable que hace referencia a la lista que queremos recorrer, en el ejemplo `tags`.
 
 El nombre de la variable `tag` podría ser cualquiera `x` o `tofu` funcionaría igual, pero es una convención nombrar esta variable en singular y el nombre de la lista en plural.
 
@@ -91,22 +81,7 @@ Correo eléctronico: sarah.davidson@myschool.com
 '''
 ```
 
-## Incrementar por una cada número de una lista
-
-Vamos a utilizar un bucle for para incrementar po 1 a cada elemento en una serie de números, guardar el resultado en una nueva lista e imprimir la nueva lista por pantalla.
-
-```py
-def loop_over_list():
-    numbers = [1, 2, 3, 4, 5, 6]
-    result = [number+1 for number in numbers]
-    print(result)
-
-
-loop_over_list()
-
-#Output: [2, 3, 4, 5, 6, 7]
-```
-## Loops con rango utilizando la función range() de Python
+## Loops con rango utilizando la función `range()` de Python
 
 Pintar por pantalla los números del 1 al 9 con la función `range()`, ten en cuenta que si quieres pintar hasta el 10 tienes que poner 11 como segundo parámetro pues el loop se para en llegar al último valor.
 
@@ -200,7 +175,7 @@ Cuenta atrás utilizando un while loop:
 ```py
 nums = list(range(1, 10))
 
-while len(nums) > 0:
+while len(nums) &gt; 0:
     print(nums.pop())
 
 # Output: 
@@ -244,7 +219,7 @@ While loop que recorre una lista y pinta cada elemento de la lista por pantalla:
 def while_loop():
     perritos = ['Pocket', 'Tengo', 'Canela', 'Tana']
     counter = 0
-    while counter < len(perritos):
+    while counter &lt; len(perritos):
         print(perritos[counter])
         counter += 1
 
@@ -258,3 +233,5 @@ Canela
 Tana
 '''
 ```
+</p></div>
+:ET
