@@ -242,7 +242,7 @@ else:
 
 __Operadores condicionales en Python:__
 
-En esta breve introducción a los condicionales solamente hemos utilizado el operador `==` de igualdad pero el resto de operadores condicionales te serán de gran utilidad ensegida.
+En esta breve introducción a los condicionales solamente hemos utilizado el operador `==` de igualdad pero el resto de operadores condicionales te serán de gran utilidad enseguida.
 
 <table class="table table-bordered">
   <thead>
@@ -274,6 +274,17 @@ En esta breve introducción a los condicionales solamente hemos utilizado el ope
     </tr>
   </tbody>
 </table>
+
+Este condicional chequea que el usuario sea mayor de 21 años, si la condición no se cumple imprime un mensaje por pantalla.
+
+```py
+age = 18
+
+if age < 21:
+  print(f"Lo siento debes ser mayor de 21 años.")
+
+# Output: Lo siento debes ser mayor de 21 años.
+```
 
 ## Iteraciones o loops en Python
 
