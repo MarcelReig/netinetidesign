@@ -201,6 +201,10 @@ __Operadores aritméticos en Python:__
 
 ## Condicionales
 
+Los condicionales en programación se utilizan para elegir entre diferentes opciones dependiendo del valor de las variables.
+
+Veamos un ejemplo de condicional en Python que nos ayudará a decidir si comprar un producto o sevicio:
+
 ```py
 es_barato = True
 es_bueno = True
@@ -213,6 +217,8 @@ elif not es_barato and es_bueno:
     print("Eres bueno pero no eres barato")
 else:
     print("Eres una estafa")
+
+# Output: Toma mi dinero!
 ```
 
 Con los condicionales en Python puedes construir cosas tan geniales como una pequeña calculadora.
@@ -233,6 +239,41 @@ elif op == '*':
 else:
     print('Introduce un operador válido')
 ```
+
+__Operadores condicionales en Python:__
+
+En esta breve introducción a los condicionales solamente hemos utilizado el operador `==` de igualdad pero el resto de operadores condicionales te serán de gran utilidad ensegida.
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Operador </th>
+      <th scope="col">Descripción </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">==</th>
+      <td>Igualdad</td>
+    </tr>
+    <tr>
+      <th scope="row">!=</th>
+      <td>Desigualdad</td>
+    </tr>
+    <tr>
+      <th scope="row">></th>
+      <td>Mayor que</td>
+    </tr>
+        <tr>
+      <th scope="row">>=</th>
+      <td>Mayor o igual a</td>
+    </tr>
+    <tr>
+      <th scope="row"><</th>
+      <td>Menor o igual a</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Iteraciones o loops en Python
 
