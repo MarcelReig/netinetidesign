@@ -1,0 +1,31 @@
+I"!
+<h3 class="lead my-5" id="el-operador-ternario-es-un-operador-condicional-la-sintaxis-en-python-y-en-javascript-es-diferente-pero-su-uso-es-el-mismo">El operador ternario es un operador condicional la sintaxis en Python y en JavaScript es diferente pero su uso es el mismo</h3>
+
+<h3 class="lead my-5" id="el-operador-ternario-se-utiliza-para-simplificar-declaraciones-if-else">El operador ternario se utiliza para simplificar declaraciones if… else</h3>
+
+<h2 id="opeador-ternario-en-python">Opeador ternario en Python</h2>
+
+<p>El operador ternario en Python toma tres par</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">language</span> <span class="o">=</span> <span class="s">'python'</span>
+
+<span class="n">language_check</span> <span class="o">=</span> <span class="bp">True</span> <span class="k">if</span> <span class="n">language</span> <span class="o">==</span> <span class="s">'python'</span> <span class="k">else</span> <span class="bp">False</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">language_check</span><span class="p">)</span>
+
+<span class="c1">#Output: True
+</span></code></pre></div></div>
+
+<h2 id="operador-ternario-en-javascript">Operador ternario en JavaScript</h2>
+
+<p>El operador ternario en javascript toma tres parámetros: una condición seguida del signo interrogante  <code class="language-plaintext highlighter-rouge">?</code>, una expresión que se ejecutará si la condición es verdadera y seguida por dos puntos <code class="language-plaintext highlighter-rouge">:</code> la expresión que se ejecutará si la condición es falsa.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">language</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">javascript</span><span class="dl">'</span>
+
+<span class="kd">var</span> <span class="nx">check_language</span> <span class="o">=</span> <span class="p">(</span><span class="nx">language</span> <span class="o">==</span> <span class="dl">'</span><span class="s1">javascript</span><span class="dl">'</span><span class="p">)</span> <span class="p">?</span> <span class="kc">true</span> <span class="p">:</span> <span class="kc">false</span><span class="p">;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">check_language</span><span class="p">);</span>
+
+<span class="c1">// Output: true</span>
+</code></pre></div></div>
+:ET

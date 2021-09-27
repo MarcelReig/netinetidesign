@@ -1,0 +1,11 @@
+I"ý<h3 class="lead my-5" id="some-introductory-text-lorem-ipsum--dolor-sir-amet">Some introductory text lorem ipsum  dolor sir ametâ€¦</h3>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">language</span> <span class="o">=</span> <span class="s">'python'</span>
+
+<span class="n">language_check</span> <span class="o">=</span> <span class="bp">True</span> <span class="k">if</span> <span class="n">language</span> <span class="o">==</span> <span class="s">'python'</span> <span class="k">else</span> <span class="bp">False</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">language_check</span><span class="p">)</span>
+
+<span class="c1">#Output: 
+</span></code></pre></div></div>
+:ET

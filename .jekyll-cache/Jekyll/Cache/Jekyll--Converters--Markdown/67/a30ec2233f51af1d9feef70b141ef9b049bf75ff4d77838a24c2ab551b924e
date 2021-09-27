@@ -1,4 +1,4 @@
-I"ю<p><a href="https://jekyllrb.com/">Jekyll</a> es un generador de sitios web estáticos preparado para blogging creado en Ruby por <a href="https://www.wikiwand.com/en/Tom_Preston-Werner">Tom Preston</a>, el cofundador de Github.</p>
+I"��<p><a href="https://jekyllrb.com/">Jekyll</a> es un generador de sitios web estáticos preparado para blogging creado en Ruby por <a href="https://www.wikiwand.com/en/Tom_Preston-Werner">Tom Preston</a>, el cofundador de Github.</p>
 
 <p>Jekyll es el motor detrás de <a href="https://pages.github.com/">GitHub Pages</a> por lo que puedes alojar tu sitio web en GitHub de forma gratuita.</p>
 
@@ -423,11 +423,11 @@ title: I have no idea what i'm doing
   <li><strong>UI Externa</strong>: La UI para cualquier usuario de tu red.</li>
 </ol>
 
-<p><img src="https://www.netinetidesign.com/assets/images/blog/browsersync-url.png" alt="Browsersync UI" class="img-fluid" /></p>
+<p><img src="/assets/images/blog/browsersync-url.png" alt="Browsersync UI" class="img-fluid" /></p>
 
 <p>Este es el aspecto de la UI de Browsersync, que en mi caso está en el puerto 3001.</p>
 
-<p><img src="https://www.netinetidesign.com/assets/images/blog/browsersync-ui.png" alt="Browsersync UI" class="img-fluid" /></p>
+<p><img src="/assets/images/blog/browsersync-ui.png" alt="Browsersync UI" class="img-fluid" /></p>
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">build_localServer</span><span class="p">()</span> <span class="p">{</span>
   <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">BrowserSync setting up the server in port 4000</span><span class="dl">"</span><span class="p">);</span>
