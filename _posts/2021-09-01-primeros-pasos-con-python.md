@@ -203,23 +203,6 @@ __Operadores aritméticos en Python:__
 
 Los condicionales en programación se utilizan para elegir entre diferentes opciones dependiendo del valor de las variables.
 
-Veamos un ejemplo de condicional en Python que nos ayudará a decidir si comprar un producto o sevicio:
-
-```py
-es_barato = True
-es_bueno = True
-
-if es_barato and es_bueno:
-    print("Toma mi dinero!")
-elif es_barato and not es_bueno:
-    print("Eres barato pero no eres bueno")
-elif not es_barato and es_bueno:
-    print("Eres bueno pero no eres barato")
-else:
-    print("Eres una estafa")
-
-# Output: Toma mi dinero!
-```
 
 Con los condicionales en Python puedes construir cosas tan geniales como una pequeña calculadora.
 

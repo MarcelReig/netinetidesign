@@ -1,0 +1,27 @@
+I";	<h3 class="lead my-5" id="encontrar-un-valor-en-un-string-o-en-una-lista-de-python-es-sencillo-gracias-al-operador-in-que-devuelbe-un-boolean">Encontrar un valor en un string o en una lista de Python es sencillo gracias al operador in, que devuelbe un boolean</h3>
+
+<h2 id="encontrar-una-palabra-en-un-string-en-python">Encontrar una palabra en un string en Python</h2>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sentence</span> <span class="o">=</span> <span class="s">'Todos esos momentos se perderán en el tiempo, como lágrimas en la lluvia.'</span>
+<span class="n">word</span> <span class="o">=</span> <span class="s">'tiempo'</span>
+
+<span class="k">if</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">sentence</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'The word is in the sentence'</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'The word is not in the sentence'</span><span class="p">)</span>
+
+<span class="c1"># Output: The word is in the sentence
+</span></code></pre></div></div>
+
+<h2 id="encontrar-un-número-en-una-lista-en-python">Encontrar un número en una lista en Python</h2>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">34</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">89</span><span class="p">,</span> <span class="mi">345</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+
+<span class="k">if</span> <span class="mi">12</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'The number was found'</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'The number was not found'</span><span class="p">)</span>
+
+<span class="c1"># Output: The number was found
+</span></code></pre></div></div>
+:ET

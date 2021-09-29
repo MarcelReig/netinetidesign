@@ -1,0 +1,13 @@
+I"<h3 class="lead my-5" id="some-introductory-text-lorem-ipsum--dolor-sir-amet">Some introductory text lorem ipsum  dolor sir amet…</h3>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sentence</span> <span class="o">=</span> <span class="s">'Todos esos momentos se perderán en el tiempo, como lágrimas en la lluvia.'</span>
+<span class="n">word</span> <span class="o">=</span> <span class="s">'tiempo'</span>
+
+<span class="k">if</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">sentence</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'The word is in the sentence'</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'The word is not in the sentence'</span><span class="p">)</span>
+
+<span class="c1"># Output: The word is in the sentence
+</span></code></pre></div></div>
+:ET

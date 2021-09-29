@@ -1,0 +1,11 @@
+I"�<h3 class="lead my-5" id="some-introductory-text-lorem-ipsum--dolor-sir-amet">Some introductory text lorem ipsum  dolor sir amet…</h3>
+
+<p>```py
+sentence = ‘Todos esos momentos se perderán en el tiempo, como lágrimas en la lluvia.’
+word = ‘tiempo’</p>
+
+<p>if word in sentence:
+    print(‘The word is in the sentence’)
+else:
+    print(‘The word is not in the sentence’)</p>
+:ET
