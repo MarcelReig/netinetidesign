@@ -1,0 +1,21 @@
+I"�<h3 class="lead my-5" id="desestructurar">Desestructurar</h3>
+
+<h2 id="desestructuración-en-python">Desestructuración en Python</h2>
+
+<p>Python permite asignar más de una variable al mismo tiempo y en una sola línea de código. Solo necesitas añadir el mismo número de valores a cada lado de la asignación, los valores son asignados según el orden, el primero con el primero, el segundo con el segundo etc…</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+<span class="c1"># Output: 1
+</span>
+<span class="k">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+
+<span class="c1"># Output: 2
+</span></code></pre></div></div>
+
+<p>Si intentas añadir más valores de los</p>
+
+<h2 id="desestructuración-en-javascript">Desestructuración en JavaScript</h2>
+:ET

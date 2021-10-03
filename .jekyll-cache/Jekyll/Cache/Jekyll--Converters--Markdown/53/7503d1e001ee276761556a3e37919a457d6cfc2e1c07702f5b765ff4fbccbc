@@ -1,0 +1,11 @@
+I"*<h3 class="lead my-5" id="desestructurar-o-desempaquetar">Desestructurar o desempaquetar</h3>
+
+<h2 id="desestructuración-en-python">Desestructuración en Python</h2>
+
+<p>Python permite asignar más de una variable al mismo tiempo y en una sola línea se código. Solo necesitas añadir el mismo número de valores a cada lado de la asignación:</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<h2 id="desestructuración-en-javascript">Desestructuración en JavaScript</h2>
+:ET

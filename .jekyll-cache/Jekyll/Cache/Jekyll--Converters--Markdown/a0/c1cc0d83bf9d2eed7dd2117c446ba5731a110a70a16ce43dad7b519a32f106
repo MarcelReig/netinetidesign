@@ -1,0 +1,28 @@
+I"�<h3 class="lead mt-5" id="las-funciones-nos-permiten-reutilizar-bloques-de-código-en-diferentes-partes-de-nuestra-aplicación">Las funciones nos permiten reutilizar bloques de código en diferentes partes de nuestra aplicación.</h3>
+
+<h3 class="lead mb-5" id="las-funciones-se-crean-con-la-palabra-clave-def-seguida-por-el-nombre-de-la-función-y-paréntesis-my_func-entre-los-paréntesis-van-los-parámetros-de-la-función">Las funciones se crean con la palabra clave <code class="language-plaintext highlighter-rouge">def</code> seguida por el nombre de la función y paréntesis <code class="language-plaintext highlighter-rouge">my_func()</code> entre los paréntesis van los parámetros de la función.</h3>
+
+<h2 id="ejemplo-de-función">Ejemplo de función</h2>
+
+<p>Los paréntesis son obligatorios, los parámetros son opcionales, no todas las funciones tienen parámetros.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">full_name</span><span class="p">(</span><span class="n">first</span><span class="p">,</span> <span class="n">last</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">f'</span><span class="si">{</span><span class="n">first</span><span class="si">}</span><span class="s"> </span><span class="si">{</span><span class="n">last</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+
+<span class="n">full_name</span><span class="p">(</span><span class="s">'Marcel'</span><span class="p">,</span> <span class="s">'Reig'</span><span class="p">)</span>
+
+<span class="c1"># Output: Marcel Reig
+</span></code></pre></div></div>
+
+<p>```py
+def user_auth(email, password):
+    if email == ‘marcelreig@gmail.com’ and password == ‘admin123’:
+        print(‘Usuario autentificado’)
+    else:
+        print(‘Usuario o contraseña incorrecto’)</p>
+
+<p>user_auth(‘marcelreig@gmail.com’, ‘admin123’)</p>
+<h1 id="output-usuario-autentificado">Output: Usuario autentificado</h1>
+<p>user_auth(‘marcelreig@gmail.com’, ‘menorca’)</p>
+<h1 id="output-usuario-o-contraseña-incorrecto">Output: Usuario o contraseña incorrecto</h1>
+:ET
