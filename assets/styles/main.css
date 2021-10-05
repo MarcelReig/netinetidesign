@@ -29216,6 +29216,7 @@ ul.social-links,
   gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-rows: 1fr;
+  margin-bottom: 3rem;
 }
 
 .n-card {

@@ -1,0 +1,30 @@
+I"�<h3 class="lead mt-5" id="las-funciones-lambda-son-funciones-anónimas-es-decir-que-no-tienen-nombre-las-funciones-lambda-se-definen-en-una-sola-línea">Las funciones lambda son funciones anónimas, es decir que no tienen nombre. Las funciones lambda se definen en una sola línea.</h3>
+
+<h3 class="lead my-3" id="lambda-se-utiliza-para-simplificar-todavía-más-las-funciones-pequeñas-para-funciones-complejas-siempre-se-utiliza-la-sintaxis-normal">Lambda se utiliza para simplificar todavía más las funciones pequeñas, para funciones complejas siempre se utiliza la sintaxis normal.</h3>
+
+<h3 class="lead mb-5" id="las-funciones-lambda-no-se-definen-con-la-palabra-clave-def-como-las-funciones-normales-se-definen-con-la-palabra-clave-lambda">Las funciones lambda no se definen con la palabra clave <code class="language-plaintext highlighter-rouge">def</code> como las funciones normales, se definen con la palabra clave <code class="language-plaintext highlighter-rouge">lambda</code>.</h3>
+
+<blockquote class="blockquote">
+  <p class="mb-0">"Las lambdas de Python son sólo una notación abreviada si eres demasiado perezoso para definir una función"..</p>
+  <footer class="blockquote-footer">Tradución automatica <cite title="Source Title">Documentación oficial</cite></footer>
+</blockquote>
+
+<h2 id="ejemplo-de-función-lambda">Ejemplo de función lambda</h2>
+
+<p>Función lambda que recoge el nombre y el apellido.
+En el siguiente ejemplo definimos la función con la palabra clave <code class="language-plaintext highlighter-rouge">lambda</code> añadimos sus parámetros separados por comas, en este caso first y last y después de los dos puntos <code class="language-plaintext highlighter-rouge">:</code> viene la expresión de la función en este caso recogemos los dos parámetros en una cadena, sin necesidad de escribir <code class="language-plaintext highlighter-rouge">return</code>.</p>
+
+<p>Para poder utilizar la función hay que guardarla en una variable en este caso la variable full_name.</p>
+
+<p>Ahora sí ya puedes llamar a la función como si de una función normal se tratara.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">full_name</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">first</span><span class="p">,</span> <span class="n">last</span><span class="p">:</span> <span class="s">f'</span><span class="si">{</span><span class="n">first</span><span class="si">}</span><span class="s"> </span><span class="si">{</span><span class="n">last</span><span class="si">}</span><span class="s">'</span>
+
+
+<span class="k">print</span><span class="p">(</span><span class="n">full_name</span><span class="p">(</span><span class="s">'Marcel'</span><span class="p">,</span> <span class="s">'Reig'</span><span class="p">))</span>
+
+<span class="c1"># Output: Marcel Reig
+</span></code></pre></div></div>
+
+<p>Función lambda que su</p>
+:ET

@@ -91,9 +91,9 @@ Correo eléctronico: sarah.davidson@myschool.com
 '''
 ```
 
-## Incrementar por una cada número de una lista
+## Incrementar por uno cada número de una lista
 
-Vamos a utilizar un bucle for para incrementar po 1 a cada elemento en una serie de números, guardar el resultado en una nueva lista e imprimir la nueva lista por pantalla.
+Vamos a utilizar un bucle for para incrementar por 1 a cada elemento en una serie de números, guardar el resultado en una nueva lista e imprimir la nueva lista por pantalla.
 
 ```py
 def loop_over_list():

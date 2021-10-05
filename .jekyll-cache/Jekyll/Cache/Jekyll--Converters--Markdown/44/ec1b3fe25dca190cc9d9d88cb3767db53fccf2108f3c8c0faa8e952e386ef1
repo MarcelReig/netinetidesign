@@ -1,0 +1,45 @@
+I"�<h3 class="lead mt-5" id="en-una-función-típica-tenemos-el-nombre-de-la-función-y-unos-parámetros-después-en-la-llamada-a-la-función-se-espera-que-haya-el-mismo-número-de-argumentos-que-de-parámetros-y-si-no-es-así-dará-un-error">En una función típica tenemos el nombre de la función y unos parámetros, después en la llamada a la función se espera que haya el mismo número de argumentos que de parámetros y si no es así dará un error.</h3>
+
+<h3 class="lead my-5" id="los-args-y-kwargs-en-python-nos-permiten-pasar-un-número-variable-de-argumentos-a-una-función">Los <code class="language-plaintext highlighter-rouge">*args</code> y <code class="language-plaintext highlighter-rouge">**kwargs</code> en Python nos permiten pasar un número variable de argumentos a una función.</h3>
+
+<h2 id="función-con-el-mismo-número-de-parámetros-y-argumentos">Función con el mismo número de parámetros y argumentos.</h2>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">suma</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Suma:"</span><span class="p">,</span> <span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="o">+</span><span class="n">z</span><span class="p">)</span>
+
+
+<span class="n">suma</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># Return: 17
+</span></code></pre></div></div>
+<h2 id="error-al-enviar-un-número-distinto-de-argumentos-que-de-parámetros">Error al enviar un número distinto de argumentos que de parámetros:</h2>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">sumar_numeros</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Suma:"</span><span class="p">,</span> <span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="o">+</span><span class="n">z</span><span class="p">)</span>
+
+    
+<span class="n">sumar_numeros</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+
+<span class="c1"># TypeError: suma() takes 3 positional arguments but 7 were given
+</span></code></pre></div></div>
+<h2 id="función-con-distinto-número-de-parámetros-y-argumentos-">Función con distinto número de parámetros y argumentos .</h2>
+
+<p>El simbolo asterisco <code class="language-plaintext highlighter-rouge">*</code> nos permite hacer la llamada a la función con sin importar el número de argumentos.</p>
+
+<p>El nombre del parámetro num no importa pudes utilizar args o lo que quieras, lo que hace el trabajo es el asterisco.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">sumar_numeros</span><span class="p">(</span><span class="o">*</span><span class="n">num</span><span class="p">):</span>
+    <span class="n">suma</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">num</span><span class="p">:</span>
+        <span class="n">suma</span> <span class="o">=</span> <span class="n">suma</span> <span class="o">+</span> <span class="n">n</span>
+
+    <span class="k">print</span><span class="p">((</span><span class="s">"Suma:"</span><span class="p">,</span> <span class="n">suma</span><span class="p">))</span>
+
+
+<span class="n">sumar_numeros</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="c1"># Output: ('Suma:', 6)
+</span>
+<span class="n">sumar_numeros</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+<span class="c1"># Output: ('Suma:', 28)
+</span></code></pre></div></div>
+:ET

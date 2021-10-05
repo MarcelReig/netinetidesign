@@ -1,0 +1,11 @@
+I"¸<h3 class="lead my-5" id="some-introductory-text-lorem-ipsum--dolor-sir-amet">Some introductory text lorem ipsum  dolor sir ametâ€¦</h3>
+
+<h2 id="cabecero-nivel-2">Cabecero nivel 2</h2>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">full_name</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">first</span><span class="p">,</span> <span class="n">last</span><span class="p">:</span> <span class="s">f'</span><span class="si">{</span><span class="n">first</span><span class="si">}</span><span class="s"> </span><span class="si">{</span><span class="n">last</span><span class="si">}</span><span class="s">'</span>
+
+
+<span class="k">print</span><span class="p">(</span><span class="n">full_name</span><span class="p">(</span><span class="s">'Marcel'</span><span class="p">,</span> <span class="s">'Reig'</span><span class="p">))</span>
+
+</code></pre></div></div>
+:ET

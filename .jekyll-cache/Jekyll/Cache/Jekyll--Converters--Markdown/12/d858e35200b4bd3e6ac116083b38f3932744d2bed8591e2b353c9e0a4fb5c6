@@ -1,0 +1,19 @@
+I"=<h3 class="lead my-5" id="las-funciones-lambda-son-funciones-anónimas-es-decir-que-no-tienen-nombre-las-funciones-lambda-se-expresan-en-una-sola-declaración">Las funciones lambda son funciones anónimas, es decir que no tienen nombre. Las funciones lambda se expresan en una sola declaración.</h3>
+
+<h3 class="lead mb-5" id="puedes-utilizar-funciones-lambda-en-lugar-de-funciones-normales-cuando-la-función-es-pequeña-para-funciones-complejas-siempre-utilizaremos-la-sintaxis-normal">Puedes utilizar funciones lambda en lugar de funciones normales cuando la función es pequeña, para funciones complejas siempre utilizaremos la sintaxis normal.</h3>
+
+<p>Las funciones lambda no se definen con la palabra clave <code class="language-plaintext highlighter-rouge">def</code> como las funciones normales. Se definen con la palabra clave `lamb</p>
+
+<h2 id="ejemplo-de-función-lambda">Ejemplo de función lambda</h2>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">full_name</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">first</span><span class="p">,</span> <span class="n">last</span><span class="p">:</span> <span class="s">f'</span><span class="si">{</span><span class="n">first</span><span class="si">}</span><span class="s"> </span><span class="si">{</span><span class="n">last</span><span class="si">}</span><span class="s">'</span>
+
+
+<span class="k">print</span><span class="p">(</span><span class="n">full_name</span><span class="p">(</span><span class="s">'Marcel'</span><span class="p">,</span> <span class="s">'Reig'</span><span class="p">))</span>
+
+<span class="c1"># Output: Marcel Reig
+</span></code></pre></div></div>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+:ET
