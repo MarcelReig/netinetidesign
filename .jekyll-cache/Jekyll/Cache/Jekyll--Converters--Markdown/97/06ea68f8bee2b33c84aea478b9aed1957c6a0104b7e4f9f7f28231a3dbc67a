@@ -1,0 +1,172 @@
+I"((<h3 class="lead my-5" id="configura-la-terminal-con-hyper-oh-my-zsh-y-spaceship-en-tu-mac">Configura la terminal con Hyper, oh my zsh y Spaceship en tu Mac.</h3>
+
+<p>Mac OSX viene con una terminal por defecto que funciona perfectamente, pero no es muy personalizable.</p>
+
+<p>Los emuladores de terminal como Hyper o iTerm2 te dan la posibilidad de personalizar la terminal con multitud de temas y plugins.</p>
+
+<div class="alert alert-danger my-5" role="alert">
+<p><i class="fas fa-sticky-note"></i> Nota:</p>
+ <p>Peligro de procrastinar durante horas, reserva esto para una tarde de Sábado lluviosa...</p>
+</div>
+
+<h2 id="instalar-homebrew">Instalar Homebrew</h2>
+
+<div class="d-flex justify-content-center my-5">
+<img src="/assets/images/blog/homebrew.png" width="200" class="img-fluid text-center m-xl-auto" alt="homebrew logo" />
+</div>
+
+<p><a href="https://brew.sh/">Homebrew</a></p>
+
+<p>Homebrew es un sistema de administración de paquetes de software que instala todo aquello que necesitas que Apple no instala de serie.</p>
+
+<p>El siguiente comando instala Homebrew en tu Mac:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/bin/bash <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="si">)</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<h2 id="comprobar-que-ya-tienes-zsh-en-tu-mac">Comprobar que ya tienes zsh en tu Mac</h2>
+
+<p>Desde macOS Catalina zsh es la shell por defecto en Mac así que no tienes que instalar nada.</p>
+
+<p>Para comprobar tu shell escribe el siguiente comando:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">echo</span> <span class="nv">$SHELL</span>
+</code></pre></div></div>
+
+<p>La respuesta será:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/bin/zsh
+</code></pre></div></div>
+
+<h2 id="instalar-hyper">Instalar Hyper</h2>
+
+<div class="d-flex justify-content-center my-5">
+<img src="/assets/images/blog/hyper.png" width="200" class="img-fluid text-center m-xl-auto" alt="Hyper logo" />
+</div>
+
+<p>Descarga <a href="https://hyper.is/">Hyper</a> desde su sitio web, haz doble click en el dmg y arrastra Hyper a la carpeta Aplicaciones.</p>
+
+<div class="d-flex justify-content-center my-5">
+<img src="/assets/images/blog/install-hyper.png" width="400" class="img-fluid text-center m-xl-auto" alt="Hyper install" />
+</div>
+
+<p>Ahora ya puedes abrir la aplicación desde el Finder o desde el Launchpad.</p>
+
+<p>También puedes abrir Spotlight Search con <kbd>cmd + space</kbd> escribe hyper y debería aparecer en la lista.</p>
+
+<div class="d-flex justify-content-center my-5">
+<img src="/assets/images/blog/hyper-launchpad.png" width="600" class="img-fluid text-center m-xl-auto" alt="Hyper install" />
+</div>
+
+<p><a href="https://hyper.is/">Hyper</a> es un emulador de terminal customizable creado por <a href="https://vercel.com/">Vercel</a>, se trata de una aplicación <a href="https://www.electronjs.org/">Electron</a> por lo que es multiplataforma, Windows, Linux y macOS.</p>
+
+<p>Hyper está construido con tecnologías web HTML, CSS y JavaScript, y está basado en <a href="https://xtermjs.org/">xterm.js</a>, un componente frontend escrito en TypeScript, el mismo que utiliza la terminal de VS Code y Atom.</p>
+
+<p>Al no ser una aplicación nativa como <a href="https://iterm2.com/">iTerm2</a> el rendimiento es algo menor y consume más recursos, si eres tiquismiquis en ese aspecto tal vez prefieras iTerm2 que también ofrece muchas opciones de personalización.</p>
+
+<p>Yo utilizo Hyper junto con otras aplicaciones electron al mismo tiempo y no tengo problemas de rendimiento, Visual Studio Code, Slack, Atom, Discord, Hyper, WhatsApp Desktop, todas son aplicaciones electron.</p>
+
+<p><a href="https://github.com/bnb/awesome-hyper">awesome-hyper</a> es un repositorio de GitHub en el que encontrarás todo tipo de recursos para Hyper.</p>
+
+<p>Con Hyper abierto, en el menú superior encontrarás el enlace a Preferencias que te abrirá el archivo de configuración <code class="language-plaintext highlighter-rouge">~/.hyper.js</code>, donde podrás cambiar la fuente, el tema, añadir plugins etc…</p>
+
+<p>Si tienes Visual Studio Code configurado para abrir archivos desde la terminal puedes abrirlo con el siguiente comando:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span> code ~/.hyper.js  
+</code></pre></div></div>
+
+<p>Para abrir con TextEdit ejecuta el siguiente comando:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>open ~/.zshrc
+</code></pre></div></div>
+
+<p>Si eres usuario de Vim ejecuta el siguiente comando:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>vim ~/.hyper.js
+</code></pre></div></div>
+
+<h3 id="temas-para-hyper">Temas para Hyper</h3>
+
+<p>En el <a href="https://hyper.is/themes?newest">store</a> de hyper encontrarás una gran cantidad de temas para elegir.</p>
+
+<p>Yo estoy utilizando <a href="https://hyper.is/store/hyper-aura-theme">hyper-aura-theme</a>.</p>
+
+<h2 id="instalar-oh-my-zsh">Instalar oh my zsh</h2>
+
+<div class="d-flex justify-content-center my-5">
+<img src="/assets/images/blog/ohmyzsh.png" width="200" class="img-fluid text-center m-xl-auto" alt="oh my zsh logo" />
+</div>
+
+<p><a href="https://ohmyz.sh/">oh my zsh</a> es un framework que te ayuda a configurar tu shell zsh.</p>
+
+<p>El siguiente comando instalará oh my zsh en tu computadora:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>sh <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh<span class="si">)</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<p>La instalación de oh my zsh te creará un archivo de configuración <code class="language-plaintext highlighter-rouge">~/.zshrc</code> en la raíz del sistema.</p>
+
+<p>Para configurar oh my zsh abre el archivo <code class="language-plaintext highlighter-rouge">~/.zshrc</code> con el editor que prefieras.</p>
+
+<p>Una vez hecho cambios para ver el efecto ejecuta el siguiente comando: <code class="language-plaintext highlighter-rouge">source ~/.zshrc</code>.</p>
+
+<h2 id="zsh-prompt-personalizado">Zsh prompt personalizado</h2>
+
+<p>Tenemos dos opciones muy elegantes para personalizar el prompt <a href="https://starship.rs/">Starship</a> y  <a href="https://spaceship-prompt.sh/">Spaceship</a>, elige el que más te guste, (o te de menos problemas).</p>
+
+<h3 id="instalar-starship">Instalar <a href="https://starship.rs/">Starship</a></h3>
+
+<div class="d-flex justify-content-center my-5">
+<img src="/assets/images/blog/starship-logo.svg" width="200" class="img-fluid text-center m-xl-auto" alt="starship logo" />
+</div>
+
+<p>Para instalar starship con Homebrew ejecuta el siguiente comando:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>brew <span class="nb">install </span>starship
+</code></pre></div></div>
+
+<p>Una vez instalado, abre el archivo de configuración de zsh <code class="language-plaintext highlighter-rouge">~/.zshrc</code> y añade la siguiente línea al final del archivo:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">eval</span> <span class="s2">"</span><span class="si">$(</span>starship init zsh<span class="si">)</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<h3 id="instalar-spaceship">Instalar <a href="https://spaceship-prompt.sh/">Spaceship</a></h3>
+
+<div class="d-flex justify-content-center my-5">
+<img src="/assets/images/blog/spaceship.svg" width="200" class="img-fluid text-center" alt="spaceship logo" />
+</div>
+
+<p>Para instalar Spaceship con Homebrew ejecuta el siguiente comando:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>brew <span class="nb">install </span>spaceship
+</code></pre></div></div>
+
+<p>Asegurate de que se han añadido las siguiente líneas a tu archivo .zshrc:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Set Spaceship ZSH as a prompt</span>
+autoload <span class="nt">-U</span> promptinit<span class="p">;</span> promptinit
+prompt spaceship
+</code></pre></div></div>
+
+<h2 id="instalar-fuentes">Instalar fuentes</h2>
+
+<p>Disponemos de dos repositorios populares <a href="https://www.nerdfonts.com/">nerdfonts</a> y <a href="https://github.com/powerline/fonts#fontconfig">powerline-fonts</a>, utiliza el que más te guste o te de menos problemas.</p>
+
+<p>No tienes porque instalar todo el paquete con instalar la fuente que te guste basta.</p>
+
+<p>Este tipo de fuentes cuentan con los iconos necesarios para los temas de oh my zsh, iconos del branch de git, paquetes, node modules, ruby, python etc…</p>
+
+<div class="d-flex justify-content-center my-5">
+<img src="/assets/images/blog/nerd-fonts-logo.svg" width="200" class="img-fluid text-center m-xl-auto" alt="nerd-fonts logo" />
+</div>
+
+<h3 id="instalar-nerdfonts-en-mac-con-homebrew-">Instalar <a href="https://www.nerdfonts.com/">nerdfonts</a> en Mac con Homebrew: ???????</h3>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>brew tap homebrew/cask-fonts
+</code></pre></div></div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>brew <span class="nb">install</span> <span class="nt">--cask</span> font-hack-nerd-font
+</code></pre></div></div>
+
+<h3 id="instalar-powerline-fonts">Instalar <a href="https://github.com/powerline/fonts#fontconfig">powerline-fonts</a>:</h3>
+
+:ET

@@ -1,0 +1,81 @@
+I"D<h3 class="lead my-5" id="configura-la-terminal-con-hiper-oh-my-zsh-y-starship-en-tu-mac">Configura la terminal con Hiper, oh my zsh y Starship en tu Mac.</h3>
+
+<p>Mac OSX viene con una terminal por defecto que funciona perfectamente, pero no es personalizable.</p>
+
+<p>Los emuladores de terminal como Hyper o iTerm2 te dan la posibilidad de personalizar la terminal con multitud de temas, instalar plugins y otras mejoras.</p>
+
+<div class="alert alert-danger my-5" role="alert">
+<p><i class="fas fa-sticky-note"></i> Nota:</p>
+ <p>Peligro de procrastinar durante horas, reserva esto para una tarde de Sábado lluviosa...</p>
+</div>
+
+<h2 id="instalar-homebrew">Instalar Homebrew</h2>
+
+<p><a href="https://brew.sh/">Homebrew</a></p>
+
+<p>Homebrew es un sistema de administración de paquetes de software que instala todo aquello que necesitas que Apple no instala de serie.</p>
+
+<p>Para instalar Homebrew Recomiendo ir al sitio oficial y seguir las instrucciones desde allí.</p>
+
+<p>El siguiente comando instala Homebrew en tu Mac:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/bin/bash <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="si">)</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<h2 id="instalar-zsh">Instalar zsh</h2>
+
+<p>Desde macOS Catalina zsh es la shell por defecto en Mac así que no tienes que instalar nada.</p>
+
+<p>Para comprobar tu shell escribe el siguiente comando:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">echo</span> <span class="nv">$SHELL</span>
+</code></pre></div></div>
+
+<p>La respuesta será:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/bin/zsh
+</code></pre></div></div>
+
+<h2 id="instalar-hyper">Instalar Hyper</h2>
+
+<p><a href="https://hyper.is/">Hyper</a> es un emulador de terminal customizable creado por <a href="https://vercel.com/">Vercel</a>, se trata de una aplicación Electron por lo que la configuración es puramente en JavaScript.</p>
+
+<p>Al no ser una aplicación nativa como <a href="https://iterm2.com/">iTerm2</a> el rendimiento es algo menor y consume más recursos, si eres tiquismiquis en ese aspecto tira por iTerm2.</p>
+
+<p><a href="https://github.com/bnb/awesome-hyper">awesome-hyper</a> es un repositorio de GitHub sobre Hyper en el que encontrarás todo tipo de recursos para Hyper.</p>
+
+<p>Una vez instalado Hyper, en el menú superior de Hyper encontrarás el enlace a Preferencias que te abrira el archivo de configuración donde puedes cambiar la fuente, cambiar el tema, añadir plugins etc..</p>
+
+<h3 id="temas-para-hyper">Temas para Hyper</h3>
+
+<p><a href="https://github.com/pbomb/hyper-night-owl">hyper-night-owl</a></p>
+
+<h2 id="instalar-oh-my-zsh">Instalar oh my zsh</h2>
+
+<p><a href="https://ohmyz.sh/">oh my zsh</a> es un framework que te ayuda a configurar tu shell zsh.</p>
+
+<p>La instalación de oh my zsh te creará un archivo de configuración <code class="language-plaintext highlighter-rouge">~/.zshrc</code> en la raíz del sistema.</p>
+
+<p>Para configurar oh my zsh abre el archivo <code class="language-plaintext highlighter-rouge">~/.zshrc</code> con el editor que prefieras.</p>
+
+<h2 id="instalar-starship">Instalar Starship</h2>
+
+<p><a href="https://starship.rs/">Starship</a></p>
+
+<p>Para instalar starship con Homebrew ejecuta el siguiente comando:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>brew <span class="nb">install </span>starship
+</code></pre></div></div>
+
+<p>Abre el archivo de configuración de zsh `~/</p>
+
+<h2 id="instalar-fuentes">Instalar fuentes</h2>
+
+<p><a href="https://www.nerdfonts.com/">nerdfonts</a></p>
+
+<p><a href="https://github.com/powerline/fonts#fontconfig">powerline-fonts</a></p>
+
+<h2 id="instalar-fig">Instalar Fig</h2>
+
+<p><a href="https://fig.io/">Fig </a> terminal autocompletado</p>
+:ET
