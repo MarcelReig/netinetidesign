@@ -16,7 +16,7 @@ Mac OSX viene con una terminal por defecto que funciona perfectamente, pero no e
 Los emuladores de terminal como Hyper o iTerm2 te dan la posibilidad de personalizar la terminal con multitud de temas y plugins.
 
 <div class="alert alert-danger my-5" role="alert">
-<p><i class="fas fa-sticky-note"></i> Nota:</p>
+<p><i class="fas fa-exclamation-triangle"></i> Alerta:</p>
  <p>Peligro de procrastinar durante horas, reserva esto para una tarde de Sábado lluviosa...</p>
 </div>
 
@@ -64,10 +64,10 @@ Abre Spotlight con <kbd>cmd + space</kbd> y escribe hyper, la aplicación deber�
 <img src="{{ site.baseurl }}/assets/images/blog/hyper-launchpad.png" width="600" class="img-fluid text-center m-xl-auto" alt="Hyper install">
 </div>
 
-Con Hyper abierto, en el menú superior de Apple aparecerá el menu de Hyper con el enlace a Preferencias que te abrirá el archivo de configuración `~/.hyper.js`, donde podrás cambiar la fuente, el tema, añadir plugins etc...
+Con Hyper abierto, en el menú superior de Apple aparecerá el menú de Hyper con el enlace a Preferencias que te abrirá el archivo de configuración `~/.hyper.js`, donde podrás cambiar la fuente, el tema, añadir plugins etc...
 
 <div class="d-flex justify-content-center my-5">
-<img src="{{ site.baseurl }}/assets/images/blog/menu-apple.png" width="600" class="img-fluid text-center m-xl-auto" alt="Menu apple">
+<img src="{{ site.baseurl }}/assets/images/blog/menu-apple.png" width="600" class="img-fluid text-center m-xl-auto" alt="Menú apple">
 </div>
 
 Si tienes Visual Studio Code configurado para abrir archivos desde la terminal puedes abrir el archivo `~/.hyper.js`  con el siguiente comando: 
@@ -177,7 +177,7 @@ Para instalar starship con Homebrew ejecuta el siguiente comando:
 $ brew install starship
 ```
 
-Una vez instalado, abre el archivo de configuración de zsh `~/.zshrc` y añade la siguiente línea al final del archivo: 
+Una vez instalado abre el archivo de configuración de zsh `~/.zshrc` y añade la siguiente línea al final del archivo: 
 
 ```shell
 eval "$(starship init zsh)"
@@ -195,7 +195,7 @@ Para instalar Spaceship con Homebrew ejecuta el siguiente comando:
 $ brew install spaceship
 ```
 
-Asegurate de que se han añadido las siguiente líneas a tu archivo de configuración `~/.zshrc`: 
+Asegurate de que se han añadido las siguientes líneas a tu archivo de configuración `~/.zshrc`: 
 
 ```sh
 # Set Spaceship ZSH as a prompt
@@ -215,7 +215,7 @@ Este tipo de fuentes cuentan con los iconos de git, node, ruby, python etc...
 
 No es necesario descargar todas las fuentes nerd o todas las fuentes powerline, puedes descargar solo la fuente que te guste e instalarla en el sistema.
 
-Nerdfonts tiene una pagina de descargas que hace el proceso muy sencillo [nerdfonts downloads](https://www.nerdfonts.com/font-downloads). O puedes leer el [Readme](https://github.com/ryanoasis/nerd-fonts/blob/master/readme.md) para ver todas las opciones.
+Nerdfonts tiene una página de descargas que hace el proceso muy sencillo [nerdfonts downloads](https://www.nerdfonts.com/font-downloads). O puedes leer el [Readme](https://github.com/ryanoasis/nerd-fonts/blob/master/readme.md) para ver todas las opciones.
 
 Para la descarga fuentes individuales powerline tienes que acceder al repositorio de Git y descargarlas manualmente. 
 
@@ -235,7 +235,7 @@ $ brew install --cask font-<FONT NAME>-nerd-font
 
 <div class="alert alert-warning my-5" role="alert">
 <p><i class="fas fa-sticky-note"></i> Nota:</p>
- <p>Si tienes problemas descargando alguna fuente con brew, utiliza la <a href="https://www.nerdfonts.com/font-downloads">pagina de descargas</a> que funciona perfecto.</p>
+ <p>Si tienes problemas descargando alguna fuente nerd con brew, utiliza la <a href="https://www.nerdfonts.com/font-downloads">página de descargas</a> que funciona perfecto.</p>
 </div>
 
 ## Instalar [powerline-fonts](https://github.com/powerline/fonts#fontconfig): 
@@ -262,8 +262,3 @@ Limpiar las carpetas una vez instaladas:
 cd ..
 $ rm -rf fonts
 ```
-
-## Enlaces relacionados: 
-
-- Youtube [Add Icons to your Fonts with Nerd Fonts](https://www.youtube.com/watch?v=fR4ThXzhQYI)
-- Youtube [Install Mac Fonts on Terminal - Fastest Way to Add Mac Fonts](https://www.youtube.com/watch?v=vw19GDo-d1I)
