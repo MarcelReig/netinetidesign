@@ -1,0 +1,27 @@
+I"<h3 class="lead my-5" id="some-introductory-text-lorem-ipsum--dolor-sir-amet">Some introductory text lorem ipsum  dolor sir amet…</h3>
+
+<h2 id="que-es-pyenv">Que es <a href="https://github.com/pyenv/pyenv">Pyenv</a>?</h2>
+
+<p>Es una</p>
+
+<h2 id="instalar-pyenv">Instalar Pyenv</h2>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>brew <span class="nb">install </span>pyenv
+</code></pre></div></div>
+
+<h2 id="que-es-pipenv">Que es Pipenv?</h2>
+
+<h2 id="instalar-pipenv-en-mac-con-homebrew">Instalar Pipenv en Mac con Homebrew</h2>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>brew <span class="nb">install </span>pipenv
+</code></pre></div></div>
+<p>Mac por defecto utiliza la versión de Python del sistema, para poner una versión de Python de pyenv por defecto ejecuta el siguiente comando:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pyenv global 3.7.0
+</code></pre></div></div>
+
+<p>Actualizar Pipenv:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>brew upgrade pipenv
+</code></pre></div></div>
+:ET

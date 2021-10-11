@@ -1,0 +1,76 @@
+I"^<h3 class="lead my-5" id="creo-que-el-nombre-de-estas-herramientas-se-les-puso-para-poner-a-prueba-la-destreza-de-los-principiantes-en-python-analizando-pequeñas-diferencias-en-el-texto">Creo que el nombre de estas herramientas se les puso para poner a prueba la destreza de los principiantes en Python analizando pequeñas diferencias en el texto.</h3>
+
+<h2 id="que-es-homebrew">Que es <a href="https://brew.sh/">Homebrew</a>?</h2>
+
+<p>Si no lo tienes ya Homebrew es la herramienta que ideal para instalar software en Mac y lo vamos a utilizar para instalar Pyenv y Pipenv.</p>
+
+<p>El siguiente comando instalará Homebrew en tu Mac:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>/bin/bash <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="si">)</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<h2 id="que-es-pyenv">Que es <a href="https://github.com/pyenv/pyenv">Pyenv</a>?</h2>
+
+<p>Pyenv es una herrramienta que te permite instalar diferentes versiones de Python y cambiar entre ellas según las necesidades del proyecto.</p>
+
+<p>Por lo que pyenv es la herramianta ideal para instalar Python en tu Mac.</p>
+
+<p>Instalar Pyenv con Homebrew:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>brew <span class="nb">install </span>pyenv
+</code></pre></div></div>
+
+<p>Añadir pyenv al Path de Mac:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s1">'export PYENV_ROOT="$HOME/.pyenv"'</span> <span class="o">&gt;&gt;</span> ~/.zshrc
+<span class="nb">echo</span> <span class="s1">'export PATH="$PYENV_ROOT/bin:$PATH"'</span> <span class="o">&gt;&gt;</span> ~/.zshrc
+</code></pre></div></div>
+
+<p>Añadir Pyenv Init a tu terminal:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">echo</span> <span class="nt">-e</span> <span class="s1">'if command -v pyenv 1&gt;/dev/null 2&gt;&amp;1; then\n  eval "$(pyenv init -)"\nfi'</span> <span class="o">&gt;&gt;</span> ~/.zshrc
+</code></pre></div></div>
+
+<p>Ahora resetea la terminal:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>reset
+</code></pre></div></div>
+
+<p>Saber la versión de pyenv:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>pyenv <span class="nt">-v</span>
+</code></pre></div></div>
+<p>Ver todas las versiones de Python disponibles para instalar:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>pyenv <span class="nb">install</span> <span class="nt">--list</span>
+</code></pre></div></div>
+
+<p>Instalar una versi</p>
+
+<p>Ver las versiones de Python instaladas en el sistema:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>pyenv versions
+</code></pre></div></div>
+
+<p>Poner una versión de Python de pyenv por defecto en el sistema:</p>
+
+<p><small>(En lugar de 3.7.0 escribe la versión que quieras) </small></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>pyenv global 3.7.0
+</code></pre></div></div>
+
+<h2 id="que-es-pipenv">Que es <a href="Pipenv">Pipenv</a>?</h2>
+
+<p>Pipenv es un administración de paquetes además de un gestor de entornos virtuales en Python. Algo así como bundler, npm o yarn, si has trabajado con Ruby o JavaScript te resultarán familiares.</p>
+
+<p>Pipenv crea entornos exclusivos en una carpeta separada para cada proyecto.</p>
+
+<p>Instalar Pipenv en Mac con Homebrew:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>brew <span class="nb">install </span>pipenv
+</code></pre></div></div>
+
+<p>Actualizar Pipenv con Homebrew:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>brew upgrade pipenv
+</code></pre></div></div>
+:ET

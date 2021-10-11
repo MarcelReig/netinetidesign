@@ -1,0 +1,13 @@
+I"ù<h3 class="lead my-5" id="some-introductory-text-lorem-ipsum--dolor-sir-amet">Some introductory text lorem ipsum  dolor sir ametâ€¦</h3>
+
+<h2 id="cabecero-nivel-2">Cabecero nivel 2</h2>
+
+<h2 id="instalar-pipenv-en-mac-con-homebrew">Instalar Pipenv en Mac con Homebrew</h2>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>brew <span class="nb">install </span>pipenv
+</code></pre></div></div>
+
+<p>Actualizar Pipenv:</p>
+
+<p>````</p>
+:ET
