@@ -11,6 +11,9 @@ image: python-3.jpg
 {:.lead.my-5}
 ### Creo que el nombre de estas herramientas se les puso para poner a prueba la destreza de los principiantes en Python analizando pequeñas diferencias en el texto.
 
+{:.lead.mb-5}
+### Vamos a ver como instalar Python 3 en Mac con Pyenv y como crear proyectos con Pipenv en un entorno virtual aislado.
+
 ## Que es [Homebrew](https://brew.sh/)?
 
 Si no lo tienes ya Homebrew es la herramienta que ideal para instalar software en Mac y lo vamos a utilizar para instalar Pyenv y Pipenv.
@@ -24,7 +27,12 @@ $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
 
 Pyenv es una herrramienta que te permite instalar diferentes versiones de Python y cambiar entre ellas según las necesidades del proyecto.
 
-Por lo que pyenv es la herramianta ideal para instalar Python en tu Mac.
+Por lo que Pyenv es la herramianta ideal para instalar Python en tu Mac.
+
+Python ya viene instalado en Mac por defecto pero viene con la versión 2.7 y vas a necesitar una versión más moderna, Python 3.7 en adelante.
+
+macOS necesita Python 2 para alguna aplicación interna, por lo que no debes tocar la versión del sistema.
+
 
 Instalar Pyenv con Homebrew: 
 
@@ -98,7 +106,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 ## Que es [Pipenv](Pipenv)?
 
-Pipenv es un administración de paquetes además de un gestor de entornos virtuales en Python. Algo así como bundler, npm o yarn, si has trabajado con Ruby o JavaScript te resultarán familiares.
+Pipenv es una herramienta de administración de paquetes además de un gestor de entornos virtuales en Python. Algo así como bundler, npm o yarn, si has trabajado con Ruby o JavaScript te resultarán familiares.
 
 Pipenv crea entornos exclusivos en una carpeta separada para cada proyecto.
 
@@ -113,3 +121,27 @@ Actualizar Pipenv con Homebrew:
 ```sh
 $ brew upgrade pipenv
 ```
+
+Iniciar un entorno: 
+Creamos la carpeta con el nombre de nuestro proyecto, nos situamos en la cerpeta de nuestro proyecto con el terminal y esribimos: 
+
+```sh
+$ pipenv shell
+```
+
+Al iniciar un nuevo entorno se crea un archivo `Pipfile` y un archivo `Pipfile.lock` que vienen a ser el equivalente a `Gemfile` y `Gemfile.lock` en Ruby o `package.json` y `package-lock.json` en node.
+
+Instalar paquetes: 
+Con el siguiente comando instalaríamos requests en nuestro proyecto.
+
+```sh
+$ pipenv install requests
+```
+
+<img src="{{ site.baseurl }}/assets/images/blog/pipenv.png" width="800" class="img-fluid text-center m-xl-auto" alt="Pipenv working">
+
+Ahora si revisas el archivo Pipfile verás que se ha actualizado y aparece la librería requests en los paquetes.
+
+<img src="{{ site.baseurl }}/assets/images/blog/pipfile.png" width="800" class="img-fluid text-center m-xl-auto" alt="Pipfile Python">
+
+
