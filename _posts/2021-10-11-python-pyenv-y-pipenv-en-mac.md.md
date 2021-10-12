@@ -142,6 +142,17 @@ $ pipenv install requests
 
 Ahora si revisas el archivo Pipfile verás que se ha actualizado y aparece la librería requests en los paquetes.
 
-<img src="{{ site.baseurl }}/assets/images/blog/pipfile.png" width="800" class="img-fluid text-center m-xl-auto" alt="Pipfile Python">
+<img class="mb-5" src="{{ site.baseurl }}/assets/images/blog/pipfile.png" width="800" class="img-fluid text-center m-xl-auto" alt="Pipfile Python">
 
+Si estás trabajando con la terminal integrada de Visual Studio Code recuerda elegir la versión de Python correcta o no se encontrarán los paquetes instalados con Pipenv y te dará un error similar a este: 
 
+```sh
+Traceback (most recent call last):
+  File "/Users/marcelreig/Desktop/dailysmarty/main.py", line 1, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+```
+
+Para solucionarlo haz click en el botón de Python del menú inferior de Visual Studio code y elige la versión de Python recomendada.
+
+<img src="{{ site.baseurl }}/assets/images/blog/vscode-python.png" width="800" class="img-fluid text-center m-xl-auto" alt="VS Code Python">
