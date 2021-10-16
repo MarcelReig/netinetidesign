@@ -1,0 +1,23 @@
+I"�<h3 class="lead mt-5" id="los-sets-se-utilizan-para-almacenar-múltiples-elementeos-en-una-variable-los-sets-en-python-son-una-colección-de-elementos--entre-llaves--separados-por-comas">Los sets se utilizan para almacenar múltiples elementeos en una variable, Los sets en Python son una colección de elementos  entre llaves <code class="language-plaintext highlighter-rouge">{}</code> separados por comas.</h3>
+
+<h3 class="lead my-5" id="los-sets-pueden-contener-números-o-cadenas-pero-no-elementos-mutables-como-listas-sets-o-diccionarios">Los sets pueden contener números o cadenas pero no elementos mutables como listas, sets o diccionarios.</h3>
+
+<h3 class="lead mb-5" id="los-sets-son-una-colección-de-elementos-desordenada-no-se-puede-acceder-a-sus-elementos-por-su-índice-como-en-las-listas">Los sets son una colección de elementos desordenada, no se puede acceder a sus elementos por su índice como en las listas.</h3>
+
+<h3 id="los-sets-no-pueden-contener-elementos-repetidos">Los sets no pueden contener elementos repetidos</h3>
+
+<p>Si utilizas un set con elementos repetidos no dará error simplemente el elemento repetido aparecerá solo una vez en el resultado.</p>
+
+<p>Los sets son una estructura de datos desordenada cada vez que utilizas un set sus items aparecedn ordenados aelatoriamente de una manera diferente.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plants</span> <span class="o">=</span> <span class="p">{</span><span class="s">'Poto'</span><span class="p">,</span> <span class="s">'Poto'</span><span class="p">,</span> <span class="s">'Poto'</span><span class="p">,</span> <span class="s">'Cintas'</span><span class="p">,</span> <span class="s">'Lirio'</span><span class="p">,</span> <span class="s">'Ficus'</span><span class="p">}</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">plants</span><span class="p">)</span>
+
+<span class="c1"># Output: {'Lirio', 'Poto', 'Cintas', 'Ficus'}
+</span></code></pre></div></div>
+
+<p><a href="https://www.youtube.com/watch?v=sBvaPopWOmQ">sets - Socratica</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=t9j8lCUGZXo">Sets - Programming with Mosh</a></p>
+:ET

@@ -1,0 +1,40 @@
+I"<h3 class="lead my-5" id="en-posts-anteriores-he-escrito-sobre-las-listas-las-tuplas-y-los-diccionarios-los-sets-son-el-cuarto-tipo-de-estructura-de-datos-en-python">En posts anteriores he escrito sobre las Listas, las Tuplas y los Diccionarios, los Sets son el cuarto tipo de estructura de datos en Python.</h3>
+
+<h3 id="carácterísticas-de-los-sets">Carácterísticas de los Sets:</h3>
+
+<ul>
+  <li>Los sets en Python son una colección de elementos  entre llaves <code class="language-plaintext highlighter-rouge">{}</code> separados por comas.</li>
+  <li>Pueden contener números o cadenas pero <strong>no elementos mutables</strong> como listas, sets o diccionarios.</li>
+  <li><strong>No pueden contener elementos repetidos</strong>, si los hay, no dará error, pero los elementos repetidos aparecerán solo una vez en el resultado.</li>
+  <li>Son una <strong>estructura de datos desordenada</strong>, cada vez que utilizas un Set sus ítems se reordenan de forma aleatoria.</li>
+  <li><strong>No son indexables</strong>, no es posible acceder ni asignar elementos a un Set por su índice.</li>
+</ul>
+
+<h3 id="ejemplo-de-un-set">Ejemplo de un Set:</h3>
+
+<p>Como puedes ver en el set hay 3 Potos pero</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plants</span> <span class="o">=</span> <span class="p">{</span><span class="s">'Poto'</span><span class="p">,</span> <span class="s">'Poto'</span><span class="p">,</span> <span class="s">'Poto'</span><span class="p">,</span> <span class="s">'Cintas'</span><span class="p">,</span> <span class="s">'Lirio'</span><span class="p">,</span> <span class="s">'Ficus'</span><span class="p">}</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">plants</span><span class="p">)</span>
+
+<span class="c1"># Output: {'Lirio', 'Poto', 'Cintas', 'Ficus'}
+</span></code></pre></div></div>
+
+<h3 id="resumen-estructuras-de-datos-en-python">Resumen Estructuras de Datos en Python:</h3>
+
+<ul>
+  <li><strong>Listas</strong> Colección ordenada y mutable, permite ítems duplicados.</li>
+  <li><strong>Tuplas</strong> Colección ordenada e inmutable, permite ítems duplicados.</li>
+  <li><strong>Set</strong> Colección desordenada y no indexable. No permite ítems duplicados.</li>
+  <li><strong>Diccionario</strong> Colección ordenada y mutable de pares clave valor, no permite ítems duplicados.</li>
+</ul>
+
+<h3 id="documentación-externa-sobre-los-sets">Documentación externa sobre los Sets:</h3>
+
+<p><a href="https://www.programiz.com/python-programming/set" target="_blank">Programiz - Sets</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=sBvaPopWOmQ" target="_blank">Sets - Socratica</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=t9j8lCUGZXo" target="_blank">Sets - Programming with Mosh</a></p>
+:ET

@@ -1,0 +1,8 @@
+I"�<h3 class="lead mt-5" id="los-sets-en-python-son-una-colección-de-elementos-entre-llaves--separados-por-comas">Los sets en Python son una colección de elementos entre llaves <code class="language-plaintext highlighter-rouge">{}</code> separados por comas.</h3>
+
+<h3 class="lead my-5" id="pueden-ser-números-o-cadenas-pero-no-pueden-ser-elementos-mutables-como-listas-otros-sets-o-diccionarios">Pueden ser números o cadenas pero no pueden ser elementos mutables como listas, otros sets o diccionarios.</h3>
+
+<h3 id="los-sets-no-pueden-tener-elementos-duplicados">Los sets no pueden tener elementos duplicados.</h3>
+
+<p><a href="https://www.youtube.com/watch?v=sBvaPopWOmQ">sets</a></p>
+:ET

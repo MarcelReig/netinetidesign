@@ -1,0 +1,29 @@
+I"N<h3 class="lead my-5" id="some-introductory-text-lorem-ipsum--dolor-sir-amet">Some introductory text lorem ipsum  dolor sir amet…</h3>
+
+<p>Las clases son como una plantilla</p>
+<h2 id="cabecero-nivel-2">Cabecero nivel 2</h2>
+
+<p>Texto simple</p>
+
+<p><img src="/assets/images/blog/python-term.png" width="800" class="img-fluid text-center m-xl-auto" alt="python" /></p>
+
+<div class="alert alert-info" role="alert">
+<p><i class="fas fa-sticky-note"></i> Nota:</p>
+ <p>Recuerda que las listas igual que las cadenas van en índice <code>0</code>.</p>
+</div>
+
+<ul>
+  <li>
+    <p><a href="https://www.youtube.com/watch?v=6chvxajS3yc" target="_blank">Casses &amp; Objects - Mike Dane</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.youtube.com/watch?v=f0TrMH9s-VE" target="_blank">Classes and Objects - Python Simplified</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.youtube.com/watch?v=apACNr7DC_s" target="_blank">Classes and Objects - Socratica</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.youtube.com/watch?v=-E4O0mz-gGE" target="_blank">Clases y Objetos - Chio Code</a></p>
+  </li>
+</ul>
+:ET

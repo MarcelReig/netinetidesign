@@ -9,7 +9,9 @@ image: python.png
 ---
 
 {:.lead.my-5}
-### Las listas por comprensión del inglés `List Comrehension` son una manera elegante de de definir y crear listas basadas en listas existentes.
+### Las listas por comprensión del inglés `List Comrehension` son una manera elegante de de definir y crear listas en una sola línea.
+
+La comprensión de listas en Python a menudo se utiliza para trabajar sobre listas ya creadas y utilizar una sintaxis de código más reducida de lo que que podríamos conseguir con un un bucle for.
 
 Veamos como crearíamos una lista con los cuadrados de los números del 1 al 10 con un bucle for: 
 

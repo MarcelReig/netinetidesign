@@ -42,17 +42,17 @@ La respuesta será:
 <img src="{{ site.baseurl }}/assets/images/blog/hyper.png" width="200" class="img-fluid text-center m-xl-auto" alt="Hyper logo">
 </div>
 
-Hyper es un emulador de terminal customizable creado por [Vercel](https://vercel.com/), se trata de una aplicación [Electron](https://www.electronjs.org/) por lo que es multiplataforma, está disponible para Windows, Linux y macOS.
+Hyper es un emulador de terminal customizable creado por [Vercel](https://vercel.com/){:target="_blank"}, se trata de una aplicación [Electron](https://www.electronjs.org/){:target="_blank"} por lo que es multiplataforma, está disponible para Windows, Linux y macOS.
 
-Hyper está construido con tecnologías web HTML, CSS y JavaScript y está basado en [xterm.js](https://xtermjs.org/) un componente frontend escrito en TypeScript, el mismo que utiliza la terminal de VS Code y Atom.
+Hyper está construido con tecnologías web HTML, CSS y JavaScript y está basado en [xterm.js](https://xtermjs.org/){:target="_blank"} un componente frontend escrito en TypeScript, el mismo que utiliza la terminal de VS Code y Atom.
 
-Al no ser una aplicación nativa como [iTerm2](https://iterm2.com/) el rendimiento es algo menor y consume más recursos, si eres tiquismiquis en ese aspecto tal vez prefieras iTerm2 que también ofrece muchas ventajas frente a la terminal por defecto.
+Al no ser una aplicación nativa como [iTerm2](https://iterm2.com/){:target="_blank"} el rendimiento es algo menor y consume más recursos, si eres tiquismiquis en ese aspecto tal vez prefieras iTerm2 que también ofrece muchas ventajas frente a la terminal por defecto.
 
 Hyper, Visual Studio Code, Slack, Atom, Discord, WhatsApp Desktop, todas son aplicaciones electron y si tienes muchas abiertas al mismo tiempo notarás que los ventiladores se ponen a todo gas.
 
-[awesome-hyper](https://github.com/bnb/awesome-hyper) es un repositorio de GitHub en el que encontrarás todo tipo de recursos para Hyper.
+[awesome-hyper](https://github.com/bnb/awesome-hyper){:target="_blank"} es un repositorio de GitHub en el que encontrarás todo tipo de recursos para Hyper.
 
-Descarga [Hyper](https://hyper.is/) desde su sitio web, haz doble click en el dmg y arrastra Hyper a la carpeta Aplicaciones.
+Descarga [Hyper](https://hyper.is/){:target="_blank"} desde su sitio web, haz doble click en el dmg y arrastra Hyper a la carpeta Aplicaciones.
 
 <div class="d-flex justify-content-center my-5">
 <img src="{{ site.baseurl }}/assets/images/blog/install-hyper.png" width="400" class="img-fluid text-center m-xl-auto" alt="Hyper install">
@@ -90,9 +90,9 @@ $ vim ~/.hyper.js
 
 ### Temas para Hyper
 
-En el [store](https://hyper.is/themes?newest) de hyper encontrarás una gran cantidad de temas para elegir.
+En el [store](https://hyper.is/themes?newest){:target="_blank"} de hyper encontrarás una gran cantidad de temas para elegir.
 
-Yo estoy utilizando [hyper-aura-theme](https://hyper.is/store/hyper-aura-theme), que tiene este aspecto: 
+Yo estoy utilizando [hyper-aura-theme](https://hyper.is/store/hyper-aura-theme){:target="_blank"}, que tiene este aspecto: 
 
 <div class="d-flex justify-content-center my-5">
 <img src="{{ site.baseurl }}/assets/images/blog/hyper-captura.png" width="600" class="img-fluid text-center m-xl-auto" alt="Hyper captura">
@@ -104,7 +104,7 @@ Yo estoy utilizando [hyper-aura-theme](https://hyper.is/store/hyper-aura-theme),
 <img src="{{ site.baseurl }}/assets/images/blog/ohmyzsh.png" width="200" class="img-fluid text-center m-xl-auto" alt="oh my zsh logo">
 </div>
 
-Además de Hyper [oh my zsh](https://ohmyz.sh/) es un framework que pone a tu disposición toda una serie de plugins y temas para tu shell zsh.
+Además de Hyper [oh my zsh](https://ohmyz.sh/){:target="_blank"} es un framework que pone a tu disposición toda una serie de plugins y temas para tu shell zsh.
 
 El siguiente comando instalará oh my zsh en tu computadora: 
 
@@ -138,7 +138,7 @@ Una vez hecho cambios para ver el efecto ejecuta el siguiente comando:
 $ source ~/.zshrc
 ```
 
-## Instalar [Homebrew](https://brew.sh/)
+## Instalar [Homebrew](https://brew.sh/){:target="_blank"}
 
 <div class="d-flex justify-content-center my-5">
 <img src="{{ site.baseurl }}/assets/images/blog/homebrew.png" width="200" class="img-fluid text-center m-xl-auto" alt="homebrew logo">
@@ -154,7 +154,7 @@ El siguiente comando instala Homebrew en tu Mac:
 
 ## Zsh prompt personalizado
 
-Tenemos dos opciones muy elegantes para personalizar el prompt [Starship](https://starship.rs/) y  [Spaceship](https://spaceship-prompt.sh/), elige el que más te guste.
+Tenemos dos opciones muy elegantes para personalizar el prompt [Starship](https://starship.rs/){:target="_blank"} y  [Spaceship](https://spaceship-prompt.sh/){:target="_blank"}, elige el que más te guste.
 
 He probado los dos prompts y para el uso que le doy a la terminal no he notado diferencias notables entre uno y otro.
 
@@ -165,7 +165,7 @@ He probado los dos prompts y para el uso que le doy a la terminal no he notado d
  <p>Más abajo explico como instalar las fuentes.</p>
 </div>
 
-### Instalar [Starship](https://starship.rs/) + Nerd Fonts
+### Instalar [Starship](https://starship.rs/){:target="_blank"} + Nerd Fonts
 
 <div class="d-flex justify-content-center my-5">
 <img src="{{ site.baseurl }}/assets/images/blog/starship-logo.svg" width="200" class="img-fluid text-center m-xl-auto" alt="starship logo">
@@ -183,7 +183,7 @@ Una vez instalado abre el archivo de configuración de zsh `~/.zshrc` y añade l
 eval "$(starship init zsh)"
 ```
 
-### Instalar [Spaceship](https://spaceship-prompt.sh/) + Powerline Fonts
+### Instalar [Spaceship](https://spaceship-prompt.sh/){:target="_blank"} + Powerline Fonts
 
 <div class="d-flex justify-content-center my-5">
 <img src="{{ site.baseurl }}/assets/images/blog/spaceship.svg" width="200" class="img-fluid text-center" alt="spaceship logo">
@@ -209,17 +209,17 @@ prompt spaceship
 <img src="{{ site.baseurl }}/assets/images/blog/nerd-fonts-logo.svg" width="200" class="img-fluid text-center m-xl-auto" alt="nerd-fonts logo">
 </div>
 
-Disponemos de dos repositorios populares de fuentes optimizadas para utilizar en terminales [nerdfonts](https://www.nerdfonts.com/) y [powerline-fonts](https://github.com/powerline/fonts#fontconfig).
+Disponemos de dos repositorios populares de fuentes optimizadas para utilizar en terminales [nerdfonts](https://www.nerdfonts.com/){:target="_blank"} y [powerline-fonts](https://github.com/powerline/fonts#fontconfig){:target="_blank"}.
 
 Este tipo de fuentes cuentan con los iconos de git, node, ruby, python etc...
 
 No es necesario descargar todas las fuentes nerd o todas las fuentes powerline, puedes descargar solo la fuente que te guste e instalarla en el sistema.
 
-Nerdfonts tiene una página de descargas que hace el proceso muy sencillo [nerdfonts downloads](https://www.nerdfonts.com/font-downloads). O puedes leer el [Readme](https://github.com/ryanoasis/nerd-fonts/blob/master/readme.md) para ver todas las opciones.
+Nerdfonts tiene una página de descargas que hace el proceso muy sencillo [nerdfonts downloads](https://www.nerdfonts.com/font-downloads){:target="_blank"}. O puedes leer el [Readme](https://github.com/ryanoasis/nerd-fonts/blob/master/readme.md){:target="_blank"} para ver todas las opciones.
 
 Para la descarga fuentes individuales powerline tienes que acceder al repositorio de Git y descargarlas manualmente. 
 
-## Instalar [nerdfonts](https://www.nerdfonts.com/) en Mac con Homebrew:
+## Instalar [nerdfonts](https://www.nerdfonts.com/){:target="_blank"} en Mac con Homebrew:
 
 ```sh
 $ brew tap homebrew/cask-fonts
@@ -238,7 +238,7 @@ $ brew install --cask font-<FONT NAME>-nerd-font
  <p>Si tienes problemas descargando alguna fuente nerd con brew, utiliza la <a href="https://www.nerdfonts.com/font-downloads">página de descargas</a> que funciona perfecto.</p>
 </div>
 
-## Instalar [powerline-fonts](https://github.com/powerline/fonts#fontconfig): 
+## Instalar [powerline-fonts](https://github.com/powerline/fonts#fontconfig){:target="_blank"}: 
 
 Los siguientes comandos instalarán todas las fuentes powerline en tu librería de fuentes en mi caso las ha instalado en `/Users/marcelreig/Library/Fonts`.
 

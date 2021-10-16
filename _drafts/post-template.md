@@ -21,3 +21,7 @@ Texto simple
 <p><i class="fas fa-sticky-note"></i> Nota:</p>
  <p>Recuerda que las listas igual que las cadenas van en índice <code>0</code>.</p>
 </div>
+
+### Target blank link: 
+
+[link](url){:target="_blank"}

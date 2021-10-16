@@ -14,7 +14,7 @@ image: python-3.jpg
 {:.lead.mb-5}
 ### Vamos a ver como instalar Python 3 en Mac con Pyenv y como crear proyectos con Pipenv en un entorno virtual aislado.
 
-## Que es [Homebrew](https://brew.sh/)?
+## Que es [Homebrew](https://brew.sh/){:target="_blank"}?
 
 Si no lo tienes ya Homebrew es la herramienta que ideal para instalar software en Mac y lo vamos a utilizar para instalar Pyenv y Pipenv.
 
@@ -23,7 +23,7 @@ El siguiente comando instalará Homebrew en tu Mac:
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-## Que es [Pyenv](https://github.com/pyenv/pyenv)?
+## Que es [Pyenv](https://github.com/pyenv/pyenv){:target="_blank"}?
 
 Pyenv es una herrramienta que te permite instalar diferentes versiones de Python y cambiar entre ellas según las necesidades del proyecto.
 
@@ -104,7 +104,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
 
-## Que es [Pipenv](Pipenv)?
+## Que es [Pipenv](Pipenv){:target="_blank"}?
 
 Pipenv es una herramienta de administración de paquetes además de un gestor de entornos virtuales en Python. Algo así como bundler, npm o yarn, si has trabajado con Ruby o JavaScript te resultarán familiares.
 

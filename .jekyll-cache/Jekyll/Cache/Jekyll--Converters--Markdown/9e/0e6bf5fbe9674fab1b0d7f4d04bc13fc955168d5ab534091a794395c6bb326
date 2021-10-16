@@ -1,0 +1,17 @@
+I"M<h3 class="lead my-5" id="some-introductory-text-lorem-ipsum--dolor-sir-amet">Some introductory text lorem ipsum  dolor sir amet…</h3>
+
+<h2 id="cabecero-nivel-2">Cabecero nivel 2</h2>
+
+<p>Texto simple</p>
+
+<p><img src="/assets/images/blog/python-term.png" width="800" class="img-fluid text-center m-xl-auto" alt="python" /></p>
+
+<div class="alert alert-info" role="alert">
+<p><i class="fas fa-sticky-note"></i> Nota:</p>
+ <p>Recuerda que las listas igual que las cadenas van en índice <code>0</code>.</p>
+</div>
+
+<p>Target blank link:</p>
+
+<p><a href="url" target="_blank">link</a></p>
+:ET
