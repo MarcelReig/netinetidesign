@@ -13,7 +13,7 @@ image: python-5.jpg
 
 Las clases en Python se definen con la palabra clave `class`.
 
-Por convención el nombre de las clases va en mayúsculas.
+Por convención el nombre de las clases va en mayúsculas y el nombre de las instancias en minúscula.
 
 `self` es siempre el primer parámetro de las funciones de las clases.
 
@@ -21,7 +21,7 @@ Por convención el nombre de las clases va en mayúsculas.
 
 Para accceder a los atributos de una instancia de una clase utilizamos la sintaxis `objeto.atributo`.
 
-El método `__init__` es un método especial que Python utiliza para crear una instancia de la clase cuando creamos los objetos.
+El método `__init__` es un método especial que Python utiliza para construir una instancia de la clase cuando creamos los objetos.
 
 La sintaxis para crear objetos instancia de una clase es la siguiente:
 

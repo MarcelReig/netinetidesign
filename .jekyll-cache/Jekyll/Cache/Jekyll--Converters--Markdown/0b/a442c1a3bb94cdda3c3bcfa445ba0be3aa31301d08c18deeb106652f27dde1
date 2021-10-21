@@ -1,0 +1,75 @@
+I"�<h3 class="lead my-5" id="get-y-set-obtener-y-establecer">Get y Set (Obtener y Establecer)</h3>
+
+<p>En otros lenguajes de programación como en Java no se permite accceder ni modificar datos de una clase sin antes haber creado una función especifica para ello, pero Python si que lo permite.</p>
+
+<p>Sintaxis para Get (Obtener): <code class="language-plaintext highlighter-rouge">objeto.parámetro</code></p>
+
+<p>Sintaxis para el Set (Establecer): <code class="language-plaintext highlighter-rouge">objeto.parámetro = valor</code></p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Villain</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">quote</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">quote</span> <span class="o">=</span> <span class="n">quote</span>
+
+    <span class="k">def</span> <span class="nf">villain_says</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s">f'</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">name</span><span class="si">}</span><span class="s"> dice </span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">quote</span><span class="si">}</span><span class="s">'</span>
+
+
+<span class="n">joker</span> <span class="o">=</span> <span class="n">Villain</span><span class="p">(</span><span class="s">'Joker'</span><span class="p">,</span> <span class="s">'Siempre hay que tener un as en la manga'</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">joker</span><span class="p">.</span><span class="n">villain_says</span><span class="p">())</span>  <span class="c1"># Getter
+</span>
+<span class="c1"># Output: Joker dice Siempre hay que tener un as en la manga
+</span>
+<span class="n">joker</span><span class="p">.</span><span class="n">quote</span> <span class="o">=</span> <span class="s">'Aprendí que todo tiene su tiempo y su lugar'</span>  <span class="c1"># Setter
+</span>
+<span class="k">print</span><span class="p">(</span><span class="n">joker</span><span class="p">.</span><span class="n">villain_says</span><span class="p">())</span>  <span class="c1"># Getter
+</span>
+<span class="c1"># Output: Joker dice Aprendí que todo tiene su tiempo y su lugar
+</span></code></pre></div></div>
+
+<h2 id="python-properties-y-decorators">Python Properties y Decorators</h2>
+
+<p>Hemos visto como accededer y como añadir o modificar valores de propiedades de clase. Pero la forma en la que lo hemos hecho podría ser peligrosa y hay que saber hacerlo de forma más segura y aquí es donde entran los decoradores de Python y el concepto de encapsula.</p>
+
+<p>Encapsulación exponer solo los datos de la clase que el usuario necesita.</p>
+
+<p>Es convención en Python utilizar guión bajo cuando cramos una clase protegida.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Villain</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">quote</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">_quote</span> <span class="o">=</span> <span class="n">quote</span>
+
+    <span class="k">def</span> <span class="nf">villain_says</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s">f'</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">_name</span><span class="si">}</span><span class="s"> dice </span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">_quote</span><span class="si">}</span><span class="s">'</span>
+
+    <span class="o">@</span><span class="nb">property</span>
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">.</span><span class="n">_name</span>
+
+    <span class="o">@</span><span class="nb">property</span>
+    <span class="k">def</span> <span class="nf">quote</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">.</span><span class="n">_quote</span>
+
+    <span class="o">@</span><span class="n">quote</span><span class="p">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">quote</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">quote</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">_quote</span> <span class="o">=</span> <span class="n">quote</span>
+
+
+<span class="n">joker</span> <span class="o">=</span> <span class="n">Villain</span><span class="p">(</span><span class="s">'Joker'</span><span class="p">,</span> <span class="s">'Siempre hay que tener un as en la manga'</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">joker</span><span class="p">.</span><span class="n">villain_says</span><span class="p">())</span>  <span class="c1"># Getter
+</span>
+<span class="c1"># Output: Joker dice Siempre hay que tener un as en la manga
+</span>
+<span class="n">joker</span><span class="p">.</span><span class="n">quote</span> <span class="o">=</span> <span class="s">'¡Esa fea cabeza tuya tiene cerebro!'</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">joker</span><span class="p">.</span><span class="n">villain_says</span><span class="p">())</span>  <span class="c1"># Getter
+</span>
+<span class="c1"># Output: Joker dice ¡Esa fea cabeza tuya tiene cerebro!
+</span></code></pre></div></div>
+
+<p><a href="https://www.youtube.com/watch?v=MikphENIrOo&amp;t=2132s">Object Oriented Programming (OOP) in Python - Traversy Media</a></p>
+:ET

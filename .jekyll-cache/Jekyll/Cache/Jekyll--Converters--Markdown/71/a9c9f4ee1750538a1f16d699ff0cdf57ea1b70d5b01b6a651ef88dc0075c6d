@@ -1,0 +1,98 @@
+I"K!<h3 class="lead my-5" id="get-y-set-obtener-y-establecer">Get y Set (Obtener y Establecer)</h3>
+
+<p>En otros lenguajes de programación como en Java no se permite accceder ni modificar datos de una clase sin antes haber creado una función especifica para ello, pero Python si que lo permite.</p>
+
+<p>Sintaxis para Get (Obtener): <code class="language-plaintext highlighter-rouge">objeto.parámetro</code></p>
+
+<p>Sintaxis para el Set (Establecer): <code class="language-plaintext highlighter-rouge">objeto.parámetro = valor</code></p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Villain</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">quote</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">quote</span> <span class="o">=</span> <span class="n">quote</span>
+
+    <span class="k">def</span> <span class="nf">villain_says</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s">f'</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">name</span><span class="si">}</span><span class="s"> dice </span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">quote</span><span class="si">}</span><span class="s">'</span>
+
+
+<span class="n">joker</span> <span class="o">=</span> <span class="n">Villain</span><span class="p">(</span><span class="s">'Joker'</span><span class="p">,</span> <span class="s">'Siempre hay que tener un as en la manga'</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">joker</span><span class="p">.</span><span class="n">villain_says</span><span class="p">())</span>  <span class="c1"># Getter
+</span>
+<span class="c1"># Output: Joker dice Siempre hay que tener un as en la manga
+</span>
+<span class="n">joker</span><span class="p">.</span><span class="n">quote</span> <span class="o">=</span> <span class="s">'Aprendí que todo tiene su tiempo y su lugar'</span>  <span class="c1"># Setter
+</span>
+<span class="k">print</span><span class="p">(</span><span class="n">joker</span><span class="p">.</span><span class="n">villain_says</span><span class="p">())</span>  <span class="c1"># Getter
+</span>
+<span class="c1"># Output: Joker dice Aprendí que todo tiene su tiempo y su lugar
+</span></code></pre></div></div>
+
+<h2 id="python-properties-y-decorators">Python Properties y Decorators</h2>
+
+<p>Hemos visto como accededer, añadir o modificar atributos de clase. Pero la forma en la que lo hemos hecho podría no ser segura y romper el código en el futuro.</p>
+
+<p>Aquí es donde entran los conceptos de encapsulación y decoradores de Python.</p>
+
+<p>La encapsulación de manera muy resumida es exponer solo los atributos de clase que el usuario necesita.</p>
+
+<p>Es convención en Python utilizar un guión bajo delante del nombre del atributo cuando creamos atributos protegidos.</p>
+
+<p>Al utilizar <code class="language-plaintext highlighter-rouge">@property</code> no se permite cambiar el valor del atributo al vuelo desde fuera de la clase.</p>
+
+<p>property() es una función integrada en Python que permite interceptar la lectura, escritura y borrado de atributos además de</p>
+
+<p>Si quieres que se pueda cambiar el atributo de un <code class="language-plaintext highlighter-rouge">@property</code> hay que crear un <code class="language-plaintext highlighter-rouge">setter</code> para exponerlo.</p>
+
+<p>¿Por qué crear un property si lo vamos a exponer igualmente con setter?</p>
+
+<p>Porque con setter podemos crear ciertas normas.</p>
+
+<p>En el siguiente ejemplo he creado dos <code class="language-plaintext highlighter-rouge">@property</code> para los dos atributos de la clase <code class="language-plaintext highlighter-rouge">Villain</code>. Sin embargo he establecido el atributo <code class="language-plaintext highlighter-rouge">name</code> como privado pero he expuesto el atributo <code class="language-plaintext highlighter-rouge">quote</code> con un <code class="language-plaintext highlighter-rouge">setter</code>, por lo que permite cambiar la frase del villano pero no el nombre.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Villain</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">quote</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">_quote</span> <span class="o">=</span> <span class="n">quote</span>
+
+    <span class="k">def</span> <span class="nf">villain_says</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s">f'</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">_name</span><span class="si">}</span><span class="s"> dice </span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">_quote</span><span class="si">}</span><span class="s">'</span>
+
+    <span class="o">@</span><span class="nb">property</span>
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">.</span><span class="n">_name</span>
+
+    <span class="o">@</span><span class="nb">property</span>
+    <span class="k">def</span> <span class="nf">quote</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">.</span><span class="n">_quote</span>
+
+    <span class="o">@</span><span class="n">quote</span><span class="p">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">quote</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">quote</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">_quote</span> <span class="o">=</span> <span class="n">quote</span>
+
+
+<span class="n">joker</span> <span class="o">=</span> <span class="n">Villain</span><span class="p">(</span><span class="s">'Joker'</span><span class="p">,</span> <span class="s">'Siempre hay que tener un as en la manga'</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">joker</span><span class="p">.</span><span class="n">villain_says</span><span class="p">())</span>  <span class="c1"># Getter
+</span>
+<span class="c1"># Output: Joker dice Siempre hay que tener un as en la manga
+</span>
+<span class="n">joker</span><span class="p">.</span><span class="n">quote</span> <span class="o">=</span> <span class="s">'¡Esa fea cabeza tuya tiene cerebro!'</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">joker</span><span class="p">.</span><span class="n">villain_says</span><span class="p">())</span>  <span class="c1"># Getter
+</span>
+<span class="c1"># Output: Joker dice ¡Esa fea cabeza tuya tiene cerebro!
+</span></code></pre></div></div>
+<p><strong>¿Cuándo hago un atributo público?</strong></p>
+
+<p><em>Si lo va a utilizar alguien fuera de la clase se hace público.</em></p>
+
+<p><strong>¿Cuándo utilizo @property con un setter?</strong></p>
+
+<p><em>Si lo va a utilizar alguien fuera de la clase, pero quieres establecer unas reglas de modificación, utiliza un @property con un setter</em></p>
+
+<p><strong>¿Cuándo lo hago privado?</strong></p>
+
+<p><em>Si el atributo de la clase no lo tiene que utilizar nadie fuera de la clase, se hace privado con @property.</em></p>
+:ET
