@@ -8,9 +8,6 @@ category: programacion
 image: joker.jpg
 ---
 
-{:.lead.my-5}
-### En otros lenguajes de programación como en Java no se permite accceder ni modificar datos de una clase sin antes haber creado una función especifica para ello. Python si que lo permite y esto puede hacer que cambiemos el valor de un atributo sin querer y se produzcan errores en nuestra aplicación.
-
 
 Sintaxis para Get (Obtener el valor de un atributo): `objeto.parámetro`
 
@@ -40,29 +37,50 @@ print(joker.villain_says())  # Getter
 # Output: Joker dice Aprendí que todo tiene su tiempo y su lugar
 ```
 
-## Python Properties y Decorators
+## Modificadores de acceso
 
-En el ejemplo anterior hemos visto como accededer, añadir y modificar atributos de clase. Pero la forma en la que lo hemos hecho, (directamente desde fuera de la clase con la sintaxis `.` para get y la sintaxis `=` para setter) podría no ser la forma más segura y romper el código en el futuro.
+En Java o C++, no se permite accceder ni modificar datos de una clase sin antes haber creado una función especifica para ello.
+
+En Java o C++ tienen las palabras clave `public`, `private` y `protected` conocidas como modificadores de acceso, para controlar el acceso a los métodos de la clase.
+
+Sin embargo Python no tiene modificadores de acceso y por defecto todos los métodos y variables son accesibles desde fuera, esto puede hacer que cometamos errores.
+
+En cualquier caso Python tiene una convención para imitar los modificadores de acceso.
+## Propiedades y decoradores
+
+En el ejemplo anterior hemos visto como accededer, añadir y modificar atributos de clase con la sintaxis `.` para get y `=` para setter, pero esta no es la forma más segura de hacerlo y podría llevarnos a cometer errores al crecer el programa en complegidad.
 
 Aquí es donde entran los conceptos de __encapsulación__ y __decoradores__ de Python.
 
-La __encapsulación__ de manera muy resumida es exponer solo los atributos de clase que el usuario necesita.
+La __encapsulación__ de manera muy resumida es exponer solo los atributos de clase que el usuario necesita. De esta manera evitamos sobreescibir algún parámetro por error y romper la aplicación.
 
-Es convención en Python utilizar un guión bajo delante del nombre del atributo cuando creamos atributos protegidos. No es que el guión bajo haga nada, es convención para saber que estas creando un atributo privado. Si no creas una simulación de privacidad al interprete de Python le dará igual que lleve guión bajo.
+En Java se utiliza las palabras reservadas `public` o `private` para definir si un elemento puede ser utilizado o no fuera de la clase.
 
-En Java se utiliza las palabras reservadas `public` o `private` para definir si un elemento puedes ser utilizado o no fuera de la clase.
+En Python no existen modificadores de clase y todos los elementos son públicos por defecto, pero la privacidad se pueden simular con @property y setter.
 
-En Python no existen elementos públicos o privados (todos son públicos) pero se pueden simular.
+Es convención en Python utilizar un guión bajo delante del nombre del atributo cuando creamos atributos protegidos `_protectedMember` y dos guiones bajos delante de atributos privados `__privateMember`.
 
-Al utilizar `@property` no se permite cambiar el valor del atributo al vuelo desde fuera de la clase.
+El guión bajo no hace nada en si mismo, es solo una convención para dejar claro que estas creando un atributo protegido, tanto para ti como para otros desarrolladores que puedan leer tu código en el futuro.
 
-property() es una función integrada en Python que permite interceptar la lectura, escritura y borrado de atributos, para invocar la función `property()` utilizamos el decorador `@property`.
+El doble guión bajo si que afecta al interprete de Python, al utilizar doble guión bajo, Python reescribe el nombre de la variable.
 
-Si quieres que se pueda modificar desde fuera de la clase el atributo de un `@property` hay que crear un `setter` para exponerlo.
+## property()
+
+property() es una función integrada en Python que permite interceptar la lectura, escritura y borrado de atributos.
+
+Para invocar la función `property()` utilizamos el decorador `@property`.
+
+El decorador @property nos permite utilizar un método como atributo.
+
+Aclarar que un método es una función dentro de una clase.
+
+Al utilizar @property ya no se permite acceder ni cambiar el valor del atributo al vuelo desde fuera de la clase con la sintaxis del punto para acceder y la sintaxis de asignación par asignar nuevos valores.
+
+Si quieres modificar un atributo de un @property desde fuera de la clase hay que crear un `setter` para exponerlo.
 
 ¿Por qué crear un @property si lo vamos a exponer igualmente con setter?
 
-Porque con setter podemos crear ciertas normas.
+Porque con @property y setter podemos crear ciertas normas o crear una validación.
 
 En el siguiente ejemplo he creado dos `@property` para los dos atributos de la clase `Villain`. Sin embargo he establecido el atributo `name` como protegido y he expuesto el atributo `quote` con un `setter`, por lo que permite cambiar la frase del villano pero no el nombre.
 
