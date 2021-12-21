@@ -59,4 +59,4 @@ Para encontrar facilmente archivos dentro del directorio de trabajo pulsa: <br>
 
 ### Mover el cursor al final de la línea en VSCode
 
-Pulsa <kbd>⌘ + teclas de direción </kbd> para mover el cursor rápidamente en Visual Studio Code.
+Pulsa <kbd>⌘ + teclas de dirección </kbd> para mover el cursor rápidamente en Visual Studio Code.
