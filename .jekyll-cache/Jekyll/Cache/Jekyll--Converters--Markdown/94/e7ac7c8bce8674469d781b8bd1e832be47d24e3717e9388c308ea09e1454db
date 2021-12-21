@@ -1,0 +1,22 @@
+I"�<h3 class="lead my-5" id="métodos-especiales-también-conocidos-como-métodos-dunder-o-métodos-mágicos">Métodos especiales, también conocidos como métodos Dunder o métodos Mágicos.</h3>
+
+<h3 class="lead my-5" id="los-métodos-dunder-se-utilizan-para-emular-el-comportamiento-de-las-funciones-integradas">Los métodos dunder se utilizan para emular el comportamiento de las funciones integradas.</h3>
+
+<h2 id="__init__"><code class="language-plaintext highlighter-rouge">__init__</code></h2>
+
+<h2 id="__repr__"><code class="language-plaintext highlighter-rouge">__repr__</code></h2>
+
+<h2 id="__repr__-1"><code class="language-plaintext highlighter-rouge">__repr__</code></h2>
+
+<h2 id="__len__"><code class="language-plaintext highlighter-rouge">__len__</code></h2>
+
+<h2 id="__getitem__"><code class="language-plaintext highlighter-rouge">__getitem__</code></h2>
+
+<h2 id="__add__"><code class="language-plaintext highlighter-rouge">__add__</code></h2>
+
+<h2 id="__bool__"><code class="language-plaintext highlighter-rouge">__bool__</code></h2>
+
+<h2 id="__mul__"><code class="language-plaintext highlighter-rouge">__mul__</code></h2>
+
+<p><a href=""></a></p>
+:ET

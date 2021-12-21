@@ -64,6 +64,10 @@ El guión bajo no hace nada en si mismo, es solo una convención para dejar clar
 
 El doble guión bajo si que afecta al interprete de Python, al utilizar doble guión bajo, Python reescribe el nombre de la variable.
 
+Las variables nombradas con doble guión bajo no son acccesibles desde fuera de la clase o por lo menos e forma directa.
+
+Python renombra las variables con dos guiones bajos a nombre de la clase + guión bajo + variable protegida `_class__protectedMember`. Por lo que que las variables privadas siguen siendo accesibles pero tienes que ser mucho más explícito.
+
 ## property()
 
 property() es una función integrada en Python que permite interceptar la lectura, escritura y borrado de atributos.
@@ -76,7 +80,7 @@ Aclarar que un método es una función dentro de una clase.
 
 Al utilizar @property ya no se permite acceder ni cambiar el valor del atributo al vuelo desde fuera de la clase con la sintaxis del punto para acceder y la sintaxis de asignación par asignar nuevos valores.
 
-Si quieres modificar un atributo de un @property desde fuera de la clase hay que crear un `setter` para exponerlo.
+Si quieres modificar un método o instancia de variable de un @property desde fuera de la clase hay que crear un `setter` para exponerlo.
 
 ¿Por qué crear un @property si lo vamos a exponer igualmente con setter?
 

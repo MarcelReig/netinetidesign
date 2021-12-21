@@ -56,3 +56,7 @@ Este atajo es demasiado útil, te evita tener que utilizar el Finder para navega
 ### Navegador de archivos
 Para encontrar facilmente archivos dentro del directorio de trabajo pulsa: <br>
 <kbd>⌘ + p</kbd>
+
+### Mover el cursor al final de la línea en VSCode
+
+Pulsa <kbd>⌘ + teclas de direción </kbd> para mover el cursor rápidamente en Visual Studio Code.
