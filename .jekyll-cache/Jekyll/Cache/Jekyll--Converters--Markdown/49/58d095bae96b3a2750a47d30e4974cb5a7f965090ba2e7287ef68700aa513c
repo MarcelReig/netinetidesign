@@ -1,0 +1,102 @@
+I"�<p>Iniciar un repositorio local desde un projecto existente:</p>
+
+<!-- more -->
+
+<p><code class="language-plaintext highlighter-rouge">$ git init</code></p>
+
+<p>Añadir todos los archivos:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git add —all</code></p>
+
+<p>Lo que es lo mismo que:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git add .</code></p>
+
+<p>Subir los archivos a un repositorio remoto:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git commit -m “primer commit”</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git push -u origin master</code></p>
+
+<p>Crear una nueva rama de Git en local y cambiar a esa rama:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git checkout -b [nombre_de_la_rama]</code></p>
+
+<p>Esto es solo un atajo para:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git branch [nombre_de_la_rama]</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git checkout [nombre_de_la_rama]</code></p>
+
+<p>Cambiar a una rama:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git checkout [nombre_de_la_rama]</code></p>
+
+<p>Ver todas las ramas:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git branch</code></p>
+
+<p>Ver el estado de la rama:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git status</code></p>
+
+<p>Una vez finalizado tus cambios en una rama para unir a master:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git checkout master</code> // Nos situamos en master</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git pull origin master</code> // Solo necesario si hay cambios en origin</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git merge [nombre_de_la_rama]</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git push origin master</code> // Subimos los cambios a nuestro repositorio remoto</p>
+
+<p>Ver el historial:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git log</code></p>
+
+<p>Para salir de la pantalla de git log inserta: q</p>
+
+<p>Cambiar el “origin” de un repositorio Git</p>
+
+<p>Ver el origin actual:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git remote -v</code></p>
+
+<p>Te mostrará algo así:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>origin  https://Netinetidesign@bitbucket.org/yuraksisa/mybooking_theme_foundation_6.git <span class="o">(</span>fetch<span class="o">)</span>
+origin  https://Netinetidesign@bitbucket.org/yuraksisa/mybooking_theme_foundation_6.git <span class="o">(</span>push<span class="o">)</span>
+</code></pre></div></div>
+
+<p>Eliminar el origin actual y añadir uno nuevo:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git remote rm origin</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git remote add origin https://Netinetidesign@bitbucket.org/Netinetidesign/mybooking-theme-nautic.git</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git push -u origin master</code></p>
+
+<p>Para eliminar Git de un proyecto, desde la carpeta del proyecto:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ rm -rf .git</code></p>
+
+<p>Eliminar node_modules, bower_components o lo que necesites de tu repositorio.
+Primero añade node_modules a .gitignore, después ejecuta lo siguiente:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git rm -r --cached node_modules</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git commit -m 'Remove the now ignored directory node_modules'</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git push origin master</code></p>
+
+<p>Bajar todas las nuevas ramas del repositorio remoto:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git clone url-repo</code></p>
+
+<p>El comando git branch, nos lista las ramas locales.
+si le pasamos el parámetro –all (o -a), nos mostrará las locales y las remotas.</p>
+
+<p>Mostrar la ramas locales:</p>
+
+<p>`$</p>
+:ET

@@ -42,9 +42,17 @@ Cambiar a una rama:
 
 `$ git checkout [nombre_de_la_rama]`
 
-Ver todas las ramas:
+Ver el estado de la rama: 
+
+`$ git status`
+
+Mostrar la ramas locales: 
 
 `$ git branch`
+
+Mostrar las ramas locales y remotas: 
+
+`$ git branch --all`
 
 Una vez finalizado tus cambios en una rama para unir a master:
 
@@ -87,7 +95,7 @@ Para eliminar Git de un proyecto, desde la carpeta del proyecto:
 
 `$ rm -rf .git`
 
-Eliminar node_modules, bower_components o lo que necesites de tu repositorio.
+Eliminar node_modules de tu repositorio local y remoto: 
 Primero añade node_modules a .gitignore, después ejecuta lo siguiente:
 
 `$ git rm -r --cached node_modules`
@@ -98,7 +106,4 @@ Primero añade node_modules a .gitignore, después ejecuta lo siguiente:
 
 Bajar todas las nuevas ramas del repositorio remoto:
 
-`$ git clone url-repo`
-
-El comando git branch, nos lista las ramas locales.
-si le pasamos el parámetro --all (o -a), nos mostrará las locales y las remotas.
+`$ git clone url-repositorio`
