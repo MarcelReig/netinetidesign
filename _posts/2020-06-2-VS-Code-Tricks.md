@@ -45,7 +45,7 @@ Te situas con el cursor donde quieres empezar la selección y después utilizas:
 ### Seleccionar coincidencias
 Selecionas con el cursor los carácteres sobre los que quieres buscar coincidencias y pulsas: <br><kbd>⌘ command + D</kbd> para cada coincidencia que quieras seleccionar.
 
-### Vista previa de Marckdown
+### Vista previa de Markdown
 
 Para mostrar una vista previa del archivo md que estás editando pulsa: <br> <kbd>Shift + ⌘ + V</kbd>.
 
