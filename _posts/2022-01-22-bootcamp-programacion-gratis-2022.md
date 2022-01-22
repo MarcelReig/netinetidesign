@@ -27,14 +27,15 @@ En cualquier caso aquí tienes una la lista de los cursos online gratis que me p
     <img src="{{ site.baseurl }}/assets/images/blog/fullstackopen.jpg" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021">
     <div class="media-body">
     <a href="https://fullstackopen.com/es/" target="_blank"><h5 class="mt-0 mb-1">Fullstack Open 2021</h5></a>
-      <p>Curso gratuito de la Universidad de Helsinki. Introducción al desarrollo de aplicaciones web modernas con JavaScript.</p>
-    </div>
-  </li>
-  <li class="media">
-    <img src="{{ site.baseurl }}/assets/images/blog/appacademy.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021">
-    <div class="media-body">
-    <a href="https://www.appacademy.io/course/app-academy-open" target="_blank"><h5 class="mt-0 mb-1">App Academy open</h5></a>
-      <p>Aceso abierto al curso full-stack de App Academy.</p>
+      <p>Curso gratuito de la Universidad de Helsinki con licencia Creative Commons. Introducción al desarrollo de aplicaciones web modernas con JavaScript.</p>
+       <ul>
+        <li>React</li>
+        <li>Redux</li>
+        <li>Node.js</li>
+        <li>MongoDB</li>
+        <li>GraphQL</li>
+        <li>TypeScript</li>
+      </ul>
     </div>
   </li>
   <li class="media">
@@ -42,13 +43,35 @@ En cualquier caso aquí tienes una la lista de los cursos online gratis que me p
     <div class="media-body">
     <a href="https://www.freecodecamp.org/" target="_blank"><h5 class="mt-0 mb-1">Freecodecamp</h5></a>
       <p>Totalmente gratis, contenido de valor incalculable.</p>
+      <ul>
+        <li>Comunidad sin ánimo de lucro que te ayuda a aprender a programar a través de proyectos.</li>
+        <li>Todo en FreecodeCamp es 100% gratuito.</li>
+        <li>Consta de más de 10 certificaciones de 300h cada una.</li>
+      </ul>
     </div>
   </li>
   <li class="media my-4">
     <img src="{{ site.baseurl }}/assets/images/blog/theodinproject.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="The Odin Project">
     <div class="media-body">
     <a href="https://www.theodinproject.com/home" target="_blank"> <h5 class="mt-0 mb-1">The Odin Project</h5></a>
-      <p>Curso gratuito extenso.</p>
+      <p>Curso gratuito extenso de desarrollo web Full Stack</p>
+      <ul>
+      <li>Diseñado para principiantes</li>
+      <li>Fundamentos</li>
+      <li>JavaScript</li>
+      <li>Ruby On Rails</li>
+      </ul>
+    </div>
+  </li>
+    <li class="media">
+    <img src="{{ site.baseurl }}/assets/images/blog/appacademy.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021">
+    <div class="media-body">
+    <a href="https://www.appacademy.io/course/app-academy-open" target="_blank"><h5 class="mt-0 mb-1">App Academy open</h5></a>
+      <ul>
+        <li>Aceso abierto al curso full-stack de App Academy.</li>
+        <li>1500h de material</li>
+        <li>De 12 a 16 meses</li>
+      </ul>
     </div>
   </li>
   <li class="media">
@@ -81,17 +104,17 @@ Muchos Bootcamps ofrecen leciones gratis para que pruebes la plataforma, su mane
   </li>
 </ul>
 
-## Cursos introductorios
+## Otros Cursos introductorios
 
-- [interneting is hard](https://www.internetingishard.com/)
+- [interneting is hard](https://www.internetingishard.com/){:target="_blank"}
 
-- [Dont Fear the Internet](http://www.dontfeartheinternet.com/)
+- [Dont Fear the Internet](http://www.dontfeartheinternet.com/){:target="_blank"}
 
-- [Frontend Masters Bootcamp](https://frontendmasters.com/bootcamp/)
+- [Frontend Masters Bootcamp](https://frontendmasters.com/bootcamp/){:target="_blank"}
 
 ## Practicas de programación
 
-- [codewars](https://www.codewars.com/)
+- [codewars](https://www.codewars.com/){:target="_blank"}
 
-- [exercism](https://exercism.org/)
+- [exercism](https://exercism.org/){:target="_blank"}
 
