@@ -1,0 +1,86 @@
+I"�
+<h2 id="bootcamps-completos">Bootcamps completos</h2>
+
+<ul class="list-unstyled">
+  <li class="media">
+    <img src="/assets/images/blog/freecodecamp.png" width="200" class="img-fluid mr-3 mb-3" alt="FreeCodeCamp" />
+    <div class="media-body">
+    <a href="https://www.freecodecamp.org/" target="_blank"><h5 class="mt-0 mb-1">Freecodecamp</h5></a>
+      <p>All my girls vintage Chanel baby. So you can have your cake. Tonight,.</p>
+    </div>
+  </li>
+  <li class="media my-4">
+    <img src="/assets/images/blog/theodinproject.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="The Odin Project" />
+    <div class="media-body">
+    <a href="https://www.theodinproject.com/home" target="_blank"> <h5 class="mt-0 mb-1">The Odin Project</h5></a>
+      <p>Maybe a reason why all the doors are closed. Cause once you’re mine, once you’re mine. perfect storm.</p>
+    </div>
+  </li>
+  <li class="media">
+    <img src="/assets/images/blog/fullstackopen.jpg" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021" />
+    <div class="media-body">
+    <a href="https://fullstackopen.com/es/" target="_blank"><h5 class="mt-0 mb-1">Fullstack Open 2021</h5></a>
+      <p>Are you brave enough to let me see your peacock?.</p>
+    </div>
+  </li>
+  <li class="media">
+    <img src="/assets/images/blog/appacademy.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021" />
+    <div class="media-body">
+    <a href="https://www.appacademy.io/course/app-academy-open" target="_blank"><h5 class="mt-0 mb-1">App Academy open</h5></a>
+      <p>Are you brave enough to let me see your peacock?.</p>
+    </div>
+  </li>
+    <li class="media">
+    <img src="/assets/images/blog/cs50x.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021" />
+    <div class="media-body">
+    <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x" target="_blank"><h5 class="mt-0 mb-1">CS50x</h5></a>
+      <p>Are you brave enough to let me see your peacock?</p>
+    </div>
+  </li>
+</ul>
+
+<h2 id="bootcamp-cursos-introductorios">Bootcamp cursos introductorios</h2>
+
+<ul class="list-unstyled">
+    <li class="media">
+    <img src="/assets/images/blog/flatiron.jpeg" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021" />
+    <div class="media-body">
+    <a href="https://flatironschool.com/learn-to-code-for-free/" target="_blank"><h5 class="mt-0 mb-1">Flatiron School intro Free Lessons]</h5></a>
+      <p>Are you brave enough to let me see your peacock?</p>
+    </div>
+  </li>
+      <li class="media">
+    <img src="/assets/images/blog/hack-reactor.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021" />
+    <div class="media-body">
+    <a href="https://www.hackreactor.com/prep-programs" target="_blank"><h5 class="mt-0 mb-1">Hackreactor</h5></a>
+      <p>Are you brave enough to let me see your peacock?</p>
+    </div>
+  </li>
+</ul>
+
+<h2 id="cursos-introductorios">Cursos introductorios</h2>
+
+<ul>
+  <li>
+    <p><a href="https://www.internetingishard.com/">interneting is hard</a></p>
+  </li>
+  <li>
+    <p><a href="http://www.dontfeartheinternet.com/">Dont Fear the Internet</a></p>
+  </li>
+  <li>
+    <p><a href="https://frontendmasters.com/bootcamp/">Frontend Masters Bootcamp</a></p>
+  </li>
+</ul>
+
+<h2 id="practicas-de-programación">Practicas de programación</h2>
+
+<ul>
+  <li>
+    <p><a href="https://www.codewars.com/">codewars</a></p>
+  </li>
+  <li>
+    <p><a href="https://exercism.org/">exercism</a></p>
+  </li>
+</ul>
+
+:ET

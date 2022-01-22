@@ -29650,3 +29650,9 @@ ul.social-links,
   border-top: 10px solid #424242;
   margin-bottom: 30px;
 }
+
+@media (max-width: 575.98px) {
+  ul.list-unstyled > li.media {
+    flex-direction: column;
+  }
+}
