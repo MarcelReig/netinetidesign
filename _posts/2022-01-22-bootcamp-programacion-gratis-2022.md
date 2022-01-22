@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bootcamps de Programación Gratis en 2022
+title: Bootcamps de Programación online Gratis o becados en 2022
 description: Bootcamps de Programación Gratis en 2022
 comments: true
 tags: javascript python
@@ -14,11 +14,11 @@ Esto no es contenido promocionado, solo información real del Bootcamp que estoy
 
 Actualmente estoy cursando el Bootcamp <a href="https://bottega.tech/" target="blank">Bottega</a> gracias a una beca para personas con discapacidad de la <a href="https://fundacionadecco.org/" target="_blank">fundación adecco</a>.
 
-Si tienes discapacidad, estás en situación de riesgo de exclusión o tienes más de 45 años, aquí puedes consultar las <a href="https://fundacionadecco.org/becas-y-ayudas/personas-discapacidad/" target="_blank"> becas fundación adecco</a> para este año.
+Si tienes una discapacidad, estás en situación de riesgo de exclusión o tienes más de 45 años, aquí puedes consultar las <a href="https://fundacionadecco.org/becas-y-ayudas/personas-discapacidad/" target="_blank"> becas fundación adecco</a> para este año.
 
-Mi segunda opción antes de que me ofrecieran la beca en addeco era el <a href="https://www.fundacionuniversia.net/es/empleabilidad/plan-circular/acuerdo-ingresos-compartidos-socialmente-responsable.html" target="blank">Plan Circular Fundación Universia | Bootcamp for all</a> en el que pagas tu formación en pequeñas cuotas mensuales, sin intereses, solo si consigues trabajo y siempre que ganes más de 18.000 euros brutos anuales.
+Si no me hubieran concedido la beca en adecco, mi segunda opción era el <a href="https://www.fundacionuniversia.net/es/empleabilidad/plan-circular/acuerdo-ingresos-compartidos-socialmente-responsable.html" target="blank">Plan Circular Fundación Universia | Bootcamp for all</a> en el que pagas tu formación en pequeñas cuotas mensuales, sin intereses, solo si consigues trabajo y siempre que ganes más de 18.000 euros brutos anuales.
 
-En cualquier caso aquí tienes una la lista de los cursos gratis que me parecen más interesantes.
+En cualquier caso aquí tienes una la lista de los cursos online gratis que me parecen más interesantes.
 
 ## Bootcamps completos
 
