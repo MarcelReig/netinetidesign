@@ -3,6 +3,7 @@
 /* Sticky footer 
   Requirement: The footer must not have margin
 */
+
 $(document).ready(function () {
   function stickyFooter() {
     var $footer = $(".l-footer");

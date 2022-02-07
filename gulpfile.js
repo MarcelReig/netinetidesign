@@ -17,7 +17,7 @@
 
 // Define variables
 const gulp = require("gulp");
-const sass = require("gulp-sass");
+const sass = require("gulp-sass")(require("sass"));
 const uglify = require("gulp-uglify");
 const pump = require("pump");
 const order = require("gulp-order");
@@ -26,7 +26,6 @@ const autoprefixer = require("gulp-autoprefixer");
 const shell = require("gulp-shell");
 const browserSync = require("browser-sync").create();
 const gutil = require("gulp-util");
-const imagemin = require("gulp-imagemin");
 const del = require("del");
 const cache = require("gulp-cache");
 const newer = require("gulp-newer");
@@ -183,37 +182,9 @@ function build_scripts(done) {
 
 function build_images() {
   // Construcción JEKYLL
-  return (
-    gulp
-      .src("./_assets/images/**/*.+(jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG|ico)")
-      // Caching images that ran through imagemin
-      .pipe(
-        cache(
-          imagemin([
-            imagemin.gifsicle({
-              interlaced: true,
-            }),
-            imagemin.mozjpeg({
-              progressive: true,
-            }),
-            imagemin.optipng({
-              optimizationLevel: 5,
-            }),
-            imagemin.svgo({
-              plugins: [
-                {
-                  removeViewBox: true,
-                },
-                {
-                  cleanupIDs: false,
-                },
-              ],
-            }),
-          ])
-        )
-      )
-      .pipe(gulp.dest("./assets/images"))
-  );
+  return gulp
+    .src("./_assets/images/**/*.+(jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG|ico)")
+    .pipe(gulp.dest("./assets/images"));
 }
 // WATCH : Actualización
 function sync_images() {
