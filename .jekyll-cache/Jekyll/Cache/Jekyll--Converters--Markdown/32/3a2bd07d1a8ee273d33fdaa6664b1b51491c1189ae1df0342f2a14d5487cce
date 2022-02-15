@@ -1,0 +1,74 @@
+I"�<h3 id="ajuste-automático-de-línea-en-vscode">Ajuste automático de línea en VSCode</h3>
+
+<p>Si no quieres que el código se extienda horizontalmente fuera del espacio disponible y te aparezca el scroll horizontal.</p>
+
+<p><em>Tienes varias opciones:</em></p>
+
+<ol>
+  <li>
+    <p>Atajo de teclado <kbd>alt + z</kbd></p>
+  </li>
+  <li>
+    <p>Desde el menú superior ver <code class="language-plaintext highlighter-rouge">Alternar ajuste automático de línea</code>.</p>
+  </li>
+  <li>
+    <p>Configurar desde settings Editor: <code class="language-plaintext highlighter-rouge">Word Wrap</code></p>
+  </li>
+</ol>
+
+<h3 id="abrir-terminal-integrado-en-vscode">Abrir terminal integrado en VSCode</h3>
+
+<p><em>Tienes 3 opciones:</em></p>
+
+<ol>
+  <li>El atajo de teclado: <kbd>ctrl +  `</kbd></li>
+  <li>Menú superior Ver Terminal integrado</li>
+  <li>Abrir la paleta de comandos con <kbd>Shift + cmd + P</kbd> Y seleccionar Ver: <code class="language-plaintext highlighter-rouge">Alternar terminal integrado</code></li>
+</ol>
+
+<h3 id="abrir-visual-studio-code-desde-la-terminal">Abrir Visual Studio Code desde la terminal</h3>
+
+<p><em>Primero tienes que añadir esto al path:</em></p>
+
+<p>Abre la paleta de comandos de VS Code <kbd>⇧⌘P</kbd> y escribe <kbd>shell command</kbd> para que te aparezca la opción Install <code class="language-plaintext highlighter-rouge">code command in PATH</code> , seleccionala.</p>
+
+<p>A partir de ahora puedes abrir VS Code desde cualquier ubicación con la terminal solo escribiendo: <kbd>code</kbd></p>
+
+<p>Para abrir el archivo o carpeta desde tu ubicación en la terminal añade un espacio y un punto detrás: <kbd>code .</kbd></p>
+
+<h3 id="edición-multilínea-vertical-en-vscode">Edición multilínea vertical en VSCode</h3>
+
+<p>Para Insertar cursores arriba y abajo de la línea actual
+Te situas con el cursor donde quieres empezar la selección y después utilizas:<br /> <kbd>⌥ alt + ⌘ command + ⇅ teclas de dirección</kbd> para seleccionar las coincidencias que quieras. <kbd>esc</kbd> para volver a un solo cursor.</p>
+
+<h3 id="seleccionar-coincidencias">Seleccionar coincidencias</h3>
+<p>Selecionas con el cursor los carácteres sobre los que quieres buscar coincidencias y pulsas: <br /><kbd>⌘ command + D</kbd> para cada coincidencia que quieras seleccionar.</p>
+
+<h3 id="vista-previa-de-markdown">Vista previa de Markdown</h3>
+
+<p>Para mostrar una vista previa del archivo md que estás editando pulsa: <br /> <kbd>Shift + ⌘ + V</kbd>.</p>
+
+<h3 id="abrir-directorio-de-archivos-actual">Abrir directorio de archivos actual</h3>
+<p>Este atajo es demasiado útil, te evita tener que utilizar el Finder para navegar hasta la carpeta de tu proyecto.<br />
+<kbd>⌘ + o</kbd></p>
+
+<h3 id="navegador-de-archivos">Navegador de archivos</h3>
+<p>Para encontrar facilmente archivos dentro del directorio de trabajo pulsa: <br />
+<kbd>⌘ + p</kbd></p>
+
+<h3 id="mover-el-cursor-al-final-de-la-línea-en-vscode">Mover el cursor al final de la línea en VSCode</h3>
+
+<p>Pulsa <kbd>⌘ + teclas de dirección </kbd> para mover el cursor rápidamente en Visual Studio Code.</p>
+
+<h3 id="moverse-entre-pestañas-abiertas-en-vscode">Moverse entre pestañas abiertas en VSCode</h3>
+
+<p>Pulsa <kbd>alt + ⌘ command + teclas de dirección</kbd></p>
+
+<h3 id="ocultarmostrar-el-sidebar-o-explorador-de-archivos-de-vscode">Ocultar/Mostrar el Sidebar o explorador de archivos de VSCode</h3>
+
+<p>Pulsa <kbd>⌘ command + B</kbd></p>
+
+<h3 id="insertar-múltiples-cursores">Insertar múltiples cursores</h3>
+
+<p><kbd>⌥ + Click</kbd></p>
+:ET
