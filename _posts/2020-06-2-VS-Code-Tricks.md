@@ -156,5 +156,7 @@ También permite editar los atajos a tu gusto.
 ### Tipografías bonitas para programar
 
 - [JetBrains Mono](https://www.jetbrains.com/es-es/lp/mono/){:target="_blank"}
+
 - [Dank Mono](https://philpl.gumroad.com/l/dank-mono){:target="_blank"}
+
 - [MonoLisa](https://www.monolisa.dev/){:target="_blank"}
