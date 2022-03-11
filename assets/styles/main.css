@@ -29907,6 +29907,7 @@ ul.social-links,
   .landing-text {
     text-align: right;
     padding: 0;
+    max-width: 400px;
   }
 }
 .img-circle {
