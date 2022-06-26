@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bootcamps de Programación online Gratis o becados en 2022
-description: Bootcamps de Programación Gratis en 2022
+title: Recursos para aprender programación en 2022
+description: Recursos para aprender programación en 2022
 comments: true
 tags: javascript python
 category: programacion
@@ -10,15 +10,23 @@ image: open-bootcamp.jpeg
 
 {:.lead.my-5}
 
-Esto no es contenido promocionado, solo información real del Bootcamp que estoy cursando, lo que era mi segunda opción y una lista de cursos que me parecen interesantes si como yo estás aprendiendo a programar y no puedes o no quieres hacer la inversión que supone un Bootcamp.
-
-Actualmente estoy cursando el Bootcamp <a href="https://bottega.tech/" target="blank">Bottega</a> gracias a una beca para personas con discapacidad de la <a href="https://fundacionadecco.org/" target="_blank">fundación adecco</a>.
+En Mayo 2022 finalizé el Bootcamp Fullstack en <a href="https://bottega.tech/" target="blank">Bottega</a> el cual puede disfrutar gracias a una beca para personas con discapacidad de la <a href="https://fundacionadecco.org/" target="_blank">fundación adecco</a>.
 
 Si tienes una discapacidad, estás en situación de riesgo de exclusión o tienes más de 45 años, aquí puedes consultar las <a href="https://fundacionadecco.org/becas-y-ayudas/personas-discapacidad/" target="_blank"> becas fundación adecco</a> para este año.
 
-Si no me hubieran concedido la beca en adecco, mi segunda opción era el <a href="https://www.fundacionuniversia.net/es/empleabilidad/plan-circular/acuerdo-ingresos-compartidos-socialmente-responsable.html" target="blank">Plan Circular Fundación Universia | Bootcamp for all</a> en el que pagas tu formación en pequeñas cuotas mensuales, sin intereses, solo si consigues trabajo y siempre que ganes más de 18.000 euros brutos anuales.
+Mi segunda opción era el <a href="https://www.fundacionuniversia.net/es/empleabilidad/plan-circular/acuerdo-ingresos-compartidos-socialmente-responsable.html" target="blank">Plan Circular Fundación Universia | Bootcamp for all</a> en el cual pagas tu formación en pequeñas cuotas mensuales, sin intereses, solo si consigues trabajo y siempre que ganes más de 18.000 euros brutos anuales.
 
-En cualquier caso aquí tienes una la lista de los cursos online gratis que me parecen más interesantes.
+Hoy en día existe una gran cantidad de recursos gratuitos para aprender programación, necesitarás grandes dosis de motivación, organización y constancia para aprender de forma autodidacta pero definitivamente es posible y es una vía tan valida como cualquier otra.
+
+<img src="{{ site.baseurl }}/assets/images/blog/meme.jpg" width="400" class="img-fluid text-center m-xl-auto" alt="meme programming">
+
+Aquí tienes una la lista con los recursos de programación online gratuitos que me han parecido más interesantes para este 2022.
+
+
+## Orientación 
+
+Antes de empezar, para hacerte una idea de lo que vas a tener que aprender según el perfil que escojas te recomiendo hechar un ojo a [roadmap.sh](https://roadmap.sh/){:target="_blank"}.
+
 
 ## Bootcamps completos
 
@@ -104,7 +112,7 @@ Muchos Bootcamps ofrecen leciones gratis para que pruebes la plataforma, su mane
   </li>
 </ul>
 
-## Otros Cursos introductorios
+## Cursos introductorios
 
 - [interneting is hard](https://www.internetingishard.com/){:target="_blank"}
 
