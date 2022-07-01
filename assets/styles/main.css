@@ -29783,7 +29783,6 @@ ul.social-links,
 .about-left {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   width: 100%;
   height: -webkit-fit-content;
