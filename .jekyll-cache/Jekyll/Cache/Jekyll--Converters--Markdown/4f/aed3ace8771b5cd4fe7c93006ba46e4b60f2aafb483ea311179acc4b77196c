@@ -1,0 +1,52 @@
+I"�<p>Ver la versión actual de node:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>node <span class="nt">-v</span>
+</code></pre></div></div>
+
+<p>Instalar dependencias de desarrollo:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm <span class="nb">install </span>nombre_paquete <span class="nt">-D</span><span class="sb">`</span>
+
+O versión extendida:
+
+<span class="sb">`</span><span class="nv">$ </span>npm <span class="nb">install </span>nombre_paquete <span class="nt">--save-dev</span><span class="sb">`</span>
+
+Comprobar si existen versiones más actuales de los paquetes instalados:
+
+<span class="sb">`</span><span class="nv">$ </span>npm outdate<span class="sb">`</span>
+
+Actualizar todos los paquetes:
+
+<span class="sb">`</span><span class="nv">$ </span>npm update<span class="sb">`</span>
+
+Actualizar solo el paquete nombrado:
+
+<span class="sb">`</span><span class="nv">$ </span>npm update nombre_paquete<span class="sb">`</span>
+
+Desinstalar el paquete nombrado:
+
+<span class="sb">`</span><span class="nv">$ </span>npm uninstall nombre_paquete<span class="sb">`</span>
+
+Revisar vulnerabilidades de seguridad:
+
+<span class="sb">`</span><span class="nv">$ </span>npm audit<span class="sb">`</span>
+
+Corregir vulnerabilidades de seguridad:
+
+<span class="sb">`</span><span class="nv">$ </span>npm audit fix<span class="sb">`</span>
+
+Actualizar npm globalmente a la última versión:
+
+<span class="sb">`</span><span class="nv">$ </span>npm <span class="nb">install </span>npm@latest <span class="nt">-g</span><span class="sb">`</span>
+
+Eliminar node_modules de tu proyecto y volver a instalar las dependencias de nuevo:
+
+<span class="sb">```</span>shell
+<span class="nv">$ </span><span class="nb">rm</span> <span class="nt">-rf</span> node_modules
+<span class="nv">$ </span><span class="nb">rm</span> <span class="nt">-rf</span> package-lock.json
+<span class="nv">$ </span>npm cache clean <span class="nt">-f</span>
+<span class="nv">$ </span>npm <span class="nb">install</span>
+</code></pre></div></div>
+
+<p><a href="https://www.npmjs.com/">npm</a> sitio oficial.</p>
+:ET

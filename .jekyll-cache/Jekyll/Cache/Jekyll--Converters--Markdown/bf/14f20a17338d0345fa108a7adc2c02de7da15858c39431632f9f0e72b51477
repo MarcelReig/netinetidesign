@@ -1,0 +1,130 @@
+I"8<p>Iniciar un repositorio local desde un projecto existente:</p>
+
+<!-- more -->
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git init
+</code></pre></div></div>
+
+<p>Añadir todos los archivos:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git add —all
+</code></pre></div></div>
+
+<p>Lo que es lo mismo que:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git add <span class="nb">.</span>
+</code></pre></div></div>
+
+<p>Subir los archivos a un repositorio remoto:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git commit <span class="nt">-m</span> “primer commit”
+</code></pre></div></div>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git push <span class="nt">-u</span> origin master
+</code></pre></div></div>
+
+<p>Crear una nueva rama de Git en local y cambiar a esa rama:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git checkout <span class="nt">-b</span> <span class="o">[</span>nombre_de_la_rama]
+</code></pre></div></div>
+
+<p>Esto es solo un atajo para:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git branch <span class="o">[</span>nombre_de_la_rama]
+</code></pre></div></div>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git checkout <span class="o">[</span>nombre_de_la_rama]
+</code></pre></div></div>
+
+<p>Cambiar a una rama:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git checkout <span class="o">[</span>nombre_de_la_rama]
+</code></pre></div></div>
+
+<p>Ver el estado de la rama:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git status
+</code></pre></div></div>
+
+<p>Mostrar la ramas locales:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git branch
+</code></pre></div></div>
+
+<p>Mostrar las ramas locales y remotas:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git branch <span class="nt">--all</span>
+</code></pre></div></div>
+
+<p>Una vez finalizado tus cambios en una rama para unir a master:</p>
+
+<p>Nos situamos en master</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git checkout master
+</code></pre></div></div>
+
+<p>Solo necesario si hay cambios en origin</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git pull origin master
+</code></pre></div></div>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git merge <span class="o">[</span>nombre_de_la_rama]
+</code></pre></div></div>
+
+<p>Subimos los cambios a nuestro repositorio remoto</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git push origin master
+</code></pre></div></div>
+
+<p>Ver el historial:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git log
+</code></pre></div></div>
+
+<p>Para salir de la pantalla de git log inserta: q</p>
+
+<p>Cambiar el “origin” de un repositorio Git</p>
+
+<p>Ver el origin actual:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git remote <span class="nt">-v</span>
+</code></pre></div></div>
+
+<p>Te mostrará algo así:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>origin  https://Netinetidesign@bitbucket.org/yuraksisa/mybooking_theme_foundation_6.git <span class="o">(</span>fetch<span class="o">)</span>
+origin  https://Netinetidesign@bitbucket.org/yuraksisa/mybooking_theme_foundation_6.git <span class="o">(</span>push<span class="o">)</span>
+</code></pre></div></div>
+
+<p>Eliminar el origin actual y añadir uno nuevo:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git remote <span class="nb">rm </span>origin
+</code></pre></div></div>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git remote add origin https://Netinetidesign@bitbucket.org/Netinetidesign/mybooking-theme-nautic.git
+</code></pre></div></div>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git push <span class="nt">-u</span> origin master
+</code></pre></div></div>
+
+<p>Para eliminar Git de un proyecto, desde la carpeta del proyecto:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">rm</span> <span class="nt">-rf</span> .git
+</code></pre></div></div>
+
+<p>Eliminar node_modules de tu repositorio local y remoto: 
+Primero añade node_modules a .gitignore, después ejecuta lo siguiente:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git <span class="nb">rm</span> <span class="nt">-r</span> <span class="nt">--cached</span> node_modules
+</code></pre></div></div>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git commit <span class="nt">-m</span> <span class="s1">'Remove the now ignored directory node_modules'</span>
+</code></pre></div></div>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git push origin master
+</code></pre></div></div>
+
+<p>Bajar todas las nuevas ramas del repositorio remoto:</p>
+
+<p>$ git clone url-repositorio`</p>
+:ET

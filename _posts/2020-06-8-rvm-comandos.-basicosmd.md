@@ -10,44 +10,64 @@ image: rvm.png
 
 Listar versiones de ruby instaladas:
 
-`$ rvm list`
+```sh
+$ rvm list
+```
 
 listar versiones de ruby disponibles para instalar:
 
-`$ rvm list known`
+```sh
+$ rvm list known
+```
 
 Instalar la última versión: 
 
-`rvm install ruby@latest`
+```sh
+$ rvm install ruby@latest
+```
 
 Instalar cualquier versión de ruby:
 
-`$ rvm install <version>`
+```sh
+$ rvm install <version>
+```
 
 Utilizar una versión de ruby que tengas instalada:
 
-`$ rvm use <version>`
+```sh
+$ rvm use <version>
+```
 
 Eliminar una versión de ruby:
 
-`$ rvm remove <version>`
+```sh
+$ rvm remove <version>
+```
 
 Actualizar rvm a la versión estable:
 
-`$ rvm get stable`
+```sh
+$ rvm get stable
+```
 
 ### Manejo de gemas con los gemsets
 
 Listar los gemsets disponibles:
 
-`$ rvm gemset list`
+```sh
+$ rvm gemset list
+```
 
 Crear un nuevo gemset:
 
-`$ rvm use <ruby version>@<gemset name> --create`
+```sh
+$ rvm use <ruby version>@<gemset name> --create
+```
 
 Utilizar un gemset:
 
-`$ rvm use <ruby version>@<gemset name>`
+```sh
+$ rvm use <ruby version>@<gemset name>
+```
 
 [rvm](https://rvm.io/) sitio oficial.
