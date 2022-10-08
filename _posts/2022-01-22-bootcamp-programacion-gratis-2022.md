@@ -99,10 +99,8 @@ Antes de empezar, para hacerte una idea de lo que vas a tener que aprender segú
     </div>
   </li>
 </ul>
-
-## Bootcamp cursos introductorios
-
-Muchos Bootcamps ofrecen leciones gratis para que pruebes la plataforma, su manera de enseñar y te prepares para hacer sus cursos.
+<hr>
+Muchos Bootcamps ofrecen leciones gratis para que pruebes la plataforma, su manera de enseñar y te prepares para hacer sus cursos, aquí tienes dos ejemplos.
 
 <ul class="list-unstyled">
     <li class="media">
@@ -121,14 +119,15 @@ Muchos Bootcamps ofrecen leciones gratis para que pruebes la plataforma, su mane
     </div>
   </li>
 </ul>
+<hr>
 
-## Cursos introductorios
+Otros cursos introductorios que me han parecido interesantes.
 
 - [interneting is hard](https://www.internetingishard.com/){:target="\_blank"}
 
 - [Dont Fear the Internet](http://www.dontfeartheinternet.com/){:target="\_blank"}
 
-## Practicas de programación
+Practicas de programación.
 
 - [codewars](https://www.codewars.com/){:target="\_blank"}
 
