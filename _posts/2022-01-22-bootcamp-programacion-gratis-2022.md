@@ -10,11 +10,9 @@ image: open-bootcamp.jpeg
 
 {:.lead.my-5}
 
-En Mayo 2022 finalizé el Bootcamp Fullstack en <a href="https://bottega.tech/" target="blank">Bottega</a> el cual puede disfrutar gracias a una beca para personas con discapacidad de la <a href="https://fundacionadecco.org/" target="_blank">fundación adecco</a>.
+En Mayo 2022 finalizé el Bootcamp Fullstack en <a href="https://bottega.tech/" target="blank">Bottega</a>, el cual puede disfrutar gracias a una beca para personas con discapacidad de la <a href="https://fundacionadecco.org/" target="_blank">fundación adecco</a>.
 
-Si tienes una discapacidad, estás en situación de riesgo de exclusión o tienes más de 45 años, aquí puedes consultar las <a href="https://fundacionadecco.org/becas-y-ayudas/personas-discapacidad/" target="_blank"> becas fundación adecco</a> para este año.
-
-Mi segunda opción era el <a href="https://www.fundacionuniversia.net/es/empleabilidad/plan-circular/acuerdo-ingresos-compartidos-socialmente-responsable.html" target="blank">Plan Circular Fundación Universia | Bootcamp for all</a> en el cual pagas tu formación en pequeñas cuotas mensuales, sin intereses, solo si consigues trabajo y siempre que ganes más de 18.000 euros brutos anuales.
+Mi segunda opción era el <a href="https://www.fundacionuniversia.net/es/empleabilidad/plan-circular/acuerdo-ingresos-compartidos-socialmente-responsable.html" target="blank">Plan Circular Fundación Universia | Bootcamp for all</a>, en el cual pagas tu formación en pequeñas cuotas mensuales, sin intereses, solo si consigues trabajo y siempre que ganes más de 18.000€ brutos anuales.
 
 Hoy en día existe una gran cantidad de recursos gratuitos para aprender programación, necesitarás grandes dosis de motivación, organización y constancia para aprender de forma autodidacta pero definitivamente es posible y es una vía tan valida como cualquier otra.
 
@@ -22,13 +20,7 @@ Hoy en día existe una gran cantidad de recursos gratuitos para aprender program
 
 Aquí tienes una la lista con los recursos de programación online gratuitos que me han parecido más interesantes para este 2022.
 
-
-## Orientación 
-
-Antes de empezar, para hacerte una idea de lo que vas a tener que aprender según el perfil que escojas te recomiendo hechar un ojo a [roadmap.sh](https://roadmap.sh/){:target="_blank"}.
-
-
-## Bootcamps completos
+Antes de empezar, para hacerte una idea de lo que vas a tener que aprender según el perfil que escojas te recomiendo hechar un ojo a [roadmap.sh](https://roadmap.sh/){:target="\_blank"}, se trata de una seríe de guías visuales de las tecnologías implicadas según la especialización que escojas.
 
 <ul class="list-unstyled">
   <li class="media">
@@ -46,6 +38,7 @@ Antes de empezar, para hacerte una idea de lo que vas a tener que aprender segú
       </ul>
     </div>
   </li>
+    <hr>
   <li class="media">
     <img src="{{ site.baseurl }}/assets/images/blog/freecodecamp.png" width="200" class="img-fluid mr-3 mb-3" alt="FreeCodeCamp">
     <div class="media-body">
@@ -58,6 +51,7 @@ Antes de empezar, para hacerte una idea de lo que vas a tener que aprender segú
       </ul>
     </div>
   </li>
+    <hr>
   <li class="media my-4">
     <img src="{{ site.baseurl }}/assets/images/blog/theodinproject.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="The Odin Project">
     <div class="media-body">
@@ -71,6 +65,7 @@ Antes de empezar, para hacerte una idea de lo que vas a tener que aprender segú
       </ul>
     </div>
   </li>
+    <hr>
     <li class="media">
     <img src="{{ site.baseurl }}/assets/images/blog/appacademy.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021">
     <div class="media-body">
@@ -82,11 +77,25 @@ Antes de empezar, para hacerte una idea de lo que vas a tener que aprender segú
       </ul>
     </div>
   </li>
+    <hr>
   <li class="media">
     <img src="{{ site.baseurl }}/assets/images/blog/cs50x.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021">
     <div class="media-body">
-    <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x" target="_blank"><h5 class="mt-0 mb-1">CS50x</h5></a>
-      <p>Curso gratis de la Universidad de Harvard.</p>
+    <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0" target="_blank"><h5 class="mt-0 mb-1">CS50x</h5></a>
+      <p>Introducción a las ciencias de la computación.</p>
+      <ul>
+        <li>Primer acercamiento a la programación</li>
+        <li>Algoritmos y abstracción</li>
+        <li>Desarrollo web e ingeniería del software</li>
+      </ul>
+    </div>
+  </li>
+  <hr>
+    <li class="media">
+    <img src="{{ site.baseurl }}/assets/images/blog/BootcampLogo.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Bootcamp gratis de Frontend Masters">
+    <div class="media-body">
+    <a href="https://frontendmasters.com/bootcamp/" target="_blank"><h5 class="mt-0 mb-1">Frontend Masters</h5></a>
+      <p>Bootcamp gratis de Frontend Masters.</p>
     </div>
   </li>
 </ul>
@@ -103,6 +112,7 @@ Muchos Bootcamps ofrecen leciones gratis para que pruebes la plataforma, su mane
       <p>Lecciones gratis de Flatiron School.</p>
     </div>
   </li>
+  <hr>
       <li class="media">
     <img src="{{ site.baseurl }}/assets/images/blog/hack_reactor.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021">
     <div class="media-body">
@@ -114,15 +124,12 @@ Muchos Bootcamps ofrecen leciones gratis para que pruebes la plataforma, su mane
 
 ## Cursos introductorios
 
-- [interneting is hard](https://www.internetingishard.com/){:target="_blank"}
+- [interneting is hard](https://www.internetingishard.com/){:target="\_blank"}
 
-- [Dont Fear the Internet](http://www.dontfeartheinternet.com/){:target="_blank"}
-
-- [Frontend Masters Bootcamp](https://frontendmasters.com/bootcamp/){:target="_blank"}
+- [Dont Fear the Internet](http://www.dontfeartheinternet.com/){:target="\_blank"}
 
 ## Practicas de programación
 
-- [codewars](https://www.codewars.com/){:target="_blank"}
+- [codewars](https://www.codewars.com/){:target="\_blank"}
 
-- [exercism](https://exercism.org/){:target="_blank"}
-
+- [exercism](https://exercism.org/){:target="\_blank"}
