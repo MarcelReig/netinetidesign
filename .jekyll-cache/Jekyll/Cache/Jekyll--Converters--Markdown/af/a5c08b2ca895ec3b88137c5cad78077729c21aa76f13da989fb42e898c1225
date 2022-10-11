@@ -1,0 +1,397 @@
+I"�N<h3 class="lead" id="python-es-un-lenguaje-de-propósito-general-y-multiparadigma-con-una-sintaxis-limpia-y-sencilla-por-lo-que-es-una-buena-elección-para-aprender-a-programar">Python es un lenguaje de propósito general y multiparadigma con una sintaxis limpia y sencilla, por lo que es una buena elección para aprender a programar.</h3>
+
+<h3 class="lead" id="python-fue-creado-en-los-90-por-guido-van-rossum-su-nombre-viene-de-los-humoristas-britanicos-monty-python">Python fue creado en los 90 por <a href="https://twitter.com/gvanrossum?s=20" target="\_blank">Guido van Rossum</a>, su nombre viene de los humoristas britanicos Monty Python.</h3>
+
+<h3 class="lead my-5" id="así-como-ruby-cuenta-con-los-frameworks-ruby-on-rails-y-sinatra-en-python-tienes--django-y-flask-para-crear-aplicaciones-web">Así como Ruby cuenta con los frameworks Ruby on Rails y Sinatra, en Python tienes  <a href="https://www.djangoproject.com/" target="\_blank">django</a> y <a href="https://flask.palletsprojects.com/en/2.0.x/" target="\_blank">Flask</a> para crear aplicaciones web.</h3>
+
+<h2 id="qué-podemos-hacer-con-python">¿Qué podemos hacer con Python?</h2>
+
+<ul>
+  <li>Aplicaciones de escritorio</li>
+  <li>Aplicaciones web</li>
+  <li>Ciencia de datos</li>
+  <li>Administración de servidores</li>
+  <li>Seguridad y pentesting</li>
+  <li>Procesamiento textos (NLP)</li>
+  <li>Visión artificial</li>
+  <li>Machine Learning</li>
+  <li>Videojuegos</li>
+  <li>Aplicaciones Backend</li>
+</ul>
+
+<h2 id="empezar-a-programar-en-python">Empezar a programar en Python</h2>
+
+<h3 id="sin-instalación">Sin instalación</h3>
+
+<p>La manera más fácil de probar el lenguaje es utilizar <a href="https://replit.com/" target="\_blank">replit</a> o <a href="https://www.anyfiddle.com/">anyfidle</a>, son herramientas tipo codepen pero que te permiten programar en Python.</p>
+
+<div class="browser my-5">
+<img src="/assets/images/blog/replit.jpeg" width="800" class="img-fluid text-center m-xl-auto" alt="replit" />
+</div>
+
+<h3 id="con-instalación">Con instalación</h3>
+
+<p>Las herraminetas mencionadas anteriormente están bién para probar el lenguaje, pero si quieres hacer algo serio, tarde o temprano tendrás que instalar Python en tu computadora.</p>
+
+<p>Para instalar Python ves a <a href="https://www.python.org/" target="\_blank">python.org</a> y descarga la versión de Python para tu sistema operativo.</p>
+
+<div class="alert alert-info" role="alert">
+<p><i class="fas fa-sticky-note"></i> Nota:</p>
+<p>Para instalar Python en Mac te recomiendo seguir el <a href="https://www.freecodecamp.org/news/python-version-on-mac-update/" target="_blank">tutorial de Quincy Larson</a> en freeCodeCamp.</p>
+</div>
+
+<p>Una vez instalado Python en tu computadora ya puedes abrir la terminal y escribir <code class="language-plaintext highlighter-rouge">python3</code>, esto te abrirá un interprete de Python en el que ya puedes empezar a ejecutar funciones de Python detrás de los tres símbolos <code>&gt;&gt;&gt;</code><br /></p>
+
+<p><img src="/assets/images/blog/python-term.png" width="800" class="img-fluid text-center m-xl-auto" alt="python" /></p>
+
+<div class="alert alert-info" role="alert">
+ <p><i class="fas fa-sticky-note"></i> Nota:</p>
+<p>Si quieres código coloreado y que te avise de errores instala un editor de código.</p>
+</div>
+
+<h2 id="entorno-de-programación-en-python">Entorno de programación en Python</h2>
+
+<p><strong>Editores recomendados:</strong></p>
+
+<ul>
+  <li>
+    <p><a href="https://www.jetbrains.com/es-es/pycharm/download/" target="\_blank">PyCharm</a>, la versión <strong>Community</strong> es gratuita y para empezar es más que suficiente.</p>
+  </li>
+  <li>
+    <p><a href="https://code.visualstudio.com/" target="\_blank">Visual Studio Code</a> con la <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python" target="\_blank">extensión para Python</a>.</p>
+  </li>
+</ul>
+
+<h2 id="características-principales-del-lenguaje">Características principales del lenguaje</h2>
+
+<ul>
+  <li>Es un <strong>lenguaje interpretado</strong>, no compilado.</li>
+  <li>Usa <strong>tipado dinámico</strong>, una variable puede tomar valores de distinto tipo.</li>
+  <li>Es <strong>fuertemente tipado</strong>, el tipo no cambia de manera repentina. Para que se produzca un cambio de tipo se tiene que hacer una conversión explícita.</li>
+  <li>Es <strong>multiplataforma</strong>, el mismo código funciona en macOS, Windows y Linux.</li>
+</ul>
+
+<h2 id="indentación">Indentación</h2>
+
+<p>Python utiliza la indentación para indicar el inicio y fín de un bloque de código.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">saludar</span><span class="p">(</span><span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">):</span>
+    <span class="k">return</span><span class="p">(</span><span class="s">"Hi "</span> <span class="o">+</span> <span class="n">first_name</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">last_name</span> <span class="o">+</span> <span class="s">"!"</span><span class="p">)</span> <span class="c1"># código indentado
+</span><span class="k">print</span><span class="p">(</span><span class="n">saludar</span><span class="p">(</span><span class="s">"Ana"</span><span class="p">,</span> <span class="s">"Toledo"</span><span class="p">))</span>
+</code></pre></div></div>
+
+<h2 id="comentarios">Comentarios</h2>
+<p>Comentario de una línea.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Hola soy un comentario
+</span></code></pre></div></div>
+
+<p>Los comentarios de varias líneas se hacen con 3 comillas dobles o simples al inicio y al final del comentario.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">"""
+Comentario
+de varias
+líneas
+"""</span>
+</code></pre></div></div>
+
+<div class="alert alert-info" role="alert">
+ <p><i class="fas fa-sticky-note"></i> Nota:</p>
+<p>En los siguientes ejemplos utilizaré <code># Comentarios de Python</code> para mostrar el resultado de la consola u otras aclaraciones.</p>
+</div>
+
+<h2 id="variables-en-python">Variables en Python</h2>
+
+<p>Las variables nos permiten guardar valores que más tarde podemos utilizar en nuestro código.
+Las variables pueden guardar cualquier tipo de dato, enteros, flotantes, booleanos y cadenas o Strings, también podemos guardar listas y tuplas.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># variable que contiene un string
+</span><span class="n">mascota</span> <span class="o">=</span> <span class="s">"Gato"</span>
+<span class="c1"># variable que contiene un booleano
+</span><span class="n">raza_peligrosa</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="c1"># variable que contiene un número entero
+</span><span class="n">edad</span> <span class="o">=</span> <span class="mi">2</span>
+</code></pre></div></div>
+
+<h2 id="tipos-de-datos-en-python">Tipos de datos en Python</h2>
+
+<ul>
+  <li>Booleanos <em>(bool)</em></li>
+  <li>Números <em>(int, float, complex)</em></li>
+  <li>Cadenas <em>(String)</em></li>
+  <li>Listas <em>(List)</em></li>
+  <li>Tuplas <em>(Tuple)</em></li>
+  <li>Diccionarios <em>(Dict)</em></li>
+  <li>set <em>(set)</em></li>
+</ul>
+
+<div class="alert alert-info" role="alert">
+ <p><i class="fas fa-sticky-note"></i> Nota:</p>
+<p>En Python existen dos tipos de datos los que se pueden modificar tras su creación <b>Mutables</b> y los que no, <b>Inmutables</b>.</p>
+</div>
+
+<p><strong>Mutables</strong> Se pueden modificar tras su creación.</p>
+<ul>
+  <li>Listas</li>
+  <li>Dicionarios</li>
+  <li>Sets</li>
+</ul>
+
+<p><strong>Inmutables</strong> No se pueden modificar tras su creación.</p>
+<ul>
+  <li>Booleanos</li>
+  <li>Números</li>
+  <li>Cadenas</li>
+  <li>Tuplas</li>
+</ul>
+
+<h2 id="números-en-python">Números en Python</h2>
+
+<p><strong>Enteros</strong> (<code class="language-plaintext highlighter-rouge">int</code>) números sin decimales, por ejemplo <code class="language-plaintext highlighter-rouge">500</code> o <code class="language-plaintext highlighter-rouge">-350</code>.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sumar_enteros</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">+</span> <span class="mi">5</span>
+<span class="k">print</span><span class="p">(</span><span class="n">sumar_enteros</span><span class="p">)</span>  <span class="c1"># Output: 10
+</span></code></pre></div></div>
+<p><strong>Números con decimales</strong> (<code class="language-plaintext highlighter-rouge">float</code>) por ejemplo <code class="language-plaintext highlighter-rouge">0.20</code> o <code class="language-plaintext highlighter-rouge">-34.000</code>.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sumar_decimales</span> <span class="o">=</span> <span class="mf">5.50</span> <span class="o">+</span> <span class="mf">0.8</span>
+<span class="k">print</span><span class="p">(</span><span class="n">sumar_decimales</span><span class="p">)</span>  <span class="c1"># Output: 6.3
+</span></code></pre></div></div>
+
+<h2 id="operadores-en-python">Operadores en Python</h2>
+
+<p>Los operadores son símbolos que le indican al intérprete que realice una operación específica, como aritmética, comparación, lógica, etc.</p>
+
+<h3 id="operadores-aritméticos">Operadores aritméticos</h3>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Operador </th>
+      <th scope="col">Descripción </th>
+      <th scope="col">Uso </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">+</th>
+      <td>Suma</td>
+      <td>5 + 5 = 10 </td>
+    </tr>
+    <tr>
+      <th scope="row">-</th>
+      <td>Resta</td>
+      <td>4 - 3 = 1</td>
+    </tr>
+    <tr>
+      <th scope="row">*</th>
+      <td>Multiplicación</td>
+      <td>8 * 2 = 16</td>
+    </tr>
+        <tr>
+      <th scope="row">/</th>
+      <td>División</td>
+      <td>16 / 2 = 8</td>
+    </tr>
+    <tr>
+      <th scope="row">%</th>
+      <td>Módulo</td>
+      <td>16 % 3 = 1</td>
+    </tr>
+    <tr>
+      <th scope="row">**</th>
+      <td>Exponente</td>
+      <td>12 ** 3 = 1728</td>
+    </tr>
+      <tr>
+      <th scope="row">//</th>
+      <td>División entera</td>
+      <td>18 // 5 = 3</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="operadores-condicionales">Operadores Condicionales</h3>
+
+<p>Los condicionales en programación se utilizan para elegir entre diferentes opciones dependiendo del valor de las variables.</p>
+
+<p>Con los condicionales en Python puedes construir cosas tan geniales como una pequeña calculadora.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">num1</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Introduce un número: "</span><span class="p">))</span>
+<span class="n">op</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Introduce un operador: "</span><span class="p">)</span>
+<span class="n">num2</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Introduce el segundo número: "</span><span class="p">))</span>
+
+<span class="k">if</span> <span class="n">op</span> <span class="o">==</span> <span class="s">'+'</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">op</span> <span class="o">==</span> <span class="s">'-'</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">num1</span> <span class="o">-</span> <span class="n">num2</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">op</span> <span class="o">==</span> <span class="s">'/'</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">num1</span> <span class="o">/</span> <span class="n">num2</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">op</span> <span class="o">==</span> <span class="s">'*'</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">num1</span> <span class="o">*</span> <span class="n">num2</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'Introduce un operador válido'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>En este ejemplo de uso de los condicionales solamente hemos utilizado el operador <code class="language-plaintext highlighter-rouge">==</code> de igualdad pero el resto de operadores condicionales te serán de gran utilidad enseguida.</p>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Operador </th>
+      <th scope="col">Descripción </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">==</th>
+      <td>Igualdad</td>
+    </tr>
+    <tr>
+      <th scope="row">!=</th>
+      <td>Desigualdad</td>
+    </tr>
+    <tr>
+      <th scope="row">&gt;</th>
+      <td>Mayor que</td>
+    </tr>
+        <tr>
+      <th scope="row">&gt;=</th>
+      <td>Mayor o igual a</td>
+    </tr>
+    <tr>
+      <th scope="row">&lt;</th>
+      <td>Menor o igual a</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Este condicional chequea que el usuario sea mayor de 21 años, si la condición no se cumple imprime un mensaje por pantalla.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">age</span> <span class="o">=</span> <span class="mi">18</span>
+
+<span class="k">if</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">21</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">f"Lo siento debes ser mayor de 21 años."</span><span class="p">)</span>
+
+<span class="c1"># Output: Lo siento debes ser mayor de 21 años.
+</span></code></pre></div></div>
+
+<h3 id="operadores-lógicos">Operadores lógicos</h3>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Operador </th>
+      <th scope="col">Descripción </th>
+      <th scope="col">Uso </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">or</th>
+      <td>Devuelve True si alguno de los operandos es True</td>
+      <td>a or b</td>
+    </tr>
+    <tr>
+      <th scope="row">and</th>
+      <td>Devuelve True si ambos operandos son True</td>
+      <td>a and b</td>
+    </tr>
+    <tr>
+      <th scope="row">not</th>
+      <td>Devuelve True si alguno de los operandos es False</td>
+      <td>not a</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="operadores-bit-a-bit">Operadores Bit a Bit</h3>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Operador </th>
+      <th scope="col">Descripción </th>
+      <th scope="col">Uso </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">&amp;</th>
+      <td>Devuelve True si alguno de los operandos es True</td>
+      <td>a or b</td>
+    </tr>
+    <tr>
+      <th scope="row">and</th>
+      <td>Devuelve True si ambos operandos son True</td>
+      <td>a and b</td>
+    </tr>
+    <tr>
+      <th scope="row">not</th>
+      <td>Devuelve True si alguno de los operandos es False</td>
+      <td>not a</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="iteraciones-o-loops-en-python">Iteraciones o loops en Python</h2>
+
+<p>Se utilizan para automatizar tareas repetitivas.</p>
+
+<p>Bucle <code class="language-plaintext highlighter-rouge">while</code> que imprime una cuenta atrás por pantalla.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">n</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="k">while</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span><span class="mi">1</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Lets go!'</span><span class="p">)</span>
+
+<span class="c1"># Output: 
+</span><span class="s">'''
+5
+4
+3
+2
+1
+Lets go!
+'''</span>
+</code></pre></div></div>
+
+<p>Bucle <code class="language-plaintext highlighter-rouge">for</code> que recorre una lista e imprime cada uno de sus ítems por pantalla:</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plants</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Poto'</span><span class="p">,</span> <span class="s">'Cintas'</span><span class="p">,</span> <span class="s">'Lirio'</span><span class="p">,</span> <span class="s">'Ficus'</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">plant</span> <span class="ow">in</span> <span class="n">plants</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">plant</span><span class="p">)</span>
+
+<span class="c1"># Output: 
+</span><span class="s">'''
+Poto
+Cintas
+Lirio
+Ficus
+'''</span>
+</code></pre></div></div>
+<h3 id="funciones-en-python">Funciones en Python</h3>
+
+<p>Las funciones en Python se crean mediante la instrucción <code class="language-plaintext highlighter-rouge">def</code> más el nombre de la función.
+Para invocar la función escribimos el nombre de la función más paréntesis y los parámetros de la función si los tiene.
+No todas las funciones tienen que tener parámetros.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">myfunc</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">+</span> <span class="n">z</span>
+    <span class="k">return</span> <span class="n">result</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">myfunc</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span> <span class="c1"># Output: 9
+</span></code></pre></div></div>
+
+<h3 id="funciones-lambda">Funciones lambda</h3>
+
+<p>Las funciones anonimas en Python se definen con <code class="language-plaintext highlighter-rouge">lambda</code>.</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result2</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">+</span> <span class="n">z</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">result2</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span> <span class="c1"># Output: 9
+</span></code></pre></div></div>
+
+:ET
