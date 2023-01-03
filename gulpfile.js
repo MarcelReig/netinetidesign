@@ -48,10 +48,8 @@ function build_fonts() {
 // Copy Fontawesome fonts into dist folder
 function fontawesome() {
   return gulp
-    .src(
-      "./node_modules/@fortawesome/fontawesome-free/webfonts/*.{woff,woff2,eot,svg,ttf}"
-    )
-    .pipe(gulp.dest("./assets/fonts"));
+    .src("./node_modules/@fortawesome/fontawesome-free/webfonts/*.{woff2,ttf}")
+    .pipe(gulp.dest("./assets/webfonts"));
 }
 
 // -----------------------------------------------------------------------------
@@ -116,8 +114,7 @@ function build_scripts(done) {
         "./_assets/scripts/**/*.js",
         "./node_modules/jquery/dist/jquery.min.js",
         "./node_modules/jquery-validation/dist/jquery.validate.js",
-        // "./node_modules/popper.js/dist/umd/popper.min.js",
-        // "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
         "./node_modules/masonry-layout/dist/masonry.pkgd.min.js",
         "./node_modules/magnific-popup/dist/jquery.magnific-popup.min.js",
       ]),
@@ -125,8 +122,7 @@ function build_scripts(done) {
         [
           "node_modules/jquery/dist/jquery.min.js",
           "node_modules/jquery-validation/dist/jquery.validate.js",
-          // "node_modules/popper.js/dist/umd/popper.min.js",
-          // "node_modules/bootstrap/dist/js/bootstrap.min.js",
+          "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
           "node_modules/masonry-layout/dist/masonry.pkgd.min.js",
           "node_modules/magnific-popup/dist/jquery.magnific-popup.min.js",
           "main.js",
