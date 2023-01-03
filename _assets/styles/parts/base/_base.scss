@@ -33,6 +33,7 @@ h6 {
 a,
 .btn-link {
   color: $brand-color;
+  text-decoration: none;
   &:hover {
     color: lighten($brand-color, 10%);
     text-decoration: none;

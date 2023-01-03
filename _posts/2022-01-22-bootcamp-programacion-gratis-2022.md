@@ -22,10 +22,11 @@ Aquí tienes una la lista con los recursos de programación online gratuitos que
 
 Antes de empezar, para hacerte una idea de lo que vas a tener que aprender según el perfil que escojas te recomiendo hechar un ojo a [roadmap.sh](https://roadmap.sh/){:target="\_blank"}, se trata de una seríe de guías visuales de las tecnologías implicadas según la especialización que escojas.
 
-<ul class="list-unstyled">
-  <li class="media">
+<div class="d-flex">
+  <div class="flex-shrink-0">
     <img src="{{ site.baseurl }}/assets/images/blog/fullstackopen.jpg" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021">
-    <div class="media-body">
+  </div>
+    <div class="lex-grow-1 ms-3">
     <a href="https://fullstackopen.com/es/" target="_blank"><h5 class="mt-0 mb-1">Fullstack Open 2021</h5></a>
       <p>Curso gratuito de la Universidad de Helsinki con licencia Creative Commons. Introducción al desarrollo de aplicaciones web modernas con JavaScript.</p>
        <ul>
@@ -37,11 +38,13 @@ Antes de empezar, para hacerte una idea de lo que vas a tener que aprender segú
         <li>TypeScript</li>
       </ul>
     </div>
-  </li>
-    <hr>
-  <li class="media">
+  </div>
+  <hr>
+  <div class="d-flex">
+   <div class="flex-shrink-0">
     <img src="{{ site.baseurl }}/assets/images/blog/freecodecamp.png" width="200" class="img-fluid mr-3 mb-3" alt="FreeCodeCamp">
-    <div class="media-body">
+    </div>
+    <div class="flex-grow-1 ms-3">
     <a href="https://www.freecodecamp.org/" target="_blank"><h5 class="mt-0 mb-1">Freecodecamp</h5></a>
       <p>Totalmente gratis, contenido de valor incalculable.</p>
       <ul>
@@ -50,37 +53,43 @@ Antes de empezar, para hacerte una idea de lo que vas a tener que aprender segú
         <li>Consta de más de 10 certificaciones de 300h cada una.</li>
       </ul>
     </div>
-  </li>
-    <hr>
-  <li class="media my-4">
+  </div>
+  <hr>
+   <div class="d-flex">
+    <div class="flex-shrink-0">
     <img src="{{ site.baseurl }}/assets/images/blog/theodinproject.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="The Odin Project">
-    <div class="media-body">
-    <a href="https://www.theodinproject.com/home" target="_blank"> <h5 class="mt-0 mb-1">The Odin Project</h5></a>
-      <p>Curso gratuito extenso de desarrollo web Full Stack</p>
-      <ul>
-      <li>Diseñado para principiantes</li>
-      <li>Fundamentos</li>
-      <li>JavaScript</li>
-      <li>Ruby On Rails</li>
-      </ul>
     </div>
-  </li>
-    <hr>
-    <li class="media">
+    <div class="flex-grow-1 ms-3">
+      <a href="https://www.theodinproject.com/home" target="_blank"> <h5 class="mt-0 mb-1">The Odin Project</h5></a>
+        <p>Curso gratuito extenso de desarrollo web Full Stack</p>
+        <ul>
+          <li>Diseñado para principiantes</li>
+          <li>Fundamentos</li>
+          <li>JavaScript</li>
+          <li>Ruby On Rails</li>
+        </ul>
+    </div>
+  </div>
+  <hr>
+  <div class="d-flex">
+  <div class="flex-shrink-0">
     <img src="{{ site.baseurl }}/assets/images/blog/appacademy.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021">
-    <div class="media-body">
+  </div>
+  <div class="flex-grow-1 ms-3">
     <a href="https://www.appacademy.io/course/app-academy-open" target="_blank"><h5 class="mt-0 mb-1">App Academy open</h5></a>
       <ul>
         <li>Aceso abierto al curso full-stack de App Academy.</li>
         <li>1500h de material</li>
         <li>De 12 a 16 meses</li>
       </ul>
-    </div>
-  </li>
-    <hr>
-  <li class="media">
+  </div>
+  </div>
+<hr>
+<div class="d-flex">
+  <div class="flex-shrink-0">
     <img src="{{ site.baseurl }}/assets/images/blog/cs50x.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021">
-    <div class="media-body">
+        </div>
+     <div class="flex-grow-1 ms-3">
     <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0" target="_blank"><h5 class="mt-0 mb-1">CS50x</h5></a>
       <p>Introducción a las ciencias de la computación.</p>
       <ul>
@@ -89,38 +98,41 @@ Antes de empezar, para hacerte una idea de lo que vas a tener que aprender segú
         <li>Desarrollo web e ingeniería del software</li>
       </ul>
     </div>
-  </li>
+    </div>
   <hr>
-    <li class="media">
+ <div class="d-flex">
+  <div class="flex-shrink-0">
     <img src="{{ site.baseurl }}/assets/images/blog/BootcampLogo.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Bootcamp gratis de Frontend Masters">
-    <div class="media-body">
+    </div>
+  <div class="flex-grow-1 ms-3">
     <a href="https://frontendmasters.com/bootcamp/" target="_blank"><h5 class="mt-0 mb-1">Frontend Masters</h5></a>
       <p>Bootcamp gratis de Frontend Masters.</p>
     </div>
-  </li>
-</ul>
-<hr>
-Muchos Bootcamps ofrecen leciones gratis para que pruebes la plataforma, su manera de enseñar y te prepares para hacer sus cursos, aquí tienes dos ejemplos.
 
-<ul class="list-unstyled">
-    <li class="media">
+</div>
+<hr>
+<p class="lead">Muchos Bootcamps ofrecen leciones gratis para que pruebes la plataforma, su manera de enseñar y te prepares para hacer sus cursos, aquí tienes dos ejemplos.</p>
+
+<div class="d-flex">
+  <div class="flex-shrink-0">
     <img src="{{ site.baseurl }}/assets/images/blog/flatiron.jpeg" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021">
-    <div class="media-body">
+    </div>
+  <div class="flex-grow-1 ms-3">
     <a href="https://flatironschool.com/learn-to-code-for-free/" target="_blank"><h5 class="mt-0 mb-1">Flatiron School intro Free Lessons</h5></a>
       <p>Lecciones gratis de Flatiron School.</p>
     </div>
-  </li>
+  </div>
   <hr>
-      <li class="media">
+ <div class="d-flex">
+  <div class="flex-shrink-0">
     <img src="{{ site.baseurl }}/assets/images/blog/hack_reactor.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021">
-    <div class="media-body">
+        </div>
+  <div class="flex-grow-1 ms-3">
     <a href="https://www.hackreactor.com/prep-programs" target="_blank"><h5 class="mt-0 mb-1">Hack Reactor</h5></a>
       <p>Curso preparatorio de Hack Reactor.</p>
     </div>
-  </li>
-</ul>
+</div>
 <hr>
-
 Otros cursos introductorios que me han parecido interesantes.
 
 - [interneting is hard](https://www.internetingishard.com/){:target="\_blank"}
