@@ -34446,11 +34446,11 @@ figure.highlight {
 }
 
 .brand-color {
-  color: #295fff;
+  color: #F44336;
 }
 
 .bg-brand-color {
-  background-color: #295fff;
+  background-color: #F44336;
 }
 
 .bg-color {
@@ -35149,12 +35149,12 @@ h6,
 
 a,
 .btn-link {
-  color: #295fff;
+  color: #F44336;
   text-decoration: none;
 }
 a:hover,
 .btn-link:hover {
-  color: #5c85ff;
+  color: #f77066;
   text-decoration: none;
 }
 
@@ -35182,7 +35182,7 @@ a:hover,
   transition: all 0.2s ease-in-out;
 }
 .post-list .post-link:hover h4, .post-list .post-link:hover .h4 {
-  color: #295fff;
+  color: #F44336;
 }
 
 .post-meta {
@@ -35320,11 +35320,11 @@ ul.social-links,
 }
 
 .social-links a {
-  color: #295fff;
+  color: #F44336;
   transition: ease-in-out 0.5ms;
 }
 .social-links a:hover {
-  color: #c2d1ff;
+  color: #fccbc7;
 }
 
 @media (min-width: 768px) {
@@ -35439,10 +35439,10 @@ ul.social-links,
   box-shadow: 5px 5px 0 #000;
 }
 .n-card:hover .n-card-title {
-  color: #295fff;
+  color: #F44336;
 }
 .n-card:hover .color-wrapp {
-  background-color: #5c85ff;
+  background-color: #f77066;
 }
 
 .n-card-img {
@@ -35536,7 +35536,7 @@ ul.social-links,
   background-color: #1d1d1d;
   padding: 30px;
   margin: 5rem 12px;
-  box-shadow: -10px 10px #295fff;
+  box-shadow: -10px 10px #F44336;
 }
 .squares-title > * {
   color: #ffffff;
@@ -35594,7 +35594,7 @@ ul.social-links,
   height: 16px;
   border-radius: 50%;
   border: 2px solid #f5f7fa;
-  background: #295fff;
+  background: #F44336;
   margin-top: 10px;
   z-index: 9999;
 }
@@ -35701,7 +35701,7 @@ ul.social-links,
 }
 .tool i {
   font-size: 5em;
-  color: #295fff;
+  color: #F44336;
   margin: 0 auto;
 }
 
@@ -35723,6 +35723,18 @@ ul.social-links,
     grid-template-columns: repeat(6, 1fr);
   }
 }
+.landing-text {
+  text-align: center;
+  padding: 0 12px;
+}
+
+.landing-wrapper {
+  height: calc(100vh - 169.55px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .social-icons {
   padding-left: 0;
   list-style: none;
@@ -35748,16 +35760,16 @@ ul.social-links,
   transform: scale(1.1) rotate(360deg);
 }
 
-.landing-text {
-  text-align: center;
-  padding: 0 12px;
-}
-
-.landing-wrapper {
-  height: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.img-circle {
+  background-image: url("../images/nerdiest.jpeg");
+  background-color: #fde1df;
+  background-size: cover;
+  background-position-x: center;
+  background-blend-mode: multiply;
+  transition: background-color 0.5s;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
 }
 
 @media (min-width: 992px) {
@@ -35774,18 +35786,6 @@ ul.social-links,
     max-width: 400px;
   }
 }
-.img-circle {
-  background-image: url("../images/nerdiest.jpeg");
-  background-color: #dce4ff;
-  background-size: cover;
-  background-position-x: center;
-  background-blend-mode: multiply;
-  transition: background-color 0.5s;
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-}
-
 .grid {
   margin: 0 auto;
 }
@@ -35812,7 +35812,7 @@ ul.social-links,
   align-items: center;
   height: 32px;
   width: 32px;
-  background-color: #295fff;
+  background-color: #F44336;
   margin-right: 12px;
   padding: 10px;
   border-radius: 4px;
@@ -35823,7 +35823,7 @@ ul.social-links,
   font-size: 0.9rem;
 }
 .arrow-square:hover {
-  background-color: #5c85ff;
+  background-color: #f77066;
 }
 
 .browser {

@@ -1,0 +1,71 @@
+// Landing Styles
+
+.landing-text {
+  text-align: center;
+  padding: 0 12px;
+}
+
+.landing-wrapper {
+  height: calc(100vh - 169.55px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social-icons {
+  padding-left: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  .fa {
+    color: $gray-700;
+    font-size: 1.8em;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+
+    &:hover {
+      color: $gray-500;
+      transform: scale(1.1);
+      transform: scale(1.1) rotate(360deg);
+    }
+  }
+}
+
+.img-circle {
+  background-image: url("../images/nerdiest.jpeg");
+  background-color: lighten($brand-color, 35%);
+  background-size: cover;
+  background-position-x: center;
+  background-blend-mode: multiply;
+  transition: background-color 0.5s;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .social-icons li:first-child {
+    padding-left: 0;
+  }
+
+  .landing-wrapper {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .landing-text {
+    text-align: right;
+    padding: 0;
+    max-width: 400px;
+  }
+}
