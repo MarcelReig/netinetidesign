@@ -1,51 +1,5 @@
 //scripts
 
-/* Sticky footer 
-  Requirement: The footer must not have margin
-*/
-
-// $(document).ready(function () {
-//   function stickyFooter() {
-//     var $footer = $(".l-footer");
-//     var footerTop = $footer.position().top; // Footer top position
-//     var footerHeight = $footer.outerHeight(true); //Footer FULL Height including paddings
-//     var windowHeight = $(window).height();
-
-//     var marginTop = windowHeight - footerTop - footerHeight - 1; // I don't know why we need - 1px
-
-//     if (marginTop > 0) {
-//       $footer.css({
-//         "margin-top": marginTop + "px",
-//       });
-//     }
-//   }
-//   stickyFooter();
-
-//   $(window).bind("scroll", function (event) {
-//     stickyFooter();
-//   });
-
-//   $(window).bind("resize", function (event) {
-//     stickyFooter();
-//   });
-// });
-
-// Disable dropdown on small screens ( no se porque carajo escribí esto 🤔 )
-// jQuery(document).ready(function ($) {
-//   $("ul.nav li.dropdown").hover(
-//     function () {
-//       if (!$(".navbar-toggler-icon").is(":visible")) {
-//         $(this).find(".dropdown-menu").stop(true, true).delay(200).fadeIn(500);
-//       }
-//     },
-//     function () {
-//       if (!$(".navbar-toggler-icon").is(":visible")) {
-//         $(this).find(".dropdown-menu").stop(true, true).delay(200).fadeOut(500);
-//       }
-//     }
-//   );
-// });
-
 // Efecto scroll
 $(function () {
   $('a.scroll[href^="#"]').click(function (e) {

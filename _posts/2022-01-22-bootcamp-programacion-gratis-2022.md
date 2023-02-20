@@ -1,26 +1,61 @@
 ---
 layout: post
-title: Recursos para aprender programación en 2022
-description: Recursos para aprender programación en 2022
+title: Recursos para aprender programación en 2023
+description: Recursos para aprender programación en 2023
 comments: true
 tags: javascript python
 category: programacion
 image: open-bootcamp.jpeg
 ---
 
-{:.lead.my-5}
+<div class="alert alert-info" role="alert">
+<p><i class="fas fa-sticky-note"></i> Nota:</p>
+ <p>Post actualizado para el 2023.</p>
+</div>
 
-En Mayo 2022 finalizé el Bootcamp Fullstack en <a href="https://bottega.tech/" target="blank">Bottega</a>, el cual puede disfrutar gracias a una beca para personas con discapacidad de la <a href="https://fundacionadecco.org/" target="_blank">fundación adecco</a>.
+En Junio 2022 finalizé el Bootcamp Fullstack en <a href="https://bottega.tech/" target="blank">Bottega</a>, el cual puede disfrutar gracias a una beca para personas con discapacidad de la <a href="https://fundacionadecco.org/" target="_blank">fundación adecco</a>.
 
-Mi segunda opción era el <a href="https://www.fundacionuniversia.net/es/empleabilidad/plan-circular/acuerdo-ingresos-compartidos-socialmente-responsable.html" target="blank">Plan Circular Fundación Universia | Bootcamp for all</a>, en el cual pagas tu formación en pequeñas cuotas mensuales, sin intereses, solo si consigues trabajo y siempre que ganes más de 18.000€ brutos anuales.
+Mi segunda opción era el <a href="https://www.fundacionuniversia.net/es/empleabilidad/plan-circular/acuerdo-ingresos-compartidos-socialmente-responsable.html" target="blank">Plan Circular Fundación Universia | Bootcamp for all</a>, en el cual inicialmente solo pagas las tasas de reserva (300€) y el resto de la formación formación lo pagas en pequeñas cuotas mensuales, sin intereses, solo si consigues trabajo y siempre que ganes más de 18.000€ brutos anuales.
 
-Hoy en día existe una gran cantidad de recursos gratuitos para aprender programación, necesitarás grandes dosis de motivación, organización y constancia para aprender de forma autodidacta pero definitivamente es posible y es una vía tan valida como cualquier otra.
+En cualquier caso, si no quieres arriesgar con una formación de pago, hoy en día existe una gran cantidad de recursos gratuitos para aprender programación, necesitarás grandes dosis de motivación, organización y constancia para aprender de forma autodidacta pero definitivamente es posible y es una vía tan valida como cualquier otra.
 
 <img src="{{ site.baseurl }}/assets/images/blog/meme.jpg" width="400" class="img-fluid text-center m-xl-auto" alt="meme programming">
 
-Aquí tienes una la lista con los recursos de programación online gratuitos que me han parecido más interesantes para este 2022.
+### Cursos de programación online gratis más interesantes para el 2023
 
-Antes de empezar, para hacerte una idea de lo que vas a tener que aprender según el perfil que escojas te recomiendo hechar un ojo a [roadmap.sh](https://roadmap.sh/){:target="\_blank"}, se trata de una seríe de guías visuales de las tecnologías implicadas según la especialización que escojas.
+Para hacerte una idea de lo que vas a tener que aprender según el perfil que escojas te recomiendo hechar un ojo a [roadmap.sh](https://roadmap.sh/){:target="\_blank"}.
+
+<div class="d-flex">
+  <div class="flex-shrink-0">
+    <img src="{{ site.baseurl }}/assets/images/blog/appacademy.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021">
+  </div>
+  <div class="flex-grow-1 ms-3">
+    <a href="https://www.appacademy.io/course/app-academy-open" target="_blank"><h5 class="mt-0 mb-1">App Academy open</h5></a>
+    <p>De todos los cursos mencionados este es el que estoy utilizando personalmente para repasar lo aprendido en el Bootcamp, por lo que si te apuntas <strong>nos vemos dentro!</strong></p>
+      <ul>
+        <li>Aceso al curso full-stack de App Academy de 24 semanas.</li>
+        <li>Más de 500h de material.</li>
+        <li>Canal de Discord de la comunidad.</li>
+      </ul>
+  </div>
+  </div>
+<hr>
+
+<div class="d-flex">
+  <div class="flex-shrink-0">
+    <img src="{{ site.baseurl }}/assets/images/blog/cs50x.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021">
+        </div>
+     <div class="flex-grow-1 ms-3">
+    <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0" target="_blank"><h5 class="mt-0 mb-1">CS50x</h5></a>
+      <p>Introducción a las ciencias de la computación.</p>
+      <ul>
+        <li>Primer acercamiento a la programación.</li>
+        <li>Algoritmos y abstracción.</li>
+        <li>Desarrollo web e ingeniería del software.</li>
+      </ul>
+    </div>
+    </div>
+  <hr>
 
 <div class="d-flex">
   <div class="flex-shrink-0">
@@ -36,25 +71,25 @@ Antes de empezar, para hacerte una idea de lo que vas a tener que aprender segú
         <li>MongoDB</li>
         <li>GraphQL</li>
         <li>TypeScript</li>
+        <li>Traducido al Español</li>
       </ul>
     </div>
   </div>
   <hr>
-  <div class="d-flex">
-   <div class="flex-shrink-0">
-    <img src="{{ site.baseurl }}/assets/images/blog/freecodecamp.png" width="200" class="img-fluid mr-3 mb-3" alt="FreeCodeCamp">
+
+   <div class="d-flex">
+  <div class="flex-shrink-0">
+    <img src="{{ site.baseurl }}/assets/images/blog/BootcampLogo.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Bootcamp gratis de Frontend Masters">
     </div>
-    <div class="flex-grow-1 ms-3">
-    <a href="https://www.freecodecamp.org/" target="_blank"><h5 class="mt-0 mb-1">Freecodecamp</h5></a>
-      <p>Totalmente gratis, contenido de valor incalculable.</p>
-      <ul>
-        <li>Comunidad sin ánimo de lucro que te ayuda a aprender a programar a través de proyectos.</li>
-        <li>Todo en FreecodeCamp es 100% gratuito.</li>
-        <li>Consta de más de 10 certificaciones de 300h cada una.</li>
-      </ul>
+  <div class="flex-grow-1 ms-3">
+    <a href="https://frontendmasters.com/bootcamp/" target="_blank"><h5 class="mt-0 mb-1">Frontend Masters</h5></a>
+      <p>Bootcamp gratis de Frontend Masters.</p>
+      <p>No he hecho este curso, pero Frontend Masters es mi plataforma por subscripción favorita.</p>
     </div>
-  </div>
-  <hr>
+
+</div>
+<hr>
+
    <div class="d-flex">
     <div class="flex-shrink-0">
     <img src="{{ site.baseurl }}/assets/images/blog/theodinproject.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="The Odin Project">
@@ -63,56 +98,30 @@ Antes de empezar, para hacerte una idea de lo que vas a tener que aprender segú
       <a href="https://www.theodinproject.com/home" target="_blank"> <h5 class="mt-0 mb-1">The Odin Project</h5></a>
         <p>Curso gratuito extenso de desarrollo web Full Stack</p>
         <ul>
-          <li>Diseñado para principiantes</li>
-          <li>Fundamentos</li>
-          <li>JavaScript</li>
-          <li>Ruby On Rails</li>
+          <li>Diseñado para principiantes.</li>
+          <li>Fundamentos.</li>
+          <li>JavaScript.</li>
+          <li>Ruby On Rails.</li>
         </ul>
     </div>
   </div>
+
   <hr>
   <div class="d-flex">
-  <div class="flex-shrink-0">
-    <img src="{{ site.baseurl }}/assets/images/blog/appacademy.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021">
-  </div>
-  <div class="flex-grow-1 ms-3">
-    <a href="https://www.appacademy.io/course/app-academy-open" target="_blank"><h5 class="mt-0 mb-1">App Academy open</h5></a>
+   <div class="flex-shrink-0">
+    <img src="{{ site.baseurl }}/assets/images/blog/freecodecamp.png" width="200" class="img-fluid mr-3 mb-3" alt="FreeCodeCamp">
+    </div>
+    <div class="flex-grow-1 ms-3">
+    <a href="https://www.freecodecamp.org/" target="_blank"><h5 class="mt-0 mb-1">Freecodecamp</h5></a>
       <ul>
-        <li>Aceso abierto al curso full-stack de App Academy.</li>
-        <li>1500h de material</li>
-        <li>De 12 a 16 meses</li>
-      </ul>
-  </div>
-  </div>
-<hr>
-<div class="d-flex">
-  <div class="flex-shrink-0">
-    <img src="{{ site.baseurl }}/assets/images/blog/cs50x.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021">
-        </div>
-     <div class="flex-grow-1 ms-3">
-    <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0" target="_blank"><h5 class="mt-0 mb-1">CS50x</h5></a>
-      <p>Introducción a las ciencias de la computación.</p>
-      <ul>
-        <li>Primer acercamiento a la programación</li>
-        <li>Algoritmos y abstracción</li>
-        <li>Desarrollo web e ingeniería del software</li>
+        <li>Comunidad sin ánimo de lucro.</li>
+        <li>FreecodeCamp es 100% gratuito.</li>
+        <li>más de 10 certificaciones de 300h cada una.</li>
       </ul>
     </div>
-    </div>
+  </div>
   <hr>
- <div class="d-flex">
-  <div class="flex-shrink-0">
-    <img src="{{ site.baseurl }}/assets/images/blog/BootcampLogo.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Bootcamp gratis de Frontend Masters">
-    </div>
-  <div class="flex-grow-1 ms-3">
-    <a href="https://frontendmasters.com/bootcamp/" target="_blank"><h5 class="mt-0 mb-1">Frontend Masters</h5></a>
-      <p>Bootcamp gratis de Frontend Masters.</p>
-    </div>
-
-</div>
-<hr>
-<p class="lead">Muchos Bootcamps ofrecen leciones gratis para que pruebes la plataforma, su manera de enseñar y te prepares para hacer sus cursos, aquí tienes dos ejemplos.</p>
-
+  
 <div class="d-flex">
   <div class="flex-shrink-0">
     <img src="{{ site.baseurl }}/assets/images/blog/flatiron.jpeg" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021">
@@ -120,27 +129,7 @@ Antes de empezar, para hacerte una idea de lo que vas a tener que aprender segú
   <div class="flex-grow-1 ms-3">
     <a href="https://flatironschool.com/learn-to-code-for-free/" target="_blank"><h5 class="mt-0 mb-1">Flatiron School intro Free Lessons</h5></a>
       <p>Lecciones gratis de Flatiron School.</p>
+      <p>Muchos Bootcamps ofrecen lecciones gratis para que pruebes la plataforma, hace años hice sus curso de Ruby y JavaScript y me gustaron mucho, no se como son ahora.</p>
     </div>
   </div>
-  <hr>
- <div class="d-flex">
-  <div class="flex-shrink-0">
-    <img src="{{ site.baseurl }}/assets/images/blog/hack_reactor.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021">
-        </div>
-  <div class="flex-grow-1 ms-3">
-    <a href="https://www.hackreactor.com/prep-programs" target="_blank"><h5 class="mt-0 mb-1">Hack Reactor</h5></a>
-      <p>Curso preparatorio de Hack Reactor.</p>
-    </div>
-</div>
-<hr>
-Otros cursos introductorios que me han parecido interesantes.
 
-- [interneting is hard](https://www.internetingishard.com/){:target="\_blank"}
-
-- [Dont Fear the Internet](http://www.dontfeartheinternet.com/){:target="\_blank"}
-
-Practicas de programación.
-
-- [codewars](https://www.codewars.com/){:target="\_blank"}
-
-- [exercism](https://exercism.org/){:target="\_blank"}

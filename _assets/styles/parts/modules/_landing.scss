@@ -6,6 +6,7 @@
 }
 
 .landing-wrapper {
+  // Height - navbar + footer height
   height: calc(100vh - 169.55px);
   display: flex;
   flex-direction: column;
@@ -42,7 +43,7 @@
 
 .img-circle {
   background-image: url("../images/nerdiest.jpeg");
-  background-color: lighten($brand-color, 35%);
+  //background-color: lighten($brand-color, 35%);
   background-size: cover;
   background-position-x: center;
   background-blend-mode: multiply;

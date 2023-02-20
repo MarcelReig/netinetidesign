@@ -1,0 +1,150 @@
+I"4<div class="alert alert-info" role="alert">
+<p><i class="fas fa-sticky-note"></i> Nota:</p>
+ <p>Post actualizado para el 2023.</p>
+</div>
+
+<p>En Junio 2022 finalizé el Bootcamp Fullstack en <a href="https://bottega.tech/" target="blank">Bottega</a>, el cual puede disfrutar gracias a una beca para personas con discapacidad de la <a href="https://fundacionadecco.org/" target="_blank">fundación adecco</a>.</p>
+
+<p>Mi segunda opción era el <a href="https://www.fundacionuniversia.net/es/empleabilidad/plan-circular/acuerdo-ingresos-compartidos-socialmente-responsable.html" target="blank">Plan Circular Fundación Universia | Bootcamp for all</a>, en el cual inicialmente solo pagas las tasas de reserva (300€) y el resto de la formación formación lo pagas en pequeñas cuotas mensuales, sin intereses, solo si consigues trabajo y siempre que ganes más de 18.000€ brutos anuales.</p>
+
+<p>En cualquier caso, si no quieres arriesgar con una formación de pago, hoy en día existe una gran cantidad de recursos gratuitos para aprender programación, necesitarás grandes dosis de motivación, organización y constancia para aprender de forma autodidacta pero definitivamente es posible y es una vía tan valida como cualquier otra.</p>
+
+<p><img src="/assets/images/blog/meme.jpg" width="400" class="img-fluid text-center m-xl-auto" alt="meme programming" /></p>
+
+<h3 id="cursos-de-programación-online-gratis-más-interesantes-para-el-2023">Cursos de programación online gratis más interesantes para el 2023</h3>
+
+<p>Para hacerte una idea de lo que vas a tener que aprender según el perfil que escojas te recomiendo hechar un ojo a <a href="https://roadmap.sh/" target="\_blank">roadmap.sh</a>.</p>
+
+<div class="d-flex">
+  <div class="flex-shrink-0">
+    <img src="/assets/images/blog/appacademy.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021" />
+  </div>
+  <div class="flex-grow-1 ms-3">
+    <a href="https://www.appacademy.io/course/app-academy-open" target="_blank"><h5 class="mt-0 mb-1">App Academy open</h5></a>
+      <ul>
+        <li>Aceso abierto al curso full-stack de App Academy.</li>
+        <li>1500h de material</li>
+        <li>De 12 a 16 meses</li>
+      </ul>
+  </div>
+  </div>
+<hr />
+
+<div class="d-flex">
+  <div class="flex-shrink-0">
+    <img src="/assets/images/blog/cs50x.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021" />
+        </div>
+     <div class="flex-grow-1 ms-3">
+    <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0" target="_blank"><h5 class="mt-0 mb-1">CS50x</h5></a>
+      <p>Introducción a las ciencias de la computación.</p>
+      <ul>
+        <li>Primer acercamiento a la programación</li>
+        <li>Algoritmos y abstracción</li>
+        <li>Desarrollo web e ingeniería del software</li>
+      </ul>
+    </div>
+    </div>
+<hr />
+
+<div class="d-flex">
+  <div class="flex-shrink-0">
+    <img src="/assets/images/blog/fullstackopen.jpg" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021" />
+  </div>
+    <div class="lex-grow-1 ms-3">
+    <a href="https://fullstackopen.com/es/" target="_blank"><h5 class="mt-0 mb-1">Fullstack Open 2021</h5></a>
+      <p>Curso gratuito de la Universidad de Helsinki con licencia Creative Commons. Introducción al desarrollo de aplicaciones web modernas con JavaScript.</p>
+       <ul>
+        <li>React</li>
+        <li>Redux</li>
+        <li>Node.js</li>
+        <li>MongoDB</li>
+        <li>GraphQL</li>
+        <li>TypeScript</li>
+      </ul>
+    </div>
+  </div>
+<hr />
+
+<div class="d-flex">
+  <div class="flex-shrink-0">
+    <img src="/assets/images/blog/BootcampLogo.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Bootcamp gratis de Frontend Masters" />
+    </div>
+  <div class="flex-grow-1 ms-3">
+    <a href="https://frontendmasters.com/bootcamp/" target="_blank"><h5 class="mt-0 mb-1">Frontend Masters</h5></a>
+      <p>Bootcamp gratis de Frontend Masters.</p>
+    </div>
+
+</div>
+
+<hr />
+
+<div class="d-flex">
+   <div class="flex-shrink-0">
+    <img src="/assets/images/blog/freecodecamp.png" width="200" class="img-fluid mr-3 mb-3" alt="FreeCodeCamp" />
+    </div>
+    <div class="flex-grow-1 ms-3">
+    <a href="https://www.freecodecamp.org/" target="_blank"><h5 class="mt-0 mb-1">Freecodecamp</h5></a>
+      <p>Totalmente gratis, contenido de valor incalculable.</p>
+      <ul>
+        <li>Comunidad sin ánimo de lucro que te ayuda a aprender a programar a través de proyectos.</li>
+        <li>Todo en FreecodeCamp es 100% gratuito.</li>
+        <li>Consta de más de 10 certificaciones de 300h cada una.</li>
+      </ul>
+    </div>
+  </div>
+<hr />
+
+<div class="d-flex">
+    <div class="flex-shrink-0">
+    <img src="/assets/images/blog/theodinproject.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="The Odin Project" />
+    </div>
+    <div class="flex-grow-1 ms-3">
+      <a href="https://www.theodinproject.com/home" target="_blank"> <h5 class="mt-0 mb-1">The Odin Project</h5></a>
+        <p>Curso gratuito extenso de desarrollo web Full Stack</p>
+        <ul>
+          <li>Diseñado para principiantes</li>
+          <li>Fundamentos</li>
+          <li>JavaScript</li>
+          <li>Ruby On Rails</li>
+        </ul>
+    </div>
+  </div>
+<hr />
+
+<h3 class="lead">Muchos Bootcamps ofrecen leciones gratis para que pruebes la plataforma, aquí tienes dos ejemplos.</h3>
+
+<div class="d-flex">
+  <div class="flex-shrink-0">
+    <img src="/assets/images/blog/flatiron.jpeg" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021" />
+    </div>
+  <div class="flex-grow-1 ms-3">
+    <a href="https://flatironschool.com/learn-to-code-for-free/" target="_blank"><h5 class="mt-0 mb-1">Flatiron School intro Free Lessons</h5></a>
+      <p>Lecciones gratis de Flatiron School.</p>
+    </div>
+  </div>
+<hr />
+
+<div class="d-flex">
+  <div class="flex-shrink-0">
+    <img src="/assets/images/blog/hack_reactor.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021" />
+        </div>
+  <div class="flex-grow-1 ms-3">
+    <a href="https://www.hackreactor.com/prep-programs" target="_blank"><h5 class="mt-0 mb-1">Hack Reactor</h5></a>
+      <p>Curso preparatorio de Hack Reactor.</p>
+    </div>
+</div>
+<hr />
+
+<h3 class="lead">Otros cursos introductorios que me han parecido interesantes.&lt;/&gt;
+
+- [interneting is hard](https://www.internetingishard.com/){:target="\_blank"}
+
+- [Dont Fear the Internet](http://www.dontfeartheinternet.com/){:target="\_blank"}
+
+Practicas de programación.
+
+- [codewars](https://www.codewars.com/){:target="\_blank"}
+
+- [exercism](https://exercism.org/){:target="\_blank"}
+</h3>
+:ET
