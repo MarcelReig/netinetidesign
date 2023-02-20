@@ -145,13 +145,9 @@ También permite editar los atajos a tu gusto.
 
 ### Mis Themes preferidos de Visual Studio Code
 
-- [Panda Theme](https://marketplace.visualstudio.com/items?itemName=tinkertrain.theme-panda){:target="_blank"}
-
-- [City Lights](https://citylights.xyz/){:target="_blank"}
-
 - [Night Owl](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl){:target="_blank"}
 
-- [Cobalt2 Theme Official](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2){:target="_blank"}
+- [HitHub Theme](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme){:target="_blank"}
 
 ### Tipografías bonitas para programar
 
@@ -159,4 +155,4 @@ También permite editar los atajos a tu gusto.
 
 - [Dank Mono](https://philpl.gumroad.com/l/dank-mono){:target="_blank"}
 
-- [MonoLisa](https://www.monolisa.dev/){:target="_blank"}
+- [MonoLisa](https://www.monolisa.dev/){:target="_blank"} (La que utilizo actualmente)
