@@ -9,10 +9,8 @@ image: magic.jpg
 ---
 
 {:.lead.my-5}
-### Métodos especiales, también conocidos como métodos Dunder o métodos Mágicos.
+### Métodos especiales, también conocidos como métodos Dunder o métodos Mágicos. Se utilizan para emular el comportamiento de las funciones integradas.
 
-{:.lead.my-5}
-### Los métodos dunder se utilizan para emular el comportamiento de las funciones integradas.
 
 ## Métodos de iniciación y constructores
 

@@ -20,10 +20,10 @@ El desarrollador Front-end es quien se encarga de la maquetación en **HTML5**, 
 
 * Frameworks CSS como Bootstrap o Zurb Foundation.
 * Sistema de control de versiones (Git).
-* Librerías Javascript (jQuery, Vue, React).
+* Librerías Javascript (React, Vue, ).
 * Preprocesadores de CSS: Sass, Less, Stylus, Post CSS.
 * Sistemas de plantillas: Handlebars, Pug, Panini, Nunjucks, Haml.
-* Preprocesadores de JavaScript: LiveScript, TypeScript, CoffeScript.
+* Preprocesadores de JavaScript: TypeScript.
 
 **Manejadores de paquetes de node:**
 
@@ -54,14 +54,15 @@ El desarrollador Front-end es quien se encarga de la maquetación en **HTML5**, 
 
 **Gratis**
 
-- [freecodecamp](https://www.freecodecamp.org/)
-- [exercism](https://exercism.io/)
-- [flexbox](https://flexbox.io/)
-- [cssgrid](https://cssgrid.io/)
+- [Frontend Practice](https://www.frontendpractice.com/){:target="_blank"}
+- [freecodecamp](https://www.freecodecamp.org/){:target="_blank"}
+- [exercism](https://exercism.io/){:target="_blank"}
+- [flexbox](https://flexbox.io/){:target="_blank"}
+- [cssgrid](https://cssgrid.io/){:target="_blank"}
 
 **De pago:**
 
-- [frontendmasters](https://frontendmasters.com/) ‌\$39 month
+- [frontendmasters](https://frontendmasters.com/){:target="_blank"} ‌\$39 month
 
 **Ser activo en las siguientes plataformas ayuda a crear presencia online:**
 
@@ -93,26 +94,13 @@ Para poder acceder a ofertas de trabajo freelance, hacer cursos online y comunic
 Las <b>estrellas del rock</b> del desarrollo web, pueden inspirarte pero nada más. Crea tu propio camino y no te compares con los demás.
 </div>
 
-**Conferencias del sector:**
-
-- JS conf
-- CSS conf
-- Vuevixens
-
 **Donde encontrar trabajo?**
 Escribir **front-end** en el buscador de estas webs:
 
-- Betabeers
 - Linkedin
-- Domestika
 - Stackoverflow
 
-Seguir a reclutadores de IT en Twitter y Linkedin
+Seguir a reclutadores de IT en Linkedin
 
-Si te motiva aprender a programar, y le dedicas tiempo cada día, tarde o temprano dependiendo de tu background y capacidades llegará el día en el que estarás preparado para acceder a ofertas de trabajo del sector.
-
-Si solo te sientes atraído por la idea de tener un trabajo cool y bien remunerado el camino se te puede hacer largo.
-
-Si cuando estás inmerso en el código, leyendo documentación y haciendo pruebas te pasan las horas sin darte cuenta y te sientes bien con eso, es una buena señal.
 
 > Work hard, love wat you do!

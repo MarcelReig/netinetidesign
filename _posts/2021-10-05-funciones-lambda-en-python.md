@@ -19,6 +19,7 @@ image: python-lambda.jpg
 
 <blockquote class="blockquote mb-5">
   <p class="mb-0">"Las lambdas de Python son sólo una notación abreviada si eres demasiado perezoso para definir una función"..</p>
+  <br>
   <footer class="blockquote-footer">Tradución automatica de <cite title="Source Title">Documentación oficial</cite></footer>
 </blockquote>
 

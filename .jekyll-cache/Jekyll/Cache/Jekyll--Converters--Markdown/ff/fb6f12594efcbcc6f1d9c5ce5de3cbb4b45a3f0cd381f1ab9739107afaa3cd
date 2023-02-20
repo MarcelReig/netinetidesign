@@ -1,0 +1,67 @@
+I"b
+<h3 class="lead my-5" id="métodos-especiales-también-conocidos-como-métodos-dunder-o-métodos-mágicos">Métodos especiales, también conocidos como métodos Dunder o métodos Mágicos.</h3>
+
+<h3 class="lead my-5" id="los-métodos-dunder">Los métodos dunder</h3>
+
+<h2 id="métodos-de-iniciación-y-constructores">Métodos de iniciación y constructores</h2>
+
+<p><code class="language-plaintext highlighter-rouge">__init__</code></p>
+
+<p>Crea un nuevo objeto cuando se llama a la instancia de una clase.</p>
+
+<p><code class="language-plaintext highlighter-rouge">__new__</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">__del__</code></p>
+
+<h2 id="métodos-mágicos-de-comparación">Métodos mágicos de comparación</h2>
+
+<p><code class="language-plaintext highlighter-rouge">__eq__</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">__ne__</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">__lt__</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">__gt__</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">__le__</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">__ge__</code></p>
+
+<h2 id="métodos-mágicos-para-matemáticas">Métodos mágicos para matemáticas</h2>
+
+<p><code class="language-plaintext highlighter-rouge">__add__</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">__sub__</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">__mul__</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">__floordiv__</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">__truediv__</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">__mod__</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">__pow__</code></p>
+
+<h2 id="otros-métodos-mágicos">Otros Métodos mágicos</h2>
+
+<p><code class="language-plaintext highlighter-rouge">__str__</code></p>
+
+<p>Devuelve una cadena de carácteres. Representación Legible para usuarios.</p>
+
+<p><code class="language-plaintext highlighter-rouge">__repr__</code></p>
+
+<p>Devuelve una cadena de carácteres. Representación no ambigua útil para desarrolladores.</p>
+
+<p><code class="language-plaintext highlighter-rouge">__len__</code></p>
+
+<p>Devuelve la cantidad de elementos que tiene una lista.</p>
+
+<h3 id="links">Links</h3>
+
+<p><a href="https://www.youtube.com/watch?v=IkWrlRei0uA&amp;t=488s">Special Methods  Socratica </a></p>
+
+<p><a href="https://rszalski.github.io/magicmethods/">Magic Methods</a></p>
+
+<p><a href="https://www.tutorialsteacher.com/python/magic-methods-in-python">Tutorial teacher Python magic methods</a></p>
+:ET
