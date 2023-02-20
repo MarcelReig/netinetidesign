@@ -1,0 +1,71 @@
+I"R<h3 class="lead my-5" id="métodos-especiales-también-conocidos-como-métodos-dunder-o-métodos-mágicos-se-utilizan-para-emular-el-comportamiento-de-las-funciones-integradas">Métodos especiales, también conocidos como métodos Dunder o métodos Mágicos. Se utilizan para emular el comportamiento de las funciones integradas.</h3>
+
+<h3 class="lead my-5" id="estos-métodos-tienen-un-significado-particular-para-el-intérprete-de-python-sus-nombres-empiezan-y-terminan-en-__-doble-guión-bajo-por-ejemplo-init">Estos métodos tienen un significado particular para el intérprete de Python. Sus nombres empiezan y terminan en __ (doble guión bajo). Por ejemplo <strong>init</strong>.</h3>
+
+<h3 class="lead my-5" id="normalmente-estos-métodos-no-son-invocados-directamente-por-el-programador-por-ejemplo-cuando-haces-una-simple-suma-2--2-se-está-invocando-al-método-__add__-internamente">Normalmente estos métodos no son invocados directamente por el programador. Por ejemplo cuando haces una simple suma <code class="language-plaintext highlighter-rouge">2 + 2</code> se está invocando al método <code class="language-plaintext highlighter-rouge">__add__</code> internamente.</h3>
+
+<h2 id="métodos-de-iniciación-y-constructores">Métodos de iniciación y constructores</h2>
+
+<p><code class="language-plaintext highlighter-rouge">__init__</code> Inicializa un objeto</p>
+
+<p>Crea un nuevo objeto cuando se llama a la instancia de una clase.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Car</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="p">...</span>
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="p">...</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">__new__</code>  Crea un objeto</p>
+
+<p><code class="language-plaintext highlighter-rouge">__del__</code> Elimina un objeto</p>
+
+<h2 id="métodos-mágicos-de-comparación">Métodos mágicos de comparación</h2>
+
+<p><code class="language-plaintext highlighter-rouge">__lt__</code>  a &lt; b</p>
+
+<p><code class="language-plaintext highlighter-rouge">__gt__</code>  a &gt; b</p>
+
+<p><code class="language-plaintext highlighter-rouge">__le__</code>  a &lt;= b</p>
+
+<p><code class="language-plaintext highlighter-rouge">__ge__</code>  a &gt;= b</p>
+
+<p><code class="language-plaintext highlighter-rouge">__ne__</code>  a != b</p>
+
+<p><code class="language-plaintext highlighter-rouge">__eq__</code>  a == b</p>
+
+<h2 id="métodos-mágicos-para-matemáticas">Métodos mágicos para matemáticas</h2>
+
+<p><code class="language-plaintext highlighter-rouge">__add__</code> obj + …</p>
+
+<p><code class="language-plaintext highlighter-rouge">__sub__</code> obj - …</p>
+
+<p><code class="language-plaintext highlighter-rouge">__mul__</code> obj * …</p>
+
+<p><code class="language-plaintext highlighter-rouge">__floordiv__</code> obj //</p>
+
+<p><code class="language-plaintext highlighter-rouge">__truediv__</code> obj /</p>
+
+<p><code class="language-plaintext highlighter-rouge">__mod__</code> obj %</p>
+
+<p><code class="language-plaintext highlighter-rouge">__pow__</code> obj ** …</p>
+
+<h2 id="otros-métodos-mágicos">Otros Métodos mágicos</h2>
+
+<p><code class="language-plaintext highlighter-rouge">__str__</code> Pretty print object. Devuelve una cadena de carácteres. Representación Legible para usuarios.</p>
+
+<p><code class="language-plaintext highlighter-rouge">__repr__</code> Devuelve una cadena de carácteres. Representación no ambigua útil para desarrolladores.</p>
+
+<p><code class="language-plaintext highlighter-rouge">__len__</code> Devuelve la cantidad de elementos que tiene una lista.</p>
+
+<h3 id="links">Links</h3>
+
+<p><a href="https://www.youtube.com/watch?v=IkWrlRei0uA&amp;t=488s" target="_blank">Special Methods  Socratica </a></p>
+
+<p><a href="https://rszalski.github.io/magicmethods/" target="_blank">Magic Methods</a></p>
+
+<p><a href="https://mathspp.com/blog/pydonts/dunder-methods" target="_blank">Mathspp</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=3ohzBxoFHAY"></a></p>
+:ET

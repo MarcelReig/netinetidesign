@@ -12,68 +12,78 @@ image: magic.jpg
 ### Métodos especiales, también conocidos como métodos Dunder o métodos Mágicos. Se utilizan para emular el comportamiento de las funciones integradas.
 
 
+{:.lead.my-5}
+### Estos métodos tienen un significado particular para el intérprete de Python. Sus nombres empiezan y terminan en __ (doble guión bajo). Por ejemplo __init__.
+
+{:.lead.my-5}
+### Normalmente estos métodos no son invocados directamente por el programador. Por ejemplo cuando haces una simple suma `2 + 2` se está invocando al método `__add__` internamente.
+
 ## Métodos de iniciación y constructores
 
-`__init__`
+`__init__` Inicializa un objeto
 
 
 Crea un nuevo objeto cuando se llama a la instancia de una clase.
 
-`__new__` 
+```python
+class Car(object):
+    def __init__(self):
+        ...
+    def __repr__(self):
+        ...
+```
 
-`__del__`
+`__new__`  Crea un objeto
+
+`__del__` Elimina un objeto
 
 ## Métodos mágicos de comparación
 
-`__eq__`
+`__lt__`  a < b
 
-`__ne__`
+`__gt__`  a > b
 
-`__lt__`
+`__le__`  a <= b
 
-`__gt__`
+`__ge__`  a >= b
 
-`__le__`
+`__ne__`  a != b
 
-`__ge__`
+`__eq__`  a == b
 
 ## Métodos mágicos para matemáticas
 
-`__add__`
+`__add__` obj + ...
 
-`__sub__`
+`__sub__` obj - ...
 
-`__mul__`
+`__mul__` obj * ...
 
-`__floordiv__`
+`__floordiv__` obj //
 
-`__truediv__`
+`__truediv__` obj /
 
-`__mod__`
+`__mod__` obj %
 
-`__pow__`
+`__pow__` obj ** ...
 
 
 ## Otros Métodos mágicos
 
-`__str__`
+`__str__` Pretty print object. Devuelve una cadena de carácteres. Representación Legible para usuarios.
 
-Devuelve una cadena de carácteres. Representación Legible para usuarios.
+`__repr__` Devuelve una cadena de carácteres. Representación no ambigua útil para desarrolladores.
 
-`__repr__`
-
-Devuelve una cadena de carácteres. Representación no ambigua útil para desarrolladores.
-
-`__len__`
-
-Devuelve la cantidad de elementos que tiene una lista.
-
+`__len__` Devuelve la cantidad de elementos que tiene una lista.
 
 
 ### Links
 
-[Special Methods  Socratica ](https://www.youtube.com/watch?v=IkWrlRei0uA&t=488s)
+[Special Methods  Socratica Youtube 📹](https://www.youtube.com/watch?v=IkWrlRei0uA&t=488s){:target="_blank"}
 
-[Magic Methods](https://rszalski.github.io/magicmethods/)
+[Corey Schafer Youtube 📹](https://www.youtube.com/watch?v=3ohzBxoFHAY){:target="_blank"}
 
-[Tutorial teacher Python magic methods](https://www.tutorialsteacher.com/python/magic-methods-in-python)
+[Magic Methods](https://rszalski.github.io/magicmethods/){:target="_blank"}
+
+[Mathspp](https://mathspp.com/blog/pydonts/dunder-methods){:target="_blank"}
+
