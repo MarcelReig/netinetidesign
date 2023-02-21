@@ -143,16 +143,22 @@ También permite editar los atajos a tu gusto.
 
 - [VS Code can do that?!](https://vscodecandothat.com/){:target="_blank"}
 
-### Mis Themes preferidos de Visual Studio Code
+### Mis Themes preferidos de Visual Studio Code 
 
-- [Night Owl](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl){:target="_blank"}
+1. Dark Default de VSCode
 
-- [HitHub Theme](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme){:target="_blank"}
+2. [Night Owl](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl){:target="_blank"}
+
+3. [GitHub Theme](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme){:target="_blank"}
+
+4. [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme){:target="_blank"}
+
+5. [Cobalt2](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2){:target="_blank"}
 
 ### Tipografías bonitas para programar
 
-- [JetBrains Mono](https://www.jetbrains.com/es-es/lp/mono/){:target="_blank"}
+- [JetBrains Mono](https://www.jetbrains.com/es-es/lp/mono/){:target="_blank"} Free
 
-- [Dank Mono](https://philpl.gumroad.com/l/dank-mono){:target="_blank"}
+- [Dank Mono](https://philpl.gumroad.com/l/dank-mono){:target="_blank"} De pago
 
-- [MonoLisa](https://www.monolisa.dev/){:target="_blank"} (La que utilizo actualmente)
+- [MonoLisa](https://www.monolisa.dev/){:target="_blank"} De pago
