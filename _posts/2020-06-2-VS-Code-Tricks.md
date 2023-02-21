@@ -159,6 +159,10 @@ También permite editar los atajos a tu gusto.
 
 - [JetBrains Mono](https://www.jetbrains.com/es-es/lp/mono/){:target="_blank"} Free
 
-- [Dank Mono](https://philpl.gumroad.com/l/dank-mono){:target="_blank"} De pago
+- [Recursive](https://www.recursive.design/){:target="_blank"} Free
 
-- [MonoLisa](https://www.monolisa.dev/){:target="_blank"} De pago
+- [Dank Mono](https://philpl.gumroad.com/l/dank-mono){:target="_blank"} 💸
+
+- [MonoLisa](https://www.monolisa.dev/){:target="_blank"} 💸
+
+- [Operator](https://www.typography.com/fonts/operator/overview) 💸
