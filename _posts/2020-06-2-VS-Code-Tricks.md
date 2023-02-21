@@ -10,7 +10,7 @@ image: vs-code.png
 
 <div class="alert alert-info" role="alert">
 <p><i class="fas fa-sticky-note"></i> Nota:</p>
- <p>Lo siento combinaciones solo para Mac .  Escribí este post para tener las combinaciones que más uso a mano, no esperaba tantas visualizaciones 😱.</p>
+ <p>Lo siento, combinaciones solo para Mac .  Escribí este post para tener las combinaciones que más uso a mano, no esperaba tantas visualizaciones 😱.</p>
 </div>
 
 ### Ajuste automático de línea en VSCode
