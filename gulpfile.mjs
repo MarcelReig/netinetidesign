@@ -16,24 +16,30 @@
  */
 
 // Define variables
-const gulp = require("gulp");
-const sass = require("gulp-sass")(require("sass"));
-const uglify = require("gulp-uglify");
-const pump = require("pump");
-const order = require("gulp-order");
-const concat = require("gulp-concat");
-const autoprefixer = require("gulp-autoprefixer");
-const shell = require("gulp-shell");
-const browserSync = require("browser-sync").create();
-const gutil = require("gulp-util");
-const del = require("del");
-const cache = require("gulp-cache");
-const newer = require("gulp-newer");
+import gulp from "gulp";
+import gulpSass from "gulp-sass";
+import dartSass from "sass";
+import uglify from "gulp-uglify";
+import pump from "pump";
+import order from "gulp-order";
+import concat from "gulp-concat";
+import autoprefixer from "gulp-autoprefixer";
+import shell from "gulp-shell";
+import browserSync from "browser-sync";
+import log from "fancy-log";
+import colors from "ansi-colors";
+import del from "del";
+import cache from "gulp-cache";
+import newer from "gulp-newer";
+import imagemin from "gulp-imagemin";
+
+const sass = gulpSass(dartSass);
+const browserSyncInstance = browserSync.create();
 
 // Config
 const config = {
   sassPaths: ["node_modules"],
-  production: gutil.env.environment === "production",
+  production: process.env.NODE_ENV === "production",
 };
 
 // -----------------------------------------------------------------------------
@@ -59,13 +65,14 @@ function fontawesome() {
 function build_cv() {
   return gulp.src("./_assets/cv/*.pdf").pipe(gulp.dest("./assets/cv"));
 }
+
 // -----------------------------------------------------------------------------
 //  3: Styles
 // -----------------------------------------------------------------------------
 
 function build_styles() {
-  console.log("Compiling Sass");
-  console.log("config.production:" + config.production);
+  log(colors.green("Compiling Sass"));
+  log("config.production:" + config.production);
   if (config.production) {
     return gulp
       .src("./_assets/styles/main.scss")
@@ -107,7 +114,7 @@ function build_styles() {
 // -----------------------------------------------------------------------------
 
 function build_scripts(done) {
-  console.log("Compiling Scripts");
+  log("Compiling Scripts");
   if (config.production) {
     pump([
       gulp.src([
@@ -175,16 +182,19 @@ function build_scripts(done) {
 // -----------------------------------------------------------------------------
 
 function build_images() {
-  // Construcción JEKYLL
   return gulp
     .src("./_assets/images/**/*.+(jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG|ico)")
+    .pipe(newer("./assets/images"))
+    .pipe(cache(imagemin()))
     .pipe(gulp.dest("./assets/images"));
 }
+
 // WATCH : Actualización
 function sync_images() {
   return gulp
     .src("./_assets/images/**/*.+(jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG|ico)")
     .pipe(newer("./assets/images"))
+    .pipe(cache(imagemin()))
     .pipe(gulp.dest("./assets/images"))
     .pipe(gulp.dest("./_site/assets/images"))
     .pipe(browserSync.stream());
@@ -205,7 +215,7 @@ function build_jekyll() {
           "JEKYLL_ENV=production bundle exec jekyll build --config _config.yml",
         ])
       )
-      .on("error", gutil.log);
+      .on("error", log);
   } else {
     return gulp
       .src("index.html", {
@@ -216,7 +226,7 @@ function build_jekyll() {
           'bundle exec jekyll build  --config "_config.yml,_config_localhost.yml"',
         ])
       )
-      .on("error", gutil.log);
+      .on("error", log);
   }
 }
 
@@ -237,7 +247,7 @@ const clean_all = gulp.series(clean_jekyll, clean_assets);
 // -----------------------------------------------------------------------------
 
 function build_localServer() {
-  console.log("BrowserSync setting up the server in port 4000");
+  log("BrowserSync setting up the server in port 4000");
   browserSync.init({
     port: 4000,
     server: {
@@ -272,7 +282,7 @@ const build_all = gulp.series(
 // -----------------------------------------------------------------------------
 
 function watchFiles() {
-  console.log("watching files for changes");
+  log("watching files for changes");
   gulp.watch("_assets/styles/**/*.scss", build_styles);
   gulp.watch("_assets/scripts/*.js", build_scripts);
   gulp.watch(
@@ -293,7 +303,14 @@ const build = gulp.series(clean_all, gulp.parallel(build_all, watchFiles));
 // For production execute: $ gulp --environment production
 
 // export tasks
-exports.default = build;
-exports.clean_assets = clean_assets;
-exports.clean_jekyll = clean_jekyll;
-exports.watch = watchFiles;
+export default build;
+export { clean_assets, clean_jekyll, watchFiles as watch };
+
+gulp.task("build_styles", () => {
+  return gulp
+    .src("src/styles/**/*.scss")
+    .pipe(sass().on("error", sass.logError))
+    .pipe(gulp.dest("dist/styles"));
+});
+
+gulp.task("default", gulp.series("build_styles"));
