@@ -183,7 +183,7 @@ function build_scripts(done) {
 
 function build_images() {
   return gulp
-    .src("./_assets/images/**/*.+(jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG|ico)")
+    .src("./_assets/images/**/*.+(jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG|ico|webp)")
     .pipe(newer("./assets/images"))
     .pipe(cache(imagemin()))
     .pipe(gulp.dest("./assets/images"));
@@ -192,7 +192,7 @@ function build_images() {
 // WATCH : Actualización
 function sync_images() {
   return gulp
-    .src("./_assets/images/**/*.+(jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG|ico)")
+    .src("./_assets/images/**/*.+(jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG|ico|webp)")
     .pipe(newer("./assets/images"))
     .pipe(cache(imagemin()))
     .pipe(gulp.dest("./assets/images"))
@@ -286,7 +286,7 @@ function watchFiles() {
   gulp.watch("_assets/styles/**/*.scss", build_styles);
   gulp.watch("_assets/scripts/*.js", build_scripts);
   gulp.watch(
-    "_assets/images/**/*.+(ico|jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG)",
+    "_assets/images/**/*.+(ico|jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG|webp)",
     gulp.series(sync_images, browsersync_reload)
   );
   gulp.watch(
