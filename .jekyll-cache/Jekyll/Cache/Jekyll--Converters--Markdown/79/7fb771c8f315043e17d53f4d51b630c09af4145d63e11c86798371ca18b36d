@@ -1,23 +1,13 @@
----
-layout: post
-title: Recursos para aprender programación en 2023
-description: Recursos para aprender programación en 2023
-comments: true
-tags: javascript python
-category: programacion
-image: open-bootcamp.jpeg
----
-
-<div class="alert alert-info" role="alert">
+I"+<div class="alert alert-info" role="alert">
 <p><i class="fas fa-sticky-note"></i> Nota:</p>
- <p>Post actualizado para el 2025.</p>
+ <p>Post actualizado para el 2023.</p>
 </div>
 
-### Cursos de programación online gratis más interesantes para el 2023
+<h3 id="cursos-de-programación-online-gratis-más-interesantes-para-el-2023">Cursos de programación online gratis más interesantes para el 2023</h3>
 
 <div class="d-flex">
   <div class="flex-shrink-0">
-    <img src="{{ site.baseurl }}/assets/images/blog/appacademy.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021">
+    <img src="/assets/images/blog/appacademy.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021" />
   </div>
   <div class="flex-grow-1 ms-3">
     <a href="https://www.appacademy.io/course/app-academy-open" target="_blank"><h5 class="mt-0 mb-1">App Academy open.</h5></a>
@@ -28,11 +18,11 @@ image: open-bootcamp.jpeg
       </ul>
   </div>
   </div>
-<hr>
+<hr />
 
 <div class="d-flex">
   <div class="flex-shrink-0">
-    <img src="{{ site.baseurl }}/assets/images/blog/cs50x.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021">
+    <img src="/assets/images/blog/cs50x.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021" />
         </div>
      <div class="flex-grow-1 ms-3">
     <a href="https://cs50.harvard.edu/x/2025/" target="_blank"><h5 class="mt-0 mb-1">CS50x</h5></a>
@@ -44,11 +34,11 @@ image: open-bootcamp.jpeg
       </ul>
     </div>
     </div>
-  <hr>
+<hr />
 
 <div class="d-flex">
   <div class="flex-shrink-0">
-    <img src="{{ site.baseurl }}/assets/images/blog/fullstackopen.jpg" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021">
+    <img src="/assets/images/blog/fullstackopen.jpg" width="200" class="img-fluid text-center mb-3 mr-3" alt="Fullstack Open 2021" />
   </div>
     <div class="lex-grow-1 ms-3">
     <a href="https://fullstackopen.com/es/" target="_blank"><h5 class="mt-0 mb-1">Fullstack Open 2021</h5></a>
@@ -64,11 +54,11 @@ image: open-bootcamp.jpeg
       </ul>
     </div>
   </div>
-  <hr>
+<hr />
 
-   <div class="d-flex">
+<div class="d-flex">
   <div class="flex-shrink-0">
-    <img src="{{ site.baseurl }}/assets/images/blog/BootcampLogo.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Bootcamp gratis de Frontend Masters">
+    <img src="/assets/images/blog/BootcampLogo.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="Bootcamp gratis de Frontend Masters" />
     </div>
   <div class="flex-grow-1 ms-3">
     <a href="https://frontendmasters.com/bootcamp/" target="_blank"><h5 class="mt-0 mb-1">Frontend Masters</h5></a>
@@ -77,11 +67,11 @@ image: open-bootcamp.jpeg
     </div>
 
 </div>
-<hr>
+<hr />
 
-   <div class="d-flex">
+<div class="d-flex">
     <div class="flex-shrink-0">
-    <img src="{{ site.baseurl }}/assets/images/blog/theodinproject.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="The Odin Project">
+    <img src="/assets/images/blog/theodinproject.png" width="200" class="img-fluid text-center mb-3 mr-3" alt="The Odin Project" />
     </div>
     <div class="flex-grow-1 ms-3">
       <a href="https://www.theodinproject.com/home" target="_blank"> <h5 class="mt-0 mb-1">The Odin Project</h5></a>
@@ -95,10 +85,11 @@ image: open-bootcamp.jpeg
     </div>
   </div>
 
-  <hr>
-  <div class="d-flex">
+<hr />
+
+<div class="d-flex">
    <div class="flex-shrink-0">
-    <img src="{{ site.baseurl }}/assets/images/blog/freecodecamp.png" width="200" class="img-fluid mr-3 mb-3" alt="FreeCodeCamp">
+    <img src="/assets/images/blog/freecodecamp.png" width="200" class="img-fluid mr-3 mb-3" alt="FreeCodeCamp" />
     </div>
     <div class="flex-grow-1 ms-3">
     <a href="https://www.freecodecamp.org/" target="_blank"><h5 class="mt-0 mb-1">Freecodecamp</h5></a>
@@ -109,6 +100,6 @@ image: open-bootcamp.jpeg
       </ul>
     </div>
   </div>
-  <hr>
-  
+<hr />
 
+:ET
