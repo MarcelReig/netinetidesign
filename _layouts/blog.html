@@ -5,8 +5,25 @@ layout: default
 {% include page-title.html %}
 
 <div class="container">
+
   <div class="row">
-    <div class="col-12 col-lg-8 offset-lg-2">
+    <div class="col-5 d-none d-md-block">
+      <ul class="nav flex-column tags-list">
+        <li class="nav-item">
+          <a class="nav-link" href="/blog/tag/javascript/">#JavaScript</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/blog/tag/python/">#Python</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/blog/tag/node/">#Node</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/blog/tag/npm/">#npm</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-12 col-md-7">
       {{ content }}
       <ul class="post-list">
         {% for post in paginator.posts %}
@@ -24,6 +41,8 @@ layout: default
         </li>
         {% endfor %}
       </ul>
+    </div>
+    <div class="col-12 py-5">
       <div class="pagination">
         {% if paginator.previous_page %}
         <a href="{{ paginator.previous_page_path }}" class="previous">&laquo; Previous</a>

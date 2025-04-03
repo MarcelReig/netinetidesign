@@ -37,7 +37,7 @@ Array.isArray([1, 2, 3]); // true
 </h3>
 
 **pop ()** Elimina el último elemento de un array y lo devuelve.  
-**shift()** Elimina el primer elemento del array y lo retorna.  
+**shift()** Elimina el primer elemento del array y lo devuelve.  
 **push()** Añade uno o más elementos al final de un array.  
 **unshift()** Agrega uno o más elementos al inicio del array.  
 **splice()** El método splice() cambia el contenido de un array eliminando elementos existentes y/o agregando nuevos elementos. Acepta tres parámetros:

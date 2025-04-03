@@ -7,8 +7,6 @@
 // $Parts
 @import "parts/index";
 
-
-
 // Portfolio Sketch Gallery
 .grid {
   margin: 0 auto;
@@ -53,6 +51,14 @@
   overflow: hidden;
   border-top: 10px solid #424242;
   margin-bottom: 30px;
+}
+
+/* Resetea los estilos del acordeón */
+.accordion-button:not(.collapsed) {
+  color: initial;
+  background-color: initial;
+  box-shadow: none;
+  border: none; /* También puedes eliminar el borde si lo prefieres */
 }
 
 // Extra small devices (portrait phones, less than 576px)

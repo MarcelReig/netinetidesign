@@ -35230,6 +35230,25 @@ a:hover,
   color: #333;
 }
 
+.list-group a.list-group-item h4, .list-group a.list-group-item .h4 {
+  transition: color 0.2s ease-in-out;
+}
+.list-group a.list-group-item:hover h4, .list-group a.list-group-item:hover .h4 {
+  color: #F44336;
+}
+
+.tags-list a.nav-link {
+  color: #757575;
+  transition: color 0.2s ease-in-out;
+}
+.tags-list a.nav-link:hover {
+  color: #F44336;
+}
+
+a.return {
+  cursor: pointer;
+}
+
 @media (min-width: 576px) {
   .blog-image-wrapper {
     display: block;
@@ -35831,6 +35850,14 @@ ul.social-links,
   overflow: hidden;
   border-top: 10px solid #424242;
   margin-bottom: 30px;
+}
+
+/* Resetea los estilos del acordeón */
+.accordion-button:not(.collapsed) {
+  color: initial;
+  background-color: initial;
+  box-shadow: none;
+  border: none; /* También puedes eliminar el borde si lo prefieres */
 }
 
 @media (max-width: 575.98px) {

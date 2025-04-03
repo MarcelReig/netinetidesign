@@ -3,11 +3,13 @@ layout: default
 ---
 
 <div class="row">
-  <div class="col-12 col-lg-8 offset-lg-2">
+  <div class="col-12 col-lg-6 offset-lg-3 px-4">
 
     {% capture page_subtitle %}Artículos por tag{% endcapture %}
 
     {% include special-header.html title=page.name subtitle=page_subtitle %}
+
+    <a class="return" href="{{ site.baseurl }}/blog/"><i class="fa-solid fa-arrow-left"></i> Volver al blog</a>
 
     <div class="text-justify">
       {% if site.tags[page.slug] %}

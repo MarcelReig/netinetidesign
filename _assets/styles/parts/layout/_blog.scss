@@ -81,6 +81,35 @@
   }
 }
 
+// Artículos por tag
+
+.list-group {
+  a.list-group-item {
+    h4 {
+      transition: color 0.2s ease-in-out;
+    }
+
+    &:hover h4 {
+      color: $brand-color;
+    }
+  }
+}
+
+// Tags
+.tags-list {
+  a.nav-link {
+    color: $gray-600;
+    transition: color 0.2s ease-in-out;
+    &:hover {
+      color: $brand-color;
+    }
+  }
+}
+
+a.return {
+  cursor: pointer;
+}
+
 @media (min-width: 576px) {
   .blog-image-wrapper {
     display: block;
