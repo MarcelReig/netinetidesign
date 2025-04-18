@@ -35860,6 +35860,10 @@ ul.social-links,
   border: none; /* También puedes eliminar el borde si lo prefieres */
 }
 
+.accordion-body h3, .accordion-body .h3 {
+  font-size: 1.2rem;
+}
+
 @media (max-width: 575.98px) {
   ul.list-unstyled > li.media {
     flex-direction: column;

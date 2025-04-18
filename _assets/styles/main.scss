@@ -60,6 +60,11 @@
   box-shadow: none;
   border: none; /* También puedes eliminar el borde si lo prefieres */
 }
+.accordion-body {
+  h3 {
+    font-size: 1.2rem;
+  }
+}
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
