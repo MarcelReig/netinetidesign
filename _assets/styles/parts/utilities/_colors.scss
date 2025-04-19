@@ -1,35 +1,37 @@
 // ===================================================================
-// Theme colors
+// Base Theme Colors
 // ===================================================================
+
 $brand-color: #fa4549;
-$color-white: #f6f8fa; 
+$color-white: #f6f8fa;
 $color-black: #24292f;
-
-$transparent-white: rgba(255, 255, 255, 0.2);
 $bg-color: #f6f8fa;
+$transparent-white: rgba(255, 255, 255, 0.2);
 
-$header-color: $color-black;
-
+// Text colors
 .color-white {
-  color: #f6f8fa;
+  color: $color-white;
 }
 .color-black {
-  color: #24292f;
+  color: $color-black;
 }
 .brand-color {
   color: $brand-color;
 }
+
+// Background colors
 .bg-brand-color {
   background-color: $brand-color;
 }
 .bg-color {
-  color: $bg-color;
+  background-color: $bg-color;
 }
 
-// ========================================================
-//  Gray Material Colors
-// ========================================================
-$gray-50: #fafafa;
+// ===================================================================
+// Material Gray Scale
+// ===================================================================
+
+$gray-50:  #fafafa;
 $gray-100: #f5f5f5;
 $gray-200: #eeeeee;
 $gray-300: #e0e0e0;
@@ -40,59 +42,24 @@ $gray-700: #616161;
 $gray-800: #424242;
 $gray-900: #212121;
 
-.color-gray-50 {
-  color: $gray-50;
-}
-.color-gray-100 {
-  color: $gray-100;
-}
-.color-gray-200 {
-  color: $gray-200;
-}
-.color-gray-300 {
-  color: $gray-300;
-}
-.color-gray-400 {
-  color: $gray-400;
-}
-.color-gray-500 {
-  color: $gray-500;
-}
-.color-gray-600 {
-  color: $gray-600;
-}
-.color-gray-700 {
-  color: $gray-700;
-}
-.color-gray-800 {
-  color: $gray-800;
-}
-.color-gray-900 {
-  color: $gray-900;
-}
-// background gray colors
+// Gray text colors
+.color-gray-50  { color: $gray-50; }
+.color-gray-100 { color: $gray-100; }
+.color-gray-200 { color: $gray-200; }
+.color-gray-300 { color: $gray-300; }
+.color-gray-400 { color: $gray-400; }
+.color-gray-500 { color: $gray-500; }
+.color-gray-600 { color: $gray-600; }
+.color-gray-700 { color: $gray-700; }
+.color-gray-800 { color: $gray-800; }
+.color-gray-900 { color: $gray-900; }
 
-.bg-gray-50 {
-  background-color: $gray-50;
-}
-.bg-gray-100 {
-  background-color: $gray-100;
-}
-.bg-gray-200 {
-  background-color: $gray-200;
-}
-.bg-gray-300 {
-  background-color: $gray-300;
-}
-.bg-gray-400 {
-  background-color: $gray-400;
-}
-.bg-gray-500 {
-  background-color: $gray-500;
-}
-.bg-gray-800 {
-  background-color: $gray-800;
-}
-.bg-gray-900 {
-  background-color: $gray-900;
-}
+// Gray background colors
+.bg-gray-50  { background-color: $gray-50; }
+.bg-gray-100 { background-color: $gray-100; }
+.bg-gray-200 { background-color: $gray-200; }
+.bg-gray-300 { background-color: $gray-300; }
+.bg-gray-400 { background-color: $gray-400; }
+.bg-gray-500 { background-color: $gray-500; }
+.bg-gray-800 { background-color: $gray-800; }
+.bg-gray-900 { background-color: $gray-900; }
