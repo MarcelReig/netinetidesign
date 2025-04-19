@@ -34455,7 +34455,7 @@ figure.highlight {
 }
 
 .bg-color {
-  color: #f6f8fa;
+  background-color: #f6f8fa;
 }
 
 .color-gray-50 {
@@ -35793,8 +35793,6 @@ ul.social-links,
   background-image: url("../images/nerdiest.jpeg");
   background-size: cover;
   background-position-x: center;
-  background-blend-mode: multiply;
-  transition: background-color 0.5s;
   border-radius: 50%;
   width: 200px;
   height: 200px;
