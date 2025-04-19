@@ -2,7 +2,7 @@
 // Theme colors
 // ===================================================================
 $color-white: #fafafa;
-$color-black: #1d1d1d;
+$color-black: #00002b;
 $transparent-white: rgba(255, 255, 255, 0.2);
 $bg-color: $color-white;
 $header-color: $color-black;
@@ -12,7 +12,8 @@ $header-color: $color-black;
 .color-black {
   color: $color-black;
 }
-$brand-color: #F44336;
+$brand-color: #ff1377;
+
 .brand-color {
   color: $brand-color;
 }
