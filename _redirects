@@ -1,8 +1,9 @@
 # redirects
-post/Instalación-Octopress                    /blog/
-post/apuntes-de-node                          /post/npm-comandos-basicos
-post/Git-tricks                               /post/git-comandos-basicos 
-open-source                                   /portfolio/coding-lab
-posts/alternar-entre-bash-y-zsh               /blog/
-posts/hablar-de-jekyll-dentro-de-jekyll       /blog/
-posts/python-pyenv-y-pipenv-en-mac/Pipenv     /posts/python-pyenv-y-pipenv-en-mac
+/post/Instalación-Octopress                    /blog/ 301
+/post/apuntes-de-node                          /post/npm-comandos-basicos 301
+/post/Git-tricks                               /post/git-comandos-basicos 301
+/open-source                                   /portfolio/coding-lab 301
+/posts/alternar-entre-bash-y-zsh               /blog/ 301
+/posts/hablar-de-jekyll-dentro-de-jekyll       /blog/ 301
+/posts/python-pyenv-y-pipenv-en-mac/Pipenv     /posts/python-pyenv-y-pipenv-en-mac 301
+/post/bootcamp-programacion-gratis-2022/       /post/cursos-aprender-programacion-gratis/ 301

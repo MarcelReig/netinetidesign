@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Recursos para aprender programación en 2023
-description: Recursos para aprender programación en 2023
+title: Cursos para aprender programación gratis
+description: Cursos para aprender programación gratis
+permalink: /post/cursos-aprender-programacion-gratis/
 comments: true
 tags: javascript python
 category: programacion
