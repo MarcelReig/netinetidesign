@@ -5,7 +5,7 @@ description: Función zip de Python
 comments: true
 tags: python
 category: programacion
-image: python-zip-function.jpg
+image: python-3.jpg
 ---
 
 La función `zip()`toma como argumentos dos o más objetos iterables.

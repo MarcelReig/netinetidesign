@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Arrays en JavaScript
-description: Arrays en JavaScript
+title: Métodos de los Arrays en JavaScript
+description: Métodos de los Arrays en JavaScript
 comments: true
 tags: javascript
 category: programacion
-image: arrays-javascript.jpg
+image: coding-2.webp
 ---
 
 Un **Array** es un objeto global en JavaScript utilizado para almacenar datos de tipo números, strings y objetos en una lista de valores con un nombre y un índice.

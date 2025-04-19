@@ -5,7 +5,7 @@ description: Sass, CSS con superpoderes
 comments: true
 tags: css sass
 category: programacion
-image: sass.png
+image: coding.webp
 ---
 
 <h2 class="lead">

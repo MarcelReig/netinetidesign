@@ -5,7 +5,7 @@ description: Get y Set en Python
 comments: true
 tags: python
 category: programacion
-image: joker.jpg
+image: python-3.jpg
 ---
 
 

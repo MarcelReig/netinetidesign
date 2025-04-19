@@ -5,7 +5,7 @@ description: Git comandos básicos
 comments: true
 category: programacion
 tags: git
-image: git.png
+image: coding-2.webp
 ---
 
 Iniciar un repositorio local desde un projecto existente:

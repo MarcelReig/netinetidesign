@@ -5,7 +5,8 @@ description: Regreso a las páginas web estáticas
 comments: true
 category: programacion
 tags: jekyll
-image: static.jpg
+image: coding.webp
+
 ---
 
 Hace unos 10 años cuando descubrí Wordpress, fue una revolución, de repente podía crear un Blog con la famosa instalación de 5 minutos sin apenas conocimientos de PHP, con un panel de administración amigable para los clientes, un directorio de plugins en continuo crecimiento y unos requisitos de servidor bastante básicos, en este escenario hacer páginas web estáticas estaba bien pero no era lo último, por así decirlo.

@@ -5,7 +5,7 @@ description: Cadenas en Python
 comments: true
 tags: python
 category: programacion
-image: strings-python.jpg
+image: python-3.jpg
 ---
 
 {:.lead.mt-5}

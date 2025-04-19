@@ -5,7 +5,7 @@ description: nvm comandos básicos
 comments: true
 tags: node
 category: programacion
-image: nvm.jpg
+image: coding-2.webp
 ---
 
 # [nvm](https://github.com/creationix/nvm)

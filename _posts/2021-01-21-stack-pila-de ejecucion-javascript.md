@@ -5,7 +5,7 @@ description: La pila de ejecución en JavaScript (Call Stack)
 comments: true
 tags: javascript
 category: programacion
-image: call-stack-javascript.jpg
+image: coding.webp
 ---
 
 <p>El Call Stack, es una estructura dinámica de datos <a href="https://es.wikipedia.org/wiki/Last_in,_first_out"

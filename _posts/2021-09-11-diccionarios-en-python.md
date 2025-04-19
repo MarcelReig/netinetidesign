@@ -5,7 +5,7 @@ description: Diccionarios en Python
 comments: true
 tags: python
 category: programacion
-image: manatee.jpeg
+image: python-3.jpg
 ---
 
 <h3 class="lead my-5">

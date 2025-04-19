@@ -5,7 +5,7 @@ description: Operador ternario en Python y en Javascript
 comments: true
 tags: python javascript
 category: programacion
-image: python.png
+image: python-3.jpg
 ---
 
 {:.lead.mt-5}

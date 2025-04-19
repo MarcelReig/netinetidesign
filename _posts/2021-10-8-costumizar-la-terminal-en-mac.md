@@ -5,7 +5,7 @@ description: Costumizar la terminal en Mac
 comments: true
 tags: mac
 category: programacion
-image: terminal-mac.jpg
+image: coding.webp
 ---
 
 {:.lead.my-5}

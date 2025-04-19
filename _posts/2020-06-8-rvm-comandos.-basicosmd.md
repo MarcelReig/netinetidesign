@@ -5,7 +5,7 @@ description: rvm comandos básicos
 comments: true
 tags: node
 category: programacion
-image: rvm.png
+image: coding-2.webp
 ---
 
 Listar versiones de ruby instaladas:

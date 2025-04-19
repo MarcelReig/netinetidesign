@@ -5,7 +5,7 @@ description: Desestructuración en Python y en JavaScript
 comments: true
 tags: javascript python
 category: programacion
-image: funciones-javascript.jpg
+image: python-3.jpg
 ---
 
 {:.lead.my-5}

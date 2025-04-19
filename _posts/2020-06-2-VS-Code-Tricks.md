@@ -5,7 +5,7 @@ description: Visual Studio Code Tricks
 comments: true
 category: programacion
 tags: vscode
-image: vs-code.png
+image: coding-2.webp
 ---
 
 <div class="alert alert-info" role="alert">

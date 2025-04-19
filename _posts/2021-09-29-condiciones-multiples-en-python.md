@@ -5,7 +5,7 @@ description: Condiciones múltiples en Python
 comments: true
 tags: python
 category: programacion
-image: python.png
+image: python-3.jpg
 ---
 
 {:.lead.my-5}

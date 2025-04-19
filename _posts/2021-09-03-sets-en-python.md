@@ -5,7 +5,7 @@ description: Sets en Python
 comments: true
 tags: python
 category: programacion
-image: python-4.jpg
+image: python-3.jpg
 ---
 
 {:.lead.my-5}

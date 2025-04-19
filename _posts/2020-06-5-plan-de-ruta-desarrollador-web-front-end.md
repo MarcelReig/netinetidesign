@@ -5,7 +5,7 @@ description: Plan de ruta desarollador front-end
 comments: true
 tags: 
 category: programacion
-image: front-end.jpg
+image: coding.webp
 ---
 
 El desarrollador Front-end se encuentra en un punto medio entre los diseñadores y los programadores.

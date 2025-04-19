@@ -5,7 +5,7 @@ description: Esperar a que el Dom este listo con vanilla JavaScript y con jQuery
 comments: true
 category: programacion
 tags: javascript
-image: dom.jpg
+image: coding-2.webp
 ---
 
 Esperar a que el DOM este listo con vanilla JS:

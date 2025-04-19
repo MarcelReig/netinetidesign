@@ -5,7 +5,7 @@ description: Jekyll workflow con Gulp
 comments: true
 category: programacion
 tags: jekyll
-image: rachael-blade-runner.jpg
+image: coding.webp
 ---
 
 [Jekyll](https://jekyllrb.com/) es un generador de sitios web estáticos preparado para blogging creado en Ruby por [Tom Preston](https://www.wikiwand.com/en/Tom_Preston-Werner), el cofundador de Github.

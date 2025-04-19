@@ -5,7 +5,7 @@ description: Recursos para aprender programación en 2023
 comments: true
 tags: javascript python
 category: programacion
-image: open-bootcamp.jpeg
+image: coding.webp
 ---
 
 <div class="alert alert-info" role="alert">

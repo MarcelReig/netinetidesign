@@ -5,7 +5,7 @@ description: Funciones Lambda en Python
 comments: true
 tags: python
 category: programacion
-image: python-lambda.jpg
+image: python-3.jpg
 ---
 
 {:.lead.mt-5}

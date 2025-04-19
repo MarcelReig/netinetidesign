@@ -5,7 +5,7 @@ description: npm comandos básicos
 comments: true
 tags: npm
 category: programacion
-image: npm.png
+image: coding-2.webp
 ---
 
 Ver la versión actual de node:

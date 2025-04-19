@@ -5,7 +5,7 @@ description: Vim modos y comandos básicos
 comments: true
 tags: vim
 category: programacion
-image: vim.jpg
+image: coding-2.webp
 ---
 
 **Modo normal**

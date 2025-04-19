@@ -5,7 +5,7 @@ description: Tipos de datos en javascript
 comments: true
 category: programacion
 tags: javascript
-image: js.jpg
+image: coding-2.webp
 ---
 
 JavaScript es un lenguaje de tipado débil o dinámico. Esto significa que no es necesario declarar el tipo de variable antes de usarla.

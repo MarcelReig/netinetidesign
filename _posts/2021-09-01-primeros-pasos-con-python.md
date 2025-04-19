@@ -5,7 +5,7 @@ description: Primeros pasos con Python
 comments: true
 tags: python
 category: programacion
-image: python.png
+image: python-3.jpg
 ---
 
 {:.lead}

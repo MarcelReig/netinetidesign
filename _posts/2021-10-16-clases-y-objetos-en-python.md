@@ -5,7 +5,7 @@ description: Clases en Python
 comments: true
 tags: python
 category: programacion
-image: python-5.jpg
+image: python-3.jpg
 ---
 
 {:.lead.my-5}

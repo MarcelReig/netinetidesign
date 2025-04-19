@@ -5,7 +5,7 @@ description:
 comments: true
 category: programacion
 tags: javascript
-image: closures.jpg
+image: coding-2.webp
 ---
 
 ## Ámbito (Scope)

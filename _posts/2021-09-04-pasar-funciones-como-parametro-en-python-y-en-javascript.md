@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Pasar funciones como parámetro
+title: Pasar funciones como parámetro en Pthon y en JavasScript
 description: Pasar funciones como parámetro en Python y en JavaScript
 comments: true
 tags: python javascript
 category: programacion
-image: programacion-funcional.jpg
+image: coding.webp
 ---
 
 <h2 class="lead">En la programación funcional pasamos funciones como parámetro.</h2>

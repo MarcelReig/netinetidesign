@@ -5,7 +5,7 @@ description: args y kwargs en Python
 comments: true
 tags: python
 category: programacion
-image: python-book.jpg
+image: python-3.jpg
 ---
 
 {:.lead.my-5}
