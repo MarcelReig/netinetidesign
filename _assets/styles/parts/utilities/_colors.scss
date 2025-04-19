@@ -1,19 +1,21 @@
 // ===================================================================
 // Theme colors
 // ===================================================================
-$color-white: #f6f8fa; // Cambia como aplicas esto!
-$color-black: #24292f; // Cambia como aplicas esto!
+$brand-color: #fa4549;
+$color-white: #f6f8fa; 
+$color-black: #24292f;
+
 $transparent-white: rgba(255, 255, 255, 0.2);
-$bg-color: $color-white;
+$bg-color: #f6f8fa;
+
 $header-color: $color-black;
+
 .color-white {
-  color: $color-white;
+  color: #f6f8fa;
 }
 .color-black {
-  color: $color-black;
+  color: #24292f;
 }
-$brand-color: #fa4549;
-
 .brand-color {
   color: $brand-color;
 }

@@ -1,5 +1,7 @@
 // Base styles
 
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
 html {
   box-sizing: border-box;
 }
@@ -18,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Inter var", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   color: $header-color;
