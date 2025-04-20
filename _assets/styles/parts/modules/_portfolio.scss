@@ -14,23 +14,26 @@
   margin-bottom: 3rem;
 }
 .n-card {
-  background-color: #afb8c1;
-  border: 1px solid #8c959f;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: $color-beige;
+  border: 1px solid darken($color-beige, 10%);
   border-radius: 4px;
-  cursor: pointer !important;
+  cursor: pointer;
   transition: all 0.2s linear;
-  .color-wrapp {
+  .n-card-image-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
   }
   &:hover {
-    box-shadow: 5px 5px 0 $black;
+    box-shadow: 5px 5px 0 $color-black;
     .n-card-title {
       color: $brand-color;
     }
-    .color-wrapp {
-      background-color: #d0d7de;
+    .n-card-image-wrapper {
+      background-color: darken($color-beige, 5%);
     }
   }
   overflow: hidden;
@@ -43,16 +46,19 @@
   background-position: center;
 }
 .n-card-body {
-  border-top: 1px solid #8c959f;
-  background: #eaeef2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background: darken($color-beige, 10%);
   padding: 1rem;
   text-align: center;
-  min-height: 100%;
   .n-card-title {
     color: $color-black;
   }
   .n-card-text {
-    color: #424242;
+    color: $color-black;
   }
 }
 
