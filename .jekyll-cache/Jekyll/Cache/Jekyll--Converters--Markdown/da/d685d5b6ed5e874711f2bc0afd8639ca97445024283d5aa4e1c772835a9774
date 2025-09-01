@@ -1,4 +1,4 @@
-I"�<h3 class="lead mt-5" id="las-funciones-nos-permiten-reutilizar-bloques-de-código-en-diferentes-partes-de-nuestra-aplicación">Las funciones nos permiten reutilizar bloques de código en diferentes partes de nuestra aplicación.</h3>
+I"2<h3 class="lead mt-5" id="las-funciones-nos-permiten-reutilizar-bloques-de-código-en-diferentes-partes-de-nuestra-aplicación">Las funciones nos permiten reutilizar bloques de código en diferentes partes de nuestra aplicación.</h3>
 
 <h3 class="lead mb-5" id="las-funciones-se-crean-con-la-palabra-clave-def-seguida-por-el-nombre-de-la-función-y-paréntesis-my_func-entre-los-paréntesis-van-los-parámetros-de-la-función-y-después-definimos-el-contenido-de-la-función-que-irá-en-un-bloque-de-código-indentado-para-ejecutar-la-función-solo-hay-y-que-escribir-el-nombre-de-la-función-con-sus-parámetros-si-es-que-los-tiene">Las funciones se crean con la palabra clave <code class="language-plaintext highlighter-rouge">def</code> seguida por el nombre de la función y paréntesis <code class="language-plaintext highlighter-rouge">my_func()</code> entre los paréntesis van los parámetros de la función y después definimos el contenido de la función que irá en un bloque de código indentado. Para ejecutar la función solo hay y que escribir el nombre de la función con sus parámetros si es que los tiene.</h3>
 
@@ -7,9 +7,9 @@
 <p>Los paréntesis son obligatorios, los parámetros son opcionales, no todas las funciones tienen parámetros.</p>
 
 <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">full_name</span><span class="p">(</span><span class="n">first</span><span class="p">,</span> <span class="n">last</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">f'</span><span class="si">{</span><span class="n">first</span><span class="si">}</span><span class="s"> </span><span class="si">{</span><span class="n">last</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="si">{</span><span class="n">first</span><span class="si">}</span><span class="s"> </span><span class="si">{</span><span class="n">last</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
 
-<span class="n">full_name</span><span class="p">(</span><span class="s">'Marcel'</span><span class="p">,</span> <span class="s">'Reig'</span><span class="p">)</span>
+<span class="nf">full_name</span><span class="p">(</span><span class="sh">'</span><span class="s">Marcel</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Reig</span><span class="sh">'</span><span class="p">)</span>
 
 <span class="c1"># Output: Marcel Reig
 </span></code></pre></div></div>
@@ -17,33 +17,33 @@
 <p>Ejemplo de una función con un condicional.</p>
 
 <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">user_auth</span><span class="p">(</span><span class="n">email</span><span class="p">,</span> <span class="n">password</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">email</span> <span class="o">==</span> <span class="s">'marcelreig@gmail.com'</span> <span class="ow">and</span> <span class="n">password</span> <span class="o">==</span> <span class="s">'admin123'</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">'Usuario autentificado'</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">email</span> <span class="o">==</span> <span class="sh">'</span><span class="s">marcelreig@gmail.com</span><span class="sh">'</span> <span class="ow">and</span> <span class="n">password</span> <span class="o">==</span> <span class="sh">'</span><span class="s">admin123</span><span class="sh">'</span><span class="p">:</span>
+        <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">Usuario autentificado</span><span class="sh">'</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">'Usuario o contraseña incorrecto'</span><span class="p">)</span>
+        <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">Usuario o contraseña incorrecto</span><span class="sh">'</span><span class="p">)</span>
 
 
-<span class="n">user_auth</span><span class="p">(</span><span class="s">'marcelreig@gmail.com'</span><span class="p">,</span> <span class="s">'admin123'</span><span class="p">)</span>
+<span class="nf">user_auth</span><span class="p">(</span><span class="sh">'</span><span class="s">marcelreig@gmail.com</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">admin123</span><span class="sh">'</span><span class="p">)</span>
 <span class="c1"># Output: Usuario autentificado
-</span><span class="n">user_auth</span><span class="p">(</span><span class="s">'marcelreig@gmail.com'</span><span class="p">,</span> <span class="s">'menorca'</span><span class="p">)</span>
+</span><span class="nf">user_auth</span><span class="p">(</span><span class="sh">'</span><span class="s">marcelreig@gmail.com</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">menorca</span><span class="sh">'</span><span class="p">)</span>
 <span class="c1"># Output: Usuario o contraseña incorrecto
 </span></code></pre></div></div>
 
 <p>Ejemplo de función sin parámetros.</p>
 
 <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">counter</span><span class="p">():</span>
-    <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">):</span>
-        <span class="k">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">):</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
 
         
-<span class="n">counter</span><span class="p">()</span>
+<span class="nf">counter</span><span class="p">()</span>
 
 <span class="c1"># Output: 
-</span><span class="s">'''
+</span><span class="sh">'''</span><span class="s">
 1
 2
 3
-'''</span>
+</span><span class="sh">'''</span>
 </code></pre></div></div>
 
 <h2 id="funciones-anidadas-en-python">Funciones anidadas en Python</h2>
@@ -52,12 +52,12 @@
 
 <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">greeting</span><span class="p">(</span><span class="n">first</span><span class="p">,</span> <span class="n">last</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">full_name</span><span class="p">():</span>
-        <span class="k">return</span> <span class="s">f'</span><span class="si">{</span><span class="n">first</span><span class="si">}</span><span class="s"> </span><span class="si">{</span><span class="n">last</span><span class="si">}</span><span class="s">'</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="sh">'</span><span class="si">{</span><span class="n">first</span><span class="si">}</span><span class="s"> </span><span class="si">{</span><span class="n">last</span><span class="si">}</span><span class="sh">'</span>
 
-    <span class="k">print</span><span class="p">(</span><span class="s">f'Hola </span><span class="si">{</span><span class="n">full_name</span><span class="p">()</span><span class="si">}</span><span class="s">!'</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Hola </span><span class="si">{</span><span class="nf">full_name</span><span class="p">()</span><span class="si">}</span><span class="s">!</span><span class="sh">'</span><span class="p">)</span>
 
 
-<span class="n">greeting</span><span class="p">(</span><span class="s">'Marcel'</span><span class="p">,</span> <span class="s">'Reig'</span><span class="p">)</span>
+<span class="nf">greeting</span><span class="p">(</span><span class="sh">'</span><span class="s">Marcel</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Reig</span><span class="sh">'</span><span class="p">)</span>
 
 <span class="c1"># Output: Hola Marcel Reig!
 </span></code></pre></div></div>
@@ -66,13 +66,13 @@
 
 <p>Python nos permite definir parámetros por defecto con el operador de asignación <code class="language-plaintext highlighter-rouge">=</code>. Si añadimos un parámetro el valor por defecto se sobreescribirá con el nuevo valor.</p>
 
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">greeting</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">'John'</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">f'Hello, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s">!'</span><span class="p">)</span>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">greeting</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="sh">'</span><span class="s">John</span><span class="sh">'</span><span class="p">):</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Hello, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s">!</span><span class="sh">'</span><span class="p">)</span>
 
 
-<span class="n">greeting</span><span class="p">()</span>
+<span class="nf">greeting</span><span class="p">()</span>
 <span class="c1"># Output: Hello, John! 
-</span><span class="n">greeting</span><span class="p">(</span><span class="s">'Marcel'</span><span class="p">)</span>
+</span><span class="nf">greeting</span><span class="p">(</span><span class="sh">'</span><span class="s">Marcel</span><span class="sh">'</span><span class="p">)</span>
 <span class="c1"># Output: Hello, Marcel!
 </span></code></pre></div></div>
 :ET

@@ -1,74 +1,114 @@
-// $Bootstrap
+// =============================================================================
+// MAIN STYLESHEET - Jekyll Portfolio with Bootstrap 5 Themes
+// =============================================================================
+
+// 1. DESIGN TOKENS (CSS Custom Properties - WCAG AA optimized)
+@import "tokens/index";
+@import "tokens/themes";
+
+// 2. VENDOR STYLES
 @import "vendor-styles/bootstrap/core";
-// $Fontawesome
 @import "vendor-styles/font-awesome/main";
-// $magnific-popup
 @import "vendor-styles/magnific-popup/popup";
-// $Parts
-@import "parts/index";
 
+// 3. BASE STYLES
+@import "parts/base/index";
+@import "base/links";
+@import "base/typography-hierarchy";
+
+// 4. LAYOUT COMPONENTS
+@import "parts/layout/index";
+
+// 5. MODULE COMPONENTS
+@import "parts/modules/index";
+
+// 6. MODERN COMPONENTS
+@import "components/buttons";
+@import "components/cards";
+@import "components/navbar";
+@import "components/theme-toggle";
+@import "components/tech-badges";
+@import "components/sections";
+
+// 7. UTILITIES & ACCESSIBILITY
+@import "utilities/index";
+
+// 8. LEGACY COMPONENTS (to be refactored)
 // Portfolio Sketch Gallery
+// Masonry Grid Styles
 .grid {
-  margin: 0 auto;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  max-width: none;
+  height: auto;
+  overflow: visible;
 }
-.grid-sizer,
-.grid-item {
+
+.grid-sizer {
   width: 200px;
-  margin-bottom: 10px;
-  img {
-    max-width: 200px;
-  }
-}
-/* 2 columns */
-.grid-item--width2 {
-  width: 400px;
+  visibility: hidden;
+  height: 0;
 }
 
-.arrow-square {
-  float: left;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 32px;
-  width: 32px;
-  background-color: $brand-color;
-  margin-right: 12px;
-  padding: 10px;
-  border-radius: 4px;
-  i {
-    color: $white;
-    font-size: 0.9rem;
-  }
-  transition: all 0.2s linear;
-  &:hover {
-    background-color: lighten($brand-color, 10%);
-  }
+.grid-item {
+  width: 200px !important;
+  margin: 0 10px 10px 0 !important;
+  position: absolute;
+  display: block;
 }
 
-.browser {
-  box-shadow: 0px 10px 15px 0px #ccc;
-  border-radius: 5px;
+.image-wrapper {
+  display: block;
+  width: 100%;
+  height: auto;
   overflow: hidden;
-  border-top: 10px solid #424242;
-  margin-bottom: 30px;
-}
+  border-radius: 8px;
 
-/* Resetea los estilos del acordeón */
-.accordion-button:not(.collapsed) {
-  color: initial;
-  background-color: initial;
-  box-shadow: none;
-  border: none; /* También puedes eliminar el borde si lo prefieres */
-}
-.accordion-body {
-  h3 {
-    font-size: 1.2rem;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }
 
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
-  ul.list-unstyled > li.media {
-    flex-direction: column;
-  }
+.parent-container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  overflow: visible;
+  position: relative;
+}
+
+// Ensure Bootstrap doesn't interfere with Masonry
+.container .row .col .grid {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.container .row .col .grid .grid-item {
+  width: 200px !important;
+  max-width: 200px !important;
+  flex: none !important;
+  margin: 0 10px 10px 0 !important;
+  position: absolute !important;
+  display: block !important;
+}
+
+.container .row .col .grid .grid-item .image-wrapper {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.container .row .col .grid .grid-item .image-wrapper img {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
 }

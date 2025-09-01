@@ -1,6 +1,159 @@
 //==============================================
-// Layout/footer
-//============================================== 
-.l-footer {
-  background-color: $bg-color;
+// Layout/footer - Modern Sticky Footer 2025
+//==============================================
+
+/* === MODERN STICKY FOOTER SOLUTION === */
+/* Using CSS Grid for better browser support and consistency */
+
+/* Root container - ensures full viewport height */
+.site {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  width: 100%;
 }
+
+/* Main content area - takes available space */
+.site-content {
+  width: 100%;
+  padding-bottom: 2rem; /* Consistent spacing above footer */
+}
+
+/* Footer - always at bottom */
+.site-footer {
+  background-color: #1a1a1a; /* Dark background */
+  border-top: 1px solid #333333;
+  color: #f5f5f5;
+  padding: 1.5rem 0;
+  margin-top: auto; /* Fallback for older browsers */
+  
+  /* Ensure footer content is properly styled */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  p {
+    margin-bottom: 0.5rem;
+    color: #bdbdbd;
+    font-size: 0.875rem;
+    line-height: 1.5;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    color: #5f85db;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out;
+
+    &:hover {
+      color: #90b8f8;
+      text-decoration: underline;
+    }
+  }
+
+  strong {
+    color: #f5f5f5;
+    font-weight: 600;
+  }
+}
+
+/* === FALLBACK FOR OLDER BROWSERS === */
+/* For browsers that don't support CSS Grid */
+@supports not (display: grid) {
+  .site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .site-content {
+    flex: 1;
+  }
+
+  .site-footer {
+    flex-shrink: 0;
+  }
+}
+
+/* === RESPONSIVE ADJUSTMENTS === */
+@media (max-width: 768px) {
+  .site-content {
+    padding-bottom: 1.5rem;
+  }
+
+  .site-footer {
+    padding: 1rem 0;
+
+    .container {
+      padding: 0 0.75rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .site-footer {
+    padding: 0.75rem 0;
+
+    .container {
+      padding: 0 0.5rem;
+    }
+
+    p {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+/* === ACCESSIBILITY IMPROVEMENTS === */
+@media (prefers-reduced-motion: reduce) {
+  .site-footer a {
+    transition: none;
+  }
+}
+
+/* === HIGH CONTRAST MODE SUPPORT === */
+@media (prefers-contrast: high) {
+  .site-footer {
+    border-top: 2px solid #f5f5f5;
+    
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* === PRINT STYLES === */
+@media print {
+  .site-footer {
+    background-color: transparent !important;
+    border-top: 1px solid #000 !important;
+    color: #000 !important;
+    
+    a {
+      color: #000 !important;
+    }
+  }
+}
+

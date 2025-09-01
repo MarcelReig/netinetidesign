@@ -81,11 +81,7 @@ exclude:
   - readme.md
   - CHANGELOG.md
 
-# Hack Para hablar de Jekyll dentro de Jekyll
-lcb: "{"
-rcb: "}"
-double-lcb: "{{"
-double-rcb: "}}"
+# Configuración limpia - datos movidos a _data/
 
 # Google services
 google_analytics: UA-120243860-1

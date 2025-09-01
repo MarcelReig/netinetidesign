@@ -7,57 +7,89 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-color: $bg-color;
+  background-color: var(--color-bg-primary);
   background-blend-mode: multiply;
   padding-bottom: 100px;
-}
-
-.contact-content {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  margin: 50px auto;
-  width: calc(100% - 30px);
+}
+
+// Nueva estructura con Bootstrap
+.contact-info-card {
+  background-color: var(--bs-body-bg);
+  border-radius: 8px;
+  padding: 2rem;
+  border: 1px solid var(--bs-secondary-bg);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  height: 100%;
+
   hr {
     width: 50px;
     margin: auto 0 30px 0;
-    border-top: 1px dashed $gray-500;
+    border-top: 1px dashed var(--bs-primary);
+  }
+
+  .info h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .info p {
+    color: var(--bs-body-color);
+    margin-bottom: 0;
   }
 }
 
-.contact-left {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-left-info {
-  width: 100%;
-  background-color: $bg-color;
-  padding: 20px 10% 20px 20px;
-}
-
-.contact-left-map {
-  background-color: $bg-color;
-  width: 100%;
-}
-
-.contact-right {
-  width: 100%;
-}
-
 .contact-form {
-  padding: 20px;
-  background-color: $bg-color;
+  background-color: var(--bs-body-bg);
+  border-radius: 8px;
+  padding: 2rem;
+  border: 1px solid var(--bs-secondary-bg);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  height: 100%;
+
+  hr {
+    width: 50px;
+    margin: auto 0 30px 0;
+    border-top: 1px dashed var(--bs-primary);
+  }
+
+  .form-control {
+    background-color: var(--bs-secondary-bg);
+    border: 1px solid var(--bs-primary);
+    color: var(--bs-body-color);
+
+    &:focus {
+      background-color: var(--bs-secondary-bg);
+      border-color: var(--blue-light);
+      color: var(--bs-body-color);
+      box-shadow: 0 0 0 0.2rem rgba(95, 133, 219, 0.25);
+    }
+
+    &::placeholder {
+      color: var(--gray-text);
+    }
+  }
+
+  label {
+    color: var(--bs-body-color);
+    margin-bottom: 0.5rem;
+  }
+
+  .btn-outline-light {
+    border-color: var(--bs-primary);
+    color: var(--bs-primary);
+
+    &:hover {
+      background-color: var(--bs-primary);
+      border-color: var(--bs-primary);
+      color: var(--bs-body-bg);
+    }
+  }
 }
 
-.contact-form input,
-.contact-form form textarea {
-  width: 100%;
-  border-radius: 4px;
-  border: 1px solid $gray-500;
-  margin-bottom: 2em;
-}
-
+// Estilos para enlaces sociales
 ul.social-links,
 .social-links li {
   margin: 1rem 0 0 0;
@@ -76,50 +108,22 @@ ul.social-links,
 }
 
 .social-links a {
-  color: $brand-color;
-  transition: ease-in-out 0.5ms;
+  color: var(--bs-primary);
+  transition: ease-in-out 0.3s;
   &:hover {
-    color: lighten($brand-color, 30%);
+    color: var(--blue-light);
+    transform: translateY(-2px);
   }
 }
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-  .contact-left {
-    flex-direction: row;
+
+// Media queries para responsive
+@media (max-width: 991.98px) {
+  .bg-contact {
+    min-height: auto;
   }
-  .contact-left-info {
-    width: 50%;
-  }
-  .contact-left-map {
-    width: 50%;
-  }
-}
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-  .contact-content {
-    flex-direction: row;
-    margin: 50px auto;
-    height: 553px;
-  }
-  .contact-left {
-    width: 80%;
-  }
-  .contact-right {
-    width: 20%;
-  }
-}
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-  .contact-left {
-    width: 70%;
-  }
-  .contact-right {
-    width: 30%;
-  }
-}
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
-  .contact-left-map {
-    display: none;
+
+  .contact-info-card,
+  .contact-form {
+    margin-bottom: 2rem;
   }
 }

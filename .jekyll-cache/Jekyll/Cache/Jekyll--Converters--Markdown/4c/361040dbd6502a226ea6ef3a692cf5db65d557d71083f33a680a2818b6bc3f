@@ -1,4 +1,4 @@
-I"�X<h3 class="lead" id="python-es-un-lenguaje-de-propósito-general-y-multiparadigma-con-una-sintaxis-limpia-y-sencilla-por-lo-que-es-una-buena-elección-para-aprender-a-programar">Python es un lenguaje de propósito general y multiparadigma con una sintaxis limpia y sencilla, por lo que es una buena elección para aprender a programar.</h3>
+I"^<h3 class="lead" id="python-es-un-lenguaje-de-propósito-general-y-multiparadigma-con-una-sintaxis-limpia-y-sencilla-por-lo-que-es-una-buena-elección-para-aprender-a-programar">Python es un lenguaje de propósito general y multiparadigma con una sintaxis limpia y sencilla, por lo que es una buena elección para aprender a programar.</h3>
 
 <h3 class="lead" id="python-fue-creado-en-los-90-por-guido-van-rossum-su-nombre-viene-de-los-humoristas-britanicos-monty-python">Python fue creado en los 90 por <a href="https://twitter.com/gvanrossum?s=20" target="\_blank">Guido van Rossum</a>, su nombre viene de los humoristas britanicos Monty Python.</h3>
 
@@ -76,8 +76,8 @@
 <p>Python utiliza la indentación para indicar el inicio y fín de un bloque de código.</p>
 
 <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">saludar</span><span class="p">(</span><span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">):</span>
-    <span class="k">return</span><span class="p">(</span><span class="s">"Hi "</span> <span class="o">+</span> <span class="n">first_name</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">last_name</span> <span class="o">+</span> <span class="s">"!"</span><span class="p">)</span> <span class="c1"># código indentado
-</span><span class="k">print</span><span class="p">(</span><span class="n">saludar</span><span class="p">(</span><span class="s">"Ana"</span><span class="p">,</span> <span class="s">"Toledo"</span><span class="p">))</span>
+    <span class="nf">return</span><span class="p">(</span><span class="sh">"</span><span class="s">Hi </span><span class="sh">"</span> <span class="o">+</span> <span class="n">first_name</span> <span class="o">+</span> <span class="sh">"</span><span class="s"> </span><span class="sh">"</span> <span class="o">+</span> <span class="n">last_name</span> <span class="o">+</span> <span class="sh">"</span><span class="s">!</span><span class="sh">"</span><span class="p">)</span> <span class="c1"># código indentado
+</span><span class="nf">print</span><span class="p">(</span><span class="nf">saludar</span><span class="p">(</span><span class="sh">"</span><span class="s">Ana</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">Toledo</span><span class="sh">"</span><span class="p">))</span>
 </code></pre></div></div>
 
 <h2 id="comentarios">Comentarios</h2>
@@ -88,11 +88,11 @@
 
 <p>Los comentarios de varias líneas se hacen con 3 comillas dobles o simples al inicio y al final del comentario.</p>
 
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">"""
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="sh">"""</span><span class="s">
 Comentario
 de varias
 líneas
-"""</span>
+</span><span class="sh">"""</span>
 </code></pre></div></div>
 
 <div class="alert alert-info" role="alert">
@@ -106,7 +106,7 @@ líneas
 Las variables pueden guardar cualquier tipo de dato, enteros, flotantes, booleanos y cadenas o Strings, también podemos guardar listas y tuplas.</p>
 
 <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># variable que contiene un string
-</span><span class="n">mascota</span> <span class="o">=</span> <span class="s">"Gato"</span>
+</span><span class="n">mascota</span> <span class="o">=</span> <span class="sh">"</span><span class="s">Gato</span><span class="sh">"</span>
 <span class="c1"># variable que contiene un booleano
 </span><span class="n">raza_peligrosa</span> <span class="o">=</span> <span class="bp">False</span>
 <span class="c1"># variable que contiene un número entero
@@ -150,12 +150,12 @@ Las variables pueden guardar cualquier tipo de dato, enteros, flotantes, boolean
 <p><strong>Enteros</strong> (<code class="language-plaintext highlighter-rouge">int</code>) números sin decimales, por ejemplo <code class="language-plaintext highlighter-rouge">500</code> o <code class="language-plaintext highlighter-rouge">-350</code>.</p>
 
 <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sumar_enteros</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">+</span> <span class="mi">5</span>
-<span class="k">print</span><span class="p">(</span><span class="n">sumar_enteros</span><span class="p">)</span>  <span class="c1"># Output: 10
+<span class="nf">print</span><span class="p">(</span><span class="n">sumar_enteros</span><span class="p">)</span>  <span class="c1"># Output: 10
 </span></code></pre></div></div>
 <p><strong>Números con decimales</strong> (<code class="language-plaintext highlighter-rouge">float</code>) por ejemplo <code class="language-plaintext highlighter-rouge">0.20</code> o <code class="language-plaintext highlighter-rouge">-34.000</code>.</p>
 
 <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sumar_decimales</span> <span class="o">=</span> <span class="mf">5.50</span> <span class="o">+</span> <span class="mf">0.8</span>
-<span class="k">print</span><span class="p">(</span><span class="n">sumar_decimales</span><span class="p">)</span>  <span class="c1"># Output: 6.3
+<span class="nf">print</span><span class="p">(</span><span class="n">sumar_decimales</span><span class="p">)</span>  <span class="c1"># Output: 6.3
 </span></code></pre></div></div>
 
 <h2 id="operadores-en-python">Operadores en Python</h2>
@@ -217,20 +217,20 @@ Las variables pueden guardar cualquier tipo de dato, enteros, flotantes, boolean
 
 <p>Con los condicionales en Python puedes construir cosas tan geniales como una pequeña calculadora.</p>
 
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">num1</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Introduce un número: "</span><span class="p">))</span>
-<span class="n">op</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Introduce un operador: "</span><span class="p">)</span>
-<span class="n">num2</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Introduce el segundo número: "</span><span class="p">))</span>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">num1</span> <span class="o">=</span> <span class="nf">float</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">"</span><span class="s">Introduce un número: </span><span class="sh">"</span><span class="p">))</span>
+<span class="n">op</span> <span class="o">=</span> <span class="nf">input</span><span class="p">(</span><span class="sh">"</span><span class="s">Introduce un operador: </span><span class="sh">"</span><span class="p">)</span>
+<span class="n">num2</span> <span class="o">=</span> <span class="nf">float</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">"</span><span class="s">Introduce el segundo número: </span><span class="sh">"</span><span class="p">))</span>
 
-<span class="k">if</span> <span class="n">op</span> <span class="o">==</span> <span class="s">'+'</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">op</span> <span class="o">==</span> <span class="s">'-'</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">num1</span> <span class="o">-</span> <span class="n">num2</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">op</span> <span class="o">==</span> <span class="s">'/'</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">num1</span> <span class="o">/</span> <span class="n">num2</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">op</span> <span class="o">==</span> <span class="s">'*'</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">num1</span> <span class="o">*</span> <span class="n">num2</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">op</span> <span class="o">==</span> <span class="sh">'</span><span class="s">+</span><span class="sh">'</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">op</span> <span class="o">==</span> <span class="sh">'</span><span class="s">-</span><span class="sh">'</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">num1</span> <span class="o">-</span> <span class="n">num2</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">op</span> <span class="o">==</span> <span class="sh">'</span><span class="s">/</span><span class="sh">'</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">num1</span> <span class="o">/</span> <span class="n">num2</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">op</span> <span class="o">==</span> <span class="sh">'</span><span class="s">*</span><span class="sh">'</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">num1</span> <span class="o">*</span> <span class="n">num2</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'Introduce un operador válido'</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">Introduce un operador válido</span><span class="sh">'</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>En este ejemplo de uso de los condicionales solamente hemos utilizado el operador <code class="language-plaintext highlighter-rouge">==</code> de igualdad pero el resto de operadores condicionales te serán de gran utilidad enseguida.</p>
@@ -271,7 +271,7 @@ Las variables pueden guardar cualquier tipo de dato, enteros, flotantes, boolean
 <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">age</span> <span class="o">=</span> <span class="mi">18</span>
 
 <span class="k">if</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">21</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">f"Lo siento debes ser mayor de 21 años."</span><span class="p">)</span>
+  <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Lo siento debes ser mayor de 21 años.</span><span class="sh">"</span><span class="p">)</span>
 
 <span class="c1"># Output: Lo siento debes ser mayor de 21 años.
 </span></code></pre></div></div>
@@ -360,15 +360,15 @@ Las variables pueden guardar cualquier tipo de dato, enteros, flotantes, boolean
 <span class="c1">#No está 12 en la lista a?
 </span><span class="k">print</span> <span class="mi">12</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">a</span> <span class="c1"># Muestra True
 </span>  
-<span class="nb">str</span> <span class="o">=</span> <span class="s">"Hello World"</span>
+<span class="nb">str</span> <span class="o">=</span> <span class="sh">"</span><span class="s">Hello World</span><span class="sh">"</span>
   
 <span class="c1">#Contiene World el string str?
-</span><span class="k">print</span> <span class="s">"World"</span> <span class="ow">in</span> <span class="nb">str</span> <span class="c1"># Muestra True
+</span><span class="k">print</span> <span class="sh">"</span><span class="s">World</span><span class="sh">"</span> <span class="ow">in</span> <span class="nb">str</span> <span class="c1"># Muestra True
 </span>  
 <span class="c1">#Contiene world el string str? (nota: distingue mayúsculas y minúsculas)
-</span><span class="k">print</span> <span class="s">"world"</span> <span class="ow">in</span> <span class="nb">str</span> <span class="c1"># Muestra False  
+</span><span class="k">print</span> <span class="sh">"</span><span class="s">world</span><span class="sh">"</span> <span class="ow">in</span> <span class="nb">str</span> <span class="c1"># Muestra False  
 </span>
-<span class="k">print</span> <span class="s">"code"</span> <span class="ow">not</span> <span class="ow">in</span> <span class="nb">str</span> <span class="c1"># Muestra True
+<span class="k">print</span> <span class="sh">"</span><span class="s">code</span><span class="sh">"</span> <span class="ow">not</span> <span class="ow">in</span> <span class="nb">str</span> <span class="c1"># Muestra True
 </span></code></pre></div></div>
 
 <h2 id="iteraciones-o-loops-en-python">Iteraciones o loops en Python</h2>
@@ -379,35 +379,35 @@ Las variables pueden guardar cualquier tipo de dato, enteros, flotantes, boolean
 
 <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">n</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="k">while</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
     <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span><span class="mi">1</span>
-<span class="k">print</span><span class="p">(</span><span class="s">'Lets go!'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">Lets go!</span><span class="sh">'</span><span class="p">)</span>
 
 <span class="c1"># Output: 
-</span><span class="s">'''
+</span><span class="sh">'''</span><span class="s">
 5
 4
 3
 2
 1
 Lets go!
-'''</span>
+</span><span class="sh">'''</span>
 </code></pre></div></div>
 
 <p>Bucle <code class="language-plaintext highlighter-rouge">for</code> que recorre una lista e imprime cada uno de sus ítems por pantalla:</p>
 
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plants</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Poto'</span><span class="p">,</span> <span class="s">'Cintas'</span><span class="p">,</span> <span class="s">'Lirio'</span><span class="p">,</span> <span class="s">'Ficus'</span><span class="p">]</span>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plants</span> <span class="o">=</span> <span class="p">[</span><span class="sh">'</span><span class="s">Poto</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Cintas</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Lirio</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Ficus</span><span class="sh">'</span><span class="p">]</span>
 
 <span class="k">for</span> <span class="n">plant</span> <span class="ow">in</span> <span class="n">plants</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">plant</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">plant</span><span class="p">)</span>
 
 <span class="c1"># Output: 
-</span><span class="s">'''
+</span><span class="sh">'''</span><span class="s">
 Poto
 Cintas
 Lirio
 Ficus
-'''</span>
+</span><span class="sh">'''</span>
 </code></pre></div></div>
 <h3 id="funciones-en-python">Funciones en Python</h3>
 
@@ -419,7 +419,7 @@ No todas las funciones tienen que tener parámetros.</p>
     <span class="n">result</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">+</span> <span class="n">z</span>
     <span class="k">return</span> <span class="n">result</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">myfunc</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span> <span class="c1"># Output: 9
+<span class="nf">print</span><span class="p">(</span><span class="nf">myfunc</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span> <span class="c1"># Output: 9
 </span></code></pre></div></div>
 
 <h3 id="funciones-lambda">Funciones lambda</h3>
@@ -428,7 +428,7 @@ No todas las funciones tienen que tener parámetros.</p>
 
 <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result2</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">+</span> <span class="n">z</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">result2</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span> <span class="c1"># Output: 9
+<span class="nf">print</span><span class="p">(</span><span class="nf">result2</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span> <span class="c1"># Output: 9
 </span></code></pre></div></div>
 
 :ET

@@ -1,21 +1,21 @@
-I"<h3 class="lead my-5" id="una-simple-declaración-if-determina-si-una-condición-es-verdadera-o-falsa-pero-además-de-eso-python-nos-ofrece-herramientas-para-evaluar-situaciones-más-complejas">Una simple declaración if determina si una condición es verdadera o falsa pero además de eso, Python nos ofrece herramientas para evaluar situaciones más complejas.</h3>
+I"<h3 class="lead my-5" id="una-simple-declaración-if-determina-si-una-condición-es-verdadera-o-falsa-pero-además-de-eso-python-nos-ofrece-herramientas-para-evaluar-situaciones-más-complejas">Una simple declaración if determina si una condición es verdadera o falsa pero además de eso, Python nos ofrece herramientas para evaluar situaciones más complejas.</h3>
 
 <h2 id="evaluar-múltiples-condiciones-en-python">Evaluar múltiples condiciones en Python</h2>
 
 <p>Decidir si un pasajero debe subir a un avión o no utilizando el operador <code class="language-plaintext highlighter-rouge">and</code>:</p>
 
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dni</span> <span class="o">=</span> <span class="s">'276768765G'</span>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dni</span> <span class="o">=</span> <span class="sh">'</span><span class="s">276768765G</span><span class="sh">'</span>
 <span class="n">air_tickets</span> <span class="o">=</span> <span class="bp">True</span>
 <span class="n">hand_luggage</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">drugs_weapons_explosives</span> <span class="o">=</span> <span class="bp">True</span>
 <span class="n">license_to_kill</span> <span class="o">=</span> <span class="bp">True</span>
 
 
-<span class="k">if</span> <span class="p">(</span><span class="n">drugs_weapons_explosives</span> <span class="ow">is</span> <span class="bp">False</span> <span class="ow">or</span> <span class="n">license_to_kill</span> <span class="ow">is</span> <span class="bp">True</span><span class="p">)</span> \
-        <span class="ow">and</span> <span class="n">dni</span> <span class="o">==</span> <span class="s">'276768765G'</span> <span class="ow">and</span> <span class="n">air_tickets</span> <span class="ow">and</span> <span class="n">hand_luggage</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'Puede pasar'</span><span class="p">)</span>
+<span class="nf">if </span><span class="p">(</span><span class="n">drugs_weapons_explosives</span> <span class="ow">is</span> <span class="bp">False</span> <span class="ow">or</span> <span class="n">license_to_kill</span> <span class="ow">is</span> <span class="bp">True</span><span class="p">)</span> \
+        <span class="ow">and</span> <span class="n">dni</span> <span class="o">==</span> <span class="sh">'</span><span class="s">276768765G</span><span class="sh">'</span> <span class="ow">and</span> <span class="n">air_tickets</span> <span class="ow">and</span> <span class="n">hand_luggage</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">Puede pasar</span><span class="sh">'</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'No puede pasar'</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">No puede pasar</span><span class="sh">'</span><span class="p">)</span>
 
 <span class="c1"># Output: Puede pasar
 </span></code></pre></div></div>
@@ -29,12 +29,12 @@
 
 <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">evaluar_numero</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">number</span> <span class="o">&gt;=</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">number</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">"Success!"</span><span class="p">)</span>
+        <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Success!</span><span class="sh">"</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">"Failure..."</span><span class="p">)</span>
+        <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Failure...</span><span class="sh">"</span><span class="p">)</span>
 
 
-<span class="n">evaluar_numero</span><span class="p">(</span><span class="mi">68</span><span class="p">)</span>
+<span class="nf">evaluar_numero</span><span class="p">(</span><span class="mi">68</span><span class="p">)</span>
 
 <span class="c1"># Output: Succes!
 </span></code></pre></div></div>
@@ -45,13 +45,13 @@
 <span class="n">es_bueno</span> <span class="o">=</span> <span class="bp">True</span>
 
 <span class="k">if</span> <span class="n">es_barato</span> <span class="ow">and</span> <span class="n">es_bueno</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"Toma mi dinero!"</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Toma mi dinero!</span><span class="sh">"</span><span class="p">)</span>
 <span class="k">elif</span> <span class="n">es_barato</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">es_bueno</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"Eres barato pero no eres bueno"</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Eres barato pero no eres bueno</span><span class="sh">"</span><span class="p">)</span>
 <span class="k">elif</span> <span class="ow">not</span> <span class="n">es_barato</span> <span class="ow">and</span> <span class="n">es_bueno</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"Eres bueno pero no eres barato"</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Eres bueno pero no eres barato</span><span class="sh">"</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"Eres una estafa"</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Eres una estafa</span><span class="sh">"</span><span class="p">)</span>
 
 <span class="c1"># Output: Toma mi dinero!
 </span></code></pre></div></div>

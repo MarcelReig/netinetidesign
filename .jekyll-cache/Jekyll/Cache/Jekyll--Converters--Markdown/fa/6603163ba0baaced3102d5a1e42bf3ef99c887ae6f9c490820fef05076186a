@@ -1,4 +1,4 @@
-I"=<h3 class="lead my-5" id="en-posts-anteriores-he-escrito-sobre-las-listas-las-tuplas-y-los-diccionarios-los-sets-son-el-cuarto-tipo-de-estructura-de-datos-en-python">En posts anteriores he escrito sobre las Listas, las Tuplas y los Diccionarios, los Sets son el cuarto tipo de estructura de datos en Python.</h3>
+I"^<h3 class="lead my-5" id="en-posts-anteriores-he-escrito-sobre-las-listas-las-tuplas-y-los-diccionarios-los-sets-son-el-cuarto-tipo-de-estructura-de-datos-en-python">En posts anteriores he escrito sobre las Listas, las Tuplas y los Diccionarios, los Sets son el cuarto tipo de estructura de datos en Python.</h3>
 
 <h3 id="carácterísticas-de-los-sets">Carácterísticas de los Sets:</h3>
 
@@ -14,9 +14,9 @@
 
 <p>Como puedes ver en el set plants hay 3 Potos pero al ejecutar el print solo aparece 1, eso es porque los sets no permiten elementos repetidos.</p>
 
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plants</span> <span class="o">=</span> <span class="p">{</span><span class="s">'Poto'</span><span class="p">,</span> <span class="s">'Poto'</span><span class="p">,</span> <span class="s">'Poto'</span><span class="p">,</span> <span class="s">'Cintas'</span><span class="p">,</span> <span class="s">'Lirio'</span><span class="p">,</span> <span class="s">'Ficus'</span><span class="p">}</span>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plants</span> <span class="o">=</span> <span class="p">{</span><span class="sh">'</span><span class="s">Poto</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Poto</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Poto</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Cintas</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Lirio</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Ficus</span><span class="sh">'</span><span class="p">}</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">plants</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">plants</span><span class="p">)</span>
 
 <span class="c1"># Output: {'Lirio', 'Poto', 'Cintas', 'Ficus'}
 </span></code></pre></div></div>

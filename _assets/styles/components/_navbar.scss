@@ -1,0 +1,221 @@
+// =============================================================================
+// NAVBAR COMPONENT - Bootstrap 5 Compatible
+// =============================================================================
+
+// ===========================================================================
+// BOOTSTRAP OVERRIDES
+// ===========================================================================
+.bg-light {
+  background-color: var(--color-bg-overlay) !important;
+  border-bottom: 1px solid var(--color-border-primary);
+}
+
+// ===========================================================================
+// NAVBAR COMPONENT
+// ===========================================================================
+.navbar {
+  background-color: var(--color-bg-overlay) !important;
+  border-bottom: 1px solid var(--color-border-primary) !important;
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-3) 0;
+  transition: all 0.15s ease-in-out;
+
+  .navbar-brand {
+    color: var(--color-text-primary) !important;
+    font-family: var(--font-family-sans);
+    font-size: var(--font-size-5); // 24px - más grande
+    font-weight: var(--font-weight-bold);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--color-primary) !important;
+      text-decoration: none;
+    }
+  }
+
+  .navbar-nav {
+    .nav-item {
+      margin: 0 var(--space-1);
+    }
+
+    .nav-link {
+      color: var(--color-text-secondary) !important;
+      font-family: var(--font-family-sans);
+      font-size: var(--font-size-2); // 16px - tamaño normal
+      font-weight: var(--font-weight-medium);
+      padding: var(--space-2) var(--space-3) !important;
+      border-radius: var(--border-radius-md);
+      transition: all 0.15s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--color-primary) !important;
+        background-color: var(--color-primary-lighter) !important;
+        text-decoration: none;
+      }
+
+      &.active {
+        color: var(--color-primary) !important;
+        background-color: var(--color-primary-lighter) !important;
+        font-weight: var(--font-weight-semibold);
+        border: 1px solid var(--color-primary);
+      }
+
+      &:focus-visible {
+        outline: 2px solid var(--color-border-focus);
+        outline-offset: 2px;
+      }
+    }
+  }
+
+  .navbar-toggler {
+    border: 1px solid var(--color-border-primary) !important;
+    border-radius: var(--border-radius-md);
+    padding: var(--space-2);
+
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25) !important;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+  }
+}
+
+// ===========================================================================
+// SOCIAL LINKS IN NAVBAR
+// ===========================================================================
+.navbar-nav .nav-link {
+  &.social-link {
+    padding: var(--space-2) !important;
+    border-radius: var(--border-radius-md);
+
+    i {
+      font-size: var(--font-size-3); // 18px - iconos más grandes
+      transition: color 0.15s ease-in-out;
+      color: var(--color-text-secondary);
+    }
+
+    &:hover {
+      background-color: var(--color-bg-secondary) !important;
+
+      i.linkedin {
+        color: var(--color-linkedin) !important;
+      }
+
+      i.github {
+        color: var(--color-github) !important;
+      }
+
+      i.twitter {
+        color: var(--color-twitter) !important;
+      }
+
+      i.codepen {
+        color: var(--color-codepen) !important;
+      }
+
+      i.behance {
+        color: var(--color-behance) !important;
+      }
+
+      i.spotify {
+        color: var(--color-spotify) !important;
+      }
+
+      i.instagram {
+        color: var(--color-instagram) !important;
+      }
+    }
+  }
+}
+
+// ===========================================================================
+// RESPONSIVE NAVBAR
+// ===========================================================================
+@media (max-width: 991.98px) {
+  .navbar {
+    .navbar-brand {
+      font-size: var(--font-size-4); // 20px en móvil
+    }
+
+    .navbar-collapse {
+      background-color: var(--color-bg-overlay);
+      border-top: 1px solid var(--color-border-primary);
+      margin-top: var(--space-3);
+      padding-top: var(--space-3);
+      border-radius: var(--border-radius-md);
+      box-shadow: var(--shadow-md);
+    }
+
+    .navbar-nav {
+      .nav-item {
+        margin: var(--space-1) 0;
+      }
+
+      .nav-link {
+        padding: var(--space-2) var(--space-3) !important;
+        border-radius: var(--border-radius-md);
+        font-size: var(--font-size-2); // 16px en móvil
+
+        &:hover {
+          color: var(--color-primary) !important;
+          background-color: var(--color-primary-lighter) !important;
+        }
+
+        &.active {
+          color: var(--color-primary) !important;
+          background-color: var(--color-primary-lighter) !important;
+          border: 1px solid var(--color-primary);
+        }
+      }
+    }
+  }
+}
+
+// ===========================================================================
+// DARK MODE NAVBAR (Bootstrap 5 compatible)
+// ===========================================================================
+[data-bs-theme="dark"] {
+  .bg-light {
+    background-color: var(--color-bg-overlay) !important;
+    border-bottom-color: var(--color-border-primary);
+  }
+
+  .navbar {
+    background-color: var(--color-bg-overlay) !important;
+    border-bottom-color: var(--color-border-primary) !important;
+
+    .navbar-brand {
+      color: var(--color-text-primary) !important;
+
+      &:hover {
+        color: var(--color-primary-light) !important;
+      }
+    }
+
+    .navbar-nav .nav-link {
+      color: var(--color-text-secondary) !important;
+
+      &:hover {
+        color: var(--color-primary-light) !important;
+        background-color: var(--color-bg-secondary) !important;
+      }
+
+      &.active {
+        color: var(--color-primary-light) !important;
+        background-color: var(--color-bg-secondary) !important;
+        border-color: var(--color-primary-light);
+      }
+    }
+
+    .navbar-toggler {
+      border-color: var(--color-border-primary) !important;
+
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+      }
+    }
+  }
+}

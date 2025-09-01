@@ -1,39 +1,612 @@
 ---
 layout: default
 title: Netinetidesign
-description: Front-end developer Menorca, JavaScript, React, Python, Flask, MongoDB
+description: Front-end developer, JavaScript, React, Python, Flask, MongoDB, PostgreSQL
+devicons_css: load cdn styles only when is necessary
 ---
 
-<div class="landing-wrapper">
-  <div class="d-flex justify-content-center">
-    <div class="flex-row">
-      <div class="flex-column">
-        <div class="align-items-center m-5">
-          <div class="img-circle"></div>
-        </div>
+<!-- ========= ABOUT ========= -->
+<section id="about" class="section section--hero section--large" aria-labelledby="about-title">
+<div class="container">
+  <div class="row align-items-center g-4">
+    <div class="col-lg-7">
+      <h1 id="about-title" class="h2 mb-3">Sobre mí</h1>
+
+      <p class="lead text-muted mb-3">
+        Soy <strong>Marcel Reig</strong>, <strong>Full-Stack Developer</strong> con <strong>orientación
+          frontend</strong>.
+        Me especializo en <strong>React</strong> y <strong>maquetación avanzada</strong> (CSS/Sass, BEM, accesibilidad).
+        Convierto diseños en <em>sistemas UI escalables y rápidos</em>.
+      </p>
+
+      <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
+        <li>
+          <a href="{{ site.linkedin_path }}" target="blank"><i class="fa fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="{{ site.github_path }}" target="blank"><i class="fa fa-github"></i></a>
+        </li>
+        <li>
+          <a href="{{ site.twitter_path }}" target="blank"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="{{ site.instagram_path }}" target="blank"><i class="fa fa-instagram"></i></a>
+        </li>
+
+      </ul>
+
+      <div class="d-flex flex-wrap gap-2">
+        <a class="btn btn-primary btn-sm" href="/assets/cv/m.reig-cv.pdf" target="_blank" rel="noopener">Descargar
+          CV</a>
+        <a class="btn btn-outline-primary btn-sm" href="/contact/">Contactar</a>
       </div>
     </div>
-  </div>
-  <div class="landing-text">
-    <h1>
-      Marcel Reig
-    </h1>
-    <p class="lead">Desarrollador Full Stack Menorca</p>
-  
-    <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
-      <li>
-        <a href="{{ site.linkedin_path }}" target="blank"><i class="fa fa-linkedin"></i></a>
-      </li>
-      <li>
-        <a href="{{ site.github_path }}" target="blank"><i class="fa fa-github"></i></a>
-      </li>
-      <li>
-        <a href="{{ site.twitter_path }}" target="blank"><i class="fa fa-twitter"></i></a>
-      </li>
-      <li>
-        <a href="{{ site.instagram_path }}" target="blank"><i class="fa fa-instagram"></i></a>
-      </li>
-      
-    </ul>
+
+    <div class="col-lg-5">
+      <figure class="m-0">
+        <img src="/assets/images/perfil-actor.jpg" alt="Foto de Marcel Reig" class="img-fluid rounded-3 shadow-sm w-100"
+          style="aspect-ratio:1/1;object-fit:cover;object-position:center;transform:rotate(-3deg);">
+      </figure>
+    </div>
   </div>
 </div>
+</section>
+
+<!-- ========= EXPERIENCIA ========= -->
+<section id="experience" class="section section--secondary section--large">
+<div class="container">
+  <div class="section-header">
+    <h2 class="section-title">Experiencia laboral</h2>
+    <p class="section-subtitle">Selección de roles, periodos y aprendizajes clave.</p>
+  </div>
+
+  <div class="timeline">
+    <!-- Item: mybooking.es -->
+    <article class="timeline__item row gy-3 align-items-start is-first">
+      <div class="timeline__meta col-10 offset-2 col-md-3 offset-md-0 order-2 order-md-1">
+        <div class="text-muted fw-medium">Alaior, ESP</div>
+        <div class="text-muted">
+          <time datetime="2017-10">Oct’17</time> – <time datetime="2021-09">Sep’21</time>
+          <span class="ms-1">· 4 años</span>
+        </div>
+      </div>
+      <div class="timeline__axis col-2 col-md-1 order-1 order-md-2 d-flex flex-column align-items-center">
+        <span class="timeline__line d-none d-md-block"></span>
+        <img class="timeline__avatar" src="{{ '/assets/images/portfolio/mybooking.png' | relative_url }}"
+          alt="mybooking" width="88" height="88" loading="lazy">
+        <span class="timeline__line d-none d-md-block flex-grow-1"></span>
+      </div>
+      <div class="timeline__content col-12 col-md-8 order-3">
+        <h3 class="h5 mb-1">
+          Desarrollador de front-end — <a href="https://mybooking.es" class="link-primary" target="_blank"
+            rel="noopener">mybooking.es</a>
+        </h3>
+        <p class="text-muted mb-3">Diseño/maquetación (CSS, Flexbox, CSS Grid), tema base y flujo de reserva, sitio
+          corporativo, plantillas y documentación.</p>
+        <ul class="mb-3">
+          <li>Diseño del tema base con proceso de reserva.</li>
+          <li>Sitio web corporativo y plantillas para clientes.</li>
+          <li>Documentación y soporte.</li>
+        </ul>
+        <p class="mb-0">
+          <span class="tech-badge badge-javascript">JavaScript</span>
+          <span class="tech-badge badge-gulp">Gulp</span>
+          <span class="tech-badge badge-webpack">Webpack</span>
+          <span class="tech-badge badge-wordpress">WordPress</span>
+          <span class="tech-badge badge-css3">CSS Grid</span>
+          <span class="tech-badge badge-css3">Flexbox</span>
+          <span class="tech-badge badge-scss">Sass</span>
+          <span class="tech-badge badge-bootstrap">Bootstrap</span>
+        </p>
+      </div>
+    </article>
+
+    <!-- Item: Código Nuevo -->
+    <article class="timeline__item row gy-3 align-items-start">
+      <div class="timeline__meta col-10 offset-2 col-md-3 offset-md-0 order-2 order-md-1">
+        <div class="text-muted fw-medium">Barcelona, ESP</div>
+        <div class="text-muted">
+          <time datetime="2017-01">Ene’17</time> – <time datetime="2019-03">Mar’19</time>
+          <span class="ms-1">· 2 años 3 meses</span>
+        </div>
+      </div>
+      <div class="timeline__axis col-2 col-md-1 order-1 order-md-2 d-flex flex-column align-items-center">
+        <span class="timeline__line d-none d-md-block flex-grow-1"></span>
+        <img class="timeline__avatar"
+          src="{{ '/assets/images/portfolio/portfolio-index/cdigo_nuevo_logo.jpg' | relative_url }}"
+          alt="Proyecto en Código Nuevo" width="88" height="88" loading="lazy">
+        <span class="timeline__line d-none d-md-block flex-grow-1"></span>
+      </div>
+      <div class="timeline__content col-12 col-md-8 order-3">
+        <h3 class="h5 mb-1">Desarrollador de front-end — <a href="https://www.codigonuevo.com/" class="link-primary"
+            target="_blank" rel="noopener">Código Nuevo</a></h3>
+        <p class="text-muted mb-3">Maquetación de documentales web para el Ayuntamiento de Barcelona, El Periódico y la
+          AMB.</p>
+        <ul class="mb-3">
+          <li>ZURB Template (Panini) + Gulp.</li>
+          <li>Interactividad con Vissense y Slick.</li>
+          <li>CSS/Sass y layouts responsivos.</li>
+        </ul>
+        <p class="mb-0">
+          <span class="tech-badge badge-javascript">JavaScript</span>
+          <span class="tech-badge badge-gulp">Gulp</span>
+          <span class="tech-badge badge-scss">Sass</span>
+          <span class="tech-badge badge-foundation">Foundation</span>
+          <span class="tech-badge badge-javascript">Vissense</span>
+          <span class="tech-badge badge-javascript">Slick</span>
+        </p>
+      </div>
+    </article>
+
+  </div>
+</div>
+</section>
+
+<!-- ========= EDUCACIÓN ========= -->
+<section id="education" class="section section--accent section--large">
+<div class="container">
+  <div class="section-header">
+    <h2 class="section-title">Educación</h2>
+    <p class="section-subtitle">Formación académica y cursos relevantes.</p>
+  </div>
+
+  <div class="timeline">
+    <!-- Item: 4Geeks Academy -->
+    <article class="timeline__item row gy-3 align-items-start is-first">
+      <div class="timeline__meta col-10 offset-2 col-md-3 offset-md-0 order-2 order-md-1">
+        <div class="text-muted fw-medium">Online</div>
+        <div class="text-muted">
+          <time datetime="2025-03">Mar'25</time> – <time datetime="2025-08">Ago'25</time>
+          <span class="ms-1">· 5 meses</span>
+        </div>
+      </div>
+      <div class="timeline__axis col-2 col-md-1 order-1 order-md-2 d-flex flex-column align-items-center">
+        <span class="timeline__line d-none d-md-block"></span>
+        <img class="timeline__avatar" src="{{ '/assets/images/education/4geeks_logo.jpg' | relative_url }}"
+          alt="4Geeks Academy" width="88" height="88" loading="lazy">
+        <span class="timeline__line d-none d-md-block flex-grow-1"></span>
+      </div>
+      <div class="timeline__content col-12 col-md-8 order-3">
+        <h3 class="h5 mb-1">
+          Bootcamp Full-Stack Developer — <a href="https://4geeksacademy.com" class="link-primary" target="_blank"
+            rel="noopener">4Geeks Academy</a>
+        </h3>
+        <p class="text-muted mb-3">Programa intensivo de desarrollo web full-stack con metodología ágil y enfoque
+          práctico en proyectos reales.</p>
+        <ul class="mb-3">
+          <li>Frontend: HTML5, CSS3 (Flexbox, Box Model), Bootstrap y JavaScript ES6+ con manipulación del DOM y
+            programación asíncrona.</li>
+          <li>React completo: componentes/JSX, Hooks (useState, useEffect), Context API, React Router y buenas
+            prácticas.</li>
+          <li>Backend: Python (POO), Flask (APIs REST), autenticación JWT y aplicaciones web completas.</li>
+          <li>Bases de datos: MySQL/SQL con SQLAlchemy ORM (CRUD, relaciones).</li>
+          <li>Testing con Jest, Git/GitHub colaborativo y metodologías ágiles (Scrum).</li>
+        </ul>
+        <p class="mb-0">
+          <span class="tech-badge badge-html5">HTML5</span>
+          <span class="tech-badge badge-css3">CSS3</span>
+          <span class="tech-badge badge-javascript">JavaScript ES6+</span>
+          <span class="tech-badge badge-react">React</span>
+          <span class="tech-badge badge-react">Hooks</span>
+          <span class="tech-badge badge-react">Context API</span>
+          <span class="tech-badge badge-python">Python</span>
+          <span class="tech-badge badge-flask">Flask</span>
+          <span class="tech-badge badge-mysql">MySQL</span>
+          <span class="tech-badge badge-python">SQLAlchemy</span>
+          <span class="tech-badge badge-javascript">JWT</span>
+          <span class="tech-badge badge-jest">Jest</span>
+          <span class="tech-badge badge-git">Git</span>
+          <span class="tech-badge badge-scrum">Scrum</span>
+        </p>
+      </div>
+    </article>
+
+    <!-- Item: Bottega University -->
+    <article class="timeline__item row gy-3 align-items-start">
+      <div class="timeline__meta col-10 offset-2 col-md-3 offset-md-0 order-2 order-md-1">
+        <div class="text-muted fw-medium">Online</div>
+        <div class="text-muted">
+          <time datetime="2021">2021</time>
+          <span class="ms-1">· 6 meses</span>
+        </div>
+      </div>
+      <div class="timeline__axis col-2 col-md-1 order-1 order-md-2 d-flex flex-column align-items-center">
+        <span class="timeline__line d-none d-md-block flex-grow-1"></span>
+        <img class="timeline__avatar" src="{{ '/assets/images/education/bottega_logo.png' | relative_url }}"
+          alt="Bottega University" width="88" height="88" loading="lazy">
+        <span class="timeline__line d-none d-md-block flex-grow-1"></span>
+      </div>
+      <div class="timeline__content col-12 col-md-8 order-3">
+        <h3 class="h5 mb-1">Bootcamp Full-Stack Developer — <a
+            href="https://bottega.edu/full-stack-development-certificate/" class="link-primary" target="_blank"
+            rel="noopener">Bottega University</a></h3>
+        <p class="text-muted mb-3">Programa completo de desarrollo web full-stack con enfoque en tecnologías modernas y
+          metodologías profesionales.</p>
+        <ul class="mb-3">
+          <li>Frontend: HTML5, CSS3/SCSS (Grid, Flexbox), JavaScript ES6+ y React completo (Router, Redux, Hooks).</li>
+          <li>Backend: Python (POO, módulos), Flask (APIs REST) y bases de datos SQL/NoSQL (MongoDB, Redis).</li>
+          <li>Herramientas: Git/GitHub, CLI, Heroku, UML y metodologías de desarrollo ágil.</li>
+          <li>Testing, deployment.</li>
+        </ul>
+        <p class="mb-0">
+          <span class="tech-badge badge-html5">HTML5</span>
+          <span class="tech-badge badge-scss">CSS3/SCSS</span>
+          <span class="tech-badge badge-javascript">JavaScript ES6+</span>
+          <span class="tech-badge badge-react">React</span>
+          <span class="tech-badge badge-redux">Redux</span>
+          <span class="tech-badge badge-python">Python</span>
+          <span class="tech-badge badge-flask">Flask</span>
+          <span class="tech-badge badge-sql">SQL</span>
+          <span class="tech-badge badge-mongodb">MongoDB</span>
+          <span class="tech-badge badge-git">Git</span>
+          <span class="tech-badge badge-heroku">Heroku</span>
+        </p>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- Otros cursos -->
+  <div class="mt-5">
+    <details>
+      <summary class="small text-muted">Otros cursos y certificaciones</summary>
+      <ul class="small mt-2">
+        <li>Frontend Masters — <em>Complete Intro to React v7</em> (Brian Holt)</li>
+        <li>Frontend Masters — <em>Introduction to Next.js</em> (Scott Moss)</li>
+        <li>Wes Bos — <em>CSS Grid</em>, <em>What The Flexbox?!</em>, <em>Beginner JavaScript</em></li>
+        <li>App Academy Open — <em>React Basics</em></li>
+      </ul>
+    </details>
+  </div>
+</div>
+</section>
+
+<!-- ========= PROYECTOS DESTACADOS ========= -->
+<section id="projects" class="section section--projects section--large" aria-labelledby="projects-title">
+<div class="container">
+  <div class="section-header">
+    <h2 id="projects-title" class="section-title">Proyectos destacados</h2>
+    <p class="section-subtitle">Aquí algunos proyectos personales que reflejan mi experiencia y estilo de trabajo.</p>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+    <!-- Game Matcher -->
+    <div class="col">
+      <article class="card h-100 shadow-sm border-0">
+        <div class="ratio ratio-16x9 rounded-top overflow-hidden">
+          <img src="{{ '/assets/images/proyects/gamematcher.png' | relative_url }}"
+            alt="Game Matcher - Recomendador de videojuegos" class="w-100 h-100" style="object-fit:cover" loading="lazy"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+          <div class="d-none bg-light border d-flex align-items-center justify-content-center h-100"
+            style="color:#6c757d;">
+            <i class="fa-solid fa-image fa-2x"></i>
+          </div>
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h3 class="h5 mb-1">Game Matcher</h3>
+          <div class="mb-2">
+            <span class="tech-badge badge-react me-1">React</span>
+            <span class="tech-badge badge-react me-1">Hooks</span>
+            <span class="tech-badge badge-api me-1">RAGWG API</span>
+            <span class="tech-badge badge-python me-1">Python</span>
+            <span class="tech-badge badge-flask me-1">Flask</span>
+            <span class="tech-badge badge-postgresql me-1">PostgreSQL</span>
+            <span class="tech-badge badge-sqlalchemy me-1">SQLAlchemy</span>
+          </div>
+          <p class="flex-grow-1">App recomendadora de videojuegos con React y API externa.</p>
+          <div class="d-flex gap-2">
+            <a href="https://github.com/MarcelReig/gamematcher" target="_blank" rel="noopener"
+              class="btn btn-sm btn-outline-dark">
+              <i class="fa-brands fa-github" aria-hidden="true"></i> Ver código
+            </a>
+            <a href="https://sample-service-name-7fte.onrender.com/" target="_blank" rel="noopener"
+              class="btn btn-sm btn-primary">
+              <i class="fas fa-external-link-alt me-2"></i>Ver proyecto
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- Marina Ilustración -->
+    <div class="col">
+      <article class="card h-100 shadow-sm border-0">
+        <div class="ratio ratio-16x9 rounded-top overflow-hidden">
+          <img src="{{ '/assets/images/proyects/marina_ilustracion.png' | relative_url }}"
+            alt="Marina Ilustración - Portfolio con CMS y tienda" class="w-100 h-100" style="object-fit:cover"
+            loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+          <div class="d-none bg-light border d-flex align-items-center justify-content-center h-100"
+            style="color:#6c757d;">
+            <i class="fa-solid fa-image fa-2x"></i>
+          </div>
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h3 class="h5 mb-1">Marina Ilustración</h3>
+          <div class="mb-2">
+            <span class="tech-badge badge-react me-1">React</span>
+            <span class="tech-badge badge-cms me-1">CMS</span>
+            <span class="tech-badge badge-ecommerce me-1">E-commerce</span>
+            <span class="tech-badge badge-stripe me-1">Stripe</span>
+            <span class="tech-badge badge-flask me-1">Flask</span>
+            <span class="tech-badge badge-mongodb me-1">MongoDB</span>
+            <span class="tech-badge badge-pymongo me-1">PyMongo</span>
+          </div>
+          <p class="flex-grow-1">Portfolio de artista con CMS y tienda online integrada.</p>
+          <div class="d-flex gap-2">
+            <a href="https://github.com/MarcelReig/react-marina-front" target="_blank" rel="noopener"
+              class="btn btn-sm btn-outline-dark">
+              <i class="fa-brands fa-github" aria-hidden="true"></i> Ver código
+            </a>
+            <a href="https://king-prawn-app-dr5rk.ondigitalocean.app/" target="_blank" rel="noopener"
+              class="btn btn-sm btn-primary">
+              <i class="fas fa-external-link-alt me-2"></i>Ver proyecto
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- React Tasks App -->
+    <div class="col">
+      <article class="card h-100 shadow-sm border-0">
+        <div class="ratio ratio-16x9 rounded-top overflow-hidden">
+          <img src="{{ '/assets/images/proyects/react-todo.webp' | relative_url }}" alt="React Tasks App"
+            class="w-100 h-100" style="object-fit:cover" loading="lazy"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+          <div class="d-none bg-light border d-flex align-items-center justify-content-center h-100"
+            style="color:#6c757d;">
+            <i class="fa-solid fa-image fa-2x"></i>
+          </div>
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h3 class="h5 mb-1">React Tasks App</h3>
+          <div class="mb-2">
+            <span class="tech-badge badge-react me-1">React</span>
+            <span class="tech-badge badge-react me-1">Hooks</span>
+          </div>
+          <p class="flex-grow-1">To-do list interactiva con React y hooks.</p>
+          <div class="d-flex gap-2">
+            <a href="https://github.com/MarcelReig/react-tasks-app" target="_blank" rel="noopener"
+              class="btn btn-sm btn-outline-dark">
+              <i class="fa-brands fa-github" aria-hidden="true"></i> Ver código
+            </a>
+            <a href="https://awesome-react-tasks.netlify.app/" target="_blank" rel="noopener"
+              class="btn btn-sm btn-primary">
+              <i class="fas fa-external-link-alt me-2"></i>Ver proyecto
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- IdeaBox Vue App -->
+    <div class="col">
+      <article class="card h-100 shadow-sm border-0">
+        <div class="ratio ratio-16x9 rounded-top overflow-hidden">
+          <img src="{{ '/assets/images/proyects/idea-box.webp' | relative_url }}" alt="IdeaBox Vue App"
+            class="w-100 h-100" style="object-fit:cover" loading="lazy"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+          <div class="d-none bg-light border d-flex align-items-center justify-content-center h-100"
+            style="color:#6c757d;">
+            <i class="fa-solid fa-image fa-2x"></i>
+          </div>
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h3 class="h5 mb-1">IdeaBox Vue App</h3>
+          <div class="mb-2">
+            <span class="tech-badge badge-vue me-1">Vue</span>
+            <span class="tech-badge badge-firestore me-1">Firestore</span>
+          </div>
+          <p class="flex-grow-1">Ideas creativas gestionadas con Vue y Firestore.</p>
+          <div class="d-flex gap-2">
+            <a href="https://ideabox-c36d2.web.app/" target="_blank" rel="noopener" class="btn btn-sm btn-primary">Ver
+              proyecto</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- mybooking docs -->
+    <div class="col">
+      <article class="card h-100 shadow-sm border-0">
+        <div class="ratio ratio-16x9 rounded-top overflow-hidden">
+          <img src="{{ '/assets/images/proyects/mybooking-docs.webp' | relative_url }}" alt="Mybooking docs (VuePress)"
+            class="w-100 h-100" style="object-fit:cover" loading="lazy"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+          <div class="d-none bg-light border d-flex align-items-center justify-content-center h-100"
+            style="color:#6c757d;">
+            <i class="fa-solid fa-image fa-2x"></i>
+          </div>
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h3 class="h5 mb-1">mybooking docs</h3>
+          <div class="mb-2">
+            <span class="tech-badge badge-vuepress me-1">VuePress</span>
+            <span class="tech-badge badge-markdown me-1">Markdown</span>
+          </div>
+          <p class="flex-grow-1">Documentación técnica de la API de mybooking desarrollada con VuePress.</p>
+          <div class="d-flex gap-2">
+            <a href="https://docs.mybooking.es/" target="_blank" rel="noopener" class="btn btn-sm btn-primary">Ver
+              proyecto</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- mybooking WP theme -->
+    <div class="col">
+      <article class="card h-100 shadow-sm border-0">
+        <div class="ratio ratio-16x9 rounded-top overflow-hidden">
+          <img src="{{ '/assets/images/proyects/mybooking-theme.webp' | relative_url }}" alt="mybooking WP theme"
+            class="w-100 h-100" style="object-fit:cover" loading="lazy"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+          <div class="d-none bg-light border d-flex align-items-center justify-content-center h-100"
+            style="color:#6c757d;">
+            <i class="fa-solid fa-image fa-2x"></i>
+          </div>
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h3 class="h5 mb-1">mybooking WP theme</h3>
+          <div class="mb-2">
+            <span class="tech-badge badge-wordpress me-1">WordPress</span>
+            <span class="tech-badge badge-bootstrap me-1">Bootstrap</span>
+          </div>
+          <p class="flex-grow-1">Tema minimalista basado en Bootstrap.</p>
+          <div class="d-flex gap-2">
+            <a href="https://github.com/mybooking-es/mybooking" target="_blank" rel="noopener"
+              class="btn btn-sm btn-outline-dark">
+              <i class="fa-brands fa-github" aria-hidden="true"></i> Ver código
+            </a>
+            <a href="https://wordpress.org/themes/mybooking/" target="_blank" rel="noopener"
+              class="btn btn-sm btn-primary">
+              <i class="fas fa-external-link-alt me-2"></i>Ver proyecto
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- ========= SKILLS & STACK ========= -->
+<section id="skills" class="section section--skills section--large" aria-labelledby="skills-title">
+<div class="container">
+  <div class="section-header">
+    <h2 id="skills-title" class="section-title">Skills & Stack</h2>
+    <p class="section-subtitle">Tecnologías y herramientas con las que trabajo</p>
+  </div>
+
+  <!-- Core Frontend -->
+  <section class="mb-4" aria-labelledby="core-frontend-title">
+    <h3 id="core-frontend-title" class="h5 text-uppercase text-muted mb-3">Frontend</h3>
+    <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3" role="list">
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-html5-plain-wordmark"></i>
+          <figcaption class="small mt-2">HTML5</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-css3-plain-wordmark"></i>
+          <figcaption class="small mt-2">CSS3 (BEM)</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-sass-original"></i>
+          <figcaption class="small mt-2">Sass</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-javascript-plain"></i>
+          <figcaption class="small mt-2">JavaScript (ESNext)</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-react-original"></i>
+          <figcaption class="small mt-2">React</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- UI & Styling -->
+  <section class="mb-4" aria-labelledby="ui-styling-title">
+    <h3 id="ui-styling-title" class="h5 text-uppercase text-muted mb-3">UI &amp; Styling</h3>
+    <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3" role="list">
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-bootstrap-plain"></i>
+          <figcaption class="small mt-2">Bootstrap</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-tailwindcss-plain"></i>
+          <figcaption class="small mt-2">Tailwind CSS</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-styledcomponents-plain"></i>
+          <figcaption class="small mt-2">styled-components</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tooling -->
+  <section class="mb-4" aria-labelledby="tooling-title">
+    <h3 id="tooling-title" class="h5 text-uppercase text-muted mb-3">Tooling</h3>
+    <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3" role="list">
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-vitejs-plain"></i>
+          <figcaption class="small mt-2">Vite</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-webpack-plain"></i>
+          <figcaption class="small mt-2">Webpack</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-git-plain"></i>
+          <figcaption class="small mt-2">Git</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-postman-plain"></i>
+          <figcaption class="small mt-2">Postman</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Backend & Datos -->
+  <section aria-labelledby="backend-title">
+    <h3 id="backend-title" class="h5 text-uppercase text-muted mb-3">Backend &amp; Datos</h3>
+    <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3" role="list">
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-python-plain"></i>
+          <figcaption class="small mt-2">Python</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-flask-original"></i>
+          <figcaption class="small mt-2">Flask</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-postgresql-plain"></i>
+          <figcaption class="small mt-2">PostgreSQL</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-mongodb-plain"></i>
+          <figcaption class="small mt-2">MongoDB</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-sqlalchemy-plain"></i>
+          <figcaption class="small mt-2">SQLAlchemy</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+</div>
+</section>

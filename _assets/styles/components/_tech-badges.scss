@@ -1,0 +1,284 @@
+// =============================================================================
+// TECH BADGES - COLORS SPECIFIC TO EACH TECHNOLOGY
+// =============================================================================
+
+// Base badge styles
+.tech-badge {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.375rem;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  border: none;
+  margin: 0.125rem 0.25rem; // ← Margen vertical y horizontal
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// =============================================================================
+// FRONTEND TECHNOLOGIES
+// =============================================================================
+
+// HTML5
+.badge-html5 {
+  background-color: #e34f26;
+  color: #ffffff;
+}
+
+// CSS3
+.badge-css3 {
+  background-color: #1572b6;
+  color: #ffffff;
+}
+
+// SCSS/Sass
+.badge-scss {
+  background-color: #cf649a;
+  color: #ffffff;
+}
+
+// JavaScript
+.badge-javascript {
+  background-color: #f7df1e;
+  color: #000000;
+}
+
+// React
+.badge-react {
+  background-color: #61dafb;
+  color: #000000;
+}
+
+// Vue.js
+.badge-vue {
+  background-color: #4fc08d;
+  color: #ffffff;
+}
+
+// Bootstrap
+.badge-bootstrap {
+  background-color: #7952b3;
+  color: #ffffff;
+}
+
+// =============================================================================
+// BACKEND TECHNOLOGIES
+// =============================================================================
+
+// Python
+.badge-python {
+  background-color: #3776ab;
+  color: #ffffff;
+}
+
+// Node.js
+.badge-nodejs {
+  background-color: #339933;
+  color: #ffffff;
+}
+
+// Flask
+.badge-flask {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+// =============================================================================
+// DATABASES
+// =============================================================================
+
+// MySQL
+.badge-mysql {
+  background-color: #4479a1;
+  color: #ffffff;
+}
+
+// MongoDB
+.badge-mongodb {
+  background-color: #47a248;
+  color: #ffffff;
+}
+
+// SQL
+.badge-sql {
+  background-color: #336791;
+  color: #ffffff;
+}
+
+// =============================================================================
+// TOOLS & BUILD TOOLS
+// =============================================================================
+
+// Git
+.badge-git {
+  background-color: #f05032;
+  color: #ffffff;
+}
+
+// GitHub
+.badge-github {
+  background-color: #181717;
+  color: #ffffff;
+}
+
+// Webpack
+.badge-webpack {
+  background-color: #8dd6f9;
+  color: #000000;
+}
+
+// Gulp
+.badge-gulp {
+  background-color: #cf4647;
+  color: #ffffff;
+}
+
+// =============================================================================
+// CMS & PLATFORMS
+// =============================================================================
+
+// WordPress
+.badge-wordpress {
+  background-color: #21759b;
+  color: #ffffff;
+}
+
+// =============================================================================
+// TESTING & QUALITY
+// =============================================================================
+
+// Jest
+.badge-jest {
+  background-color: #c21325;
+  color: #ffffff;
+}
+
+// =============================================================================
+// CLOUD & DEPLOYMENT
+// =============================================================================
+
+// Heroku
+.badge-heroku {
+  background-color: #430098;
+  color: #ffffff;
+}
+
+// =============================================================================
+// METHODOLOGIES & PROCESSES
+// =============================================================================
+
+// Scrum
+.badge-scrum {
+  background-color: #ff6b35;
+  color: #ffffff;
+}
+
+// =============================================================================
+// FRONTEND FRAMEWORKS
+// =============================================================================
+
+// Foundation
+.badge-foundation {
+  background-color: #009688;
+  color: #ffffff;
+}
+
+// Redux
+.badge-redux {
+  background-color: #764abc;
+  color: #ffffff;
+}
+
+// =============================================================================
+// DATABASES & ORM
+// =============================================================================
+
+// PostgreSQL
+.badge-postgresql {
+  background-color: #336791;
+  color: #ffffff;
+}
+
+// SQLAlchemy
+.badge-sqlalchemy {
+  background-color: #d71921;
+  color: #ffffff;
+}
+
+// PyMongo
+.badge-pymongo {
+  background-color: #4db33d;
+  color: #ffffff;
+}
+
+// Firestore
+.badge-firestore {
+  background-color: #ffa611;
+  color: #000000;
+}
+
+// =============================================================================
+// PAYMENT & E-COMMERCE
+// =============================================================================
+
+// Stripe
+.badge-stripe {
+  background-color: #008cdd;
+  color: #ffffff;
+}
+
+// E-commerce
+.badge-ecommerce {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+// CMS
+.badge-cms {
+  background-color: #673ab7;
+  color: #ffffff;
+}
+
+// =============================================================================
+// DOCUMENTATION & CONTENT
+// =============================================================================
+
+// VuePress
+.badge-vuepress {
+  background-color: #3eaf7c;
+  color: #ffffff;
+}
+
+// Markdown
+.badge-markdown {
+  background-color: #083fa1;
+  color: #ffffff;
+}
+
+// =============================================================================
+// APIs & EXTERNAL SERVICES
+// =============================================================================
+
+// API (Generic)
+.badge-api {
+  background-color: #ff6b35;
+  color: #ffffff;
+}
+
+// =============================================================================
+// FALLBACK FOR UNKNOWN TECHNOLOGIES
+// =============================================================================
+
+.badge-unknown {
+  background-color: var(--bs-secondary);
+  color: var(--bs-white);
+}

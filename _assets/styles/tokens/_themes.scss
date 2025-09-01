@@ -1,0 +1,83 @@
+// =============================================================================
+// BOOTSTRAP 5 THEME SYSTEM - CORE SETUP
+// =============================================================================
+
+// ===========================================================================
+// COMPATIBILITY WITH BOOTSTRAP 5
+// ===========================================================================
+
+// Aseguramos que Bootstrap use nuestros tokens
+:root {
+  --bs-primary: var(--color-primary);
+  --bs-secondary: var(--color-secondary);
+  --bs-success: var(--color-success);
+  --bs-danger: var(--color-danger);
+  --bs-warning: var(--color-warning);
+  --bs-info: var(--color-info);
+  --bs-light: var(--color-gray-100);
+  --bs-dark: var(--color-gray-900);
+}
+
+// ===========================================================================
+// SMOOTH TRANSITIONS FOR THEME CHANGES
+// ===========================================================================
+html {
+  transition: color-scheme 0.15s ease-in-out;
+}
+
+body {
+  background-color: var(--bs-body-bg) !important;
+  color: var(--bs-body-color) !important;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+// Theme-aware transitions for key elements
+.navbar,
+.card,
+.btn,
+.form-control,
+.bg-light,
+.bg-dark,
+.bg-secondary {
+  transition: 
+    background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out,
+    color 0.15s ease-in-out;
+}
+
+// ===========================================================================
+// THEME-SPECIFIC OVERRIDES
+// ===========================================================================
+
+// Light theme explicit styles
+[data-bs-theme="light"] {
+  color-scheme: light;
+}
+
+// Dark theme explicit styles  
+[data-bs-theme="dark"] {
+  color-scheme: dark;
+  
+  // Ensure all backgrounds use dark theme colors
+  .bg-light {
+    background-color: var(--color-bg-secondary) !important;
+    color: var(--color-text-primary) !important;
+  }
+  
+  .bg-white {
+    background-color: var(--color-bg-primary) !important;
+    color: var(--color-text-primary) !important;
+  }
+  
+  .text-dark {
+    color: var(--color-text-primary) !important;
+  }
+  
+  .text-muted {
+    color: var(--color-text-secondary) !important;
+  }
+  
+  .border {
+    border-color: var(--color-border-primary) !important;
+  }
+}

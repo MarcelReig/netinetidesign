@@ -1,0 +1,111 @@
+//==============================================
+// Sticky Footer Fix - Universal Solution
+//==============================================
+
+/* === UNIVERSAL STICKY FOOTER FIX === */
+/* This ensures the footer stays at the bottom on ALL pages */
+
+/* Reset body and html for consistent behavior */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main site container - uses Flexbox for better content handling */
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Content wrapper - takes all available space */
+.site-content {
+  flex: 1 0 auto;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+/* Footer - always at bottom */
+.site-footer {
+  flex-shrink: 0;
+  width: 100%;
+  background-color: #1a1a1a;
+  border-top: 1px solid #333333;
+  color: #f5f5f5;
+  padding: 1.5rem 0;
+}
+
+/* === FALLBACK FOR OLDER BROWSERS === */
+/* For browsers that don't support Flexbox */
+@supports not (display: flex) {
+  .site {
+    display: table;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .site-content {
+    display: table-row;
+    height: 100%;
+  }
+
+  .site-footer {
+    display: table-row;
+    height: 1px;
+  }
+}
+
+/* === RESPONSIVE ADJUSTMENTS === */
+@media (max-width: 768px) {
+  .site-content {
+    padding-bottom: 1.5rem;
+  }
+
+  .site-footer {
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .site-content {
+    padding-bottom: 1rem;
+  }
+
+  .site-footer {
+    padding: 0.75rem 0;
+  }
+}
+
+/* === ACCESSIBILITY IMPROVEMENTS === */
+@media (prefers-reduced-motion: reduce) {
+  .site-footer a {
+    transition: none;
+  }
+}
+
+/* === HIGH CONTRAST MODE SUPPORT === */
+@media (prefers-contrast: high) {
+  .site-footer {
+    border-top: 2px solid #f5f5f5;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* === PRINT STYLES === */
+@media print {
+  .site-footer {
+    background-color: transparent !important;
+    border-top: 1px solid #000 !important;
+    color: #000 !important;
+
+    a {
+      color: #000 !important;
+    }
+  }
+}

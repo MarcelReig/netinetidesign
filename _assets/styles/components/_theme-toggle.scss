@@ -1,0 +1,91 @@
+// =============================================================================
+// THEME TOGGLE BUTTON (Bootstrap 5 Style)
+// =============================================================================
+
+.theme-toggle {
+  position: relative;
+  background: none;
+  border: 1px solid var(--color-border-primary);
+  border-radius: 0.375rem;
+  padding: 0.375rem 0.75rem;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  
+  &:hover {
+    background-color: var(--color-bg-secondary);
+    border-color: var(--color-border-secondary);
+    color: var(--color-text-primary);
+  }
+  
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+    border-color: #86b7fe;
+  }
+  
+  // Iconos
+  .theme-icon {
+    width: 1.125rem;
+    height: 1.125rem;
+    fill: currentColor;
+    transition: transform 0.15s ease-in-out;
+  }
+  
+  // Estados de los iconos
+  .sun-icon {
+    display: none;
+  }
+  
+  .moon-icon {
+    display: block;
+  }
+  
+  // Cuando el tema es oscuro
+  [data-bs-theme="dark"] & {
+    .sun-icon {
+      display: block;
+    }
+    
+    .moon-icon {
+      display: none;
+    }
+  }
+  
+  // Animación al hacer hover
+  &:hover .theme-icon {
+    transform: scale(1.1);
+  }
+  
+  // Estados activos
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+// ===========================================================================
+// RESPONSIVE BEHAVIOR
+// ===========================================================================
+@media (max-width: 991.98px) {
+  .theme-toggle {
+    margin-left: 0.5rem;
+  }
+}
+
+// ===========================================================================
+// HIGH CONTRAST MODE
+// ===========================================================================
+@media (prefers-contrast: high) {
+  .theme-toggle {
+    border-width: 2px;
+    
+    &:focus {
+      box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.5);
+    }
+  }
+}

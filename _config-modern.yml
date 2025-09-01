@@ -1,0 +1,100 @@
+# Modern _config.yml for 2025
+
+# Site Identity
+title: "Marcel Reig | Full-Stack Developer"
+email: marcelreig@gmail.com
+description: >
+  Full-Stack Developer especializado en React, Python y arquitecturas modernas. 
+  Creo experiencias web escalables y accesibles desde las Islas Baleares.
+  Experto en frontend con orientación UX y backend con Python/Flask.
+
+# Technical
+baseurl: ""
+url: "https://www.netinetidesign.com"
+lang: "es-ES"
+timezone: "Europe/Madrid"
+
+# Modern Jekyll
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+
+# Performance
+sass:
+  style: compressed
+  sourcemap: never
+
+# Social Media (Updated 2025)
+social:
+  linkedin: "https://www.linkedin.com/in/marcel-reig/"
+  github: "https://github.com/MarcelReig"
+  twitter: "https://x.com/netinetidesign"
+  instagram: "https://www.instagram.com/netinetidesign"
+
+# SEO & Analytics
+google_analytics: "G-XXXXXXXXXX" # Update to GA4
+google_site_verification: "YOUR_VERIFICATION_CODE"
+
+# Content Settings
+excerpt_separator: "<!--more-->"
+paginate: 8
+paginate_path: "/blog/page:num/"
+
+# Collections (Enhanced)
+collections:
+  projects:
+    output: true
+    permalink: /portfolio/:name/
+  my_categories:
+    output: true
+    permalink: /blog/category/:name/
+  my_tags:
+    output: true
+    permalink: /blog/tag/:name/
+
+# Defaults (Enhanced)
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+      image: /assets/images/social-default.jpg
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      image: /assets/images/blog-default.jpg
+      author: Marcel Reig
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+      
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - gulpfile.js
+  - package*.json
+  - README.md
+  - .DS_Store
+  - .git
+  - .ruby-version

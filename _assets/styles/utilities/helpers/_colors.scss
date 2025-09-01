@@ -1,0 +1,70 @@
+// =============================================================================
+// COLOR UTILITIES - Based on CSS Custom Properties
+// =============================================================================
+
+// ===========================================================================
+// BRAND COLORS
+// ===========================================================================
+.color-primary {
+  color: var(--color-primary);
+}
+.color-primary-dark {
+  color: var(--color-primary-dark);
+}
+.color-primary-light {
+  color: var(--color-primary-light);
+}
+.color-secondary {
+  color: var(--color-secondary);
+}
+
+// ===========================================================================
+// NEUTRAL COLORS (USED CLASSES ONLY)
+// ===========================================================================
+.color-gray-700 {
+  color: var(--color-gray-700);
+}
+
+// ===========================================================================
+// BACKGROUND COLORS
+// ===========================================================================
+.bg-primary {
+  background-color: var(--color-primary);
+}
+.bg-primary-dark {
+  background-color: var(--color-primary-dark);
+}
+.bg-primary-light {
+  background-color: var(--color-primary-light);
+}
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+// Semantic backgrounds (for UI demo page)
+.bg-success {
+  background-color: var(--color-success);
+}
+.bg-warning {
+  background-color: var(--color-warning);
+}
+.bg-danger {
+  background-color: var(--color-danger);
+}
+.bg-info {
+  background-color: var(--color-info);
+}
+
+// Gray scale backgrounds (for UI demo page)
+.bg-gray-50 {
+  background-color: var(--color-gray-50);
+}
+.bg-gray-100 {
+  background-color: var(--color-gray-100);
+}
+.bg-gray-200 {
+  background-color: var(--color-gray-200);
+}
+.bg-gray-300 {
+  background-color: var(--color-gray-300);
+}

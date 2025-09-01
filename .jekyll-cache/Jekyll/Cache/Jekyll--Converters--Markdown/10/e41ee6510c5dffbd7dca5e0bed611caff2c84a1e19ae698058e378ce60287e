@@ -1,4 +1,4 @@
-I"f<h3 class="lead my-5" id="la-desestructuración-nos-permite-asignar-las-propiedades-de-un-array-en-javascript-o-de-una-lista-o-en-python-a-variables-individuales">La desestructuración nos permite asignar las propiedades de un array en JavaScript o de una lista o en Python a variables individuales.</h3>
+I"�<h3 class="lead my-5" id="la-desestructuración-nos-permite-asignar-las-propiedades-de-un-array-en-javascript-o-de-una-lista-o-en-python-a-variables-individuales">La desestructuración nos permite asignar las propiedades de un array en JavaScript o de una lista o en Python a variables individuales.</h3>
 
 <h3 class="lead my-5" id="de-hecho-la-desestructuración-no-se-limita-a-listas-también-puedes-desestructurar-tuplas-y-cadenas">De hecho la desestructuración no se limita a listas también puedes desestructurar tuplas y cadenas.</h3>
 
@@ -13,11 +13,11 @@
 
 <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 
 <span class="c1"># Output: 1
 </span>
-<span class="k">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
 
 <span class="c1"># Output: 2
 </span></code></pre></div></div>
@@ -35,11 +35,11 @@
 
 <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">el_primero</span><span class="p">,</span> <span class="o">*</span><span class="n">el_resto</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">el_primero</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">el_primero</span><span class="p">)</span>
 
 <span class="c1"># Output: 1
 </span>
-<span class="k">print</span><span class="p">(</span><span class="n">el_resto</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">el_resto</span><span class="p">)</span>
 
 <span class="c1"># Output: [2, 3, 4, 5]
 </span></code></pre></div></div>
@@ -48,13 +48,13 @@
 
 <p>Puedes ingorar valores al desestructurar utilizando un guión bajo <code class="language-plaintext highlighter-rouge">_</code>.</p>
 
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">nombre</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">segundo_apellido</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Alvaro'</span><span class="p">,</span> <span class="s">'Reyes'</span><span class="p">,</span> <span class="s">'Guerrero'</span><span class="p">]</span>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">nombre</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">segundo_apellido</span> <span class="o">=</span> <span class="p">[</span><span class="sh">'</span><span class="s">Alvaro</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Reyes</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Guerrero</span><span class="sh">'</span><span class="p">]</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span>
 
 <span class="c1"># Output: Alvaro
 </span>
-<span class="k">print</span><span class="p">(</span><span class="n">segundo_apellido</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">segundo_apellido</span><span class="p">)</span>
 
 <span class="c1"># Output: Guerrero
 </span></code></pre></div></div>
@@ -64,7 +64,7 @@
 <p>Puedes ignorar múltiples valores con la siguiente sintaxis <code class="language-plaintext highlighter-rouge">*_</code>.</p>
 
 <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span><span class="p">,</span> <span class="o">*</span><span class="n">_</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 
 <span class="c1"># Output: 1
 </span></code></pre></div></div>
@@ -72,14 +72,14 @@
 <p>Ignorar todos los valores menos el primero y el último.</p>
 
 <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">a</span><span class="p">,</span> <span class="o">*</span><span class="n">_</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
- <span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+ <span class="nf">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
 
  <span class="c1"># Output: 1 5
 </span></code></pre></div></div>
 <p>Obtener todos los valores intermedios pero ignorar el primer y el último valor.</p>
 
 <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">_</span><span class="p">,</span> <span class="o">*</span><span class="n">contenido</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-<span class="k">print</span><span class="p">(</span><span class="n">contenido</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">contenido</span><span class="p">)</span>
 
 <span class="c1"># Output: [2, 3, 4]
 </span></code></pre></div></div>
@@ -88,7 +88,7 @@
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="p">[</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
 
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">b</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="nx">b</span><span class="p">)</span>
 
 <span class="c1">// Output: 2</span>
 </code></pre></div></div>

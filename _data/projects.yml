@@ -1,0 +1,73 @@
+# Portfolio de proyectos destacados
+featured:
+  - title: "Netinetidesign Portfolio"
+    description: "Portfolio personal desarrollado con Jekyll, Bootstrap 5 y optimizado para performance y SEO"
+    url: "https://www.netinetidesign.com"
+    github: "https://github.com/MarcelReig/netinetidesign"
+    image: "/assets/images/projects/portfolio.webp"
+    technologies:
+      - "Jekyll"
+      - "Bootstrap 5"
+      - "Sass"
+      - "JavaScript"
+      - "Gulp"
+    category: "portfolio"
+    featured: true
+    status: "active"
+
+  - title: "Coding Lab"
+    description: "Experimentos y prototipos de desarrollo frontend"
+    url: "/portfolio/coding-lab/"
+    image: "/assets/images/projects/coding-lab.webp"
+    technologies:
+      - "HTML5"
+      - "CSS3"
+      - "JavaScript"
+      - "APIs"
+    category: "experiments"
+    featured: true
+    status: "active"
+
+  - title: "HTML5 Templates"
+    description: "Colección de templates responsivos y modernos"
+    url: "/portfolio/html5-templates/"
+    image: "/assets/images/projects/html5-templates.webp"
+    technologies:
+      - "HTML5"
+      - "CSS3"
+      - "Bootstrap"
+      - "jQuery"
+    category: "templates"
+    featured: false
+    status: "archived"
+
+categories:
+  - slug: "portfolio"
+    name: "Portfolio"
+    description: "Sitios web personales y profesionales"
+    
+  - slug: "experiments"
+    name: "Experimentos"
+    description: "Prototipos y pruebas de concepto"
+    
+  - slug: "templates"
+    name: "Templates"
+    description: "Plantillas reutilizables"
+    
+  - slug: "freelance"
+    name: "Freelance"
+    description: "Proyectos para clientes"
+
+# Proyectos adicionales del portfolio existente
+all_projects:
+  - title: "MyBooking"
+    url: "/portfolio/mybooking/"
+    category: "freelance"
+    
+  - title: "Código Nuevo"
+    url: "/portfolio/codigonuevo/"
+    category: "freelance"
+    
+  - title: "Design Sketch"
+    url: "/portfolio/design-sketch/"
+    category: "experiments"

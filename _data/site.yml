@@ -1,0 +1,39 @@
+# Información general del sitio
+author: "Marcel Reig"
+email: "marcelreig@gmail.com"
+tagline: "Desarrollador front-end Menorca"
+description: "Portfolio y blog de desarrollo web frontend. Especializado en JavaScript, CSS, HTML y tecnologías modernas."
+keywords: 
+  - "desarrollo web"
+  - "frontend"
+  - "javascript"
+  - "css"
+  - "html"
+  - "jekyll"
+  - "bootstrap"
+  - "sass"
+  - "menorca"
+
+# Configuración de la marca
+brand:
+  name: "netinetidesign"
+  logo: "/assets/images/logo.svg"
+  favicon: "/assets/images/favicon.ico"
+
+# Información de contacto
+contact:
+  location: "Menorca, España"
+  timezone: "Europe/Madrid"
+  available_for_work: true
+  preferred_contact: "email"
+
+# Analytics y servicios
+services:
+  google_analytics: "UA-120243860-1"
+  disqus_shortname: "netinetidesign"
+
+# Configuración de imágenes por defecto
+defaults:
+  social_image: "/assets/images/social_img.jpg"
+  post_image: "/assets/images/default-post.webp"
+  avatar: "/assets/images/avatar.jpg"

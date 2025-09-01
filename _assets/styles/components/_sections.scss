@@ -1,0 +1,127 @@
+// =============================================================================
+// SECTION PATTERNS - ALTERNATING BACKGROUNDS & VISUAL ELEMENTS
+// =============================================================================
+
+// Base section styles
+.section {
+  position: relative;
+  overflow: hidden;
+
+  // Generous spacing for breathing room
+  &--large {
+    padding: var(--space-10) 0; // 80px top/bottom
+  }
+
+  &--medium {
+    padding: var(--space-8) 0; // 64px top/bottom
+  }
+
+  &--small {
+    padding: var(--space-6) 0; // 48px top/bottom
+  }
+}
+
+// =============================================================================
+// ALTERNATING SECTION BACKGROUNDS
+// =============================================================================
+
+// Primary section (default background)
+.section--primary {
+  background: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+// Secondary section (same as default)
+.section--secondary {
+  background: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+// Accent section (same as default)
+.section--accent {
+  background: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+// =============================================================================
+// SECTION SEPARATORS & VISUAL ELEMENTS
+// =============================================================================
+
+// =============================================================================
+// SECTION HEADERS WITH IMPROVED STYLING
+// =============================================================================
+
+.section-header {
+  text-align: left;
+  margin-bottom: var(--space-8);
+  position: relative;
+
+  .section-title {
+    font-size: var(--font-size-7); // 32px
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-3);
+    color: var(--bs-heading-color);
+  }
+
+  .section-subtitle {
+    font-size: var(--font-size-3); // 18px
+    font-weight: var(--font-weight-normal);
+    color: var(--bs-text-muted);
+    max-width: 600px;
+    margin: 0;
+    line-height: var(--line-height-relaxed);
+  }
+}
+
+// =============================================================================
+// SPECIAL SECTION STYLES
+// =============================================================================
+
+// Hero/About section - clean and simple
+.section--hero {
+  background: var(--bs-body-bg);
+}
+
+// Projects section - clean
+.section--projects {
+  background: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+// Skills section - clean
+.section--skills {
+  background: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+// =============================================================================
+// RESPONSIVE ADJUSTMENTS
+// =============================================================================
+
+@media (max-width: 768px) {
+  .section {
+    &--large {
+      padding: var(--space-8) 0; // Reduced on mobile
+    }
+
+    &--medium {
+      padding: var(--space-6) 0;
+    }
+  }
+
+  .section-header {
+    margin-bottom: var(--space-6);
+
+    .section-title {
+      font-size: var(--font-size-6); // Smaller on mobile
+    }
+
+    .section-subtitle {
+      font-size: var(--font-size-2);
+    }
+  }
+
+  .section-separator {
+    margin: var(--space-6) 0;
+  }
+}

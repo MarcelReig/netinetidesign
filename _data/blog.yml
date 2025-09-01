@@ -1,0 +1,81 @@
+# Configuración del blog
+settings:
+  posts_per_page: 6
+  excerpt_length: 160
+  date_format: "%d de %B de %Y"
+  show_reading_time: true
+  show_author: true
+  enable_comments: true
+  enable_sharing: true
+
+# Etiquetas del blog con metadatos
+categories:
+  general:
+    title: "General"
+    description: "Artículos variados sobre desarrollo web"
+    color: "#6c757d"
+    icon: "fas fa-folder"
+    
+  programacion:
+    title: "Programación"
+    description: "Tutoriales y tips de programación"
+    color: "#007bff"
+    icon: "fas fa-code"
+
+# Tags populares con metadatos
+popular_tags:
+  - name: "javascript"
+    title: "JavaScript"
+    color: "#f7df1e"
+    posts_count: 8
+    
+  - name: "css" 
+    title: "CSS"
+    color: "#1572b6"
+    posts_count: 6
+    
+  - name: "jekyll"
+    title: "Jekyll"
+    color: "#cc0000"
+    posts_count: 4
+    
+  - name: "python"
+    title: "Python"
+    color: "#3776ab"
+    posts_count: 15
+    
+  - name: "git"
+    title: "Git"
+    color: "#f05032"
+    posts_count: 2
+
+# Configuración de comentarios
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "netinetidesign"
+  
+# Configuración de compartir en redes
+sharing:
+  providers:
+    - name: "twitter"
+      icon: "fab fa-twitter"
+      color: "#1da1f2"
+      enabled: true
+      
+    - name: "linkedin"
+      icon: "fab fa-linkedin"
+      color: "#0077b5"
+      enabled: true
+      
+    - name: "facebook"
+      icon: "fab fa-facebook"
+      color: "#1877f2"
+      enabled: false
+
+# Metadatos para SEO
+seo:
+  default_author: "Marcel Reig"
+  default_image: "/assets/images/blog/default-post.webp"
+  structured_data: true
+  reading_time_wpm: 200

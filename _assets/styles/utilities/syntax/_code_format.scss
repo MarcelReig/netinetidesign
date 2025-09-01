@@ -1,0 +1,110 @@
+// =============================================================================
+// CODE HIGHLIGHTING - ELEGANT SINGLE-CONTAINER APPROACH
+// =============================================================================
+
+// Contenedor más exterior (language-py highlighter-rouge) - SIN estilos visuales
+.language-py.highlighter-rouge,
+.language-js.highlighter-rouge,
+.language-html.highlighter-rouge,
+.language-css.highlighter-rouge,
+.language-scss.highlighter-rouge,
+.language-bash.highlighter-rouge,
+.language-shell.highlighter-rouge,
+.language-plaintext.highlighter-rouge {
+  margin-bottom: var(--space-6);
+}
+
+// Contenedor medio (div.highlight) - SOLO este tiene el estilo visual
+div.highlight {
+  border-radius: var(--border-radius-md);
+  //border: 1px solid var(--color-border-primary);
+  overflow: hidden;
+  //background-color: var(--color-bg-code);
+  //box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+// El pre interior - COMPLETAMENTE transparente
+pre.highlight {
+  margin: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: var(--space-4) !important;
+  box-shadow: none !important;
+  font-family: var(--font-family-mono) !important;
+  font-size: var(--font-size-1) !important;
+  line-height: 1.45 !important;
+  color: var(--color-text-code) !important;
+}
+
+// El elemento code dentro del pre - también transparente
+pre.highlight code {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+  color: inherit !important;
+}
+
+.highlight .lineno {
+  border: none;
+  border-radius: 0;
+  border-right: solid 1px var(--bs-secondary-bg);
+  color: var(--color-primary-light);
+  background-color: var(--bs-body-bg);
+}
+
+.highlight .code pre {
+  font-family: "dm";
+  border: none;
+  white-space: pre;
+  overflow-x: auto;
+  word-wrap: normal;
+  background-color: transparent;
+  color: var(--color-text-code);
+}
+
+.highlight code {
+  font-family: "dm";
+  border: none; // Sin border - el contenedor padre ya lo maneja
+  border-radius: 0; // Sin border-radius - el contenedor padre ya lo maneja
+  padding: 20px;
+  display: block;
+  white-space: pre;
+  overflow-x: auto;
+  word-wrap: normal;
+  background-color: transparent;
+  color: var(--color-text-code);
+
+  // Scrollbar personalizado para el código
+  &::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--bs-secondary-bg);
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--color-border-primary);
+    border-radius: 3px;
+
+    &:hover {
+      background: var(--color-border-secondary);
+    }
+  }
+}
+
+// Código inline
+code {
+  background-color: var(--color-bg-code);
+  color: var(--color-text-code);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  border: 1px solid var(--color-border-primary);
+}

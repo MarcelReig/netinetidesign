@@ -74,7 +74,7 @@ A cada carácter de una cadena se le asigna una posición, empezando por el prim
 <p>Boolean representa una entidad lógica y puede tener dos valores: true, y false.</p>
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
-<span class="k">if</span> <span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
+<span class="k">if </span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
   <span class="c1">// este código no se ejecuta</span>
 <span class="p">}</span>
 </code></pre></div></div>
@@ -88,7 +88,7 @@ A cada carácter de una cadena se le asigna una posición, empezando por el prim
 <p>Una variable a la cual no se le haya asignado valor tiene el valor undefined.</p>
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">saludo</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">saludo</span><span class="p">);</span> <span class="c1">// "undefined"</span>
+<span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">saludo</span><span class="p">);</span> <span class="c1">// "undefined"</span>
 </code></pre></div></div>
 
 <h3 id="symbol">Symbol</h3>
@@ -131,9 +131,9 @@ Symbol es un tipo de datos cuyos valores son <strong>únicos</strong> e <strong>
 
 <p>Veamos el operador typeof en acción:</p>
 
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">mascota</span><span class="p">);</span> <span class="c1">// "string"</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">hermanas</span><span class="p">);</span> <span class="c1">// "number"</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">tv</span><span class="p">);</span> <span class="c1">// "boolean"</span>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">mascota</span><span class="p">);</span> <span class="c1">// "string"</span>
+<span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">hermanas</span><span class="p">);</span> <span class="c1">// "number"</span>
+<span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">tv</span><span class="p">);</span> <span class="c1">// "boolean"</span>
 </code></pre></div></div>
 
 <h3 id="primitive-wrapper-objects-en-javascript">Primitive wrapper objects en JavaScript</h3>
@@ -143,7 +143,7 @@ Symbol es un tipo de datos cuyos valores son <strong>únicos</strong> e <strong>
 <p>Por qué podemos hacer esto?</p>
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">nombre</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Marcel</span><span class="dl">"</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">nombre</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span> <span class="c1">// devuelve 6</span>
+<span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="nx">nombre</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span> <span class="c1">// devuelve 6</span>
 </code></pre></div></div>
 
 <p>La variable nombre es un string primitivo, pero se comporta como si fuera un objeto, que esta pasando aquí?</p>
@@ -164,7 +164,7 @@ Symbol es un tipo de datos cuyos valores son <strong>únicos</strong> e <strong>
 </ul>
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">tarta de plátano</span><span class="dl">"</span><span class="p">;</span> <span class="c1">// primitivo</span>
-<span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">String</span><span class="p">(</span><span class="dl">"</span><span class="s2">tarta de plátano</span><span class="dl">"</span><span class="p">);</span> <span class="c1">// objeto</span>
+<span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="p">(</span><span class="dl">"</span><span class="s2">tarta de plátano</span><span class="dl">"</span><span class="p">);</span> <span class="c1">// objeto</span>
 </code></pre></div></div>
 
 <div class="spacer-mini"></div>

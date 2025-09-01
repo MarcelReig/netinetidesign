@@ -13,7 +13,7 @@
 <p>Ejemplo de variable global:</p>
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">varGlobal</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Soy una variable global</span><span class="dl">"</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">varGlobal</span><span class="p">);</span> <span class="c1">// Soy una variable global</span>
+<span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="nx">varGlobal</span><span class="p">);</span> <span class="c1">// Soy una variable global</span>
 </code></pre></div></div>
 
 <h2 id="clausuras-closures">Clausuras (Closures)</h2>
@@ -24,18 +24,18 @@
 
 <p>Ejemplo de clausura:</p>
 
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">numberGenerator</span><span class="p">()</span> <span class="p">{</span>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nf">numberGenerator</span><span class="p">()</span> <span class="p">{</span>
   <span class="c1">// Variable local que termina dentro de la clausura</span>
   <span class="kd">var</span> <span class="nx">num</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-  <span class="kd">function</span> <span class="nx">checkNumber</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">num</span><span class="p">);</span>
+  <span class="kd">function</span> <span class="nf">checkNumber</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="nx">num</span><span class="p">);</span>
   <span class="p">}</span>
   <span class="nx">num</span><span class="o">++</span><span class="p">;</span>
   <span class="k">return</span> <span class="nx">checkNumber</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="kd">var</span> <span class="nx">number</span> <span class="o">=</span> <span class="nx">numberGenerator</span><span class="p">();</span>
-<span class="nx">number</span><span class="p">();</span> <span class="c1">// 2</span>
+<span class="kd">var</span> <span class="nx">number</span> <span class="o">=</span> <span class="nf">numberGenerator</span><span class="p">();</span>
+<span class="nf">number</span><span class="p">();</span> <span class="c1">// 2</span>
 </code></pre></div></div>
 
 <p>Enlaces útiles</p>

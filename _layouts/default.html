@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "es" }}">
+<html lang="{{ page.lang | default: site.lang | default: "es" }}" data-bs-theme="light">
 
 {% include head.html %}
 
-<body>
+<body class="site">
   {% include nav.html %}
 
-  <main aria-label="Content">
+  <main class="site-content" aria-label="Content">
     {{ content }}
   </main>
 

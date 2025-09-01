@@ -1,0 +1,50 @@
+{
+  "name": "netinetidesign-2025",
+  "version": "2.0.0",
+  "description": "Portfolio profesional de Marcel Reig - Full Stack Developer",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MarcelReig/netinetidesign"
+  },
+  "author": "Marcel Reig <marcelreig@gmail.com> (https://netinetidesign.com)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.80.0"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "autoprefixer": "^10.4.20",
+    "browser-sync": "^3.0.3",
+    "cssnano": "^7.0.6",
+    "del": "^7.1.0",
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^9.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-shell": "^0.8.0",
+    "gulp-terser": "^2.1.0",
+    "postcss": "^8.4.47"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "not op_mini all",
+    "last 2 versions",
+    "> 1%"
+  ],
+  "scripts": {
+    "dev": "gulp",
+    "build": "NODE_ENV=production gulp build",
+    "clean": "gulp clean",
+    "test": "lighthouse http://localhost:4002 --chrome-flags=\"--headless\""
+  }
+}

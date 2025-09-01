@@ -51,16 +51,61 @@ jQuery(document).ready(function ($) {
 });
 
 /* masonry for the portfolio sketch gallery */
-$(window).on("load", function () {
-  $(".grid").masonry({
-    // set itemSelector so .grid-sizer is not used in layout
-    itemSelector: ".grid-item",
-    // use element for option
-    columnWidth: ".grid-sizer",
-    gutter: 10,
-    isFitWidth: true,
-  });
+$(document).ready(function () {
+  console.log("Document ready, checking for grid...");
+
+  // Check if grid exists
+  if ($(".grid").length > 0) {
+    console.log("Grid found on document ready");
+    initializeMasonry();
+  }
 });
+
+$(window).on("load", function () {
+  console.log("Window loaded, checking for grid...");
+
+  // Check if grid exists
+  if ($(".grid").length > 0) {
+    console.log("Grid found on window load");
+    initializeMasonry();
+  } else {
+    console.log("No grid found on this page");
+  }
+});
+
+function initializeMasonry() {
+  console.log("Initializing Masonry grid...");
+  console.log("Grid items found:", $(".grid-item").length);
+
+  // Check if Masonry is loaded
+  if (typeof $.fn.masonry === "undefined") {
+    console.error("Masonry is not loaded!");
+    console.log("Available jQuery plugins:", Object.keys($.fn));
+    return;
+  }
+
+  console.log("Masonry is available, initializing...");
+
+  try {
+    $(".grid").masonry({
+      itemSelector: ".grid-item",
+      columnWidth: 200,
+      gutter: 10,
+      isFitWidth: false,
+      horizontalOrder: true,
+    });
+
+    console.log("Masonry initialized successfully");
+
+    // Force layout update
+    setTimeout(function () {
+      $(".grid").masonry();
+      console.log("Masonry layout forced");
+    }, 100);
+  } catch (error) {
+    console.error("Error initializing Masonry:", error);
+  }
+}
 
 /* light box magnificPopup for the portfolio sketch gallery */
 $(document).ready(function () {

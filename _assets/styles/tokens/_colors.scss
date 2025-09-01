@@ -1,0 +1,166 @@
+// =============================================================================
+// COLOR TOKENS - Bootstrap 5 Theme System
+// =============================================================================
+
+:root {
+  // ===========================================================================
+  // BRAND COLORS (consistentes en ambos temas)
+  // ===========================================================================
+  --color-primary: #0d6efd; // Bootstrap 5 primary
+  --color-primary-dark: #0a58ca;
+  --color-primary-light: #6ea8fe;
+  --color-primary-lighter: #cfe2ff;
+
+  --color-secondary: #6c757d;
+  --color-secondary-dark: #495057;
+  --color-secondary-light: #adb5bd;
+  --color-secondary-lighter: #f8f9fa;
+
+  // ===========================================================================
+  // SEMANTIC COLORS (ajustados para Bootstrap 5)
+  // ===========================================================================
+  --color-success: #198754;
+  --color-success-dark: #146c43;
+  --color-success-light: #75b798;
+  --color-success-lighter: #d1e7dd;
+
+  --color-warning: #ffc107;
+  --color-warning-dark: #ffca2c;
+  --color-warning-light: #ffda6a;
+  --color-warning-lighter: #fff3cd;
+
+  --color-danger: #dc3545;
+  --color-danger-dark: #b02a37;
+  --color-danger-light: #ea868f;
+  --color-danger-lighter: #f8d7da;
+
+  --color-info: #0dcaf0;
+  --color-info-dark: #087990;
+  --color-info-light: #6edff6;
+  --color-info-lighter: #d1ecf1;
+
+  // ===========================================================================
+  // NEUTRAL COLORS (Bootstrap 5 scale)
+  // ===========================================================================
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-gray-100: #f8f9fa;
+  --color-gray-200: #e9ecef;
+  --color-gray-300: #dee2e6;
+  --color-gray-400: #ced4da;
+  --color-gray-500: #adb5bd;
+  --color-gray-600: #6c757d;
+  --color-gray-700: #495057;
+  --color-gray-800: #343a40;
+  --color-gray-900: #212529;
+
+  // ===========================================================================
+  // SOCIAL MEDIA COLORS
+  // ===========================================================================
+  --color-linkedin: #0077b5;
+  --color-github: #24292f;
+  --color-twitter: #1da1f2;
+  --color-codepen: #000000;
+  --color-behance: #1769ff;
+  --color-spotify: #1db954;
+  --color-instagram: #e4405f;
+}
+
+// =============================================================================
+// LIGHT THEME (Bootstrap 5 Default)
+// =============================================================================
+:root,
+[data-bs-theme="light"] {
+  // Bootstrap 5 variables
+  --bs-body-bg: #ffffff;
+  --bs-body-color: #212529;
+  --bs-secondary-bg: #f8f9fa;
+  --bs-tertiary-bg: #ffffff;
+
+  // Custom theme tokens
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f8f9fa;
+  --color-bg-tertiary: #e9ecef;
+  --color-bg-overlay: #ffffff;
+  --color-bg-backdrop: rgba(0, 0, 0, 0.5);
+
+  --color-text-primary: #212529; // Dark text on light background
+  --color-text-secondary: #6c757d; // Muted text
+  --color-text-tertiary: #adb5bd; // More muted
+  --color-text-disabled: #ced4da;
+  --color-text-inverse: #ffffff; // White text for dark backgrounds
+  --color-text-link: #0d6efd; // Primary blue for links
+  --color-text-link-hover: #0a58ca; // Darker blue on hover
+
+  --color-border-primary: #dee2e6;
+  --color-border-secondary: #e9ecef;
+  --color-border-tertiary: #f8f9fa;
+  --color-border-focus: #86b7fe;
+
+  // Shadows for light theme
+  --shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  --shadow-md: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+// =============================================================================
+// DARK THEME (Bootstrap 5 Style)
+// =============================================================================
+[data-bs-theme="dark"] {
+  // Bootstrap 5 dark mode variables
+  --bs-body-bg: #212529;
+  --bs-body-color: #dee2e6;
+  --bs-secondary-bg: #343a40;
+  --bs-tertiary-bg: #2c3034;
+
+  // Custom theme tokens for dark mode
+  --color-bg-primary: #212529; // Main dark background
+  --color-bg-secondary: #343a40; // Secondary dark background
+  --color-bg-tertiary: #495057; // Tertiary dark background
+  --color-bg-overlay: #2c3034; // Overlay backgrounds
+  --color-bg-backdrop: rgba(0, 0, 0, 0.8);
+
+  --color-text-primary: #dee2e6; // Light text on dark background
+  --color-text-secondary: #adb5bd; // Muted light text
+  --color-text-tertiary: #6c757d; // More muted light text
+  --color-text-disabled: #495057;
+  --color-text-inverse: #212529; // Dark text for light backgrounds
+  --color-text-link: #6ea8fe; // Light blue for links in dark mode
+  --color-text-link-hover: #9ec5fe; // Lighter blue on hover
+
+  --color-border-primary: #495057;
+  --color-border-secondary: #343a40;
+  --color-border-tertiary: #2c3034;
+  --color-border-focus: #6ea8fe;
+
+  // Adjusted primary colors for dark mode
+  --color-primary: #0d6efd;
+  --color-primary-light: #6ea8fe;
+  --color-primary-lighter: rgba(110, 168, 254, 0.15);
+
+  // Shadows for dark theme
+  --shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+
+  // Code blocks for dark mode
+  --color-bg-code: #161b22;
+  --color-text-code: #e6edf3;
+}
+
+// =============================================================================
+// CODE HIGHLIGHTING COLORS (THEME-AWARE)
+// =============================================================================
+
+:root {
+  // Light theme code colors
+  --color-bg-code: #f6f8fa;
+  --color-text-code: #24292f;
+}
+
+[data-bs-theme="dark"] {
+  // Dark theme code colors (GitHub dark style)
+  --color-bg-code: #161b22;
+  --color-text-code: #e6edf3;
+}

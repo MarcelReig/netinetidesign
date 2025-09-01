@@ -1,14 +1,18 @@
 // Base styles
 
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+// ✅ IBM Plex Sans eliminada - usando solo Inter var para mejor consistencia
 
 html {
   box-sizing: border-box;
+  height: 100%; // Ensure full height for sticky footer
 }
+
 body {
-  background-color: $bg-color;
+  background-color: var(--color-bg-primary);
+  // color handled by Bootstrap theme system
   margin: 0;
   padding: 0;
+  min-height: 100%; // Minimum full height
   overflow-x: hidden;
   font-family: "Inter var", sans-serif;
   font-size: 16px;
@@ -20,10 +24,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: var(--font-family-sans);
   font-style: normal;
   font-weight: 700;
-  color: $color-black;
+  // color handled by Bootstrap theme system
 }
 *,
 *:before,
@@ -34,10 +38,10 @@ h6 {
 // links
 a,
 .btn-link {
-  color: $brand-color;
+  color: var(--color-primary);
   text-decoration: none;
   &:hover {
-    color: lighten($brand-color, 10%);
+    color: var(--color-primary-light);
     text-decoration: none;
   }
 }

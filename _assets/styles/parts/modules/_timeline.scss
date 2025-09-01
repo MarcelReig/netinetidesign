@@ -55,7 +55,7 @@
   height: 16px;
   border-radius: 50%;
   border: 2px solid #f5f7fa;
-  background: $brand-color;
+  background: var(--color-primary);
   margin-top: 10px;
   z-index: 9999;
 }
@@ -102,5 +102,48 @@
     float: none;
     direction: ltr;
     text-align: left;
+  }
+}
+
+// ===================================================================
+// Nueva estructura de timeline (about page)
+// ===================================================================
+
+.timeline__axis {
+  position: relative;
+}
+
+.timeline__line {
+  width: 2px;
+  background: var(--bs-secondary-bg);
+}
+
+.timeline__avatar {
+  width: 88px;
+  height: 88px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--bs-body-bg);
+  box-shadow: 0 0 0 3px var(--bs-primary);
+}
+
+.timeline__item {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+
+  &.is-first .timeline__axis .timeline__line:first-child {
+    visibility: hidden;
+  }
+
+  &.is-last .timeline__axis .timeline__line:last-child {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .timeline__avatar {
+    width: 72px;
+    height: 72px;
+    box-shadow: 0 0 0 2.5px var(--bs-primary);
   }
 }

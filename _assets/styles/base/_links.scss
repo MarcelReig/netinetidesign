@@ -1,0 +1,113 @@
+// =============================================================================
+// GLOBAL LINK STYLES
+// =============================================================================
+
+// Remove underlines from all links by default
+a {
+  text-decoration: none !important;
+  transition: color 0.2s ease-in-out;
+
+  // Subtle hover effect for all links
+  &:hover {
+    color: var(--bs-primary);
+    transition: color 0.2s ease-in-out;
+  }
+}
+
+// =============================================================================
+// SPECIFIC LINK CONTEXTS
+// =============================================================================
+
+// Blog category tags - preserve underline and special styling
+.tags-list a.nav-link,
+a.category,
+.post-content a[href*="/tag/"],
+.post-content a[href*="/category/"],
+.post-content p a {
+  text-decoration: underline !important;
+
+  &:hover {
+    text-decoration: underline !important;
+    color: var(--bs-primary);
+    transform: translateY(-1px);
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+// Social icons should not have hover color change (they have their own styling)
+.social-icons a {
+  &:hover {
+    color: inherit;
+  }
+}
+
+// Buttons should not inherit link hover styles
+.btn {
+  &:hover {
+    color: inherit;
+  }
+}
+
+// Navbar links have their own specific hover behavior
+.navbar-nav .nav-link {
+  &:hover {
+    color: var(--bs-navbar-hover-color, var(--bs-primary));
+  }
+}
+
+// Footer links should have subtle hover
+.footer a {
+  &:hover {
+    color: var(--bs-primary);
+    text-decoration: none !important;
+  }
+}
+
+// Card links should not change color on hover (they have their own context)
+.card a.post-link {
+  &:hover {
+    color: inherit;
+
+    h4,
+    h5,
+    h6 {
+      color: var(--bs-primary);
+    }
+  }
+}
+
+// =============================================================================
+// BLOG PAGE SPECIFIC STYLES
+// =============================================================================
+
+// Blog post titles hover effect
+.post-list a.post-link {
+  display: block;
+  transition: all 0.3s ease-in-out;
+
+  h4 {
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 0.5rem;
+  }
+
+  .post-meta {
+    transition: all 0.3s ease-in-out;
+    color: var(--bs-text-muted);
+    opacity: 0.8;
+  }
+
+  &:hover {
+    color: inherit;
+    transform: translateY(-2px);
+
+    h4 {
+      color: var(--bs-primary);
+      letter-spacing: 0.01em;
+    }
+
+    .post-meta {
+      opacity: 1;
+      color: var(--bs-primary);
+    }
+  }
+}

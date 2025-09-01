@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-lg" role="navigation" aria-label="Navegación principal">
+  <div class="container">
+    <!-- Logo/Brand -->
+    <a class="navbar-brand fw-semibold" href="{{ '/' | relative_url }}" aria-label="Ir al inicio">
+      {{ site.data.site.author }}
+    </a>
+
+    <!-- Mobile toggle button -->
+    <button 
+      class="navbar-toggler border-0" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#navbarMain" 
+      aria-controls="navbarMain" 
+      aria-expanded="false" 
+      aria-label="Alternar navegación">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navigation menu -->
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav ms-auto" role="menubar">
+        {% for item in site.data.navigation.main %}
+        <li class="nav-item" role="none">
+          <a 
+            class="nav-link px-3 py-2{% if page.url == item.url %} active{% endif %}" 
+            href="{{ item.url | relative_url }}"
+            role="menuitem"
+            {% if page.url == item.url %}aria-current="page"{% endif %}
+            {% if item.icon %}aria-label="{{ item.title }} - {{ item.icon | split: ' ' | last }}"{% endif %}>
+            {% if item.icon %}<i class="{{ item.icon }} me-2"></i>{% endif %}
+            {{ item.title }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+
+      <!-- Social links -->
+      <ul class="navbar-nav ms-3">
+        {% for social in site.data.social limit:3 %}
+        <li class="nav-item" role="none">
+          <a 
+            class="nav-link px-2 py-2" 
+            href="{{ social.url }}" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            role="menuitem"
+            aria-label="{{ social.name }} - {{ social.description }}">
+            <i class="{{ social.icon }} social-link {{ social.name | downcase }}"></i>
+            <span class="visually-hidden">{{ social.name }}</span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>

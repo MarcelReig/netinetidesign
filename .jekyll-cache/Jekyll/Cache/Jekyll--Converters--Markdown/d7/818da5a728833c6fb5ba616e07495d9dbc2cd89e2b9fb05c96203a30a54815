@@ -1,25 +1,25 @@
-I"-<p>Sintaxis para Get (Obtener el valor de un atributo): <code class="language-plaintext highlighter-rouge">objeto.parámetro</code></p>
+I"�-<p>Sintaxis para Get (Obtener el valor de un atributo): <code class="language-plaintext highlighter-rouge">objeto.parámetro</code></p>
 
 <p>Sintaxis para el Set (Establecer el valor de un atributo): <code class="language-plaintext highlighter-rouge">objeto.parámetro = valor</code></p>
 
 <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Villain</span><span class="p">:</span>
-    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">quote</span><span class="p">):</span>
-        <span class="bp">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-        <span class="bp">self</span><span class="p">.</span><span class="n">quote</span> <span class="o">=</span> <span class="n">quote</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">quote</span><span class="p">):</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">quote</span> <span class="o">=</span> <span class="n">quote</span>
 
-    <span class="k">def</span> <span class="nf">villain_says</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="s">f'</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">name</span><span class="si">}</span><span class="s"> dice </span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">quote</span><span class="si">}</span><span class="s">'</span>
+    <span class="k">def</span> <span class="nf">villain_says</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="sh">'</span><span class="si">{</span><span class="n">self</span><span class="p">.</span><span class="n">name</span><span class="si">}</span><span class="s"> dice </span><span class="si">{</span><span class="n">self</span><span class="p">.</span><span class="n">quote</span><span class="si">}</span><span class="sh">'</span>
 
 
-<span class="n">joker</span> <span class="o">=</span> <span class="n">Villain</span><span class="p">(</span><span class="s">'Joker'</span><span class="p">,</span> <span class="s">'Siempre hay que tener un as en la manga'</span><span class="p">)</span>
+<span class="n">joker</span> <span class="o">=</span> <span class="nc">Villain</span><span class="p">(</span><span class="sh">'</span><span class="s">Joker</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Siempre hay que tener un as en la manga</span><span class="sh">'</span><span class="p">)</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">joker</span><span class="p">.</span><span class="n">villain_says</span><span class="p">())</span>  <span class="c1"># Getter
+<span class="nf">print</span><span class="p">(</span><span class="n">joker</span><span class="p">.</span><span class="nf">villain_says</span><span class="p">())</span>  <span class="c1"># Getter
 </span>
 <span class="c1"># Output: Joker dice Siempre hay que tener un as en la manga
 </span>
-<span class="n">joker</span><span class="p">.</span><span class="n">quote</span> <span class="o">=</span> <span class="s">'Aprendí que todo tiene su tiempo y su lugar'</span>  <span class="c1"># Setter
+<span class="n">joker</span><span class="p">.</span><span class="n">quote</span> <span class="o">=</span> <span class="sh">'</span><span class="s">Aprendí que todo tiene su tiempo y su lugar</span><span class="sh">'</span>  <span class="c1"># Setter
 </span>
-<span class="k">print</span><span class="p">(</span><span class="n">joker</span><span class="p">.</span><span class="n">villain_says</span><span class="p">())</span>  <span class="c1"># Getter
+<span class="nf">print</span><span class="p">(</span><span class="n">joker</span><span class="p">.</span><span class="nf">villain_says</span><span class="p">())</span>  <span class="c1"># Getter
 </span>
 <span class="c1"># Output: Joker dice Aprendí que todo tiene su tiempo y su lugar
 </span></code></pre></div></div>
@@ -77,35 +77,35 @@
 
 <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Villain</span><span class="p">:</span>
 
-    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">quote</span><span class="p">):</span>
-        <span class="bp">self</span><span class="p">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
-        <span class="bp">self</span><span class="p">.</span><span class="n">_quote</span> <span class="o">=</span> <span class="n">quote</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">quote</span><span class="p">):</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">_quote</span> <span class="o">=</span> <span class="n">quote</span>
 
-    <span class="k">def</span> <span class="nf">villain_says</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="s">f'</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">_name</span><span class="si">}</span><span class="s"> dice </span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">_quote</span><span class="si">}</span><span class="s">'</span>
+    <span class="k">def</span> <span class="nf">villain_says</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="sh">'</span><span class="si">{</span><span class="n">self</span><span class="p">.</span><span class="n">_name</span><span class="si">}</span><span class="s"> dice </span><span class="si">{</span><span class="n">self</span><span class="p">.</span><span class="n">_quote</span><span class="si">}</span><span class="sh">'</span>
 
-    <span class="o">@</span><span class="nb">property</span>
-    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="p">.</span><span class="n">_name</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">self</span><span class="p">.</span><span class="n">_name</span>
 
-    <span class="o">@</span><span class="nb">property</span>
-    <span class="k">def</span> <span class="nf">quote</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="p">.</span><span class="n">_quote</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">quote</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">self</span><span class="p">.</span><span class="n">_quote</span>
 
-    <span class="o">@</span><span class="n">quote</span><span class="p">.</span><span class="n">setter</span>
-    <span class="k">def</span> <span class="nf">quote</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">quote</span><span class="p">):</span>
-        <span class="bp">self</span><span class="p">.</span><span class="n">_quote</span> <span class="o">=</span> <span class="n">quote</span>
+    <span class="nd">@quote.setter</span>
+    <span class="k">def</span> <span class="nf">quote</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">quote</span><span class="p">):</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">_quote</span> <span class="o">=</span> <span class="n">quote</span>
 
 
-<span class="n">joker</span> <span class="o">=</span> <span class="n">Villain</span><span class="p">(</span><span class="s">'Joker'</span><span class="p">,</span> <span class="s">'Siempre hay que tener un as en la manga'</span><span class="p">)</span>
+<span class="n">joker</span> <span class="o">=</span> <span class="nc">Villain</span><span class="p">(</span><span class="sh">'</span><span class="s">Joker</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Siempre hay que tener un as en la manga</span><span class="sh">'</span><span class="p">)</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">joker</span><span class="p">.</span><span class="n">villain_says</span><span class="p">())</span>  <span class="c1"># Getter
+<span class="nf">print</span><span class="p">(</span><span class="n">joker</span><span class="p">.</span><span class="nf">villain_says</span><span class="p">())</span>  <span class="c1"># Getter
 </span>
 <span class="c1"># Output: Joker dice Siempre hay que tener un as en la manga
 </span>
-<span class="n">joker</span><span class="p">.</span><span class="n">quote</span> <span class="o">=</span> <span class="s">'¡Esa fea cabeza tuya tiene cerebro!'</span>
+<span class="n">joker</span><span class="p">.</span><span class="n">quote</span> <span class="o">=</span> <span class="sh">'</span><span class="s">¡Esa fea cabeza tuya tiene cerebro!</span><span class="sh">'</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">joker</span><span class="p">.</span><span class="n">villain_says</span><span class="p">())</span>  <span class="c1"># Getter
+<span class="nf">print</span><span class="p">(</span><span class="n">joker</span><span class="p">.</span><span class="nf">villain_says</span><span class="p">())</span>  <span class="c1"># Getter
 </span>
 <span class="c1"># Output: Joker dice ¡Esa fea cabeza tuya tiene cerebro!
 </span></code></pre></div></div>

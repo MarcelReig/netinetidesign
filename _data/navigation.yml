@@ -1,0 +1,30 @@
+# Configuración de menús de navegación
+main:
+  - title: "Inicio"
+    url: "/"
+    icon: "fas fa-home"
+  - title: "Portfolio"
+    url: "/portfolio/"
+    icon: "fas fa-briefcase"
+  - title: "Blog"
+    url: "/blog/"
+    icon: "fas fa-blog"
+  - title: "Contacto"
+    url: "/contact/"
+    icon: "fas fa-envelope"
+
+footer:
+  - title: "Blog"
+    url: "/blog/"
+  - title: "Portfolio" 
+    url: "/portfolio/"
+  - title: "Contacto"
+    url: "/contact/"
+
+breadcrumb_labels:
+  blog: "Blog"
+  portfolio: "Portfolio" 
+  contact: "Contacto"
+  post: "Artículo"
+  category: "Categoría"
+  tag: "Etiqueta"

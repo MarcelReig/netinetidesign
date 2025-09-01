@@ -7,12 +7,12 @@
   margin: 0 0 2em;
   padding: 0;
   li {
-    border-bottom: 1px solid $gray-300;
+    border-bottom: 1px solid var(--color-gray-600);
     margin: 10px 0;
     padding: 12px 0;
   }
   li:first-child {
-    border-top: 1px solid $gray-300;
+    border-top: 1px solid var(--color-gray-600);
   }
   .post-link {
     display: block;
@@ -20,19 +20,19 @@
     padding: 1em 0.5em;
     text-decoration: none;
     h4 {
-      color: $color-black;
+      color: var(--color-primary-light);
       transition: all 0.2s ease-in-out;
     }
     &:hover {
       h4 {
-        color: $brand-color;
+        color: var(--color-primary);
       }
     }
   }
 }
 
 .post-meta {
-  color: $gray-400;
+  color: var(--color-gray-400);
 }
 
 .post-content {
@@ -62,11 +62,14 @@
 .pagination a,
 .pagination span {
   padding: 7px 18px;
-  border: 1px solid #eee;
+  border: 1px solid var(--bs-primary);
   margin-left: -2px;
   margin-right: -2px;
-  background-color: #ffffff;
+  background-color: var(--bs-secondary-bg);
+  color: var(--blue-light);
   display: inline-block;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .pagination {
@@ -75,14 +78,21 @@
   text-align: center;
   a {
     &:hover {
-      background-color: #f1f1f1;
-      color: #333;
+      background-color: var(--bs-primary);
+      color: var(--bs-body-color);
+      border-color: var(--blue-light);
+      transform: translateY(-1px);
     }
+  }
+
+  .page_number {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    border-color: var(--bs-secondary-bg);
   }
 }
 
 // Artículos por tag
-
 .list-group {
   a.list-group-item {
     h4 {
@@ -90,7 +100,7 @@
     }
 
     &:hover h4 {
-      color: $brand-color;
+      color: var(--color-primary);
     }
   }
 }
@@ -98,10 +108,10 @@
 // Tags
 .tags-list {
   a.nav-link {
-    color: $gray-600;
+    color: var(--bs-body-color);
     transition: color 0.2s ease-in-out;
     &:hover {
-      color: $brand-color;
+      color: var(--blue-light);
     }
   }
 }

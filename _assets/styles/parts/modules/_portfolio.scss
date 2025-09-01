@@ -17,26 +17,34 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  background-color: $color-beige;
-  border: 1px solid darken($color-beige, 10%);
-  border-radius: 4px;
+  background-color: var(--bs-body-bg);
+  border: 1px solid var(--bs-secondary-bg);
+  border-radius: 8px;
   cursor: pointer;
-  transition: all 0.2s linear;
+  transition: all 0.3s ease;
+  overflow: hidden;
+
   .n-card-image-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--bs-secondary-bg);
+    padding: 1rem;
   }
+
   &:hover {
-    box-shadow: 5px 5px 0 $color-black;
+    border-color: var(--bs-primary);
+    box-shadow: 0 8px 25px rgba(95, 133, 219, 0.15);
+    transform: translateY(-4px);
+
     .n-card-title {
-      color: $brand-color;
+      color: var(--color-primary-light);
     }
+
     .n-card-image-wrapper {
-      background-color: darken($color-beige, 5%);
+      background-color: var(--bs-tertiary-bg);
     }
   }
-  overflow: hidden;
 }
 .n-card-img {
   height: 200px;
@@ -51,14 +59,20 @@
   align-items: center;
   justify-content: center;
   flex: 1;
-  background: darken($color-beige, 10%);
-  padding: 1rem;
+  background: var(--bs-secondary-bg);
+  padding: 1.5rem;
   text-align: center;
+
   .n-card-title {
-    color: $color-black;
+    color: var(--bs-body-color);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
   }
+
   .n-card-text {
-    color: $color-black;
+    color: var(--gray-text);
+    margin: 0;
+    font-size: 0.9rem;
   }
 }
 
@@ -69,7 +83,55 @@
 .portfolio-item {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid $gray-300;
+  border-bottom: 1px solid var(--bs-secondary-bg);
+  margin-bottom: 2rem;
+
+  // Para proyectos con layout Bootstrap
+  .row {
+    align-items: flex-start !important;
+  }
+
+  .col-lg-6 {
+    height: auto;
+  }
+
+  // Estilos para el contenido del portfolio
+  .portfolio-content {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  // Mejoras para las características
+  .feature-list {
+    li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--bs-secondary-bg);
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      strong {
+        color: var(--bs-primary);
+        display: block;
+        margin-bottom: 0.25rem;
+      }
+
+      span {
+        font-size: 0.9rem;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  // Stack de tecnologías
+  .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
 }
 .portfolio-item:last-child {
   margin-bottom: 50px;
@@ -88,8 +150,8 @@
 }
 .block-text {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   width: 100%;
   padding: 50px 12px;
   .Aligner-item {
@@ -106,7 +168,8 @@
   }
   .block-img,
   .block-text {
-    height: 500px;
+    height: auto;
+    min-height: 500px;
   }
   .block-img {
     justify-content: flex-end;

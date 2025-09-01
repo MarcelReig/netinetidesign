@@ -1,4 +1,4 @@
-I"�-<h3 class="lead my-5" id="podemos-pensar-en-las-clases-como-en-plantillas-para-crear-objetos">Podemos pensar en las Clases como en plantillas para crear Objetos.</h3>
+I"�8<h3 class="lead my-5" id="podemos-pensar-en-las-clases-como-en-plantillas-para-crear-objetos">Podemos pensar en las Clases como en plantillas para crear Objetos.</h3>
 
 <p>Las clases en Python se definen con la palabra clave <code class="language-plaintext highlighter-rouge">class</code>.</p>
 
@@ -22,19 +22,19 @@
 
 <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Film</span><span class="p">:</span>
 
-    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">director</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">genre</span><span class="p">):</span>
-        <span class="bp">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-        <span class="bp">self</span><span class="p">.</span><span class="n">director</span> <span class="o">=</span> <span class="n">director</span>
-        <span class="bp">self</span><span class="p">.</span><span class="n">year</span> <span class="o">=</span> <span class="n">year</span>
-        <span class="bp">self</span><span class="p">.</span><span class="n">genre</span> <span class="o">=</span> <span class="n">genre</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">director</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">genre</span><span class="p">):</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">director</span> <span class="o">=</span> <span class="n">director</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">year</span> <span class="o">=</span> <span class="n">year</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">genre</span> <span class="o">=</span> <span class="n">genre</span>
 
 
-<span class="n">film1</span> <span class="o">=</span> <span class="n">Film</span><span class="p">(</span><span class="s">'Noche en la Tierra'</span><span class="p">,</span> <span class="s">'Jim Jarmusch'</span><span class="p">,</span> <span class="s">'1991'</span><span class="p">,</span> <span class="s">'Comedia'</span><span class="p">)</span>
-<span class="n">film2</span> <span class="o">=</span> <span class="n">Film</span><span class="p">(</span><span class="s">'Akira'</span><span class="p">,</span> <span class="s">'Katsuhiro Ôtomo'</span><span class="p">,</span> <span class="s">'1988'</span><span class="p">,</span> <span class="s">'Ciencia ficción'</span><span class="p">)</span>
+<span class="n">film1</span> <span class="o">=</span> <span class="nc">Film</span><span class="p">(</span><span class="sh">'</span><span class="s">Noche en la Tierra</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Jim Jarmusch</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">1991</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Comedia</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">film2</span> <span class="o">=</span> <span class="nc">Film</span><span class="p">(</span><span class="sh">'</span><span class="s">Akira</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Katsuhiro Ôtomo</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">1988</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Ciencia ficción</span><span class="sh">'</span><span class="p">)</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">film1</span><span class="p">.</span><span class="n">year</span><span class="p">)</span> <span class="c1"># Output: 1991
+<span class="nf">print</span><span class="p">(</span><span class="n">film1</span><span class="p">.</span><span class="n">year</span><span class="p">)</span> <span class="c1"># Output: 1991
 </span>
-<span class="k">print</span><span class="p">(</span><span class="n">film2</span><span class="p">.</span><span class="n">year</span><span class="p">)</span> <span class="c1"># Output: 1988
+<span class="nf">print</span><span class="p">(</span><span class="n">film2</span><span class="p">.</span><span class="n">year</span><span class="p">)</span> <span class="c1"># Output: 1988
 </span></code></pre></div></div>
 
 <h2 id="pintar-por-pantalla-todos-los-atributos-de-un-objeto-de-python">Pintar por pantalla todos los atributos de un Objeto de Python</h2>
@@ -45,77 +45,77 @@
 
 <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Film</span><span class="p">:</span>
 
-    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">director</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">genre</span><span class="p">):</span>
-        <span class="bp">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-        <span class="bp">self</span><span class="p">.</span><span class="n">director</span> <span class="o">=</span> <span class="n">director</span>
-        <span class="bp">self</span><span class="p">.</span><span class="n">year</span> <span class="o">=</span> <span class="n">year</span>
-        <span class="bp">self</span><span class="p">.</span><span class="n">genre</span> <span class="o">=</span> <span class="n">genre</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">director</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">genre</span><span class="p">):</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">director</span> <span class="o">=</span> <span class="n">director</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">year</span> <span class="o">=</span> <span class="n">year</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">genre</span> <span class="o">=</span> <span class="n">genre</span>
 
 
-<span class="n">film1</span> <span class="o">=</span> <span class="n">Film</span><span class="p">(</span><span class="s">'Noche en la Tierra'</span><span class="p">,</span> <span class="s">'Jim Jarmusch'</span><span class="p">,</span> <span class="s">'1991'</span><span class="p">,</span> <span class="s">'Comedia'</span><span class="p">)</span>
-<span class="n">film2</span> <span class="o">=</span> <span class="n">Film</span><span class="p">(</span><span class="s">'Akira'</span><span class="p">,</span> <span class="s">'Katsuhiro Ôtomo'</span><span class="p">,</span> <span class="s">'1988'</span><span class="p">,</span> <span class="s">'Ciencia ficción'</span><span class="p">)</span>
+<span class="n">film1</span> <span class="o">=</span> <span class="nc">Film</span><span class="p">(</span><span class="sh">'</span><span class="s">Noche en la Tierra</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Jim Jarmusch</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">1991</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Comedia</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">film2</span> <span class="o">=</span> <span class="nc">Film</span><span class="p">(</span><span class="sh">'</span><span class="s">Akira</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Katsuhiro Ôtomo</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">1988</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Ciencia ficción</span><span class="sh">'</span><span class="p">)</span>
 
 
-<span class="k">print</span><span class="p">(</span><span class="n">film1</span><span class="p">.</span><span class="n">__dict__</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">film1</span><span class="p">.</span><span class="n">__dict__</span><span class="p">)</span>
 
 <span class="c1"># Output:
-</span><span class="s">'''{
-  'name': 'Noche en la Tierra',
-  'director': 'Jim Jarmusch',
-  'year': '1991',
-  'genre': 'Comedia'}
-'''</span>
+</span><span class="sh">'''</span><span class="s">{
+  </span><span class="sh">'</span><span class="s">name</span><span class="sh">'</span><span class="s">: </span><span class="sh">'</span><span class="s">Noche en la Tierra</span><span class="sh">'</span><span class="s">,
+  </span><span class="sh">'</span><span class="s">director</span><span class="sh">'</span><span class="s">: </span><span class="sh">'</span><span class="s">Jim Jarmusch</span><span class="sh">'</span><span class="s">,
+  </span><span class="sh">'</span><span class="s">year</span><span class="sh">'</span><span class="s">: </span><span class="sh">'</span><span class="s">1991</span><span class="sh">'</span><span class="s">,
+  </span><span class="sh">'</span><span class="s">genre</span><span class="sh">'</span><span class="s">: </span><span class="sh">'</span><span class="s">Comedia</span><span class="sh">'</span><span class="s">}
+</span><span class="sh">'''</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">film2</span><span class="p">.</span><span class="n">__dict__</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">film2</span><span class="p">.</span><span class="n">__dict__</span><span class="p">)</span>
 
 <span class="c1"># Output: 
-</span><span class="s">'''{
-  'name': 'Akira',
-  'director': 'Katsuhiro Ôtomo',
-  'year': '1988',
-  'genre': 'Ciencia ficción'}
-'''</span>
+</span><span class="sh">'''</span><span class="s">{
+  </span><span class="sh">'</span><span class="s">name</span><span class="sh">'</span><span class="s">: </span><span class="sh">'</span><span class="s">Akira</span><span class="sh">'</span><span class="s">,
+  </span><span class="sh">'</span><span class="s">director</span><span class="sh">'</span><span class="s">: </span><span class="sh">'</span><span class="s">Katsuhiro Ôtomo</span><span class="sh">'</span><span class="s">,
+  </span><span class="sh">'</span><span class="s">year</span><span class="sh">'</span><span class="s">: </span><span class="sh">'</span><span class="s">1988</span><span class="sh">'</span><span class="s">,
+  </span><span class="sh">'</span><span class="s">genre</span><span class="sh">'</span><span class="s">: </span><span class="sh">'</span><span class="s">Ciencia ficción</span><span class="sh">'</span><span class="s">}
+</span><span class="sh">'''</span>
 </code></pre></div></div>
 
 <p>Si queremos obtener un diccionario limpio, sin llaves ni comillas, primero convertimos el objeto en un diccionario con <code class="language-plaintext highlighter-rouge">__dict__</code> y después obtenemos los ítems del diccionario con un <code class="language-plaintext highlighter-rouge">for</code> loop y el método <code class="language-plaintext highlighter-rouge">.items()</code> de los diccionarios.</p>
 
 <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Film</span><span class="p">:</span>
 
-    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">director</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">genre</span><span class="p">):</span>
-        <span class="bp">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-        <span class="bp">self</span><span class="p">.</span><span class="n">director</span> <span class="o">=</span> <span class="n">director</span>
-        <span class="bp">self</span><span class="p">.</span><span class="n">year</span> <span class="o">=</span> <span class="n">year</span>
-        <span class="bp">self</span><span class="p">.</span><span class="n">genre</span> <span class="o">=</span> <span class="n">genre</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">director</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">genre</span><span class="p">):</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">director</span> <span class="o">=</span> <span class="n">director</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">year</span> <span class="o">=</span> <span class="n">year</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">genre</span> <span class="o">=</span> <span class="n">genre</span>
 
 
-<span class="n">film1</span> <span class="o">=</span> <span class="n">Film</span><span class="p">(</span><span class="s">'Noche en la Tierra'</span><span class="p">,</span> <span class="s">'Jim Jarmusch'</span><span class="p">,</span> <span class="s">'1991'</span><span class="p">,</span> <span class="s">'Comedia'</span><span class="p">)</span>
-<span class="n">film2</span> <span class="o">=</span> <span class="n">Film</span><span class="p">(</span><span class="s">'Akira'</span><span class="p">,</span> <span class="s">'Katsuhiro Ôtomo'</span><span class="p">,</span> <span class="s">'1988'</span><span class="p">,</span> <span class="s">'Ciencia ficción'</span><span class="p">)</span>
+<span class="n">film1</span> <span class="o">=</span> <span class="nc">Film</span><span class="p">(</span><span class="sh">'</span><span class="s">Noche en la Tierra</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Jim Jarmusch</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">1991</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Comedia</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">film2</span> <span class="o">=</span> <span class="nc">Film</span><span class="p">(</span><span class="sh">'</span><span class="s">Akira</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Katsuhiro Ôtomo</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">1988</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Ciencia ficción</span><span class="sh">'</span><span class="p">)</span>
 
 
 <span class="k">def</span> <span class="nf">film_dict</span><span class="p">(</span><span class="n">film</span><span class="p">):</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">film</span><span class="p">.</span><span class="n">__dict__</span>
 
-    <span class="k">for</span> <span class="n">clave</span><span class="p">,</span> <span class="n">valor</span> <span class="ow">in</span> <span class="n">x</span><span class="p">.</span><span class="n">items</span><span class="p">():</span>
-        <span class="k">print</span><span class="p">(</span><span class="n">clave</span><span class="p">.</span><span class="n">capitalize</span><span class="p">(),</span> <span class="s">':'</span><span class="p">,</span> <span class="n">valor</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">clave</span><span class="p">,</span> <span class="n">valor</span> <span class="ow">in</span> <span class="n">x</span><span class="p">.</span><span class="nf">items</span><span class="p">():</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">clave</span><span class="p">.</span><span class="nf">capitalize</span><span class="p">(),</span> <span class="sh">'</span><span class="s">:</span><span class="sh">'</span><span class="p">,</span> <span class="n">valor</span><span class="p">)</span>
 
 
-<span class="n">film_dict</span><span class="p">(</span><span class="n">film1</span><span class="p">)</span>
+<span class="nf">film_dict</span><span class="p">(</span><span class="n">film1</span><span class="p">)</span>
 <span class="c1"># Output: 
-</span><span class="s">'''
+</span><span class="sh">'''</span><span class="s">
 Name : Noche en la Tierra
 Director : Jim Jarmusch
 Year : 1991
 Genre : Comedia
-'''</span>
+</span><span class="sh">'''</span>
 
-<span class="n">film_dict</span><span class="p">(</span><span class="n">film2</span><span class="p">)</span>
+<span class="nf">film_dict</span><span class="p">(</span><span class="n">film2</span><span class="p">)</span>
 <span class="c1"># Output: 
-</span><span class="s">'''
+</span><span class="sh">'''</span><span class="s">
 Name : Akira
 Director : Katsuhiro Ôtomo
 Year : 1988
 Genre : Ciencia ficción
-'''</span>
+</span><span class="sh">'''</span>
 </code></pre></div></div>
 
 <ul>

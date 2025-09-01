@@ -1,0 +1,89 @@
+# Habilidades técnicas organizadas por categorías
+frontend:
+  title: "Frontend Development"
+  icon: "fas fa-code"
+  skills:
+    - name: "JavaScript"
+      level: 90
+      icon: "fab fa-js-square"
+      description: "ES6+, Vanilla JS, frameworks modernos"
+    
+    - name: "CSS/Sass"
+      level: 95
+      icon: "fab fa-sass"
+      description: "CSS3, Sass, metodologías BEM, CSS Grid, Flexbox"
+    
+    - name: "HTML"
+      level: 95
+      icon: "fab fa-html5"
+      description: "HTML5 semántico, accesibilidad, SEO"
+    
+    - name: "Bootstrap"
+      level: 85
+      icon: "fab fa-bootstrap"
+      description: "Bootstrap 5, customización, responsive design"
+    
+    - name: "jQuery"
+      level: 80
+      icon: "fas fa-dollar-sign"
+      description: "Manipulación DOM, plugins, validación"
+
+tools:
+  title: "Herramientas y Workflows"
+  icon: "fas fa-tools"
+  skills:
+    - name: "Git/GitHub"
+      level: 85
+      icon: "fab fa-git-alt"
+      description: "Control de versiones, colaboración, GitHub Actions"
+    
+    - name: "Jekyll"
+      level: 80
+      icon: "fas fa-gem"
+      description: "Sitios estáticos, Liquid templating, collections"
+    
+    - name: "Gulp"
+      level: 75
+      icon: "fas fa-gulp"
+      description: "Automatización, build process, optimización"
+    
+    - name: "VS Code"
+      level: 90
+      icon: "fas fa-code"
+      description: "Configuración avanzada, extensiones, debugging"
+    
+    - name: "Node.js/NPM"
+      level: 70
+      icon: "fab fa-node-js"
+      description: "Package management, build tools"
+
+design:
+  title: "Diseño y UX"
+  icon: "fas fa-palette"
+  skills:
+    - name: "Diseño Responsive"
+      level: 90
+      icon: "fas fa-mobile-alt"
+      description: "Mobile-first, breakpoints, progressive enhancement"
+    
+    - name: "Accesibilidad"
+      level: 80
+      icon: "fas fa-universal-access"
+      description: "WCAG 2.1, ARIA, testing con usuarios"
+    
+    - name: "Performance"
+      level: 85
+      icon: "fas fa-tachometer-alt"
+      description: "Core Web Vitals, optimización, Lighthouse"
+    
+    - name: "SEO"
+      level: 75
+      icon: "fas fa-search"
+      description: "SEO técnico, schema markup, meta tags"
+
+currently_learning:
+  - "TypeScript"
+  - "Vue.js 3"
+  - "Vite"
+  - "Web Components"
+  - "CSS Container Queries"

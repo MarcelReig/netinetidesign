@@ -1,16 +1,5 @@
 // Landing Styles
 
-.landing-text {
-  text-align: center;
-  padding: 0 12px;
-}
-
-.landing-wrapper {
-  height: calc(100vh - 169.55px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 .social-icons {
   padding-left: 0;
@@ -23,7 +12,7 @@
   }
 
   .fa {
-    color: $gray-700;
+    color: var(--color-gray-700);
     font-size: 1.8em;
     width: 30px;
     height: 30px;
@@ -33,20 +22,11 @@
     border-radius: 50%;
 
     &:hover {
-      color: $gray-500;
+      color: var(--color-gray-50)0;
       transform: scale(1.1);
       transform: scale(1.1) rotate(360deg);
     }
   }
-}
-
-.img-circle {
-  background-image: url("../images/nerdiest.jpeg");
-  background-size: cover;
-  background-position-x: center;
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
 }
 
 // Large devices (desktops, 992px and up)

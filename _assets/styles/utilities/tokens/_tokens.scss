@@ -1,0 +1,84 @@
+// =============================================================================
+// TOKEN-BASED UTILITIES - Theme Compatible
+// =============================================================================
+
+// ===========================================================================
+// BUTTON IMPROVEMENTS
+// ===========================================================================
+.btn {
+  border-radius: var(--border-radius-md);
+  font-weight: var(--font-weight-medium);
+  font-family: var(--font-family-sans);
+  transition: all 0.15s ease-in-out;
+  
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+  }
+  
+  &:focus-visible {
+    outline: 2px solid var(--color-border-focus) !important;
+    outline-offset: 2px;
+    box-shadow: none;
+  }
+}
+
+// ===========================================================================
+// CARD IMPROVEMENTS
+// ===========================================================================
+.card {
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--color-border-primary);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.15s ease-in-out;
+  
+  &:hover {
+    box-shadow: var(--shadow-md);
+  }
+}
+
+// ===========================================================================
+// SPACING UTILITIES
+// ===========================================================================
+.section-padding {
+  padding: var(--section-padding) 0;
+}
+
+.container-padding {
+  padding: 0 var(--container-padding);
+}
+
+// ===========================================================================
+// SOCIAL MEDIA COLORS (General)
+// ===========================================================================
+.social-link {
+  transition: color 0.15s ease-in-out;
+  
+  &.linkedin:hover {
+    color: var(--color-linkedin) !important;
+  }
+  
+  &.github:hover {
+    color: var(--color-github) !important;
+  }
+  
+  &.twitter:hover {
+    color: var(--color-twitter) !important;
+  }
+  
+  &.codepen:hover {
+    color: var(--color-codepen) !important;
+  }
+  
+  &.behance:hover {
+    color: var(--color-behance) !important;
+  }
+  
+  &.spotify:hover {
+    color: var(--color-spotify) !important;
+  }
+  
+  &.instagram:hover {
+    color: var(--color-instagram) !important;
+  }
+}

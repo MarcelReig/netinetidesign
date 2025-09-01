@@ -1,33 +1,33 @@
-I"|5<h3 class="lead mt-5" id="las-cadenas-string-se-crean-escribiendo-una-una-secuencia-de-carácteres-letras-números-o-símbolos-entre-comillas-simples--o-dobles-">Las cadenas (<code class="language-plaintext highlighter-rouge">string</code>) se crean escribiendo una una secuencia de carácteres, letras, números o símbolos entre comillas simples <code class="language-plaintext highlighter-rouge">''</code> o dobles <code class="language-plaintext highlighter-rouge">""</code>.</h3>
+I"S:<h3 class="lead mt-5" id="las-cadenas-string-se-crean-escribiendo-una-una-secuencia-de-carácteres-letras-números-o-símbolos-entre-comillas-simples--o-dobles-">Las cadenas (<code class="language-plaintext highlighter-rouge">string</code>) se crean escribiendo una una secuencia de carácteres, letras, números o símbolos entre comillas simples <code class="language-plaintext highlighter-rouge">''</code> o dobles <code class="language-plaintext highlighter-rouge">""</code>.</h3>
 
 <h3 class="lead mb-5" id="muchos-de-los-conceptos-y-métodos-que-aprendas-con-las-cadenas-también-te-serán-útilies-en-las-listas">Muchos de los conceptos y métodos que aprendas con las cadenas también te serán útilies en las listas.</h3>
 
 <p>Puedes guardar un <code class="language-plaintext highlighter-rouge">string</code> en una variable del siguiente modo:</p>
 
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_str</span> <span class="o">=</span> <span class="s">'Fixie pug hoodie'</span>
-<span class="k">print</span><span class="p">(</span><span class="n">my_str</span><span class="p">)</span> <span class="c1"># Output: Fixie pug hoodie
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_str</span> <span class="o">=</span> <span class="sh">'</span><span class="s">Fixie pug hoodie</span><span class="sh">'</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">my_str</span><span class="p">)</span> <span class="c1"># Output: Fixie pug hoodie
 </span></code></pre></div></div>
 
 <p>Puedes concatenar variables que contienen cadenas utilizando el operador <code class="language-plaintext highlighter-rouge">+</code> de suma:</p>
 
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_str1</span> <span class="o">=</span> <span class="s">'Roof'</span>
-<span class="n">my_str2</span> <span class="o">=</span> <span class="s">'party'</span>
-<span class="n">my_str3</span> <span class="o">=</span> <span class="s">'wolf'</span>
-<span class="n">my_str4</span> <span class="o">=</span> <span class="s">'iPhone'</span>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_str1</span> <span class="o">=</span> <span class="sh">'</span><span class="s">Roof</span><span class="sh">'</span>
+<span class="n">my_str2</span> <span class="o">=</span> <span class="sh">'</span><span class="s">party</span><span class="sh">'</span>
+<span class="n">my_str3</span> <span class="o">=</span> <span class="sh">'</span><span class="s">wolf</span><span class="sh">'</span>
+<span class="n">my_str4</span> <span class="o">=</span> <span class="sh">'</span><span class="s">iPhone</span><span class="sh">'</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">my_str1</span> <span class="o">+</span> <span class="n">my_str2</span> <span class="o">+</span> <span class="n">my_str3</span> <span class="o">+</span> <span class="n">my_str4</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">my_str1</span> <span class="o">+</span> <span class="n">my_str2</span> <span class="o">+</span> <span class="n">my_str3</span> <span class="o">+</span> <span class="n">my_str4</span><span class="p">)</span>
 
 <span class="c1"># Output: RoofpartywolfiPhone
 </span></code></pre></div></div>
 
 <p>Si quieres espacios en blanco entre las cadenas tienes que añadirlos <code class="language-plaintext highlighter-rouge">" "</code>:</p>
 
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_str1</span> <span class="o">=</span> <span class="s">'Roof'</span>
-<span class="n">my_str2</span> <span class="o">=</span> <span class="s">'party'</span>
-<span class="n">my_str3</span> <span class="o">=</span> <span class="s">'wolf'</span>
-<span class="n">my_str4</span> <span class="o">=</span> <span class="s">'iPhone'</span>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_str1</span> <span class="o">=</span> <span class="sh">'</span><span class="s">Roof</span><span class="sh">'</span>
+<span class="n">my_str2</span> <span class="o">=</span> <span class="sh">'</span><span class="s">party</span><span class="sh">'</span>
+<span class="n">my_str3</span> <span class="o">=</span> <span class="sh">'</span><span class="s">wolf</span><span class="sh">'</span>
+<span class="n">my_str4</span> <span class="o">=</span> <span class="sh">'</span><span class="s">iPhone</span><span class="sh">'</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">my_str1</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">my_str2</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">my_str3</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">my_str4</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">my_str1</span> <span class="o">+</span> <span class="sh">"</span><span class="s"> </span><span class="sh">"</span> <span class="o">+</span> <span class="n">my_str2</span> <span class="o">+</span> <span class="sh">"</span><span class="s"> </span><span class="sh">"</span> <span class="o">+</span> <span class="n">my_str3</span> <span class="o">+</span> <span class="sh">"</span><span class="s"> </span><span class="sh">"</span> <span class="o">+</span> <span class="n">my_str4</span><span class="p">)</span>
 
 <span class="c1"># Output: Roof party wolf iPhone
 </span></code></pre></div></div>
@@ -40,12 +40,12 @@
 
 <p>Las variables dentro de una <strong>f-string</strong> se escriben entre llaves <code class="language-plaintext highlighter-rouge">{}</code>.</p>
 
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_str1</span> <span class="o">=</span> <span class="s">'Roof'</span>
-<span class="n">my_str2</span> <span class="o">=</span> <span class="s">'party'</span>
-<span class="n">my_str3</span> <span class="o">=</span> <span class="s">'wolf'</span>
-<span class="n">my_str4</span> <span class="o">=</span> <span class="s">'iPhone'</span>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_str1</span> <span class="o">=</span> <span class="sh">'</span><span class="s">Roof</span><span class="sh">'</span>
+<span class="n">my_str2</span> <span class="o">=</span> <span class="sh">'</span><span class="s">party</span><span class="sh">'</span>
+<span class="n">my_str3</span> <span class="o">=</span> <span class="sh">'</span><span class="s">wolf</span><span class="sh">'</span>
+<span class="n">my_str4</span> <span class="o">=</span> <span class="sh">'</span><span class="s">iPhone</span><span class="sh">'</span>
 
-<span class="k">print</span><span class="p">(</span><span class="s">f'</span><span class="si">{</span><span class="n">my_str1</span><span class="si">}</span><span class="s"> </span><span class="si">{</span><span class="n">my_str2</span><span class="si">}</span><span class="s"> </span><span class="si">{</span><span class="n">my_str3</span><span class="si">}</span><span class="s"> </span><span class="si">{</span><span class="n">my_str4</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="si">{</span><span class="n">my_str1</span><span class="si">}</span><span class="s"> </span><span class="si">{</span><span class="n">my_str2</span><span class="si">}</span><span class="s"> </span><span class="si">{</span><span class="n">my_str3</span><span class="si">}</span><span class="s"> </span><span class="si">{</span><span class="n">my_str4</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
 
 <span class="c1"># Output: Roof party wolf iPhone
 </span></code></pre></div></div>
@@ -64,7 +64,7 @@
 <span class="kd">let</span> <span class="nx">my_str3</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">wolf</span><span class="dl">'</span><span class="p">;</span>
 <span class="kd">let</span> <span class="nx">my_str4</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">iPhone</span><span class="dl">'</span><span class="p">;</span>
 
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`</span><span class="p">${</span><span class="nx">my_str1</span><span class="p">}</span><span class="s2"> </span><span class="p">${</span><span class="nx">my_str2</span><span class="p">}</span><span class="s2"> </span><span class="p">${</span><span class="nx">my_str3</span><span class="p">}</span><span class="s2"> </span><span class="p">${</span><span class="nx">my_str4</span><span class="p">}</span><span class="s2">`</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="s2">`</span><span class="p">${</span><span class="nx">my_str1</span><span class="p">}</span><span class="s2"> </span><span class="p">${</span><span class="nx">my_str2</span><span class="p">}</span><span class="s2"> </span><span class="p">${</span><span class="nx">my_str3</span><span class="p">}</span><span class="s2"> </span><span class="p">${</span><span class="nx">my_str4</span><span class="p">}</span><span class="s2">`</span><span class="p">)</span>
 
 <span class="c1">// "Roof party wolf iPhone"</span>
 </code></pre></div></div>
@@ -73,31 +73,31 @@
 
 <p>Secrean escribiendo tres comillas <code class="language-plaintext highlighter-rouge">'''</code> simples o dobles de inicio y de fín:</p>
 
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">multiline_str</span> <span class="o">=</span> <span class="s">'''Los strings multilínea
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">multiline_str</span> <span class="o">=</span> <span class="sh">'''</span><span class="s">Los strings multilínea
 son igual que
 los comentarios multilínea...
-'''</span>
+</span><span class="sh">'''</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">multiline_str</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">multiline_str</span><span class="p">)</span>
 
-<span class="s">'''
+<span class="sh">'''</span><span class="s">
 Los strings multilínea
 son igual que
 los comentarios multilínea...
-'''</span>
+</span><span class="sh">'''</span>
 </code></pre></div></div>
 
 <p>También podemos utilizar el carácter de escape <code class="language-plaintext highlighter-rouge">\n</code> para crear saltos de línea.</p>
 
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">multiline_str</span> <span class="o">=</span> <span class="s">"Los strings multilínea</span><span class="se">\n</span><span class="s">son igual que</span><span class="se">\n</span><span class="s">los comentarios multilínea..."</span>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">multiline_str</span> <span class="o">=</span> <span class="sh">"</span><span class="s">Los strings multilínea</span><span class="se">\n</span><span class="s">son igual que</span><span class="se">\n</span><span class="s">los comentarios multilínea...</span><span class="sh">"</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">multiline_str</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">multiline_str</span><span class="p">)</span>
 
-<span class="s">'''
+<span class="sh">'''</span><span class="s">
 Los strings multilínea
 son igual que
 los comentarios multilínea...
-'''</span>
+</span><span class="sh">'''</span>
 </code></pre></div></div>
 
 <h2 id="indexar-cadenas-en-python">Indexar cadenas en Python</h2>
@@ -154,18 +154,18 @@ los comentarios multilínea...
 
 <p>Para acceder a un carácter escribimos su índice entre corchetes <code class="language-plaintext highlighter-rouge">[]</code>.</p>
 
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">et_says</span> <span class="o">=</span> <span class="s">"ET mi casa teléfono"</span>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">et_says</span> <span class="o">=</span> <span class="sh">"</span><span class="s">ET mi casa teléfono</span><span class="sh">"</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">et_says</span><span class="p">[</span><span class="mi">6</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">et_says</span><span class="p">[</span><span class="mi">6</span><span class="p">])</span>
 
 <span class="c1"># Output: c
 </span></code></pre></div></div>
 
 <p>Podemos acceder al último carácter de la cadena con <code class="language-plaintext highlighter-rouge">[-1]</code>.</p>
 
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">et_says</span> <span class="o">=</span> <span class="s">"ET mi casa teléfono"</span>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">et_says</span> <span class="o">=</span> <span class="sh">"</span><span class="s">ET mi casa teléfono</span><span class="sh">"</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">et_says</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">et_says</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
 
 <span class="c1"># Output: o
 </span></code></pre></div></div>
@@ -174,9 +174,9 @@ los comentarios multilínea...
 
 <p>Para saber la longitud de una cadena utilizamos la función <code class="language-plaintext highlighter-rouge">len</code>.</p>
 
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">et_says</span> <span class="o">=</span> <span class="s">"ET mi casa teléfono"</span>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">et_says</span> <span class="o">=</span> <span class="sh">"</span><span class="s">ET mi casa teléfono</span><span class="sh">"</span>
 
-<span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">et_says</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">et_says</span><span class="p">))</span>
 
 <span class="c1"># Output: 19
 </span></code></pre></div></div>
@@ -185,16 +185,16 @@ los comentarios multilínea...
 
 <p><code class="language-plaintext highlighter-rouge">upper()</code> convierte el texto en mayúsculas.</p>
 
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">et_says</span> <span class="o">=</span> <span class="s">"ET mi casa teléfono"</span>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">et_says</span> <span class="o">=</span> <span class="sh">"</span><span class="s">ET mi casa teléfono</span><span class="sh">"</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">et_says</span><span class="p">.</span><span class="n">upper</span><span class="p">())</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">et_says</span><span class="p">.</span><span class="nf">upper</span><span class="p">())</span>
 
 <span class="c1"># Output: Output: ET MI CASA TELÉFONO
 </span></code></pre></div></div>
 <p><code class="language-plaintext highlighter-rouge">lower()</code> convierte el texto en minúsculas.</p>
-<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">et_says</span> <span class="o">=</span> <span class="s">"ET mi casa teléfono"</span>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">et_says</span> <span class="o">=</span> <span class="sh">"</span><span class="s">ET mi casa teléfono</span><span class="sh">"</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">et_says</span><span class="p">.</span><span class="n">lower</span><span class="p">())</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">et_says</span><span class="p">.</span><span class="nf">lower</span><span class="p">())</span>
 
 <span class="c1"># Output: et mi casa teléfono
 </span></code></pre></div></div>

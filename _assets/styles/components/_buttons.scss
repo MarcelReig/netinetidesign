@@ -1,0 +1,179 @@
+// =============================================================================
+// PRIMER-STYLE BUTTONS
+// =============================================================================
+
+.btn {
+  // Base styles
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--component-padding-condensed) var(--component-padding);
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  
+  &:hover {
+    text-decoration: none;
+  }
+  
+  &:focus-visible {
+    outline: 2px solid var(--color-border-focus);
+    outline-offset: 2px;
+  }
+  
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+// ===========================================================================
+// BUTTON VARIANTS
+// ===========================================================================
+
+// Primary button
+.btn-primary {
+  color: var(--color-text-inverse);
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  
+  &:hover {
+    background-color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+  }
+  
+  &:active {
+    background-color: var(--color-primary-dark);
+    transform: translateY(0);
+  }
+}
+
+// Secondary button
+.btn-secondary {
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-secondary);
+  border-color: var(--color-border-primary);
+  
+  &:hover {
+    background-color: var(--color-bg-tertiary);
+    border-color: var(--color-border-secondary);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+  }
+}
+
+// Outline button
+.btn-outline {
+  color: var(--color-text-primary);
+  background-color: transparent;
+  border-color: var(--color-border-primary);
+  
+  &:hover {
+    background-color: var(--color-bg-secondary);
+    border-color: var(--color-border-secondary);
+  }
+}
+
+// Danger button
+.btn-danger {
+  color: var(--color-text-inverse);
+  background-color: var(--color-danger);
+  border-color: var(--color-danger);
+  
+  &:hover {
+    background-color: var(--color-danger-dark);
+    border-color: var(--color-danger-dark);
+  }
+}
+
+// ===========================================================================
+// BUTTON SIZES
+// ===========================================================================
+
+.btn-sm {
+  padding: var(--space-1) var(--space-2);
+  font-size: var(--font-size-0);
+}
+
+.btn-lg {
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--font-size-2);
+}
+
+// ===========================================================================
+// BUTTON STATES
+// ===========================================================================
+
+.btn-loading {
+  position: relative;
+  color: transparent;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid transparent;
+    border-top-color: currentColor;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// =============================================================================
+// BOOTSTRAP BUTTON OVERRIDES FOR THEME COMPATIBILITY
+// =============================================================================
+
+// Fix btn-outline-dark for dark mode compatibility
+.btn-outline-dark {
+  // Light theme (default)
+  border-color: var(--bs-dark);
+  color: var(--bs-dark);
+  
+  &:hover, &:focus {
+    background-color: var(--bs-dark);
+    border-color: var(--bs-dark);
+    color: var(--bs-white);
+  }
+  
+  &:active, &.active {
+    background-color: var(--bs-dark);
+    border-color: var(--bs-dark);
+    color: var(--bs-white);
+  }
+}
+
+// Dark theme specific overrides
+[data-bs-theme="dark"] .btn-outline-dark {
+  // In dark mode, make it outline-light behavior
+  border-color: var(--bs-light);
+  color: var(--bs-light);
+  
+  &:hover, &:focus {
+    background-color: var(--bs-light);
+    border-color: var(--bs-light);
+    color: var(--bs-dark);
+  }
+  
+  &:active, &.active {
+    background-color: var(--bs-light);
+    border-color: var(--bs-light);
+    color: var(--bs-dark);
+  }
+}

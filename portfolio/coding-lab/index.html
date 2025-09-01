@@ -22,6 +22,105 @@ description: Coding Lab Portfolio de Marcel Reig | Diseñador y desarrollador fr
 <div class="container">
   <div class="row">
     <div class="col">
+      <!-- Game Matcher -->
+      <div class="portfolio-item py-5">
+        <div class="row align-items-center g-4">
+          <!-- Imagen -->
+          <div class="col-lg-6">
+            <div class="block-img">
+              <img src="{{ site.baseurl }}/assets/images/portfolio/gamematcher.png" class="img-fluid"
+                alt="Game Matcher - App de recomendación de videojuegos" />
+            </div>
+          </div>
+
+          <!-- Contenido -->
+          <div class="col-lg-6">
+            <div class="block-text">
+              <div class="portfolio-content">
+                <!-- Header -->
+                <div class="mb-4">
+                  <h3 class="h2 mb-2">Game Matcher</h3>
+                  <div class="d-flex gap-2 mb-3">
+                    <span class="tech-badge badge-react">React App</span>
+                    <span class="tech-badge badge-flask">Flask App</span>
+                  </div>
+                </div>
+
+                <!-- Descripción -->
+                <p class="lead text-muted mb-4">
+                  Game Matcher es una aplicación web full-stack que permite a los usuarios
+                  descubrir y gestionar videojuegos personalizados según sus preferencias. La
+                  aplicación combina una base de datos local con la API externa de RAWG.
+                </p>
+
+                <!-- Características principales -->
+                <div class="mb-4">
+                  <h4 class="h5 mb-3">Características principales</h4>
+                  <ul class="feature-list list-unstyled">
+                    <li class="mb-2">
+                      <strong>Sistema de Recomendaciones Personalizadas:</strong>
+                      <span class="text-muted">Basado en géneros y plataformas preferidas</span>
+                    </li>
+                    <li class="mb-2">
+                      <strong>Gestión de Favoritos:</strong>
+                      <span class="text-muted">Los usuarios pueden marcar juegos como favoritos o no favoritos</span>
+                    </li>
+                    <li class="mb-2">
+                      <strong>Base de Datos Dual:</strong>
+                      <span class="text-muted">Combina juegos locales con datos de RAWG API</span>
+                    </li>
+                    <li class="mb-2">
+                      <strong>Onboarding Intuitivo:</strong>
+                      <span class="text-muted">Proceso guiado de 4 pasos para nuevos usuarios</span>
+                    </li>
+                    <li class="mb-2">
+                      <strong>Panel de Administración:</strong>
+                      <span class="text-muted">Gestión completa de usuarios, juegos y configuraciones</span>
+                    </li>
+                    <li class="mb-2">
+                      <strong>Autenticación Robusta:</strong>
+                      <span class="text-muted">Sistema de roles (usuarios/administradores)</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Tecnologías -->
+                <div class="mb-4">
+                  <h4 class="h5 mb-3">Tecnologías utilizadas</h4>
+                  <div class="tech-stack">
+                    <span class="tech-badge badge-react">React 18</span>
+                    <span class="tech-badge badge-javascript">Vite</span>
+                    <span class="tech-badge badge-react">React Router</span>
+                    <span class="tech-badge badge-bootstrap">Bootstrap 5</span>
+                    <span class="tech-badge badge-javascript">FontAwesome</span>
+                    <span class="tech-badge badge-react">Context API</span>
+                    <span class="tech-badge badge-flask">Flask</span>
+                    <span class="tech-badge badge-python">SQLAlchemy</span>
+                    <span class="tech-badge badge-javascript">JWT</span>
+                    <span class="tech-badge badge-javascript">CORS</span>
+                    <span class="tech-badge badge-python">Alembic</span>
+                    <span class="tech-badge badge-sql">PostgreSQL</span>
+                    <span class="tech-badge badge-javascript">Render</span>
+                  </div>
+                </div>
+
+                <!-- Botones -->
+                <div class="d-flex flex-wrap gap-2">
+                  <a href="https://sample-service-name-7fte.onrender.com/" class="btn btn-outline-dark" target="_blank"
+                    rel="noopener">
+                    <i class="fas fa-external-link-alt me-2"></i>Ver proyecto
+                  </a>
+                  <a href="https://github.com/MarcelReig/gamematcher" class="btn btn-outline-dark" target="_blank"
+                    rel="noopener">
+                    <i class="fab fa-github me-2"></i>Ver código
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- React Marina -->
       <!-- portfolio item -->
       <div class="portfolio-item">
@@ -31,19 +130,18 @@ description: Coding Lab Portfolio de Marcel Reig | Diseñador y desarrollador fr
         <div class="block-text">
           <div class="aligner-item">
             <h3>Marina Frontend</h3>
-            <p> React App | Proyecto final Bootcamp.</p>
-            <p>Para el proyecto final del Bootcamp realizé un API REST en Flask con Python y una App React conectada con
-              la API, lo que me ayudo a tener una visión más completa de como funciona un
-              proyecto FullStack.</p>
+            <p>React App</p>
+            <p>API REST en Flask con Python y Front en React</p>
             <ul>
               <li>React</li>
               <li>Axios</li>
-              <li>Estilos con Sass</li>
+              <li>Sass</li>
               <li>Dropzone</li>
               <li>Utenticación con JWT</li>
               <li>Deploy en Digitalocean</li>
             </ul>
-            <a href="https://king-prawn-app-dr5rk.ondigitalocean.app/" class="btn btn-outline-dark" target="blank">Ver
+            <a href="https://king-prawn-app-dr5rk.ondigitalocean.app/" class="btn btn-outline-dark" target="blank"> <i
+                class="fas fa-external-link-alt me-2"></i> Ver
               proyecto</a>
             <a href="https://github.com/MarcelReig/react-marina-front" class="btn btn-outline-dark" target="blank"><i
                 class="fab fa-github"></i> Ver
@@ -61,10 +159,8 @@ description: Coding Lab Portfolio de Marcel Reig | Diseñador y desarrollador fr
         <div class="block-text">
           <div class="aligner-item">
             <h3>Marina Backend</h3>
-            <p> Flask App | Proyecto final Bootcamp.</p>
-            <p>Para el proyecto final del Bootcamp realizé un API REST en Flask con Python y una App React que recibe y
-              envía peticiones CRUD a la API lo que me ayudo a tener una visión más completa de como funciona un
-              proyecto FullStack y me permitió practicar con MongoDB.</p>
+            <p> Flask App</p>
+            <p>API REST en Flask</p>
             <ul>
               <li>Flask</li>
               <li>Utenticación con JWT</li>
@@ -74,7 +170,8 @@ description: Coding Lab Portfolio de Marcel Reig | Diseñador y desarrollador fr
               <li>Jinja Python templates</li>
               <li>Deploy en Render</li>
             </ul>
-            <a href="https://marina-backend.onrender.com/" class="btn btn-outline-dark" target="blank">Ver
+            <a href="https://marina-backend.onrender.com/" class="btn btn-outline-dark" target="blank"> <i
+                class="fas fa-external-link-alt me-2"></i> Ver
               proyecto</a>
             <a href="https://github.com/MarcelReig/marina-backend" class="btn btn-outline-dark" target="blank"><i
                 class="fab fa-github"></i> Ver
@@ -103,7 +200,8 @@ description: Coding Lab Portfolio de Marcel Reig | Diseñador y desarrollador fr
               <li>Estilos con Tailwind</li>
               <li>Deploy en Netlify</li>
             </ul>
-            <a href="https://awesome-react-tasks.netlify.app/" class="btn btn-outline-dark" target="blank">Ver
+            <a href="https://awesome-react-tasks.netlify.app/" class="btn btn-outline-dark" target="blank"> <i
+                class="fas fa-external-link-alt me-2"></i> Ver
               proyecto</a>
             <a href="https://github.com/MarcelReig/react-tasks-app" class="btn btn-outline-dark" target="blank"><i
                 class="fab fa-github"></i> Ver
@@ -130,8 +228,8 @@ description: Coding Lab Portfolio de Marcel Reig | Diseñador y desarrollador fr
               <li>Estilos con Styled components</li>
               <li>Deploy en Netlify</li>
             </ul>
-            <a href="https://react-style-components-toggler.netlify.app/" class="btn btn-outline-dark"
-              target="blank">Ver
+            <a href="https://react-style-components-toggler.netlify.app/" class="btn btn-outline-dark" target="blank">
+              <i class="fas fa-external-link-alt me-2"></i> Ver
               proyecto</a>
             <a href="https://github.com/MarcelReig/react-toggle-dark-mode/tree/main" class="btn btn-outline-dark"
               target="blank"><i class="fab fa-github"></i> Ver
@@ -139,7 +237,6 @@ description: Coding Lab Portfolio de Marcel Reig | Diseñador y desarrollador fr
           </div>
         </div>
       </div>
-
 
       <!-- portfolio item -->
       <div class="portfolio-item">
@@ -149,7 +246,7 @@ description: Coding Lab Portfolio de Marcel Reig | Diseñador y desarrollador fr
         <div class="block-text">
           <div class="aligner-item">
             <h3>React Portfolio App</h3>
-            <p>React App | Ejercicio del Bootcamp.</p>
+            <p>React App</p>
             <ul>
               <li>React</li>
               <li>Axios</li>
@@ -157,7 +254,8 @@ description: Coding Lab Portfolio de Marcel Reig | Diseñador y desarrollador fr
               <li>Redux</li>
               <li>Deploy en Netlify</li>
             </ul>
-            <a href="https://react-redux-portfolio.netlify.app/" class="btn btn-outline-dark" target="blank">Ver
+            <a href="https://react-redux-portfolio.netlify.app/" class="btn btn-outline-dark" target="blank"> <i
+                class="fas fa-external-link-alt me-2"></i> Ver
               proyecto</a>
             <a href="https://github.com/MarcelReig/mreig-react-redux-router-portfolio" class="btn btn-outline-dark"
               target="blank"><i class="fab fa-github"></i> Ver
@@ -181,10 +279,11 @@ description: Coding Lab Portfolio de Marcel Reig | Diseñador y desarrollador fr
               <li>CSS</li>
               <li>JavaScript Fetch API</li>
             </ul>
-            <a href="https://marcelreig.github.io/vanilla-js-pokedex/" class="btn btn-outline-dark" target="blank">Ver
+            <a href="https://marcelreig.github.io/vanilla-js-pokedex/" class="btn btn-outline-dark" target="blank"> <i
+                class="fas fa-external-link-alt me-2"></i> Ver
               proyecto</a>
-            <a href="https://github.com/MarcelReig/vanilla-js-pokedex" class="btn btn-outline-dark"
-              target="blank"><i class="fab fa-github"></i> Ver
+            <a href="https://github.com/MarcelReig/vanilla-js-pokedex" class="btn btn-outline-dark" target="blank"><i
+                class="fab fa-github"></i> Ver
               código</a>
           </div>
         </div>
@@ -198,16 +297,16 @@ description: Coding Lab Portfolio de Marcel Reig | Diseñador y desarrollador fr
         <div class="block-text">
           <div class="aligner-item">
             <h3>Vanilla JS todo list</h3>
-            <p>Proyecto para enseñar JavaScript en Superprof.</p>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
             </ul>
-            <a href="https://marcelreig.github.io/vanilla-js-todo-list/" class="btn btn-outline-dark" target="blank">Ver
+            <a href="https://marcelreig.github.io/vanilla-js-todo-list/" class="btn btn-outline-dark" target="blank"> <i
+                class="fas fa-external-link-alt me-2"></i> Ver
               proyecto</a>
-            <a href="https://github.com/MarcelReig/vanilla-js-todo-list" class="btn btn-outline-dark"
-              target="blank"><i class="fab fa-github"></i> Ver
+            <a href="https://github.com/MarcelReig/vanilla-js-todo-list" class="btn btn-outline-dark" target="blank"><i
+                class="fab fa-github"></i> Ver
               código</a>
           </div>
         </div>
@@ -227,92 +326,13 @@ description: Coding Lab Portfolio de Marcel Reig | Diseñador y desarrollador fr
               <li>Tailwindcss</li>
               <li>Firebase</li>
             </ul>
-            <a href="https://ideabox-c36d2.web.app/" class="btn btn-outline-dark" target="blank">Ver
+            <a href="https://ideabox-c36d2.web.app/" class="btn btn-outline-dark" target="blank"> <i
+                class="fas fa-external-link-alt me-2"></i> Ver
               proyecto</a>
           </div>
         </div>
       </div>
 
-      <!-- Themoviedb-search -->
-      <div class="portfolio-item">
-        <div class="block-img">
-          <img src="{{ site.baseurl }}/assets/images/portfolio/themoviedb-search.png" />
-        </div>
-        <div class="block-text">
-          <div class="aligner-item">
-            <h3>The movie db search</h3>
-            <p>Conexión vía jQuery y Ajax con el API The movie-DB y maquetación en Bootstrap 4.</p>
-            <ul>
-              <li>jQuery</li>
-              <li>Ajax</li>
-              <li>Bootstrap 4</li>
-              <li>Themovie-db API</li>
-              <li>Deploy en GitHub Pages</li>
-            </ul>
-            <a href="https://marcelreig.github.io/moviedb-search/" class="btn btn-outline-dark" target="blank">Ver
-              Live</a>
-            <a href="https://github.com/MarcelReig/moviedb-search" class="btn btn-outline-dark" target="blank"><i
-                class="fab fa-github"></i> Ver
-              código</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ======================================================== -->
-<!-- ============ OPEN SOURCE ================================== -->
-<!-- ======================================================== -->
-
-<div class="gradient-bg-title">
-  <div class="container">
-    <div class="row">
-      <div class="col-md my-5">
-        <h3>Open Source</h3>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <!-- jekyll-starter -->
-      <div class="portfolio-item">
-        <div class="block-img">
-          <img src="{{ site.baseurl }}/assets/images/portfolio/jekyll-starter.png" />
-        </div>
-        <div class="block-text">
-          <div class="aligner-item">
-            <h3>Theme Jekyll con Bootstrap 4</h3>
-            <ul>
-              <li>Gulp 4</li>
-              <li>Jekyll 4</li>
-              <li>Bootstrap 4</li>
-              <li>Inter Font family</li>
-              <li>Fontawesome 5</li>
-              <li>Google Analytics</li>
-              <li>Sistema de tags y etiquetas</li>
-              <li>Plugin de paginación</li>
-              <li>Deploy en GitHub Pages</li>
-            </ul>
-            <a href="https://marcelreig.github.io/jekyll-bootstrap-boilerplate/" class="btn btn-outline-dark"
-              target="blank">Ver Live</a>
-            <a href="https://github.com/MarcelReig/jekyll-bootstrap-boilerplate" class="btn btn-outline-dark"
-              target="blank"><i class="fab fa-github"></i> Ver
-              código</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-8 offset-md-2">
-      <h5>🤔 Que esperar de la plantilla?</h5>
-      <p>Cree la plantilla en 2016 con el objetivo de experimentar con los generadores de sitios web estáticos. Puede
-        servirte de inspiración pero en 2022 seguro que hay opciones más actualizadas.</p>
-      <div class="spacer"></div>
     </div>
   </div>
 </div>
