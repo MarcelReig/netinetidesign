@@ -1,49 +1,59 @@
 // =============================================================================
-// COLOR TOKENS - Bootstrap 5 Theme System
+// COLOR TOKENS
+// Paleta: Willow Springs / Aqua Mist / Crimson Blaze / Washed Black
 // =============================================================================
 
 :root {
   // ===========================================================================
-  // BRAND COLORS (consistentes en ambos temas)
+  // BRAND — acento por tema (light: terracota, dark: teal)
+  // Override completo en cada bloque de tema
   // ===========================================================================
-  --color-primary: #0d6efd; // Bootstrap 5 primary
-  --color-primary-dark: #0a58ca;
-  --color-primary-light: #6ea8fe;
-  --color-primary-lighter: #cfe2ff;
+  --color-primary:         #AD3D1E; // Crimson Blaze (light default)
+  --color-primary-dark:    #8B3018;
+  --color-primary-light:   #C4614A;
+  --color-primary-lighter: rgba(173, 61, 30, 0.08);
 
-  --color-secondary: #6c757d;
-  --color-secondary-dark: #495057;
-  --color-secondary-light: #adb5bd;
+  --color-secondary:         #6c757d;
+  --color-secondary-dark:    #495057;
+  --color-secondary-light:   #adb5bd;
   --color-secondary-lighter: #f8f9fa;
 
   // ===========================================================================
-  // SEMANTIC COLORS (ajustados para Bootstrap 5)
+  // PALETTE RAW — referencia, no usar directamente en componentes
   // ===========================================================================
-  --color-success: #198754;
-  --color-success-dark: #146c43;
-  --color-success-light: #75b798;
+  --palette-willow:  #E7E6E0; // crema cálido
+  --palette-aqua:    #A0C9CB; // teal suave
+  --palette-crimson: #AD3D1E; // terracota
+  --palette-washed:  #1F262A; // carbón azulado
+
+  // ===========================================================================
+  // SEMANTIC — no tocar, Bootstrap los necesita
+  // ===========================================================================
+  --color-success:         #198754;
+  --color-success-dark:    #146c43;
+  --color-success-light:   #75b798;
   --color-success-lighter: #d1e7dd;
 
-  --color-warning: #ffc107;
-  --color-warning-dark: #ffca2c;
-  --color-warning-light: #ffda6a;
+  --color-warning:         #ffc107;
+  --color-warning-dark:    #ffca2c;
+  --color-warning-light:   #ffda6a;
   --color-warning-lighter: #fff3cd;
 
-  --color-danger: #dc3545;
-  --color-danger-dark: #b02a37;
-  --color-danger-light: #ea868f;
-  --color-danger-lighter: #f8d7da;
+  --color-danger:          #dc3545;
+  --color-danger-dark:     #b02a37;
+  --color-danger-light:    #ea868f;
+  --color-danger-lighter:  #f8d7da;
 
-  --color-info: #0dcaf0;
-  --color-info-dark: #087990;
-  --color-info-light: #6edff6;
-  --color-info-lighter: #d1ecf1;
+  --color-info:            #0dcaf0;
+  --color-info-dark:       #087990;
+  --color-info-light:      #6edff6;
+  --color-info-lighter:    #d1ecf1;
 
   // ===========================================================================
-  // NEUTRAL COLORS (Bootstrap 5 scale)
+  // NEUTRALS — escala Bootstrap (referencia)
   // ===========================================================================
-  --color-white: #ffffff;
-  --color-black: #000000;
+  --color-white:     #ffffff;
+  --color-black:     #000000;
 
   --color-gray-100: #f8f9fa;
   --color-gray-200: #e9ecef;
@@ -56,111 +66,121 @@
   --color-gray-900: #212529;
 
   // ===========================================================================
-  // SOCIAL MEDIA COLORS
+  // SOCIAL
   // ===========================================================================
-  --color-linkedin: #0077b5;
-  --color-github: #24292f;
-  --color-twitter: #1da1f2;
-  --color-codepen: #000000;
-  --color-behance: #1769ff;
-  --color-spotify: #1db954;
+  --color-linkedin:  #0077b5;
+  --color-github:    #24292f;
+  --color-twitter:   #1da1f2;
+  --color-codepen:   #000000;
+  --color-behance:   #1769ff;
+  --color-spotify:   #1db954;
   --color-instagram: #e4405f;
 }
 
 // =============================================================================
-// LIGHT THEME (Bootstrap 5 Default)
+// LIGHT THEME — Willow Springs + Crimson Blaze
+// Fondo crema cálido, acento terracota, texto carbón
 // =============================================================================
 :root,
 [data-bs-theme="light"] {
-  // Bootstrap 5 variables
-  --bs-body-bg: #ffffff;
-  --bs-body-color: #212529;
-  --bs-secondary-bg: #f8f9fa;
-  --bs-tertiary-bg: #ffffff;
+  // Bootstrap core
+  --bs-body-bg:        #E7E6E0;
+  --bs-body-color:     #1F262A;
+  --bs-secondary-bg:   #DDDCDA;
+  --bs-tertiary-bg:    #D4D3D0;
 
-  // Custom theme tokens
-  --color-bg-primary: #ffffff;
-  --color-bg-secondary: #f8f9fa;
-  --color-bg-tertiary: #e9ecef;
-  --color-bg-overlay: #ffffff;
-  --color-bg-backdrop: rgba(0, 0, 0, 0.5);
+  // Fondos
+  --color-bg-primary:   #E7E6E0; // Willow Springs — página
+  --color-bg-secondary: #DDDCDA; // surface — cards, sections alternas
+  --color-bg-tertiary:  #D4D3D0; // surface elevada — hover, dropdowns
+  --color-bg-overlay:   #E7E6E0; // navbar, modales
+  --color-bg-backdrop:  rgba(31, 38, 42, 0.4);
 
-  --color-text-primary: #212529; // Dark text on light background
-  --color-text-secondary: #6c757d; // Muted text
-  --color-text-tertiary: #adb5bd; // More muted
-  --color-text-disabled: #ced4da;
-  --color-text-inverse: #ffffff; // White text for dark backgrounds
-  --color-text-link: #0d6efd; // Primary blue for links
-  --color-text-link-hover: #0a58ca; // Darker blue on hover
+  // Texto
+  --color-text-primary:   #1F262A; // Washed Black — cuerpo y títulos
+  --color-text-secondary: #6B6A64; // muted cálido — subtítulos, meta
+  --color-text-tertiary:  #908F89; // muy muted — timestamps, labels
+  --color-text-disabled:  #B5B4AE;
+  --color-text-inverse:   #E7E6E0; // texto sobre fondos oscuros/Crimson
+  --color-text-link:      #AD3D1E; // Crimson Blaze
+  --color-text-link-hover: #8B3018;
 
-  --color-border-primary: #dee2e6;
-  --color-border-secondary: #e9ecef;
-  --color-border-tertiary: #f8f9fa;
-  --color-border-focus: #86b7fe;
+  // Bordes — sutiles, cálidos
+  --color-border-primary:   #C8C7C2;
+  --color-border-secondary: #D4D3CE;
+  --color-border-tertiary:  #DDDCDA;
+  --color-border-focus:     rgba(173, 61, 30, 0.4); // Crimson focus ring
 
-  // Shadows for light theme
-  --shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  --shadow-md: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  --shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  // Acento — Crimson Blaze
+  --color-primary:         #AD3D1E;
+  --color-primary-dark:    #8B3018;
+  --color-primary-light:   #C4614A;
+  --color-primary-lighter: rgba(173, 61, 30, 0.08);
+
+  // Sombras — mínimas, cálidas
+  --shadow-sm: 0 1px 2px rgba(31, 38, 42, 0.06);
+  --shadow-md: 0 2px 8px rgba(31, 38, 42, 0.08);
+  --shadow-lg: 0 4px 16px rgba(31, 38, 42, 0.10);
 }
 
 // =============================================================================
-// DARK THEME (Bootstrap 5 Style)
+// DARK THEME — Washed Black + Aqua Mist
+// Fondo carbón, acento teal, texto crema
 // =============================================================================
 [data-bs-theme="dark"] {
-  // Bootstrap 5 dark mode variables
-  --bs-body-bg: #212529;
-  --bs-body-color: #dee2e6;
-  --bs-secondary-bg: #343a40;
-  --bs-tertiary-bg: #2c3034;
+  // Bootstrap core
+  --bs-body-bg:      #1F262A;
+  --bs-body-color:   #E7E6E0;
+  --bs-secondary-bg: #252E33;
+  --bs-tertiary-bg:  #2C373D;
 
-  // Custom theme tokens for dark mode
-  --color-bg-primary: #212529; // Main dark background
-  --color-bg-secondary: #343a40; // Secondary dark background
-  --color-bg-tertiary: #495057; // Tertiary dark background
-  --color-bg-overlay: #2c3034; // Overlay backgrounds
-  --color-bg-backdrop: rgba(0, 0, 0, 0.8);
+  // Fondos
+  --color-bg-primary:   #1F262A; // Washed Black — página
+  --color-bg-secondary: #252E33; // surface — cards, sections alternas
+  --color-bg-tertiary:  #2C373D; // surface elevada — hover, dropdowns
+  --color-bg-overlay:   #1F262A; // navbar, modales
+  --color-bg-backdrop:  rgba(0, 0, 0, 0.6);
 
-  --color-text-primary: #dee2e6; // Light text on dark background
-  --color-text-secondary: #adb5bd; // Muted light text
-  --color-text-tertiary: #6c757d; // More muted light text
-  --color-text-disabled: #495057;
-  --color-text-inverse: #212529; // Dark text for light backgrounds
-  --color-text-link: #6ea8fe; // Light blue for links in dark mode
-  --color-text-link-hover: #9ec5fe; // Lighter blue on hover
+  // Texto
+  --color-text-primary:    #E7E6E0; // Willow Springs — cuerpo y títulos
+  --color-text-secondary:  #8FA8B0; // muted teal — subtítulos, meta (4.8:1 ✓)
+  --color-text-tertiary:   #5E7880; // muy muted
+  --color-text-disabled:   #3A474E;
+  --color-text-inverse:    #1F262A; // texto sobre Aqua Mist
+  --color-text-link:       #A0C9CB; // Aqua Mist
+  --color-text-link-hover: #BDD9DB;
 
-  --color-border-primary: #495057;
-  --color-border-secondary: #343a40;
-  --color-border-tertiary: #2c3034;
-  --color-border-focus: #6ea8fe;
+  // Bordes — sutiles, fríos
+  --color-border-primary:   #2E3A40;
+  --color-border-secondary: #252E33;
+  --color-border-tertiary:  #1F262A;
+  --color-border-focus:     rgba(160, 201, 203, 0.45); // Aqua focus ring
 
-  // Adjusted primary colors for dark mode
-  --color-primary: #0d6efd;
-  --color-primary-light: #6ea8fe;
-  --color-primary-lighter: rgba(110, 168, 254, 0.15);
+  // Acento — Aqua Mist
+  --color-primary:         #A0C9CB;
+  --color-primary-dark:    #7AACAE;
+  --color-primary-light:   #BDD9DB;
+  --color-primary-lighter: rgba(160, 201, 203, 0.12);
 
-  // Shadows for dark theme
-  --shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+  // Sombras — mínimas, frías
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.4);
 
-  // Code blocks for dark mode
-  --color-bg-code: #161b22;
+  // Code blocks
+  --color-bg-code:   #161b22;
   --color-text-code: #e6edf3;
 }
 
 // =============================================================================
-// CODE HIGHLIGHTING COLORS (THEME-AWARE)
+// CODE HIGHLIGHTING (THEME-AWARE)
 // =============================================================================
-
 :root {
-  // Light theme code colors
-  --color-bg-code: #f6f8fa;
-  --color-text-code: #24292f;
+  --color-bg-code:   #f0efea; // warm off-white, coherente con Willow Springs
+  --color-text-code: #1F262A;
 }
 
 [data-bs-theme="dark"] {
-  // Dark theme code colors (GitHub dark style)
-  --color-bg-code: #161b22;
+  --color-bg-code:   #161b22;
   --color-text-code: #e6edf3;
 }

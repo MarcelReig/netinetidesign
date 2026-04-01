@@ -3,17 +3,21 @@
 // ===================================================================
 
 .skill {
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-  background-color: var(--bs-secondary-bg) !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  cursor: default;
+  user-select: none;
+  padding: var(--space-4) var(--space-3);
 
   i {
     font-size: 2.4rem;
     line-height: 1;
-    color: var(--bs-primary);
+    color: var(--color-text-primary);
+    transition: color 0.15s ease-in-out;
   }
 
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 0.25rem 0.75rem rgba(95, 133, 219, 0.2);
+  &:hover i {
+    color: var(--color-primary);
   }
 }

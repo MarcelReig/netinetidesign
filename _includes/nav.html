@@ -2,7 +2,7 @@
   <div class="container">
     <!-- Logo/Brand -->
     <a class="navbar-brand" href="{{ '/' | relative_url }}" aria-label="Ir al inicio">
-      {{ site.data.site.author }}
+      {{ site.data.site.brand.name }}
     </a>
 
     <!-- Mobile toggle button -->
@@ -28,7 +28,6 @@
             role="menuitem"
             {% if page.url == item.url %}aria-current="page"{% endif %}
             {% if item.icon %}aria-label="{{ item.title }} - {{ item.icon | split: ' ' | last }}"{% endif %}>
-            {% if item.icon %}<i class="{{ item.icon }} me-2"></i>{% endif %}
             {{ item.title }}
           </a>
         </li>

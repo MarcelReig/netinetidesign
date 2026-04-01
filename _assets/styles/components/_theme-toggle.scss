@@ -25,8 +25,8 @@
   
   &:focus {
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
-    border-color: #86b7fe;
+    box-shadow: 0 0 0 2px var(--color-border-focus);
+    border-color: var(--color-primary-light);
   }
   
   // Iconos
@@ -85,7 +85,7 @@
     border-width: 2px;
     
     &:focus {
-      box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.5);
+      box-shadow: 0 0 0 3px var(--color-border-focus);
     }
   }
 }

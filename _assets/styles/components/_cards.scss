@@ -1,24 +1,58 @@
 // =============================================================================
-// PRIMER-STYLE CARDS
+// CARDS
+// Las cards del proyecto usan `border-0 shadow-sm` en el markup.
+// Sobreescribimos via Bootstrap CSS variables + override de utilidades.
 // =============================================================================
 
 .card {
-  background-color: var(--color-bg-overlay);
-  border: 1px solid var(--color-border-primary);
-  border-radius: var(--border-radius-lg);
-  box-shadow: var(--shadow-sm);
-  transition: box-shadow 0.2s ease-in-out;
-  
-  &:hover {
-    box-shadow: var(--shadow-md);
+  // Bootstrap card CSS variables
+  --bs-card-bg:           var(--color-bg-secondary);
+  --bs-card-border-color: var(--color-border-primary);
+  --bs-card-cap-bg:       var(--color-bg-secondary);
+  --bs-card-color:        var(--color-text-primary);
+
+  background-color: var(--color-bg-secondary);
+  border-color: var(--color-border-primary);
+
+  // Título dentro de card
+  h3, h4, h5, h6 {
+    color: var(--color-text-primary);
+  }
+
+  // Descripción dentro de card
+  p {
+    color: var(--color-text-secondary);
   }
 }
+
+// Bootstrap compila .shadow-sm con rgba hardcodeado + !important — sobreescribir
+.shadow-sm {
+  box-shadow: var(--shadow-sm) !important;
+}
+
+.shadow {
+  box-shadow: var(--shadow-md) !important;
+}
+
+.shadow-lg {
+  box-shadow: var(--shadow-lg) !important;
+}
+
+// Fallback de imagen cuando no carga — alinear con paleta
+.card .bg-light {
+  background-color: var(--color-bg-tertiary) !important;
+  color: var(--color-text-tertiary) !important;
+  border-color: var(--color-border-primary) !important;
+}
+
+// ===========================================================================
+// CARD VARIANTS
+// ===========================================================================
 
 .card-header {
   padding: var(--component-padding);
   border-bottom: 1px solid var(--color-border-primary);
-  background-color: var(--color-bg-secondary);
-  border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0;
+  background-color: var(--color-bg-tertiary);
 }
 
 .card-body {
@@ -28,82 +62,5 @@
 .card-footer {
   padding: var(--component-padding);
   border-top: 1px solid var(--color-border-primary);
-  background-color: var(--color-bg-secondary);
-  border-radius: 0 0 var(--border-radius-lg) var(--border-radius-lg);
-}
-
-// ===========================================================================
-// CARD VARIANTS
-// ===========================================================================
-
-.card-condensed {
-  .card-header,
-  .card-body,
-  .card-footer {
-    padding: var(--component-padding-condensed);
-  }
-}
-
-.card-spacious {
-  .card-header,
-  .card-body,
-  .card-footer {
-    padding: var(--component-padding-spacious);
-  }
-}
-
-// ===========================================================================
-// PORTFOLIO CARD
-// ===========================================================================
-
-.card-portfolio {
-  @extend .card;
-  overflow: hidden;
-  
-  .card-img-top {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  &:hover {
-    .card-img-top {
-      transform: scale(1.05);
-    }
-  }
-  
-  .card-body {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-3);
-  }
-  
-  .card-title {
-    font-size: var(--font-size-3);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-primary);
-    margin: 0;
-  }
-  
-  .card-text {
-    color: var(--color-text-secondary);
-    line-height: var(--line-height-relaxed);
-    margin: 0;
-  }
-  
-  .card-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-1);
-  }
-  
-  .card-tag {
-    padding: var(--space-1) var(--space-2);
-    background-color: var(--color-bg-secondary);
-    border: 1px solid var(--color-border-primary);
-    border-radius: var(--border-radius-full);
-    font-size: var(--font-size-0);
-    color: var(--color-text-secondary);
-  }
+  background-color: var(--color-bg-tertiary);
 }

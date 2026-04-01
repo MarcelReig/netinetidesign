@@ -88,20 +88,12 @@ function build_scripts(done) {
   if (config.production) {
     pump([
       gulp.src([
-        "./_assets/scripts/**/*.js",
-        "./node_modules/jquery/dist/jquery.min.js",
-        "./node_modules/jquery-validation/dist/jquery.validate.js",
         "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-        "./node_modules/masonry-layout/dist/masonry.pkgd.min.js",
-        "./node_modules/magnific-popup/dist/jquery.magnific-popup.min.js",
+        "./_assets/scripts/**/*.js",
       ]),
       order(
         [
-          "node_modules/jquery/dist/jquery.min.js",
-          "node_modules/jquery-validation/dist/jquery.validate.js",
           "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-          "node_modules/masonry-layout/dist/masonry.pkgd.min.js",
-          "node_modules/magnific-popup/dist/jquery.magnific-popup.min.js",
           "main.js",
         ],
         { base: "./" }
@@ -113,20 +105,12 @@ function build_scripts(done) {
   } else {
     pump([
       gulp.src([
-        "./_assets/scripts/**/*.js",
-        "./node_modules/jquery/dist/jquery.js",
-        "./node_modules/jquery-validation/dist/jquery.validate.js",
         "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-        "./node_modules/masonry-layout/dist/masonry.pkgd.min.js",
-        "./node_modules/magnific-popup/dist/jquery.magnific-popup.min.js",
+        "./_assets/scripts/**/*.js",
       ]),
       order(
         [
-          "node_modules/jquery/dist/jquery.js",
-          "node_modules/jquery-validation/dist/jquery.validate.js",
           "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-          "node_modules/masonry-layout/dist/masonry.pkgd.min.js",
-          "node_modules/magnific-popup/dist/jquery.magnific-popup.min.js",
           "main.js",
         ],
         { base: "./" }

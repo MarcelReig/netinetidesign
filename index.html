@@ -19,20 +19,19 @@ devicons_css: load cdn styles only when is necessary
         Convierto diseños en <em>sistemas UI escalables y rápidos</em>.
       </p>
 
-      <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
+      <ul class="social-icons list-unstyled list-inline">
         <li>
-          <a href="{{ site.linkedin_path }}" target="blank"><i class="fa fa-linkedin"></i></a>
+          <a href="{{ site.linkedin_path }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
         </li>
         <li>
-          <a href="{{ site.github_path }}" target="blank"><i class="fa fa-github"></i></a>
+          <a href="{{ site.github_path }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa fa-github"></i></a>
         </li>
         <li>
-          <a href="{{ site.twitter_path }}" target="blank"><i class="fa fa-twitter"></i></a>
+          <a href="{{ site.twitter_path }}" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
         </li>
         <li>
-          <a href="{{ site.instagram_path }}" target="blank"><i class="fa fa-instagram"></i></a>
+          <a href="{{ site.instagram_path }}" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
         </li>
-
       </ul>
 
       <div class="d-flex flex-wrap gap-2">
@@ -44,8 +43,8 @@ devicons_css: load cdn styles only when is necessary
 
     <div class="col-lg-5">
       <figure class="m-0">
-        <img src="/assets/images/perfil-actor.jpg" alt="Foto de Marcel Reig" class="img-fluid rounded-3 shadow-sm w-100"
-          style="aspect-ratio:1/1;object-fit:cover;object-position:center;transform:rotate(-3deg);">
+        <img src="/assets/images/perfil-actor.jpg" alt="Foto de Marcel Reig" class="img-fluid rounded-3 shadow-sm"
+          style="aspect-ratio:1/1;object-fit:cover;object-position:center;transform:rotate(-3deg);max-width:80%;display:block;margin:0 auto;">
       </figure>
     </div>
   </div>
@@ -246,18 +245,6 @@ devicons_css: load cdn styles only when is necessary
 
   </div>
 
-  <!-- Otros cursos -->
-  <div class="mt-5">
-    <details>
-      <summary class="small text-muted">Otros cursos y certificaciones</summary>
-      <ul class="small mt-2">
-        <li>Frontend Masters — <em>Complete Intro to React v7</em> (Brian Holt)</li>
-        <li>Frontend Masters — <em>Introduction to Next.js</em> (Scott Moss)</li>
-        <li>Wes Bos — <em>CSS Grid</em>, <em>What The Flexbox?!</em>, <em>Beginner JavaScript</em></li>
-        <li>App Academy Open — <em>React Basics</em></li>
-      </ul>
-    </details>
-  </div>
 </div>
 </section>
 
@@ -301,7 +288,7 @@ devicons_css: load cdn styles only when is necessary
               <i class="fa-brands fa-github" aria-hidden="true"></i> Ver código
             </a>
             <a href="https://sample-service-name-7fte.onrender.com/" target="_blank" rel="noopener"
-              class="btn btn-sm btn-primary">
+              class="btn btn-sm btn-outline-dark">
               <i class="fas fa-external-link-alt me-2"></i>Ver proyecto
             </a>
           </div>
@@ -339,95 +326,9 @@ devicons_css: load cdn styles only when is necessary
               <i class="fa-brands fa-github" aria-hidden="true"></i> Ver código
             </a>
             <a href="https://marina-ibarra.netlify.app/" target="_blank" rel="noopener"
-              class="btn btn-sm btn-primary">
-              <i class="fas fa-external-link-alt me-2"></i>Ver proyecto
-            </a>
-          </div>
-        </div>
-      </article>
-    </div>
-
-    <!-- React Tasks App -->
-    <div class="col">
-      <article class="card h-100 shadow-sm border-0">
-        <div class="ratio ratio-16x9 rounded-top overflow-hidden">
-          <img src="{{ '/assets/images/proyects/react-todo.webp' | relative_url }}" alt="React Tasks App"
-            class="w-100 h-100" style="object-fit:cover" loading="lazy"
-            onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
-          <div class="d-none bg-light border d-flex align-items-center justify-content-center h-100"
-            style="color:#6c757d;">
-            <i class="fa-solid fa-image fa-2x"></i>
-          </div>
-        </div>
-        <div class="card-body d-flex flex-column">
-          <h3 class="h5 mb-1">React Tasks App</h3>
-          <div class="mb-2">
-            <span class="tech-badge badge-react me-1">React</span>
-            <span class="tech-badge badge-react me-1">Hooks</span>
-          </div>
-          <p class="flex-grow-1">To-do list interactiva con React y hooks.</p>
-          <div class="d-flex gap-2">
-            <a href="https://github.com/MarcelReig/react-tasks-app" target="_blank" rel="noopener"
               class="btn btn-sm btn-outline-dark">
-              <i class="fa-brands fa-github" aria-hidden="true"></i> Ver código
-            </a>
-            <a href="https://awesome-react-tasks.netlify.app/" target="_blank" rel="noopener"
-              class="btn btn-sm btn-primary">
               <i class="fas fa-external-link-alt me-2"></i>Ver proyecto
             </a>
-          </div>
-        </div>
-      </article>
-    </div>
-
-    <!-- IdeaBox Vue App -->
-    <div class="col">
-      <article class="card h-100 shadow-sm border-0">
-        <div class="ratio ratio-16x9 rounded-top overflow-hidden">
-          <img src="{{ '/assets/images/proyects/idea-box.webp' | relative_url }}" alt="IdeaBox Vue App"
-            class="w-100 h-100" style="object-fit:cover" loading="lazy"
-            onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
-          <div class="d-none bg-light border d-flex align-items-center justify-content-center h-100"
-            style="color:#6c757d;">
-            <i class="fa-solid fa-image fa-2x"></i>
-          </div>
-        </div>
-        <div class="card-body d-flex flex-column">
-          <h3 class="h5 mb-1">IdeaBox Vue App</h3>
-          <div class="mb-2">
-            <span class="tech-badge badge-vue me-1">Vue</span>
-            <span class="tech-badge badge-firestore me-1">Firestore</span>
-          </div>
-          <p class="flex-grow-1">Ideas creativas gestionadas con Vue y Firestore.</p>
-          <div class="d-flex gap-2">
-            <a href="https://ideabox-c36d2.web.app/" target="_blank" rel="noopener" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt me-2"></i> Ver proyecto</a>
-          </div>
-        </div>
-      </article>
-    </div>
-
-    <!-- mybooking docs -->
-    <div class="col">
-      <article class="card h-100 shadow-sm border-0">
-        <div class="ratio ratio-16x9 rounded-top overflow-hidden">
-          <img src="{{ '/assets/images/proyects/mybooking-docs.webp' | relative_url }}" alt="Mybooking docs (VuePress)"
-            class="w-100 h-100" style="object-fit:cover" loading="lazy"
-            onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
-          <div class="d-none bg-light border d-flex align-items-center justify-content-center h-100"
-            style="color:#6c757d;">
-            <i class="fa-solid fa-image fa-2x"></i>
-          </div>
-        </div>
-        <div class="card-body d-flex flex-column">
-          <h3 class="h5 mb-1">mybooking docs</h3>
-          <div class="mb-2">
-            <span class="tech-badge badge-vuepress me-1">VuePress</span>
-            <span class="tech-badge badge-markdown me-1">Markdown</span>
-          </div>
-          <p class="flex-grow-1">Documentación técnica de la API de mybooking desarrollada con VuePress.</p>
-          <div class="d-flex gap-2">
-            <a href="https://docs.mybooking.es/" target="_blank" rel="noopener" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt me-2"></i> Ver
-              proyecto</a>
           </div>
         </div>
       </article>
@@ -458,7 +359,7 @@ devicons_css: load cdn styles only when is necessary
               <i class="fa-brands fa-github" aria-hidden="true"></i> Ver código
             </a>
             <a href="https://wordpress.org/themes/mybooking/" target="_blank" rel="noopener"
-              class="btn btn-sm btn-primary">
+              class="btn btn-sm btn-outline-dark">
               <i class="fas fa-external-link-alt me-2"></i>Ver proyecto
             </a>
           </div>
@@ -508,8 +409,26 @@ devicons_css: load cdn styles only when is necessary
       </div>
       <div class="col" role="listitem">
         <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-typescript-plain"></i>
+          <figcaption class="small mt-2">TypeScript</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
           <i class="devicon-react-original"></i>
           <figcaption class="small mt-2">React</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-nextjs-plain"></i>
+          <figcaption class="small mt-2">Next.js</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="fa-solid fa-paw"></i>
+          <figcaption class="small mt-2">Zustand</figcaption>
         </figure>
       </div>
     </div>
@@ -521,20 +440,14 @@ devicons_css: load cdn styles only when is necessary
     <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3" role="list">
       <div class="col" role="listitem">
         <figure class="skill card h-100 border-0 text-center py-3">
-          <i class="devicon-bootstrap-plain"></i>
-          <figcaption class="small mt-2">Bootstrap</figcaption>
-        </figure>
-      </div>
-      <div class="col" role="listitem">
-        <figure class="skill card h-100 border-0 text-center py-3">
           <i class="devicon-tailwindcss-plain"></i>
           <figcaption class="small mt-2">Tailwind CSS</figcaption>
         </figure>
       </div>
       <div class="col" role="listitem">
         <figure class="skill card h-100 border-0 text-center py-3">
-          <i class="devicon-styledcomponents-plain"></i>
-          <figcaption class="small mt-2">styled-components</figcaption>
+          <i class="fa-solid fa-layer-group"></i>
+          <figcaption class="small mt-2">shadcn/ui</figcaption>
         </figure>
       </div>
     </div>
@@ -552,20 +465,20 @@ devicons_css: load cdn styles only when is necessary
       </div>
       <div class="col" role="listitem">
         <figure class="skill card h-100 border-0 text-center py-3">
-          <i class="devicon-webpack-plain"></i>
-          <figcaption class="small mt-2">Webpack</figcaption>
-        </figure>
-      </div>
-      <div class="col" role="listitem">
-        <figure class="skill card h-100 border-0 text-center py-3">
           <i class="devicon-git-plain"></i>
           <figcaption class="small mt-2">Git</figcaption>
         </figure>
       </div>
       <div class="col" role="listitem">
         <figure class="skill card h-100 border-0 text-center py-3">
-          <i class="devicon-postman-plain"></i>
-          <figcaption class="small mt-2">Postman</figcaption>
+          <i class="devicon-docker-plain"></i>
+          <figcaption class="small mt-2">Docker</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-railway-plain"></i>
+          <figcaption class="small mt-2">Railway</figcaption>
         </figure>
       </div>
     </div>
@@ -589,6 +502,18 @@ devicons_css: load cdn styles only when is necessary
       </div>
       <div class="col" role="listitem">
         <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-django-plain"></i>
+          <figcaption class="small mt-2">Django</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-djangorest-plain"></i>
+          <figcaption class="small mt-2">DRF</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
           <i class="devicon-postgresql-plain"></i>
           <figcaption class="small mt-2">PostgreSQL</figcaption>
         </figure>
@@ -597,12 +522,6 @@ devicons_css: load cdn styles only when is necessary
         <figure class="skill card h-100 border-0 text-center py-3">
           <i class="devicon-mongodb-plain"></i>
           <figcaption class="small mt-2">MongoDB</figcaption>
-        </figure>
-      </div>
-      <div class="col" role="listitem">
-        <figure class="skill card h-100 border-0 text-center py-3">
-          <i class="devicon-sqlalchemy-plain"></i>
-          <figcaption class="small mt-2">SQLAlchemy</figcaption>
         </figure>
       </div>
     </div>

@@ -1,179 +1,214 @@
 // =============================================================================
-// PRIMER-STYLE BUTTONS
+// BUTTONS
+// btn-primary / btn-outline-primary → texto + flecha (hero)
+// resto → cuadrado sin border-radius
 // =============================================================================
 
+// Base compartida
 .btn {
-  // Base styles
   display: inline-flex;
   align-items: center;
-  justify-content: center;
   gap: var(--space-2);
-  padding: var(--component-padding-condensed) var(--component-padding);
   font-family: var(--font-family-sans);
   font-size: var(--font-size-1);
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-normal);
-  text-decoration: none;
-  border: 1px solid transparent;
-  border-radius: var(--border-radius-md);
+  text-decoration: none !important;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
   user-select: none;
-  
-  &:hover {
-    text-decoration: none;
-  }
-  
+  transition: background-color 0.15s ease-in-out,
+              color 0.15s ease-in-out,
+              border-color 0.15s ease-in-out;
+
   &:focus-visible {
     outline: 2px solid var(--color-border-focus);
-    outline-offset: 2px;
+    outline-offset: 4px;
   }
-  
+
   &:disabled {
-    opacity: 0.6;
+    opacity: 0.4;
     cursor: not-allowed;
   }
 }
 
 // ===========================================================================
-// BUTTON VARIANTS
+// PRIMARY — texto + flecha (Descargar CV)
 // ===========================================================================
-
-// Primary button
 .btn-primary {
-  color: var(--color-text-inverse);
-  background-color: var(--color-primary);
-  border-color: var(--color-primary);
-  
-  &:hover {
-    background-color: var(--color-primary-dark);
-    border-color: var(--color-primary-dark);
-    transform: translateY(-1px);
-    box-shadow: var(--shadow-md);
+  padding: 0 0 3px 0;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  border: none !important;
+  position: relative;
+
+  --bs-btn-border-width: 0px;
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-active-border-color: transparent;
+  --bs-btn-color: var(--color-primary);
+  --bs-btn-bg: transparent;
+  --bs-btn-hover-color: var(--color-primary);
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-active-color: var(--color-primary);
+  --bs-btn-active-bg: transparent;
+
+  color: var(--color-primary) !important;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: currentColor;
   }
-  
-  &:active {
-    background-color: var(--color-primary-dark);
-    transform: translateY(0);
+
+  &::after {
+    content: "→";
+    display: inline-block;
+    transition: transform 0.15s ease-in-out;
+  }
+
+  &:hover::after {
+    transform: translateX(4px);
   }
 }
 
-// Secondary button
+// ===========================================================================
+// OUTLINE PRIMARY — texto + flecha (Contactar)
+// ===========================================================================
+.btn-outline-primary {
+  padding: 0 0 3px 0;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  border: none !important;
+  position: relative;
+
+  --bs-btn-border-width: 0px;
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-active-border-color: transparent;
+  --bs-btn-color: var(--color-primary);
+  --bs-btn-bg: transparent;
+  --bs-btn-hover-color: var(--color-primary);
+  --bs-btn-hover-bg: transparent;
+
+  color: var(--color-primary) !important;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: currentColor;
+  }
+
+  &::after {
+    content: "→";
+    display: inline-block;
+    transition: transform 0.15s ease-in-out;
+  }
+
+  &:hover::after {
+    transform: translateX(4px);
+  }
+}
+
+// ===========================================================================
+// OUTLINE DARK — cuadrado (portfolio, github…)
+// ===========================================================================
+.btn-outline-dark {
+  padding: var(--space-2) var(--space-4);
+  border-radius: 0 !important;
+  background: transparent;
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-text-primary) !important;
+
+  --bs-btn-color: var(--color-text-primary);
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: var(--color-text-primary);
+  --bs-btn-hover-color: var(--color-bg-primary);
+  --bs-btn-hover-bg: var(--color-text-primary);
+  --bs-btn-hover-border-color: var(--color-text-primary);
+  --bs-btn-active-color: var(--color-bg-primary);
+  --bs-btn-active-bg: var(--color-text-primary);
+
+  &:hover, &:focus, &:active {
+    color: var(--color-bg-primary) !important;
+    background-color: var(--color-text-primary) !important;
+  }
+}
+
+// ===========================================================================
+// SECONDARY — cuadrado
+// ===========================================================================
 .btn-secondary {
+  padding: var(--space-2) var(--space-4);
+  border-radius: 0 !important;
   color: var(--color-text-primary);
   background-color: var(--color-bg-secondary);
-  border-color: var(--color-border-primary);
-  
-  &:hover {
-    background-color: var(--color-bg-tertiary);
-    border-color: var(--color-border-secondary);
-    transform: translateY(-1px);
-    box-shadow: var(--shadow-sm);
-  }
-}
+  border: 1px solid var(--color-border-primary) !important;
 
-// Outline button
-.btn-outline {
-  color: var(--color-text-primary);
-  background-color: transparent;
-  border-color: var(--color-border-primary);
-  
-  &:hover {
-    background-color: var(--color-bg-secondary);
-    border-color: var(--color-border-secondary);
-  }
-}
+  --bs-btn-color: var(--color-text-primary);
+  --bs-btn-bg: var(--color-bg-secondary);
+  --bs-btn-border-color: var(--color-border-primary);
+  --bs-btn-hover-color: var(--color-text-primary);
+  --bs-btn-hover-bg: var(--color-bg-tertiary);
+  --bs-btn-hover-border-color: var(--color-border-primary);
 
-// Danger button
-.btn-danger {
-  color: var(--color-text-inverse);
-  background-color: var(--color-danger);
-  border-color: var(--color-danger);
-  
-  &:hover {
-    background-color: var(--color-danger-dark);
-    border-color: var(--color-danger-dark);
+  &:hover, &:focus {
+    color: var(--color-text-primary) !important;
+    background-color: var(--color-bg-tertiary) !important;
   }
 }
 
 // ===========================================================================
-// BUTTON SIZES
+// OUTLINE LIGHT — cuadrado, contact page (fondo oscuro)
 // ===========================================================================
+.btn-outline-light {
+  padding: var(--space-2) var(--space-4);
+  border-radius: 0 !important;
+  background: transparent;
+  color: var(--palette-willow);
+  border: 1px solid var(--palette-willow) !important;
 
+  --bs-btn-color: var(--palette-willow);
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: var(--palette-willow);
+  --bs-btn-hover-color: var(--palette-washed);
+  --bs-btn-hover-bg: var(--palette-willow);
+  --bs-btn-hover-border-color: var(--palette-willow);
+
+  &:hover, &:focus {
+    color: var(--palette-washed) !important;
+    background-color: var(--palette-willow) !important;
+  }
+}
+
+// ===========================================================================
+// SIZES
+// ===========================================================================
 .btn-sm {
-  padding: var(--space-1) var(--space-2);
   font-size: var(--font-size-0);
+
+  &.btn-outline-dark,
+  &.btn-secondary,
+  &.btn-outline-light {
+    padding: var(--space-1) var(--space-3);
+  }
 }
 
 .btn-lg {
-  padding: var(--space-3) var(--space-4);
   font-size: var(--font-size-2);
-}
 
-// ===========================================================================
-// BUTTON STATES
-// ===========================================================================
-
-.btn-loading {
-  position: relative;
-  color: transparent;
-  
-  &::after {
-    content: "";
-    position: absolute;
-    width: 1rem;
-    height: 1rem;
-    border: 2px solid transparent;
-    border-top-color: currentColor;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-  }
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-// =============================================================================
-// BOOTSTRAP BUTTON OVERRIDES FOR THEME COMPATIBILITY
-// =============================================================================
-
-// Fix btn-outline-dark for dark mode compatibility
-.btn-outline-dark {
-  // Light theme (default)
-  border-color: var(--bs-dark);
-  color: var(--bs-dark);
-  
-  &:hover, &:focus {
-    background-color: var(--bs-dark);
-    border-color: var(--bs-dark);
-    color: var(--bs-white);
-  }
-  
-  &:active, &.active {
-    background-color: var(--bs-dark);
-    border-color: var(--bs-dark);
-    color: var(--bs-white);
-  }
-}
-
-// Dark theme specific overrides
-[data-bs-theme="dark"] .btn-outline-dark {
-  // In dark mode, make it outline-light behavior
-  border-color: var(--bs-light);
-  color: var(--bs-light);
-  
-  &:hover, &:focus {
-    background-color: var(--bs-light);
-    border-color: var(--bs-light);
-    color: var(--bs-dark);
-  }
-  
-  &:active, &.active {
-    background-color: var(--bs-light);
-    border-color: var(--bs-light);
-    color: var(--bs-dark);
+  &.btn-outline-dark,
+  &.btn-secondary,
+  &.btn-outline-light {
+    padding: var(--space-3) var(--space-5);
   }
 }

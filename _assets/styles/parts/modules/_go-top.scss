@@ -40,7 +40,7 @@ $L: 1024px;
   text-indent: 100%;
   white-space: nowrap;
 
-  background: rgba(#424242, 0.8) url(../images/cd-top-arrow.svg) no-repeat
+  background: rgba(31, 38, 42, 0.8) url(../images/cd-top-arrow.svg) no-repeat
     center 50%;
 
   visibility: hidden;
@@ -70,7 +70,7 @@ $L: 1024px;
   }
 
   .no-touch &:hover {
-    background-color: rgba(#424242, 1);
+    background-color: rgba(31, 38, 42, 1);
     opacity: 1;
   }
 

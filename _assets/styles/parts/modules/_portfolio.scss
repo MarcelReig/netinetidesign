@@ -11,14 +11,13 @@
   margin-bottom: 3rem;
   max-width: 1200px;
   margin-inline: auto;
-  margin-bottom: 3rem;
 }
 .n-card {
   display: flex;
   flex: 1;
   flex-direction: column;
-  background-color: var(--bs-body-bg);
-  border: 1px solid var(--bs-secondary-bg);
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-bg-secondary);
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -28,21 +27,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--bs-secondary-bg);
+    background-color: var(--color-bg-secondary);
     padding: 1rem;
   }
 
   &:hover {
-    border-color: var(--bs-primary);
-    box-shadow: 0 8px 25px rgba(95, 133, 219, 0.15);
-    transform: translateY(-4px);
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-md);
 
     .n-card-title {
       color: var(--color-primary-light);
     }
 
     .n-card-image-wrapper {
-      background-color: var(--bs-tertiary-bg);
+      background-color: var(--color-bg-tertiary);
     }
   }
 }
@@ -59,18 +57,18 @@
   align-items: center;
   justify-content: center;
   flex: 1;
-  background: var(--bs-secondary-bg);
+  background: var(--color-bg-secondary);
   padding: 1.5rem;
   text-align: center;
 
   .n-card-title {
-    color: var(--bs-body-color);
+    color: var(--color-text-primary);
     margin-bottom: 0.5rem;
     font-weight: 600;
   }
 
   .n-card-text {
-    color: var(--gray-text);
+    color: var(--color-text-secondary);
     margin: 0;
     font-size: 0.9rem;
   }
@@ -83,7 +81,7 @@
 .portfolio-item {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid var(--bs-secondary-bg);
+  border-bottom: 1px solid var(--color-bg-secondary);
   margin-bottom: 2rem;
 
   // Para proyectos con layout Bootstrap
@@ -107,14 +105,14 @@
   .feature-list {
     li {
       padding: 0.5rem 0;
-      border-bottom: 1px solid var(--bs-secondary-bg);
+      border-bottom: 1px solid var(--color-bg-secondary);
 
       &:last-child {
         border-bottom: none;
       }
 
       strong {
-        color: var(--bs-primary);
+        color: var(--color-primary);
         display: block;
         margin-bottom: 0.25rem;
       }

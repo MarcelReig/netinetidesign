@@ -6,16 +6,38 @@
 // COMPATIBILITY WITH BOOTSTRAP 5
 // ===========================================================================
 
-// Aseguramos que Bootstrap use nuestros tokens
+// Bootstrap CSS variables — overrides globales y por tema
 :root {
-  --bs-primary: var(--color-primary);
   --bs-secondary: var(--color-secondary);
-  --bs-success: var(--color-success);
-  --bs-danger: var(--color-danger);
-  --bs-warning: var(--color-warning);
-  --bs-info: var(--color-info);
-  --bs-light: var(--color-gray-100);
-  --bs-dark: var(--color-gray-900);
+  --bs-success:   var(--color-success);
+  --bs-danger:    var(--color-danger);
+  --bs-warning:   var(--color-warning);
+  --bs-info:      var(--color-info);
+  --bs-light:     var(--color-gray-100);
+  --bs-dark:      var(--color-gray-900);
+}
+
+// Light — Crimson Blaze como primario
+:root,
+[data-bs-theme="light"] {
+  --bs-primary:              #AD3D1E;
+  --bs-primary-rgb:          173, 61, 30;
+  --bs-link-color:           #AD3D1E;
+  --bs-link-color-rgb:       173, 61, 30;
+  --bs-link-hover-color:     #8B3018;
+  --bs-link-hover-color-rgb: 139, 48, 24;
+  --bs-focus-ring-color:     rgba(173, 61, 30, 0.25);
+}
+
+// Dark — Aqua Mist como primario
+[data-bs-theme="dark"] {
+  --bs-primary:              #A0C9CB;
+  --bs-primary-rgb:          160, 201, 203;
+  --bs-link-color:           #A0C9CB;
+  --bs-link-color-rgb:       160, 201, 203;
+  --bs-link-hover-color:     #BDD9DB;
+  --bs-link-hover-color-rgb: 189, 217, 219;
+  --bs-focus-ring-color:     rgba(160, 201, 203, 0.25);
 }
 
 // ===========================================================================

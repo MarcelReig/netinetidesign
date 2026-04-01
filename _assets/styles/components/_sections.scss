@@ -7,17 +7,19 @@
   position: relative;
   overflow: hidden;
 
-  // Generous spacing for breathing room
   &--large {
-    padding: var(--space-10) 0; // 80px top/bottom
+    padding-top: var(--space-14);    // 80px
+    padding-bottom: var(--space-16); // 96px — más abajo crea ritmo de lectura
   }
 
   &--medium {
-    padding: var(--space-8) 0; // 64px top/bottom
+    padding-top: var(--space-10);    // 48px
+    padding-bottom: var(--space-12); // 64px
   }
 
   &--small {
-    padding: var(--space-6) 0; // 48px top/bottom
+    padding-top: var(--space-8);     // 32px
+    padding-bottom: var(--space-10); // 48px
   }
 }
 
@@ -27,20 +29,20 @@
 
 // Primary section (default background)
 .section--primary {
-  background: var(--bs-body-bg);
-  color: var(--bs-body-color);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
 }
 
-// Secondary section (same as default)
+// Secondary — fondo ligeramente elevado para alternar secciones
 .section--secondary {
-  background: var(--bs-body-bg);
-  color: var(--bs-body-color);
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text-primary);
 }
 
-// Accent section (same as default)
+// Accent — mismo tratamiento que secondary
 .section--accent {
-  background: var(--bs-body-bg);
-  color: var(--bs-body-color);
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text-primary);
 }
 
 // =============================================================================
@@ -57,16 +59,16 @@
   position: relative;
 
   .section-title {
-    font-size: var(--font-size-7); // 32px
+    font-size: var(--font-size-7);
     font-weight: var(--font-weight-bold);
     margin-bottom: var(--space-3);
-    color: var(--bs-heading-color);
+    color: var(--color-text-primary);
   }
 
   .section-subtitle {
-    font-size: var(--font-size-3); // 18px
+    font-size: var(--font-size-3);
     font-weight: var(--font-weight-normal);
-    color: var(--bs-text-muted);
+    color: var(--color-text-secondary);
     max-width: 600px;
     margin: 0;
     line-height: var(--line-height-relaxed);
@@ -77,21 +79,23 @@
 // SPECIAL SECTION STYLES
 // =============================================================================
 
-// Hero/About section - clean and simple
+// Hero/About section
 .section--hero {
-  background: var(--bs-body-bg);
+  background-color: var(--color-bg-primary);
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-16);
 }
 
-// Projects section - clean
+// Projects section
 .section--projects {
-  background: var(--bs-body-bg);
-  color: var(--bs-body-color);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
 }
 
-// Skills section - clean
+// Skills section
 .section--skills {
-  background: var(--bs-body-bg);
-  color: var(--bs-body-color);
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text-primary);
 }
 
 // =============================================================================
@@ -121,7 +125,4 @@
     }
   }
 
-  .section-separator {
-    margin: var(--space-6) 0;
-  }
 }

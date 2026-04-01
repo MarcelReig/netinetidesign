@@ -35,13 +35,34 @@ h6 {
   box-sizing: inherit;
 }
 
-// links
+// Links
 a,
 .btn-link {
-  color: var(--color-primary);
+  color: var(--color-text-link);
   text-decoration: none;
   &:hover {
-    color: var(--color-primary-light);
+    color: var(--color-text-link-hover);
     text-decoration: none;
   }
+}
+
+// Bootstrap compila .link-primary con azul hardcodeado — sobreescribir
+.link-primary {
+  color: var(--color-text-link) !important;
+  &:hover {
+    color: var(--color-text-link-hover) !important;
+  }
+}
+
+// Bootstrap compila .form-control:focus con azul hardcodeado — sobreescribir
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus {
+  border-color: var(--color-primary-light);
+  box-shadow: 0 0 0 0.25rem var(--color-border-focus);
+}
+
+// Bootstrap compila .nav-link con azul en estados activos — sobreescribir
+.nav-link:focus-visible {
+  box-shadow: 0 0 0 0.25rem var(--color-border-focus);
 }

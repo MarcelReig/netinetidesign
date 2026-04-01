@@ -7,24 +7,31 @@
 // ===========================================================================
 .bg-light {
   background-color: var(--color-bg-overlay) !important;
-  border-bottom: 1px solid var(--color-border-primary);
+  border-bottom: none;
 }
 
 // ===========================================================================
 // NAVBAR COMPONENT
 // ===========================================================================
 .navbar {
+  // Sobreescribir variables Bootstrap del componente navbar
+  --bs-navbar-color:             var(--color-text-secondary);
+  --bs-navbar-hover-color:       var(--color-primary);
+  --bs-navbar-active-color:      var(--color-primary);
+  --bs-navbar-disabled-color:    var(--color-text-disabled);
+  --bs-navbar-brand-color:       var(--color-text-primary);
+  --bs-navbar-brand-hover-color: var(--color-text-primary);
+  --bs-navbar-toggler-border-color: var(--color-border-primary);
+
   background-color: var(--color-bg-overlay) !important;
-  border-bottom: 1px solid var(--color-border-primary) !important;
-  box-shadow: var(--shadow-sm);
+  border-bottom: none !important;
   padding: var(--space-3) 0;
-  transition: all 0.15s ease-in-out;
 
   .navbar-brand {
     color: var(--color-text-primary) !important;
-    font-family: var(--font-family-sans);
-    font-size: var(--font-size-5); // 24px - más grande
-    font-weight: var(--font-weight-bold);
+    font-family: 'Caveat', cursive;
+    font-size: 1.75rem;
+    font-weight: 700;
     text-decoration: none;
 
     &:hover {
@@ -39,26 +46,26 @@
     }
 
     .nav-link {
-      color: var(--color-text-secondary) !important;
+      color: var(--color-text-primary) !important;
       font-family: var(--font-family-sans);
-      font-size: var(--font-size-2); // 16px - tamaño normal
+      font-size: var(--font-size-2);
       font-weight: var(--font-weight-medium);
       padding: var(--space-2) var(--space-3) !important;
-      border-radius: var(--border-radius-md);
-      transition: all 0.15s ease-in-out;
+      opacity: 0.45;
+      transition: opacity 0.15s ease-in-out;
       cursor: pointer;
 
       &:hover {
-        color: var(--color-primary) !important;
-        background-color: var(--color-primary-lighter) !important;
+        opacity: 1;
+        background-color: transparent !important;
         text-decoration: none;
       }
 
       &.active {
-        color: var(--color-primary) !important;
-        background-color: var(--color-primary-lighter) !important;
-        font-weight: var(--font-weight-semibold);
-        border: 1px solid var(--color-primary);
+        opacity: 1;
+        font-weight: var(--font-weight-medium);
+        background-color: transparent !important;
+        border: none;
       }
 
       &:focus-visible {
@@ -74,7 +81,7 @@
     padding: var(--space-2);
 
     &:focus {
-      box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25) !important;
+      box-shadow: 0 0 0 2px var(--color-border-focus) !important;
     }
 
     .navbar-toggler-icon {
@@ -145,8 +152,6 @@
       border-top: 1px solid var(--color-border-primary);
       margin-top: var(--space-3);
       padding-top: var(--space-3);
-      border-radius: var(--border-radius-md);
-      box-shadow: var(--shadow-md);
     }
 
     .navbar-nav {
@@ -156,18 +161,17 @@
 
       .nav-link {
         padding: var(--space-2) var(--space-3) !important;
-        border-radius: var(--border-radius-md);
-        font-size: var(--font-size-2); // 16px en móvil
+        font-size: var(--font-size-2);
 
         &:hover {
-          color: var(--color-primary) !important;
-          background-color: var(--color-primary-lighter) !important;
+          opacity: 1;
+          background-color: transparent !important;
         }
 
         &.active {
-          color: var(--color-primary) !important;
-          background-color: var(--color-primary-lighter) !important;
-          border: 1px solid var(--color-primary);
+          opacity: 1;
+          background-color: transparent !important;
+          border: none;
         }
       }
     }
@@ -180,7 +184,6 @@
 [data-bs-theme="dark"] {
   .bg-light {
     background-color: var(--color-bg-overlay) !important;
-    border-bottom-color: var(--color-border-primary);
   }
 
   .navbar {
@@ -196,17 +199,13 @@
     }
 
     .navbar-nav .nav-link {
-      color: var(--color-text-secondary) !important;
-
       &:hover {
-        color: var(--color-primary-light) !important;
-        background-color: var(--color-bg-secondary) !important;
+        background-color: transparent !important;
       }
 
       &.active {
-        color: var(--color-primary-light) !important;
-        background-color: var(--color-bg-secondary) !important;
-        border-color: var(--color-primary-light);
+        background-color: transparent !important;
+        border: none;
       }
     }
 
