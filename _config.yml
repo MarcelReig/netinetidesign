@@ -11,15 +11,12 @@ url: https://www.netinetidesign.com
 name: netinetidesign
 
 # Multilanguage
-lang: en
+lang: es
 
 # Social
 linkedin_path: https://www.linkedin.com/in/marcel-reig/
 twitter_path: https://twitter.com/netinetidesign
 github_path: https://github.com/MarcelReig
-codepen_path: https://codepen.io/MarcelReig
-behance_path: https://www.behance.net/netinetidesign
-spotify_path: https://play.spotify.com/user/netineti
 instagram_path: https://www.instagram.com/netinetidesign
 
 twitter_username: netinetidesign
@@ -83,10 +80,4 @@ exclude:
 
 # Configuración limpia - datos movidos a _data/
 
-# Google services
-google_analytics: UA-120243860-1
-
-# Disqus Comments
-disqus:
-    shortname: netinetidesign
 
