@@ -15,19 +15,6 @@ featured:
     featured: true
     status: "active"
 
-  - title: "Coding Lab"
-    description: "Experimentos y prototipos de desarrollo frontend"
-    url: "/portfolio/coding-lab/"
-    image: "/assets/images/projects/coding-lab.webp"
-    technologies:
-      - "HTML5"
-      - "CSS3"
-      - "JavaScript"
-      - "APIs"
-    category: "experiments"
-    featured: true
-    status: "active"
-
 
 categories:
   - slug: "portfolio"
@@ -38,16 +25,9 @@ categories:
     name: "Experimentos"
     description: "Prototipos y pruebas de concepto"
     
-  - slug: "freelance"
-    name: "Freelance"
-    description: "Proyectos para clientes"
 
 # Proyectos adicionales del portfolio existente
 all_projects:
-  - title: "MyBooking"
-    url: "/portfolio/mybooking/"
-    category: "freelance"
-    
   - title: "Design Sketch"
     url: "/portfolio/design-sketch/"
     category: "experiments"

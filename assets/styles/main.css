@@ -34529,12 +34529,7 @@ article table tbody tr:last-child td {
   }
 }
 .bg-contact {
-  background-image: url(../images/bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
   background-color: var(--color-bg-primary);
-  background-blend-mode: multiply;
   padding-bottom: 100px;
   min-height: 100vh;
   display: flex;
@@ -34542,69 +34537,100 @@ article table tbody tr:last-child td {
 }
 
 .contact-info-card {
-  background-color: var(--bs-body-bg);
-  border-radius: 8px;
-  padding: 2rem;
-  border: 1px solid var(--bs-secondary-bg);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--color-bg-secondary);
+  border-radius: 12px;
+  padding: 2.5rem;
+  border: none;
+  box-shadow: none;
   height: 100%;
 }
 .contact-info-card hr {
-  width: 50px;
-  margin: auto 0 30px 0;
-  border-top: 1px dashed var(--color-primary);
+  width: 32px;
+  margin: 1rem 0 1.75rem 0;
+  border: none;
+  border-top: 2px solid var(--color-primary);
+  opacity: 1;
 }
 .contact-info-card .info h4, .contact-info-card .info .h4 {
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+  margin-top: 1.75rem;
+  margin-bottom: 0.4rem;
 }
 .contact-info-card .info p {
   color: var(--bs-body-color);
   margin-bottom: 0;
+  font-size: 1rem;
 }
 
 .contact-form {
-  background-color: var(--bs-body-bg);
-  border-radius: 8px;
-  padding: 2rem;
-  border: 1px solid var(--bs-secondary-bg);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--color-bg-secondary);
+  border-radius: 12px;
+  padding: 2.5rem;
+  border: none;
+  box-shadow: none;
   height: 100%;
 }
 .contact-form hr {
-  width: 50px;
-  margin: auto 0 30px 0;
-  border-top: 1px dashed var(--color-primary);
+  width: 32px;
+  margin: 1rem 0 1.75rem 0;
+  border: none;
+  border-top: 2px solid var(--color-primary);
+  opacity: 1;
 }
-.contact-form .form-control {
-  background-color: var(--bs-secondary-bg);
-  border: 1px solid var(--color-border-primary);
-  color: var(--bs-body-color);
-}
-.contact-form .form-control:focus {
-  background-color: var(--bs-secondary-bg);
-  border-color: var(--color-primary-light);
-  color: var(--bs-body-color);
-  box-shadow: 0 0 0 0.2rem var(--color-border-focus);
-}
-.contact-form .form-control::-moz-placeholder {
-  color: var(--color-text-tertiary);
-}
-.contact-form .form-control::placeholder {
-  color: var(--color-text-tertiary);
+.contact-form .form-group {
+  position: relative;
 }
 .contact-form label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+  margin-bottom: 0.4rem;
+}
+.contact-form .form-control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-border-primary);
+  border-radius: 0;
+  padding: 0.5rem 0;
   color: var(--bs-body-color);
-  margin-bottom: 0.5rem;
+  box-shadow: none;
+}
+.contact-form .form-control:focus {
+  background-color: transparent;
+  border-bottom-color: var(--color-primary);
+  box-shadow: none;
+  color: var(--bs-body-color);
+}
+.contact-form .form-control::-moz-placeholder {
+  color: transparent;
+}
+.contact-form .form-control::placeholder {
+  color: transparent;
+}
+.contact-form textarea.form-control {
+  resize: none;
 }
 .contact-form .btn-outline-light {
-  border-color: var(--color-primary);
-  color: var(--color-primary);
-}
-.contact-form .btn-outline-light:hover {
+  margin-top: 0.5rem;
+  padding: 0.6rem 2rem;
+  border-radius: 6px;
   background-color: var(--color-primary);
   border-color: var(--color-primary);
-  color: var(--bs-body-bg);
+  color: var(--color-text-inverse);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+.contact-form .btn-outline-light:hover {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+  color: var(--color-text-inverse);
 }
 
 ul.social-links,

@@ -15,19 +15,13 @@ description: Contacto Marcel Reig Desarrollador Web Menorca
             <div class="about">
               <h4>Contacto</h4>
               <hr />
-              <p>
-                Si deseas comunicarte conmigo no dudes en hacerlo a través de cualquiera de los siguientes métodos.
-              </p>
+              <p>Puedes contactarme por email o a través de cualquiera de mis redes.</p>
             </div>
             <div class="info">
               <h4 class="color-blue-light">
                 <i class="fas fa-map-marker-alt"></i> Localización
               </h4>
-              <p>07730 Alaior, Islas Baleares</p>
-              <h4 class="color-blue-light">
-                <i class="fas fa-mobile-alt"></i> Teléfono
-              </h4>
-              <p>+34 699 61 89 50</p>
+              <p>Alaior, Menorca</p>
               <h4 class="color-blue-light">
                 <i class="far fa-envelope"></i> Email
               </h4>
@@ -41,7 +35,7 @@ description: Contacto Marcel Reig Desarrollador Web Menorca
             <li class="social__item">
               <a href="{{ site.github_path }}" target="_blank"><i class="fab fa-github"></i></a>
             </li>
-            <li class="social__item">
+<li class="social__item">
               <a href="{{ site.twitter_path }}" target="_blank"><i class="fab fa-twitter"></i></a>
             </li>
             <li class="social__item">
@@ -54,23 +48,23 @@ description: Contacto Marcel Reig Desarrollador Web Menorca
       <!-- Formulario de contacto -->
       <div class="col-lg-6 col-md-8 mt-4 mt-lg-0">
         <div class="contact-form">
-          <h4>Form</h4>
+          <h4>Escríbeme</h4>
           <hr />
-          <form action="https://formspree.io/marcelreig@gmail.com" method="POST">
+          <form name="contact" method="POST" data-netlify="true">
             <div class="form-group mb-3">
               <label for="name">Nombre</label>
-              <input type="text" class="form-control" name="name" aria-describedby="name" placeholder="Nombre" />
+              <input type="text" class="form-control" name="name" id="name" placeholder="Nombre" />
             </div>
             <div class="form-group mb-3">
-              <label for="exampleInputEmail1">Email</label>
-              <input type="email" name="_replyto" class="form-control" aria-describedby="emailHelp" placeholder="Email" />
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" class="form-control" placeholder="Email" />
             </div>
             <div class="form-group mb-3">
-              <label for="comment">Commentario:</label>
-              <textarea name="message" placeholder="Mensage" class="form-control" rows="4" id="comment"></textarea>
+              <label for="message">Mensaje</label>
+              <textarea name="message" id="message" placeholder="Mensaje" class="form-control" rows="4"></textarea>
             </div>
             <div class="form-group">
-              <button type="submit" value="Send" class="btn btn-outline-light">
+              <button type="submit" class="btn btn-outline-light">
                 Enviar
               </button>
             </div>

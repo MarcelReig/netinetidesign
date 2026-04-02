@@ -3,7 +3,7 @@ layout: post
 title: npm comandos básicos
 description: npm comandos básicos
 comments: true
-tags: npm
+tags: javascript
 category: programacion
 image: coding-2.webp
 ---

@@ -10,13 +10,13 @@ devicons_css: load cdn styles only when is necessary
 <div class="container">
   <div class="row align-items-center g-4">
     <div class="col-lg-7">
-      <h1 id="about-title" class="h2 mb-3">Sobre mí</h1>
+      <h1 id="about-title" class="h2 mb-3">Desarrollar, aprender, construir</h1>
 
       <p class="lead text-muted mb-3">
-        Soy <strong>Marcel Reig</strong>, <strong>Full-Stack Developer</strong> con <strong>orientación
-          frontend</strong>.
-        Me especializo en <strong>React</strong> y <strong>maquetación avanzada</strong> (CSS/Sass, BEM, accesibilidad).
-        Convierto diseños en <em>sistemas UI escalables y rápidos</em>.
+        Soy <strong>Marcel Reig</strong>, desarrollador con <strong>orientación frontend</strong>.
+        Me especializo en <strong>React</strong> y <strong>maquetación avanzada</strong> (CSS/Sass, BEM).
+        Actualmente desarrollo <strong>mitaller.art</strong>, un marketplace para artesanos de Menorca,
+        y exploro cómo la IA puede integrarse en el desarrollo de productos.
       </p>
 
       <ul class="social-icons list-unstyled list-inline">
@@ -51,6 +51,301 @@ devicons_css: load cdn styles only when is necessary
 </div>
 </section>
 
+<!-- ========= PROYECTOS DESTACADOS ========= -->
+<section id="projects" class="section section--projects section--large" aria-labelledby="projects-title">
+<div class="container">
+  <div class="section-header">
+    <h2 id="projects-title" class="section-title">Proyectos destacados</h2>
+    <p class="section-subtitle">Aquí algunos proyectos personales que reflejan mi experiencia y estilo de trabajo.</p>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+    <!-- MiTaller.art -->
+    <div class="col">
+      <article class="card h-100 shadow-sm border-0">
+        <div class="ratio ratio-16x9 rounded-top overflow-hidden">
+          <img src="{{ '/assets/images/proyects/mitaller.png' | relative_url }}"
+            alt="MiTaller.art" class="w-100 h-100" style="object-fit:cover" loading="lazy"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+          <div class="d-none bg-light border d-flex align-items-center justify-content-center h-100"
+            style="color:#6c757d;">
+            <i class="fa-solid fa-image fa-2x"></i>
+          </div>
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h3 class="h5 mb-1">MiTaller.art</h3>
+          <div class="mb-2">
+            <span class="tech-badge badge-react me-1">Next.js</span>
+            <span class="tech-badge badge-python me-1">Python</span>
+            <span class="tech-badge badge-python me-1">Django</span>
+            <span class="tech-badge badge-postgresql me-1">PostgreSQL</span>
+            <span class="tech-badge badge-javascript me-1">Zustand</span>
+            <span class="tech-badge badge-javascript me-1">TypeScript</span>
+            <span class="tech-badge badge-javascript me-1">shadcn/ui</span>
+            <span class="tech-badge badge-javascript me-1">Docker</span>
+            <span class="tech-badge badge-javascript me-1">Railway</span>
+            <span class="tech-badge badge-javascript me-1">Tailwind CSS</span>
+            <span class="tech-badge badge-react me-1">React</span>
+            <span class="tech-badge badge-javascript me-1">Stripe Connect</span>
+            <span class="tech-badge badge-javascript me-1">Vercel</span>
+          </div>
+          <p class="flex-grow-1">Marketplace para artesanos de Menorca.</p>
+          <div class="d-flex gap-2">
+            <a href="https://www.mitaller.art" target="_blank" rel="noopener"
+              class="btn btn-sm btn-outline-dark">
+              <i class="fas fa-external-link-alt me-2"></i>Ver proyecto
+            </a>
+            <a href="/portfolio/mitaller/" class="btn btn-sm btn-outline-dark">
+              <i class="fas fa-info-circle me-2"></i>Ver detalles
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- mybooking WP theme -->
+    <div class="col">
+      <article class="card h-100 shadow-sm border-0">
+        <div class="ratio ratio-16x9 rounded-top overflow-hidden">
+          <img src="{{ '/assets/images/proyects/mybooking-theme.webp' | relative_url }}" alt="mybooking WP theme"
+            class="w-100 h-100" style="object-fit:cover" loading="lazy"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+          <div class="d-none bg-light border d-flex align-items-center justify-content-center h-100"
+            style="color:#6c757d;">
+            <i class="fa-solid fa-image fa-2x"></i>
+          </div>
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h3 class="h5 mb-1">mybooking WP theme</h3>
+          <div class="mb-2">
+            <span class="tech-badge badge-wordpress me-1">WordPress</span>
+            <span class="tech-badge badge-bootstrap me-1">Bootstrap 4</span>
+            <span class="tech-badge badge-sass me-1">Sass</span>
+            <span class="tech-badge badge-javascript me-1">Gulp</span>
+          </div>
+          <p class="flex-grow-1">Tema oficial de mybooking en WordPress. Migración del diseño de sitios JamStack al tema base open source que usan los clientes de mybooking.es.</p>
+          <div class="d-flex gap-2">
+            <a href="https://github.com/mybooking-es/mybooking" target="_blank" rel="noopener"
+              class="btn btn-sm btn-outline-dark">
+              <i class="fa-brands fa-github" aria-hidden="true"></i> Ver código
+            </a>
+            <a href="https://wordpress.org/themes/mybooking/" target="_blank" rel="noopener"
+              class="btn btn-sm btn-outline-dark">
+              <i class="fas fa-external-link-alt me-2"></i>Ver proyecto
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- ========= SKILLS & STACK ========= -->
+<section id="skills" class="section section--skills section--large" aria-labelledby="skills-title">
+<div class="container">
+  <div class="section-header">
+    <h2 id="skills-title" class="section-title">Skills & Stack</h2>
+    <p class="section-subtitle">Tecnologías y herramientas con las que trabajo</p>
+  </div>
+
+  <!-- Core Frontend -->
+  <section class="mb-4" aria-labelledby="core-frontend-title">
+    <h3 id="core-frontend-title" class="h5 text-uppercase text-muted mb-3">Frontend</h3>
+    <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3" role="list">
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-html5-plain-wordmark"></i>
+          <figcaption class="small mt-2">HTML5</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-css3-plain-wordmark"></i>
+          <figcaption class="small mt-2">CSS3 (BEM)</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-sass-original"></i>
+          <figcaption class="small mt-2">Sass</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-javascript-plain"></i>
+          <figcaption class="small mt-2">JavaScript (ESNext)</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-typescript-plain"></i>
+          <figcaption class="small mt-2">TypeScript</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-react-original"></i>
+          <figcaption class="small mt-2">React</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-nextjs-plain"></i>
+          <figcaption class="small mt-2">Next.js</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="fa-solid fa-paw"></i>
+          <figcaption class="small mt-2">Zustand</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-tailwindcss-plain"></i>
+          <figcaption class="small mt-2">Tailwind CSS</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="fa-solid fa-layer-group"></i>
+          <figcaption class="small mt-2">shadcn/ui</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tooling -->
+  <section class="mb-4" aria-labelledby="tooling-title">
+    <h3 id="tooling-title" class="h5 text-uppercase text-muted mb-3">Tooling</h3>
+    <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3" role="list">
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-vitejs-plain"></i>
+          <figcaption class="small mt-2">Vite</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-git-plain"></i>
+          <figcaption class="small mt-2">Git</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-docker-plain"></i>
+          <figcaption class="small mt-2">Docker</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-railway-plain"></i>
+          <figcaption class="small mt-2">Railway</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Backend & Datos -->
+  <section aria-labelledby="backend-title">
+    <h3 id="backend-title" class="h5 text-uppercase text-muted mb-3">Backend &amp; Datos</h3>
+    <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3" role="list">
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-python-plain"></i>
+          <figcaption class="small mt-2">Python</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-flask-original"></i>
+          <figcaption class="small mt-2">Flask</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-django-plain"></i>
+          <figcaption class="small mt-2">Django</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-djangorest-plain"></i>
+          <figcaption class="small mt-2">DRF</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-postgresql-plain"></i>
+          <figcaption class="small mt-2">PostgreSQL</figcaption>
+        </figure>
+      </div>
+      <div class="col" role="listitem">
+        <figure class="skill card h-100 border-0 text-center py-3">
+          <i class="devicon-mongodb-plain"></i>
+          <figcaption class="small mt-2">MongoDB</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+</div>
+</section>
+
+<!-- ========= POSTS DESTACADOS ========= -->
+<section id="posts" class="section section--secondary section--large">
+<div class="container">
+  <div class="section-header">
+    <h2 class="section-title">Del blog</h2>
+    <p class="section-subtitle">Algunos artículos que vale la pena leer.</p>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <div class="col">
+      <article class="card h-100 border-0" style="background-color: var(--color-bg-primary);">
+        <div class="card-body d-flex flex-column">
+          <span class="tech-badge badge-javascript mb-3 align-self-start">JavaScript</span>
+          <h3 class="h5 mb-2"><a href="/post/metodos-de-los-arrays-en-javascript/" class="link-primary text-decoration-none">Métodos de los Arrays en JavaScript</a></h3>
+          <p class="text-muted flex-grow-1">Guía completa de los métodos más utilizados para manipular arrays en JavaScript.</p>
+          <a href="/post/metodos-de-los-arrays-en-javascript/" class="btn btn-sm btn-outline-primary mt-3 align-self-start">Leer artículo</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="col">
+      <article class="card h-100 border-0" style="background-color: var(--color-bg-primary);">
+        <div class="card-body d-flex flex-column">
+          <span class="tech-badge badge-javascript mb-3 align-self-start">JavaScript</span>
+          <h3 class="h5 mb-2"><a href="/post/tipos-de-datos-en-javascript/" class="link-primary text-decoration-none">Tipos de datos en JavaScript</a></h3>
+          <p class="text-muted flex-grow-1">Cómo funciona el tipado dinámico en JavaScript y qué tipos de datos existen.</p>
+          <a href="/post/tipos-de-datos-en-javascript/" class="btn btn-sm btn-outline-primary mt-3 align-self-start">Leer artículo</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="col">
+      <article class="card h-100 border-0" style="background-color: var(--color-bg-primary);">
+        <div class="card-body d-flex flex-column">
+          <span class="tech-badge badge-python mb-3 align-self-start">Python</span>
+          <h3 class="h5 mb-2"><a href="/post/clases-y-objetos-en-python/" class="link-primary text-decoration-none">Clases y Objetos en Python</a></h3>
+          <p class="text-muted flex-grow-1">Introducción a la programación orientada a objetos en Python, clases, instancias y métodos.</p>
+          <a href="/post/clases-y-objetos-en-python/" class="btn btn-sm btn-outline-primary mt-3 align-self-start">Leer artículo</a>
+        </div>
+      </article>
+    </div>
+
+  </div>
+
+  <div class="text-center mt-5">
+    <a href="/blog/" class="btn btn-outline-primary">Ver todos los artículos</a>
+  </div>
+
+</div>
+</section>
+
 <!-- ========= EXPERIENCIA ========= -->
 <section id="experience" class="section section--secondary section--large">
 <div class="container">
@@ -65,7 +360,7 @@ devicons_css: load cdn styles only when is necessary
       <div class="timeline__meta col-10 offset-2 col-md-3 offset-md-0 order-2 order-md-1">
         <div class="text-muted fw-medium">Alaior, ESP</div>
         <div class="text-muted">
-          <time datetime="2017-10">Oct’17</time> – <time datetime="2021-09">Sep’21</time>
+          <time datetime="2017-10">Oct'17</time> – <time datetime="2021-09">Sep'21</time>
           <span class="ms-1">· 4 años</span>
         </div>
       </div>
@@ -105,7 +400,7 @@ devicons_css: load cdn styles only when is necessary
       <div class="timeline__meta col-10 offset-2 col-md-3 offset-md-0 order-2 order-md-1">
         <div class="text-muted fw-medium">Barcelona, ESP</div>
         <div class="text-muted">
-          <time datetime="2017-01">Ene’17</time> – <time datetime="2019-03">Mar’19</time>
+          <time datetime="2017-01">Ene'17</time> – <time datetime="2019-03">Mar'19</time>
           <span class="ms-1">· 2 años 3 meses</span>
         </div>
       </div>
@@ -245,286 +540,5 @@ devicons_css: load cdn styles only when is necessary
 
   </div>
 
-</div>
-</section>
-
-<!-- ========= PROYECTOS DESTACADOS ========= -->
-<section id="projects" class="section section--projects section--large" aria-labelledby="projects-title">
-<div class="container">
-  <div class="section-header">
-    <h2 id="projects-title" class="section-title">Proyectos destacados</h2>
-    <p class="section-subtitle">Aquí algunos proyectos personales que reflejan mi experiencia y estilo de trabajo.</p>
-  </div>
-
-  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-
-    <!-- Game Matcher -->
-    <div class="col">
-      <article class="card h-100 shadow-sm border-0">
-        <div class="ratio ratio-16x9 rounded-top overflow-hidden">
-          <img src="{{ '/assets/images/proyects/gamematcher.png' | relative_url }}"
-            alt="Game Matcher - Recomendador de videojuegos" class="w-100 h-100" style="object-fit:cover" loading="lazy"
-            onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
-          <div class="d-none bg-light border d-flex align-items-center justify-content-center h-100"
-            style="color:#6c757d;">
-            <i class="fa-solid fa-image fa-2x"></i>
-          </div>
-        </div>
-        <div class="card-body d-flex flex-column">
-          <h3 class="h5 mb-1">Game Matcher</h3>
-          <div class="mb-2">
-            <span class="tech-badge badge-react me-1">React</span>
-            <span class="tech-badge badge-react me-1">Hooks</span>
-            <span class="tech-badge badge-api me-1">RAGWG API</span>
-            <span class="tech-badge badge-python me-1">Python</span>
-            <span class="tech-badge badge-flask me-1">Flask</span>
-            <span class="tech-badge badge-postgresql me-1">PostgreSQL</span>
-            <span class="tech-badge badge-sqlalchemy me-1">SQLAlchemy</span>
-          </div>
-          <p class="flex-grow-1">App recomendadora de videojuegos con React y API externa.</p>
-          <div class="d-flex gap-2">
-            <a href="https://github.com/MarcelReig/gamematcher" target="_blank" rel="noopener"
-              class="btn btn-sm btn-outline-dark">
-              <i class="fa-brands fa-github" aria-hidden="true"></i> Ver código
-            </a>
-            <a href="https://sample-service-name-7fte.onrender.com/" target="_blank" rel="noopener"
-              class="btn btn-sm btn-outline-dark">
-              <i class="fas fa-external-link-alt me-2"></i>Ver proyecto
-            </a>
-          </div>
-        </div>
-      </article>
-    </div>
-
-    <!-- Marina Ilustración -->
-    <div class="col">
-      <article class="card h-100 shadow-sm border-0">
-        <div class="ratio ratio-16x9 rounded-top overflow-hidden">
-          <img src="{{ '/assets/images/proyects/marina_ilustracion.png' | relative_url }}"
-            alt="Marina Ilustración - Portfolio con CMS y tienda" class="w-100 h-100" style="object-fit:cover"
-            loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
-          <div class="d-none bg-light border d-flex align-items-center justify-content-center h-100"
-            style="color:#6c757d;">
-            <i class="fa-solid fa-image fa-2x"></i>
-          </div>
-        </div>
-        <div class="card-body d-flex flex-column">
-          <h3 class="h5 mb-1">Marina Ilustración</h3>
-          <div class="mb-2">
-            <span class="tech-badge badge-react me-1">React</span>
-            <span class="tech-badge badge-cms me-1">CMS</span>
-            <span class="tech-badge badge-ecommerce me-1">E-commerce</span>
-            <span class="tech-badge badge-stripe me-1">Stripe</span>
-            <span class="tech-badge badge-flask me-1">Flask</span>
-            <span class="tech-badge badge-mongodb me-1">MongoDB</span>
-            <span class="tech-badge badge-pymongo me-1">PyMongo</span>
-          </div>
-          <p class="flex-grow-1">Portfolio de artista con CMS y tienda online integrada.</p>
-          <div class="d-flex gap-2">
-            <a href="https://github.com/MarcelReig/marina-frontend" target="_blank" rel="noopener"
-              class="btn btn-sm btn-outline-dark">
-              <i class="fa-brands fa-github" aria-hidden="true"></i> Ver código
-            </a>
-            <a href="https://marina-ibarra.netlify.app/" target="_blank" rel="noopener"
-              class="btn btn-sm btn-outline-dark">
-              <i class="fas fa-external-link-alt me-2"></i>Ver proyecto
-            </a>
-          </div>
-        </div>
-      </article>
-    </div>
-
-    <!-- mybooking WP theme -->
-    <div class="col">
-      <article class="card h-100 shadow-sm border-0">
-        <div class="ratio ratio-16x9 rounded-top overflow-hidden">
-          <img src="{{ '/assets/images/proyects/mybooking-theme.webp' | relative_url }}" alt="mybooking WP theme"
-            class="w-100 h-100" style="object-fit:cover" loading="lazy"
-            onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
-          <div class="d-none bg-light border d-flex align-items-center justify-content-center h-100"
-            style="color:#6c757d;">
-            <i class="fa-solid fa-image fa-2x"></i>
-          </div>
-        </div>
-        <div class="card-body d-flex flex-column">
-          <h3 class="h5 mb-1">mybooking WP theme</h3>
-          <div class="mb-2">
-            <span class="tech-badge badge-wordpress me-1">WordPress</span>
-            <span class="tech-badge badge-bootstrap me-1">Bootstrap</span>
-          </div>
-          <p class="flex-grow-1">Tema minimalista basado en Bootstrap.</p>
-          <div class="d-flex gap-2">
-            <a href="https://github.com/mybooking-es/mybooking" target="_blank" rel="noopener"
-              class="btn btn-sm btn-outline-dark">
-              <i class="fa-brands fa-github" aria-hidden="true"></i> Ver código
-            </a>
-            <a href="https://wordpress.org/themes/mybooking/" target="_blank" rel="noopener"
-              class="btn btn-sm btn-outline-dark">
-              <i class="fas fa-external-link-alt me-2"></i>Ver proyecto
-            </a>
-          </div>
-        </div>
-      </article>
-    </div>
-
-  </div>
-</div>
-</section>
-
-<!-- ========= SKILLS & STACK ========= -->
-<section id="skills" class="section section--skills section--large" aria-labelledby="skills-title">
-<div class="container">
-  <div class="section-header">
-    <h2 id="skills-title" class="section-title">Skills & Stack</h2>
-    <p class="section-subtitle">Tecnologías y herramientas con las que trabajo</p>
-  </div>
-
-  <!-- Core Frontend -->
-  <section class="mb-4" aria-labelledby="core-frontend-title">
-    <h3 id="core-frontend-title" class="h5 text-uppercase text-muted mb-3">Frontend</h3>
-    <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3" role="list">
-      <div class="col" role="listitem">
-        <figure class="skill card h-100 border-0 text-center py-3">
-          <i class="devicon-html5-plain-wordmark"></i>
-          <figcaption class="small mt-2">HTML5</figcaption>
-        </figure>
-      </div>
-      <div class="col" role="listitem">
-        <figure class="skill card h-100 border-0 text-center py-3">
-          <i class="devicon-css3-plain-wordmark"></i>
-          <figcaption class="small mt-2">CSS3 (BEM)</figcaption>
-        </figure>
-      </div>
-      <div class="col" role="listitem">
-        <figure class="skill card h-100 border-0 text-center py-3">
-          <i class="devicon-sass-original"></i>
-          <figcaption class="small mt-2">Sass</figcaption>
-        </figure>
-      </div>
-      <div class="col" role="listitem">
-        <figure class="skill card h-100 border-0 text-center py-3">
-          <i class="devicon-javascript-plain"></i>
-          <figcaption class="small mt-2">JavaScript (ESNext)</figcaption>
-        </figure>
-      </div>
-      <div class="col" role="listitem">
-        <figure class="skill card h-100 border-0 text-center py-3">
-          <i class="devicon-typescript-plain"></i>
-          <figcaption class="small mt-2">TypeScript</figcaption>
-        </figure>
-      </div>
-      <div class="col" role="listitem">
-        <figure class="skill card h-100 border-0 text-center py-3">
-          <i class="devicon-react-original"></i>
-          <figcaption class="small mt-2">React</figcaption>
-        </figure>
-      </div>
-      <div class="col" role="listitem">
-        <figure class="skill card h-100 border-0 text-center py-3">
-          <i class="devicon-nextjs-plain"></i>
-          <figcaption class="small mt-2">Next.js</figcaption>
-        </figure>
-      </div>
-      <div class="col" role="listitem">
-        <figure class="skill card h-100 border-0 text-center py-3">
-          <i class="fa-solid fa-paw"></i>
-          <figcaption class="small mt-2">Zustand</figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- UI & Styling -->
-  <section class="mb-4" aria-labelledby="ui-styling-title">
-    <h3 id="ui-styling-title" class="h5 text-uppercase text-muted mb-3">UI &amp; Styling</h3>
-    <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3" role="list">
-      <div class="col" role="listitem">
-        <figure class="skill card h-100 border-0 text-center py-3">
-          <i class="devicon-tailwindcss-plain"></i>
-          <figcaption class="small mt-2">Tailwind CSS</figcaption>
-        </figure>
-      </div>
-      <div class="col" role="listitem">
-        <figure class="skill card h-100 border-0 text-center py-3">
-          <i class="fa-solid fa-layer-group"></i>
-          <figcaption class="small mt-2">shadcn/ui</figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- Tooling -->
-  <section class="mb-4" aria-labelledby="tooling-title">
-    <h3 id="tooling-title" class="h5 text-uppercase text-muted mb-3">Tooling</h3>
-    <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3" role="list">
-      <div class="col" role="listitem">
-        <figure class="skill card h-100 border-0 text-center py-3">
-          <i class="devicon-vitejs-plain"></i>
-          <figcaption class="small mt-2">Vite</figcaption>
-        </figure>
-      </div>
-      <div class="col" role="listitem">
-        <figure class="skill card h-100 border-0 text-center py-3">
-          <i class="devicon-git-plain"></i>
-          <figcaption class="small mt-2">Git</figcaption>
-        </figure>
-      </div>
-      <div class="col" role="listitem">
-        <figure class="skill card h-100 border-0 text-center py-3">
-          <i class="devicon-docker-plain"></i>
-          <figcaption class="small mt-2">Docker</figcaption>
-        </figure>
-      </div>
-      <div class="col" role="listitem">
-        <figure class="skill card h-100 border-0 text-center py-3">
-          <i class="devicon-railway-plain"></i>
-          <figcaption class="small mt-2">Railway</figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- Backend & Datos -->
-  <section aria-labelledby="backend-title">
-    <h3 id="backend-title" class="h5 text-uppercase text-muted mb-3">Backend &amp; Datos</h3>
-    <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3" role="list">
-      <div class="col" role="listitem">
-        <figure class="skill card h-100 border-0 text-center py-3">
-          <i class="devicon-python-plain"></i>
-          <figcaption class="small mt-2">Python</figcaption>
-        </figure>
-      </div>
-      <div class="col" role="listitem">
-        <figure class="skill card h-100 border-0 text-center py-3">
-          <i class="devicon-flask-original"></i>
-          <figcaption class="small mt-2">Flask</figcaption>
-        </figure>
-      </div>
-      <div class="col" role="listitem">
-        <figure class="skill card h-100 border-0 text-center py-3">
-          <i class="devicon-django-plain"></i>
-          <figcaption class="small mt-2">Django</figcaption>
-        </figure>
-      </div>
-      <div class="col" role="listitem">
-        <figure class="skill card h-100 border-0 text-center py-3">
-          <i class="devicon-djangorest-plain"></i>
-          <figcaption class="small mt-2">DRF</figcaption>
-        </figure>
-      </div>
-      <div class="col" role="listitem">
-        <figure class="skill card h-100 border-0 text-center py-3">
-          <i class="devicon-postgresql-plain"></i>
-          <figcaption class="small mt-2">PostgreSQL</figcaption>
-        </figure>
-      </div>
-      <div class="col" role="listitem">
-        <figure class="skill card h-100 border-0 text-center py-3">
-          <i class="devicon-mongodb-plain"></i>
-          <figcaption class="small mt-2">MongoDB</figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
 </div>
 </section>

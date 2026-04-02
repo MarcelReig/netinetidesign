@@ -15,12 +15,6 @@ layout: default
         <li class="nav-item">
           <a class="nav-link" href="/blog/tag/python/">#Python</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/blog/tag/node/">#Node</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/blog/tag/npm/">#npm</a>
-        </li>
       </ul>
     </div>
     <div class="col-12 col-md-7">
@@ -36,6 +30,7 @@ layout: default
             <h4>
               {{ post.title }}
             </h4>
+            {% if post.description %}<p class="post-description">{{ post.description }}</p>{% endif %}
             <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
           </a>
         </li>
@@ -45,13 +40,13 @@ layout: default
     <div class="col-12 py-5">
       <div class="pagination">
         {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path }}" class="previous">&laquo; Previous</a>
+        <a href="{{ paginator.previous_page_path }}" class="previous">&laquo; Anterior</a>
         {% endif %}
 
-        <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+        <span class="page_number">Página: {{ paginator.page }} de {{ paginator.total_pages }}</span>
 
         {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}" class="next">Next &raquo;</a>
+        <a href="{{ paginator.next_page_path }}" class="next">Siguiente &raquo;</a>
         {% endif %}
       </div>
     </div>
