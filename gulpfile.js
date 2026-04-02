@@ -2,7 +2,6 @@ const gulp = require("gulp");
 const gulpSass = require("gulp-sass")(require("sass"));
 const uglify = require("gulp-uglify");
 const pump = require("pump");
-const order = require("gulp-order");
 const concat = require("gulp-concat");
 const autoprefixer = require("gulp-autoprefixer");
 const shell = require("gulp-shell");
@@ -85,36 +84,21 @@ function build_styles() {
 
 function build_scripts(done) {
   log("Compiling Scripts");
+  const srcFiles = [
+    "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+    "./_assets/scripts/main.js",
+  ];
+
   if (config.production) {
     pump([
-      gulp.src([
-        "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-        "./_assets/scripts/**/*.js",
-      ]),
-      order(
-        [
-          "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-          "main.js",
-        ],
-        { base: "./" }
-      ),
+      gulp.src(srcFiles),
       concat("app.js"),
       uglify(),
       gulp.dest("./assets/scripts"),
     ], done);
   } else {
     pump([
-      gulp.src([
-        "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-        "./_assets/scripts/**/*.js",
-      ]),
-      order(
-        [
-          "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-          "main.js",
-        ],
-        { base: "./" }
-      ),
+      gulp.src(srcFiles),
       concat("app.js"),
       gulp.dest("./assets/scripts"),
       gulp.dest("./_site/assets/scripts"),
