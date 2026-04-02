@@ -50,7 +50,8 @@ description: Contacto Marcel Reig Desarrollador Web Menorca
         <div class="contact-form">
           <h4>Escríbeme</h4>
           <hr />
-          <form name="contact" method="POST" data-netlify="true">
+          <form name="contact" method="POST" netlify>
+            <input type="hidden" name="form-name" value="contact" />
             <div class="form-group mb-3">
               <label for="name">Nombre</label>
               <input type="text" class="form-control" name="name" id="name" placeholder="Nombre" />
