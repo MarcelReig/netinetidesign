@@ -20,6 +20,7 @@
 // Light — Crimson Blaze como primario
 :root,
 [data-bs-theme="light"] {
+  --bs-code-color:           var(--color-text-code);
   --bs-primary:              #AD3D1E;
   --bs-primary-rgb:          173, 61, 30;
   --bs-link-color:           #AD3D1E;
@@ -31,6 +32,7 @@
 
 // Dark — Aqua Mist como primario
 [data-bs-theme="dark"] {
+  --bs-code-color:           var(--color-text-code);
   --bs-primary:              #A0C9CB;
   --bs-primary-rgb:          160, 201, 203;
   --bs-link-color:           #A0C9CB;

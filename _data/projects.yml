@@ -28,18 +28,6 @@ featured:
     featured: true
     status: "active"
 
-  - title: "HTML5 Templates"
-    description: "Colección de templates responsivos y modernos"
-    url: "/portfolio/html5-templates/"
-    image: "/assets/images/projects/html5-templates.webp"
-    technologies:
-      - "HTML5"
-      - "CSS3"
-      - "Bootstrap"
-      - "jQuery"
-    category: "templates"
-    featured: false
-    status: "archived"
 
 categories:
   - slug: "portfolio"
@@ -50,10 +38,6 @@ categories:
     name: "Experimentos"
     description: "Prototipos y pruebas de concepto"
     
-  - slug: "templates"
-    name: "Templates"
-    description: "Plantillas reutilizables"
-    
   - slug: "freelance"
     name: "Freelance"
     description: "Proyectos para clientes"
@@ -62,10 +46,6 @@ categories:
 all_projects:
   - title: "MyBooking"
     url: "/portfolio/mybooking/"
-    category: "freelance"
-    
-  - title: "Código Nuevo"
-    url: "/portfolio/codigonuevo/"
     category: "freelance"
     
   - title: "Design Sketch"

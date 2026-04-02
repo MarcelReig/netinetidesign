@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Funciones Lambda en Python
-description: Funciones Lambda en Python
+title: Funciones Lambda y funciones de orden superior en Python
+description: Funciones Lambda y funciones de orden superior en Python
 comments: true
-tags: python
+tags: python javascript
 category: programacion
 image: python-3.jpg
 ---
@@ -63,3 +63,32 @@ print(result(5, 5, 5))
 
 # Output: 15
 ```
+
+## Funciones de orden superior
+
+Una función de orden superior es una función que recibe otra función como parámetro. Las lambdas son especialmente útiles aquí porque permiten definir la función directamente en la llamada, sin necesidad de declararla antes.
+
+**En Python:**
+
+```py
+def apply(num, f):
+    return f(num)
+
+print(apply(5, lambda num: num * 2))
+
+# Output: 10
+```
+
+**En JavaScript:**
+
+```js
+function apply(num, f) {
+  return f(num);
+}
+
+console.log(apply(5, num => num * 2));
+
+// Output: 10
+```
+
+La sintaxis es diferente pero el concepto es idéntico: pasamos una función anónima como argumento. En Python usamos `lambda`, en JavaScript usamos una arrow function.

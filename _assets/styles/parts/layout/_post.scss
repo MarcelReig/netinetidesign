@@ -1,3 +1,38 @@
+// =============================================================================
+// POST CONTENT TABLES
+// =============================================================================
+.post-content table,
+article table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--space-6);
+  font-size: 0.9em;
+
+  th {
+    padding: 0.5rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border-bottom: 2px solid var(--color-border-primary);
+  }
+
+  td {
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid var(--color-border-tertiary);
+    vertical-align: top;
+  }
+
+  tbody tr:last-child td {
+    border-bottom: none;
+  }
+}
+
+// =============================================================================
+// POST IMAGE WRAPPER
+// =============================================================================
 .post-image-wrapper {
   width: 100%;
   margin-inline: auto;
@@ -10,7 +45,6 @@
   }
 }
 
-// Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .post-image-wrapper {
     margin-top: 3rem;

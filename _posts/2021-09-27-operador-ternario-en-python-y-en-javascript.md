@@ -14,7 +14,7 @@ image: python-3.jpg
 {:.lead.mb-5}
 ### El operador ternario se utiliza para simplificar declaraciones if... else.
 
-## Opeador ternario en Python
+## Operador ternario en Python
 
 El operador ternario en Python toma tres parámetros: una expresión si es verdadero, la expresión a evaluar y una expresión si es falso.
 

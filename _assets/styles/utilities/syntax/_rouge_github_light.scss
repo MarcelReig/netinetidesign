@@ -1,0 +1,116 @@
+// GitHub Light Theme
+// Scoped a :root, [data-bs-theme="light"]
+
+:root,
+[data-bs-theme="light"] {
+
+.highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+
+.highlight .w   { color: #24292f; }  // whitespace / default text
+
+// Keywords — rojo
+.highlight .k,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt,
+.highlight .kv  { color: #cf222e; }
+
+.highlight .kc  { color: #0550ae; }  // keyword constant (True, False, None) — azul
+
+// Strings — azul oscuro
+.highlight .s,
+.highlight .sa,
+.highlight .sc,
+.highlight .dl,
+.highlight .sd,
+.highlight .s2,
+.highlight .se,
+.highlight .sh,
+.highlight .sx,
+.highlight .s1,
+.highlight .ss  { color: #0a3069; }
+
+.highlight .sb  { color: #0a3069; }  // string backtick
+
+// Números — azul
+.highlight .l,
+.highlight .ld,
+.highlight .m,
+.highlight .mb,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .il,
+.highlight .mo,
+.highlight .mx  { color: #0550ae; }
+
+// Funciones y métodos — púrpura
+.highlight .nf,
+.highlight .fm  { color: #8250df; }
+
+// Decoradores — púrpura
+.highlight .nd  { color: #8250df; }
+
+// Clases, built-ins, constantes — naranja/marrón
+.highlight .nc  { color: #953800; }
+.highlight .nb  { color: #953800; }
+.highlight .no  { color: #0550ae; }
+.highlight .nn  { color: #953800; }
+
+// Variables
+.highlight .nv,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi,
+.highlight .vm  { color: #24292f; }
+
+// Operadores
+.highlight .o,
+.highlight .ow  { color: #24292f; }
+
+// Comentarios — gris
+.highlight .c,
+.highlight .ch,
+.highlight .cd,
+.highlight .cm,
+.highlight .cp,
+.highlight .cpf,
+.highlight .c1,
+.highlight .cs  { color: #57606a; font-style: italic; }
+
+.highlight .gl  { color: #57606a; }
+.highlight .gt  { color: #57606a; }
+
+// Atributos y tags
+.highlight .na  { color: #116329; }
+.highlight .nt  { color: #116329; }
+
+// Regex
+.highlight .sr  { color: #116329; }
+
+// Errores
+.highlight .gr  { color: #cf222e; }
+.highlight .err { color: #cf222e; background-color: #ffebe9; }
+
+// Diff
+.highlight .gd  { color: #82071e; background-color: #ffebe9; }
+.highlight .gi  { color: #116329; background-color: #dafbe1; }
+
+// Generic
+.highlight .gh  { color: #0550ae; font-weight: bold; }
+.highlight .gu  { color: #0550ae; font-weight: bold; }
+.highlight .ge  { color: #24292f; font-style: italic; }
+.highlight .gs  { color: #24292f; font-weight: bold; }
+.highlight .ges { font-weight: bold; font-style: italic; }
+
+.highlight .ni  { color: #24292f; }
+.highlight .si  { color: #24292f; }
+.highlight .bp  { color: #953800; }
+.highlight .ne  { color: #0550ae; }
+.highlight .nl  { color: #0550ae; }
+.highlight .py  { color: #24292f; }
+
+} // end :root, [data-bs-theme="light"]

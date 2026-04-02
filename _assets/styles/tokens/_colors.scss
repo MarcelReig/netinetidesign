@@ -176,11 +176,13 @@
 // CODE HIGHLIGHTING (THEME-AWARE)
 // =============================================================================
 :root {
-  --color-bg-code:   #f0efea; // warm off-white, coherente con Willow Springs
-  --color-text-code: #1F262A;
+  --color-bg-code:        #d6d5ce; // notablemente más oscuro que el fondo de página (#E7E6E0)
+  --color-bg-code-inline: #dddbd5; // inline: ligeramente más claro que blocks
+  --color-text-code:      #24292f;
 }
 
 [data-bs-theme="dark"] {
-  --color-bg-code:   #161b22;
-  --color-text-code: #e6edf3;
+  --color-bg-code:        #161b22;
+  --color-bg-code-inline: #1c2128;
+  --color-text-code:      #e6edf3;
 }

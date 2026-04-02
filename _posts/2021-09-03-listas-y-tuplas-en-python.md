@@ -150,7 +150,7 @@ print(chocolates[0:4:2])
 # Output: ['chocolate', 'pistacho']
 ```
 
-## Iiterar una lista con for in en Python
+## Iterar una lista con for in en Python
 
 ```py
 chocolates = [

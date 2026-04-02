@@ -45,7 +45,7 @@ sumar_numeros(1, 2, 3, 4, 5, 6, 7)
 
 # TypeError: suma() takes 3 positional arguments but 7 were given
 ```
-## Función con `*args`
+## Función con *args
 
 El simbolo asterisco `*` nos permite hacer la llamada a la función sin importar el número de argumentos. Los argumentos enviados se almacenan en una tupla.
 
@@ -68,7 +68,7 @@ sumar_numeros(1, 2, 3, 4, 5, 6, 7)
 # Output: ('Suma:', 28)
 ```
 
-## Función con `**kwargs`
+## Función con **kwargs
 
 Se utiliza para trabajar con argumentos con palabras clave. Los argumentos enviados se almacenan en un diccionario.
 
@@ -90,7 +90,7 @@ salary : 50k
 '''
 ```
 
-## Función que combina parámetros normales con `*args` y `**kwargs`
+## Función que combina parámetros normales con *args y **kwargs
 
 No hay ningún problema en combinar distintos tipos de parámetro en una función.
 

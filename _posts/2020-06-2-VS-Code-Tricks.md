@@ -8,161 +8,175 @@ tags: vscode
 image: coding-2.webp
 ---
 
-<div class="alert alert-info" role="alert">
-<p><i class="fas fa-sticky-note"></i> Nota:</p>
- <p>Lo siento, combinaciones solo para Mac .  Escribí este post para tener las combinaciones que más uso a mano, no esperaba tantas visualizaciones 😱.</p>
-</div>
+Atajos de teclado y trucos de VS Code para Mac.
 
-### Ajuste automático de línea en VSCode
+## Paleta de comandos
 
-Si no quieres que el código se extienda horizontalmente fuera del espacio disponible y te aparezca el scroll horizontal.
+Acceso a cualquier comando de VS Code:
 
-*Tienes varias opciones:*
+<kbd>cmd ⌘ + shift ⇧ + P</kbd>
 
-1. Atajo de teclado <kbd>alt + z</kbd>
+## Navegación
 
-2. Desde el menú superior ver `Alternar ajuste automático de línea`.
+Abrir un archivo por nombre:
 
-3. Configurar desde settings Editor: `Word Wrap`
+<kbd>cmd ⌘ + P</kbd>
 
-### Abrir terminal integrado en VSCode
+Ir a una línea concreta:
 
-*Tienes 3 opciones:*
+<kbd>ctrl + G</kbd>
 
-1. El atajo de teclado: <kbd>ctrl +  `</kbd>
-2. Menú superior Ver Terminal integrado
-3. Abrir la paleta de comandos con <kbd>Shift + cmd + P</kbd> Y seleccionar Ver: `Alternar terminal integrado`
+Ir a la definición de una función o variable:
 
-### Abrir Visual Studio Code desde la terminal
+<kbd>F12</kbd>
 
-*Primero tienes que añadir esto al path:*
+Volver atrás después de ir a definición:
 
-Abre la paleta de comandos de VS Code con <kbd>shift ⇧ + cmd ⌘ + P</kbd> y escribe `shell command` para que te aparezca la opción Install `code command in PATH` , seleccionala.
+<kbd>ctrl + -</kbd>
 
-A partir de ahora puedes abrir VS Code escribiendo <kbd>code</kbd> desde tu terminal.
+Moverse al principio o final de la línea:
 
-Para abrir la carpeta actual desde tu ubicación en la terminal añade un espacio y un punto detrás: <kbd>code .</kbd>
+<kbd>cmd ⌘ + ← →</kbd>
 
-### Insertar cursores arriba o abajo de la línea actual en VSCode
+Moverse palabra a palabra:
 
-Te situas con el cursor donde quieres empezar la selección y utilizas:
+<kbd>alt ⌥ + ← →</kbd>
 
-<kbd>alt ⌥ + cmd ⌘ + teclas de dirección ↑↓</kbd>
+Moverse entre pestañas abiertas:
 
-<kbd>esc</kbd> para volver a un solo cursor.
+<kbd>alt ⌥ + cmd ⌘ + ← →</kbd>
 
-### Seleccionar coincidencias
-Selecionas con el cursor los carácteres sobre los que quieres buscar coincidencias y pulsas:
+## Edición
 
-<kbd>cmd ⌘ + D</kbd> para cada coincidencia que quieras seleccionar.
+Comentar / descomentar una línea:
 
-### Vista previa de Markdown
+<kbd>cmd ⌘ + /</kbd>
 
-Para mostrar una vista previa del archivo md que estás editando pulsa:
+Mover una línea arriba o abajo:
 
-<kbd>cmd ⌘ + Shift ⇧ +  V</kbd>.
+<kbd>alt ⌥ + ↑ ↓</kbd>
 
-Si prefieres mostrar la previsualizavión de md a un lado pulsa: 
+Duplicar una línea hacia abajo:
 
-<kbd>cmd ⌘ + K +  V</kbd>.
+<kbd>shift ⇧ + alt ⌥ + ↓</kbd>
 
-### Abrir directorio de archivos actual en el Finder
-Este atajo es demasiado útil, te evita tener que utilizar el Finder para navegar hasta la carpeta de tu proyecto.
+Borrar una línea completa:
 
-<kbd>cmd ⌘ + o</kbd>
+<kbd>cmd ⌘ + shift ⇧ + K</kbd>
 
-### Navegador de archivos
-Para encontrar facilmente archivos dentro del directorio de trabajo pulsa: <kbd>cmd ⌘ + p</kbd> y escribe el nombre del archivo que quieras abrir.
+Formatear el documento:
 
+<kbd>shift ⇧ + alt ⌥ + F</kbd>
 
-### Mover el el cursor horizontalmente en VSCode
+Renombrar un símbolo en todos sus usos:
 
-Para moverte rápidamente hasta el final o principio de la línea pulsa: 
+<kbd>F2</kbd>
 
-<kbd>cmd ⌘ + teclas de dirección ← →</kbd>
+Quick fix / acciones de código:
 
-Para moverte hasta el final de la palabra utiliza <kbd>alt ⌥ + teclas de dirección ← →</kbd>
+<kbd>cmd ⌘ + .</kbd>
 
-### Moverse entre pestañas abiertas en VSCode
+Ajuste automático de línea:
 
-Pulsa <kbd>alt ⌥ + cmd ⌘ + teclas de dirección</kbd>
+<kbd>alt ⌥ + Z</kbd>
 
-### Ocultar/Mostrar el Sidebar de VSCode
+## Múltiples cursores
 
-Pulsa <kbd>⌘ command + B</kbd>
+Insertar cursor arriba o abajo:
 
-### Insertar múltiples cursores
+<kbd>alt ⌥ + cmd ⌘ + ↑ ↓</kbd>
 
-<kbd>⌥ + Click</kbd>
+Añadir cursor con el ratón:
 
-### Abrir la configuración del editor
+<kbd>alt ⌥ + click</kbd>
 
-<kbd>cmd ⌘ + ,</kbd>
+Seleccionar la siguiente coincidencia del texto seleccionado:
 
-### Ver Atajos de teclado
+<kbd>cmd ⌘ + D</kbd>
 
-También permite editar los atajos a tu gusto.
+Volver a un solo cursor:
 
-<kbd>cmd ⌘ + K cmd ⌘ + S</kbd>
+<kbd>esc</kbd>
 
-### Ver los atajos de teclado en pdf
+## Terminal y panel
 
-<kbd>cmd ⌘ + K + R</kbd>
+Abrir / cerrar el terminal integrado:
 
-### Cerrar todas las pestañas abiertas
+<kbd>ctrl + `</kbd>
 
-<kbd>cmd ⌘  K + cmd ⌘ W</kbd>
+Ocultar / mostrar el sidebar:
 
-### Ir a una línea
+<kbd>cmd ⌘ + B</kbd>
 
-<kbd>ctr + G</kbd>
+Dividir el editor en dos paneles:
 
-### Buscar en todos los archivos
+<kbd>cmd ⌘ + \</kbd>
 
-<kbd>cmd ⌘ + Shift + F</kbd>
+Modo Zen (pantalla completa sin distracciones):
 
-### Buscar en el archivo actual
+<kbd>cmd ⌘ + K + Z</kbd>
+
+## Búsqueda
+
+Buscar en el archivo actual:
 
 <kbd>cmd ⌘ + F</kbd>
 
-### Mostrar las extensiones
+Buscar en todos los archivos del proyecto:
 
-<kbd>cmd ⌘ + Shift + X</kbd>
+<kbd>cmd ⌘ + shift ⇧ + F</kbd>
 
-### Comentar descomentar una línea
+## Configuración
 
-<kbd>cmd ⌘ + Shift + /</kbd>
+Abrir configuración:
 
-### Recursos
+<kbd>cmd ⌘ + ,</kbd>
 
-- [Visual Studio Code Docs](https://code.visualstudio.com/docs){:target="_blank"}
+Ver y editar atajos de teclado:
 
-- [Atajos de teclado de Visual Studio Code para Mac en pdf](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf){:target="_blank"}
+<kbd>cmd ⌘ + K + S</kbd>
 
-- [awesome-vscode](https://github.com/viatsko/awesome-vscode){:target="_blank"}
+Ver atajos de teclado en PDF:
 
-- [VS Code can do that?!](https://vscodecandothat.com/){:target="_blank"}
+<kbd>cmd ⌘ + K + R</kbd>
 
-### Mis Themes preferidos de Visual Studio Code 
+## Abrir VS Code desde la terminal
 
-1. Dark Default de VSCode
+Abre la paleta de comandos con <kbd>cmd ⌘ + shift ⇧ + P</kbd>, escribe `shell command` y selecciona **Install 'code' command in PATH**.
 
-2. [Night Owl](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl){:target="_blank"}
+A partir de ahí puedes abrir VS Code desde cualquier carpeta:
 
-3. [GitHub Theme](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme){:target="_blank"}
+```sh
+$ code .
+```
 
-4. [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme){:target="_blank"}
+## Vista previa de Markdown
 
-5. [Cobalt2](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2){:target="_blank"}
+Previsualizar el archivo actual:
 
-### Tipografías bonitas para programar
+<kbd>cmd ⌘ + shift ⇧ + V</kbd>
 
-- [JetBrains Mono](https://www.jetbrains.com/es-es/lp/mono/){:target="_blank"} Free
+Previsualizar a un lado:
 
-- [Recursive](https://www.recursive.design/){:target="_blank"} Free
+<kbd>cmd ⌘ + K + V</kbd>
 
-- [Dank Mono](https://philpl.gumroad.com/l/dank-mono){:target="_blank"} 💸
+## Themes recomendados
 
-- [MonoLisa](https://www.monolisa.dev/){:target="_blank"} 💸
+- [GitHub Theme](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme){:target="_blank"}
+- [Night Owl](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl){:target="_blank"}
+- [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme){:target="_blank"}
+- [Catppuccin](https://marketplace.visualstudio.com/items?itemName=Catppuccin.catppuccin-vsc){:target="_blank"}
+- [Cobalt2](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2){:target="_blank"}
 
-- [Operator](https://www.typography.com/fonts/operator/overview) 💸
+## Tipografías para programar
+
+- [JetBrains Mono](https://www.jetbrains.com/es-es/lp/mono/){:target="_blank"} — gratis
+- [Geist Mono](https://vercel.com/font){:target="_blank"} — gratis
+- [Recursive](https://www.recursive.design/){:target="_blank"} — gratis
+- [MonoLisa](https://www.monolisa.dev/){:target="_blank"} — de pago
+- [Dank Mono](https://philpl.gumroad.com/l/dank-mono){:target="_blank"} — de pago
+
+## Recursos
+
+- [VS Code Docs](https://code.visualstudio.com/docs){:target="_blank"}
+- [Atajos de teclado para Mac en PDF](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf){:target="_blank"}

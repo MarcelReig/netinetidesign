@@ -95,7 +95,7 @@ print(hacker['programming languages'][0])
 # Output: Python
 ```
 
-### Añadir nuevos pares `key:value` a un diccionario de Python
+### Añadir nuevos pares key:value a un diccionario de Python
 
 ```py
 hacker = {
@@ -289,7 +289,7 @@ print(hacker_one_name)  # Output: Elliot Alderson
 print(hacker_two_name)  # Output: Richard Hendricks
 ```
 
-### Recorrer un diccionario anidado con un iterable `for`: 
+### Recorrer un diccionario anidado con un iterable for:
 
 ```py
 hackers = {

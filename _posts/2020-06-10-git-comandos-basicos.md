@@ -8,160 +8,197 @@ tags: git
 image: coding-2.webp
 ---
 
-Iniciar un repositorio local desde un projecto existente:
+Referencia rápida de los comandos de Git más habituales.
 
-<!-- more -->
+## Inicialización
+
+Iniciar un repositorio local:
 
 ```sh
 $ git init
 ```
 
-Añadir todos los archivos:
+Clonar un repositorio remoto:
 
 ```sh
-$ git add —all
+$ git clone https://github.com/usuario/repositorio.git
 ```
 
-Lo que es lo mismo que:
+## Estado e historial
 
-```sh
-$ git add .
-```
-
-Subir los archivos a un repositorio remoto:
-
-```sh
-$ git commit -m “primer commit”
-```
-
-```sh
-$ git push -u origin master
-```
-
-Crear una nueva rama de Git en local y cambiar a esa rama:
-
-```sh
-$ git checkout -b [nombre_de_la_rama]
-```
-
-Esto es solo un atajo para:
-
-```sh
-$ git branch [nombre_de_la_rama]
-```
-
-```sh
-$ git checkout [nombre_de_la_rama]
-```
-
-Cambiar a una rama:
-
-```sh
-$ git checkout [nombre_de_la_rama]
-```
-
-Ver el estado de la rama: 
+Ver el estado actual del repositorio:
 
 ```sh
 $ git status
 ```
 
-Mostrar la ramas locales: 
+Ver el historial de commits:
+
+```sh
+$ git log --oneline
+```
+
+Ver los cambios no staged:
+
+```sh
+$ git diff
+```
+
+Ver los cambios staged (listos para commit):
+
+```sh
+$ git diff --staged
+```
+
+## Staging y commits
+
+Añadir todos los archivos al staging:
+
+```sh
+$ git add .
+```
+
+Añadir un archivo concreto:
+
+```sh
+$ git add nombre-del-archivo
+```
+
+Hacer un commit:
+
+```sh
+$ git commit -m "descripción del cambio"
+```
+
+## Ramas
+
+Crear una rama y cambiar a ella:
+
+```sh
+$ git switch -c nombre-de-la-rama
+```
+
+Cambiar a una rama existente:
+
+```sh
+$ git switch nombre-de-la-rama
+```
+
+Ver ramas locales:
 
 ```sh
 $ git branch
 ```
 
-Mostrar las ramas locales y remotas: 
+Ver ramas locales y remotas:
 
 ```sh
 $ git branch --all
 ```
 
-Una vez finalizado tus cambios en una rama para unir a master:
-
-Nos situamos en master
+Eliminar una rama local:
 
 ```sh
-$ git checkout master
+$ git branch -d nombre-de-la-rama
 ```
 
-Solo necesario si hay cambios en origin
+## Trabajo remoto
 
-```sh
-$ git pull origin master
-```
-
-```sh
-$ git merge [nombre_de_la_rama]
-```
-
-Subimos los cambios a nuestro repositorio remoto
-
-```sh
-$ git push origin master
-``` 
-
-Ver el historial:
-
-```sh
-$ git log
-```
-
-Para salir de la pantalla de git log inserta: q
-
-Cambiar el "origin" de un repositorio Git
-
-Ver el origin actual:
+Ver la URL del repositorio remoto:
 
 ```sh
 $ git remote -v
 ```
 
-Te mostrará algo así:
-
-```bash
-origin  https://Netinetidesign@bitbucket.org/yuraksisa/mybooking_theme_foundation_6.git (fetch)
-origin  https://Netinetidesign@bitbucket.org/yuraksisa/mybooking_theme_foundation_6.git (push)
-```
-
-Eliminar el origin actual y añadir uno nuevo:
+Subir cambios al repositorio remoto:
 
 ```sh
-$ git remote rm origin
+$ git push origin main
 ```
+
+Bajar cambios del repositorio remoto:
 
 ```sh
-$ git remote add origin https://Netinetidesign@bitbucket.org/Netinetidesign/mybooking-theme-nautic.git
+$ git pull origin main
 ```
+
+Cambiar la URL del repositorio remoto:
 
 ```sh
-$ git push -u origin master
+$ git remote set-url origin https://github.com/usuario/nuevo-repositorio.git
 ```
 
-Para eliminar Git de un proyecto, desde la carpeta del proyecto:
+## Merge y rebase
+
+Fusionar una rama en main:
+
+```sh
+$ git switch main
+$ git merge nombre-de-la-rama
+```
+
+Actualizar tu rama con los cambios de main sin crear un merge commit:
+
+```sh
+$ git rebase main
+```
+
+## Stash
+
+Guardar los cambios actuales temporalmente sin hacer commit:
+
+```sh
+$ git stash
+```
+
+Recuperar los cambios guardados:
+
+```sh
+$ git stash pop
+```
+
+Ver todos los stashes guardados:
+
+```sh
+$ git stash list
+```
+
+## Deshacer cambios
+
+Descartar cambios en el working tree (sin staged):
+
+```sh
+$ git restore nombre-del-archivo
+```
+
+Descartar todos los cambios no staged:
+
+```sh
+$ git restore .
+```
+
+Deshacer el último commit manteniendo los cambios:
+
+```sh
+$ git reset HEAD~1
+```
+
+Deshacer el último commit descartando los cambios:
+
+```sh
+$ git reset --hard HEAD~1
+```
+
+## Utilidades
+
+Eliminar un archivo del seguimiento de Git sin borrarlo del disco:
+
+```sh
+$ git rm -r --cached nombre-del-archivo
+```
+
+Eliminar Git de un proyecto:
 
 ```sh
 $ rm -rf .git
-```
-
-Eliminar node_modules de tu repositorio local y remoto: 
-Primero añade node_modules a .gitignore, después ejecuta lo siguiente:
-
-```sh
-$ git rm -r --cached node_modules
-```
-
-```sh
-$ git commit -m 'Remove the now ignored directory node_modules'
-```
-
-```sh
-$ git push origin master
-```
-
-Bajar todas las nuevas ramas del repositorio remoto:
-
-```sh
-$ git clone url-repositorio
 ```

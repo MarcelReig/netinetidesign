@@ -1,5 +1,7 @@
 // GitHub Theme para tema oscuro
-// Adaptado para funcionar con fondo oscuro
+// Scoped a [data-bs-theme="dark"]
+
+[data-bs-theme="dark"] {
 
 .highlight table td {
   padding: 5px;
@@ -205,3 +207,4 @@ pre.highlight {
   font-weight: bold;
 }
 
+} // end [data-bs-theme="dark"]

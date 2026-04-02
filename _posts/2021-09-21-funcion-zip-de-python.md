@@ -16,7 +16,7 @@ El resultado de pasar dos listas a `zip()` será una tupla en la que cada uno de
  <p>Si los iteradores de entrada tienen diferente longitud, la función zip se para cuando termina el iterador más corto, el resto de elementos serán ignorados.</p>
 </div>
 
-### Utilizar la función `zip()` para fusionar tres listas en tres tuplas de Python
+### Utilizar la función zip() para fusionar tres listas en tres tuplas de Python
 
 ```py
 animal = ['Rana', 'Mono', 'Tortuga']
@@ -62,7 +62,7 @@ for a, b, c in zip(series, directed_by, date):
  '''
 ```
 
-### Utilizar `dict()` con la función `zip()` para fusionar dos listas en un diccionario de Python
+### Utilizar dict() con la función zip() para fusionar dos listas en un diccionario de Python
 
 En este caso solo se pueden usar 2 parámetros.
 
