@@ -1,0 +1,197 @@
+---
+layout: default
+title: MiTaller.art — Marcel Reig
+description: Marketplace multi-vendor para artesanos de Menorca. Django 5 + Next.js 15 + Stripe Connect + PostgreSQL.
+---
+
+<div class="gradient-bg-title">
+  <div class="container">
+    <div class="row">
+      <div class="col-md my-5">
+        <a href="{{ site.baseurl }}/portfolio/">
+          <div class="arrow-square">
+            <i class="fas fa-arrow-left"></i>
+          </div>
+        </a>
+        <h3>Portfolio / MiTaller.art</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container py-5">
+
+  <!-- Header del proyecto -->
+  <div class="row align-items-center g-5 mb-5">
+    <div class="col-lg-6">
+      <h1 class="h2 mb-3">MiTaller.art</h1>
+      <p class="lead text-muted mb-4">
+        Marketplace vertical para artesanos de Menorca. No es un Etsy genérico — es una plataforma con identidad local que gestiona perfiles de creadores, tienda online, pagos divididos multi-vendor y envío por zonas geográficas.
+      </p>
+      <div class="d-flex flex-wrap gap-2 mb-4">
+        <span class="tech-badge badge-react">Next.js 15</span>
+        <span class="tech-badge badge-react">React 19</span>
+        <span class="tech-badge badge-javascript">TypeScript</span>
+        <span class="tech-badge badge-python">Django 5</span>
+        <span class="tech-badge badge-python">DRF</span>
+        <span class="tech-badge badge-postgresql">PostgreSQL</span>
+        <span class="tech-badge badge-javascript">Stripe Connect</span>
+        <span class="tech-badge badge-javascript">Cloudinary</span>
+        <span class="tech-badge badge-javascript">Railway</span>
+        <span class="tech-badge badge-javascript">Vercel</span>
+        <span class="tech-badge badge-javascript">Tailwind CSS</span>
+        <span class="tech-badge badge-javascript">shadcn/ui</span>
+        <span class="tech-badge badge-javascript">Zustand</span>
+        <span class="tech-badge badge-javascript">TanStack Query</span>
+        <span class="tech-badge badge-javascript">next-intl</span>
+      </div>
+      <a href="https://www.mitaller.art" class="btn btn-outline-dark" target="_blank" rel="noopener">
+        <i class="fas fa-external-link-alt me-2"></i>Ver proyecto
+      </a>
+    </div>
+    <div class="col-lg-6">
+      <img src="{{ site.baseurl }}/assets/images/proyects/mitaller.png"
+        alt="MiTaller.art — Marketplace para artesanos de Menorca"
+        class="img-fluid rounded-3 shadow-sm"
+        onerror="this.style.display='none'">
+    </div>
+  </div>
+
+  <hr class="my-5">
+
+  <!-- Qué resuelve -->
+  <div class="row mb-5">
+    <div class="col-lg-8">
+      <h2 class="h4 mb-3">El problema que resuelve</h2>
+      <p>Los artesanos de Menorca tienen talleres y productos únicos pero carecen de una plataforma propia donde vender online. Las soluciones genéricas (Etsy, Amazon Handmade) no reflejan la identidad local ni permiten el control que un artesano necesita sobre su presencia digital.</p>
+      <p>MiTaller.art les da un perfil propio con URL corta tipo <code>/tonimercadal</code>, una tienda configurada a su medida, gestión de envíos por zonas y cobro directo en su cuenta bancaria vía Stripe Connect — sin que el marketplace toque su dinero.</p>
+    </div>
+  </div>
+
+  <!-- Complejidad técnica -->
+  <div class="row mb-5">
+    <div class="col-12">
+      <h2 class="h4 mb-4">Retos técnicos principales</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <h3 class="h6 text-uppercase text-muted mb-2">Pagos multi-vendor</h3>
+            <p class="mb-0">Stripe Connect Express con <em>application fee</em> automático. Cada artesano cobra directamente en su cuenta. El marketplace retiene una comisión dinámica (5% en beta, 8%/5% post-beta según plan) sin intermediar el dinero.</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <h3 class="h6 text-uppercase text-muted mb-2">Sistema de aprobación de artesanos</h3>
+            <p class="mb-0">Flujo de estados <code>incomplete → ready → pending → approved/rejected</code> con emails transaccionales en cada transición. Los artesanos no pueden vender hasta ser revisados manualmente — control de calidad real.</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <h3 class="h6 text-uppercase text-muted mb-2">Envío por zonas geográficas</h3>
+            <p class="mb-0">Cada artesano define sus tarifas por zona (Menorca local, Baleares, Península, Internacional). Detección automática por código postal en el checkout. El coste se calcula dinámicamente antes de confirmar el pedido.</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <h3 class="h6 text-uppercase text-muted mb-2">Internacionalización completa</h3>
+            <p class="mb-0">Soporte para Español, Catalán e Inglés con <code>next-intl</code> en App Router. Detección automática de idioma, selector en navbar y cookie de persistencia. ~70KB de traducciones por idioma.</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <h3 class="h6 text-uppercase text-muted mb-2">Guest checkout</h3>
+            <p class="mb-0">Los compradores no necesitan crear cuenta. Solo email para seguir el pedido. Decisión deliberada de UX para maximizar conversión — los compradores ocasionales no deberían tener fricción.</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <h3 class="h6 text-uppercase text-muted mb-2">Inmutabilidad de pedidos</h3>
+            <p class="mb-0">Los <code>OrderItem</code> guardan un snapshot del precio y nombre del producto en el momento de la compra. Si el artesano modifica o elimina un producto, el historial de pedidos permanece íntegro — requerimiento legal de auditoría.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Decisiones arquitectónicas -->
+  <div class="row mb-5">
+    <div class="col-lg-8">
+      <h2 class="h4 mb-4">Decisiones arquitectónicas</h2>
+      <div class="table-responsive">
+        <table class="table table-borderless">
+          <thead class="text-muted small text-uppercase">
+            <tr>
+              <th>Decisión</th>
+              <th>Elección</th>
+              <th>Por qué</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>API</td>
+              <td><strong>REST</strong></td>
+              <td>DRF lo hace trivial, debuggeable, HTTP caching gratis</td>
+            </tr>
+            <tr>
+              <td>Auth</td>
+              <td><strong>JWT + rotación</strong></td>
+              <td>Frontend y backend en dominios separados, logout real con blacklist</td>
+            </tr>
+            <tr>
+              <td>Estado global</td>
+              <td><strong>Zustand</strong></td>
+              <td>Menos boilerplate que Redux, TypeScript nativo</td>
+            </tr>
+            <tr>
+              <td>Imágenes</td>
+              <td><strong>Cloudinary</strong></td>
+              <td>Subida directa cliente → CDN, el servidor Django no toca los archivos</td>
+            </tr>
+            <tr>
+              <td>Monorepo</td>
+              <td><strong>Sin Turborepo/Nx</strong></td>
+              <td>Deploy separado (Railway + Vercel), sin código compartido FE/BE, un solo dev</td>
+            </tr>
+            <tr>
+              <td>Tipos TS</td>
+              <td><strong>Manuales</strong></td>
+              <td>Control total, sin dependencia de openapi-generator</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Arquitectura -->
+  <div class="row mb-5">
+    <div class="col-lg-8">
+      <h2 class="h4 mb-3">Arquitectura</h2>
+      <p class="text-muted mb-3">Monorepo con backend y frontend completamente desacoplados, comunicados únicamente por contrato REST.</p>
+      <pre class="bg-light rounded-3 p-4 small"><code>Frontend (Vercel)          Backend (Railway)
+Next.js 15 App Router  →   Django 5 + DRF
+React 19 + TypeScript  ←   JWT Auth (SimpleJWT)
+Zustand + TanStack Q       PostgreSQL 15
+shadcn/ui + Tailwind       Stripe Connect webhooks
+next-intl (ES/CA/EN)       Cloudinary (imágenes)
+                           SendGrid (emails)</code></pre>
+    </div>
+  </div>
+
+  <!-- Estado actual -->
+  <div class="row mb-5">
+    <div class="col-lg-8">
+      <h2 class="h4 mb-3">Estado actual</h2>
+      <p>El proyecto está en producción en <strong><a href="https://www.mitaller.art" target="_blank" rel="noopener">mitaller.art</a></strong>, con staging desplegado en Railway + Vercel y entrando en fase de beta testing con artesanos reales de Menorca.</p>
+      <p>Desarrollado en solitario combinando planificación propia con Claude Code para acelerar la implementación — un workflow que me ha permitido mantener la coherencia arquitectónica de un proyecto de esta escala sin equipo.</p>
+    </div>
+  </div>
+
+</div>
