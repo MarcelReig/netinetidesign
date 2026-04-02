@@ -1,5 +1,14 @@
 <head>
   <meta charset="utf-8" />
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme-preference');
+      if (!t || t === 'auto') {
+        t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-bs-theme', t);
+    })();
+  </script>
   <title>{% if page.title %}{{page.title}} - {{site.title}}{% else %}{{site.title}}{% endif %}</title>
   <meta content="{{ site.name }}" property="og:site_name">
   {% if page.title %}
