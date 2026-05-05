@@ -32,6 +32,10 @@
     "not IE_Mob 11",
     "maintained node versions"
   ],
+  "overrides": {
+    "braces": "^3.0.3",
+    "micromatch": "^4.0.8"
+  },
   "scripts": {
     "gulp": "gulp"
   }
