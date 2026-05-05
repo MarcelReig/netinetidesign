@@ -1,6 +1,6 @@
 import gulp from "gulp";
 import { createRequire } from "module";
-import uglify from "gulp-uglify";
+import terser from "gulp-terser";
 import concat from "gulp-concat";
 import autoprefixer from "gulp-autoprefixer";
 import { spawn } from "child_process";
@@ -17,6 +17,10 @@ const browserSync = browserSyncLib.create();
 const config = {
   sassPaths: ["node_modules"],
   production: process.env.NODE_ENV === "production",
+  sassOptions: {
+    quietDeps: true,
+    silenceDeprecations: ["legacy-js-api", "import", "global-builtin", "color-functions", "if-function"],
+  },
 };
 
 // -----------------------------------------------------------------------------
@@ -55,6 +59,7 @@ function build_styles() {
       .src("./_assets/styles/main.scss")
       .pipe(
         gulpSass({
+          ...config.sassOptions,
           includePaths: config.sassPaths,
           outputStyle: "compressed",
         }).on("error", gulpSass.logError)
@@ -67,6 +72,7 @@ function build_styles() {
       .src("./_assets/styles/main.scss")
       .pipe(
         gulpSass({
+          ...config.sassOptions,
           includePaths: config.sassPaths,
           outputStyle: "expanded",
         }).on("error", gulpSass.logError)
@@ -93,7 +99,7 @@ function build_scripts() {
     return gulp
       .src(srcFiles)
       .pipe(concat("app.js"))
-      .pipe(uglify())
+      .pipe(terser())
       .pipe(gulp.dest("./assets/scripts"));
   } else {
     return gulp
@@ -199,13 +205,22 @@ function watchFiles() {
 }
 
 // -----------------------------------------------------------------------------
-//   10: Default task
+//   10: Tareas de entrada
 // -----------------------------------------------------------------------------
 
+// Producción / CI — sin servidor ni watch
+const build_production = gulp.series(
+  clean_all,
+  gulp.parallel(build_images, build_fonts, build_cv, fontawesome, build_scripts, build_styles),
+  build_jekyll
+);
+
+// Desarrollo — build completo + servidor + watch
 const build = gulp.series(clean_all, gulp.parallel(build_all, watchFiles));
 
 export default build;
 export {
+  build_production,
   watchFiles as watch,
   clean_assets,
   clean_jekyll,

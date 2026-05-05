@@ -1,0 +1,7 @@
+[build]
+  command = "NODE_ENV=production npx gulp build_production"
+  publish = "_site"
+
+[build.environment]
+  NODE_VERSION = "22"
+  RUBY_VERSION = "3.3.8"
