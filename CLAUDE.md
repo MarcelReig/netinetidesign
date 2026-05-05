@@ -9,7 +9,7 @@ Personal portfolio and tech blog for Marcel Reig, a full-stack developer with a 
 - **Static site generator**: Jekyll 4.3+ (Ruby)
 - **Build pipeline**: Gulp 4 + npm
 - **CSS**: Bootstrap 5.3, custom SCSS compiled via gulp-sass
-- **JS**: jQuery 3.6, Bootstrap Bundle, Masonry Layout, Magnific Popup, jQuery Validation — all bundled into `assets/scripts/app.js`
+- **JS**: Bootstrap Bundle + custom `main.js` — bundled into `assets/scripts/app.js`
 - **Icons**: FontAwesome 6 (free)
 - **Template language**: Liquid (Jekyll)
 
@@ -114,7 +114,7 @@ Projects have `title`, `description`, `url`, `github`, `image`, `technologies[]`
 ## Build Pipeline Notes
 
 - SCSS source: `_assets/styles/main.scss` → compiled to `assets/styles/main.css`
-- JS bundle order: jQuery → jQuery Validation → Bootstrap Bundle → Masonry → Magnific Popup → `main.js`
+- JS bundle order: Bootstrap Bundle → `main.js`
 - Images are copied with `gulp-newer` (only copies changed files)
 - Production mode: CSS compressed, JS uglified (`NODE_ENV=production`)
 - FontAwesome webfonts copied from `node_modules` to `assets/webfonts/`

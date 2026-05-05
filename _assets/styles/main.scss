@@ -11,103 +11,13 @@
 @import "vendor-styles/font-awesome/main";
 
 // 3. BASE STYLES
-@import "parts/base/index";
-@import "base/links";
-@import "base/typography-hierarchy";
+@import "base/index";
 
-// 4. LAYOUT COMPONENTS
-@import "parts/layout/index";
+// 4. LAYOUT
+@import "layout/index";
 
-// 5. MODULE COMPONENTS
-@import "parts/modules/index";
+// 5. COMPONENTS
+@import "components/index";
 
-// 6. MODERN COMPONENTS
-@import "components/buttons";
-@import "components/cards";
-@import "components/navbar";
-@import "components/theme-toggle";
-@import "components/tech-badges";
-@import "components/sections";
-
-// 7. UTILITIES & ACCESSIBILITY
+// 6. UTILITIES & ACCESSIBILITY
 @import "utilities/index";
-
-// 8. LEGACY COMPONENTS (to be refactored)
-// Portfolio Sketch Gallery
-// Masonry Grid Styles
-.grid {
-  margin: 0;
-  width: 100%;
-  position: relative;
-  max-width: none;
-  height: auto;
-  overflow: visible;
-}
-
-.grid-sizer {
-  width: 200px;
-  visibility: hidden;
-  height: 0;
-}
-
-.grid-item {
-  width: 200px !important;
-  margin: 0 10px 10px 0 !important;
-  position: absolute;
-  display: block;
-}
-
-.image-wrapper {
-  display: block;
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  border-radius: 8px;
-
-  img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-
-    &:hover {
-      transform: scale(1.05);
-    }
-  }
-}
-
-.parent-container {
-  width: 100%;
-  max-width: none;
-  margin: 0;
-  overflow: visible;
-  position: relative;
-}
-
-// Ensure Bootstrap doesn't interfere with Masonry
-.container .row .col .grid {
-  width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.container .row .col .grid .grid-item {
-  width: 200px !important;
-  max-width: 200px !important;
-  flex: none !important;
-  margin: 0 10px 10px 0 !important;
-  position: absolute !important;
-  display: block !important;
-}
-
-.container .row .col .grid .grid-item .image-wrapper {
-  width: 100% !important;
-  max-width: 100% !important;
-}
-
-.container .row .col .grid .grid-item .image-wrapper img {
-  width: 100% !important;
-  max-width: 100% !important;
-  height: auto !important;
-}
