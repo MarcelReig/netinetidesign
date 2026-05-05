@@ -1,14 +1,18 @@
-const gulp = require("gulp");
+import gulp from "gulp";
+import { createRequire } from "module";
+import uglify from "gulp-uglify";
+import concat from "gulp-concat";
+import autoprefixer from "gulp-autoprefixer";
+import { spawn } from "child_process";
+import browserSyncLib from "browser-sync";
+import log from "fancy-log";
+import colors from "ansi-colors";
+import { deleteAsync } from "del";
+import newer from "gulp-newer";
+
+const require = createRequire(import.meta.url);
 const gulpSass = require("gulp-sass")(require("sass"));
-const uglify = require("gulp-uglify");
-const concat = require("gulp-concat");
-const autoprefixer = require("gulp-autoprefixer");
-const { spawn } = require("child_process");
-const browserSync = require("browser-sync").create();
-const log = require("fancy-log");
-const colors = require("ansi-colors");
-const del = require("del");
-const newer = require("gulp-newer");
+const browserSync = browserSyncLib.create();
 
 const config = {
   sassPaths: ["node_modules"],
@@ -21,12 +25,13 @@ const config = {
 
 function build_fonts() {
   return gulp
-    .src("./_assets/fonts/*.{woff,woff2,eot,svg,ttf}")
+    .src("./_assets/fonts/*.{woff,woff2,eot,svg,ttf}", { encoding: false })
     .pipe(gulp.dest("./assets/fonts"));
 }
+
 function fontawesome() {
   return gulp
-    .src("./node_modules/@fortawesome/fontawesome-free/webfonts/*.{woff2,ttf}")
+    .src("./node_modules/@fortawesome/fontawesome-free/webfonts/*.{woff2,ttf}", { encoding: false })
     .pipe(gulp.dest("./assets/webfonts"));
 }
 
@@ -35,11 +40,11 @@ function fontawesome() {
 // -----------------------------------------------------------------------------
 
 function build_cv() {
-  return gulp.src("./_assets/cv/*.pdf").pipe(gulp.dest("./assets/cv"));
+  return gulp.src("./_assets/cv/*.pdf", { encoding: false }).pipe(gulp.dest("./assets/cv"));
 }
 
 // -----------------------------------------------------------------------------
-//  3: Styles
+//   3: Styles
 // -----------------------------------------------------------------------------
 
 function build_styles() {
@@ -106,14 +111,14 @@ function build_scripts() {
 
 function build_images() {
   return gulp
-    .src("./_assets/images/**/*.+(jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG|ico|webp)")
+    .src("./_assets/images/**/*.+(jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG|ico|webp)", { encoding: false })
     .pipe(newer("./assets/images"))
     .pipe(gulp.dest("./assets/images"));
 }
 
 function sync_images() {
   return gulp
-    .src("./_assets/images/**/*.+(jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG|ico|webp)")
+    .src("./_assets/images/**/*.+(jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG|ico|webp)", { encoding: false })
     .pipe(newer("./assets/images"))
     .pipe(gulp.dest("./assets/images"))
     .pipe(gulp.dest("./_site/assets/images"))
@@ -139,11 +144,11 @@ function build_jekyll(done) {
 }
 
 function clean_jekyll() {
-  return del(["./_site"]);
+  return deleteAsync(["./_site"]);
 }
 
 function clean_assets() {
-  return del(["./assets"]);
+  return deleteAsync(["./assets"]);
 }
 
 const clean_all = gulp.series(clean_jekyll, clean_assets);
@@ -199,17 +204,19 @@ function watchFiles() {
 
 const build = gulp.series(clean_all, gulp.parallel(build_all, watchFiles));
 
-exports.default = build;
-exports.watch = watchFiles;
-exports.clean_assets = clean_assets;
-exports.clean_jekyll = clean_jekyll;
-exports.build_styles = build_styles;
-exports.build_fonts = build_fonts;
-exports.fontawesome = fontawesome;
-exports.build_cv = build_cv;
-exports.build_scripts = build_scripts;
-exports.build_images = build_images;
-exports.sync_images = sync_images;
-exports.build_jekyll = build_jekyll;
-exports.build_localServer = build_localServer;
-exports.browsersync_reload = browsersync_reload;
+export default build;
+export {
+  watchFiles as watch,
+  clean_assets,
+  clean_jekyll,
+  build_styles,
+  build_fonts,
+  fontawesome,
+  build_cv,
+  build_scripts,
+  build_images,
+  sync_images,
+  build_jekyll,
+  build_localServer,
+  browsersync_reload,
+};
