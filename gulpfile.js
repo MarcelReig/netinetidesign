@@ -1,10 +1,9 @@
 const gulp = require("gulp");
 const gulpSass = require("gulp-sass")(require("sass"));
 const uglify = require("gulp-uglify");
-const pump = require("pump");
 const concat = require("gulp-concat");
 const autoprefixer = require("gulp-autoprefixer");
-const shell = require("gulp-shell");
+const { spawn } = require("child_process");
 const browserSync = require("browser-sync").create();
 const log = require("fancy-log");
 const colors = require("ansi-colors");
@@ -55,11 +54,7 @@ function build_styles() {
           outputStyle: "compressed",
         }).on("error", gulpSass.logError)
       )
-      .pipe(
-        autoprefixer({
-          overrideBrowserslist: ["last 2 versions", "ie >= 9"],
-        })
-      )
+      .pipe(autoprefixer())
       .pipe(gulp.dest("./assets/styles"))
       .pipe(gulp.dest("./_site/assets/styles"));
   } else {
@@ -79,10 +74,10 @@ function build_styles() {
 }
 
 // -----------------------------------------------------------------------------
-//   4: Scripts with pump
+//   4: Scripts
 // -----------------------------------------------------------------------------
 
-function build_scripts(done) {
+function build_scripts() {
   log("Compiling Scripts");
   const srcFiles = [
     "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
@@ -90,20 +85,18 @@ function build_scripts(done) {
   ];
 
   if (config.production) {
-    pump([
-      gulp.src(srcFiles),
-      concat("app.js"),
-      uglify(),
-      gulp.dest("./assets/scripts"),
-    ], done);
+    return gulp
+      .src(srcFiles)
+      .pipe(concat("app.js"))
+      .pipe(uglify())
+      .pipe(gulp.dest("./assets/scripts"));
   } else {
-    pump([
-      gulp.src(srcFiles),
-      concat("app.js"),
-      gulp.dest("./assets/scripts"),
-      gulp.dest("./_site/assets/scripts"),
-      browserSync.reload({ stream: true }),
-    ], done);
+    return gulp
+      .src(srcFiles)
+      .pipe(concat("app.js"))
+      .pipe(gulp.dest("./assets/scripts"))
+      .pipe(gulp.dest("./_site/assets/scripts"))
+      .pipe(browserSync.reload({ stream: true }));
   }
 }
 
@@ -131,26 +124,18 @@ function sync_images() {
 //   6: Jekyll
 // -----------------------------------------------------------------------------
 
-function build_jekyll() {
+function build_jekyll(done) {
+  const args = ["exec", "jekyll", "build"];
+  const env = Object.assign({}, process.env);
+
   if (config.production) {
-    return gulp
-      .src("index.html", { read: false })
-      .pipe(
-        shell([
-          "JEKYLL_ENV=production bundle exec jekyll build --config _config.yml",
-        ])
-      )
-      .on("error", log);
+    args.push("--config", "_config.yml");
+    env.JEKYLL_ENV = "production";
   } else {
-    return gulp
-      .src("index.html", { read: false })
-      .pipe(
-        shell([
-          'bundle exec jekyll build  --config "_config.yml,_config_localhost.yml"',
-        ])
-      )
-      .on("error", log);
+    args.push("--config", "_config.yml,_config_localhost.yml");
   }
+
+  spawn("bundle", args, { stdio: "inherit", env }).on("close", done);
 }
 
 function clean_jekyll() {
@@ -185,12 +170,7 @@ function browsersync_reload(done) {
 // -----------------------------------------------------------------------------
 
 const build_all = gulp.series(
-  build_images,
-  build_fonts,
-  build_cv,
-  fontawesome,
-  build_scripts,
-  build_styles,
+  gulp.parallel(build_images, build_fonts, build_cv, fontawesome, build_scripts, build_styles),
   build_jekyll,
   build_localServer
 );
